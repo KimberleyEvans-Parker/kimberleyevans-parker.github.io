@@ -10,6 +10,16 @@ body {
   background-image: linear-gradient(#0099cc, #99e6ff);
 }
 
+body h1 {
+  font-size: 10vh;
+  font-family: "Tangerine", Georgia, "Times New Roman", Times, serif;
+}
+
+body p {
+  font-size: 8vh;
+  font-family: "Tangerine", Georgia, "Times New Roman", Times, serif;
+}
+
 .fade-down {
   animation: fadeDown ease var(--animation-time);
   -webkit-animation: fadeDown ease var(--animation-time);
