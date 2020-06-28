@@ -8,16 +8,22 @@ body {
   background-color: #66d9ff;
   height: 100vh;
   background-image: linear-gradient(#0099cc, #99e6ff);
+  overflow: hidden;
 }
 
 body h1 {
-  font-size: 10vh;
+  font-size: max(42px, 10vh);
   font-family: "Tangerine", Georgia, "Times New Roman", Times, serif;
 }
 
 body p {
-  font-size: 8vh;
+  font-size: max(36px, 8vh);
   font-family: "Tangerine", Georgia, "Times New Roman", Times, serif;
+}
+
+.home-containter {
+  text-align: center;
+  padding-top: 30vh;
 }
 
 .fade-down {
