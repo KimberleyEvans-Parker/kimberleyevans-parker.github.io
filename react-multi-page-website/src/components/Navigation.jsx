@@ -24,16 +24,20 @@ function Navigation(props) {
             <ul class="navbar-nav ml-auto">
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/" ? "active" : ""
-                }`}
-              ></li>
-              <li
-                class={`nav-item  ${
                   props.location.pathname === "/about" ? "active" : ""
                 }`}
               >
                 <Link class="nav-link" to="/about">
                   About
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/projects" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/projects">
+                  Projects
                 </Link>
               </li>
               <li
