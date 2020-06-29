@@ -8,11 +8,31 @@ import RollForReaction from "../assets/Roll for Reaction.mp4";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import Project from "./components/Project";
+
 function Projects() {
   return (
     <div className="about">
       <div class="container">
         <h1 class="font-weight-light">Projects</h1>
+        <Project
+          imgOnLeft={true}
+          heading="Asha's Quest"
+          subheading="Java Dungeon Crawler"
+          dates="March 2020- June 2020"
+          description="Roll for Reaction is a turn-base dungeon crawler RPG written with React, Redux, JavaScript and CSS. It is an open-source fork of react-rpg and builds upon and enhances the base game. This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
+          link="https://github.com/Matteas-Eden/roll-for-reaction"
+          images={[AshasQuest1, AshasQuest2]}
+        />
+        <Project
+          imgOnLeft={false}
+          heading="Asha's Quest"
+          subheading="Java Dungeon Crawler"
+          dates="March 2020- June 2020"
+          description="Roll for Reaction is a turn-base dungeon crawler RPG written with React, Redux, JavaScript and CSS. It is an open-source fork of react-rpg and builds upon and enhances the base game. This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
+          link="https://github.com/Matteas-Eden/roll-for-reaction"
+          images={[AshasQuest1, AshasQuest2]}
+        />
 
         {/* <Carousel autoPlay showThumbs={false}>
           <div>
