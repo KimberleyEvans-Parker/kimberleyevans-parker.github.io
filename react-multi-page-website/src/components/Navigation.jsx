@@ -7,7 +7,7 @@ function Navigation(props) {
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <Link class="navbar-brand" to="/">
-            React Multi-Page Website
+            Kimberley Evans-Parker
           </Link>
           <button
             class="navbar-toggler"
@@ -26,12 +26,7 @@ function Navigation(props) {
                 class={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""
                 }`}
-              >
-                <Link class="nav-link" to="/">
-                  Home
-                  <span class="sr-only">(current)</span>
-                </Link>
-              </li>
+              ></li>
               <li
                 class={`nav-item  ${
                   props.location.pathname === "/about" ? "active" : ""
