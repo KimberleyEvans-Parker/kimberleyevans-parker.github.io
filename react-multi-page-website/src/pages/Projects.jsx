@@ -31,7 +31,7 @@ function Projects() {
           dates="March 2020- June 2020"
           description="Roll for Reaction is a turn-base dungeon crawler RPG written with React, Redux, JavaScript and CSS. It is an open-source fork of react-rpg and builds upon and enhances the base game. This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
           link="https://github.com/Matteas-Eden/roll-for-reaction"
-          images={[AshasQuest1, AshasQuest2]}
+          images={[AshasQuest2]}
         />
 
         {/* <Carousel autoPlay showThumbs={false}>

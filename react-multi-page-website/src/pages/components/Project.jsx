@@ -1,9 +1,5 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import AshasQuest1 from "../../assets/AshasQuest1.jpg";
-import AshasQuest2 from "../../assets/AshasQuest2.jpg";
-import PointsExample from "../../assets/Points example.gif";
-import RollForReaction from "../../assets/Roll for Reaction.mp4";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -23,17 +19,18 @@ function Projects(props) {
       <Grid item xs={4}>
         <Carousel
           autoPlay
+          showIndicators={props.images.length > 1}
+          showStatus={props.images.length > 1}
           showThumbs={false}
           transitionTime={1500}
           interval={4000}
           infiniteLoop={true}
         >
-          <div>
-            <img alt="" src={AshasQuest1} />
-          </div>
-          <div>
-            <img alt="" src={AshasQuest2} />
-          </div>
+          {props.images.map((image) => (
+            <div>
+              <img alt="" src={image} />
+            </div>
+          ))}
         </Carousel>
       </Grid>
       {props.imgOnLeft && (
