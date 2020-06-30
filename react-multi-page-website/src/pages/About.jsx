@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="about">
+    <div class="content-container">
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
