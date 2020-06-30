@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-function Projects(props) {
+function Project(props) {
   return (
     <Grid container spacing={3}>
       {!props.imgOnLeft && (
@@ -16,23 +16,25 @@ function Projects(props) {
           <p>{props.description}</p>
         </Grid>
       )}
-      <Grid item xs={4}>
-        <Carousel
-          autoPlay
-          showIndicators={props.images.length > 1}
-          showStatus={props.images.length > 1}
-          showThumbs={false}
-          transitionTime={1500}
-          interval={4000}
-          infiniteLoop={true}
-        >
-          {props.images.map((image) => (
-            <div>
-              <img alt="" src={image} />
-            </div>
-          ))}
-        </Carousel>
-      </Grid>
+      {props.images && (
+        <Grid item xs={4}>
+          <Carousel
+            autoPlay
+            showIndicators={props.images.length > 1}
+            showStatus={props.images.length > 1}
+            showThumbs={false}
+            transitionTime={1500}
+            interval={4000}
+            infiniteLoop={true}
+          >
+            {props.images.map((image) => (
+              <div>
+                <img alt="" src={image} />
+              </div>
+            ))}
+          </Carousel>
+        </Grid>
+      )}
       {props.imgOnLeft && (
         <Grid item xs>
           <Grid item xs>
@@ -48,4 +50,4 @@ function Projects(props) {
   );
 }
 
-export default Projects;
+export default Project;
