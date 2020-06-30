@@ -9,7 +9,7 @@ import Project from "./components/Project";
 
 function Projects() {
   return (
-    <div className="about">
+    <div className="content-container">
       <div class="container">
         <h1 class="font-weight-light">Projects</h1>
         <Project
