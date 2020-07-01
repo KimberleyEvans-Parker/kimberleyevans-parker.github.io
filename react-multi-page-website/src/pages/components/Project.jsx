@@ -5,9 +5,28 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Project(props) {
+  /* Keeps track of the window dimensions.  Updates when window resizes */
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  React.useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+    return (_) => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
   return (
     <Grid container spacing={3}>
-      {!props.imgOnLeft && (
+      {(!props.imgOnLeft || dimensions.width < 600) && (
         <Grid item xs>
           <h2>
             {props.heading} - {props.subheading}
@@ -35,7 +54,7 @@ function Project(props) {
           </Carousel>
         </Grid>
       )}
-      {props.imgOnLeft && (
+      {(props.imgOnLeft && dimensions.width) >= 600 && (
         <Grid item xs>
           <Grid item xs>
             <h2>
