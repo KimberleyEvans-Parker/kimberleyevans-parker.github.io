@@ -171,3 +171,127 @@ a:hover {
     opacity: 1;
   }
 }
+
+.fade-left {
+  animation: fadeLeft ease var(--animation-time);
+  -webkit-animation: fadeLeft ease var(--animation-time);
+  -moz-animation: fadeLeft ease var(--animation-time);
+  -o-animation: fadeLeft ease var(--animation-time);
+  -ms-animation: fadeLeft ease var(--animation-time);
+}
+@keyframes fadeLeft {
+  from {
+    transform: translateX(var(--negative-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeLeft {
+  from {
+    transform: translateX(var(--negative-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeLeft {
+  from {
+    transform: translateX(var(--negative-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeLeft {
+  from {
+    transform: translateX(var(--negative-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeLeft {
+  from {
+    transform: translateX(var(--negative-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.fade-right {
+  animation: fadeRight ease var(--animation-time);
+  -webkit-animation: fadeRight ease var(--animation-time);
+  -moz-animation: fadeRight ease var(--animation-time);
+  -o-animation: fadeRight ease var(--animation-time);
+  -ms-animation: fadeRight ease var(--animation-time);
+}
+@keyframes fadeRight {
+  from {
+    transform: translateX(var(--positive-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeRight {
+  from {
+    transform: translateX(var(--positive-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeRight {
+  from {
+    transform: translateX(var(--positive-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeRight {
+  from {
+    transform: translateX(var(--positive-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeRight {
+  from {
+    transform: translateX(var(--positive-animation-distance));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
