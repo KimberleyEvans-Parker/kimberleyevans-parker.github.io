@@ -53,6 +53,27 @@ a:hover {
   transform: translateY(-50%);
 }
 
+.value-bullet-points {
+  list-style: none;
+  padding-left: 0;
+}
+.value-bullet-points li {
+  position: relative;
+  padding-left: 30px;
+}
+.value-bullet-points li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url("./assets/value-bullet-point.png");
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .home-containter {
   font-family: "Tangerine", Georgia, "Times New Roman", Times, serif;
   font-size: max(36px, 8vh);
