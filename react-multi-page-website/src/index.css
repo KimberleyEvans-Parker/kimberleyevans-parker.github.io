@@ -31,8 +31,26 @@ a:hover {
   color: rgb(66, 66, 66);
 }
 
-ul.two-columns {
+.code-bullet-points {
   column-count: 2;
+  list-style: none;
+  padding-left: 0;
+}
+.code-bullet-points li {
+  position: relative;
+  padding-left: 25px;
+}
+.code-bullet-points li:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-image: url("./assets/code-bullet-point.png");
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .home-containter {
