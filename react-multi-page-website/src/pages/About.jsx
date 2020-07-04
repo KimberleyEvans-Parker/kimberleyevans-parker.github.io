@@ -7,7 +7,7 @@ function About() {
     <div className="content-container">
       <Grid container spacing={3}>
         <Grid item xs={6} sm={4} md={3}>
-          <img src={ProfilePic} style={{ width: "100%" }}></img>
+          <img src={ProfilePic} className="profile-pic"></img>
         </Grid>
         <Grid item xs>
           <h1 class="font-weight-light">About</h1>

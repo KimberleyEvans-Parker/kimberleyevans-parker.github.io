@@ -51,6 +51,12 @@ a:hover {
   margin-right: auto;
 }
 
+.profile-pic {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px #222222;
+}
+
 /* animations */
 .fade-down {
   animation: fadeDown ease var(--animation-time);
