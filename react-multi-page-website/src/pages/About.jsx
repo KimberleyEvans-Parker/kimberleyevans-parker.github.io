@@ -46,6 +46,44 @@ function About() {
           Computer Systems Engineering and Science, majoring in Logic and
           Computation. I expect to finish this degree in 2021.
         </p>
+        <h2>Programming Languages</h2>
+        <ul className="code-bullet-points">
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>Matlab</li>
+          <li>VHDL</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Redux</li>
+        </ul>
+        <h2>Values</h2>
+        <ul className="value-bullet-points">
+          <li>
+            <strong>Good problem solver</strong> – designed solutions to
+            problems in hackathons and programming competitions
+          </li>
+          <li>
+            <strong>Organised</strong> – Ran a business that has been continued
+            whilst taking 5 courses a semester at university
+          </li>
+          <li>
+            <strong>Polite and friendly</strong> – I have worked in customer
+            services, taught children to code and taken up the role of class rep
+          </li>
+          <li>
+            <strong>Quick thinker</strong> – been in competitions including,
+            NZPC, Alice competition, Mathex, and other math competitions
+          </li>
+          <li>
+            <strong>Hard worker</strong> – often took 5 papers a semester,
+            whilst working part-time
+          </li>
+        </ul>
       </div>
     </div>
   );

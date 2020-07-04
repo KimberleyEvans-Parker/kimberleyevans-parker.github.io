@@ -61,7 +61,47 @@ a:hover {
   box-shadow: 10px 10px 20px #222222;
 }
 
-/* animations */
+/* ------------------- bullet points ------------------- */
+
+.code-bullet-points {
+  column-count: 2;
+  list-style: none;
+  padding-left: 0;
+}
+.code-bullet-points li {
+  position: relative;
+  padding-left: 25px;
+}
+.code-bullet-points li:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-image: url("./assets/code-bullet-point.png");
+  background-size: cover;
+  left: 0;
+  top: 4px;
+}
+
+.value-bullet-points {
+  list-style: none;
+  padding-left: 0;
+}
+.value-bullet-points li {
+  position: relative;
+  padding-left: 30px;
+}
+.value-bullet-points li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url("./assets/value-bullet-point.png");
+  background-size: cover;
+  left: 0;
+}
+
+/* ------------------- animations ------------------- */
 .fade-down {
   animation: fadeDown ease var(--animation-time);
   -webkit-animation: fadeDown ease var(--animation-time);
