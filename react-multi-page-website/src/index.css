@@ -31,6 +31,10 @@ a:hover {
   color: rgb(66, 66, 66);
 }
 
+ul.two-columns {
+  column-count: 2;
+}
+
 .home-containter {
   font-family: "Tangerine", Georgia, "Times New Roman", Times, serif;
   font-size: max(36px, 8vh);

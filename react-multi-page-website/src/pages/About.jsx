@@ -47,7 +47,7 @@ function About() {
           Computation. I expect to finish this degree in 2021.
         </p>
         <h2>Programming Languages</h2>
-        <ul>
+        <ul className="two-columns">
           <li>C</li>
           <li>C++</li>
           <li>Python</li>
