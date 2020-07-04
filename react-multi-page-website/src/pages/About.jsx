@@ -11,7 +11,7 @@ function About() {
           width: "30vw",
           maxWidth: "200px",
           float: "left",
-          marginRight: "20px",
+          marginRight: "30px",
           marginBottom: "20px",
         }}
       ></img>
@@ -19,8 +19,9 @@ function About() {
         <h1 class="font-weight-light">About</h1>
         <p>
           I am a problem solver that loves to program. This has lead to a deep
-          interest in coding, robotics and algorithms. I also enjoy design and
-          am good at coming up with creative solutions and work well in a team.
+          interest in robotics and a passion for coding and algorithms. I also
+          enjoy design and I am good at coming up with creative solutions and
+          work well in a team.
         </p>
         <p>
           I'm currently doing Computer Systems Engineering, conjoint with
@@ -28,7 +29,6 @@ function About() {
           programming languages, as well as logic, mathematics, proofs and
           electrical systems.
         </p>
-        <br></br>
         <h2>Background</h2>
         <p>
           I was born in New Zealand and enjoy travelling. I also enjoy
