@@ -17,6 +17,14 @@ function About() {
           </p>
         </Grid>
       </Grid>
+      <br></br>
+      <h2>Background</h2>
+      <p>
+        I was born in New Zealand and enjoy travelling. I also enjoy badminton,
+        skiing, art and piano. I am now studying a conjoint of Computer Systems
+        Engineering and Science, majoring in Logic and Computation at the
+        University of Auckland.{" "}
+      </p>
     </div>
   );
 }
