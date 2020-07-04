@@ -46,6 +46,21 @@ function About() {
           Computer Systems Engineering and Science, majoring in Logic and
           Computation. I expect to finish this degree in 2021.
         </p>
+        <h2>Programming Languages</h2>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>Matlab</li>
+          <li>VHDL</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Redux</li>
+        </ul>
       </div>
     </div>
   );
