@@ -23,7 +23,17 @@ function About() {
         I was born in New Zealand and enjoy travelling. I also enjoy badminton,
         skiing, art and piano. I am now studying a conjoint of Computer Systems
         Engineering and Science, majoring in Logic and Computation at the
-        University of Auckland.{" "}
+        University of Auckland.
+      </p>
+      <h2>Education</h2>
+      <p>
+        I passed NCEA Level 3 with excellence endorsement. I attained 72
+        excellence credits, achieving a rank score of 312/320.
+      </p>
+      <p>
+        I am now in my fourth year of university, taking a conjoint in Computer
+        Systems Engineering and Science, majoring in Logic and Computation. I
+        expect to finish this degree in 2021.
       </p>
     </div>
   );
