@@ -1,17 +1,15 @@
 import React from "react";
+import Grid from "@material-ui/core/Grid";
+import ProfilePic from "../assets/profile-pic.jpg";
 
 function About() {
   return (
-    <div class="content-container">
-      <div class="row align-items-center my-5">
-        <div class="col-lg-7">
-          <img
-            class="img-fluid rounded mb-4 mb-lg-0"
-            src="http://placehold.it/900x400"
-            alt=""
-          />
-        </div>
-        <div class="col-lg-5">
+    <div className="content-container">
+      <Grid container spacing={3}>
+        <Grid item xs={6} sm={4} md={3}>
+          <img src={ProfilePic} style={{ width: "100%" }}></img>
+        </Grid>
+        <Grid item xs>
           <h1 class="font-weight-light">About</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -19,8 +17,8 @@ function About() {
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </p>
-        </div>
-      </div>
+        </Grid>
+      </Grid>
     </div>
   );
 }
