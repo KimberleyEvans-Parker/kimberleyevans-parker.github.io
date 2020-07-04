@@ -191,7 +191,7 @@ a:hover {
 }
 @keyframes fadeLeft {
   from {
-    transform: translateX(var(--negative-animation-distance));
+    transform: translateX(var(--positive-animation-distance));
     opacity: 0;
   }
   to {
@@ -202,7 +202,7 @@ a:hover {
 
 @-moz-keyframes fadeLeft {
   from {
-    transform: translateX(var(--negative-animation-distance));
+    transform: translateX(var(--positive-animation-distance));
     opacity: 0;
   }
   to {
@@ -213,7 +213,7 @@ a:hover {
 
 @-webkit-keyframes fadeLeft {
   from {
-    transform: translateX(var(--negative-animation-distance));
+    transform: translateX(var(--positive-animation-distance));
     opacity: 0;
   }
   to {
@@ -224,7 +224,7 @@ a:hover {
 
 @-o-keyframes fadeLeft {
   from {
-    transform: translateX(var(--negative-animation-distance));
+    transform: translateX(var(--positive-animation-distance));
     opacity: 0;
   }
   to {
@@ -235,7 +235,7 @@ a:hover {
 
 @-ms-keyframes fadeLeft {
   from {
-    transform: translateX(var(--negative-animation-distance));
+    transform: translateX(var(--positive-animation-distance));
     opacity: 0;
   }
   to {
@@ -253,7 +253,7 @@ a:hover {
 }
 @keyframes fadeRight {
   from {
-    transform: translateX(var(--positive-animation-distance));
+    transform: translateX(var(--negative-animation-distance));
     opacity: 0;
   }
   to {
@@ -264,7 +264,7 @@ a:hover {
 
 @-moz-keyframes fadeRight {
   from {
-    transform: translateX(var(--positive-animation-distance));
+    transform: translateX(var(--negative-animation-distance));
     opacity: 0;
   }
   to {
@@ -275,7 +275,7 @@ a:hover {
 
 @-webkit-keyframes fadeRight {
   from {
-    transform: translateX(var(--positive-animation-distance));
+    transform: translateX(var(--negative-animation-distance));
     opacity: 0;
   }
   to {
@@ -286,7 +286,7 @@ a:hover {
 
 @-o-keyframes fadeRight {
   from {
-    transform: translateX(var(--positive-animation-distance));
+    transform: translateX(var(--negative-animation-distance));
     opacity: 0;
   }
   to {
@@ -297,7 +297,7 @@ a:hover {
 
 @-ms-keyframes fadeRight {
   from {
-    transform: translateX(var(--positive-animation-distance));
+    transform: translateX(var(--negative-animation-distance));
     opacity: 0;
   }
   to {

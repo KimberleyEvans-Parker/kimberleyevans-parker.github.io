@@ -6,10 +6,10 @@ function About() {
   return (
     <div className="content-container">
       <Grid container spacing={3}>
-        <Grid item xs={6} sm={4} md={3}>
+        <Grid item xs={6} sm={4} md={3} className="fade-right">
           <img src={ProfilePic} className="profile-pic"></img>
         </Grid>
-        <Grid item xs>
+        <Grid item xs className="fade-left">
           <h1 class="font-weight-light">About</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
