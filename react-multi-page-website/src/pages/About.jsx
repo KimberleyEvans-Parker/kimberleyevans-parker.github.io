@@ -5,17 +5,15 @@ import ProfilePic from "../assets/profile-pic.jpg";
 function About() {
   return (
     <div className="content-container">
-      <Grid container spacing={3}>
+      <Grid container spacing={4}>
         <Grid item xs={6} sm={4} md={3} className="fade-right">
           <img src={ProfilePic} className="profile-pic"></img>
         </Grid>
         <Grid item xs className="fade-left">
           <h1 class="font-weight-light">About</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            I am a problem solver that loves to program. This has lead to a deep
+            interest in coding, robotics and algorithms.
           </p>
         </Grid>
       </Grid>
