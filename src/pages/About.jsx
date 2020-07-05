@@ -14,6 +14,7 @@ function About() {
           marginRight: "30px",
           marginBottom: "20px",
         }}
+        alt="Profile"
       ></img>
       <div className="fade-left">
         <h1 class="font-weight-light">About</h1>
