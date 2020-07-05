@@ -3,7 +3,9 @@ name: update deployment
 # Triggers on push or merge to the master branch
 on:
   push:
-    branches: [ master ]
+    branches: 
+      - master
+      - restructure
 
 jobs:
   build-and-deploy:
