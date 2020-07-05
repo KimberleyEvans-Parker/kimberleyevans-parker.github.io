@@ -3,26 +3,25 @@ name: update deployment
 # Triggers on push or merge to the master branch
 on:
   push:
-    branches: 
+    branches:
       - master
-      - restructure
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: checkout master
-      uses: actions/checkout@v2
+      - name: checkout master
+        uses: actions/checkout@v2
 
-    - name: install and build
-      run: |
-        yarn install --frozen-lockfile
-        yarn build
+      - name: install and build
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
 
-    - name: deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with: 
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
