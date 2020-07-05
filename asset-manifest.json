@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2d387cde.chunk.css",
+    "main.js": "/static/js/main.2e40d52a.chunk.js",
+    "main.js.map": "/static/js/main.2e40d52a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5cc14cde.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5cc14cde.js.map",
+    "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
+    "static/js/2.2e548395.chunk.js": "/static/js/2.2e548395.chunk.js",
+    "static/js/2.2e548395.chunk.js.map": "/static/js/2.2e548395.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.03d39c6d8265b3a0479023cd4dc4cac2.js": "/precache-manifest.03d39c6d8265b3a0479023cd4dc4cac2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
+    "static/css/main.2d387cde.chunk.css.map": "/static/css/main.2d387cde.chunk.css.map",
+    "static/js/2.2e548395.chunk.js.LICENSE.txt": "/static/js/2.2e548395.chunk.js.LICENSE.txt",
+    "static/media/AshasQuest1.jpg": "/static/media/AshasQuest1.2d95b2a3.jpg",
+    "static/media/AshasQuest2.jpg": "/static/media/AshasQuest2.c0e1f297.jpg",
+    "static/media/Doto1.gif": "/static/media/Doto1.91d3011d.gif",
+    "static/media/Doto2.gif": "/static/media/Doto2.e93a9c26.gif",
+    "static/media/index.css": "/static/media/value-bullet-point.69ccbfb2.png",
+    "static/media/profile-pic.jpg": "/static/media/profile-pic.9d96eeab.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5cc14cde.js",
+    "static/css/2.fb346933.chunk.css",
+    "static/js/2.2e548395.chunk.js",
+    "static/css/main.2d387cde.chunk.css",
+    "static/js/main.2e40d52a.chunk.js"
+  ]
+}
