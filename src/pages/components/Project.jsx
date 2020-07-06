@@ -27,7 +27,18 @@ function Project(props) {
   return (
     <Grid container spacing={3}>
       {(!props.imgOnLeft || dimensions.width < 600) && (
-        <Grid item xs className={props.images ? "fade right" : "fade left"}>
+        <Grid
+          item
+          xs
+          className={props.images ? "fade right" : "fade left"}
+          style={{
+            webkitAimationDelay: props.animationDelay,
+            mozAnimationDelay: props.animationDelay,
+            oAimationDelay: props.animationDelay,
+            msAnimationDelay: props.animationDelay,
+            animationDelay: props.animationDelay,
+          }}
+        >
           <h2>
             {props.heading} - {props.subheading}
           </h2>
@@ -42,6 +53,13 @@ function Project(props) {
           sm={6}
           md={4}
           className={props.imgOnLeft ? "fade right" : "fade left"}
+          style={{
+            webkitAimationDelay: props.animationDelay,
+            mozAnimationDelay: props.animationDelay,
+            oAimationDelay: props.animationDelay,
+            msAnimationDelay: props.animationDelay,
+            animationDelay: props.animationDelay,
+          }}
         >
           <Carousel
             autoPlay
@@ -61,7 +79,18 @@ function Project(props) {
         </Grid>
       )}
       {(props.imgOnLeft && dimensions.width) >= 600 && (
-        <Grid item xs className="fade left">
+        <Grid
+          item
+          xs
+          className="fade left"
+          style={{
+            webkitAimationDelay: props.animationDelay,
+            mozAnimationDelay: props.animationDelay,
+            oAimationDelay: props.animationDelay,
+            msAnimationDelay: props.animationDelay,
+            animationDelay: props.animationDelay,
+          }}
+        >
           <h2>
             {props.heading} - {props.subheading}
           </h2>
