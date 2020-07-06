@@ -27,7 +27,7 @@ function Project(props) {
   return (
     <Grid container spacing={3}>
       {(!props.imgOnLeft || dimensions.width < 600) && (
-        <Grid item xs className={props.images ? "fade-right" : "fade-left"}>
+        <Grid item xs className={props.images ? "fade right" : "fade left"}>
           <h2>
             {props.heading} - {props.subheading}
           </h2>
@@ -41,7 +41,7 @@ function Project(props) {
           xs={12}
           sm={6}
           md={4}
-          className={props.imgOnLeft ? "fade-right" : "fade-left"}
+          className={props.imgOnLeft ? "fade right" : "fade left"}
         >
           <Carousel
             autoPlay
@@ -61,7 +61,7 @@ function Project(props) {
         </Grid>
       )}
       {(props.imgOnLeft && dimensions.width) >= 600 && (
-        <Grid item xs className="fade-left">
+        <Grid item xs className="fade left">
           <h2>
             {props.heading} - {props.subheading}
           </h2>
