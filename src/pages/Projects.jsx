@@ -38,12 +38,34 @@ function Projects() {
       />
       <Project
         imgOnLeft={false}
+        heading="Feedr"
+        subheading="Media Feed Aggregator"
+        dates="March 2020"
+        description="A webapp for aggregrating media feeds from various services into a single, uniform display for user convenience.
+          We are using the React framework to manage the front-end UI and using a Java server utilising the Spring framework for the back-end. 
+          The back-end will call the API for the relevant media service and the front-end will visualise this data."
+        link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
+        animationDelay="0.8s"
+      />
+      <Project
+        imgOnLeft={true}
+        heading="Evintigate"
+        subheading="Project During KPMG Hackathon"
+        dates="May 2020"
+        description="A hub for people to organise and meet up at a range of events with a specified host and location. 
+          Aims to connect organisations and volunteer groups who wish to hold events with places people. 
+          This was done by 6 people using JavaScript, HTML and CSS. Won best presentation in the AUCS, KPMG hackathon."
+        link="https://github.com/KimberleyEvans-Parker/Eventigate"
+        animationDelay="1.2s"
+      />
+      <Project
+        imgOnLeft={false}
         heading="Flik"
         subheading="Line Following Robot"
         dates="July 2019 - Oct 2019"
         description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC, PSoC and shortest path algorithms written in C."
         link="https://github.com/Matteas-Eden/flik"
-        animationDelay="0.8s"
+        animationDelay="1.6s"
       />
       <Project
         imgOnLeft={true}
@@ -54,7 +76,7 @@ function Projects() {
           It also utilises NaCl, json, jinja 2, HTML5 and CSS, JavaScript and cryptography. 
           This could authorize and report login from a login server to a main server run by the lecturer, and see how many web clients are online. 
           It could also send messages privately and in group chats while sending public 'tweets' out to all viewers, and block keywords and people from showing up. "
-        animationDelay="1.2s"
+        animationDelay="2s"
       />
       <Project
         imgOnLeft={false}
@@ -67,19 +89,7 @@ function Projects() {
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[AshasQuest1, AshasQuest2]}
-        animationDelay="1.6s"
-      />
-      <Project
-        imgOnLeft={true}
-        heading="Feedr"
-        subheading="Media Feed Aggregator"
-        dates="March 2020"
-        description="A webapp for aggregrating media feeds from various services into a single, uniform display for user convenience.
-          We are using the React framework to manage the front-end UI and using a Java server utilising the Spring framework for the back-end. 
-          The back-end will call the API for the relevant media service and the front-end will visualise this data."
-        link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
-        // images={[AshasQuest1, AshasQuest2]}
-        animationDelay="2s"
+        animationDelay="2.4s"
       />
     </div>
   );
