@@ -20,7 +20,6 @@ function Projects() {
           It is an open-source fork of react-rpg and builds upon and enhances the base game. 
           This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
-        images={[Doto1, Doto2]}
         animationDelay="0s"
       />
       <Project
@@ -38,7 +37,27 @@ function Projects() {
         animationDelay="0.4s"
       />
       <Project
+        imgOnLeft={false}
+        heading="Flik"
+        subheading="Line Following Robot"
+        dates="July 2019 - Oct 2019"
+        description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC, PSoC and shortest path algorithms written in C."
+        link="https://github.com/Matteas-Eden/flik"
+        animationDelay="0.8s"
+      />
+      <Project
         imgOnLeft={true}
+        heading="Midnight's Messages"
+        subheading="CherryPy Social Network"
+        dates="May 2019 - June 2019"
+        description="A social network similar to Twitter, which was developed individually in Python 3, on a CherryPy server. 
+          It also utilises NaCl, json, jinja 2, HTML5 and CSS, JavaScript and cryptography. 
+          This could authorize and report login from a login server to a main server run by the lecturer, and see how many web clients are online. 
+          It could also send messages privately and in group chats while sending public 'tweets' out to all viewers, and block keywords and people from showing up. "
+        animationDelay="1.2s"
+      />
+      <Project
+        imgOnLeft={false}
         heading="Asha's Quest"
         subheading="Java Dungeon Crawler"
         dates="March 2020 - June 2020"
@@ -48,10 +67,10 @@ function Projects() {
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[AshasQuest1, AshasQuest2]}
-        animationDelay="0.8s"
+        animationDelay="1.6s"
       />
       <Project
-        imgOnLeft={false}
+        imgOnLeft={true}
         heading="Feedr"
         subheading="Media Feed Aggregator"
         dates="March 2020"
@@ -60,17 +79,7 @@ function Projects() {
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
         link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
         // images={[AshasQuest1, AshasQuest2]}
-        animationDelay="1.2s"
-      />
-      <Project
-        imgOnLeft={true}
-        heading="Flik"
-        subheading="Line Following Robot"
-        dates="July 2019 - Oct 2019"
-        description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC, PSoC and shortest path algorithms written in C."
-        link="https://github.com/Matteas-Eden/flik"
-        // images={[AshasQuest1, AshasQuest2]}
-        animationDelay="1.6s"
+        animationDelay="2s"
       />
     </div>
   );
