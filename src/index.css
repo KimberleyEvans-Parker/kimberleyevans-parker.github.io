@@ -112,17 +112,11 @@ a:hover {
 }
 
 .fade.down {
-  animation: fadeDown ease var(--animation-time);
-  -webkit-animation: fadeDown ease var(--animation-time);
-  -moz-animation: fadeDown ease var(--animation-time);
-  -o-animation: fadeDown ease var(--animation-time);
-  -ms-animation: fadeDown ease var(--animation-time);
-
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  animation: fadeDown ease var(--animation-time) forwards;
+  -webkit-animation: fadeDown ease var(--animation-time) forwards;
+  -moz-animation: fadeDown ease var(--animation-time) forwards;
+  -o-animation: fadeDown ease var(--animation-time) forwards;
+  -ms-animation: fadeDown ease var(--animation-time) forwards;
 }
 @keyframes fadeDown {
   from {
@@ -180,17 +174,11 @@ a:hover {
 }
 
 .fade.up {
-  animation: fadeUp ease var(--animation-time);
-  -webkit-animation: fadeUp ease var(--animation-time);
-  -moz-animation: fadeUp ease var(--animation-time);
-  -o-animation: fadeUp ease var(--animation-time);
-  -ms-animation: fadeUp ease var(--animation-time);
-
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  animation: fadeUp ease var(--animation-time) forwards;
+  -webkit-animation: fadeUp ease var(--animation-time) forwards;
+  -moz-animation: fadeUp ease var(--animation-time) forwards;
+  -o-animation: fadeUp ease var(--animation-time) forwards;
+  -ms-animation: fadeUp ease var(--animation-time) forwards;
 }
 @keyframes fadeUp {
   from {
@@ -248,17 +236,11 @@ a:hover {
 }
 
 .fade.left {
-  animation: fadeLeft ease var(--animation-time);
-  -webkit-animation: fadeLeft ease var(--animation-time);
-  -moz-animation: fadeLeft ease var(--animation-time);
-  -o-animation: fadeLeft ease var(--animation-time);
-  -ms-animation: fadeLeft ease var(--animation-time);
-
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  animation: fadeLeft ease var(--animation-time) forwards;
+  -webkit-animation: fadeLeft ease var(--animation-time) forwards;
+  -moz-animation: fadeLeft ease var(--animation-time) forwards;
+  -o-animation: fadeLeft ease var(--animation-time) forwards;
+  -ms-animation: fadeLeft ease var(--animation-time) forwards;
 }
 @keyframes fadeLeft {
   from {
@@ -316,17 +298,11 @@ a:hover {
 }
 
 .fade.right {
-  animation: fadeRight ease var(--animation-time);
-  -webkit-animation: fadeRight ease var(--animation-time);
-  -moz-animation: fadeRight ease var(--animation-time);
-  -o-animation: fadeRight ease var(--animation-time);
-  -ms-animation: fadeRight ease var(--animation-time);
-
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  animation: fadeRight ease var(--animation-time) forwards;
+  -webkit-animation: fadeRight ease var(--animation-time) forwards;
+  -moz-animation: fadeRight ease var(--animation-time) forwards;
+  -o-animation: fadeRight ease var(--animation-time) forwards;
+  -ms-animation: fadeRight ease var(--animation-time) forwards;
 }
 @keyframes fadeRight {
   from {
