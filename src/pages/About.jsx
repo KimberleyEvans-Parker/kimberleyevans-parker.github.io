@@ -7,13 +7,6 @@ function About() {
       <img
         src={ProfilePic}
         className="profile-pic fade right"
-        style={{
-          width: "30vw",
-          maxWidth: "200px",
-          float: "left",
-          marginRight: "30px",
-          marginBottom: "20px",
-        }}
         alt="Profile"
       ></img>
       <div className="fade left">
