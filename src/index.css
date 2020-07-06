@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 
 :root {
-  --animation-time: 3s;
+  --animation-time: 2500ms;
   --negative-animation-distance: -40px;
   --positive-animation-distance: 40px;
 }
