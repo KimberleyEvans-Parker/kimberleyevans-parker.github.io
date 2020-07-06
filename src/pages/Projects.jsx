@@ -13,6 +13,18 @@ function Projects() {
       <h1 class="font-weight-light">Projects</h1>
       <Project
         imgOnLeft={false}
+        heading="Roll for Reaction"
+        subheading="Turn-Based Dungeon Crawler RPG"
+        dates="March 2020 – June 2020"
+        description="Roll for Reaction is a turn-based dungeon crawler RPG written with React, Redux, JavaScript, HTML and CSS. 
+          It is an open-source fork of react-rpg and builds upon and enhances the base game. 
+          This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
+        link="https://github.com/Matteas-Eden/roll-for-reaction"
+        images={[Doto1, Doto2]}
+        animationDelay="0s"
+      />
+      <Project
+        imgOnLeft={true}
         heading="Doto"
         subheading="Calendar and To-Do App"
         dates="March 2020 - May 2020"
@@ -23,7 +35,7 @@ function Projects() {
           The development of Doto is done using the M.E.R.N (MongoDB, Express, React, Node) tech stack."
         link="https://github.com/se701g2/Doto"
         images={[Doto1, Doto2]}
-        animationDelay="0s"
+        animationDelay="0.4s"
       />
       <Project
         imgOnLeft={true}
@@ -36,7 +48,7 @@ function Projects() {
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[AshasQuest1, AshasQuest2]}
-        animationDelay="0.4s"
+        animationDelay="0.8s"
       />
       <Project
         imgOnLeft={false}
@@ -48,7 +60,7 @@ function Projects() {
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
         link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
         // images={[AshasQuest1, AshasQuest2]}
-        animationDelay="0.8s"
+        animationDelay="1.2s"
       />
       <Project
         imgOnLeft={true}
@@ -58,7 +70,7 @@ function Projects() {
         description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC, PSoC and shortest path algorithms written in C."
         link="https://github.com/Matteas-Eden/flik"
         // images={[AshasQuest1, AshasQuest2]}
-        animationDelay="1.2s"
+        animationDelay="1.6s"
       />
     </div>
   );
