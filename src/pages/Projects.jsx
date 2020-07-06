@@ -101,6 +101,16 @@ function Projects() {
         images={[AshasQuest1, AshasQuest2]}
         animationDelay="2.8s"
       />
+      <Project
+        imgOnLeft={true}
+        heading="Wireless Energy Monitor"
+        dates="Aug 2018 – Nov 2018"
+        description="Wireless Energy Monitor to display voltage, current and power for ELECTENG 209. 
+          Comprised of a digital and an analog section. Data receiver described in VHDL, transmitter programmed in C. 
+          Receiver was a CPLD, transmitter was an ATMEGA328PB microcontroller on a self- designed PCB. 
+          Breadboarding, LTSpice simulations and Oscilloscopes were used for testing."
+        animationDelay="3.2s"
+      />
     </div>
   );
 }
