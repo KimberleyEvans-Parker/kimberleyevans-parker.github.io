@@ -30,7 +30,9 @@ function Project(props) {
         <Grid
           item
           xs
-          className={props.images ? "fade right" : "fade left"}
+          className={
+            props.images && dimensions.width >= 600 ? "fade right" : "fade left"
+          }
           style={{
             webkitAimationDelay: props.animationDelay,
             mozAnimationDelay: props.animationDelay,
@@ -52,7 +54,11 @@ function Project(props) {
           xs={12}
           sm={6}
           md={4}
-          className={props.imgOnLeft ? "fade right" : "fade left"}
+          className={
+            props.imgOnLeft && dimensions.width >= 600
+              ? "fade right"
+              : "fade left"
+          }
           style={{
             webkitAimationDelay: props.animationDelay,
             mozAnimationDelay: props.animationDelay,
@@ -78,7 +84,7 @@ function Project(props) {
           </Carousel>
         </Grid>
       )}
-      {(props.imgOnLeft && dimensions.width) >= 600 && (
+      {props.imgOnLeft && dimensions.width >= 600 && (
         <Grid
           item
           xs
