@@ -6,7 +6,7 @@ function About() {
     <div className="content-container">
       <img
         src={ProfilePic}
-        className="profile-pic fade-right"
+        className="profile-pic fade right"
         style={{
           width: "30vw",
           maxWidth: "200px",
@@ -16,7 +16,7 @@ function About() {
         }}
         alt="Profile"
       ></img>
-      <div className="fade-left">
+      <div className="fade left">
         <h1 class="font-weight-light">About</h1>
         <p>
           I am a problem solver that loves to program. This has lead to a deep
