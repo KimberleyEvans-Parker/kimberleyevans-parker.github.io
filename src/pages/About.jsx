@@ -58,7 +58,7 @@ function About() {
         <h2>Qualities</h2>
         <ul className="value-bullet-points">
           <li>
-            <strong>Good problem solver</strong> – designed solutions to
+            <strong>Good problem solver</strong> – Designed solutions to
             problems in hackathons and programming competitions
           </li>
           <li>
@@ -70,11 +70,11 @@ function About() {
             services, taught children to code and taken up the role of class rep
           </li>
           <li>
-            <strong>Quick thinker</strong> – been in competitions including,
+            <strong>Quick thinker</strong> – Been in competitions including,
             NZPC, Alice competition, Mathex, and other math competitions
           </li>
           <li>
-            <strong>Hard worker</strong> – often took 5 papers a semester,
+            <strong>Hard worker</strong> – Often took 5 papers a semester,
             whilst working part-time
           </li>
         </ul>
