@@ -40,7 +40,7 @@ function About() {
           Computer Systems Engineering and Science, majoring in Logic and
           Computation. I expect to finish this degree in 2021.
         </p>
-        <h2>Programming Languages</h2>
+        <h2>Technologies</h2>
         <ul className="code-bullet-points">
           <li>C</li>
           <li>C++</li>
@@ -55,7 +55,7 @@ function About() {
           <li>React</li>
           <li>Redux</li>
         </ul>
-        <h2>Values</h2>
+        <h2>Qualities</h2>
         <ul className="value-bullet-points">
           <li>
             <strong>Good problem solver</strong> – designed solutions to
