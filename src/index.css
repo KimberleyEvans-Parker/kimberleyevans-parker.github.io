@@ -91,7 +91,7 @@ a:hover {
 .modal {
   /* display: none; */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 10; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -125,7 +125,7 @@ a:hover {
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-/* #caption {
+.caption {
   margin: auto;
   display: block;
   width: 80%;
@@ -134,11 +134,11 @@ a:hover {
   color: #ccc;
   padding: 10px 0;
   height: 150px;
-} */
+}
 
 /* Add Animation - Zoom in the Modal */
 .modal-content,
-#caption {
+.caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
