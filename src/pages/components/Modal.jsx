@@ -29,7 +29,11 @@ function Modal(props) {
             </span>
             {/* <img className="modal-content" id="img01" alt="Snow" /> */}
             <img alt="" src={props.image} className="modal-content" />
-            {/* <div id="caption"></div> */}
+            {props.caption && (
+              <div className="caption">
+                <h2>{props.caption}</h2>
+              </div>
+            )}
           </div>
         </>
       )}
