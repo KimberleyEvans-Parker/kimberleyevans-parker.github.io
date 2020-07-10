@@ -75,55 +75,27 @@ a:hover {
 
 /* ------------------- modal ------------------- */
 
-.carousal_img {
+.clickable {
   cursor: pointer;
   transition: 0.3s;
 }
-.carousal_img:hover {
+.clickable:hover {
   opacity: 0.7;
 }
 
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-  /* border-radius: 5px; */
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {
-  opacity: 0.7;
-}
-
-/* The Modal (background) */
-.modal {
-  /* display: none; */
-  position: fixed; /* Stay in place */
-  z-index: 10; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+.modal-background {
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-.modal2 {
-  /* background-color: green; */
-  position: fixed; /* Stay in place */
-  z-index: 10; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  top: 0;
-  left: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
@@ -131,19 +103,17 @@ a:hover {
   max-width: 90vw;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 .caption {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 1000px;
+  max-width: 90vw;
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
+/* Zoom Animation */
 .modal-content,
 .caption {
   animation-name: zoom;
@@ -159,7 +129,6 @@ a:hover {
   }
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
