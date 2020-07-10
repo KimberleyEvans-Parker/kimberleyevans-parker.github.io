@@ -48,6 +48,12 @@ a:hover {
   z-index: 10;
 }
 
+.navigation li a i {
+  color: grey;
+  font-size: 18px;
+  margin: 10px;
+}
+
 .content-container {
   padding-top: 90px;
   width: 1000px;
