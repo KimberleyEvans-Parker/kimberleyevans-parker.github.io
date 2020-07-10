@@ -40,14 +40,31 @@ function Navigation(props) {
                   Projects
                 </Link>
               </li>
-              <li
-                class={`nav-item  ${
-                  props.location.pathname === "/contact" ? "active" : ""
-                }`}
-              >
-                <Link class="nav-link" to="/contact">
-                  Contact
-                </Link>
+              <li class={`nav-item`}>
+                <a href="https://github.com/KimberleyEvans-Parker">
+                  <i
+                    class="fa fa-github"
+                    aria-hidden="true"
+                    style={{
+                      color: "grey",
+                      fontSize: "24px",
+                      margin: "6px",
+                    }}
+                  ></i>
+                </a>
+              </li>
+              <li class={`nav-item`}>
+                <a href="https://www.linkedin.com/in/kimberley-evans-parker/">
+                  <i
+                    class="fa fa-linkedin"
+                    aria-hidden="true"
+                    style={{
+                      color: "grey",
+                      fontSize: "20px",
+                      margin: "8px",
+                    }}
+                  ></i>
+                </a>
               </li>
             </ul>
           </div>
