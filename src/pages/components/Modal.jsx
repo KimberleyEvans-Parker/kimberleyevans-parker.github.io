@@ -1,27 +1,38 @@
-import React from "react";
+// import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Modal(props) {
+  const [open, setOpen] = useState(false);
   return (
     <>
       {/* <!-- Trigger the Modal --> */}
       <img
         id="myImg"
-        src="img_snow.jpg"
+        // src="img_snow.jpg"
+        src={props.image}
         alt="Snow"
+        // className="carousal_img fade left"
         style={{ width: "100%", maxWidth: "300px" }}
+        onClick={() => setOpen(!open)}
       />
 
-      {/* <!-- The Modal --> */}
-      <div id="myModal" class="modal">
-        {/* <!-- The Close Button --> */}
-        <span class="close">&times;</span>
-
-        {/* <!-- Modal Content (The Image) --> */}
-        <img className="modal-content" id="img01" alt="Snow" />
-
-        {/* <!-- Modal Caption (Image Text) --> */}
-        <div id="caption"></div>
-      </div>
+      {!open && (
+        <>
+          {/* <img alt="" src={props.image} className="fade left" width="100%" /> */}
+          {/* <img alt="" src={props.image} className="modal-content" /> */}
+          <div
+            // id="myModal"
+            class="modal2"
+          >
+            <span class="close" onClick={() => setOpen(!open)}>
+              &times;
+            </span>
+            {/* <img className="modal-content" id="img01" alt="Snow" /> */}
+            <img alt="" src={props.image} className="modal-content" />
+            {/* <div id="caption"></div> */}
+          </div>
+        </>
+      )}
       {/* <script>
 // Get the modal
 var modal = document.getElementById("myModal");
