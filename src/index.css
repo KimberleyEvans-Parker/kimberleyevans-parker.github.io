@@ -127,6 +127,8 @@ a:hover {
 .modal-content {
   margin: auto;
   display: block;
+  width: 1000px;
+  max-width: 90vw;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
