@@ -74,7 +74,7 @@ function Projects() {
         dates="May 2020"
         description="A hub for people to organise and meet up at a range of events with a specified host and location. 
           Aims to connect organisations and volunteer groups who wish to hold events with places people. 
-          This was done by 6 people using JavaScript, HTML and CSS. Won best presentation in the AUCS, KPMG hackathon."
+          This was done by 6 people using JavaScript, HTML and CSS. Won Best Presentation in the AUCS, KPMG hackathon."
         link="https://github.com/KimberleyEvans-Parker/Eventigate"
         animationDelay="2s"
       />
@@ -83,7 +83,7 @@ function Projects() {
         heading="Flappy Bird"
         subheading="FPGA VHDL Side Scroller Game"
         dates="April 2019 - May 2019"
-        description="A game based off flappy bird, created by a team of 2, using VHDL. 
+        description="A game based off Flappy Bird, created by a team of 2, using VHDL. 
           This was designed to be run on an Altera DE0 Board, equipped with an Altera Cyclone III 3C16 FPGA. 
           Understanding of the FPGA hardware, VHDL and Git were developed."
         animationDelay="2.4s"
