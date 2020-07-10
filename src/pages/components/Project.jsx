@@ -42,7 +42,7 @@ function Project(props) {
           }}
         >
           <h2>
-            {props.heading} - {props.subheading}
+            {props.heading} {props.subheading && "-"} {props.subheading}
           </h2>
           <h3>{props.dates}</h3>
           <p>{props.description}</p>
@@ -98,7 +98,7 @@ function Project(props) {
           }}
         >
           <h2>
-            {props.heading} - {props.subheading}
+            {props.heading} {props.subheading && "-"} {props.subheading}
           </h2>
           <h3>{props.dates}</h3>
           <p>{props.description}</p>
