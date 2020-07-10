@@ -92,7 +92,7 @@ function Projects() {
         imgOnLeft={false}
         heading="Asha's Quest"
         subheading="Java Dungeon Crawler"
-        dates="March 2020 - June 2020"
+        dates="March 2019 - May 2019"
         description="Asha's Quest is an action-adventure game in the vein of Zelda, created using Java, primarily Java Swing. 
           This was a 2-person project, with the game created from scratch. 
           Details of the project are available on the GitHub repository it was cloned to, shown through a GitHub Wiki. 
