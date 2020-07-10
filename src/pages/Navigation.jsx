@@ -46,7 +46,6 @@ function Navigation(props) {
                     class="fa fa-github"
                     aria-hidden="true"
                     style={{
-                      color: "grey",
                       fontSize: "24px",
                       margin: "6px",
                     }}
@@ -55,15 +54,7 @@ function Navigation(props) {
               </li>
               <li class={`nav-item`}>
                 <a href="https://www.linkedin.com/in/kimberley-evans-parker/">
-                  <i
-                    class="fa fa-linkedin"
-                    aria-hidden="true"
-                    style={{
-                      color: "grey",
-                      fontSize: "20px",
-                      margin: "8px",
-                    }}
-                  ></i>
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
