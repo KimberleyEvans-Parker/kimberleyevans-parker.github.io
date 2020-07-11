@@ -4,12 +4,17 @@ import React, { useState } from "react";
 function Modal(props) {
   const [open, setOpen] = useState(false);
   return (
-    <>
+    <div>
       <img
         src={props.image}
         alt="Snow"
         className="clickable"
-        style={{ width: "100%", maxWidth: "300px" }}
+        style={{
+          width: "100%",
+          maxWidth: "400px",
+          // height: "200px",
+          zIndex: "200",
+        }}
         onClick={() => setOpen(!open)}
       />
 
@@ -28,7 +33,7 @@ function Modal(props) {
           </div>
         </>
       )}
-    </>
+    </div>
   );
 }
 
