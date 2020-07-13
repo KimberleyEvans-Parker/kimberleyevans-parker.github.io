@@ -1,31 +1,37 @@
 {
   "files": {
     "main.css": "/static/css/main.29151749.chunk.css",
-    "main.js": "/static/js/main.c8732090.chunk.js",
-    "main.js.map": "/static/js/main.c8732090.chunk.js.map",
+    "main.js": "/static/js/main.908b79ec.chunk.js",
+    "main.js.map": "/static/js/main.908b79ec.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5cc14cde.js",
     "runtime-main.js.map": "/static/js/runtime-main.5cc14cde.js.map",
     "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
-    "static/js/2.87d67e84.chunk.js": "/static/js/2.87d67e84.chunk.js",
-    "static/js/2.87d67e84.chunk.js.map": "/static/js/2.87d67e84.chunk.js.map",
+    "static/js/2.a459a7e5.chunk.js": "/static/js/2.a459a7e5.chunk.js",
+    "static/js/2.a459a7e5.chunk.js.map": "/static/js/2.a459a7e5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.09c076f1ab5c472f0b3b735491b589e4.js": "/precache-manifest.09c076f1ab5c472f0b3b735491b589e4.js",
+    "precache-manifest.46b8e25bc54958c6c869b7eefea8018e.js": "/precache-manifest.46b8e25bc54958c6c869b7eefea8018e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
     "static/css/main.29151749.chunk.css.map": "/static/css/main.29151749.chunk.css.map",
-    "static/js/2.87d67e84.chunk.js.LICENSE.txt": "/static/js/2.87d67e84.chunk.js.LICENSE.txt",
+    "static/js/2.a459a7e5.chunk.js.LICENSE.txt": "/static/js/2.a459a7e5.chunk.js.LICENSE.txt",
     "static/media/AshasQuest1.jpg": "/static/media/AshasQuest1.2d95b2a3.jpg",
     "static/media/AshasQuest2.jpg": "/static/media/AshasQuest2.c0e1f297.jpg",
     "static/media/Doto1.gif": "/static/media/Doto1.91d3011d.gif",
     "static/media/Doto2.gif": "/static/media/Doto2.e93a9c26.gif",
+    "static/media/Flik 1.gif": "/static/media/Flik 1.1fed0e6b.gif",
+    "static/media/Flik 2.gif": "/static/media/Flik 2.d9ad6565.gif",
+    "static/media/Flik 3.jpg": "/static/media/Flik 3.2a776416.jpg",
+    "static/media/Roll for Reaction 1.gif": "/static/media/Roll for Reaction 1.e2b3058a.gif",
+    "static/media/Roll for Reaction 2.gif": "/static/media/Roll for Reaction 2.3e404f4a.gif",
+    "static/media/Roll for Reaction logo.jpg": "/static/media/Roll for Reaction logo.d3eccc59.jpg",
     "static/media/index.css": "/static/media/value-bullet-point.69ccbfb2.png",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.9d96eeab.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.5cc14cde.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.87d67e84.chunk.js",
+    "static/js/2.a459a7e5.chunk.js",
     "static/css/main.29151749.chunk.css",
-    "static/js/main.c8732090.chunk.js"
+    "static/js/main.908b79ec.chunk.js"
   ]
 }
