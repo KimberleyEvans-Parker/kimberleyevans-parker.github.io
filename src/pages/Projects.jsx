@@ -3,7 +3,9 @@ import AshasQuest1 from "../assets/AshasQuest1.jpg";
 import AshasQuest2 from "../assets/AshasQuest2.jpg";
 import Doto1 from "../assets/Doto1.gif";
 import Doto2 from "../assets/Doto2.gif";
-import RollForReaction1 from "../assets/Roll for Reaction logo.jpg";
+import RollForReaction1 from "../assets/Roll for Reaction 1.gif";
+import RollForReaction2 from "../assets/Roll for Reaction 2.gif";
+import RollForReaction3 from "../assets/Roll for Reaction logo.jpg";
 import Flik1 from "../assets/Flik 1.gif";
 import Flik2 from "../assets/Flik 2.gif";
 import Flik3 from "../assets/Flik 3.jpg";
@@ -23,7 +25,7 @@ function Projects() {
           It is an open-source fork of react-rpg and builds upon and enhances the base game. 
           This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
-        images={[RollForReaction1]}
+        images={[RollForReaction1, RollForReaction2, RollForReaction3]}
         animationDelay="0s"
       />
       <Project
