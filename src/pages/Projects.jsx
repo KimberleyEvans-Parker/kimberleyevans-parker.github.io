@@ -3,7 +3,10 @@ import AshasQuest1 from "../assets/AshasQuest1.jpg";
 import AshasQuest2 from "../assets/AshasQuest2.jpg";
 import Doto1 from "../assets/Doto1.gif";
 import Doto2 from "../assets/Doto2.gif";
-// import RollForReaction from "../assets/Roll for Reaction.mp4";
+import RollForReaction1 from "../assets/Roll for Reaction logo.jpg";
+import Flik1 from "../assets/Flik 1.gif";
+import Flik2 from "../assets/Flik 2.gif";
+import Flik3 from "../assets/Flik 3.jpg";
 
 import Project from "./components/Project";
 
@@ -20,6 +23,7 @@ function Projects() {
           It is an open-source fork of react-rpg and builds upon and enhances the base game. 
           This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
+        images={[RollForReaction1]}
         animationDelay="0s"
       />
       <Project
@@ -54,6 +58,7 @@ function Projects() {
         dates="July 2019 - Oct 2019"
         description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC, PSoC and shortest path algorithms written in C."
         link="https://github.com/Matteas-Eden/flik"
+        images={[Flik1, Flik2, Flik3]}
         animationDelay="1.2s"
       />
       <Project
