@@ -80,9 +80,13 @@ function Project(props) {
             infiniteLoop={true}
           >
             {props.images.map((image) => (
-              <Modal alt="" image={image} />
+              // <Modal alt="" image={image} />
+              <button onClick={() => {console.log("HELLO");props.openModal(image, "Test"); }}>
+                <img alt="" src={image}/>
+              </button>
               // <div>
-              //   <img alt="" src={image} />
+              //   <img alt="" src={image}/>
+              // </div>
               //  <img
               //   src={image}
               //   alt="Snow"
