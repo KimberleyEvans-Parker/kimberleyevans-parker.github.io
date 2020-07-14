@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import AshasQuest1 from "../assets/AshasQuest1.jpg";
 import AshasQuest2 from "../assets/AshasQuest2.jpg";
 import Doto1 from "../assets/Doto1.gif";
@@ -13,6 +14,15 @@ import Flik3 from "../assets/Flik 3.jpg";
 import Project from "./components/Project";
 
 function Projects() {
+  const [image, setImage] = useState(null);
+  const [caption, setCaption] = useState("");
+
+  const openModal = (image, caption) => {
+    console.log("open modal", image, caption);
+    setImage(image);
+    setCaption(caption);
+  };
+
   return (
     <div className="content-container">
       <h1 class="font-weight-light">Projects</h1>

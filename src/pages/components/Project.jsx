@@ -79,35 +79,15 @@ function Project(props) {
             interval={4000}
             infiniteLoop={true}
           >
-            {props.images.map((image) => (
-              <Modal alt="" image={image} />
-              // <div>
-              //   <img alt="" src={image} />
-              //  <img
-              //   src={image}
-              //   alt="Snow"
-              //   className="clickable"
-              //   style={{ width: "100%", maxWidth: "300px" }}
-              //   onClick={() => setOpen(!open)}
-              // />
-
-              // {!open && (
-              //   <>
-              //     <div class="modal-background">
-              //       <span class="close" onClick={() => setOpen(!open)}>
-              //         &times;
-              //       </span>
-              //       <img alt="" src={image} className="modal-content" />
-              //       {props.caption && (
-              //         <div className="caption">
-              //           <h2>{props.caption}</h2>
-              //         </div>
-              //       )}
-              //     </div>
-              //   </>
-              // )}
-              // </div>
-            ))}
+            {props.images.map((image) => {
+              const path = image.split("/");
+              const name = path[path.length - 1].split(".")[0];
+              return (
+                <button onClick={() => props.openModal(image, name)} key={name}>
+                  <img alt={name} src={image} />
+                </button>
+              );
+            })}
           </Carousel>
         </Grid>
       )}
