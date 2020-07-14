@@ -20,11 +20,11 @@ function Projects() {
 
   return (
     <div className="content-container">
-      <h1 class="font-weight-light">Projects</h1>
+      <h1 className="font-weight-light">Projects</h1>
       {image && (
         <>
-          <div class="modal-background">
-            <span class="close" onClick={() => setImage(null)}>
+          <div className="modal-background">
+            <span className="close" onClick={() => setImage(null)}>
               &times;
             </span>
             <img alt="" src={image} className="modal-content" />
