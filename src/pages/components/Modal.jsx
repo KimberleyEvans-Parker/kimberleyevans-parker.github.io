@@ -14,8 +14,8 @@ function Modal(props) {
 
       {open && (
         <>
-          <div class="modal-background">
-            <span class="close" onClick={() => setOpen(!open)}>
+          <div className="modal-background">
+            <span className="close" onClick={() => setOpen(!open)}>
               &times;
             </span>
             <img

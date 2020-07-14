@@ -10,7 +10,7 @@ function About() {
         alt="Profile"
       ></img>
       <div className="fade left">
-        <h1 class="font-weight-light">About</h1>
+        <h1 className="font-weight-light">About</h1>
         <p>
           I am a problem solver that loves to program. This has lead to a deep
           interest in robotics and a passion for coding and algorithms. I also

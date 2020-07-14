@@ -4,13 +4,13 @@ import { Link, withRouter } from "react-router-dom";
 function Navigation(props) {
   return (
     <div className="navigation">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <Link class="navbar-brand" to="/">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container">
+          <Link className="navbar-brand" to="/">
             Kimberley Evans-Parker
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarResponsive"
@@ -18,32 +18,32 @@ function Navigation(props) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+            <ul className="navbar-nav ml-auto">
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/about" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/about">
+                <Link className="nav-link" to="/about">
                   About
                 </Link>
               </li>
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/projects" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/projects">
+                <Link className="nav-link" to="/projects">
                   Projects
                 </Link>
               </li>
-              <li class={`nav-item`}>
+              <li className={`nav-item`}>
                 <a href="https://github.com/KimberleyEvans-Parker">
                   <i
-                    class="fa fa-github"
+                    className="fa fa-github"
                     aria-hidden="true"
                     style={{
                       fontSize: "24px",
@@ -52,9 +52,9 @@ function Navigation(props) {
                   ></i>
                 </a>
               </li>
-              <li class={`nav-item`}>
+              <li className={`nav-item`}>
                 <a href="https://www.linkedin.com/in/kimberley-evans-parker/">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>

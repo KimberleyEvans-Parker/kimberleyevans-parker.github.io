@@ -37,9 +37,9 @@ function Project(props) {
             props.images && dimensions.width >= 600 ? "fade right" : "fade left"
           }
           style={{
-            webkitAimationDelay: props.animationDelay,
+            webkitAnimationDelay: props.animationDelay,
             mozAnimationDelay: props.animationDelay,
-            oAimationDelay: props.animationDelay,
+            oAnimationDelay: props.animationDelay,
             msAnimationDelay: props.animationDelay,
             animationDelay: props.animationDelay,
           }}
