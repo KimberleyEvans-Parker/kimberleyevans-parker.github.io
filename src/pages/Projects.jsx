@@ -1,4 +1,3 @@
-// import React from "react";
 import React, { useState } from "react";
 
 import AshasQuest1 from "../assets/AshasQuest1.jpg";
@@ -8,16 +7,13 @@ import Doto2 from "../assets/Doto2.gif";
 // import RollForReaction from "../assets/Roll for Reaction.mp4";
 
 import Project from "./components/Project";
-// import Modal from "./components/Modal";
 
 function Projects() {
-  // const [open, setOpen] = useState(true);
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("")
 
   const openModal = (image, caption) => {
     console.log("open modal", image, caption)
-    // setOpen(true);
     setImage(image);
     setCaption(caption);
   };
