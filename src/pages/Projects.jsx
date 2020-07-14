@@ -1,8 +1,9 @@
-import React from "react";
-import AshasQuest1 from "../assets/AshasQuest1.jpg";
-import AshasQuest2 from "../assets/AshasQuest2.jpg";
-import Doto1 from "../assets/Doto1.gif";
-import Doto2 from "../assets/Doto2.gif";
+import React, { useState } from "react";
+
+import AshasQuest1 from "../assets/Asha's Quest logo.jpg";
+import AshasQuest2 from "../assets/Asha's Quest title screen.jpg";
+import Doto1 from "../assets/Doto marketplace.gif";
+import Doto2 from "../assets/Doto toggle tasks.gif";
 import RollForReaction1 from "../assets/Roll for Reaction 1.gif";
 import RollForReaction2 from "../assets/Roll for Reaction 2.gif";
 import RollForReaction3 from "../assets/Roll for Reaction logo.jpg";
@@ -13,9 +14,33 @@ import Flik3 from "../assets/Flik 3.jpg";
 import Project from "./components/Project";
 
 function Projects() {
+  const [image, setImage] = useState(null);
+  const [caption, setCaption] = useState("");
+
+  const openModal = (image, caption) => {
+    console.log("open modal", image, caption);
+    setImage(image);
+    setCaption(caption);
+  };
+
   return (
     <div className="content-container">
-      <h1 class="font-weight-light">Projects</h1>
+      <h1 className="font-weight-light">Projects</h1>
+      {image && (
+        <>
+          <div className="modal-background">
+            <span className="close" onClick={() => setImage(null)}>
+              &times;
+            </span>
+            <img alt="" src={image} className="modal-content" />
+            {caption && (
+              <div className="caption">
+                <h2>{caption}</h2>
+              </div>
+            )}
+          </div>
+        </>
+      )}
       <Project
         imgOnLeft={false}
         heading="Roll for Reaction"
@@ -26,6 +51,7 @@ function Projects() {
           This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[RollForReaction1, RollForReaction2, RollForReaction3]}
+        openModal={openModal}
         animationDelay="0s"
       />
       <Project
@@ -40,6 +66,7 @@ function Projects() {
           The development of Doto is done using the M.E.R.N (MongoDB, Express, React, Node) tech stack."
         link="https://github.com/se701g2/Doto"
         images={[Doto1, Doto2]}
+        openModal={openModal}
         animationDelay="0.4s"
       />
       <Project
@@ -51,6 +78,7 @@ function Projects() {
           We are using the React framework to manage the front-end UI and using a Java server utilising the Spring framework for the back-end. 
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
         link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
+        openModal={openModal}
         animationDelay="0.8s"
       />
       <Project
@@ -61,6 +89,7 @@ function Projects() {
         description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC, PSoC and shortest path algorithms written in C."
         link="https://github.com/Matteas-Eden/flik"
         images={[Flik1, Flik2, Flik3]}
+        openModal={openModal}
         animationDelay="1.2s"
       />
       <Project
@@ -72,6 +101,7 @@ function Projects() {
           It also utilises NaCl, json, jinja 2, HTML5 and CSS, JavaScript and cryptography. 
           This could authorize and report login from a login server to a main server run by the lecturer, and see how many web clients are online. 
           It could also send messages privately and in group chats while sending public 'tweets' out to all viewers, and block keywords and people from showing up. "
+        openModal={openModal}
         animationDelay="1.6s"
       />
       <Project
@@ -83,6 +113,7 @@ function Projects() {
           Aims to connect organisations and volunteer groups who wish to hold events with places people. 
           This was done by 6 people using JavaScript, HTML and CSS. Won Best Presentation in the AUCS, KPMG hackathon."
         link="https://github.com/KimberleyEvans-Parker/Eventigate"
+        openModal={openModal}
         animationDelay="2s"
       />
       <Project
@@ -93,6 +124,7 @@ function Projects() {
         description="A game based off Flappy Bird, created by a team of 2, using VHDL. 
           This was designed to be run on an Altera DE0 Board, equipped with an Altera Cyclone III 3C16 FPGA. 
           Understanding of the FPGA hardware, VHDL and Git were developed."
+        openModal={openModal}
         animationDelay="2.4s"
       />
       <Project
@@ -106,6 +138,7 @@ function Projects() {
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[AshasQuest1, AshasQuest2]}
+        openModal={openModal}
         animationDelay="2.8s"
       />
       <Project
@@ -116,6 +149,7 @@ function Projects() {
           Comprised of a digital and an analog section. Data receiver described in VHDL, transmitter programmed in C. 
           Receiver was a CPLD, transmitter was an ATMEGA328PB microcontroller on a self- designed PCB. 
           Breadboarding, LTSpice simulations and Oscilloscopes were used for testing."
+        openModal={openModal}
         animationDelay="3.2s"
       />
     </div>

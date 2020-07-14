@@ -1,10 +1,13 @@
-import React from "react";
+// import React from "react";
 import Grid from "@material-ui/core/Grid";
+import React, { useState } from "react";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Modal from "./Modal";
 
 function Project(props) {
+  const [open, setOpen] = useState(false);
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -34,9 +37,9 @@ function Project(props) {
             props.images && dimensions.width >= 600 ? "fade right" : "fade left"
           }
           style={{
-            webkitAimationDelay: props.animationDelay,
+            webkitAnimationDelay: props.animationDelay,
             mozAnimationDelay: props.animationDelay,
-            oAimationDelay: props.animationDelay,
+            oAnimationDelay: props.animationDelay,
             msAnimationDelay: props.animationDelay,
             animationDelay: props.animationDelay,
           }}
@@ -76,11 +79,15 @@ function Project(props) {
             interval={4000}
             infiniteLoop={true}
           >
-            {props.images.map((image) => (
-              <div>
-                <img alt="" src={image} />
-              </div>
-            ))}
+            {props.images.map((image) => {
+              const path = image.split("/");
+              const name = path[path.length - 1].split(".")[0];
+              return (
+                <button onClick={() => props.openModal(image, name)} key={name}>
+                  <img alt={name} src={image} />
+                </button>
+              );
+            })}
           </Carousel>
         </Grid>
       )}
