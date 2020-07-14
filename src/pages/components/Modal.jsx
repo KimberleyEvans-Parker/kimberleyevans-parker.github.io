@@ -1,22 +1,16 @@
-// import React from "react";
 import React, { useState } from "react";
 
 function Modal(props) {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <img
-        src={props.image}
-        alt="Snow"
-        className="clickable"
-        style={{
-          width: "100%",
-          maxWidth: "400px",
-          // height: "200px",
-          zIndex: "200",
-        }}
-        onClick={() => setOpen(!open)}
-      />
+      <button>
+        <img
+          src={props.image}
+          alt={props.caption}
+          onClick={() => setOpen(!open)}
+        />
+      </button>
 
       {open && (
         <>
@@ -24,7 +18,7 @@ function Modal(props) {
             <span class="close" onClick={() => setOpen(!open)}>
               &times;
             </span>
-            <img alt="" src={props.image} className="modal-content" />
+            <img alt={props.caption} src={props.image} className="modal-content" />
             {props.caption && (
               <div className="caption">
                 <h2>{props.caption}</h2>
