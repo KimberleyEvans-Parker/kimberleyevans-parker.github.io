@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import AshasQuest1 from "../assets/AshasQuest1.jpg";
-import AshasQuest2 from "../assets/AshasQuest2.jpg";
-import Doto1 from "../assets/Doto1.gif";
-import Doto2 from "../assets/Doto2.gif";
+import AshasQuest1 from "../assets/Asha's Quest logo.jpg";
+import AshasQuest2 from "../assets/Asha's Quest title screen.jpg";
+import Doto1 from "../assets/Doto marketplace.gif";
+import Doto2 from "../assets/Doto toggle tasks.gif";
 // import RollForReaction from "../assets/Roll for Reaction.mp4";
 
 import Project from "./components/Project";
