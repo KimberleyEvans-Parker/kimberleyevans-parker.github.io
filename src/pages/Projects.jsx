@@ -10,10 +10,10 @@ import Project from "./components/Project";
 
 function Projects() {
   const [image, setImage] = useState(null);
-  const [caption, setCaption] = useState("")
+  const [caption, setCaption] = useState("");
 
   const openModal = (image, caption) => {
-    console.log("open modal", image, caption)
+    console.log("open modal", image, caption);
     setImage(image);
     setCaption(caption);
   };
@@ -94,7 +94,7 @@ function Projects() {
           It also utilises NaCl, json, jinja 2, HTML5 and CSS, JavaScript and cryptography. 
           This could authorize and report login from a login server to a main server run by the lecturer, and see how many web clients are online. 
           It could also send messages privately and in group chats while sending public 'tweets' out to all viewers, and block keywords and people from showing up. "
-          openModal={openModal}
+        openModal={openModal}
         animationDelay="1.6s"
       />
       <Project

@@ -81,8 +81,9 @@ function Project(props) {
               const name = path[path.length - 1].split(".")[0];
               return (
                 <button onClick={() => props.openModal(image, name)} key={name}>
-                  <img alt={name} src={image}/>
-                </button>);
+                  <img alt={name} src={image} />
+                </button>
+              );
             })}
           </Carousel>
         </Grid>
