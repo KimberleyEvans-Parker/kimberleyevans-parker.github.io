@@ -1,13 +1,10 @@
-// import React from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
-import React, { useState } from "react";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Modal from "./Modal";
 
 function Project(props) {
-  const [open, setOpen] = useState(false);
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
