@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.29151749.chunk.css",
-    "main.js": "/static/js/main.908b79ec.chunk.js",
-    "main.js.map": "/static/js/main.908b79ec.chunk.js.map",
+    "main.css": "/static/css/main.af063b5a.chunk.css",
+    "main.js": "/static/js/main.0a0ba4d7.chunk.js",
+    "main.js.map": "/static/js/main.0a0ba4d7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5cc14cde.js",
     "runtime-main.js.map": "/static/js/runtime-main.5cc14cde.js.map",
     "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
-    "static/js/2.a459a7e5.chunk.js": "/static/js/2.a459a7e5.chunk.js",
-    "static/js/2.a459a7e5.chunk.js.map": "/static/js/2.a459a7e5.chunk.js.map",
+    "static/js/2.6c735ab2.chunk.js": "/static/js/2.6c735ab2.chunk.js",
+    "static/js/2.6c735ab2.chunk.js.map": "/static/js/2.6c735ab2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.46b8e25bc54958c6c869b7eefea8018e.js": "/precache-manifest.46b8e25bc54958c6c869b7eefea8018e.js",
+    "precache-manifest.947638563ef2b33a980a765b74566484.js": "/precache-manifest.947638563ef2b33a980a765b74566484.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
-    "static/css/main.29151749.chunk.css.map": "/static/css/main.29151749.chunk.css.map",
-    "static/js/2.a459a7e5.chunk.js.LICENSE.txt": "/static/js/2.a459a7e5.chunk.js.LICENSE.txt",
-    "static/media/AshasQuest1.jpg": "/static/media/AshasQuest1.2d95b2a3.jpg",
-    "static/media/AshasQuest2.jpg": "/static/media/AshasQuest2.c0e1f297.jpg",
-    "static/media/Doto1.gif": "/static/media/Doto1.91d3011d.gif",
-    "static/media/Doto2.gif": "/static/media/Doto2.e93a9c26.gif",
+    "static/css/main.af063b5a.chunk.css.map": "/static/css/main.af063b5a.chunk.css.map",
+    "static/js/2.6c735ab2.chunk.js.LICENSE.txt": "/static/js/2.6c735ab2.chunk.js.LICENSE.txt",
+    "static/media/Asha's Quest logo.jpg": "/static/media/Asha's Quest logo.2d95b2a3.jpg",
+    "static/media/Asha's Quest title screen.jpg": "/static/media/Asha's Quest title screen.c0e1f297.jpg",
+    "static/media/Doto marketplace.gif": "/static/media/Doto marketplace.91d3011d.gif",
+    "static/media/Doto toggle tasks.gif": "/static/media/Doto toggle tasks.e93a9c26.gif",
     "static/media/Flik 1.gif": "/static/media/Flik 1.1fed0e6b.gif",
     "static/media/Flik 2.gif": "/static/media/Flik 2.d9ad6565.gif",
     "static/media/Flik 3.jpg": "/static/media/Flik 3.2a776416.jpg",
@@ -30,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.5cc14cde.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.a459a7e5.chunk.js",
-    "static/css/main.29151749.chunk.css",
-    "static/js/main.908b79ec.chunk.js"
+    "static/js/2.6c735ab2.chunk.js",
+    "static/css/main.af063b5a.chunk.css",
+    "static/js/main.0a0ba4d7.chunk.js"
   ]
 }
