@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+import Upskill1 from "../assets/projects/Upskill/Home Page.gif";
+import Upskill2 from "../assets/projects/Upskill/Instructors.gif";
+import Upskill3 from "../assets/projects/Upskill/Instructor Profile.gif";
+import Upskill4 from "../assets/projects/Upskill/Classes and Booking.gif";
+import Upskill5 from "../assets/projects/Upskill/Rewards.gif";
+import Upskill6 from "../assets/projects/Upskill/Company Challenges.gif";
 import AshasQuest1 from "../assets/projects/Asha's Quest/Logo.jpg";
 import AshasQuest2 from "../assets/projects/Asha's Quest/Title Screen.jpg";
 import Doto1 from "../assets/projects/Doto/Marketplace.gif";
@@ -42,6 +48,20 @@ function Projects() {
         </>
       )}
       <Project
+        imgOnLeft={true}
+        heading="Upskill"
+        subheading="Platform to connect and upskill"
+        dates="July 2020"
+        description="Upskill was made during the DEVS 2020 hackathon, in only 48 hours.
+          It is a a platform for live learning and teaching, whilst you connect and network with like-minded locals.  
+          The platform also serves as a place for companies to post challenges and recruit bright minds.
+          Upskill aims to help those impacted by Covid 19, by allowing them to upskill and find new job opportunities.  "
+        link="https://github.com/Pyxxil/upskill"
+        images={[Upskill1, Upskill2, Upskill3, Upskill4, Upskill5, Upskill6]}
+        openModal={openModal}
+        animationDelay="0s"
+      />
+      <Project
         imgOnLeft={false}
         heading="Roll for Reaction"
         subheading="Turn-Based Dungeon Crawler RPG"
@@ -52,7 +72,7 @@ function Projects() {
         link="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[RollForReaction1, RollForReaction2, RollForReaction3]}
         openModal={openModal}
-        animationDelay="0s"
+        animationDelay="0.4s"
       />
       <Project
         imgOnLeft={true}
@@ -67,7 +87,7 @@ function Projects() {
         link="https://github.com/se701g2/Doto"
         images={[Doto1, Doto2]}
         openModal={openModal}
-        animationDelay="0.4s"
+        animationDelay="0.8s"
       />
       <Project
         imgOnLeft={false}
@@ -79,7 +99,7 @@ function Projects() {
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
         link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
         openModal={openModal}
-        animationDelay="0.8s"
+        animationDelay="1.2"
       />
       <Project
         imgOnLeft={true}
@@ -90,7 +110,7 @@ function Projects() {
         link="https://github.com/Matteas-Eden/flik"
         images={[Flik1, Flik2, Flik3]}
         openModal={openModal}
-        animationDelay="1.2s"
+        animationDelay="1.6s"
       />
       <Project
         imgOnLeft={false}
@@ -102,7 +122,7 @@ function Projects() {
           This could authorize and report login from a login server to a main server run by the lecturer, and see how many web clients are online. 
           It could also send messages privately and in group chats while sending public 'tweets' out to all viewers, and block keywords and people from showing up. "
         openModal={openModal}
-        animationDelay="1.6s"
+        animationDelay="2s"
       />
       <Project
         imgOnLeft={true}
@@ -114,7 +134,7 @@ function Projects() {
           This was done by 6 people using JavaScript, HTML and CSS. Won Best Presentation in the AUCS, KPMG hackathon."
         link="https://github.com/KimberleyEvans-Parker/Eventigate"
         openModal={openModal}
-        animationDelay="2s"
+        animationDelay="2.4s"
       />
       <Project
         imgOnLeft={true}
@@ -125,7 +145,7 @@ function Projects() {
           This was designed to be run on an Altera DE0 Board, equipped with an Altera Cyclone III 3C16 FPGA. 
           Understanding of the FPGA hardware, VHDL and Git were developed."
         openModal={openModal}
-        animationDelay="2.4s"
+        animationDelay="2.8s"
       />
       <Project
         imgOnLeft={false}
@@ -139,7 +159,7 @@ function Projects() {
         link="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[AshasQuest1, AshasQuest2]}
         openModal={openModal}
-        animationDelay="2.8s"
+        animationDelay="3.2s"
       />
       <Project
         imgOnLeft={true}
@@ -150,7 +170,7 @@ function Projects() {
           Receiver was a CPLD, transmitter was an ATMEGA328PB microcontroller on a self- designed PCB. 
           Breadboarding, LTSpice simulations and Oscilloscopes were used for testing."
         openModal={openModal}
-        animationDelay="3.2s"
+        animationDelay="3.6s"
       />
     </div>
   );
