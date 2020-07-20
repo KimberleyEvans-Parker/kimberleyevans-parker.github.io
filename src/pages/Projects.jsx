@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
-import AshasQuest1 from "../assets/Asha's Quest logo.jpg";
-import AshasQuest2 from "../assets/Asha's Quest title screen.jpg";
-import Doto1 from "../assets/Doto marketplace.gif";
-import Doto2 from "../assets/Doto toggle tasks.gif";
-import RollForReaction1 from "../assets/Roll for Reaction 1.gif";
-import RollForReaction2 from "../assets/Roll for Reaction 2.gif";
-import RollForReaction3 from "../assets/Roll for Reaction logo.jpg";
-import Flik1 from "../assets/Flik 1.gif";
-import Flik2 from "../assets/Flik 2.gif";
-import Flik3 from "../assets/Flik 3.jpg";
+import AshasQuest1 from "../assets/projects/Asha's Quest/Logo.jpg";
+import AshasQuest2 from "../assets/projects/Asha's Quest/Title Screen.jpg";
+import Doto1 from "../assets/projects/Doto/Marketplace.gif";
+import Doto2 from "../assets/projects/Doto/Toggle Tasks.gif";
+import RollForReaction1 from "../assets/projects/Roll for Reaction/Logo.jpg";
+import RollForReaction2 from "../assets/projects/Roll for Reaction/Playthrough.gif";
+import RollForReaction3 from "../assets/projects/Roll for Reaction/Features.gif";
+import Flik1 from "../assets/projects/Flik/Traversing the map.gif";
+import Flik2 from "../assets/projects/Flik/Line following.gif";
+import Flik3 from "../assets/projects/Flik/PCB.jpg";
 
 import Project from "./components/Project";
 
