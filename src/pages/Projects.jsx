@@ -53,7 +53,7 @@ function Projects() {
         subheading="Platform to connect and upskill"
         dates="July 2020"
         description="Upskill was made during the DEVS 2020 hackathon, in only 48 hours.
-          It is a a platform for live learning and teaching, whilst you connect and network with like-minded locals.  
+          It is a a platform for live learning and teaching, where you connect and network with like-minded locals.  
           The platform also serves as a place for companies to post challenges and recruit bright minds.
           Upskill aims to help those impacted by Covid 19, by allowing them to upskill and find new job opportunities.  "
         link="https://github.com/Pyxxil/upskill"
