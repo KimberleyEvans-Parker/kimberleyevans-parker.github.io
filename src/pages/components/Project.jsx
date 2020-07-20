@@ -78,7 +78,8 @@ function Project(props) {
           >
             {props.images.map((image) => {
               const path = image.split("/");
-              const name = path[path.length - 1].split(".")[0];
+              const name =
+                props.heading + " - " + path[path.length - 1].split(".")[0];
               return (
                 <button onClick={() => props.openModal(image, name)} key={name}>
                   <img alt={name} src={image} />
