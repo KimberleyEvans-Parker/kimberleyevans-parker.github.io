@@ -9,24 +9,55 @@
 
 body {
   margin: 0;
+  line-height: 1.5;
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #66d9ff;
   height: 100vh;
   background-image: linear-gradient(#0099cc, #99e6ff);
   background-attachment: fixed;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
 }
 
 p {
+  margin-top: 0;
   overflow: auto;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 a {
   color: black;
+  text-decoration: none;
 }
 a:hover {
   color: rgb(66, 66, 66);
@@ -49,10 +80,12 @@ button:hover {
   padding-top: 30vh;
 }
 .home-containter h1 {
+  text-decoration: none;
+  font-weight: normal;
   font-size: max(42px, 15vh);
 }
 
-.navigation {
+nav {
   position: fixed;
   width: 100vw;
   z-index: 10;
@@ -61,7 +94,7 @@ button:hover {
   color: grey;
 }
 
-.navigation ul {
+nav ul {
   color: grey;
   margin: 0;
   border: 0;
@@ -70,7 +103,7 @@ button:hover {
 }
 
 /* Style the links inside the navigation bar */
-.navigation ul li {
+nav ul li {
   float: left;
   color: grey;
   text-align: center;
@@ -82,13 +115,13 @@ button:hover {
 }
 
 /* Change the color of links on hover */
-.navigation ul li:hover {
+nav ul li:hover {
   background-color: #ddd;
   color: black;
 }
 
 /* Add a color to the active/current link */
-.navigation ul li.active {
+nav ul li.active {
   background-color: #4caf50;
   color: white;
 }
@@ -97,7 +130,7 @@ button:hover {
   float: left;
 }
 
-.navigation li a i {
+nav li a i {
   color: grey;
   /* font-size: 18px; */
   /* padding: 10px; */
