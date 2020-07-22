@@ -139,7 +139,7 @@ nav ul li.active {
   color: white;
 }
 
-nav li a {
+nav ul a {
   color: grey;
 }
 
@@ -152,6 +152,7 @@ nav li a {
 
 .navbar-rightside {
   float: right;
+  cursor: pointer;
 }
 
 .dropdown-open {
@@ -162,7 +163,6 @@ nav li a {
 
 .menu-icon {
   display: inline-block;
-  cursor: pointer;
 }
 
 .bar1,
