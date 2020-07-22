@@ -1,64 +1,115 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 function Navigation(props) {
+  const [dropdownOpen, setdropdownOpen] = useState(false);
+
+  /* Keeps track of the window dimensions.  Updates when window resizes */
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  React.useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+      if (dimensions.width >= 600) {
+        setdropdownOpen(false);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    return (_) => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            Kimberley Evans-Parker
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarResponsive">
-            <ul className="navbar-nav ml-auto">
-              <li
-                className={`nav-item  ${
-                  props.location.pathname === "/about" ? "active" : ""
-                }`}
+      <nav>
+        {/* <nav className="navbar navbar-expand-sm navbar-dark bg-dark"> */}
+        <div className="navbar-container">
+          <ul>
+            <Link to="/" onClick={() => setdropdownOpen(false)}>
+              <li>
+                {/* <li className={dropdownOpen && "dropdown-open"}> */}
+                Kimberley Evans-Parker
+              </li>
+            </Link>
+            {dimensions.width < 600 && (
+              <div
+                className={`navbar-rightside`}
+                onClick={() => setdropdownOpen(!dropdownOpen)}
               >
-                <Link className="nav-link" to="/about">
-                  About
+                <li style={{ height: "100%", paddingBottom: "10.5px" }}>
+                  <div class={`${dropdownOpen && "change"} menu-icon`}>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                </li>
+              </div>
+            )}
+          </ul>
+          {(dropdownOpen || dimensions.width >= 600) && (
+            <div
+              className={`navbar-rightside ${dropdownOpen && "dropdown-open"}`}
+            >
+              <ul>
+                <Link
+                  className="nav-link"
+                  to="/about"
+                  onClick={() => setdropdownOpen(false)}
+                >
+                  <li
+                    className={`${dropdownOpen && "dropdown-open"} ${
+                      props.location.pathname === "/about" ? "active" : ""
+                    }`}
+                  >
+                    About
+                  </li>
                 </Link>
-              </li>
-              <li
-                className={`nav-item  ${
-                  props.location.pathname === "/projects" ? "active" : ""
-                }`}
-              >
-                <Link className="nav-link" to="/projects">
-                  Projects
+                <Link
+                  className="nav-link"
+                  to="/projects"
+                  onClick={() => setdropdownOpen(false)}
+                >
+                  <li
+                    className={`${dropdownOpen && "dropdown-open"} ${
+                      props.location.pathname === "/projects" ? "active" : ""
+                    }`}
+                  >
+                    Projects
+                  </li>
                 </Link>
-              </li>
-              <li className={`nav-item`}>
-                <a href="https://github.com/KimberleyEvans-Parker">
-                  <i
-                    className="fa fa-github"
-                    aria-hidden="true"
-                    style={{
-                      fontSize: "24px",
-                      margin: "6px",
-                    }}
-                  ></i>
+                <a
+                  href="https://github.com/KimberleyEvans-Parker"
+                  onClick={() => setdropdownOpen(false)}
+                >
+                  <li className={dropdownOpen && "dropdown-open"}>
+                    <i
+                      className="fa fa-github"
+                      aria-hidden="true"
+                      // style={{
+                      //   fontSize: "24px",
+                      //   margin: "6px",
+                      // }}
+                    ></i>
+                  </li>
                 </a>
-              </li>
-              <li className={`nav-item`}>
-                <a href="https://www.linkedin.com/in/kimberley-evans-parker/">
-                  <i className="fa fa-linkedin" aria-hidden="true"></i>
+                <a
+                  href="https://www.linkedin.com/in/kimberley-evans-parker/"
+                  onClick={() => setdropdownOpen(false)}
+                >
+                  <li className={dropdownOpen && "dropdown-open"}>
+                    <i className="fa fa-linkedin" aria-hidden="true"></i>
+                  </li>
                 </a>
-              </li>
-            </ul>
-          </div>
+              </ul>
+            </div>
+          )}
         </div>
       </nav>
     </div>
