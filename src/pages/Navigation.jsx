@@ -29,14 +29,10 @@ function Navigation(props) {
   return (
     <div className="navigation">
       <nav>
-        {/* <nav className="navbar navbar-expand-sm navbar-dark bg-dark"> */}
         <div className="navbar-container">
           <ul>
             <Link to="/" onClick={() => setdropdownOpen(false)}>
-              <li>
-                {/* <li className={dropdownOpen && "dropdown-open"}> */}
-                Kimberley Evans-Parker
-              </li>
+              <li>Kimberley Evans-Parker</li>
             </Link>
             {dimensions.width < 600 && (
               <div
@@ -89,14 +85,7 @@ function Navigation(props) {
                   onClick={() => setdropdownOpen(false)}
                 >
                   <li className={dropdownOpen && "dropdown-open"}>
-                    <i
-                      className="fa fa-github"
-                      aria-hidden="true"
-                      // style={{
-                      //   fontSize: "24px",
-                      //   margin: "6px",
-                      // }}
-                    ></i>
+                    <i className="fa fa-github" aria-hidden="true"></i>
                   </li>
                 </a>
                 <a
