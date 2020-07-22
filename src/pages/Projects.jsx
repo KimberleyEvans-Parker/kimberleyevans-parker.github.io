@@ -25,7 +25,7 @@ function Projects() {
 
   return (
     <div className="content-container">
-      <h1 className="font-weight-light">Projects</h1>
+      <h1>Projects</h1>
       {image && (
         <>
           <div className="modal-background">
