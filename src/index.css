@@ -80,32 +80,31 @@ button:hover {
   padding-top: 30vh;
 }
 .home-containter h1 {
-  text-decoration: none;
-  font-weight: normal;
   font-size: max(42px, 15vh);
 }
 
 nav {
   position: fixed;
+  /* display: block; */
   width: 100vw;
   z-index: 10;
   background-color: #333;
   overflow: hidden;
-  color: grey;
+  /* padding: 0 100px; */
 }
 
 nav ul {
-  color: grey;
   margin: 0;
   border: 0;
   padding: 0;
   list-style-type: none;
+  /* float: right; */
+  /* position: relative; */
 }
 
 /* Style the links inside the navigation bar */
 nav ul li {
   float: left;
-  color: grey;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -122,7 +121,7 @@ nav ul li:hover {
 
 /* Add a color to the active/current link */
 nav ul li.active {
-  background-color: #4caf50;
+  background-color: #00131a;
   color: white;
 }
 
@@ -130,10 +129,17 @@ nav ul li.active {
   float: left;
 }
 
-nav li a i {
+nav li a {
   color: grey;
   /* font-size: 18px; */
   /* padding: 10px; */
+}
+
+.container {
+  width: 1000px;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content-container {
