@@ -10,6 +10,9 @@ import AshasQuest1 from "../assets/projects/Asha's Quest/Logo.jpg";
 import AshasQuest2 from "../assets/projects/Asha's Quest/Title Screen.jpg";
 import Doto1 from "../assets/projects/Doto/Marketplace.gif";
 import Doto2 from "../assets/projects/Doto/Toggle Tasks.gif";
+import Feedr1 from "../assets/projects/Feedr/Landing Page.png";
+import Feedr2 from "../assets/projects/Feedr/Home Page.png";
+import Feedr3 from "../assets/projects/Feedr/Integration Center.png";
 import RollForReaction1 from "../assets/projects/Roll for Reaction/Logo.jpg";
 import RollForReaction2 from "../assets/projects/Roll for Reaction/Playthrough.gif";
 import RollForReaction3 from "../assets/projects/Roll for Reaction/Features.gif";
@@ -98,6 +101,7 @@ function Projects() {
           We are using the React framework to manage the front-end UI and using a Java server utilising the Spring framework for the back-end. 
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
         link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
+        images={[Feedr1, Feedr2, Feedr3]}
         openModal={openModal}
         animationDelay="1.2"
       />
