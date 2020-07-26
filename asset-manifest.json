@@ -1,25 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.054c4ddd.chunk.css",
-    "main.js": "/static/js/main.40db7923.chunk.js",
-    "main.js.map": "/static/js/main.40db7923.chunk.js.map",
+    "main.js": "/static/js/main.f68ae9bd.chunk.js",
+    "main.js.map": "/static/js/main.f68ae9bd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5cc14cde.js",
     "runtime-main.js.map": "/static/js/runtime-main.5cc14cde.js.map",
     "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
-    "static/js/2.79640c67.chunk.js": "/static/js/2.79640c67.chunk.js",
-    "static/js/2.79640c67.chunk.js.map": "/static/js/2.79640c67.chunk.js.map",
+    "static/js/2.35779ef8.chunk.js": "/static/js/2.35779ef8.chunk.js",
+    "static/js/2.35779ef8.chunk.js.map": "/static/js/2.35779ef8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3242828efe7514a316c1bfa0c956658d.js": "/precache-manifest.3242828efe7514a316c1bfa0c956658d.js",
+    "precache-manifest.94551b1ad450ca365362500a5d3e3611.js": "/precache-manifest.94551b1ad450ca365362500a5d3e3611.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
     "static/css/main.054c4ddd.chunk.css.map": "/static/css/main.054c4ddd.chunk.css.map",
-    "static/js/2.79640c67.chunk.js.LICENSE.txt": "/static/js/2.79640c67.chunk.js.LICENSE.txt",
+    "static/js/2.35779ef8.chunk.js.LICENSE.txt": "/static/js/2.35779ef8.chunk.js.LICENSE.txt",
     "static/media/Classes and Booking.gif": "/static/media/Classes and Booking.6d1a9f85.gif",
     "static/media/Company Challenges.gif": "/static/media/Company Challenges.6b4e2a5a.gif",
     "static/media/Features.gif": "/static/media/Features.ee8de395.gif",
     "static/media/Home Page.gif": "/static/media/Home Page.95c209a1.gif",
+    "static/media/Home Page.png": "/static/media/Home Page.ac47cba0.png",
     "static/media/Instructor Profile.gif": "/static/media/Instructor Profile.4d36a264.gif",
     "static/media/Instructors.gif": "/static/media/Instructors.5cbf4907.gif",
+    "static/media/Integration Center.png": "/static/media/Integration Center.37e74037.png",
+    "static/media/Landing Page.png": "/static/media/Landing Page.3a2dd0e3.png",
     "static/media/Line following.gif": "/static/media/Line following.1fed0e6b.gif",
     "static/media/Logo.jpg": "/static/media/Logo.d3eccc59.jpg",
     "static/media/Marketplace.gif": "/static/media/Marketplace.91d3011d.gif",
@@ -35,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.5cc14cde.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.79640c67.chunk.js",
+    "static/js/2.35779ef8.chunk.js",
     "static/css/main.054c4ddd.chunk.css",
-    "static/js/main.40db7923.chunk.js"
+    "static/js/main.f68ae9bd.chunk.js"
   ]
 }
