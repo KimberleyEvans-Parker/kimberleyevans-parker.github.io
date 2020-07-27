@@ -80,6 +80,19 @@ function Navigation(props) {
                     Projects
                   </li>
                 </Link>
+                <Link
+                  className="nav-link"
+                  to="/awards"
+                  onClick={() => setdropdownOpen(false)}
+                >
+                  <li
+                    className={`${dropdownOpen && "dropdown-open"} ${
+                      props.location.pathname === "/awards" ? "active" : ""
+                    }`}
+                  >
+                    Awards
+                  </li>
+                </Link>
                 <a
                   href="https://github.com/KimberleyEvans-Parker"
                   onClick={() => setdropdownOpen(false)}

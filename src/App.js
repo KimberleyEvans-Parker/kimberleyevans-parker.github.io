@@ -4,6 +4,7 @@ import Navigation from "./pages/Navigation";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Awards from "./pages/Awards";
 import Error404 from "./pages/404";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
         <Route path="/projects" exact component={Projects} />
+        <Route path="/awards" exact component={Awards} />
         <Route component={Error404} />
       </Switch>
     </Router>
