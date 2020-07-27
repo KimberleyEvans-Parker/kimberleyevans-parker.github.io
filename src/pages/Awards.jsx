@@ -1,28 +1,10 @@
 import React, { useState } from "react";
 
-import Upskill1 from "../assets/projects/Upskill/Home Page.gif";
-import Upskill2 from "../assets/projects/Upskill/Instructors.gif";
-import Upskill3 from "../assets/projects/Upskill/Instructor Profile.gif";
-import Upskill4 from "../assets/projects/Upskill/Classes and Booking.gif";
-import Upskill5 from "../assets/projects/Upskill/Rewards.gif";
-import Upskill6 from "../assets/projects/Upskill/Company Challenges.gif";
-import AshasQuest1 from "../assets/projects/Asha's Quest/Logo.jpg";
-import AshasQuest2 from "../assets/projects/Asha's Quest/Title Screen.jpg";
-import Doto1 from "../assets/projects/Doto/Marketplace.gif";
-import Doto2 from "../assets/projects/Doto/Toggle Tasks.gif";
-import Feedr1 from "../assets/projects/Feedr/Landing Page.png";
-import Feedr2 from "../assets/projects/Feedr/Home Page.png";
-import Feedr3 from "../assets/projects/Feedr/Integration Center.png";
-import RollForReaction1 from "../assets/projects/Roll for Reaction/Logo.jpg";
-import RollForReaction2 from "../assets/projects/Roll for Reaction/Playthrough.gif";
-import RollForReaction3 from "../assets/projects/Roll for Reaction/Features.gif";
-import Flik1 from "../assets/projects/Flik/Traversing the map.gif";
-import Flik2 from "../assets/projects/Flik/Line following.gif";
-import Flik3 from "../assets/projects/Flik/PCB.jpg";
+import Krayon1 from "../assets/awards/Team Krayon.jpg";
 
 import Project from "./components/Project";
 
-function Projects() {
+function Awards() {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
 
@@ -34,7 +16,7 @@ function Projects() {
 
   return (
     <div className="content-container">
-      <h1>Projects</h1>
+      <h1>Awards and Achievments</h1>
       {image && (
         <>
           <div className="modal-background">
@@ -52,15 +34,16 @@ function Projects() {
       )}
       <Project
         imgOnLeft={true}
-        heading="Upskill"
-        subheading="Platform to connect and upskill"
+        heading="2020 DEVS Hackathon"
+        subheading="1st place"
         dates="July 2020"
-        description="Upskill was made during the DEVS 2020 hackathon, in only 48 hours.
-          It is a a platform for live learning and teaching, where you connect and network with like-minded locals.  
-          The platform also serves as a place for companies to post challenges and recruit bright minds.
-          Upskill aims to help those impacted by Covid 19, by allowing them to upskill and find new job opportunities.  "
-        link="https://github.com/Pyxxil/upskill"
-        images={[Upskill1, Upskill2, Upskill3, Upskill4, Upskill5, Upskill6]}
+        description="My team of 6 participated in the DEVS 48 hour Hackathon, making a demo platform; Upskill.  
+          We took out market research to validate our idea and performed financial analysis.  
+          In the end, my team was awarded 1st place!  
+          We gained a huge amount of experience, and learnt a lot.  
+          You can also see the project Upskill on my projects page."
+        link=""
+        images={[Krayon1]}
         openModal={openModal}
         animationDelay="0s"
       />
@@ -73,7 +56,7 @@ function Projects() {
           It is an open-source fork of react-rpg and builds upon and enhances the base game. 
           This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
-        images={[RollForReaction1, RollForReaction2, RollForReaction3]}
+        images={[]}
         openModal={openModal}
         animationDelay="0.4s"
       />
@@ -88,7 +71,7 @@ function Projects() {
           Doto uses Google to sign up, meaning that to use this app, the user must have a google account. 
           The development of Doto is done using the M.E.R.N (MongoDB, Express, React, Node) tech stack."
         link="https://github.com/se701g2/Doto"
-        images={[Doto1, Doto2]}
+        images={[]}
         openModal={openModal}
         animationDelay="0.8s"
       />
@@ -101,7 +84,7 @@ function Projects() {
           We are using the React framework to manage the front-end UI and using a Java server utilising the Spring framework for the back-end. 
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
         link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
-        images={[Feedr1, Feedr2, Feedr3]}
+        images={[]}
         openModal={openModal}
         animationDelay="1.2"
       />
@@ -112,7 +95,7 @@ function Projects() {
         dates="July 2019 - Oct 2019"
         description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC, PSoC and shortest path algorithms written in C."
         link="https://github.com/Matteas-Eden/flik"
-        images={[Flik1, Flik2, Flik3]}
+        images={[]}
         openModal={openModal}
         animationDelay="1.6s"
       />
@@ -161,7 +144,7 @@ function Projects() {
           Details of the project are available on the GitHub repository it was cloned to, shown through a GitHub Wiki. 
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
         link="https://github.com/Matteas-Eden/roll-for-reaction"
-        images={[AshasQuest1, AshasQuest2]}
+        images={[]}
         openModal={openModal}
         animationDelay="3.2s"
       />
@@ -180,4 +163,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Awards;
