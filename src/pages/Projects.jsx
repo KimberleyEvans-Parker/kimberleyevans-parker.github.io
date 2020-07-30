@@ -20,7 +20,7 @@ import Flik1 from "../assets/projects/Flik/Traversing the map.gif";
 import Flik2 from "../assets/projects/Flik/Line following.gif";
 import Flik3 from "../assets/projects/Flik/PCB.jpg";
 
-import Project from "./components/Project";
+import ContentItem from "./components/ContentItem";
 
 function Projects() {
   const [image, setImage] = useState(null);
@@ -50,7 +50,7 @@ function Projects() {
           </div>
         </>
       )}
-      <Project
+      <ContentItem
         imgOnLeft={true}
         heading="Upskill"
         subheading="Platform to connect and upskill"
@@ -64,7 +64,7 @@ function Projects() {
         openModal={openModal}
         animationDelay="0s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={false}
         heading="Roll for Reaction"
         subheading="Turn-Based Dungeon Crawler RPG"
@@ -77,7 +77,7 @@ function Projects() {
         openModal={openModal}
         animationDelay="0.4s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={true}
         heading="Doto"
         subheading="Calendar and To-Do App"
@@ -92,7 +92,7 @@ function Projects() {
         openModal={openModal}
         animationDelay="0.8s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={false}
         heading="Feedr"
         subheading="Media Feed Aggregator"
@@ -105,7 +105,7 @@ function Projects() {
         openModal={openModal}
         animationDelay="1.2"
       />
-      <Project
+      <ContentItem
         imgOnLeft={true}
         heading="Flik"
         subheading="Line Following Robot"
@@ -116,7 +116,7 @@ function Projects() {
         openModal={openModal}
         animationDelay="1.6s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={false}
         heading="Midnight's Messages"
         subheading="CherryPy Social Network"
@@ -128,7 +128,7 @@ function Projects() {
         openModal={openModal}
         animationDelay="2s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={true}
         heading="Eventigate"
         subheading="Project During KPMG Hackathon"
@@ -140,7 +140,7 @@ function Projects() {
         openModal={openModal}
         animationDelay="2.4s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={true}
         heading="Flappy Bird"
         subheading="FPGA VHDL Side Scroller Game"
@@ -151,7 +151,7 @@ function Projects() {
         openModal={openModal}
         animationDelay="2.8s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={false}
         heading="Asha's Quest"
         subheading="Java Dungeon Crawler"
@@ -165,7 +165,7 @@ function Projects() {
         openModal={openModal}
         animationDelay="3.2s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={true}
         heading="Wireless Energy Monitor"
         dates="Aug 2018 – Nov 2018"
