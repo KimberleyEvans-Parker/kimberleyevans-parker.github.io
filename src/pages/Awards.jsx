@@ -42,7 +42,6 @@ function Awards() {
           In the end, my team was awarded 1st place!  
           We gained a huge amount of experience, and learnt a lot.  
           You can also see the project Upskill on my projects page."
-        // link=""
         images={[Krayon1]}
         openModal={openModal}
         animationDelay="0s"
@@ -55,8 +54,6 @@ function Awards() {
         description="My team of 6 was awarded best presentation during the 2019 AUCS Hackathon.
           Our presentation included our project; Eventigate.  
           A platform for connecting event organisers, locations and people, which you can find out more about on my projects page."
-        // link=""
-        images={[]}
         openModal={openModal}
         animationDelay="0.4s"
       />
@@ -68,8 +65,6 @@ function Awards() {
         description="We worked in a team of three to solve problems of a range of difficulties in Python, C or Java.  
           100-point questions, in particular, were designed to be extremly difficult, but my team and I managed to work together to complete the problem.  
           As a result of our hard work, team effor and problem solving skills, our team ranked 2nd in Auckland and 3rd in New Zealand"
-        // link=""
-        images={[]}
         openModal={openModal}
         animationDelay="0.8s"
       />
@@ -78,9 +73,8 @@ function Awards() {
         heading="Alice Programming Competition"
         subheading="2nd place"
         dates="April 2016"
-        description="My partner and I received 2nd place for a competition in the language Alice."
-        link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
-        images={[]}
+        description="My partner and I received 2nd place for a competition in the Alice programming environment.
+          During this, we were able to create 3D animations to fit a desired script, within a given time frame."
         openModal={openModal}
         animationDelay="1.2"
       />
