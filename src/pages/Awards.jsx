@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Krayon1 from "../assets/awards/Team Krayon.jpg";
 
-import Project from "./components/Project";
+import ContentItem from "./components/ContentItem";
 
 function Awards() {
   const [image, setImage] = useState(null);
@@ -32,7 +32,7 @@ function Awards() {
           </div>
         </>
       )}
-      <Project
+      <ContentItem
         imgOnLeft={true}
         heading="2020 DEVS Hackathon"
         subheading="1st place"
@@ -46,7 +46,7 @@ function Awards() {
         openModal={openModal}
         animationDelay="0s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={false}
         heading="AUCS Hackathon"
         subheading="Best Presentation"
@@ -57,7 +57,7 @@ function Awards() {
         openModal={openModal}
         animationDelay="0.4s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={true}
         heading="New Zealand Programming Competition"
         subheading="3rd in New Zealand"
@@ -68,7 +68,7 @@ function Awards() {
         openModal={openModal}
         animationDelay="0.8s"
       />
-      <Project
+      <ContentItem
         imgOnLeft={false}
         heading="Alice Programming Competition"
         subheading="2nd place"

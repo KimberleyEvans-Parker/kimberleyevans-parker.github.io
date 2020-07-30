@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-function Project(props) {
+function ContentItem(props) {
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -113,4 +113,4 @@ function Project(props) {
   );
 }
 
-export default Project;
+export default ContentItem;
