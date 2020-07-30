@@ -34,7 +34,7 @@ function Navigation(props) {
             <Link to="/" onClick={() => setdropdownOpen(false)}>
               <li>Kimberley Evans-Parker</li>
             </Link>
-            {dimensions.width < 600 && (
+            {dimensions.width < 650 && (
               <div
                 className={`navbar-rightside`}
                 onClick={() => setdropdownOpen(!dropdownOpen)}
@@ -49,7 +49,7 @@ function Navigation(props) {
               </div>
             )}
           </ul>
-          {(dropdownOpen || dimensions.width >= 600) && (
+          {(dropdownOpen || dimensions.width >= 650) && (
             <div
               className={`navbar-rightside ${dropdownOpen && "dropdown-open"}`}
             >
