@@ -4,6 +4,12 @@ import Grid from "@material-ui/core/Grid";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import {
+  SMALL_SCREEN,
+  CAROUSEL_TRANSITION_TIME,
+  CAROUSEL_INTERVAL,
+} from "../../Constants";
+
 function ContentItem(props) {
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
@@ -26,12 +32,14 @@ function ContentItem(props) {
 
   return (
     <Grid container spacing={3}>
-      {(!props.imgOnLeft || dimensions.width < 600) && (
+      {(!props.imgOnLeft || dimensions.width < SMALL_SCREEN) && (
         <Grid
           item
           xs
           className={
-            props.images && dimensions.width >= 600 ? "fade right" : "fade left"
+            props.images && dimensions.width >= SMALL_SCREEN
+              ? "fade right"
+              : "fade left"
           }
           style={{
             webkitAnimationDelay: props.animationDelay,
@@ -55,7 +63,7 @@ function ContentItem(props) {
           sm={6}
           md={4}
           className={
-            props.imgOnLeft && dimensions.width >= 600
+            props.imgOnLeft && dimensions.width >= SMALL_SCREEN
               ? "fade right"
               : "fade left"
           }
@@ -72,8 +80,8 @@ function ContentItem(props) {
             showIndicators={props.images.length > 1}
             showStatus={props.images.length > 1}
             showThumbs={false}
-            transitionTime={1500}
-            interval={4000}
+            transitionTime={CAROUSEL_TRANSITION_TIME}
+            interval={CAROUSEL_INTERVAL}
             infiniteLoop={true}
           >
             {props.images.map((image) => {
@@ -89,7 +97,7 @@ function ContentItem(props) {
           </Carousel>
         </Grid>
       )}
-      {props.imgOnLeft && dimensions.width >= 600 && (
+      {props.imgOnLeft && dimensions.width >= SMALL_SCREEN && (
         <Grid
           item
           xs
