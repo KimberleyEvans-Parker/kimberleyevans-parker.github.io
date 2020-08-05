@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
+import { SMALL_SCREEN } from "../Constants";
 
 function Navigation(props) {
   const [dropdownOpen, setdropdownOpen] = useState(false);
@@ -15,7 +16,7 @@ function Navigation(props) {
         height: window.innerHeight,
         width: window.innerWidth,
       });
-      if (dimensions.width >= 600) {
+      if (dimensions.width >= SMALL_SCREEN) {
         setdropdownOpen(false);
       }
     }
@@ -34,7 +35,7 @@ function Navigation(props) {
             <Link to="/" onClick={() => setdropdownOpen(false)}>
               <li>Kimberley Evans-Parker</li>
             </Link>
-            {dimensions.width < 650 && (
+            {dimensions.width < SMALL_SCREEN && (
               <div
                 className={`navbar-rightside`}
                 onClick={() => setdropdownOpen(!dropdownOpen)}
@@ -49,7 +50,7 @@ function Navigation(props) {
               </div>
             )}
           </ul>
-          {(dropdownOpen || dimensions.width >= 650) && (
+          {(dropdownOpen || dimensions.width >= SMALL_SCREEN) && (
             <div
               className={`navbar-rightside ${dropdownOpen && "dropdown-open"}`}
             >
