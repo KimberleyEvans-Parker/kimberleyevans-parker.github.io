@@ -64,7 +64,7 @@ function Awards() {
         dates="June 2019"
         description="We worked in a team of three to solve problems of a range of difficulties in Python, C or Java.  
           100-point questions, in particular, were designed to be extremly difficult, but my team and I managed to work together to complete the problem.  
-          As a result of our hard work, team effor and problem solving skills, our team ranked 2nd in Auckland and 3rd in New Zealand"
+          As a result of our hard work, team effor and problem solving skills, our team ranked 2nd in Auckland and 3rd in New Zealand."
         openModal={openModal}
         animationDelay="0.8s"
       />

@@ -100,7 +100,7 @@ function About() {
           </li>
           <li>
             <strong>Polite and friendly</strong> – I have worked in customer
-            services, taught children to code and taken up the role of class rep
+            service, taught children to code and taken up the role of class rep
           </li>
           <li>
             <strong>Quick thinker</strong> – Been in competitions including,
