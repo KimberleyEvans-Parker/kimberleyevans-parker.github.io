@@ -1,7 +1,27 @@
 import React from "react";
 import ProfilePic from "../assets/profile-pic.jpg";
+import { SMALL_SCREEN } from "../Constants";
 
 function About() {
+  /* Keeps track of the window dimensions.  Updates when window resizes */
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  React.useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+    return (_) => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
   return (
     <div className="content-container">
       <img
@@ -11,12 +31,25 @@ function About() {
       ></img>
       <div className="fade left">
         <h1>About</h1>
-        <p>
-          I am a problem solver that loves to program. This has lead to a deep
-          interest in robotics and a passion for coding and algorithms. I also
-          enjoy design and I am good at coming up with creative solutions and
-          work well in a team.
-        </p>
+        {dimensions.width < SMALL_SCREEN ? (
+          <>
+            <p>
+              I am a problem solver that loves to program. This has lead to a
+              deep interest in robotics and a passion for coding and algorithms.{" "}
+            </p>
+            <p>
+              I also enjoy design and I am good at coming up with creative
+              solutions and work well in a team.
+            </p>
+          </>
+        ) : (
+          <p>
+            I am a problem solver that loves to program. This has lead to a deep
+            interest in robotics and a passion for coding and algorithms. I also
+            enjoy design and I am good at coming up with creative solutions and
+            work well in a team.
+          </p>
+        )}
         <p>
           I'm currently doing Computer Systems Engineering, conjoint with
           Science; Logic and Computation. During this I'm learning a range of
