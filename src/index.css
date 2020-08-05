@@ -90,7 +90,6 @@ a {
 }
 a:hover {
   color: rgb(187, 187, 187);
-  /* color: lightgrey; */
 }
 
 button {
@@ -105,13 +104,14 @@ button:hover {
 
 .home-containter {
   font-family: "Tangerine", Georgia, "Times New Roman", Times, serif;
-  font-size: max(36px, 8vh);
+  font-size: 32px;
+  font-size: max(32px, 8vh);
   text-align: center;
   padding-top: 30vh;
-  /* overflow: scroll; */
 }
 .home-containter h1 {
-  font-size: max(42px, 15vh);
+  font-size: 48px;
+  font-size: max(48px, 15vh);
 }
 
 .profile-pic {
@@ -132,7 +132,6 @@ button:hover {
   max-width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  /* overflow: scroll; */
 }
 
 /* ------------------- nav ------------------- */
@@ -335,7 +334,7 @@ nav ul a {
   left: 0;
 }
 
-/* ------------------- animations ------------------- */
+/* ------------------- fade animations ------------------- */
 
 .fade {
   -webkit-animation-duration: var(--animation-time);
