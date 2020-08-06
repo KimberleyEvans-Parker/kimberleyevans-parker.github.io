@@ -13,26 +13,7 @@ body {
 }
 
 body {
-  /* background: url(assets/backgrounds/wallhaven-2em38y.png); */
-  background: url(assets/backgrounds/wallhaven0.png);
-  /* background: url(assets/backgrounds/wallhaven1.png); */
-  /* background: url("assets/backgrounds/wallpaperflare.com_wallpaper0.jpg"); */
-  /* background: url("assets/backgrounds/wallpaperflare.com_wallpaper1.jpg"); */
-  /* background: url("assets/backgrounds/wallpaperflare.com_wallpaper2.jpg"); */
-  /* background: url("assets/backgrounds/wallpaperflare.com_wallpaper3.jpg"); */
-  /* background: url(https://wallpapercave.com/wp/Qk8yAeA.jpg); */
-  /* background: url(http://getwallpapers.com/wallpaper/full/b/d/3/455205.jpg); */
-  /* background: url(https://www.pixelstalk.net/wp-content/uploads/2016/11/Enchanted-Forest-Desktop-Backgrounds.jpg); */
-  /* background: url(https://www.pixelstalk.net/wp-content/uploads/2016/11/Enchanted-Forest-Backgrounds-Free-Download.jpg); */
-  /* background: url(https://wallup.net/wp-content/uploads/2015/12/102549-artwork-fantasy_art-waterfall-mountain-landscape-forest-colorful-sunlight.jpg); */
-  /* background: url(https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg); */
-  /* background: url(https://images.wallpapersden.com/image/download/fantasy-forest_66635_1920x1080.jpg); */
-  /* background: url(https://w.wallhaven.cc/full/dg/wallhaven-dg2mkl.jpg); */
-  /* background: url(https://cache.desktopnexus.com/cropped-wallpapers/2464/2464948-1920x1080-[DesktopNexus.com].jpg?st=EAKfC2bz6596HXrIw2NuvQ&e=1596103723); */
-  /* background: url(); */
-  /* background: url(); */
-  /* background: url(); */
-  /* background: url(); */
+  background: url(assets/background.png);
   background-color: #192a58;
   background-size: cover;
   background-repeat: no-repeat;
