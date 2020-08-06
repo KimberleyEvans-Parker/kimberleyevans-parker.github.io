@@ -31,7 +31,7 @@ function ContentItem(props) {
   });
 
   return (
-    <Grid container spacing={3}>
+    <Grid container spacing={3} style={{ marginTop: "40px" }}>
       {(!props.imgOnLeft || dimensions.width < SMALL_SCREEN) && (
         <Grid
           item
