@@ -5,6 +5,11 @@
   --animation-time: 2500ms;
   --negative-animation-distance: -40px;
   --positive-animation-distance: 40px;
+  --primary-colour: #472e5e;
+  --secondary-colour: #9ba0ca;
+  --background-colour: #192a58;
+  --shadow-colour: #222222;
+  --firefly-colour: yellow;
 }
 
 html,
@@ -14,7 +19,7 @@ body {
 
 body {
   background: url(assets/background.png);
-  background-color: #192a58;
+  background-color: var(--background-colour);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -98,7 +103,7 @@ button:hover {
 .profile-pic {
   width: 100%;
   border-radius: 50%;
-  box-shadow: 10px 10px 20px #222222;
+  box-shadow: 10px 10px 20px var(--shadow-colour);
   width: 30vw;
   max-width: 200px;
   float: left;
@@ -121,7 +126,7 @@ nav {
   position: fixed;
   width: 100vw;
   z-index: 10;
-  background-color: #333;
+  background-color: var(--background-colour);
   overflow: hidden;
 }
 
@@ -143,12 +148,12 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: #ddd;
+  background-color: var(--secondary-colour);
   color: black;
 }
 
 nav ul li.active {
-  background-color: #00131a;
+  background-color: var(--primary-colour);
   color: white;
 }
 
@@ -238,7 +243,7 @@ nav ul a {
   width: 1000px;
   max-width: 90vw;
   text-align: center;
-  color: #ccc;
+  color: white;
   padding: 10px 0;
 }
 
@@ -262,7 +267,7 @@ nav ul a {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: white;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -602,7 +607,7 @@ nav ul a {
 .firefly::after {
   background: white;
   opacity: 0;
-  box-shadow: 0 0 0vw 0vw yellow;
+  box-shadow: 0 0 0vw 0vw var(--firefly-colour);
   animation: drift ease alternate infinite, flash ease infinite;
 }
 
@@ -2235,10 +2240,10 @@ nav ul a {
   30%,
   100% {
     opacity: 0;
-    box-shadow: 0 0 0vw 0vw yellow;
+    box-shadow: 0 0 0vw 0vw var(--firefly-colour);
   }
   5% {
     opacity: 1;
-    box-shadow: 0 0 2vw 0.4vw yellow;
+    box-shadow: 0 0 2vw 0.4vw var(--firefly-colour);
   }
 }
