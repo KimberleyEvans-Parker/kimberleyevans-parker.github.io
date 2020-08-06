@@ -83,6 +83,7 @@ function ContentItem(props) {
             transitionTime={CAROUSEL_TRANSITION_TIME}
             interval={CAROUSEL_INTERVAL}
             infiniteLoop={true}
+            className="shadow"
           >
             {props.images.map((image) => {
               const path = image.split("/");
