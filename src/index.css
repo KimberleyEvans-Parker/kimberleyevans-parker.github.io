@@ -6,10 +6,7 @@
   --negative-animation-distance: -40px;
   --positive-animation-distance: 40px;
   --primary-colour: #472e5e;
-  /* --secondary-colour: #4487c8; */
-  /* --secondary-colour: #163365; */
   --secondary-colour: #11193f;
-  /* --secondary-colour: #0f2141; */
   --tertiary-colour: #9ba0ca;
   --background-colour: #192a58;
   --shadow-colour: #222222;
@@ -129,7 +126,7 @@ button:hover {
   margin-right: auto;
 }
 
-/* ------------------- nav ------------------- */
+/* ----------------------------- nav ----------------------------- */
 
 nav {
   position: fixed;
@@ -224,7 +221,7 @@ nav ul a {
   transform: rotate(45deg) translate(-6px, -6px);
 }
 
-/* ------------------- modal ------------------- */
+/* ----------------------------- modal ----------------------------- */
 
 .modal-background {
   position: fixed;
@@ -289,7 +286,7 @@ nav ul a {
   cursor: pointer;
 }
 
-/* ------------------- bullet points ------------------- */
+/* ----------------------------- bullet points ----------------------------- */
 
 .code-bullet-points {
   column-count: 2;
@@ -306,7 +303,6 @@ nav ul a {
   height: 16px;
   position: absolute;
   background-image: url("./assets/code-bullet-point.png");
-  /* background-image: url("./assets/code5.png"); */
   background-size: cover;
   left: 4px;
   top: 5px;
@@ -326,13 +322,12 @@ nav ul a {
   height: 23px;
   position: absolute;
   background-image: url("./assets/value-bullet-point.png");
-  /* background-image: url("./assets/value5.png"); */
   background-size: cover;
   left: 0;
   top: 2px;
 }
 
-/* ------------------- fade animations ------------------- */
+/* ----------------------------- fade animations ----------------------------- */
 
 .fade {
   -webkit-animation-duration: var(--animation-time);
@@ -590,7 +585,7 @@ nav ul a {
   }
 }
 
-/* ------------------- fireflies ------------------- */
+/* ----------------------------- fireflies ----------------------------- */
 
 .firefly {
   position: fixed;
