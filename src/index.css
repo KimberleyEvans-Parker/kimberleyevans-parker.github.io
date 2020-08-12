@@ -6,7 +6,11 @@
   --negative-animation-distance: -40px;
   --positive-animation-distance: 40px;
   --primary-colour: #472e5e;
-  --secondary-colour: #9ba0ca;
+  /* --secondary-colour: #4487c8; */
+  /* --secondary-colour: #163365; */
+  --secondary-colour: #11193f;
+  /* --secondary-colour: #0f2141; */
+  --tertiary-colour: #9ba0ca;
   --background-colour: #192a58;
   --shadow-colour: #222222;
   --firefly-colour: yellow;
@@ -26,6 +30,7 @@ body {
   background-position: center;
   margin: 0;
   line-height: 1.5;
+  font-size: 18px;
   font-family: Georgia, "Times New Roman", Times, serif;
   height: 100vh;
   font-weight: normal;
@@ -130,7 +135,7 @@ nav {
   position: fixed;
   width: 100vw;
   z-index: 10;
-  background-color: var(--background-colour);
+  background-color: var(--secondary-colour);
   overflow: hidden;
 }
 
@@ -146,13 +151,13 @@ nav ul li {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   transition: 1s;
   height: 100%;
 }
 
 nav ul li:hover {
-  background-color: var(--secondary-colour);
+  background-color: var(--tertiary-colour);
   color: black;
 }
 
@@ -199,7 +204,7 @@ nav ul a {
   transition: 0.4s;
 }
 .bar1 {
-  margin-top: 0;
+  margin-top: 4px;
 }
 .bar3 {
   margin-bottom: 0;
@@ -300,7 +305,8 @@ nav ul a {
   width: 15px;
   height: 15px;
   position: absolute;
-  background-image: url("./assets/code-bullet-point.png");
+  /* background-image: url("./assets/code-bullet-point.png"); */
+  background-image: url("./assets/code4.png");
   background-size: cover;
   left: 0;
   top: 4px;
@@ -319,7 +325,8 @@ nav ul a {
   width: 20px;
   height: 20px;
   position: absolute;
-  background-image: url("./assets/value-bullet-point.png");
+  /* background-image: url("./assets/value-bullet-point.png"); */
+  background-image: url("./assets/value4.png");
   background-size: cover;
   left: 0;
 }
