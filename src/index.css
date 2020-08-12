@@ -298,18 +298,18 @@ nav ul a {
 }
 .code-bullet-points li {
   position: relative;
-  padding-left: 25px;
+  padding-left: 33px;
 }
 .code-bullet-points li:before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   position: absolute;
-  /* background-image: url("./assets/code-bullet-point.png"); */
-  background-image: url("./assets/code4.png");
+  background-image: url("./assets/code-bullet-point.png");
+  /* background-image: url("./assets/code5.png"); */
   background-size: cover;
-  left: 0;
-  top: 4px;
+  left: 4px;
+  top: 5px;
 }
 
 .value-bullet-points {
@@ -318,17 +318,18 @@ nav ul a {
 }
 .value-bullet-points li {
   position: relative;
-  padding-left: 30px;
+  padding-left: 33px;
 }
 .value-bullet-points li:before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   position: absolute;
-  /* background-image: url("./assets/value-bullet-point.png"); */
-  background-image: url("./assets/value4.png");
+  background-image: url("./assets/value-bullet-point.png");
+  /* background-image: url("./assets/value5.png"); */
   background-size: cover;
   left: 0;
+  top: 2px;
 }
 
 /* ------------------- fade animations ------------------- */
