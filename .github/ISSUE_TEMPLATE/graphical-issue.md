@@ -7,7 +7,8 @@ assignees: KimberleyEvans-Parker
 
 ---
 
-**Which page does this graphical issue relate to?  E.g. Landing, About, Projects, Awards, All, etc.
+**Which page does this graphical issue relate to? **
+E.g. Landing, About, Projects, Awards, All, etc.
 
 **Is your feature request related to a problem? Please describe. (if applicable)**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
