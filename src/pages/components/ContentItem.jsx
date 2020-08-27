@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 
 import { Carousel } from "react-responsive-carousel";
@@ -11,6 +11,8 @@ import {
 } from "../../Constants";
 
 function ContentItem(props) {
+  const [hovering, setHovering] = useState(false);
+
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -50,8 +52,15 @@ function ContentItem(props) {
           }}
         >
           {props.link ? (
-            <a href={props.link}>
+            <a
+              href={props.link}
+              onMouseEnter={() => setHovering(true)}
+              onMouseLeave={() => setHovering(false)}
+            >
               <h2>
+                {hovering && (
+                  <i className="fa fa-github popout" aria-hidden="true"></i>
+                )}
                 {props.heading} {props.subheading && "-"} {props.subheading}
               </h2>
             </a>
@@ -120,8 +129,15 @@ function ContentItem(props) {
           }}
         >
           {props.link ? (
-            <a href={props.link}>
+            <a
+              href={props.link}
+              onMouseEnter={() => setHovering(true)}
+              onMouseLeave={() => setHovering(false)}
+            >
               <h2>
+                {hovering && (
+                  <i className="fa fa-github popout" aria-hidden="true"></i>
+                )}
                 {props.heading} {props.subheading && "-"} {props.subheading}
               </h2>
             </a>
