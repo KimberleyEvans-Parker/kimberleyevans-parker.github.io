@@ -126,6 +126,48 @@ button:hover {
   margin-right: auto;
 }
 
+.popout {
+  float: left;
+  /* left: -15px; */
+  margin: 5px;
+  margin-left: -26px;
+  animation: popout ease 1s forwards;
+}
+@keyframes popout {
+  0% {
+    transform: translateX(20px) scale(0);
+    opacity: 0;
+  }
+  /* 40% {
+    transform: translateX(5px) scale(1);
+  } */
+  40% {
+    transform: translateX(-10px) scale(1.5);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+  /* 0% {
+    transform: translateX(45vw) translateY(-7vh) scale(0.27);
+  }
+  20% {
+    transform: translateX(-27vw) translateY(-34vh) scale(0.9);
+  }
+  40% {
+    transform: translateX(15vw) translateY(8vh) scale(0.99);
+  }
+  60% {
+    transform: translateX(-47vw) translateY(-12vh) scale(0.69);
+  }
+  80% {
+    transform: translateX(-30vw) translateY(19vh) scale(0.83);
+  }
+  100% {
+    transform: translateX(46vw) translateY(29vh) scale(0.56);
+  } */
+}
+
 /* ----------------------------- nav ----------------------------- */
 .fa-github {
   font-size: 24px;
