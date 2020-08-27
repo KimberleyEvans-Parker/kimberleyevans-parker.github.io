@@ -49,9 +49,17 @@ function ContentItem(props) {
             animationDelay: props.animationDelay,
           }}
         >
-          <h2>
-            {props.heading} {props.subheading && "-"} {props.subheading}
-          </h2>
+          {props.link ? (
+            <a href={props.link}>
+              <h2>
+                {props.heading} {props.subheading && "-"} {props.subheading}
+              </h2>
+            </a>
+          ) : (
+            <h2>
+              {props.heading} {props.subheading && "-"} {props.subheading}
+            </h2>
+          )}
           <h3>{props.dates}</h3>
           <p>{props.description}</p>
         </Grid>
@@ -111,9 +119,17 @@ function ContentItem(props) {
             animationDelay: props.animationDelay,
           }}
         >
-          <h2>
-            {props.heading} {props.subheading && "-"} {props.subheading}
-          </h2>
+          {props.link ? (
+            <a href={props.link}>
+              <h2>
+                {props.heading} {props.subheading && "-"} {props.subheading}
+              </h2>
+            </a>
+          ) : (
+            <h2>
+              {props.heading} {props.subheading && "-"} {props.subheading}
+            </h2>
+          )}
           <h3>{props.dates}</h3>
           <p>{props.description}</p>
         </Grid>
