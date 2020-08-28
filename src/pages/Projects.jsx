@@ -59,7 +59,7 @@ function Projects() {
           It is a a platform for live learning and teaching, where you connect and network with like-minded locals.  
           The platform also serves as a place for companies to post challenges and recruit bright minds.
           Upskill aims to help those impacted by Covid 19, by allowing them to upskill and find new job opportunities.  "
-        link="https://github.com/Pyxxil/upskill"
+        githubLink="https://github.com/Pyxxil/upskill"
         images={[Upskill1, Upskill2, Upskill3, Upskill4, Upskill5, Upskill6]}
         openModal={openModal}
         animationDelay="0s"
@@ -72,7 +72,7 @@ function Projects() {
         description="Roll for Reaction is a turn-based dungeon crawler RPG written with React, Redux, JavaScript, HTML and CSS. 
           It is an open-source fork of react-rpg and builds upon and enhances the base game. 
           This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
-        link="https://github.com/Matteas-Eden/roll-for-reaction"
+        githubLink="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[RollForReaction1, RollForReaction2, RollForReaction3]}
         openModal={openModal}
         animationDelay="0.4s"
@@ -87,7 +87,7 @@ function Projects() {
           It also has smart scheduling capabilities, meaning the app will allocate inputted tasks in a suitable time in the user’s calendar. 
           Doto uses Google to sign up, meaning that to use this app, the user must have a google account. 
           The development of Doto is done using the M.E.R.N (MongoDB, Express, React, Node) tech stack."
-        link="https://github.com/se701g2/Doto"
+        githubLink="https://github.com/se701g2/Doto"
         images={[Doto1, Doto2]}
         openModal={openModal}
         animationDelay="0.8s"
@@ -100,7 +100,7 @@ function Projects() {
         description="A webapp for aggregrating media feeds from various services into a single, uniform display for user convenience.
           We are using the React framework to manage the front-end UI and using a Java server utilising the Spring framework for the back-end. 
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
-        link="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
+        githubLink="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
         images={[Feedr1, Feedr2, Feedr3]}
         openModal={openModal}
         animationDelay="1.2"
@@ -111,7 +111,7 @@ function Projects() {
         subheading="Line Following Robot"
         dates="July 2019 - Oct 2019"
         description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC, PSoC and shortest path algorithms written in C."
-        link="https://github.com/Matteas-Eden/flik"
+        githubLink="https://github.com/Matteas-Eden/flik"
         images={[Flik1, Flik2, Flik3]}
         openModal={openModal}
         animationDelay="1.6s"
@@ -136,7 +136,7 @@ function Projects() {
         description="A hub for people to organise and meet up at a range of events with a specified host and location. 
           Aims to connect organisations and volunteer groups who wish to hold events with places people. 
           This was done by 6 people using JavaScript, HTML and CSS. Won Best Presentation in the AUCS, KPMG hackathon."
-        link="https://github.com/KimberleyEvans-Parker/Eventigate"
+        githubLink="https://github.com/KimberleyEvans-Parker/Eventigate"
         openModal={openModal}
         animationDelay="2.4s"
       />
@@ -160,7 +160,7 @@ function Projects() {
           This was a 2-person project, with the game created from scratch. 
           Details of the project are available on the GitHub repository it was cloned to, shown through a GitHub Wiki. 
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
-        link="https://github.com/Matteas-Eden/roll-for-reaction"
+        githubLink="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[AshasQuest1, AshasQuest2]}
         openModal={openModal}
         animationDelay="3.2s"

@@ -33,8 +33,8 @@ function ContentItem(props) {
   return (
     <div style={{ marginTop: "40px" }}>
       <div className="fade left">
-        {props.link && dimensions.width >= SMALL_SCREEN ? (
-          <a href={props.link} className={"popout-link"}>
+        {props.githubLink && dimensions.width >= SMALL_SCREEN ? (
+          <a href={props.githubLink} className={"popout-link"}>
             <h2>
               <i className="fa fa-github popout" aria-hidden="true"></i>
               {props.heading} {props.subheading && "- "} {props.subheading}
