@@ -32,18 +32,20 @@ function ContentItem(props) {
 
   return (
     <div style={{ marginTop: "40px" }}>
-      {props.link && dimensions.width >= SMALL_SCREEN ? (
-        <a href={props.link} className={"popout-link"}>
+      <div className="fade left">
+        {props.link && dimensions.width >= SMALL_SCREEN ? (
+          <a href={props.link} className={"popout-link"}>
+            <h2>
+              <i className="fa fa-github popout" aria-hidden="true"></i>
+              {props.heading} {props.subheading && "- "} {props.subheading}
+            </h2>
+          </a>
+        ) : (
           <h2>
-            <i className="fa fa-github popout" aria-hidden="true"></i>
-            {props.heading} {props.subheading && "- "} {props.subheading}
+            {props.heading} {props.subheading && "-"} {props.subheading}
           </h2>
-        </a>
-      ) : (
-        <h2>
-          {props.heading} {props.subheading && "-"} {props.subheading}
-        </h2>
-      )}
+        )}
+      </div>
       <Grid container spacing={3}>
         {(!props.imgOnLeft || dimensions.width < SMALL_SCREEN) && (
           <Grid
