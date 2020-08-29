@@ -26,30 +26,19 @@ function About() {
     <div className="content-container">
       <img
         src={ProfilePic}
-        className="profile-pic fade right"
+        className={`profile-pic fade right ${
+          dimensions.width < SMALL_SCREEN ? "center-2" : "float-left"
+        }`}
         alt="Profile"
       ></img>
       <div className="fade left">
         <h1>About</h1>
-        {dimensions.width < SMALL_SCREEN ? (
-          <>
-            <p>
-              I am a problem solver that loves to program. This has lead to a
-              deep interest in robotics and a passion for coding and algorithms.{" "}
-            </p>
-            <p>
-              I also enjoy design and I am good at coming up with creative
-              solutions and work well in a team.
-            </p>
-          </>
-        ) : (
-          <p>
-            I am a problem solver that loves to program. This has lead to a deep
-            interest in robotics and a passion for coding and algorithms. I also
-            enjoy design and I am good at coming up with creative solutions and
-            work well in a team.
-          </p>
-        )}
+        <p>
+          I am a problem solver that loves to program. This has lead to a deep
+          interest in robotics and a passion for coding and algorithms. I also
+          enjoy design and I am good at coming up with creative solutions and
+          work well in a team.
+        </p>
         <p>
           I'm currently doing Computer Systems Engineering, conjoint with
           Science; Logic and Computation. During this I'm learning a range of
