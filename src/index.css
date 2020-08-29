@@ -107,14 +107,22 @@ button:hover {
 }
 
 .profile-pic {
-  width: 100%;
   border-radius: 50%;
   box-shadow: 10px 10px 20px var(--shadow-colour);
-  width: 30vw;
+  width: 50vw;
   max-width: 200px;
-  float: left;
   margin-right: 30px;
   margin-bottom: 20px;
+}
+
+.float-left {
+  float: left;
+}
+
+.center-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content-container {
