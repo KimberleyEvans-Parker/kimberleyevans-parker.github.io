@@ -8,8 +8,10 @@ import Upskill5 from "../assets/projects/Upskill/Rewards.gif";
 import Upskill6 from "../assets/projects/Upskill/Company Challenges.gif";
 import AshasQuest1 from "../assets/projects/Asha's Quest/Logo.jpg";
 import AshasQuest2 from "../assets/projects/Asha's Quest/Title Screen.jpg";
-import Doto1 from "../assets/projects/Doto/Marketplace.gif";
-import Doto2 from "../assets/projects/Doto/Toggle Tasks.gif";
+import Doto1 from "../assets/projects/Doto/Landing Page.png";
+import Doto2 from "../assets/projects/Doto/Adding a task.gif";
+import Doto3 from "../assets/projects/Doto/Gamification.gif";
+import Doto4 from "../assets/projects/Doto/Marketplace.gif";
 import Feedr1 from "../assets/projects/Feedr/Landing Page.png";
 import Feedr2 from "../assets/projects/Feedr/Home Page.png";
 import Feedr3 from "../assets/projects/Feedr/Integration Center.png";
@@ -88,7 +90,7 @@ function Projects() {
           Doto uses Google to sign up, meaning that to use this app, the user must have a google account. 
           The development of Doto is done using the M.E.R.N (MongoDB, Express, React, Node) tech stack."
         githubLink="https://github.com/se701g2/Doto"
-        images={[Doto1, Doto2]}
+        images={[Doto1, Doto2, Doto3, Doto4]}
         openModal={openModal}
         animationDelay="0.8s"
       />
