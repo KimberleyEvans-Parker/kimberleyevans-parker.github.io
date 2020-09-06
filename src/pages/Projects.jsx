@@ -6,8 +6,6 @@ import Upskill3 from "../assets/projects/Upskill/Instructor Profile.gif";
 import Upskill4 from "../assets/projects/Upskill/Classes and Booking.gif";
 import Upskill5 from "../assets/projects/Upskill/Rewards.gif";
 import Upskill6 from "../assets/projects/Upskill/Company Challenges.gif";
-import AshasQuest1 from "../assets/projects/Asha's Quest/Logo.jpg";
-import AshasQuest2 from "../assets/projects/Asha's Quest/Title Screen.jpg";
 import Doto1 from "../assets/projects/Doto/Landing Page.png";
 import Doto2 from "../assets/projects/Doto/Adding a task.gif";
 import Doto3 from "../assets/projects/Doto/Gamification.gif";
@@ -21,6 +19,11 @@ import RollForReaction3 from "../assets/projects/Roll for Reaction/Features.gif"
 import Flik1 from "../assets/projects/Flik/Traversing the map.gif";
 import Flik2 from "../assets/projects/Flik/Line following.gif";
 import Flik3 from "../assets/projects/Flik/PCB.jpg";
+import Eventigate1 from "../assets/projects/Eventigate/Dashboard.png";
+import Eventigate2 from "../assets/projects/Eventigate/Location Page.png";
+import Eventigate3 from "../assets/projects/Eventigate/Profile Page.gif";
+import AshasQuest1 from "../assets/projects/Asha's Quest/Logo.jpg";
+import AshasQuest2 from "../assets/projects/Asha's Quest/Title Screen.jpg";
 
 import ContentItem from "./components/ContentItem";
 
@@ -139,6 +142,7 @@ function Projects() {
           Aims to connect organisations and volunteer groups who wish to hold events with places people. 
           This was done by 6 people using JavaScript, HTML and CSS. Won Best Presentation in the AUCS, KPMG hackathon."
         githubLink="https://github.com/KimberleyEvans-Parker/Eventigate"
+        images={[Eventigate1, Eventigate2, Eventigate3]}
         openModal={openModal}
         animationDelay="2.4s"
       />
