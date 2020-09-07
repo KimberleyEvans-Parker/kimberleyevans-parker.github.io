@@ -353,7 +353,7 @@ nav ul a {
   float: left;
   margin: 5px;
   margin-left: -26px;
-  animation: pop-in ease 1s forwards;
+  animation: pop-in ease 0.7s forwards;
 }
 @keyframes pop-in {
   100% {
@@ -370,7 +370,7 @@ nav ul a {
 }
 
 .popout-link:hover .popout {
-  animation: pop-out ease 1s forwards;
+  animation: pop-out ease 0.7s forwards;
 }
 @keyframes pop-out {
   0% {
