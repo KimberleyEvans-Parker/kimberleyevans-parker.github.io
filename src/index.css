@@ -134,6 +134,14 @@ button:hover {
   margin-right: auto;
 }
 
+.carousel .slide img {
+  vertical-align: middle !important;
+}
+
+.carousel * {
+  line-height: 0;
+}
+
 /* ----------------------------- nav ----------------------------- */
 .fa-github {
   font-size: 24px;
