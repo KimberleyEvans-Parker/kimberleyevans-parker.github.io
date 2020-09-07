@@ -147,7 +147,7 @@ function Projects() {
         animationDelay="2.4s"
       />
       <ContentItem
-        imgOnLeft={true}
+        imgOnLeft={false}
         heading="Flappy Bird"
         subheading="FPGA VHDL Side Scroller Game"
         dates="April 2019 - May 2019"
@@ -158,7 +158,7 @@ function Projects() {
         animationDelay="2.8s"
       />
       <ContentItem
-        imgOnLeft={false}
+        imgOnLeft={true}
         heading="Asha's Quest"
         subheading="Java Dungeon Crawler"
         dates="March 2019 - May 2019"
@@ -172,7 +172,7 @@ function Projects() {
         animationDelay="3.2s"
       />
       <ContentItem
-        imgOnLeft={true}
+        imgOnLeft={false}
         heading="Wireless Energy Monitor"
         dates="Aug 2018 – Nov 2018"
         description="Wireless Energy Monitor to display voltage, current and power for ELECTENG 209. 
