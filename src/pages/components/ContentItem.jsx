@@ -11,7 +11,7 @@ import {
 } from "../../Constants";
 
 function ContentItem(props) {
-  /* Keeps track of the window dimensions.  Updates when window resizes */
+  // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth,
@@ -43,9 +43,17 @@ function ContentItem(props) {
   }, []);
 
   return (
-    <div style={{ marginTop: "40px" }} className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+    <div style={{ marginTop: "40px" }} className={` fade-in-section ${isVisible ? 'is-visible' : ''} fade-left`}
     ref={domRef}>
-      <div className="fade left">
+      <div className="fade left"
+            // style={{
+            //   webkitAnimationDelay: props.animationDelay,
+            //   mozAnimationDelay: props.animationDelay,
+            //   oAnimationDelay: props.animationDelay,
+            //   msAnimationDelay: props.animationDelay,
+            //   animationDelay: props.animationDelay,
+            // }}
+            >
         {props.githubLink && dimensions.width >= SMALL_SCREEN ? (
           <a href={props.githubLink} className={"popout-link"}>
             <h2>
@@ -58,24 +66,11 @@ function ContentItem(props) {
             {props.heading} {props.subheading && "-"} {props.subheading}
           </h2>
         )}
-      </div>
       <Grid container spacing={3}>
         {(!props.imgOnLeft || dimensions.width < SMALL_SCREEN) && (
           <Grid
             item
             xs
-            className={
-              props.images && dimensions.width >= SMALL_SCREEN
-                ? "fade right"
-                : "fade left"
-            }
-            // style={{
-            //   webkitAnimationDelay: props.animationDelay,
-            //   mozAnimationDelay: props.animationDelay,
-            //   oAnimationDelay: props.animationDelay,
-            //   msAnimationDelay: props.animationDelay,
-            //   animationDelay: props.animationDelay,
-            // }}
           >
             <h3>{props.dates}</h3>
             <p>{props.description}</p>
@@ -87,18 +82,6 @@ function ContentItem(props) {
             xs={12}
             sm={6}
             md={4}
-            className={
-              props.imgOnLeft && dimensions.width >= SMALL_SCREEN
-                ? "fade right"
-                : "fade left"
-            }
-            // style={{
-            //   webkitAimationDelay: props.animationDelay,
-            //   mozAnimationDelay: props.animationDelay,
-            //   oAimationDelay: props.animationDelay,
-            //   msAnimationDelay: props.animationDelay,
-            //   animationDelay: props.animationDelay,
-            // }}
           >
             <Carousel
               autoPlay
@@ -130,20 +113,13 @@ function ContentItem(props) {
           <Grid
             item
             xs
-            className="fade left"
-            // style={{
-            //   webkitAimationDelay: props.animationDelay,
-            //   mozAnimationDelay: props.animationDelay,
-            //   oAimationDelay: props.animationDelay,
-            //   msAnimationDelay: props.animationDelay,
-            //   animationDelay: props.animationDelay,
-            // }}
           >
             <h3>{props.dates}</h3>
             <p>{props.description}</p>
           </Grid>
         )}
       </Grid>
+    </div>
     </div>
   );
 }
