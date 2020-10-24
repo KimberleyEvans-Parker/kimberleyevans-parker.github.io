@@ -76,7 +76,7 @@ function Awards() {
         description="My partner and I received 2nd place for a competition in the Alice programming environment.
           During this, we were able to create 3D animations to fit a desired script, within a given time frame."
         openModal={openModal}
-        animationDelay="1.2"
+        animationDelay="1.2s"
       />
     </div>
   );
