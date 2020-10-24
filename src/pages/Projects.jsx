@@ -115,7 +115,8 @@ function Projects() {
         heading="Flik"
         subheading="Line Following Robot"
         dates="July 2019 - Oct 2019"
-        description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC, PSoC and shortest path algorithms written in C."
+        description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC and PSoC.  
+          Various shortest path algorithms were created for the robot to plan its traversal across the map, which were written in C."
         githubLink="https://github.com/Matteas-Eden/flik"
         images={[Flik1, Flik2, Flik3]}
         openModal={openModal}
