@@ -89,8 +89,8 @@ function Projects() {
         dates="March 2020 - May 2020"
         description="An open-source software project for an online smart scheduling calendar and to-do app. 
           It has the basic functionality of any calendar app and can be used to make to-do lists. 
-          It also has smart scheduling capabilities, meaning the app will allocate inputted tasks in a suitable time in the user’s calendar. 
-          Doto uses Google to sign up, meaning that to use this app, the user must have a google account. 
+          It has smart scheduling capabilities, meaning the app will allocate inputted tasks in a suitable time in the user’s calendar. 
+          Doto uses Google auth to allow people to sign in. 
           The development of Doto is done using the M.E.R.N (MongoDB, Express, React, Node) tech stack."
         githubLink="https://github.com/se701g2/Doto"
         images={[Doto1, Doto2, Doto3, Doto4]}
