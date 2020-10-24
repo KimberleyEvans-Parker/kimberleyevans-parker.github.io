@@ -30,8 +30,21 @@ function ContentItem(props) {
     };
   });
 
+  // for loading an image when it scrolls into view
+  
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+
   return (
-    <div style={{ marginTop: "40px" }}>
+    <div style={{ marginTop: "40px" }} className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+    ref={domRef}>
       <div className="fade left">
         {props.githubLink && dimensions.width >= SMALL_SCREEN ? (
           <a href={props.githubLink} className={"popout-link"}>
@@ -56,13 +69,13 @@ function ContentItem(props) {
                 ? "fade right"
                 : "fade left"
             }
-            style={{
-              webkitAnimationDelay: props.animationDelay,
-              mozAnimationDelay: props.animationDelay,
-              oAnimationDelay: props.animationDelay,
-              msAnimationDelay: props.animationDelay,
-              animationDelay: props.animationDelay,
-            }}
+            // style={{
+            //   webkitAnimationDelay: props.animationDelay,
+            //   mozAnimationDelay: props.animationDelay,
+            //   oAnimationDelay: props.animationDelay,
+            //   msAnimationDelay: props.animationDelay,
+            //   animationDelay: props.animationDelay,
+            // }}
           >
             <h3>{props.dates}</h3>
             <p>{props.description}</p>
@@ -79,13 +92,13 @@ function ContentItem(props) {
                 ? "fade right"
                 : "fade left"
             }
-            style={{
-              webkitAimationDelay: props.animationDelay,
-              mozAnimationDelay: props.animationDelay,
-              oAimationDelay: props.animationDelay,
-              msAnimationDelay: props.animationDelay,
-              animationDelay: props.animationDelay,
-            }}
+            // style={{
+            //   webkitAimationDelay: props.animationDelay,
+            //   mozAnimationDelay: props.animationDelay,
+            //   oAimationDelay: props.animationDelay,
+            //   msAnimationDelay: props.animationDelay,
+            //   animationDelay: props.animationDelay,
+            // }}
           >
             <Carousel
               autoPlay
@@ -118,13 +131,13 @@ function ContentItem(props) {
             item
             xs
             className="fade left"
-            style={{
-              webkitAimationDelay: props.animationDelay,
-              mozAnimationDelay: props.animationDelay,
-              oAimationDelay: props.animationDelay,
-              msAnimationDelay: props.animationDelay,
-              animationDelay: props.animationDelay,
-            }}
+            // style={{
+            //   webkitAimationDelay: props.animationDelay,
+            //   mozAnimationDelay: props.animationDelay,
+            //   oAimationDelay: props.animationDelay,
+            //   msAnimationDelay: props.animationDelay,
+            //   animationDelay: props.animationDelay,
+            // }}
           >
             <h3>{props.dates}</h3>
             <p>{props.description}</p>
