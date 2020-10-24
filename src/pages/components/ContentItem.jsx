@@ -46,13 +46,14 @@ function ContentItem(props) {
     <div style={{ marginTop: "40px" }} className={` fade-in-section ${isVisible ? 'is-visible' : ''} fade-left`}
     ref={domRef}>
       <div className="fade left"
-            // style={{
-            //   webkitAnimationDelay: props.animationDelay,
-            //   mozAnimationDelay: props.animationDelay,
-            //   oAnimationDelay: props.animationDelay,
-            //   msAnimationDelay: props.animationDelay,
-            //   animationDelay: props.animationDelay,
-            // }}
+            style={{
+              opacity: 0,
+              webkitAnimationDelay: props.animationDelay,
+              mozAnimationDelay: props.animationDelay,
+              oAnimationDelay: props.animationDelay,
+              msAnimationDelay: props.animationDelay,
+              animationDelay: props.animationDelay,
+            }}
             >
         {props.githubLink && dimensions.width >= SMALL_SCREEN ? (
           <a href={props.githubLink} className={"popout-link"}>
