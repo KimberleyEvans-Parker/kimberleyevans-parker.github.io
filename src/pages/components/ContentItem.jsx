@@ -39,7 +39,8 @@ function ContentItem(props) {
       entries.forEach(entry => setVisible(entry.isIntersecting));
     });
     observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
+    const current = domRef.current;
+    return () => observer.unobserve(current);
   }, []);
 
   return (
