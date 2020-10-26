@@ -401,6 +401,7 @@ nav ul a {
 }
 
 .fade {
+  opacity: 0;
   -webkit-animation-duration: var(--animation-time);
   -moz-animation-duration: var(--animation-time);
   -o-animation-duration: var(--animation-time);

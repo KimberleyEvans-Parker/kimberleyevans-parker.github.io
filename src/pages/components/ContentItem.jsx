@@ -48,7 +48,6 @@ function ContentItem(props) {
     ref={domRef}>
       <div className="fade left"
             style={{
-              opacity: 0,
               webkitAnimationDelay: props.animationDelay,
               mozAnimationDelay: props.animationDelay,
               oAnimationDelay: props.animationDelay,
