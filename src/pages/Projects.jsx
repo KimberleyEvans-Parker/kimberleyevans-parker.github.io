@@ -46,6 +46,13 @@ function Projects() {
     return animationDelaySeconds
   }
 
+  let onLeft = false;
+
+  const imgOnLeft = () => {
+    onLeft = !onLeft;
+    return onLeft
+  }
+
   return (
     <div className="content-container">
       <h1>Projects</h1>
@@ -65,7 +72,7 @@ function Projects() {
         </>
       )}
       <ContentItem
-        imgOnLeft={true}
+        imgOnLeft={imgOnLeft()}
         heading="Upskill"
         subheading="Platform to connect and upskill"
         dates="July 2020"
@@ -79,7 +86,7 @@ function Projects() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={false}
+        imgOnLeft={imgOnLeft()}
         heading="Roll for Reaction"
         subheading="Turn-Based Dungeon Crawler RPG"
         dates="March 2020 – June 2020"
@@ -92,7 +99,7 @@ function Projects() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={true}
+        imgOnLeft={imgOnLeft()}
         heading="Doto"
         subheading="Calendar and To-Do App"
         dates="March 2020 - May 2020"
@@ -107,7 +114,7 @@ function Projects() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={false}
+        imgOnLeft={imgOnLeft()}
         heading="Feedr"
         subheading="Media Feed Aggregator"
         dates="March 2020"
@@ -120,7 +127,7 @@ function Projects() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={true}
+        imgOnLeft={imgOnLeft()}
         heading="Flik"
         subheading="Line Following Robot"
         dates="July 2019 - Oct 2019"
@@ -132,7 +139,7 @@ function Projects() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={false}
+        imgOnLeft={imgOnLeft()}
         heading="Midnight's Messages"
         subheading="CherryPy Social Network"
         dates="May 2019 - June 2019"
@@ -144,7 +151,7 @@ function Projects() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={true}
+        imgOnLeft={imgOnLeft()}
         heading="Eventigate"
         subheading="Project During KPMG Hackathon"
         dates="May 2020"
@@ -157,7 +164,7 @@ function Projects() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={false}
+        imgOnLeft={imgOnLeft()}
         heading="Flappy Bird"
         subheading="FPGA VHDL Side Scroller Game"
         dates="April 2019 - May 2019"
@@ -168,7 +175,7 @@ function Projects() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={true}
+        imgOnLeft={imgOnLeft()}
         heading="Asha's Quest"
         subheading="Java Dungeon Crawler"
         dates="March 2019 - May 2019"
@@ -182,7 +189,7 @@ function Projects() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={false}
+        imgOnLeft={imgOnLeft()}
         heading="Wireless Energy Monitor"
         dates="Aug 2018 – Nov 2018"
         description="Wireless Energy Monitor to display voltage, current and power for ELECTENG 209. 
