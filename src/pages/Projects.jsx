@@ -37,6 +37,15 @@ function Projects() {
     setCaption(caption);
   };
 
+  let animationDelay = 0;
+
+  const getAnimationDelay = () => {
+    const animationDelaySeconds = animationDelay.toString() + 's';
+    animationDelay += 0.4
+    console.log(animationDelaySeconds)
+    return animationDelaySeconds
+  }
+
   return (
     <div className="content-container">
       <h1>Projects</h1>
@@ -67,7 +76,7 @@ function Projects() {
         githubLink="https://github.com/Pyxxil/upskill"
         images={[Upskill1, Upskill2, Upskill3, Upskill4, Upskill5, Upskill6]}
         openModal={openModal}
-        animationDelay="0s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={false}
@@ -80,7 +89,7 @@ function Projects() {
         githubLink="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[RollForReaction1, RollForReaction2, RollForReaction3]}
         openModal={openModal}
-        animationDelay="0.4s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={true}
@@ -95,7 +104,7 @@ function Projects() {
         githubLink="https://github.com/se701g2/Doto"
         images={[Doto1, Doto2, Doto3, Doto4]}
         openModal={openModal}
-        animationDelay="0.8s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={false}
@@ -108,7 +117,7 @@ function Projects() {
         githubLink="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
         images={[Feedr1, Feedr2, Feedr3]}
         openModal={openModal}
-        animationDelay="1.2"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={true}
@@ -120,7 +129,7 @@ function Projects() {
         githubLink="https://github.com/Matteas-Eden/flik"
         images={[Flik1, Flik2, Flik3]}
         openModal={openModal}
-        animationDelay="1.6s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={false}
@@ -132,7 +141,7 @@ function Projects() {
           This could authorize and report login from a login server to a main server run by the lecturer, and see how many web clients are online. 
           It could also send messages privately and in group chats while sending public 'tweets' out to all viewers, and block keywords and people from showing up. "
         openModal={openModal}
-        animationDelay="2s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={true}
@@ -145,7 +154,7 @@ function Projects() {
         githubLink="https://github.com/KimberleyEvans-Parker/Eventigate"
         images={[Eventigate1, Eventigate2, Eventigate3]}
         openModal={openModal}
-        animationDelay="2.4s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={false}
@@ -156,7 +165,7 @@ function Projects() {
           This was designed to be run on an Altera DE0 Board, equipped with an Altera Cyclone III 3C16 FPGA. 
           Understanding of the FPGA hardware, VHDL and Git were developed."
         openModal={openModal}
-        animationDelay="2.8s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={true}
@@ -170,7 +179,7 @@ function Projects() {
         githubLink="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[AshasQuest1, AshasQuest2]}
         openModal={openModal}
-        animationDelay="3.2s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={false}
@@ -181,7 +190,7 @@ function Projects() {
           Receiver was a CPLD, transmitter was an ATMEGA328PB microcontroller on a self- designed PCB. 
           Breadboarding, LTSpice simulations and Oscilloscopes were used for testing."
         openModal={openModal}
-        animationDelay="3.6s"
+        animationDelay={getAnimationDelay()}
       />
     </div>
   );
