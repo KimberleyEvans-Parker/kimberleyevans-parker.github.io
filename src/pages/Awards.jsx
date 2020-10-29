@@ -23,6 +23,13 @@ function Awards() {
     return animationDelaySeconds
   }
 
+  let onLeft = false;
+
+  const imgOnLeft = () => {
+    onLeft = !onLeft;
+    return onLeft
+  }
+
   return (
     <div className="content-container">
       <h1>Awards and Achievments</h1>
@@ -42,7 +49,7 @@ function Awards() {
         </>
       )}
       <ContentItem
-        imgOnLeft={true}
+        imgOnLeft={imgOnLeft()}
         heading="2020 DEVS Hackathon"
         subheading="1st place"
         dates="July 2020"
@@ -56,7 +63,7 @@ function Awards() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={false}
+        imgOnLeft={imgOnLeft()}
         heading="AUCS Hackathon"
         subheading="Best Presentation"
         dates="May 2019"
@@ -67,7 +74,7 @@ function Awards() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={true}
+        imgOnLeft={imgOnLeft()}
         heading="New Zealand Programming Competition"
         subheading="3rd in New Zealand"
         dates="June 2019"
@@ -78,7 +85,7 @@ function Awards() {
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
-        imgOnLeft={false}
+        imgOnLeft={imgOnLeft()}
         heading="Alice Programming Competition"
         subheading="2nd place"
         dates="April 2016"
