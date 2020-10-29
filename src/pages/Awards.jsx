@@ -14,6 +14,15 @@ function Awards() {
     setCaption(caption);
   };
 
+  let animationDelay = 0;
+
+  const getAnimationDelay = () => {
+    const animationDelaySeconds = animationDelay.toString() + 's';
+    animationDelay += 0.4
+    console.log(animationDelaySeconds)
+    return animationDelaySeconds
+  }
+
   return (
     <div className="content-container">
       <h1>Awards and Achievments</h1>
@@ -44,7 +53,7 @@ function Awards() {
           You can also see the project Upskill on my projects page."
         images={[Krayon1]}
         openModal={openModal}
-        animationDelay="0s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={false}
@@ -55,7 +64,7 @@ function Awards() {
           Our presentation included our project; Eventigate.  
           A platform for connecting event organisers, locations and people, which you can find out more about on my projects page."
         openModal={openModal}
-        animationDelay="0.4s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={true}
@@ -66,7 +75,7 @@ function Awards() {
           100-point questions, in particular, were designed to be extremly difficult, but my team and I managed to work together to complete the problem.  
           As a result of our hard work, team effor and problem solving skills, our team ranked 2nd in Auckland and 3rd in New Zealand."
         openModal={openModal}
-        animationDelay="0.8s"
+        animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={false}
@@ -76,7 +85,7 @@ function Awards() {
         description="My partner and I received 2nd place for a competition in the Alice programming environment.
           During this, we were able to create 3D animations to fit a desired script, within a given time frame."
         openModal={openModal}
-        animationDelay="1.2s"
+        animationDelay={getAnimationDelay()}
       />
     </div>
   );
