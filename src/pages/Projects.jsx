@@ -165,6 +165,18 @@ function Projects() {
       />
       <ContentItem
         imgOnLeft={imgOnLeft()}
+        heading="Scammr"
+        subheading="Phone Scam Detector"
+        dates="July 2019"
+        description="This app was developed during the 2019, 48-hour Devs Hackathon by a group of 6.  
+          The app listened in to a call and warned you if it thought the caller was trying to scam you. 
+          Sammr makes use of speech-to-text  tools and an algorithm to decide the probability of the call being a scam."
+          githubLink="https://github.com/Pyxxil/Scammr"
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
         heading="Flappy Bird"
         subheading="FPGA VHDL Side Scroller Game"
         dates="April 2019 - May 2019"
