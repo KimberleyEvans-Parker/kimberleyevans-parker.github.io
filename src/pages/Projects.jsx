@@ -80,7 +80,7 @@ function Projects() {
           The application was able to take data from different machines and sensors and display them to the technicians.  
           Users would be able to view this data in real-time, and see historical data, and receive notifications when a machine reported unhealthy readings.
           The project which we started for our Product Owner has received funding to continue its production.  "
-        githubLink="https://github.com/se761group2/industry-4"
+        githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
