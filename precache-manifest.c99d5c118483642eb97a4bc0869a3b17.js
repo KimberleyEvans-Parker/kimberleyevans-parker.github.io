@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "77ada26c2d120bd6092998c27412b5ef",
+    "revision": "5139265595ce8aab22c5926aa23ace95",
     "url": "/index.html"
   },
   {
-    "revision": "a02f1728d2a94b5b153a",
+    "revision": "190709f80d8f103e10cb",
     "url": "/static/css/2.fb346933.chunk.css"
   },
   {
-    "revision": "0c75ee190faed4226a8b",
+    "revision": "8deb26d3258d088ba72f",
     "url": "/static/css/main.4bfbb72b.chunk.css"
   },
   {
-    "revision": "a02f1728d2a94b5b153a",
-    "url": "/static/js/2.ec128c15.chunk.js"
+    "revision": "190709f80d8f103e10cb",
+    "url": "/static/js/2.bbbcc0d3.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/static/js/2.ec128c15.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.bbbcc0d3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0c75ee190faed4226a8b",
-    "url": "/static/js/main.67271a1d.chunk.js"
+    "revision": "8deb26d3258d088ba72f",
+    "url": "/static/js/main.595aa576.chunk.js"
   },
   {
     "revision": "a2fb6daf81e9df9aabc0",
@@ -116,8 +116,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Rewards.4b024aa0.gif"
   },
   {
-    "revision": "9e2c7a6fd4462f85c293e4f0c4c82f77",
-    "url": "/static/media/Team Krayon.9e2c7a6f.jpg"
+    "revision": "d8adfb04c50acad7a1696f34ef1b2b3c",
+    "url": "/static/media/Team Krayon and Abinesh from Potentia.d8adfb04.jpg"
+  },
+  {
+    "revision": "1423b2a20ec0b4b8bcd8f0bd7ef6f18c",
+    "url": "/static/media/Team Krayon.1423b2a2.jpg"
   },
   {
     "revision": "57b25f32a35be4b5b2a6dfc1e8cf53b8",

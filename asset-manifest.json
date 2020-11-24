@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.4bfbb72b.chunk.css",
-    "main.js": "/static/js/main.67271a1d.chunk.js",
-    "main.js.map": "/static/js/main.67271a1d.chunk.js.map",
+    "main.js": "/static/js/main.595aa576.chunk.js",
+    "main.js.map": "/static/js/main.595aa576.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5cc14cde.js",
     "runtime-main.js.map": "/static/js/runtime-main.5cc14cde.js.map",
     "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
-    "static/js/2.ec128c15.chunk.js": "/static/js/2.ec128c15.chunk.js",
-    "static/js/2.ec128c15.chunk.js.map": "/static/js/2.ec128c15.chunk.js.map",
+    "static/js/2.bbbcc0d3.chunk.js": "/static/js/2.bbbcc0d3.chunk.js",
+    "static/js/2.bbbcc0d3.chunk.js.map": "/static/js/2.bbbcc0d3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.496cb2b02d3637cd51c7341115dd0637.js": "/precache-manifest.496cb2b02d3637cd51c7341115dd0637.js",
+    "precache-manifest.c99d5c118483642eb97a4bc0869a3b17.js": "/precache-manifest.c99d5c118483642eb97a4bc0869a3b17.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
     "static/css/main.4bfbb72b.chunk.css.map": "/static/css/main.4bfbb72b.chunk.css.map",
-    "static/js/2.ec128c15.chunk.js.LICENSE.txt": "/static/js/2.ec128c15.chunk.js.LICENSE.txt",
+    "static/js/2.bbbcc0d3.chunk.js.LICENSE.txt": "/static/js/2.bbbcc0d3.chunk.js.LICENSE.txt",
     "static/media/Adding a task.gif": "/static/media/Adding a task.01da1b6d.gif",
     "static/media/Classes and Booking.gif": "/static/media/Classes and Booking.6d1a9f85.gif",
     "static/media/Company Challenges.gif": "/static/media/Company Challenges.6b4e2a5a.gif",
@@ -34,7 +34,8 @@
     "static/media/Playthrough.gif": "/static/media/Playthrough.c0dd6e2d.gif",
     "static/media/Profile Page.gif": "/static/media/Profile Page.cc1ef1b0.gif",
     "static/media/Rewards.gif": "/static/media/Rewards.4b024aa0.gif",
-    "static/media/Team Krayon.jpg": "/static/media/Team Krayon.9e2c7a6f.jpg",
+    "static/media/Team Krayon and Abinesh from Potentia.jpg": "/static/media/Team Krayon and Abinesh from Potentia.d8adfb04.jpg",
+    "static/media/Team Krayon.jpg": "/static/media/Team Krayon.1423b2a2.jpg",
     "static/media/Title Screen.jpg": "/static/media/Title Screen.57b25f32.jpg",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.bdac814f.gif",
     "static/media/index.css": "/static/media/value-bullet-point.90e6f5a2.png",
@@ -43,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.5cc14cde.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.ec128c15.chunk.js",
+    "static/js/2.bbbcc0d3.chunk.js",
     "static/css/main.4bfbb72b.chunk.css",
-    "static/js/main.67271a1d.chunk.js"
+    "static/js/main.595aa576.chunk.js"
   ]
 }
