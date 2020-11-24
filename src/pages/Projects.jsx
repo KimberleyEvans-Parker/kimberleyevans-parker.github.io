@@ -73,6 +73,19 @@ function Projects() {
       )}
       <ContentItem
         imgOnLeft={imgOnLeft()}
+        heading="Industry 4.0"
+        subheading="Machine Health Monitoring Software"
+        dates="August 2020 - November 2020"
+        description="A cross-platform application made by 8 people following agile practices.  
+          The application was able to take data from different machines and sensors and display them to the technicians.  
+          Users would be able to view this data in real-time, and see historical data, and receive notifications when a machine reported unhealthy readings.
+          The project which we started for our Product Owner has received funding to continue its production.  "
+        githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
         heading="Upskill"
         subheading="Platform to connect and upskill"
         dates="July 2020"
