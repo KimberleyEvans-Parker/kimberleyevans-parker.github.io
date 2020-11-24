@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Krayon1 from "../assets/awards/Team Krayon.jpg";
+import Krayon2 from "../assets/awards/Team Krayon and Abinesh from Potentia.jpg";
 
 import ContentItem from "./components/ContentItem";
 
@@ -58,7 +59,7 @@ function Awards() {
           In the end, my team was awarded 1st place!  
           We gained a huge amount of experience, and learnt a lot.  
           You can also see the project Upskill on my projects page."
-        images={[Krayon1]}
+        images={[Krayon1, Krayon2]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
