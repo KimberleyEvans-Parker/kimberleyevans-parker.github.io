@@ -1,5 +1,14 @@
 import React, { useState } from "react";
 
+import Industry1 from "../assets/projects/Industry 4.0/Landing Page and Login.gif"
+import Industry2 from "../assets/projects/Industry 4.0/Add and Edit Machines.gif"
+import Industry3 from "../assets/projects/Industry 4.0/Subscribe to machines.gif"
+import Industry4 from "../assets/projects/Industry 4.0/Add and Edit Sensor.gif"
+import Industry5 from "../assets/projects/Industry 4.0/Sensor Page.gif"
+import Industry6 from "../assets/projects/Industry 4.0/Sensor Data.gif"
+import Industry7 from "../assets/projects/Industry 4.0/Edit Email Notifications.gif"
+import Industry8 from "../assets/projects/Industry 4.0/Email Notifications.gif"
+import Industry9 from "../assets/projects/Industry 4.0/Changing Machine Status.gif"
 import Upskill1 from "../assets/projects/Upskill/Home Page.gif";
 import Upskill2 from "../assets/projects/Upskill/Instructors.gif";
 import Upskill3 from "../assets/projects/Upskill/Instructor Profile.gif";
@@ -81,6 +90,7 @@ function Projects() {
           Users would be able to view this data in real-time, and see historical data, and receive notifications when a machine reported unhealthy readings.
           The project which we started for our Product Owner has received funding to continue its production.  "
         githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
+        images={[Industry1, Industry2, Industry3, Industry4, Industry5, Industry6, Industry7, Industry8, Industry9]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
