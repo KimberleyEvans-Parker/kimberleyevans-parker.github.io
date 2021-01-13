@@ -1,35 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5139265595ce8aab22c5926aa23ace95",
+    "revision": "b666f504b8dd19fa138c91f37c9c5888",
     "url": "/index.html"
   },
   {
-    "revision": "190709f80d8f103e10cb",
+    "revision": "fb25b8cf980378901744",
     "url": "/static/css/2.fb346933.chunk.css"
   },
   {
-    "revision": "8deb26d3258d088ba72f",
+    "revision": "45b48ad3b888470ca16d",
     "url": "/static/css/main.4bfbb72b.chunk.css"
   },
   {
-    "revision": "190709f80d8f103e10cb",
-    "url": "/static/js/2.bbbcc0d3.chunk.js"
+    "revision": "fb25b8cf980378901744",
+    "url": "/static/js/2.f033780b.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/static/js/2.bbbcc0d3.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f033780b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8deb26d3258d088ba72f",
-    "url": "/static/js/main.595aa576.chunk.js"
+    "revision": "45b48ad3b888470ca16d",
+    "url": "/static/js/main.f68f54f2.chunk.js"
   },
   {
     "revision": "a2fb6daf81e9df9aabc0",
     "url": "/static/js/runtime-main.5cc14cde.js"
   },
   {
+    "revision": "138f2b22cbbed684d4937c124d289f9e",
+    "url": "/static/media/Add and Edit Machines.138f2b22.gif"
+  },
+  {
+    "revision": "51919e0e2540c463915f96c05ddf2160",
+    "url": "/static/media/Add and Edit Sensor.51919e0e.gif"
+  },
+  {
     "revision": "01da1b6dee73e8ba52ff60159993f882",
     "url": "/static/media/Adding a task.01da1b6d.gif"
+  },
+  {
+    "revision": "e459f0e50bee8531e3b9b4ec1063d9ee",
+    "url": "/static/media/Changing Machine Status.e459f0e5.gif"
   },
   {
     "revision": "6d1a9f856b98a94fb26f6f5405696fa8",
@@ -42,6 +54,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "24f2c17eb0eae3911409e1eee02c2e8e",
     "url": "/static/media/Dashboard.24f2c17e.png"
+  },
+  {
+    "revision": "53a0deb46ed055eddd4010bc5a8c0f8f",
+    "url": "/static/media/Edit Email Notifications.53a0deb4.gif"
+  },
+  {
+    "revision": "c5c31764f565794d914ff7401ffc3614",
+    "url": "/static/media/Email Notifications.c5c31764.gif"
   },
   {
     "revision": "ee8de395bfdf111d8ec04b7d4f2a62a3",
@@ -70,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "37e74037732a99265970aae848d5d8aa",
     "url": "/static/media/Integration Center.37e74037.png"
+  },
+  {
+    "revision": "b5e6bdbf47a13ee907c678de1d08f0cc",
+    "url": "/static/media/Landing Page and Login.b5e6bdbf.gif"
   },
   {
     "revision": "370e87677cd2f41a373eb3921d3beb8b",
@@ -114,6 +138,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4b024aa0bb47731e10a2c5a9521812c7",
     "url": "/static/media/Rewards.4b024aa0.gif"
+  },
+  {
+    "revision": "abfdc01fd4967d2ca14afa1b55cc4d28",
+    "url": "/static/media/Sensor Data.abfdc01f.gif"
+  },
+  {
+    "revision": "ec9521e79ccf50cd59ae6a837b296512",
+    "url": "/static/media/Sensor Page.ec9521e7.gif"
+  },
+  {
+    "revision": "85ce3f18facf6d87338ebe8c13a2f415",
+    "url": "/static/media/Subscribe to machines.85ce3f18.gif"
   },
   {
     "revision": "d8adfb04c50acad7a1696f34ef1b2b3c",
