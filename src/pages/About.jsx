@@ -1,5 +1,6 @@
 import React from "react";
 import ProfilePic from "../assets/profile-pic.jpg";
+import Resume from "../assets/CV-20-08.pdf";
 import { SMALL_SCREEN } from "../Constants";
 
 function About() {
@@ -100,6 +101,8 @@ function About() {
             whilst working part-time
           </li>
         </ul>
+        <h2>Resume</h2>
+        <p>Like what you see?  <a href={Resume} download>Download my CV</a></p>
       </div>
     </div>
   );
