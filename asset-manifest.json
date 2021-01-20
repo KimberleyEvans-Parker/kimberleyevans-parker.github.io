@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.4bfbb72b.chunk.css",
-    "main.js": "/static/js/main.f68f54f2.chunk.js",
-    "main.js.map": "/static/js/main.f68f54f2.chunk.js.map",
+    "main.js": "/static/js/main.42e20271.chunk.js",
+    "main.js.map": "/static/js/main.42e20271.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5cc14cde.js",
     "runtime-main.js.map": "/static/js/runtime-main.5cc14cde.js.map",
     "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
-    "static/js/2.f033780b.chunk.js": "/static/js/2.f033780b.chunk.js",
-    "static/js/2.f033780b.chunk.js.map": "/static/js/2.f033780b.chunk.js.map",
+    "static/js/2.840cba51.chunk.js": "/static/js/2.840cba51.chunk.js",
+    "static/js/2.840cba51.chunk.js.map": "/static/js/2.840cba51.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6db70cff6c669d34f4c3c7528a287e8b.js": "/precache-manifest.6db70cff6c669d34f4c3c7528a287e8b.js",
+    "precache-manifest.26a616a862655fcff6a11d95d33e1ed4.js": "/precache-manifest.26a616a862655fcff6a11d95d33e1ed4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
     "static/css/main.4bfbb72b.chunk.css.map": "/static/css/main.4bfbb72b.chunk.css.map",
-    "static/js/2.f033780b.chunk.js.LICENSE.txt": "/static/js/2.f033780b.chunk.js.LICENSE.txt",
+    "static/js/2.840cba51.chunk.js.LICENSE.txt": "/static/js/2.840cba51.chunk.js.LICENSE.txt",
     "static/media/Add and Edit Machines.gif": "/static/media/Add and Edit Machines.138f2b22.gif",
     "static/media/Add and Edit Sensor.gif": "/static/media/Add and Edit Sensor.51919e0e.gif",
     "static/media/Adding a task.gif": "/static/media/Adding a task.01da1b6d.gif",
+    "static/media/CV-20-08.pdf": "/static/media/CV-20-08.6a0b8ab7.pdf",
     "static/media/Changing Machine Status.gif": "/static/media/Changing Machine Status.e459f0e5.gif",
     "static/media/Classes and Booking.gif": "/static/media/Classes and Booking.6d1a9f85.gif",
     "static/media/Company Challenges.gif": "/static/media/Company Challenges.6b4e2a5a.gif",
@@ -53,8 +54,8 @@
   "entrypoints": [
     "static/js/runtime-main.5cc14cde.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.f033780b.chunk.js",
+    "static/js/2.840cba51.chunk.js",
     "static/css/main.4bfbb72b.chunk.css",
-    "static/js/main.f68f54f2.chunk.js"
+    "static/js/main.42e20271.chunk.js"
   ]
 }
