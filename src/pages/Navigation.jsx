@@ -28,7 +28,6 @@ function Navigation(props) {
   });
 
   return (
-    <div className="navigation">
       <nav>
         <div className="navbar-container">
           <ul>
@@ -70,28 +69,15 @@ function Navigation(props) {
                 </Link>
                 <Link
                   className="nav-link"
-                  to="/projects"
+                  to="/experience"
                   onClick={() => setdropdownOpen(false)}
                 >
                   <li
                     className={`${dropdownOpen && "dropdown-open"} ${
-                      props.location.pathname === "/projects" ? "active" : ""
+                      props.location.pathname === "/experience" ? "active" : ""
                     }`}
                   >
-                    Projects
-                  </li>
-                </Link>
-                <Link
-                  className="nav-link"
-                  to="/awards"
-                  onClick={() => setdropdownOpen(false)}
-                >
-                  <li
-                    className={`${dropdownOpen && "dropdown-open"} ${
-                      props.location.pathname === "/awards" ? "active" : ""
-                    }`}
-                  >
-                    Awards
+                    Experience
                   </li>
                 </Link>
                 <a
@@ -115,7 +101,6 @@ function Navigation(props) {
           )}
         </div>
       </nav>
-    </div>
   );
 }
 

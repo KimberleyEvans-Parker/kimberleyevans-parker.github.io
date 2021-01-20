@@ -7,7 +7,8 @@
   --positive-animation-distance: 40px;
   --primary-colour: #472e5e;
   --secondary-colour: #11193f;
-  --tertiary-colour: #9ba0ca;
+  --tertiary-colour: #173b6f;
+  --quaternary-colour: #9ba0ca;
   --background-colour: #192a58;
   --shadow-colour: #222222;
   --firefly-colour: yellow;
@@ -180,12 +181,16 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: var(--tertiary-colour);
+  background-color: var(--quaternary-colour);
   color: black;
 }
 
 nav ul li.active {
   background-color: var(--primary-colour);
+  color: white;
+}
+.nav2 ul li.active {
+  background-color: var(--tertiary-colour);
   color: white;
 }
 
@@ -209,6 +214,11 @@ nav ul a {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+}
+
+.nav2 {
+  top: 57px;
+  background-color: var(--primary-colour);
 }
 
 /* menu icon and animation */
