@@ -136,6 +136,10 @@ button:hover {
   margin-right: auto;
 }
 
+.experience-container {
+  padding-top: 150px;
+}
+
 .carousel .slide img {
   vertical-align: middle !important;
 }

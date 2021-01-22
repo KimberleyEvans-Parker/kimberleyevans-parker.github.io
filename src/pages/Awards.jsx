@@ -32,7 +32,7 @@ function Awards() {
   }
 
   return (
-    <div className="content-container">
+    <div className="content-container experience-container">
       <h1>Awards and Achievments</h1>
       {image && (
         <>
