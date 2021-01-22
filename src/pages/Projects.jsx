@@ -63,7 +63,7 @@ function Projects() {
   }
 
   return (
-    <div className="content-container">
+    <div className="content-container experience-container">
       <h1>Projects</h1>
       {image && (
         <>
