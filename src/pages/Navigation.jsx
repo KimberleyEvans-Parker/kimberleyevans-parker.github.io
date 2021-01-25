@@ -74,7 +74,7 @@ function Navigation(props) {
                 >
                   <li
                     className={`${dropdownOpen && "dropdown-open"} ${
-                      props.location.pathname === "/experience" ? "active" : ""
+                      props.location.pathname.startsWith("/experience") ? "active" : ""
                     }`}
                   >
                     Experience

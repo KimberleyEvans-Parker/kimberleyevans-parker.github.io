@@ -8,7 +8,17 @@ function Navigation2(props) {
           <ul>
                 <Link
                   className="nav-link"
-                  to="/projects"
+                  to="/experience/work"
+                >
+                  <li
+                    className={`${props.location.pathname === "/experience/work" ? "active" : ""}`}
+                  >
+                    Work
+                  </li>
+                </Link>
+                <Link
+                  className="nav-link"
+                  to="/experience/projects"
                 >
                   <li
                     className={`${props.location.pathname === "/experience/projects" ? "active" : ""}`}
@@ -18,22 +28,12 @@ function Navigation2(props) {
                 </Link>
                 <Link
                   className="nav-link"
-                  to="/awards"
+                  to="/experience/awards"
                 >
                   <li
                     className={`${props.location.pathname === "/experience/awards" ? "active" : ""}`}
                   >
                     Awards
-                  </li>
-                </Link>
-                <Link
-                  className="nav-link"
-                  to="/work"
-                >
-                  <li
-                    className={`${props.location.pathname === "/experience/work" ? "active" : ""}`}
-                  >
-                    Work
                   </li>
                 </Link>
               </ul>
