@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 
-import Krayon1 from "../assets/awards/Team Krayon.jpg";
-import Krayon2 from "../assets/awards/Team Krayon and Abinesh from Potentia.jpg";
-
 import ContentItem from "./components/ContentItem";
 
 function Work() {
@@ -33,7 +30,7 @@ function Work() {
 
   return (
     <div className="content-container experience-container">
-      <h1>Awards and Achievments</h1>
+      <h1>Work Experience</h1>
       {image && (
         <>
           <div className="modal-background">
@@ -51,44 +48,51 @@ function Work() {
       )}
       <ContentItem
         imgOnLeft={imgOnLeft()}
-        heading="2020 DEVS Hackathon"
-        subheading="1st place"
-        dates="July 2020"
-        description="My team of 6 participated in the DEVS 48 hour Hackathon, making a demo platform; Upskill.  
-          We took out market research to validate our idea and performed financial analysis.  
-          In the end, my team was awarded 1st place!  
-          We gained a huge amount of experience, and learnt a lot.  
-          You can also see the project Upskill on my projects page."
-        images={[Krayon1, Krayon2]}
+        heading="Engineering Intern"
+        subheading="FlexWare"
+        dates="September 2020 - Present"
+        description="I manafacture cables for a variety of purposes, have tested both hardware and software 
+          and have gained experience programming in C#."
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={imgOnLeft()}
-        heading="AUCS Hackathon"
-        subheading="Best Presentation"
-        dates="May 2019"
-        description="My team of 6 was awarded best presentation during the 2019 AUCS Hackathon.
-          Our presentation included our project; Eventigate.  
-          A platform for connecting event organisers, locations and people, which you can find out more about on my projects page."
+        heading="Teacher"
+        subheading="Bricks4Kidz"
+        dates="January 2020 - Present"
+        description="I encourage young childrem into STEM related fields by teaching them related skills.  
+          These skills are taught with the aid of LEGO robtics and mechanics. "
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={imgOnLeft()}
-        heading="New Zealand Programming Competition"
-        subheading="3rd in New Zealand"
+        heading="Co-Founder"
+        subheading="School Storage Solutions"
+        dates="March 2016 - Present"
+        description={`As part of the Young Enterprise Scheme, I created a business that rents out lockers to students.  
+          This made a profit in its first year and is still being run along side my studies.  
+          During my time in my business, I have gained experience communicating with producers and customers, 
+          designing and manufacturing the lockers, working with marketing and sales and designing a website.  `}
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+        link={"http://www.schoolstorage.co.nz"}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
+        heading="Software Engineering Intern"
+        subheading="No. 8 Wireless"
         dates="June 2019"
-        description="We worked in a team of three to solve problems of a range of difficulties in Python, C or Java.  
-          100-point questions, in particular, were designed to be extremly difficult, but my team and I managed to work together to complete the problem.  
-          As a result of our hard work, team effor and problem solving skills, our team ranked 2nd in Auckland and 3rd in New Zealand."
+        description="I developed an automated testing system for the phones that Ooma - a U.S. company.  
+          During this, I gained experience with Git, Python and hardware."
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
       <ContentItem
         imgOnLeft={imgOnLeft()}
-        heading="Alice Programming Competition"
-        subheading="2nd place"
+        heading="Cashiers"
+        subheading="Gilmours"
         dates="April 2016"
         description="My partner and I received 2nd place for a competition in the Alice programming environment.
           During this, we were able to create 3D animations to fit a desired script, within a given time frame."
