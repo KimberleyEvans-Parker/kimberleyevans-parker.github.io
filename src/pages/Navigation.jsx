@@ -28,7 +28,7 @@ function Navigation(props) {
   });
 
   return (
-      <nav>
+      <nav className="slide-in">
         <div className="navbar-container">
           <ul>
             <Link to="/" onClick={() => setdropdownOpen(false)}>

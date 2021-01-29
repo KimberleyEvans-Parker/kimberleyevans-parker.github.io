@@ -3,7 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 
 function Navigation2(props) {
   return (
-      <nav className="nav2">
+      <nav className="nav2 slide-in">
         <div className="navbar-container">
           <ul>
                 <Link
