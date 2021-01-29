@@ -20,7 +20,6 @@ function Awards() {
   const getAnimationDelay = () => {
     const animationDelaySeconds = animationDelay.toString() + 's';
     animationDelay += 0.4
-    console.log(animationDelaySeconds)
     return animationDelaySeconds
   }
 
@@ -33,7 +32,7 @@ function Awards() {
 
   return (
     <div className="content-container experience-container">
-      <h1>Awards and Achievments</h1>
+      <h1 className="fade left">Awards and Achievments</h1>
       {image && (
         <>
           <div className="modal-background">

@@ -30,7 +30,7 @@ function Work() {
 
   return (
     <div className="content-container experience-container">
-      <h1>Work Experience</h1>
+      <h1 className="fade left">Work Experience</h1>
       {image && (
         <>
           <div className="modal-background">
