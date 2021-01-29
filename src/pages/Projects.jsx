@@ -64,7 +64,7 @@ function Projects() {
 
   return (
     <div className="content-container experience-container">
-      <h1>Projects</h1>
+      <h1 className="fade left">Projects</h1>
       {image && (
         <>
           <div className="modal-background">
