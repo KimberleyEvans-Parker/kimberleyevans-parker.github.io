@@ -10,7 +10,6 @@ function Awards() {
   const [caption, setCaption] = useState("");
 
   const openModal = (image, caption) => {
-    console.log("open modal", image, caption);
     setImage(image);
     setCaption(caption);
   };

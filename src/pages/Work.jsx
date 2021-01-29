@@ -7,7 +7,6 @@ function Work() {
   const [caption, setCaption] = useState("");
 
   const openModal = (image, caption) => {
-    console.log("open modal", image, caption);
     setImage(image);
     setCaption(caption);
   };
@@ -17,7 +16,6 @@ function Work() {
   const getAnimationDelay = () => {
     const animationDelaySeconds = animationDelay.toString() + 's';
     animationDelay += 0.4
-    console.log(animationDelaySeconds)
     return animationDelaySeconds
   }
 
