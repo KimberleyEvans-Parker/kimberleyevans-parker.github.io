@@ -143,6 +143,11 @@ button:hover {
   line-height: 0;
 }
 
+.carousel .carousel-status {
+  overflow: hidden;
+  margin-top: 4px;
+}
+
 /* ----------------------------- nav ----------------------------- */
 .fa-github {
   font-size: 24px;
