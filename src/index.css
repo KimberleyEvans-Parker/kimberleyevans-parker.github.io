@@ -7,9 +7,11 @@
   --positive-animation-distance: 40px;
   --primary-colour: #472e5e;
   --secondary-colour: #11193f;
-  --tertiary-colour: #173b6f;
+  --tertiary-colour: #1b275a;
+  /* --tertiary-colour: #17214e; */
+  /* --tertiary-colour: #173b6f; */
   --quaternary-colour: #9ba0ca;
-  --background-colour: #192a58;
+  --background-colour: #1e2c55;
   --shadow-colour: #222222;
   --firefly-colour: yellow;
 }
@@ -154,6 +156,18 @@ button:hover {
 }
 
 /* ----------------------------- nav ----------------------------- */
+.slide-in {
+  animation: slide-in ease 2s forwards;
+}
+@keyframes slide-in {
+  100% {
+    transform: translateY(0px);
+  }
+  0% {
+    transform: translateY(-57px);
+  }
+}
+
 .fa-github {
   font-size: 24px;
   top: 5px;
@@ -221,6 +235,7 @@ nav ul a {
 }
 
 .nav2 {
+  z-index: -10;
   top: 57px;
   background-color: var(--primary-colour);
 }
