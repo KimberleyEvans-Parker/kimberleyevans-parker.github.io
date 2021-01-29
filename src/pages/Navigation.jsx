@@ -54,11 +54,7 @@ function Navigation(props) {
               className={`navbar-rightside ${dropdownOpen && "dropdown-open"}`}
             >
               <ul>
-                <Link
-                  className="nav-link"
-                  to="/about"
-                  onClick={() => setdropdownOpen(false)}
-                >
+                <Link className="nav-link" to="/about" onClick={() => setdropdownOpen(false)}>
                   <li
                     className={`${dropdownOpen && "dropdown-open"} ${
                       props.location.pathname === "/about" ? "active" : ""
@@ -67,11 +63,7 @@ function Navigation(props) {
                     About
                   </li>
                 </Link>
-                <Link
-                  className="nav-link"
-                  to="/experience"
-                  onClick={() => setdropdownOpen(false)}
-                >
+                <Link className="nav-link" to="/experience" onClick={() => setdropdownOpen(false)}>
                   <li
                     className={`${dropdownOpen && "dropdown-open"} ${
                       props.location.pathname.startsWith("/experience") ? "active" : ""
@@ -80,18 +72,13 @@ function Navigation(props) {
                     Experience
                   </li>
                 </Link>
-                <a
-                  href="https://github.com/KimberleyEvans-Parker"
-                  onClick={() => setdropdownOpen(false)}
+                <a href="https://github.com/KimberleyEvans-Parker" onClick={() => setdropdownOpen(false)}
                 >
                   <li className={dropdownOpen && "dropdown-open"}>
                     <i className="fa fa-github" aria-hidden="true"></i>
                   </li>
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/kimberley-evans-parker/"
-                  onClick={() => setdropdownOpen(false)}
-                >
+                <a href="https://www.linkedin.com/in/kimberley-evans-parker/" onClick={() => setdropdownOpen(false)}>
                   <li className={dropdownOpen && "dropdown-open"}>
                     <i className="fa fa-linkedin" aria-hidden="true"></i>
                   </li>
