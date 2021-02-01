@@ -1,39 +1,18 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+import { EXTRA_SMALL_SCREEN } from "../Constants";
+import SubNavbarLink from "./components/SubNavbarLink";
 
 function Navigation2(props) {
+
   return (
       <nav className="nav2 slide-in">
         <div className="navbar-container">
           <ul>
-            <Link className="nav-link" to="/experience/work">
-              <li
-                className={`${props.location.pathname === "/experience/work" ? "active" : ""}`}
-              >
-                Work
-              </li>
-            </Link>
-            <Link className="nav-link" to="/experience/volunteer">
-              <li
-                className={`${props.location.pathname === "/experience/volunteer" ? "active" : ""}`}
-              >
-                Volunteer
-              </li>
-            </Link>
-            <Link className="nav-link" to="/experience/projects">
-              <li
-                className={`${props.location.pathname === "/experience/projects" ? "active" : ""}`}
-              >
-                Projects
-              </li>
-            </Link>
-            <Link className="nav-link" to="/experience/awards">
-              <li
-                className={`${props.location.pathname === "/experience/awards" ? "active" : ""}`}
-              >
-                Awards
-              </li>
-            </Link>
+            <SubNavbarLink heading="Work" />
+            <SubNavbarLink heading="Volunteer" />
+            <SubNavbarLink heading="Projects" />
+            <SubNavbarLink heading="Awards" />
           </ul>
         </div>
       </nav>
