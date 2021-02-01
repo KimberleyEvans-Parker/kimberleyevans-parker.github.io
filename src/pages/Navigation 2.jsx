@@ -13,6 +13,13 @@ function Navigation2(props) {
                 Work
               </li>
             </Link>
+            <Link className="nav-link" to="/experience/volunteer">
+              <li
+                className={`${props.location.pathname === "/experience/volunteer" ? "active" : ""}`}
+              >
+                Volunteer
+              </li>
+            </Link>
             <Link className="nav-link" to="/experience/projects">
               <li
                 className={`${props.location.pathname === "/experience/projects" ? "active" : ""}`}
