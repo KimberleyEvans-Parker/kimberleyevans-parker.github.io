@@ -52,6 +52,16 @@ function Volunteer() {
       )}
       <ContentItem
         imgOnLeft={imgOnLeft()}
+        heading="Robogals"
+        subheading="STEM Teacher"
+        dates="April 2019 - July 2019"
+        description="I worked as a teacher with Robogals to encourage young children into STEM fields.  
+          This was done with the aid of LEGO Mindstorm robots, which were able to be programmed by the children to navigate their way around a maze."
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
         heading="Reforestation"
         subheading="Motuihe Island"
         dates="August 2015"
