@@ -52,6 +52,15 @@ function Volunteer() {
       )}
       <ContentItem
         imgOnLeft={imgOnLeft()}
+        heading="Class Rep"
+        subheading="Phil 222 and Logicomp 301"
+        dates="July 2019 - July 2020"
+        description="I represented the students in my class and communicate any questions, queries, concerns or feedback to the teacher."
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
         heading="Robogals"
         subheading="STEM Teacher"
         dates="April 2019 - July 2019"
