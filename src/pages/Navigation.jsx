@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
-import { SMALL_SCREEN } from "../Constants";
+import { SMALL_SCREEN, EXTRA_SMALL_SCREEN } from "../Constants";
 
 function Navigation(props) {
   const [dropdownOpen, setdropdownOpen] = useState(false);
@@ -16,7 +16,7 @@ function Navigation(props) {
         height: window.innerHeight,
         width: window.innerWidth,
       });
-      if (dimensions.width >= SMALL_SCREEN) {
+      if (dimensions.width >= EXTRA_SMALL_SCREEN) {
         setdropdownOpen(false);
       }
     }
@@ -29,12 +29,13 @@ function Navigation(props) {
 
   return (
       <nav className="slide-in">
-        <div className="navbar-container">
+        <div className={`${dimensions.width >= EXTRA_SMALL_SCREEN ? 
+          "navbar-container" : "navbar-container-smallscreen"}`}>
           <ul>
             <Link to="/" onClick={() => setdropdownOpen(false)}>
               <li>Kimberley Evans-Parker</li>
             </Link>
-            {dimensions.width < SMALL_SCREEN && (
+            {dimensions.width < EXTRA_SMALL_SCREEN && (
               <div
                 className={`navbar-rightside`}
                 onClick={() => setdropdownOpen(!dropdownOpen)}
@@ -49,7 +50,7 @@ function Navigation(props) {
               </div>
             )}
           </ul>
-          {(dropdownOpen || dimensions.width >= SMALL_SCREEN) && (
+          {(dropdownOpen || dimensions.width >= EXTRA_SMALL_SCREEN) && (
             <div
               className={`navbar-rightside ${dropdownOpen && "dropdown-open"}`}
             >
