@@ -1,3 +1,4 @@
 export const SMALL_SCREEN = 750;
+export const EXTRA_SMALL_SCREEN = 666;
 export const CAROUSEL_TRANSITION_TIME = 2000;
 export const CAROUSEL_INTERVAL = 5000;
