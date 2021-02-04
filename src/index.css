@@ -37,6 +37,12 @@ body {
   text-decoration: none;
   color: white;
   overflow-x: hidden;
+  -ms-overflow-style: none; /* Remove scrollbar in IE and Edge */
+  scrollbar-width: none; /* Remove scrollbar in Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Remove scrollbar */
 }
 
 h1,
