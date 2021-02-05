@@ -34,7 +34,7 @@ function Volunteer() {
 
   return (
     <div className="content-container experience-container">
-      <h1 className="fade left">Projects</h1>
+      <h1 className="fade left">Volunteer Work</h1>
       {image && (
         <>
           <div className="modal-background">
