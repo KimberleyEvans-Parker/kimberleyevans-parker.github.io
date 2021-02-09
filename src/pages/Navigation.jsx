@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
-import { SMALL_SCREEN, EXTRA_SMALL_SCREEN } from "../Constants";
+import { EXTRA_SMALL_SCREEN } from "../Constants";
 
 function Navigation(props) {
   const [dropdownOpen, setdropdownOpen] = useState(false);
