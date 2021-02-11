@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import Krayon1 from "../assets/awards/Team Krayon.jpg";
-import Krayon2 from "../assets/awards/Team Krayon and Abinesh from Potentia.jpg";
+import Krayon1 from "../assets/awards/2020 DEVS Hackathon/Team Krayon.jpg";
+import Krayon2 from "../assets/awards/2020 DEVS Hackathon/Team Krayon and Abinesh from Potentia.jpg";
 
 import ContentItem from "./components/ContentItem";
 
