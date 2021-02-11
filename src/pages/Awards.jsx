@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import Krayon1 from "../assets/awards/2020 DEVS Hackathon/Team Krayon.jpg";
 import Krayon2 from "../assets/awards/2020 DEVS Hackathon/Team Krayon and Abinesh from Potentia.jpg";
+import MYOB1 from "../assets/awards/MYOB IT Challenge/Trophy.JPG";
+import MYOB2 from "../assets/awards/MYOB IT Challenge/Team Whiz Craft.jpg";
 
 import ContentItem from "./components/ContentItem";
 
@@ -47,6 +49,23 @@ function Awards() {
           </div>
         </>
       )}
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
+        heading="2020 MYOB IT Challenge"
+        subheading="3rd place"
+        dates="July 2020"
+        description="I competed in the MYOB IT Challenge with a team of 4 against over 140 other teams accross Australia and New Zealand.  
+          Our challenge was to come up with an AI-powered solution to a problem encountered during quarantine and isolation.  
+          We decided to focus on the reduced productivity and mental well-being.  
+          To combat this problem, we created Heart Healer - an AI chatbot, friend and counsellor, whcih you can view on my projects page.
+          During the competition, there were two rounds - the first of which was a video pitch of our idea.  
+          Six successful teams progressed to the second round, where we were able to get feedback, before pitching our idea live to the judges.
+          My team - Whiz Craft - was awarded 3rd place overall, or 1st in New Zealand."
+        images={[MYOB1, MYOB2]}
+        link="https://www.auckland.ac.nz/en/news/2020/10/09/heart-healer-app-a-winner.html"
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
       <ContentItem
         imgOnLeft={imgOnLeft()}
         heading="2020 DEVS Hackathon"
