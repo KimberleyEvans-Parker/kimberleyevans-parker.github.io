@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.96a1213f.chunk.css",
-    "main.js": "/static/js/main.466c0537.chunk.js",
-    "main.js.map": "/static/js/main.466c0537.chunk.js.map",
+    "main.js": "/static/js/main.6285640e.chunk.js",
+    "main.js.map": "/static/js/main.6285640e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.319cfbdb.js",
     "runtime-main.js.map": "/static/js/runtime-main.319cfbdb.js.map",
     "static/css/2.55d8add8.chunk.css": "/static/css/2.55d8add8.chunk.css",
@@ -50,8 +50,10 @@
     "static/media/Subscribe to machines.a966a8e7.gif": "/static/media/Subscribe to machines.a966a8e7.gif",
     "static/media/Team Krayon and Abinesh from Potentia.4fda76cd.jpg": "/static/media/Team Krayon and Abinesh from Potentia.4fda76cd.jpg",
     "static/media/Team Krayon.9698eda5.jpg": "/static/media/Team Krayon.9698eda5.jpg",
+    "static/media/Team Whiz Craft.f6e0a9a3.jpg": "/static/media/Team Whiz Craft.f6e0a9a3.jpg",
     "static/media/Title Screen.64d80ef2.jpg": "/static/media/Title Screen.64d80ef2.jpg",
     "static/media/Traversing the map.e65bb477.gif": "/static/media/Traversing the map.e65bb477.gif",
+    "static/media/Trophy.e469d9ac.JPG": "/static/media/Trophy.e469d9ac.JPG",
     "static/media/View of the Island.3226d5f5.JPG": "/static/media/View of the Island.3226d5f5.JPG",
     "static/media/index.css": "/static/media/value-bullet-point.5245db36.png",
     "static/media/profile-pic.04afe0e1.jpg": "/static/media/profile-pic.04afe0e1.jpg"
@@ -61,6 +63,6 @@
     "static/css/2.55d8add8.chunk.css",
     "static/js/2.65fb6566.chunk.js",
     "static/css/main.96a1213f.chunk.css",
-    "static/js/main.466c0537.chunk.js"
+    "static/js/main.6285640e.chunk.js"
   ]
 }
