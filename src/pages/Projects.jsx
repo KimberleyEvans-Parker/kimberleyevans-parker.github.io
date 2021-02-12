@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 
-import Industry1 from "../assets/projects/Industry 4.0/Landing Page and Login.gif"
-import Industry2 from "../assets/projects/Industry 4.0/Add and Edit Machines.gif"
-import Industry3 from "../assets/projects/Industry 4.0/Subscribe to machines.gif"
-import Industry4 from "../assets/projects/Industry 4.0/Add and Edit Sensor.gif"
-import Industry5 from "../assets/projects/Industry 4.0/Sensor Page.gif"
-import Industry6 from "../assets/projects/Industry 4.0/Sensor Data.gif"
-import Industry7 from "../assets/projects/Industry 4.0/Edit Email Notifications.gif"
-import Industry8 from "../assets/projects/Industry 4.0/Email Notifications.gif"
-import Industry9 from "../assets/projects/Industry 4.0/Changing Machine Status.gif"
+import Industry1 from "../assets/projects/Industry 4.0/Landing Page and Login.gif";
+import Industry2 from "../assets/projects/Industry 4.0/Add and Edit Machines.gif";
+import Industry3 from "../assets/projects/Industry 4.0/Subscribe to machines.gif";
+import Industry4 from "../assets/projects/Industry 4.0/Add and Edit Sensor.gif";
+import Industry5 from "../assets/projects/Industry 4.0/Sensor Page.gif";
+import Industry6 from "../assets/projects/Industry 4.0/Sensor Data.gif";
+import Industry7 from "../assets/projects/Industry 4.0/Edit Email Notifications.gif";
+import Industry8 from "../assets/projects/Industry 4.0/Email Notifications.gif";
+import Industry9 from "../assets/projects/Industry 4.0/Changing Machine Status.gif";
+import HeartHealer1 from "../assets/projects/Heart Healer/App.gif";
+import HeartHealer2 from "../assets/projects/Heart Healer/AI Counsellor.gif";
 import Upskill1 from "../assets/projects/Upskill/Home Page.gif";
 import Upskill2 from "../assets/projects/Upskill/Instructors.gif";
 import Upskill3 from "../assets/projects/Upskill/Instructor Profile.gif";
@@ -89,6 +91,20 @@ function Projects() {
           The project which we started for our Product Owner has received funding to continue its production.  "
         githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
         images={[Industry1, Industry2, Industry3, Industry4, Industry5, Industry6, Industry7, Industry8, Industry9]}
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
+        heading="Heart Healer"
+        subheading="AI Counsellor"
+        dates="September 2020"
+        description="This was conceptualised for the 2020 MYOB IT challenge, in which the problems of isolation and quaratine were highlighted.  
+          To combat the problems that arose through isolation and quarantine, we created Heart Healer.  \n &#10; &#13;
+          Heart Healer is an AI chatbot and counsellor that monitors your mental wellbeing and productivity.  
+          It can schedule in breaks for you, talk to you when you're lonely and connect you to other people.  
+          This chatbot would be able to learn individual's preferences through an AI backend and connect people to their business or personal councellor if needed."
+        images={[HeartHealer1, HeartHealer2]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
