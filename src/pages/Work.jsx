@@ -92,8 +92,8 @@ function Work() {
         heading="Cashiers"
         subheading="Gilmours"
         dates="April 2016"
-        description="My partner and I received 2nd place for a competition in the Alice programming environment.
-          During this, we were able to create 3D animations to fit a desired script, within a given time frame."
+        description="I worked as a cashier/checkout operator for Gilmours - a whilesale food company.  
+          During this, I improved my efficiency and interpersonal skills"
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
