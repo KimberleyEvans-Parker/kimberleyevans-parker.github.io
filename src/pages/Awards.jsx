@@ -53,7 +53,7 @@ function Awards() {
         imgOnLeft={imgOnLeft()}
         heading="2020 MYOB IT Challenge"
         subheading="3rd place"
-        dates="July 2020"
+        dates="September 2020"
         description="I competed in the MYOB IT Challenge with a team of 4 against over 140 other teams accross Australia and New Zealand.  
           Our challenge was to come up with an AI-powered solution to a problem encountered during quarantine and isolation.  
           We decided to focus on the reduced productivity and mental well-being.  
