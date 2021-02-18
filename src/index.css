@@ -408,12 +408,12 @@ nav ul a {
 }
 .value-bullet-points li:before {
   content: "";
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   position: absolute;
   background-image: url("./assets/value-bullet-point.png");
   background-size: cover;
-  left: 0;
+  left: 2px;
   top: 2px;
 }
 
