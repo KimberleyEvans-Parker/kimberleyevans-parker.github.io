@@ -100,7 +100,7 @@ function Projects() {
         subheading="AI Counsellor"
         dates="September 2020"
         description="This was conceptualised for the 2020 MYOB IT challenge, in which the problems of isolation and quaratine were highlighted.  
-          To combat the problems that arose through isolation and quarantine, we created Heart Healer.  \n &#10; &#13;
+          To combat the problems that arose through isolation and quarantine, we created Heart Healer.
           Heart Healer is an AI chatbot and counsellor that monitors your mental wellbeing and productivity.  
           It can schedule in breaks for you, talk to you when you're lonely and connect you to other people.  
           This chatbot would be able to learn individual's preferences through an AI backend and connect people to their business or personal councellor if needed."
