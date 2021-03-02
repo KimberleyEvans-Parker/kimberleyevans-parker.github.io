@@ -85,7 +85,7 @@ function Awards() {
         heading="AUCS Hackathon"
         subheading="Best Presentation"
         dates="May 2019"
-        description="My team of 6 was awarded best presentation during the 2019 AUCS Hackathon.
+        description="My team of 6 was awarded best presentation during the 2019 AUCS, KPMG Hackathon.
           Our presentation included our project; Eventigate.  
           A platform for connecting event organisers, locations and people, which you can find out more about on my projects page."
         openModal={openModal}
