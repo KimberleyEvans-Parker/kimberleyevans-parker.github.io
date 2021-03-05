@@ -38,6 +38,8 @@ import AshasQuest2 from "../assets/projects/Asha's Quest/Title Screen.jpg";
 
 import ContentItem from "./components/ContentItem";
 
+import {GIT, PYTHON, JAVA, C, VHDL, HTML, CSS, JS, TS, REACT, REDUX} from "../Constants";
+
 function Projects() {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
@@ -91,6 +93,7 @@ function Projects() {
           The project which we started for our Product Owner has received funding to continue its production.  "
         githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
         images={[Industry1, Industry2, Industry3, Industry4, Industry5, Industry6, Industry7, Industry8, Industry9]}
+        technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -119,6 +122,7 @@ function Projects() {
           Upskill aims to help those impacted by Covid 19, by allowing them to upskill and find new job opportunities.  "
         githubLink="https://github.com/Pyxxil/upskill"
         images={[Upskill1, Upskill2, Upskill3, Upskill4, Upskill5, Upskill6]}
+        technologies={[GIT, HTML, CSS, TS, REACT]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -132,6 +136,7 @@ function Projects() {
           This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
         githubLink="https://github.com/Matteas-Eden/roll-for-reaction"
         images={[RollForReaction1, RollForReaction2, RollForReaction3]}
+        technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -147,6 +152,7 @@ function Projects() {
           The development of Doto is done using the M.E.R.N (MongoDB, Express, React, Node) tech stack."
         githubLink="https://github.com/se701g2/Doto"
         images={[Doto1, Doto2, Doto3, Doto4]}
+        technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -160,6 +166,7 @@ function Projects() {
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
         githubLink="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
         images={[Feedr1, Feedr2, Feedr3]}
+        technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -172,6 +179,7 @@ function Projects() {
           Various shortest path algorithms were created for the robot to plan its traversal across the map, which were written in C."
         githubLink="https://github.com/Matteas-Eden/flik"
         images={[Flik1, Flik2, Flik3]}
+        technologies={[GIT, C]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -184,6 +192,7 @@ function Projects() {
           It also utilises NaCl, json, jinja 2, HTML5 and CSS, JavaScript and cryptography. 
           This could authorize and report login from a login server to a main server run by the lecturer, and see how many web clients are online. 
           It could also send messages privately and in group chats while sending public 'tweets' out to all viewers, and block keywords and people from showing up. "
+          technologies={[PYTHON, HTML, CSS, JS]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -197,6 +206,7 @@ function Projects() {
           This was done by 6 people using JavaScript, HTML and CSS. Won Best Presentation in the AUCS, KPMG hackathon."
         githubLink="https://github.com/KimberleyEvans-Parker/Eventigate"
         images={[Eventigate1, Eventigate2, Eventigate3]}
+        technologies={[GIT, HTML, CSS]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -209,6 +219,7 @@ function Projects() {
           The app listened in to a call and warned you if it thought the caller was trying to scam you. 
           Sammr makes use of speech-to-text  tools and an algorithm to decide the probability of the call being a scam."
           githubLink="https://github.com/Pyxxil/Scammr"
+          technologies={[GIT, JAVA]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -220,6 +231,7 @@ function Projects() {
         description="A game based off Flappy Bird, created by a team of 2, using VHDL. 
           This was designed to be run on an Altera DE0 Board, equipped with an Altera Cyclone III 3C16 FPGA. 
           Understanding of the FPGA hardware, VHDL and Git were developed."
+          technologies={[VHDL]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -233,6 +245,7 @@ function Projects() {
           Details of the project are available on the GitHub repository it was cloned to, shown through a GitHub Wiki. 
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
         githubLink="https://github.com/Matteas-Eden/roll-for-reaction"
+        technologies={[GIT, JAVA]}
         images={[AshasQuest1, AshasQuest2]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -245,6 +258,7 @@ function Projects() {
           Comprised of a digital and an analog section. Data receiver described in VHDL, transmitter programmed in C. 
           Receiver was a CPLD, transmitter was an ATMEGA328PB microcontroller on a self- designed PCB. 
           Breadboarding, LTSpice simulations and Oscilloscopes were used for testing."
+          technologies={[VHDL]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
