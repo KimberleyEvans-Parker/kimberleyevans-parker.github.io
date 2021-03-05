@@ -161,6 +161,12 @@ button:hover {
   margin-top: 4px;
 }
 
+.technologies {
+  word-spacing: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
 /* ----------------------------- nav ----------------------------- */
 .slide-in {
   animation: slide-in ease 2s forwards;
