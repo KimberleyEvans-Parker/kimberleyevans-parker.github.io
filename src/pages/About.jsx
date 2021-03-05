@@ -65,10 +65,12 @@ function About() {
         </p>
         <h2>Technologies</h2>
         <ul className="code-bullet-points">
-          <li>C</li>
-          <li>C++</li>
+          <li>Git</li>
           <li>Python</li>
           <li>Java</li>
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
           <li>Matlab</li>
           <li>VHDL</li>
           <li>SQL</li>
