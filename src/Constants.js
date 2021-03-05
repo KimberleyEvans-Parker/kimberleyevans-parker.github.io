@@ -15,5 +15,6 @@ export const SQL = "SQL";
 export const HTML = "HTML";
 export const CSS = "CSS";
 export const JS = "JavaScript";
+export const TS = "TypeScript";
 export const REACT = "React";
 export const REDUX = "Redux";
