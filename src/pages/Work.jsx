@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import ContentItem from "./components/ContentItem";
 
+import {GIT, PYTHON, CSHARP} from "../Constants";
+
 function Work() {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
@@ -51,6 +53,7 @@ function Work() {
         dates="September 2020 - Present"
         description="I manafacture cables for a variety of purposes, have tested both hardware and software 
           and have gained experience programming in C#."
+        technologies={[GIT, CSHARP]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -84,6 +87,7 @@ function Work() {
         dates="June 2019"
         description="I developed an automated testing system for the phones that Ooma - a U.S. company.  
           During this, I gained experience with Git, Python and hardware."
+        technologies={[GIT, PYTHON]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
