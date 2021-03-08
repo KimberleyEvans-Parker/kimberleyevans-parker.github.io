@@ -33,8 +33,10 @@ import Flik3 from "../assets/projects/Flik/PCB.jpg";
 import Eventigate1 from "../assets/projects/Eventigate/Dashboard.png";
 import Eventigate2 from "../assets/projects/Eventigate/Location Page.png";
 import Eventigate3 from "../assets/projects/Eventigate/Profile Page.gif";
-import AshasQuest1 from "../assets/projects/Asha's Quest/Logo.jpg";
-import AshasQuest2 from "../assets/projects/Asha's Quest/Title Screen.jpg";
+import AshasQuest1 from "../assets/projects/Asha's Quest/Title Screen.jpg";
+import AshasQuest2 from "../assets/projects/Asha's Quest/Character Selection.jpg";
+import AshasQuest3 from "../assets/projects/Asha's Quest/Playthrough.gif";
+import AshasQuest4 from "../assets/projects/Asha's Quest/Logo.jpg";
 
 import ContentItem from "./components/ContentItem";
 
@@ -246,7 +248,7 @@ function Projects() {
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
         githubLink="https://github.com/Matteas-Eden/roll-for-reaction"
         technologies={[GIT, JAVA]}
-        images={[AshasQuest1, AshasQuest2]}
+        images={[AshasQuest1, AshasQuest2, AshasQuest3, AshasQuest4]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
