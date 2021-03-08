@@ -105,7 +105,12 @@ function About() {
           </li>
         </ul>
         <h2>Resume</h2>
-        <p>Like what you see?  <a href={Resume} download>Download my CV</a></p>
+        <p>
+          Like what you see?{" "}
+          <a href={Resume} download>
+            Download my CV
+          </a>
+        </p>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import ContentItem from "./components/ContentItem";
 
-import {GIT, PYTHON, CSHARP} from "../Constants";
+import { GIT, PYTHON, CSHARP } from "../Constants";
 
 function Work() {
   const [image, setImage] = useState(null);
@@ -16,17 +16,17 @@ function Work() {
   let animationDelay = 0;
 
   const getAnimationDelay = () => {
-    const animationDelaySeconds = animationDelay.toString() + 's';
-    animationDelay += 0.4
-    return animationDelaySeconds
-  }
+    const animationDelaySeconds = animationDelay.toString() + "s";
+    animationDelay += 0.4;
+    return animationDelaySeconds;
+  };
 
   let onLeft = false;
 
   const imgOnLeft = () => {
     onLeft = !onLeft;
-    return onLeft
-  }
+    return onLeft;
+  };
 
   return (
     <div className="content-container experience-container">
@@ -89,7 +89,6 @@ function Work() {
           I found it extremely rewarding to watch them learn and improve in the course."
         openModal={openModal}
         animationDelay={getAnimationDelay()}
-        link={"http://www.schoolstorage.co.nz"}
       />
       <ContentItem
         imgOnLeft={imgOnLeft()}
