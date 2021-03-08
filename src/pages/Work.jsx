@@ -82,6 +82,17 @@ function Work() {
       />
       <ContentItem
         imgOnLeft={imgOnLeft()}
+        heading="Tutor"
+        subheading="Compsci 220 and Compsci 367"
+        dates="September 2019 – November 2020"
+        description="I was approached by a student in Compsci 220 and Compsci 367 to tutor them in these courses I had taken.
+          I found it extremely rewarding to watch them learn and improve in the course."
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+        link={"http://www.schoolstorage.co.nz"}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
         heading="Software Engineering Intern"
         subheading="No. 8 Wireless"
         dates="June 2019"
