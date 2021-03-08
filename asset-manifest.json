@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.59531282.chunk.css",
-    "main.js": "/static/js/main.57a475e4.chunk.js",
-    "main.js.map": "/static/js/main.57a475e4.chunk.js.map",
+    "main.js": "/static/js/main.f1a2491e.chunk.js",
+    "main.js.map": "/static/js/main.f1a2491e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.319cfbdb.js",
     "runtime-main.js.map": "/static/js/runtime-main.319cfbdb.js.map",
     "static/css/2.55d8add8.chunk.css": "/static/css/2.55d8add8.chunk.css",
@@ -19,6 +19,7 @@
     "static/media/App.d2093e05.gif": "/static/media/App.d2093e05.gif",
     "static/media/CV-21-03.0ec2f948.pdf": "/static/media/CV-21-03.0ec2f948.pdf",
     "static/media/Changing Machine Status.7d503103.gif": "/static/media/Changing Machine Status.7d503103.gif",
+    "static/media/Character Selection.49afacde.jpg": "/static/media/Character Selection.49afacde.jpg",
     "static/media/Classes and Booking.a7b3871b.gif": "/static/media/Classes and Booking.a7b3871b.gif",
     "static/media/Company Challenges.499cff39.gif": "/static/media/Company Challenges.499cff39.gif",
     "static/media/Dashboard.5e324b50.png": "/static/media/Dashboard.5e324b50.png",
@@ -36,13 +37,14 @@
     "static/media/Landing Page.f39ed2bb.png": "/static/media/Landing Page.f39ed2bb.png",
     "static/media/Line following.5ddb9ceb.gif": "/static/media/Line following.5ddb9ceb.gif",
     "static/media/Location Page.862fa69f.png": "/static/media/Location Page.862fa69f.png",
-    "static/media/Logo.8fc0da2b.jpg": "/static/media/Logo.8fc0da2b.jpg",
     "static/media/Logo.94dddba6.jpg": "/static/media/Logo.94dddba6.jpg",
+    "static/media/Logo.c9f01a11.jpg": "/static/media/Logo.c9f01a11.jpg",
     "static/media/Marketplace.8491821d.gif": "/static/media/Marketplace.8491821d.gif",
     "static/media/PCB.f92f32b9.jpg": "/static/media/PCB.f92f32b9.jpg",
     "static/media/Planting Trees 1.e430c901.JPG": "/static/media/Planting Trees 1.e430c901.JPG",
     "static/media/Planting Trees 2.a360cd94.JPG": "/static/media/Planting Trees 2.a360cd94.JPG",
     "static/media/Planting Trees 3.e6c05aa6.JPG": "/static/media/Planting Trees 3.e6c05aa6.JPG",
+    "static/media/Playthrough.c110cb3b.gif": "/static/media/Playthrough.c110cb3b.gif",
     "static/media/Playthrough.ce7008c8.gif": "/static/media/Playthrough.ce7008c8.gif",
     "static/media/Poppies.e08d9f5a.jpg": "/static/media/Poppies.e08d9f5a.jpg",
     "static/media/Profile Page.6162bd27.gif": "/static/media/Profile Page.6162bd27.gif",
@@ -53,7 +55,7 @@
     "static/media/Team Krayon and Abinesh from Potentia.4fda76cd.jpg": "/static/media/Team Krayon and Abinesh from Potentia.4fda76cd.jpg",
     "static/media/Team Krayon.9698eda5.jpg": "/static/media/Team Krayon.9698eda5.jpg",
     "static/media/Team Whiz Craft.f6e0a9a3.jpg": "/static/media/Team Whiz Craft.f6e0a9a3.jpg",
-    "static/media/Title Screen.64d80ef2.jpg": "/static/media/Title Screen.64d80ef2.jpg",
+    "static/media/Title Screen.d3a47507.jpg": "/static/media/Title Screen.d3a47507.jpg",
     "static/media/Traversing the map.e65bb477.gif": "/static/media/Traversing the map.e65bb477.gif",
     "static/media/Trophy.e469d9ac.JPG": "/static/media/Trophy.e469d9ac.JPG",
     "static/media/View of the Island.3226d5f5.JPG": "/static/media/View of the Island.3226d5f5.JPG",
@@ -65,6 +67,6 @@
     "static/css/2.55d8add8.chunk.css",
     "static/js/2.65fb6566.chunk.js",
     "static/css/main.59531282.chunk.css",
-    "static/js/main.57a475e4.chunk.js"
+    "static/js/main.f1a2491e.chunk.js"
   ]
 }
