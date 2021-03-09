@@ -35,7 +35,7 @@ function About() {
       <div className="fade left">
         <h1>About</h1>
         <p>
-          I am a problem solver that loves to program. This has lead to a deep
+          I am a problem solver that loves to program. This has led to a deep
           interest in robotics and a passion for coding and algorithms. I also
           enjoy design and I am good at coming up with creative solutions and
           work well in a team.

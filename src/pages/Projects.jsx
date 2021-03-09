@@ -126,11 +126,11 @@ function Projects() {
         heading="Heart Healer"
         subheading="AI Counsellor"
         dates="September 2020"
-        description="This was conceptualised for the 2020 MYOB IT challenge, in which the problems of isolation and quaratine were highlighted.  
+        description="This was conceptualised for the 2020 MYOB IT challenge, in which the problems of isolation and quarantine were highlighted.  
           To combat the problems that arose through isolation and quarantine, we created Heart Healer.
           Heart Healer is an AI chatbot and counsellor that monitors your mental wellbeing and productivity.  
           It can schedule in breaks for you, talk to you when you're lonely and connect you to other people.  
-          This chatbot would be able to learn individual's preferences through an AI backend and connect people to their business or personal councellor if needed."
+          This chatbot would be able to learn individual's preferences through an AI backend and connect people to their business or personal counsellor if needed."
         images={[HeartHealer1, HeartHealer2]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -185,7 +185,7 @@ function Projects() {
         heading="Feedr"
         subheading="Media Feed Aggregator"
         dates="March 2020"
-        description="A webapp for aggregrating media feeds from various services into a single, uniform display for user convenience.
+        description="A webapp for aggregating media feeds from various services into a single, uniform display for user convenience.
           We are using the React framework to manage the front-end UI and using a Java server utilising the Spring framework for the back-end. 
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
         githubLink="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
@@ -199,7 +199,7 @@ function Projects() {
         heading="Flik"
         subheading="Line Following Robot"
         dates="July 2019 - Oct 2019"
-        description="A line-following robot that utilises a custom made PCB with light sensors, a radio frequency module, ADC and PSoC.  
+        description="A line-following robot that utilises a custom-made PCB with light sensors, a radio frequency module, ADC and PSoC.  
           Various shortest path algorithms were created for the robot to plan its traversal across the map, which were written in C."
         githubLink="https://github.com/Matteas-Eden/flik"
         images={[Flik1, Flik2, Flik3]}
@@ -241,7 +241,7 @@ function Projects() {
         dates="July 2019"
         description="This app was developed during the 2019, 48-hour Devs Hackathon by a group of 6.  
           The app listened in to a call and warned you if it thought the caller was trying to scam you. 
-          Sammr makes use of speech-to-text  tools and an algorithm to decide the probability of the call being a scam."
+          Sammr makes use of speech-to-text tools and an algorithm to decide the probability of the call being a scam."
         githubLink="https://github.com/Pyxxil/Scammr"
         technologies={[GIT, JAVA]}
         openModal={openModal}
@@ -279,7 +279,7 @@ function Projects() {
         heading="Wireless Energy Monitor"
         dates="Aug 2018 – Nov 2018"
         description="Wireless Energy Monitor to display voltage, current and power for ELECTENG 209. 
-          Comprised of a digital and an analog section. Data receiver described in VHDL, transmitter programmed in C. 
+          Comprised of a digital and an analogue section. Data receiver described in VHDL, transmitter programmed in C. 
           Receiver was a CPLD, transmitter was an ATMEGA328PB microcontroller on a self- designed PCB. 
           Breadboarding, LTSpice simulations and Oscilloscopes were used for testing."
         technologies={[VHDL]}

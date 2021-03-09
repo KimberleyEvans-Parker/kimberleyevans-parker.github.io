@@ -51,7 +51,7 @@ function Work() {
         heading="Engineering Intern"
         subheading="FlexWare"
         dates="September 2020 - Present"
-        description="I manafacture cables for a variety of purposes, have tested both hardware and software 
+        description="I manufacture  cables for a variety of purposes, have tested both hardware and software 
           and have gained experience programming in C#."
         technologies={[GIT, CSHARP]}
         openModal={openModal}
@@ -62,8 +62,8 @@ function Work() {
         heading="Teacher"
         subheading="Bricks4Kidz"
         dates="January 2020 - Present"
-        description="I encourage young childrem into STEM related fields by teaching them related skills.  
-          These skills are taught with the aid of LEGO robtics and mechanics. "
+        description="I encourage young children into STEM related fields by teaching them related skills.  
+          These skills are taught with the aid of LEGO robots and mechanics. "
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -73,7 +73,7 @@ function Work() {
         subheading="School Storage Solutions"
         dates="March 2016 - Present"
         description={`As part of the Young Enterprise Scheme, I created a business that rents out lockers to students.  
-          This made a profit in its first year and is still being run along side my studies.  
+          This made a profit in its first year and is still being run alongside my studies.  
           During my time in my business, I have gained experience communicating with producers and customers, 
           designing and manufacturing the lockers, working with marketing and sales and designing a website.  `}
         openModal={openModal}
@@ -106,7 +106,7 @@ function Work() {
         heading="Cashiers"
         subheading="Gilmours"
         dates="April 2016"
-        description="I worked as a cashier/checkout operator for Gilmours - a whilesale food company.  
+        description="I worked as a cashier/checkout operator for Gilmours - a wholesale food company.  
           During this, I improved my efficiency and interpersonal skills"
         openModal={openModal}
         animationDelay={getAnimationDelay()}
