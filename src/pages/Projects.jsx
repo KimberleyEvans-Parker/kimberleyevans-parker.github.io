@@ -268,7 +268,7 @@ function Projects() {
           This was a 2-person project, with the game created from scratch. 
           Details of the project are available on the GitHub repository it was cloned to, shown through a GitHub Wiki. 
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
-        githubLink="https://github.com/Matteas-Eden/roll-for-reaction"
+        githubLink="https://github.com/KimberleyEvans-Parker/AshasQuest"
         technologies={[GIT, JAVA]}
         images={[AshasQuest1, AshasQuest2, AshasQuest3, AshasQuest4]}
         openModal={openModal}
