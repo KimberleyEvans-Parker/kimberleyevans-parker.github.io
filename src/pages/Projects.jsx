@@ -236,6 +236,18 @@ function Projects() {
       />
       <ContentItem
         imgOnLeft={imgOnLeft()}
+        heading="Kalah"
+        subheading="The Game Mancala"
+        dates="May 2020"
+        description="This is the game Mancala written in Java.  
+          It was designed to promote good programming qualities such as modularity, modifiability and extendability."
+        githubLink="https://github.com/KimberleyEvans-Parker/kalah"
+        technologies={[GIT, JAVA]}
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
         heading="Scammr"
         subheading="Phone Scam Detector"
         dates="July 2019"
