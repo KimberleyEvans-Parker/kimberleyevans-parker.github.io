@@ -82,6 +82,17 @@ function Work() {
       />
       <ContentItem
         imgOnLeft={imgOnLeft()}
+        heading="Co-Founder"
+        subheading="Graduation Plushies"
+        dates="October 2020 - Present"
+        description={`I co-founded this service which custom-makes graduation hats for soft toys.
+          These have been quite popular for graduates and friends of grads and we were able to make a profit in our first year.  `}
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+        link={"https://www.facebook.com/gradplushies/"}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
         heading="Tutor"
         subheading="Compsci 220 and Compsci 367"
         dates="September 2019 – November 2020"
