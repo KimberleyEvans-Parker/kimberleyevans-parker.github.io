@@ -97,7 +97,7 @@ function Navigation(props) {
                 </li>
               </a>
               <a
-                href="https://www.linkedin.com/in/kimberley-evans-parker/"
+                href="https://www.linkedin.com/in/kimberleyevans-parker/"
                 onClick={() => setdropdownOpen(false)}
               >
                 <li className={dropdownOpen && "dropdown-open"}>
