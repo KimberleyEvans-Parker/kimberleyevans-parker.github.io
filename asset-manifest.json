@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.59531282.chunk.css",
-    "main.js": "/static/js/main.f8c3fc9b.chunk.js",
-    "main.js.map": "/static/js/main.f8c3fc9b.chunk.js.map",
+    "main.js": "/static/js/main.3c48bce2.chunk.js",
+    "main.js.map": "/static/js/main.3c48bce2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.319cfbdb.js",
     "runtime-main.js.map": "/static/js/runtime-main.319cfbdb.js.map",
     "static/css/2.55d8add8.chunk.css": "/static/css/2.55d8add8.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/Add and Edit Sensor.48c05141.gif": "/static/media/Add and Edit Sensor.48c05141.gif",
     "static/media/Adding a task.126007aa.gif": "/static/media/Adding a task.126007aa.gif",
     "static/media/App.d2093e05.gif": "/static/media/App.d2093e05.gif",
-    "static/media/CV-21-03.0ec2f948.pdf": "/static/media/CV-21-03.0ec2f948.pdf",
+    "static/media/CV-21-04.a296c9b1.pdf": "/static/media/CV-21-04.a296c9b1.pdf",
     "static/media/Changing Machine Status.7d503103.gif": "/static/media/Changing Machine Status.7d503103.gif",
     "static/media/Character Selection.49afacde.jpg": "/static/media/Character Selection.49afacde.jpg",
     "static/media/Classes and Booking.a7b3871b.gif": "/static/media/Classes and Booking.a7b3871b.gif",
@@ -67,6 +67,6 @@
     "static/css/2.55d8add8.chunk.css",
     "static/js/2.65fb6566.chunk.js",
     "static/css/main.59531282.chunk.css",
-    "static/js/main.f8c3fc9b.chunk.js"
+    "static/js/main.3c48bce2.chunk.js"
   ]
 }
