@@ -37,8 +37,8 @@ function About() {
         <p>
           I am a problem solver that loves to program. This has led to a deep
           interest in robotics and a passion for coding and algorithms. I also
-          enjoy design and I am good at coming up with creative solutions and
-          work well in a team.
+          enjoy design, am good at coming up with creative solutions and work
+          well in a team.
         </p>
         <p>
           I'm currently doing Computer Systems Engineering, conjoint with
