@@ -18,3 +18,4 @@ export const JS = "JavaScript";
 export const TS = "TypeScript";
 export const REACT = "React";
 export const REDUX = "Redux";
+export const GDSCRIPT = "GDScript";

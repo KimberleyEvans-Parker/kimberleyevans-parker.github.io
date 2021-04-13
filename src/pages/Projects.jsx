@@ -24,6 +24,7 @@ import Doto4 from "../assets/projects/Doto/Marketplace.gif";
 import Feedr1 from "../assets/projects/Feedr/Landing Page.png";
 import Feedr2 from "../assets/projects/Feedr/Home Page.png";
 import Feedr3 from "../assets/projects/Feedr/Integration Center.png";
+import Envirobot from "../assets/projects/Envirobot/Playthrough.gif";
 import RollForReaction1 from "../assets/projects/Roll for Reaction/Logo.jpg";
 import RollForReaction2 from "../assets/projects/Roll for Reaction/Playthrough.gif";
 import RollForReaction3 from "../assets/projects/Roll for Reaction/Features.gif";
@@ -52,6 +53,7 @@ import {
   TS,
   REACT,
   REDUX,
+  GDSCRIPT,
 } from "../Constants";
 
 function Projects() {
@@ -191,6 +193,19 @@ function Projects() {
         githubLink="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
         images={[Feedr1, Feedr2, Feedr3]}
         technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
+        heading="Envirobot"
+        subheading="Platofrmer Game"
+        dates="Febraury 2020"
+        description="Created for the Global Game Jam, by a team of 3.  
+          This is set in the near future, where a robot aims to heal the planet by planting trees, putting out fires and repairing structures.  "
+        githubLink="https://github.com/Pyxxil/GameJam"
+        images={[Envirobot]}
+        technologies={[GIT, GDSCRIPT]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
