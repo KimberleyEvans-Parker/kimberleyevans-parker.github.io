@@ -54,6 +54,7 @@ import {
   REACT,
   REDUX,
   GDSCRIPT,
+  AI,
 } from "../Constants";
 
 function Projects() {
@@ -205,6 +206,7 @@ function Projects() {
           During this project, research was conducted into Fourier Transform, STFT, Constant-Q, Onset/Beat Tracking, Machine Learning: Artificial, Convolutional and Recurrent Neural Networks.  
           Our neural network was an extension of the wav2mid project Jon Sleep created and converted wav files into the more computer-readible midi files.  "
         githubLink="https://github.com/KimberleyEvans-Parker/wav2mid"
+        technologies={[GIT, PYTHON, AI]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
