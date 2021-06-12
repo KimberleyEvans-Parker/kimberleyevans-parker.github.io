@@ -198,6 +198,18 @@ function Projects() {
       />
       <ContentItem
         imgOnLeft={imgOnLeft()}
+        heading="A Little Midgnight Music"
+        subheading="Research into Automatic Music Transcription"
+        dates="March 2020 - November 2020"
+        description="My partner and I did our part 4 research topic into the Automatic transcription of piano music.  
+          During this project, research was conducted into Fourier Transform, STFT, Constant-Q, Onset/Beat Tracking, Machine Learning: Artificial, Convolutional and Recurrent Neural Networks.  
+          Our neural network was an extension of the wav2mid project Jon Sleep created and converted wav files into the more computer-readible midi files.  "
+        githubLink="https://github.com/KimberleyEvans-Parker/wav2mid"
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
         heading="Envirobot"
         subheading="Platofrmer Game"
         dates="Febraury 2020"
