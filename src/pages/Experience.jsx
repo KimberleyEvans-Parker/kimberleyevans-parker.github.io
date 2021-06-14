@@ -19,7 +19,28 @@ import Volunteer2 from "../assets/experience/volunteer 2.jpg";
 import Work1 from "../assets/experience/work 1.jpg";
 import Work2 from "../assets/experience/work 2.jpg";
 
+import { SMALL_SCREEN } from "../Constants";
+
 function Experience() {
+  // Keeps track of the window dimensions.  Updates when window resizes
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  React.useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+    return (_) => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
   return (
     <div className="content-container experience-container fade left">
       <h1>Experience</h1>
@@ -29,13 +50,13 @@ function Experience() {
       </p>
 
       <div class="row">
-        <div class="column">
+        <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
           <img src={Awards1} alt="Awards" />
           <img src={Awards2} alt="Awards" />
           <img src={Awards3} alt="Awards" />
         </div>
 
-        <div class="column">
+        <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
           <img src={Projects1} alt="Projects" />
           <img src={Projects2} alt="Projects" />
           <img src={Projects3} alt="Projects" />
@@ -49,12 +70,12 @@ function Experience() {
           <img src={Projects11} alt="Projects" />
         </div>
 
-        <div class="column">
+        <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
           <img src={Work1} alt="Work" />
           <img src={Work2} alt="Work" />
         </div>
 
-        <div class="column">
+        <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
           <img src={Volunteer1} alt="Volunteer" />
           <img src={Volunteer2} alt="Volunteer" />
         </div>
