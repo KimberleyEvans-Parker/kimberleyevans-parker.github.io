@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.59531282.chunk.css",
-    "main.js": "/static/js/main.7937afca.chunk.js",
-    "main.js.map": "/static/js/main.7937afca.chunk.js.map",
+    "main.css": "/static/css/main.b66f3cf9.chunk.css",
+    "main.js": "/static/js/main.abc5a439.chunk.js",
+    "main.js.map": "/static/js/main.abc5a439.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.319cfbdb.js",
     "runtime-main.js.map": "/static/js/runtime-main.319cfbdb.js.map",
     "static/css/2.55d8add8.chunk.css": "/static/css/2.55d8add8.chunk.css",
-    "static/js/2.65fb6566.chunk.js": "/static/js/2.65fb6566.chunk.js",
-    "static/js/2.65fb6566.chunk.js.map": "/static/js/2.65fb6566.chunk.js.map",
+    "static/js/2.0e94242c.chunk.js": "/static/js/2.0e94242c.chunk.js",
+    "static/js/2.0e94242c.chunk.js.map": "/static/js/2.0e94242c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.55d8add8.chunk.css.map": "/static/css/2.55d8add8.chunk.css.map",
-    "static/css/main.59531282.chunk.css.map": "/static/css/main.59531282.chunk.css.map",
-    "static/js/2.65fb6566.chunk.js.LICENSE.txt": "/static/js/2.65fb6566.chunk.js.LICENSE.txt",
+    "static/css/main.b66f3cf9.chunk.css.map": "/static/css/main.b66f3cf9.chunk.css.map",
+    "static/js/2.0e94242c.chunk.js.LICENSE.txt": "/static/js/2.0e94242c.chunk.js.LICENSE.txt",
     "static/media/AI Counsellor.6b4c3f80.gif": "/static/media/AI Counsellor.6b4c3f80.gif",
     "static/media/Add and Edit Machines.a860176c.gif": "/static/media/Add and Edit Machines.a860176c.gif",
     "static/media/Add and Edit Sensor.48c05141.gif": "/static/media/Add and Edit Sensor.48c05141.gif",
     "static/media/Adding a task.126007aa.gif": "/static/media/Adding a task.126007aa.gif",
     "static/media/App.d2093e05.gif": "/static/media/App.d2093e05.gif",
+    "static/media/Awards.bb0cf9b8.jpg": "/static/media/Awards.bb0cf9b8.jpg",
     "static/media/CV-21-05.768adbb8.pdf": "/static/media/CV-21-05.768adbb8.pdf",
     "static/media/Changing Machine Status.7d503103.gif": "/static/media/Changing Machine Status.7d503103.gif",
     "static/media/Character Selection.49afacde.jpg": "/static/media/Character Selection.49afacde.jpg",
@@ -49,6 +50,7 @@
     "static/media/Playthrough.ce7008c8.gif": "/static/media/Playthrough.ce7008c8.gif",
     "static/media/Poppies.e08d9f5a.jpg": "/static/media/Poppies.e08d9f5a.jpg",
     "static/media/Profile Page.6162bd27.gif": "/static/media/Profile Page.6162bd27.gif",
+    "static/media/Projects.566715f0.jpg": "/static/media/Projects.566715f0.jpg",
     "static/media/Rewards.1e53267b.gif": "/static/media/Rewards.1e53267b.gif",
     "static/media/Sensor Data.784292ce.gif": "/static/media/Sensor Data.784292ce.gif",
     "static/media/Sensor Page.ce8dec83.gif": "/static/media/Sensor Page.ce8dec83.gif",
@@ -60,14 +62,16 @@
     "static/media/Traversing the map.e65bb477.gif": "/static/media/Traversing the map.e65bb477.gif",
     "static/media/Trophy.e469d9ac.JPG": "/static/media/Trophy.e469d9ac.JPG",
     "static/media/View of the Island.3226d5f5.JPG": "/static/media/View of the Island.3226d5f5.JPG",
+    "static/media/Volunteer.20b2643b.jpg": "/static/media/Volunteer.20b2643b.jpg",
+    "static/media/Work.85c3179b.jpg": "/static/media/Work.85c3179b.jpg",
     "static/media/index.css": "/static/media/background.f794a97c.jpg",
     "static/media/profile-pic.04afe0e1.jpg": "/static/media/profile-pic.04afe0e1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.319cfbdb.js",
     "static/css/2.55d8add8.chunk.css",
-    "static/js/2.65fb6566.chunk.js",
-    "static/css/main.59531282.chunk.css",
-    "static/js/main.7937afca.chunk.js"
+    "static/js/2.0e94242c.chunk.js",
+    "static/css/main.b66f3cf9.chunk.css",
+    "static/js/main.abc5a439.chunk.js"
   ]
 }
