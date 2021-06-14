@@ -4,6 +4,7 @@ import Awards from "../assets/experience/Awards.jpg";
 import Projects from "../assets/experience/Projects.jpg";
 import Volunteer2 from "../assets/experience/Volunteer.jpg";
 import Work2 from "../assets/experience/Work.jpg";
+import { Link, withRouter } from "react-router-dom";
 
 import { SMALL_SCREEN } from "../Constants";
 
@@ -37,23 +38,35 @@ function Experience() {
 
       <div class="row">
         <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
-          <img src={Work2} alt="Work" />
-          <h3 className="centered">Work</h3>
+          <Link to="experience/Work">
+            <img src={Work2} alt="Work" className="experience-img" />
+            <h3 className="centered">Work</h3>
+            <div className="layer"></div>
+          </Link>
         </div>
 
         <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
-          <img src={Volunteer2} alt="Volunteer" />
-          <h3 className="centered">Volunteer</h3>
+          <Link to="experience/Volunteer">
+            <img src={Volunteer2} alt="Volunteer" className="experience-img" />
+            <h3 className="centered">Volunteer</h3>
+            <div className="layer"></div>
+          </Link>
         </div>
 
         <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
-          <h3 className="centered">Projects</h3>
-          <img src={Projects} alt="Projects" />
+          <Link to="experience/Projects">
+            <img src={Projects} alt="Projects" className="experience-img" />
+            <h3 className="centered">Projects</h3>
+            <div className="layer"></div>
+          </Link>
         </div>
 
         <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
-          <img src={Awards} alt="Awards" />
-          <h3 className="centered">Awards</h3>
+          <Link to="experience/Awards">
+            <img src={Awards} alt="Awards" className="experience-img" />
+            <h3 className="centered">Awards</h3>
+            <div className="layer"></div>
+          </Link>
         </div>
       </div>
     </div>
