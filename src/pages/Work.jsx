@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+import GraduationPlushies1 from "../assets/work/Graduation Plushies/Plushies.JPG";
+import GraduationPlushies2 from "../assets/work/Graduation Plushies/Pokemon.JPG";
+import GraduationPlushies3 from "../assets/work/Graduation Plushies/Workshop.JPG";
+import GraduationPlushies4 from "../assets/work/Graduation Plushies/Dog and Seal.JPG";
+import GraduationPlushies5 from "../assets/work/Graduation Plushies/Spiderman.JPG";
+
 import ContentItem from "./components/ContentItem";
 
 import { GIT, PYTHON, CSHARP } from "../Constants";
@@ -87,6 +93,13 @@ function Work() {
         dates="October 2020 - Present"
         description={`I co-founded this service which custom-makes graduation hats for soft toys.
           These have been quite popular for graduates and friends of grads and we were able to make a profit in our first year.  `}
+        images={[
+          GraduationPlushies1,
+          GraduationPlushies2,
+          GraduationPlushies3,
+          GraduationPlushies4,
+          GraduationPlushies5,
+        ]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
         link={"https://www.facebook.com/gradplushies/"}
