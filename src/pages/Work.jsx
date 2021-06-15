@@ -5,6 +5,13 @@ import GraduationPlushies2 from "../assets/work/Graduation Plushies/Pokemon.JPG"
 import GraduationPlushies3 from "../assets/work/Graduation Plushies/Workshop.JPG";
 import GraduationPlushies4 from "../assets/work/Graduation Plushies/Dog and Seal.JPG";
 import GraduationPlushies5 from "../assets/work/Graduation Plushies/Spiderman.JPG";
+import SSS1 from "../assets/work/School Storage Solutions/Painted Lockers.jpg";
+import SSS2 from "../assets/work/School Storage Solutions/Keys.jpg";
+import SSS3 from "../assets/work/School Storage Solutions/Construction.jpg";
+import SSS4 from "../assets/work/School Storage Solutions/Lockers and Keys.jpg";
+import SSS5 from "../assets/work/School Storage Solutions/Inside the Locker.jpg";
+import SSS6 from "../assets/work/School Storage Solutions/Logo.jpg";
+import SSS7 from "../assets/work/School Storage Solutions/Completed Lockers.jpg";
 
 import ContentItem from "./components/ContentItem";
 
@@ -82,6 +89,7 @@ function Work() {
           This made a profit in its first year and is still being run alongside my studies.  
           During my time in my business, I have gained experience communicating with producers and customers, 
           designing and manufacturing the lockers, working with marketing and sales and designing a website.  `}
+        images={[SSS1, SSS2, SSS3, SSS4, SSS5, SSS6, SSS7]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
         link={"http://www.schoolstorage.co.nz"}
