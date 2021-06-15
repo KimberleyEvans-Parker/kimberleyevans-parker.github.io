@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b66f3cf9.chunk.css",
-    "main.js": "/static/js/main.83b6efcf.chunk.js",
-    "main.js.map": "/static/js/main.83b6efcf.chunk.js.map",
+    "main.js": "/static/js/main.a838ac0e.chunk.js",
+    "main.js.map": "/static/js/main.a838ac0e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.319cfbdb.js",
     "runtime-main.js.map": "/static/js/runtime-main.319cfbdb.js.map",
     "static/css/2.55d8add8.chunk.css": "/static/css/2.55d8add8.chunk.css",
@@ -23,6 +23,8 @@
     "static/media/Character Selection.49afacde.jpg": "/static/media/Character Selection.49afacde.jpg",
     "static/media/Classes and Booking.a7b3871b.gif": "/static/media/Classes and Booking.a7b3871b.gif",
     "static/media/Company Challenges.499cff39.gif": "/static/media/Company Challenges.499cff39.gif",
+    "static/media/Completed Lockers.6782f8b7.jpg": "/static/media/Completed Lockers.6782f8b7.jpg",
+    "static/media/Construction.87632f12.jpg": "/static/media/Construction.87632f12.jpg",
     "static/media/Dashboard.5e324b50.png": "/static/media/Dashboard.5e324b50.png",
     "static/media/Dog and Seal.9871ec15.JPG": "/static/media/Dog and Seal.9871ec15.JPG",
     "static/media/Edit Email Notifications.b9848880.gif": "/static/media/Edit Email Notifications.b9848880.gif",
@@ -31,18 +33,23 @@
     "static/media/Gamification.859e2154.gif": "/static/media/Gamification.859e2154.gif",
     "static/media/Home Page.85f49a32.png": "/static/media/Home Page.85f49a32.png",
     "static/media/Home Page.affede08.gif": "/static/media/Home Page.affede08.gif",
+    "static/media/Inside the Locker.9691db87.jpg": "/static/media/Inside the Locker.9691db87.jpg",
     "static/media/Instructor Profile.554d1355.gif": "/static/media/Instructor Profile.554d1355.gif",
     "static/media/Instructors.e651a239.gif": "/static/media/Instructors.e651a239.gif",
     "static/media/Integration Center.617c202a.png": "/static/media/Integration Center.617c202a.png",
+    "static/media/Keys.27f262ee.jpg": "/static/media/Keys.27f262ee.jpg",
     "static/media/Landing Page and Login.65dbf038.gif": "/static/media/Landing Page and Login.65dbf038.gif",
     "static/media/Landing Page.c1234012.png": "/static/media/Landing Page.c1234012.png",
     "static/media/Landing Page.f39ed2bb.png": "/static/media/Landing Page.f39ed2bb.png",
     "static/media/Line following.5ddb9ceb.gif": "/static/media/Line following.5ddb9ceb.gif",
     "static/media/Location Page.862fa69f.png": "/static/media/Location Page.862fa69f.png",
+    "static/media/Lockers and Keys.f5240c21.jpg": "/static/media/Lockers and Keys.f5240c21.jpg",
+    "static/media/Logo.5cae11e5.jpg": "/static/media/Logo.5cae11e5.jpg",
     "static/media/Logo.94dddba6.jpg": "/static/media/Logo.94dddba6.jpg",
     "static/media/Logo.c9f01a11.jpg": "/static/media/Logo.c9f01a11.jpg",
     "static/media/Marketplace.8491821d.gif": "/static/media/Marketplace.8491821d.gif",
     "static/media/PCB.f92f32b9.jpg": "/static/media/PCB.f92f32b9.jpg",
+    "static/media/Painted Lockers.d18c7ab8.jpg": "/static/media/Painted Lockers.d18c7ab8.jpg",
     "static/media/Planting Trees 1.e430c901.JPG": "/static/media/Planting Trees 1.e430c901.JPG",
     "static/media/Planting Trees 2.a360cd94.JPG": "/static/media/Planting Trees 2.a360cd94.JPG",
     "static/media/Planting Trees 3.e6c05aa6.JPG": "/static/media/Planting Trees 3.e6c05aa6.JPG",
@@ -77,6 +84,6 @@
     "static/css/2.55d8add8.chunk.css",
     "static/js/2.0e94242c.chunk.js",
     "static/css/main.b66f3cf9.chunk.css",
-    "static/js/main.83b6efcf.chunk.js"
+    "static/js/main.a838ac0e.chunk.js"
   ]
 }
