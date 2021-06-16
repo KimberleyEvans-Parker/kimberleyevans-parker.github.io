@@ -12,7 +12,7 @@ import SSS4 from "../assets/work/School Storage Solutions/Lockers and Keys.jpg";
 import SSS5 from "../assets/work/School Storage Solutions/Inside the Locker.jpg";
 import SSS6 from "../assets/work/School Storage Solutions/Logo.jpg";
 import SSS7 from "../assets/work/School Storage Solutions/Completed Lockers.jpg";
-import Ooma1 from "../assets/work/Ooma/Testing the Phones.jpg";
+import Ooma1 from "../assets/work/No.8 Wireless/Testing the Phones.jpg";
 
 import ContentItem from "./components/ContentItem";
 
