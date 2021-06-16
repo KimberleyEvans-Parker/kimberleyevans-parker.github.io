@@ -12,6 +12,7 @@ import SSS4 from "../assets/work/School Storage Solutions/Lockers and Keys.jpg";
 import SSS5 from "../assets/work/School Storage Solutions/Inside the Locker.jpg";
 import SSS6 from "../assets/work/School Storage Solutions/Logo.jpg";
 import SSS7 from "../assets/work/School Storage Solutions/Completed Lockers.jpg";
+import Ooma1 from "../assets/work/Ooma/Testing the Phones.jpg";
 
 import ContentItem from "./components/ContentItem";
 
@@ -129,6 +130,7 @@ function Work() {
         dates="June 2019"
         description="I developed an automated testing system for the phones that Ooma - a U.S. company.  
           During this, I gained experience with Git, Python and hardware."
+        images={[Ooma1]}
         technologies={[GIT, PYTHON]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
