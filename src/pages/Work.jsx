@@ -14,6 +14,7 @@ import SSS6 from "../assets/work/School Storage Solutions/Logo.jpg";
 import SSS7 from "../assets/work/School Storage Solutions/Completed Lockers.jpg";
 import Ooma1 from "../assets/work/No.8 Wireless/Testing the Phones.jpg";
 
+
 import ContentItem from "./components/ContentItem";
 
 import { GIT, PYTHON, CSHARP } from "../Constants";
