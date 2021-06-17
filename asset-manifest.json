@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b66f3cf9.chunk.css",
-    "main.js": "/static/js/main.a838ac0e.chunk.js",
-    "main.js.map": "/static/js/main.a838ac0e.chunk.js.map",
+    "main.js": "/static/js/main.899a3b25.chunk.js",
+    "main.js.map": "/static/js/main.899a3b25.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.319cfbdb.js",
     "runtime-main.js.map": "/static/js/runtime-main.319cfbdb.js.map",
     "static/css/2.55d8add8.chunk.css": "/static/css/2.55d8add8.chunk.css",
@@ -69,6 +69,7 @@
     "static/media/Team Krayon and Abinesh from Potentia.4fda76cd.jpg": "/static/media/Team Krayon and Abinesh from Potentia.4fda76cd.jpg",
     "static/media/Team Krayon.9698eda5.jpg": "/static/media/Team Krayon.9698eda5.jpg",
     "static/media/Team Whiz Craft.f6e0a9a3.jpg": "/static/media/Team Whiz Craft.f6e0a9a3.jpg",
+    "static/media/Testing the Phones.d20a2cfc.jpg": "/static/media/Testing the Phones.d20a2cfc.jpg",
     "static/media/Title Screen.d3a47507.jpg": "/static/media/Title Screen.d3a47507.jpg",
     "static/media/Traversing the map.e65bb477.gif": "/static/media/Traversing the map.e65bb477.gif",
     "static/media/Trophy.e469d9ac.JPG": "/static/media/Trophy.e469d9ac.JPG",
@@ -84,6 +85,6 @@
     "static/css/2.55d8add8.chunk.css",
     "static/js/2.0e94242c.chunk.js",
     "static/css/main.b66f3cf9.chunk.css",
-    "static/js/main.a838ac0e.chunk.js"
+    "static/js/main.899a3b25.chunk.js"
   ]
 }
