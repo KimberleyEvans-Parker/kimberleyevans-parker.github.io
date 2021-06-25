@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
-import { EXTRA_SMALL_SCREEN } from "../Constants";
+import { SMALL_SCREEN } from "../Constants";
 
 function Navigation(props) {
   const [dropdownOpen, setdropdownOpen] = useState(false);
@@ -16,7 +16,7 @@ function Navigation(props) {
         height: window.innerHeight,
         width: window.innerWidth,
       });
-      if (dimensions.width >= EXTRA_SMALL_SCREEN) {
+      if (dimensions.width >= SMALL_SCREEN) {
         setdropdownOpen(false);
       }
     }
@@ -31,7 +31,7 @@ function Navigation(props) {
     <nav className="slide-in">
       <div
         className={`${
-          dimensions.width >= EXTRA_SMALL_SCREEN
+          dimensions.width >= SMALL_SCREEN
             ? "navbar-container"
             : "navbar-container-smallscreen"
         }`}
@@ -40,7 +40,7 @@ function Navigation(props) {
           <Link to="/" onClick={() => setdropdownOpen(false)}>
             <li>Kimberley Evans-Parker</li>
           </Link>
-          {dimensions.width < EXTRA_SMALL_SCREEN && (
+          {dimensions.width < SMALL_SCREEN && (
             <div
               className={`navbar-rightside`}
               onClick={() => setdropdownOpen(!dropdownOpen)}
@@ -55,7 +55,7 @@ function Navigation(props) {
             </div>
           )}
         </ul>
-        {(dropdownOpen || dimensions.width >= EXTRA_SMALL_SCREEN) && (
+        {(dropdownOpen || dimensions.width >= SMALL_SCREEN) && (
           <div
             className={`navbar-rightside ${
               dropdownOpen ? "dropdown-open" : ""
@@ -88,6 +88,19 @@ function Navigation(props) {
                   }`}
                 >
                   Experience
+                </li>
+              </Link>
+              <Link
+                className="nav-link"
+                to="/hobbies"
+                onClick={() => setdropdownOpen(false)}
+              >
+                <li
+                  className={`${dropdownOpen && "dropdown-open"} ${
+                    props.location.pathname === "/hobbies" ? "active" : ""
+                  }`}
+                >
+                  Hobbies
                 </li>
               </Link>
               <a
