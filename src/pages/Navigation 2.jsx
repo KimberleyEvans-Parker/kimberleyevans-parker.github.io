@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { EXTRA_SMALL_SCREEN } from "../Constants";
+import { SMALL_SCREEN } from "../Constants";
 import SubNavbarLink from "./components/SubNavbarLink";
 
 function Navigation2(props) {
@@ -27,16 +27,14 @@ function Navigation2(props) {
     <nav className="nav2 slide-in">
       <div
         className={`nav2-container ${
-          dimensions.width >= EXTRA_SMALL_SCREEN
+          dimensions.width >= SMALL_SCREEN
             ? "navbar-container"
             : "navbar-container-smallscreen"
         }`}
       >
         <ul
           className={
-            dimensions.width < EXTRA_SMALL_SCREEN
-              ? "extra-small-screensize"
-              : ""
+            dimensions.width < SMALL_SCREEN ? "extra-small-screensize" : ""
           }
         >
           <SubNavbarLink heading="Work" />
