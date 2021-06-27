@@ -52,11 +52,11 @@ function ContentItem(props) {
       <div
         className="fade left"
         style={{
-          webkitAnimationDelay: props.animationDelay,
-          mozAnimationDelay: props.animationDelay,
-          oAnimationDelay: props.animationDelay,
-          msAnimationDelay: props.animationDelay,
-          animationDelay: props.animationDelay,
+          WebkitAnimationDelay: props.animationDelay,
+          MozAnimationDelay: props.animationDelay,
+          OAnimationDelay: props.animationDelay,
+          MsAnimationDelay: props.animationDelay,
+          AnimationDelay: props.animationDelay,
         }}
       >
         {props.githubLink && dimensions.width >= SMALL_SCREEN ? (

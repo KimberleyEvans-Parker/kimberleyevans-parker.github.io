@@ -34,7 +34,9 @@ function Navigation2(props) {
       >
         <ul
           className={
-            dimensions.width < EXTRA_SMALL_SCREEN ?? "extra-small-screensize"
+            dimensions.width < EXTRA_SMALL_SCREEN
+              ? "extra-small-screensize"
+              : ""
           }
         >
           <SubNavbarLink heading="Work" />

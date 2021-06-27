@@ -46,10 +46,10 @@ function Navigation(props) {
               onClick={() => setdropdownOpen(!dropdownOpen)}
             >
               <li style={{ height: "100%", paddingBottom: "10.5px" }}>
-                <div class={`${dropdownOpen && "change"} menu-icon`}>
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
+                <div className={`${dropdownOpen && "change"} menu-icon`}>
+                  <div className="bar1"></div>
+                  <div className="bar2"></div>
+                  <div className="bar3"></div>
                 </div>
               </li>
             </div>
@@ -57,7 +57,9 @@ function Navigation(props) {
         </ul>
         {(dropdownOpen || dimensions.width >= EXTRA_SMALL_SCREEN) && (
           <div
-            className={`navbar-rightside ${dropdownOpen && "dropdown-open"}`}
+            className={`navbar-rightside ${
+              dropdownOpen ? "dropdown-open" : ""
+            }`}
           >
             <ul>
               <Link
@@ -66,7 +68,7 @@ function Navigation(props) {
                 onClick={() => setdropdownOpen(false)}
               >
                 <li
-                  className={`${dropdownOpen && "dropdown-open"} ${
+                  className={`${dropdownOpen ? "dropdown-open" : ""} ${
                     props.location.pathname === "/about" ? "active" : ""
                   }`}
                 >
@@ -79,7 +81,7 @@ function Navigation(props) {
                 onClick={() => setdropdownOpen(false)}
               >
                 <li
-                  className={`${dropdownOpen && "dropdown-open"} ${
+                  className={`${dropdownOpen ? "dropdown-open" : ""} ${
                     props.location.pathname.startsWith("/experience")
                       ? "active"
                       : ""
@@ -91,16 +93,18 @@ function Navigation(props) {
               <a
                 href="https://github.com/KimberleyEvans-Parker"
                 onClick={() => setdropdownOpen(false)}
+                aria-label="GitHub"
               >
-                <li className={dropdownOpen && "dropdown-open"}>
+                <li className={dropdownOpen ? "dropdown-open" : ""}>
                   <i className="fa fa-github" aria-hidden="true"></i>
                 </li>
               </a>
               <a
                 href="https://www.linkedin.com/in/kimberleyevans-parker/"
                 onClick={() => setdropdownOpen(false)}
+                aria-label="LinkedIn"
               >
-                <li className={dropdownOpen && "dropdown-open"}>
+                <li className={dropdownOpen ? "dropdown-open" : ""}>
                   <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </li>
               </a>
