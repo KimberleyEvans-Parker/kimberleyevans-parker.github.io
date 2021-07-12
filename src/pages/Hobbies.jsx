@@ -32,8 +32,8 @@ function Hobbies() {
     <div className="content-container experience-container fade left">
       <h1>Hobbies</h1>
       <p>
-        View the experience I've gained through my different jobs, my various
-        projects, and view the awards I've won
+        I have a lot of hobbies including badminton, piano, art and skiing. Here
+        are some them :)
       </p>
 
       <div class="row">
