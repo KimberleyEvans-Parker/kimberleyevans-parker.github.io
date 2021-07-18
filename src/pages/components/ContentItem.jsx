@@ -11,20 +11,6 @@ import {
 } from "../../Constants";
 
 function ContentItem(props) {
-  console.log(props.images);
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const images = importAll(
-    require.context(
-      "../../assets/projects/Industry 4.0",
-      // props.images,
-      false,
-      /\.(png|jpe?g|svg|JPG|gif)$/
-    )
-  );
-
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -101,20 +87,19 @@ function ContentItem(props) {
               </div>
             </Grid>
           )}
-          {images && (
+          {props.images && (
             <Grid item xs={12} sm={6} md={4}>
               <Carousel
                 autoPlay
-                showIndicators={images.length > 1}
-                showStatus={images.length > 1}
+                showIndicators={props.images.length > 1}
+                showStatus={props.images.length > 1}
                 showThumbs={false}
                 transitionTime={CAROUSEL_TRANSITION_TIME}
                 interval={CAROUSEL_INTERVAL}
                 infiniteLoop={true}
                 className="shadow"
               >
-                {images.map((image) => {
-                  console.log(image);
+                {props.images.map((image) => {
                   const path = image.default.split("/");
                   const name =
                     props.heading + " - " + path[path.length - 1].split(".")[0];

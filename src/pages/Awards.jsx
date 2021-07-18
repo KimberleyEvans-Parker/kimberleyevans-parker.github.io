@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 
-import Krayon1 from "../assets/awards/2020 DEVS Hackathon/Team Krayon.jpg";
-import Krayon2 from "../assets/awards/2020 DEVS Hackathon/Team Krayon and Abinesh from Potentia.jpg";
-import MYOB1 from "../assets/awards/MYOB IT Challenge/Trophy.JPG";
-import MYOB2 from "../assets/awards/MYOB IT Challenge/Team Whiz Craft.jpg";
-
 import ContentItem from "./components/ContentItem";
 
 function Awards() {
@@ -30,6 +25,18 @@ function Awards() {
     onLeft = !onLeft;
     return onLeft;
   };
+
+  // image imports
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+
+  const KrayonImages = importAll(
+    require.context("../assets/awards/2020 DEVS Hackathon", false)
+  );
+  const MYOBImages = importAll(
+    require.context("../assets/awards/MYOB IT Challenge", false)
+  );
 
   return (
     <div className="content-container experience-container">
@@ -61,7 +68,7 @@ function Awards() {
           During the competition, there were two rounds - the first of which was a video pitch of our idea.  
           Six successful teams progressed to the second round, where we were able to get feedback, before pitching our idea live to the judges.
           My team - Whiz Craft - was awarded 3rd place overall, or 1st in New Zealand."
-        images={[MYOB1, MYOB2]}
+        images={MYOBImages}
         link="https://www.auckland.ac.nz/en/news/2020/10/09/heart-healer-app-a-winner.html"
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -76,7 +83,7 @@ function Awards() {
           In the end, my team was awarded 1st place!  
           We gained a huge amount of experience, and learnt a lot.  
           You can also see the project Upskill on my projects page."
-        images={[Krayon1, Krayon2]}
+        images={KrayonImages}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />

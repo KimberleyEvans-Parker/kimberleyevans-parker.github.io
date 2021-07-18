@@ -1,44 +1,5 @@
 import React, { useState } from "react";
 
-import Industry1 from "../assets/projects/Industry 4.0/Landing Page and Login.gif";
-import Industry2 from "../assets/projects/Industry 4.0/Add and Edit Machines.gif";
-import Industry3 from "../assets/projects/Industry 4.0/Subscribe to machines.gif";
-import Industry4 from "../assets/projects/Industry 4.0/Add and Edit Sensor.gif";
-import Industry5 from "../assets/projects/Industry 4.0/Sensor Page.gif";
-import Industry6 from "../assets/projects/Industry 4.0/Sensor Data.gif";
-import Industry7 from "../assets/projects/Industry 4.0/Edit Email Notifications.gif";
-import Industry8 from "../assets/projects/Industry 4.0/Email Notifications.gif";
-import Industry9 from "../assets/projects/Industry 4.0/Changing Machine Status.gif";
-import HeartHealer1 from "../assets/projects/Heart Healer/App.gif";
-import HeartHealer2 from "../assets/projects/Heart Healer/AI Counsellor.gif";
-import Upskill1 from "../assets/projects/Upskill/Home Page.gif";
-import Upskill2 from "../assets/projects/Upskill/Instructors.gif";
-import Upskill3 from "../assets/projects/Upskill/Instructor Profile.gif";
-import Upskill4 from "../assets/projects/Upskill/Classes and Booking.gif";
-import Upskill5 from "../assets/projects/Upskill/Rewards.gif";
-import Upskill6 from "../assets/projects/Upskill/Company Challenges.gif";
-import Doto1 from "../assets/projects/Doto/Landing Page.png";
-import Doto2 from "../assets/projects/Doto/Adding a task.gif";
-import Doto3 from "../assets/projects/Doto/Gamification.gif";
-import Doto4 from "../assets/projects/Doto/Marketplace.gif";
-import Feedr1 from "../assets/projects/Feedr/Landing Page.png";
-import Feedr2 from "../assets/projects/Feedr/Home Page.png";
-import Feedr3 from "../assets/projects/Feedr/Integration Center.png";
-import Envirobot from "../assets/projects/Envirobot/Playthrough.gif";
-import RollForReaction1 from "../assets/projects/Roll for Reaction/Logo.jpg";
-import RollForReaction2 from "../assets/projects/Roll for Reaction/Playthrough.gif";
-import RollForReaction3 from "../assets/projects/Roll for Reaction/Features.gif";
-import Flik1 from "../assets/projects/Flik/Traversing the map.gif";
-import Flik2 from "../assets/projects/Flik/Line following.gif";
-import Flik3 from "../assets/projects/Flik/PCB.jpg";
-import Eventigate1 from "../assets/projects/Eventigate/Dashboard.png";
-import Eventigate2 from "../assets/projects/Eventigate/Location Page.png";
-import Eventigate3 from "../assets/projects/Eventigate/Profile Page.gif";
-import AshasQuest1 from "../assets/projects/Asha's Quest/Title Screen.jpg";
-import AshasQuest2 from "../assets/projects/Asha's Quest/Character Selection.jpg";
-import AshasQuest3 from "../assets/projects/Asha's Quest/Playthrough.gif";
-import AshasQuest4 from "../assets/projects/Asha's Quest/Logo.jpg";
-
 import ContentItem from "./components/ContentItem";
 
 import {
@@ -81,6 +42,42 @@ function Projects() {
     return onLeft;
   };
 
+  // image imports
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+
+  const Industry4Images = importAll(
+    require.context("../assets/projects/Industry 4.0", false)
+  );
+  const HeartHealerImages = importAll(
+    require.context("../assets/projects/Heart Healer", false)
+  );
+  const UpskillImages = importAll(
+    require.context("../assets/projects/Upskill", false)
+  );
+  const DotoImages = importAll(
+    require.context("../assets/projects/Doto", false)
+  );
+  const FeedrImages = importAll(
+    require.context("../assets/projects/Feedr", false)
+  );
+  const EnvirobotImages = importAll(
+    require.context("../assets/projects/Envirobot", false)
+  );
+  const RollForReactionImages = importAll(
+    require.context("../assets/projects/Roll for Reaction", false)
+  );
+  const FlikImages = importAll(
+    require.context("../assets/projects/Flik", false)
+  );
+  const EventigateImages = importAll(
+    require.context("../assets/projects/Eventigate", false)
+  );
+  const AshasQuestImages = importAll(
+    require.context("../assets/projects/Asha's Quest", false)
+  );
+
   return (
     <div className="content-container experience-container">
       <h1 className="fade left">Projects</h1>
@@ -109,12 +106,12 @@ function Projects() {
           Users would be able to view this data in real-time, and see historical data, and receive notifications when a machine reported unhealthy readings.
           The project which we started for our Product Owner has received funding to continue its production.  "
         githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
-        images={"../../assets/projects/Industry 4.0"}
+        images={Industry4Images}
         technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
-      {/* <ContentItem
+      <ContentItem
         imgOnLeft={imgOnLeft()}
         heading="Heart Healer"
         subheading="AI Counsellor"
@@ -124,7 +121,7 @@ function Projects() {
           Heart Healer is an AI chatbot and counsellor that monitors your mental wellbeing and productivity.  
           It can schedule in breaks for you, talk to you when you're lonely and connect you to other people.  
           This chatbot would be able to learn individual's preferences through an AI backend and connect people to their business or personal counsellor if needed."
-        images={[HeartHealer1, HeartHealer2]}
+        images={HeartHealerImages}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -138,7 +135,7 @@ function Projects() {
           The platform also serves as a place for companies to post challenges and recruit bright minds.
           Upskill aims to help those impacted by Covid 19, by allowing them to upskill and find new job opportunities.  "
         githubLink="https://github.com/Pyxxil/upskill"
-        images={[Upskill1, Upskill2, Upskill3, Upskill4, Upskill5, Upskill6]}
+        images={UpskillImages}
         technologies={[GIT, HTML, CSS, TS, REACT]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -152,7 +149,7 @@ function Projects() {
           It is an open-source fork of react-rpg and builds upon and enhances the base game. 
           This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition."
         githubLink="https://github.com/Matteas-Eden/roll-for-reaction"
-        images={[RollForReaction1, RollForReaction2, RollForReaction3]}
+        images={RollForReactionImages}
         technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -168,7 +165,7 @@ function Projects() {
           Doto uses Google auth to allow people to sign in. 
           The development of Doto is done using the M.E.R.N (MongoDB, Express, React, Node) tech stack."
         githubLink="https://github.com/se701g2/Doto"
-        images={[Doto1, Doto2, Doto3, Doto4]}
+        images={DotoImages}
         technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -182,7 +179,7 @@ function Projects() {
           We are using the React framework to manage the front-end UI and using a Java server utilising the Spring framework for the back-end. 
           The back-end will call the API for the relevant media service and the front-end will visualise this data."
         githubLink="https://github.com/softeng-701-group-5/softeng-701-assignment-1"
-        images={[Feedr1, Feedr2, Feedr3]}
+        images={FeedrImages}
         technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -208,7 +205,7 @@ function Projects() {
         description="Created for the Global Game Jam, by a team of 3.  
           This is set in the near future, where a robot aims to heal the planet by planting trees, putting out fires and repairing structures.  "
         githubLink="https://github.com/Pyxxil/GameJam"
-        images={[Envirobot]}
+        images={EnvirobotImages}
         technologies={[GIT, GDSCRIPT]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -221,7 +218,7 @@ function Projects() {
         description="A line-following robot that utilises a custom-made PCB with light sensors, a radio frequency module, ADC and PSoC.  
           Various shortest path algorithms were created for the robot to plan its traversal across the map, which were written in C."
         githubLink="https://github.com/Matteas-Eden/flik"
-        images={[Flik1, Flik2, Flik3]}
+        images={FlikImages}
         technologies={[GIT, C]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -248,7 +245,7 @@ function Projects() {
           Aims to connect organisations and volunteer groups who wish to hold events with places people. 
           This was done by 6 people using JavaScript, HTML and CSS. Won Best Presentation in the AUCS, KPMG hackathon."
         githubLink="https://github.com/KimberleyEvans-Parker/Eventigate"
-        images={[Eventigate1, Eventigate2, Eventigate3]}
+        images={EventigateImages}
         technologies={[GIT, HTML, CSS]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
@@ -301,7 +298,7 @@ function Projects() {
           Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed."
         githubLink="https://github.com/KimberleyEvans-Parker/AshasQuest"
         technologies={[GIT, JAVA]}
-        images={[AshasQuest1, AshasQuest2, AshasQuest3, AshasQuest4]}
+        images={AshasQuestImages}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -316,7 +313,7 @@ function Projects() {
         technologies={[VHDL]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
-      /> */}
+      />
     </div>
   );
 }
