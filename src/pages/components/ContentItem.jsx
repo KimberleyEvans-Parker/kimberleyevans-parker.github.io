@@ -11,6 +11,20 @@ import {
 } from "../../Constants";
 
 function ContentItem(props) {
+  console.log(props.images);
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+
+  const images = importAll(
+    require.context(
+      "../../assets/projects/Industry 4.0",
+      // props.images,
+      false,
+      /\.(png|jpe?g|svg|JPG|gif)$/
+    )
+  );
+
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -52,11 +66,11 @@ function ContentItem(props) {
       <div
         className="fade left"
         style={{
-          WebkitAnimationDelay: props.animationDelay,
-          MozAnimationDelay: props.animationDelay,
-          OAnimationDelay: props.animationDelay,
-          MsAnimationDelay: props.animationDelay,
-          AnimationDelay: props.animationDelay,
+          webkitAnimationDelay: props.animationDelay,
+          mozAnimationDelay: props.animationDelay,
+          oAnimationDelay: props.animationDelay,
+          msAnimationDelay: props.animationDelay,
+          animationDelay: props.animationDelay,
         }}
       >
         {props.githubLink && dimensions.width >= SMALL_SCREEN ? (
@@ -87,28 +101,29 @@ function ContentItem(props) {
               </div>
             </Grid>
           )}
-          {props.images && (
+          {images && (
             <Grid item xs={12} sm={6} md={4}>
               <Carousel
                 autoPlay
-                showIndicators={props.images.length > 1}
-                showStatus={props.images.length > 1}
+                showIndicators={images.length > 1}
+                showStatus={images.length > 1}
                 showThumbs={false}
                 transitionTime={CAROUSEL_TRANSITION_TIME}
                 interval={CAROUSEL_INTERVAL}
                 infiniteLoop={true}
                 className="shadow"
               >
-                {props.images.map((image) => {
-                  const path = image.split("/");
+                {images.map((image) => {
+                  console.log(image);
+                  const path = image.default.split("/");
                   const name =
                     props.heading + " - " + path[path.length - 1].split(".")[0];
                   return (
                     <button
-                      onClick={() => props.openModal(image, name)}
+                      onClick={() => props.openModal(image.default, name)}
                       key={name}
                     >
-                      <img alt={name} src={image} />
+                      <img alt={name} src={image.default} />
                     </button>
                   );
                 })}

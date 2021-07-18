@@ -109,22 +109,12 @@ function Projects() {
           Users would be able to view this data in real-time, and see historical data, and receive notifications when a machine reported unhealthy readings.
           The project which we started for our Product Owner has received funding to continue its production.  "
         githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
-        images={[
-          Industry1,
-          Industry2,
-          Industry3,
-          Industry4,
-          Industry5,
-          Industry6,
-          Industry7,
-          Industry8,
-          Industry9,
-        ]}
+        images={"../../assets/projects/Industry 4.0"}
         technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
-      <ContentItem
+      {/* <ContentItem
         imgOnLeft={imgOnLeft()}
         heading="Heart Healer"
         subheading="AI Counsellor"
@@ -326,7 +316,7 @@ function Projects() {
         technologies={[VHDL]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
-      />
+      /> */}
     </div>
   );
 }
