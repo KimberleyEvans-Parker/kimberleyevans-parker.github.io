@@ -1,20 +1,5 @@
 import React, { useState } from "react";
 
-import GraduationPlushies1 from "../assets/work/Graduation Plushies/Plushies.JPG";
-import GraduationPlushies2 from "../assets/work/Graduation Plushies/Pokemon.JPG";
-import GraduationPlushies3 from "../assets/work/Graduation Plushies/Workshop.JPG";
-import GraduationPlushies4 from "../assets/work/Graduation Plushies/Dog and Seal.JPG";
-import GraduationPlushies5 from "../assets/work/Graduation Plushies/Spiderman.JPG";
-import SSS1 from "../assets/work/School Storage Solutions/Painted Lockers.jpg";
-import SSS2 from "../assets/work/School Storage Solutions/Keys.jpg";
-import SSS3 from "../assets/work/School Storage Solutions/Construction.jpg";
-import SSS4 from "../assets/work/School Storage Solutions/Lockers and Keys.jpg";
-import SSS5 from "../assets/work/School Storage Solutions/Inside the Locker.jpg";
-import SSS6 from "../assets/work/School Storage Solutions/Logo.jpg";
-import SSS7 from "../assets/work/School Storage Solutions/Completed Lockers.jpg";
-import Ooma1 from "../assets/work/No.8 Wireless/Testing the Phones.jpg";
-
-
 import ContentItem from "./components/ContentItem";
 
 import { GIT, PYTHON, CSHARP } from "../Constants";
@@ -42,6 +27,21 @@ function Work() {
     onLeft = !onLeft;
     return onLeft;
   };
+
+  // image imports
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+
+  const SSSImages = importAll(
+    require.context("../assets/work/School Storage Solutions", false)
+  );
+  const GraduationPlushiesImages = importAll(
+    require.context("../assets/work/Graduation Plushies", false)
+  );
+  const OomaImages = importAll(
+    require.context("../assets/work/No.8 Wireless", false)
+  );
 
   return (
     <div className="content-container experience-container">
@@ -91,7 +91,7 @@ function Work() {
           This made a profit in its first year and is still being run alongside my studies.  
           During my time in my business, I have gained experience communicating with producers and customers, 
           designing and manufacturing the lockers, working with marketing and sales and designing a website.  `}
-        images={[SSS1, SSS2, SSS3, SSS4, SSS5, SSS6, SSS7]}
+        images={SSSImages}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
         link={"http://www.schoolstorage.co.nz"}
@@ -103,13 +103,7 @@ function Work() {
         dates="October 2020 - Present"
         description={`I co-founded this service which custom-makes graduation hats for soft toys.
           These have been quite popular for graduates and friends of grads and we were able to make a profit in our first year.  `}
-        images={[
-          GraduationPlushies1,
-          GraduationPlushies2,
-          GraduationPlushies3,
-          GraduationPlushies4,
-          GraduationPlushies5,
-        ]}
+        images={GraduationPlushiesImages}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
         link={"https://www.facebook.com/gradplushies/"}
@@ -131,7 +125,7 @@ function Work() {
         dates="June 2019"
         description="I developed an automated testing system for the phones that Ooma - a U.S. company.  
           During this, I gained experience with Git, Python and hardware."
-        images={[Ooma1]}
+        images={OomaImages}
         technologies={[GIT, PYTHON]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
