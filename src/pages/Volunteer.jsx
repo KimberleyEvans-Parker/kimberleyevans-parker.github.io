@@ -5,6 +5,8 @@ import Motuihe1 from "../assets/volunteer/Motuihe Island/Planting Trees 1.JPG";
 import Motuihe2 from "../assets/volunteer/Motuihe Island/Planting Trees 2.JPG";
 import Motuihe3 from "../assets/volunteer/Motuihe Island/Planting Trees 3.JPG";
 import Motuihe4 from "../assets/volunteer/Motuihe Island/View of the Island.JPG";
+import ClassRep1 from "../assets/volunteer/Class Representative/Phil 222.JPG";
+import ClassRep2 from "../assets/volunteer/Class Representative/Phil 216.JPG";
 
 import ContentItem from "./components/ContentItem";
 
@@ -56,6 +58,7 @@ function Volunteer() {
         subheading="Phil 222 and Logicomp 301"
         dates="July 2019 - July 2020"
         description="I represented the students in my class and communicate any questions, queries, concerns or feedback to the teacher."
+        images={[ClassRep1, ClassRep2]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
