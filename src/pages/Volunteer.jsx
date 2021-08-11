@@ -38,7 +38,7 @@ function Volunteer() {
     require.context("../assets/volunteer/Poppy Making", false)
   );
   const ClassRepImages = importAll(
-    require.context("../assets/volunteer/Poppy Making", false)
+    require.context("../assets/volunteer/Class Representative", false)
   );
 
   return (
