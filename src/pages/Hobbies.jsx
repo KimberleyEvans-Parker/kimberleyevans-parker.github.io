@@ -1,32 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
-import Awards from "../assets/experience/Awards.jpg";
-import Projects from "../assets/experience/Projects.jpg";
-import Volunteer2 from "../assets/experience/Volunteer.jpg";
-import Work2 from "../assets/experience/Work.jpg";
-import { Link } from "react-router-dom";
-
-import { SMALL_SCREEN } from "../Constants";
+import ContentItem from "./components/ContentItem";
 
 function Hobbies() {
-  // Keeps track of the window dimensions.  Updates when window resizes
-  const [dimensions, setDimensions] = React.useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
-  React.useEffect(() => {
-    function handleResize() {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-      });
-    }
+  const [image, setImage] = useState(null);
+  const [caption, setCaption] = useState("");
 
-    window.addEventListener("resize", handleResize);
-    return (_) => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
+  const openModal = (image, caption) => {
+    setImage(image);
+    setCaption(caption);
+  };
+
+  let animationDelay = 0;
+
+  const getAnimationDelay = () => {
+    const animationDelaySeconds = animationDelay.toString() + "s";
+    animationDelay += 0.4;
+    return animationDelaySeconds;
+  };
+
+  let onLeft = false;
+
+  const imgOnLeft = () => {
+    onLeft = !onLeft;
+    return onLeft;
+  };
+
+  // image imports
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+
+  const Industry4Images = importAll(
+    require.context("../assets/projects/Industry 4.0", false)
+  );
 
   return (
     <div className="content-container experience-container fade left">
@@ -35,40 +42,21 @@ function Hobbies() {
         I have a lot of hobbies including badminton, piano, art and skiing. Here
         are some them :)
       </p>
-
-      <div class="row">
-        <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
-          <Link to="experience/Work">
-            <img src={Work2} alt="Work" className="experience-img" />
-            <h3 className="centered">Work</h3>
-            <div className="layer"></div>
-          </Link>
-        </div>
-
-        <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
-          <Link to="experience/Volunteer">
-            <img src={Volunteer2} alt="Volunteer" className="experience-img" />
-            <h3 className="centered">Volunteer</h3>
-            <div className="layer"></div>
-          </Link>
-        </div>
-
-        <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
-          <Link to="experience/Projects">
-            <img src={Projects} alt="Projects" className="experience-img" />
-            <h3 className="centered">Projects</h3>
-            <div className="layer"></div>
-          </Link>
-        </div>
-
-        <div class={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}>
-          <Link to="experience/Awards">
-            <img src={Awards} alt="Awards" className="experience-img" />
-            <h3 className="centered">Awards</h3>
-            <div className="layer"></div>
-          </Link>
-        </div>
-      </div>
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
+        heading="Industry 4.0"
+        subheading="Machine Health Monitoring Software"
+        dates="August 2020 - November 2020"
+        description="A cross-platform application made by 8 people following agile practices.  
+          The application was able to take data from different machines and sensors and display them to the technicians.  
+          Users would be able to view this data in real-time, and see historical data, and receive notifications when a machine reported unhealthy readings.
+          The project which we started for our Product Owner has received funding to continue its production.  "
+        githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
+        images={Industry4Images}
+        technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
     </div>
   );
 }
