@@ -31,8 +31,8 @@ function Hobbies() {
     return r.keys().map(r);
   }
 
-  const Industry4Images = importAll(
-    require.context("../assets/projects/Industry 4.0", false)
+  const LegoImages = importAll(
+    require.context("../assets/hobbies/Lego", false)
   );
 
   return (
@@ -44,16 +44,13 @@ function Hobbies() {
       </p>
       <ContentItem
         imgOnLeft={imgOnLeft()}
-        heading="Industry 4.0"
-        subheading="Machine Health Monitoring Software"
-        dates="August 2020 - November 2020"
-        description="A cross-platform application made by 8 people following agile practices.  
-          The application was able to take data from different machines and sensors and display them to the technicians.  
-          Users would be able to view this data in real-time, and see historical data, and receive notifications when a machine reported unhealthy readings.
-          The project which we started for our Product Owner has received funding to continue its production.  "
-        githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
-        images={Industry4Images}
-        technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
+        heading="Lego"
+        // subheading="Machine Health Monitoring Software"
+        // dates="August 2020 - November 2020"
+        description="I enjoy creating with Lego and building different scenes and sculptures with it.  
+          I have built sculptures of some my favourite characters - Zelda, Link and Wolf Link from Twilight Princess.
+          I have also built several trees and scenes, including an alien planet and a medieval encampment.  "
+        images={LegoImages}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
