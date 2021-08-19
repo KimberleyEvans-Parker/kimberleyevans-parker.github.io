@@ -383,6 +383,10 @@ nav ul a {
 
 /* ----------------------------- modal ----------------------------- */
 
+.modal-thumbnail {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .modal-background {
   position: fixed;
   z-index: 10;
@@ -444,6 +448,15 @@ nav ul a {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* ----------------------------- image gallery ----------------------------- */
+
+.imagegallery-image {
+  width: 100%;
+  animation-name: zoom;
+  animation-duration: 2s;
+  /* background-color: black; */
 }
 
 /* ----------------------------- bullet points ----------------------------- */
