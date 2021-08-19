@@ -456,7 +456,7 @@ nav ul a {
   width: 100%;
   animation-name: zoom;
   animation-duration: 2s;
-  /* background-color: black; */
+  margin-top: 8px;
 }
 
 /* ----------------------------- bullet points ----------------------------- */
