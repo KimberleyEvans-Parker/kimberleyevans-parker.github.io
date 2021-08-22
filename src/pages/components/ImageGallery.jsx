@@ -13,7 +13,10 @@ import {
 function ImageGalleryCollumn(props) {
   return (
     <>
-      {props.images.map((image) => {
+      {props.images.map((imageIndex) => {
+        const image = imageIndex[0];
+        const animationDelay = imageIndex[1] * 0.2 + "s";
+        console.log(animationDelay);
         const path = image.default.split("/");
         const name = path[path.length - 1].split(".")[0];
         return (
@@ -26,6 +29,13 @@ function ImageGalleryCollumn(props) {
               alt={name}
               src={image.default}
               className="imagegallery-image"
+              style={{
+                webkitAnimationDelay: animationDelay,
+                mozAnimationDelay: animationDelay,
+                oAnimationDelay: animationDelay,
+                msAnimationDelay: animationDelay,
+                animationDelay: animationDelay,
+              }}
             />
           </button>
         );
@@ -74,11 +84,11 @@ function ImageGallery(props) {
 
   for (var i = 0; i < props.images.length; i++) {
     if (i % 3 === 0) {
-      l1.push(props.images[i]);
+      l1.push([props.images[i], i]);
     } else if (i % 3 === 1) {
-      l2.push(props.images[i]);
+      l2.push([props.images[i], i]);
     } else if (i % 3 === 2) {
-      l3.push(props.images[i]);
+      l3.push([props.images[i], i]);
     }
   }
 
