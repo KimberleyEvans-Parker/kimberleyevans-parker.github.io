@@ -10,13 +10,48 @@ import {
   CAROUSEL_INTERVAL,
 } from "../../Constants";
 
+function ImageItem(props) {
+  // for loading an image when it scrolls into view
+
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+      console.log(isVisible);
+    });
+    observer.observe(domRef.current);
+    const current = domRef.current;
+    return () => observer.unobserve(current);
+  }, [isVisible]);
+
+  return (
+    <img
+      ref={domRef}
+      alt={props.name}
+      src={props.image.default}
+      className={`image-gallery-image ade-in-section2  ${
+        isVisible ? "is-visible" : ""
+      } `}
+      style={{
+        WebkitAnimationDelay: props.animationDelay,
+        MozAnimationDelay: props.animationDelay,
+        OAnimationDelay: props.animationDelay,
+        MsAnimationDelay: props.animationDelay,
+        AnimationDelay: props.animationDelay,
+        width: "100%",
+      }}
+    />
+  );
+}
+
 function ImageGalleryCollumn(props) {
   return (
     <>
       {props.images.map((imageIndex) => {
         const image = imageIndex[0];
         const animationDelay = imageIndex[1] * 0.2 + "s";
-        console.log(animationDelay);
+        // console.log(animationDelay);
         const path = image.default.split("/");
         const name = path[path.length - 1].split(".")[0];
         return (
@@ -25,17 +60,10 @@ function ImageGalleryCollumn(props) {
             key={name}
             className="modal-thumbnail"
           >
-            <img
-              alt={name}
-              src={image.default}
-              className="imagegallery-image"
-              style={{
-                webkitAnimationDelay: animationDelay,
-                mozAnimationDelay: animationDelay,
-                oAnimationDelay: animationDelay,
-                msAnimationDelay: animationDelay,
-                animationDelay: animationDelay,
-              }}
+            <ImageItem
+              name={name}
+              image={image}
+              animationDelay={animationDelay}
             />
           </button>
         );
@@ -64,19 +92,6 @@ function ImageGallery(props) {
     };
   });
 
-  // for loading an image when it scrolls into view
-
-  const [isVisible, setVisible] = React.useState(true);
-  const domRef = React.useRef();
-  React.useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => setVisible(entry.isIntersecting));
-    });
-    observer.observe(domRef.current);
-    const current = domRef.current;
-    return () => observer.unobserve(current);
-  }, []);
-
   // collumns of images
   var l1 = [];
   var l2 = [];
@@ -96,7 +111,6 @@ function ImageGallery(props) {
     <div
       style={{ marginTop: "40px" }}
       // className={` fade-in-section ${isVisible ? "is-visible" : ""} fade-left`}
-      ref={domRef}
     >
       <div>
         <Grid container spacing={2}>

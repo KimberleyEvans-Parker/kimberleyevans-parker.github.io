@@ -450,15 +450,6 @@ nav ul a {
   cursor: pointer;
 }
 
-/* ----------------------------- image gallery ----------------------------- */
-
-.imagegallery-image {
-  width: 100%;
-  animation-name: zoom;
-  animation-duration: 2s;
-  margin-top: 8px;
-}
-
 /* ----------------------------- bullet points ----------------------------- */
 
 .code-bullet-points {
@@ -498,6 +489,25 @@ nav ul a {
   background-size: cover;
   left: 2px;
   top: 2px;
+}
+
+/* ----------------------------- image gallery ----------------------------- */
+
+.image-gallery-image {
+  width: 100%;
+  margin-top: 8px;
+
+  opacity: 0;
+  transform: scale(0.3);
+  visibility: hidden;
+  transition: transform 1.5s ease-out;
+  will-change: visibility;
+  will-change: opacity, visibility;
+}
+.image-gallery-image.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 /* ----------------------------- fade animations ----------------------------- */
