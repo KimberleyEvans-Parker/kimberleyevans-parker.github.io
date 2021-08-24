@@ -92,37 +92,53 @@ function ImageGallery(props) {
   });
 
   // collumns of images
-  var l1 = [];
-  var l2 = [];
-  var l3 = [];
+  var l3_1 = [];
+  var l3_2 = [];
+  var l3_3 = [];
+  var l2_1 = [];
+  var l2_2 = [];
 
   for (var i = 0; i < props.images.length; i++) {
     if (i % 3 === 0) {
-      l1.push([props.images[i], i]);
+      l3_1.push([props.images[i], i]);
     } else if (i % 3 === 1) {
-      l2.push([props.images[i], i]);
-    } else if (i % 3 === 2) {
-      l3.push([props.images[i], i]);
+      l3_2.push([props.images[i], i]);
+    } else {
+      l3_3.push([props.images[i], i]);
+    }
+
+    if (i % 2 === 0) {
+      l2_1.push([props.images[i], i]);
+    } else {
+      l2_2.push([props.images[i], i]);
     }
   }
 
   return (
-    <div
-      style={{ marginTop: "40px" }}
-      // className={` fade-in-section ${isVisible ? "is-visible" : ""} fade-left`}
-    >
+    <div style={{ marginTop: "40px" }}>
       <div>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={6} md={4}>
-            <ImageGalleryCollumn images={l1} />
+        {dimensions.width < SMALL_SCREEN ? (
+          <Grid container spacing={2}>
+            <Grid item xs={6}>
+              <ImageGalleryCollumn images={l2_1} />
+            </Grid>
+            <Grid item xs={6}>
+              <ImageGalleryCollumn images={l2_2} />
+            </Grid>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <ImageGalleryCollumn images={l2} />
+        ) : (
+          <Grid container spacing={2}>
+            <Grid item xs={4}>
+              <ImageGalleryCollumn images={l3_1} />
+            </Grid>
+            <Grid item xs={4}>
+              <ImageGalleryCollumn images={l3_2} />
+            </Grid>
+            <Grid item xs={4}>
+              <ImageGalleryCollumn images={l3_3} />
+            </Grid>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <ImageGalleryCollumn images={l3} />
-          </Grid>
-        </Grid>
+        )}
       </div>
     </div>
   );
