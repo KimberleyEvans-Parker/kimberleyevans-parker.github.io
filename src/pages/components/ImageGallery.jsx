@@ -26,22 +26,22 @@ function ImageItem(props) {
   }, [isVisible]);
 
   return (
-    <img
-      ref={domRef}
-      alt={props.name}
-      src={props.image.default}
-      className={`image-gallery-image ade-in-section2  ${
-        isVisible ? "is-visible" : ""
-      } `}
-      style={{
-        WebkitAnimationDelay: props.animationDelay,
-        MozAnimationDelay: props.animationDelay,
-        OAnimationDelay: props.animationDelay,
-        MsAnimationDelay: props.animationDelay,
-        AnimationDelay: props.animationDelay,
-        width: "100%",
-      }}
-    />
+    <div className={`image-gallery-image  ${isVisible ? "is-visible" : ""} `}>
+      <img
+        ref={domRef}
+        alt={props.name}
+        src={props.image.default}
+        className="image-gallery-animation"
+        style={{
+          WebkitAnimationDelay: props.animationDelay,
+          MozAnimationDelay: props.animationDelay,
+          OAnimationDelay: props.animationDelay,
+          MsAnimationDelay: props.animationDelay,
+          AnimationDelay: props.animationDelay,
+          width: "100%",
+        }}
+      />
+    </div>
   );
 }
 
@@ -50,8 +50,7 @@ function ImageGalleryCollumn(props) {
     <>
       {props.images.map((imageIndex) => {
         const image = imageIndex[0];
-        const animationDelay = imageIndex[1] * 0.2 + "s";
-        // console.log(animationDelay);
+        const animationDelay = imageIndex[1] * 0.15 + "s";
         const path = image.default.split("/");
         const name = path[path.length - 1].split(".")[0];
         return (
