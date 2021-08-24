@@ -3,6 +3,7 @@
 
 :root {
   --animation-time: 2500ms;
+  --animation-time-short: 1500ms;
   --negative-animation-distance: -40px;
   --positive-animation-distance: 40px;
   --primary-colour: #472e5e;
@@ -498,9 +499,9 @@ nav ul a {
   margin-top: 8px;
 
   opacity: 0;
-  transform: scale(0.3);
   visibility: hidden;
-  transition: transform 1.5s ease-out;
+  transform: scale(0.3);
+  transition: transform var(--animation-time-short) ease-out;
   will-change: visibility;
   will-change: opacity, visibility;
 }
@@ -508,6 +509,26 @@ nav ul a {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+.image-gallery-animation {
+  opacity: 0;
+  animation: image-zoom ease var(--animation-time-short) forwards;
+  -webkit-animation: image-zoom ease var(--animation-time-short) forwards;
+  -moz-animation: image-zoom ease var(--animation-time-short) forwards;
+  -o-animation: image-zoom ease var(--animation-time-short) forwards;
+  -ms-animation: image-zoom ease var(--animation-time-short) forwards;
+}
+
+@keyframes image-zoom {
+  from {
+    transform: scale(0.3);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* ----------------------------- fade animations ----------------------------- */
