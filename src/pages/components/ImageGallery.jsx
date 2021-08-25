@@ -120,22 +120,22 @@ function ImageGallery(props) {
         {dimensions.width < SMALL_SCREEN ? (
           <Grid container spacing={2}>
             <Grid item xs={6}>
-              <ImageGalleryCollumn images={l2_1} />
+              <ImageGalleryCollumn images={l2_1} openModal={props.openModal} />
             </Grid>
             <Grid item xs={6}>
-              <ImageGalleryCollumn images={l2_2} />
+              <ImageGalleryCollumn images={l2_2} openModal={props.openModal} />
             </Grid>
           </Grid>
         ) : (
           <Grid container spacing={2}>
             <Grid item xs={4}>
-              <ImageGalleryCollumn images={l3_1} />
+              <ImageGalleryCollumn images={l3_1} openModal={props.openModal} />
             </Grid>
             <Grid item xs={4}>
-              <ImageGalleryCollumn images={l3_2} />
+              <ImageGalleryCollumn images={l3_2} openModal={props.openModal} />
             </Grid>
             <Grid item xs={4}>
-              <ImageGalleryCollumn images={l3_3} />
+              <ImageGalleryCollumn images={l3_3} openModal={props.openModal} />
             </Grid>
           </Grid>
         )}
