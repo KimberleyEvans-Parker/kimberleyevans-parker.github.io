@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-
-import ImageGallery from "../components/ImageGallery";
 
 import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.JPG";
 
