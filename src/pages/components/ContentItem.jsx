@@ -30,7 +30,7 @@ function ContentItem(props) {
     };
   });
 
-  // for loading an image when it scrolls into view
+  // for loading a section when it scrolls into view
 
   const [isVisible, setVisible] = React.useState(true);
   const domRef = React.useRef();
@@ -46,7 +46,7 @@ function ContentItem(props) {
   return (
     <div
       style={{ marginTop: "40px" }}
-      className={` fade-in-section ${isVisible ? "is-visible" : ""} fade-left`}
+      className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
       ref={domRef}
     >
       <div
