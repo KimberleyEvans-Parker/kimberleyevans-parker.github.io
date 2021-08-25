@@ -8,8 +8,9 @@ import Experience from "./pages/Experience";
 import Work from "./pages/Work";
 import Volunteer from "./pages/Volunteer";
 import Projects from "./pages/Projects";
-import Hobbies from "./pages/Hobbies";
 import Awards from "./pages/Awards";
+import Hobbies from "./pages/hobbies/Hobbies";
+import Lego from "./pages/hobbies/Lego";
 import Error404 from "./pages/404";
 
 function App() {
@@ -20,7 +21,6 @@ function App() {
         <Route path="/" component={Navigation} />
       </Switch>
       <Switch>
-        {/* <Route path="/" exact /> */}
         <Route path="/experience" component={Navigation2} />
       </Switch>
       <Switch>
@@ -32,6 +32,7 @@ function App() {
         <Route path="/experience/projects" exact component={Projects} />
         <Route path="/experience/awards" exact component={Awards} />
         <Route path="/hobbies" exact component={Hobbies} />
+        <Route path="/hobbies/lego" exact component={Lego} />
         <Route component={Error404} />
       </Switch>
     </Router>
