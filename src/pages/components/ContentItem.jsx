@@ -10,6 +10,52 @@ import {
   CAROUSEL_INTERVAL,
 } from "../../Constants";
 
+function ImageContent(props) {
+  return (
+    <Carousel
+      autoPlay
+      showIndicators={props.images.length > 1}
+      showStatus={props.images.length > 1}
+      showThumbs={false}
+      transitionTime={CAROUSEL_TRANSITION_TIME}
+      interval={CAROUSEL_INTERVAL}
+      infiniteLoop={true}
+      className="shadow"
+    >
+      {props.images.map((image) => {
+        const path = image.default.split("/");
+        const name =
+          props.heading + " - " + path[path.length - 1].split(".")[0];
+        return (
+          <button
+            onClick={() => props.openModal(image.default, name)}
+            key={name}
+          >
+            <img alt={name} src={image.default} />
+          </button>
+        );
+      })}
+    </Carousel>
+  );
+}
+
+function TextContent(props) {
+  return (
+    <>
+      <h3>{props.dates}</h3>
+      <p>{props.description}</p>
+      {props.link && (
+        <p>
+          For more information, take a look <a href={props.link}>here</a>
+        </p>
+      )}
+      <div className="technologies">
+        {props.technologies && props.technologies.join(` ⸎ `)}
+      </div>
+    </>
+  );
+}
+
 function ContentItem(props) {
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
@@ -45,18 +91,17 @@ function ContentItem(props) {
 
   return (
     <div
-      style={{ marginTop: "40px" }}
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
       ref={domRef}
     >
       <div
         className="fade left"
         style={{
-          webkitAnimationDelay: props.animationDelay,
-          mozAnimationDelay: props.animationDelay,
-          oAnimationDelay: props.animationDelay,
-          msAnimationDelay: props.animationDelay,
-          animationDelay: props.animationDelay,
+          WebkitAnimationDelay: props.animationDelay,
+          MozAnimationDelay: props.animationDelay,
+          OAnimationDelay: props.animationDelay,
+          MsAnimationDelay: props.animationDelay,
+          AnimationDelay: props.animationDelay,
         }}
       >
         {props.githubLink && dimensions.width >= SMALL_SCREEN ? (
@@ -71,63 +116,31 @@ function ContentItem(props) {
             {props.heading} {props.subheading && "-"} {props.subheading}
           </h2>
         )}
+
         <Grid container spacing={3}>
           {(!props.imgOnLeft || dimensions.width < SMALL_SCREEN) && (
             <Grid item xs>
-              <h3>{props.dates}</h3>
-              <p>{props.description}</p>
-              {props.link && (
-                <p>
-                  For more information, take a look{" "}
-                  <a href={props.link}>here</a>
-                </p>
-              )}
-              <div className="technologies">
-                {props.technologies && props.technologies.join(` ⸎ `)}
-              </div>
+              <TextContent
+                dates={props.dates}
+                description={props.description}
+                link={props.link}
+                technologies={props.technologies}
+              />
             </Grid>
           )}
           {props.images && (
             <Grid item xs={12} sm={6} md={4}>
-              <Carousel
-                autoPlay
-                showIndicators={props.images.length > 1}
-                showStatus={props.images.length > 1}
-                showThumbs={false}
-                transitionTime={CAROUSEL_TRANSITION_TIME}
-                interval={CAROUSEL_INTERVAL}
-                infiniteLoop={true}
-                className="shadow"
-              >
-                {props.images.map((image) => {
-                  const path = image.default.split("/");
-                  const name =
-                    props.heading + " - " + path[path.length - 1].split(".")[0];
-                  return (
-                    <button
-                      onClick={() => props.openModal(image.default, name)}
-                      key={name}
-                    >
-                      <img alt={name} src={image.default} />
-                    </button>
-                  );
-                })}
-              </Carousel>
+              <ImageContent images={props.images} openModal={props.openModal} />
             </Grid>
           )}
           {props.imgOnLeft && dimensions.width >= SMALL_SCREEN && (
             <Grid item xs>
-              <h3>{props.dates}</h3>
-              <p>{props.description}</p>
-              {props.link && (
-                <p>
-                  For more information, take a look{" "}
-                  <a href={props.link}>here</a>
-                </p>
-              )}
-              <div className="technologies">
-                {props.technologies && props.technologies.join(` ⸎ `)}
-              </div>
+              <TextContent
+                dates={props.dates}
+                description={props.description}
+                link={props.link}
+                technologies={props.technologies}
+              />
             </Grid>
           )}
         </Grid>
