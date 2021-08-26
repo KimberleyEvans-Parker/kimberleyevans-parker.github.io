@@ -571,6 +571,7 @@ nav ul a {
 }
 
 .fade-in-section {
+  margin-top: 40px;
   opacity: 0;
   transform: translateX(100px);
   visibility: hidden;
