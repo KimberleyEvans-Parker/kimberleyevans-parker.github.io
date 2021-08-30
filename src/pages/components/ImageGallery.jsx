@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -13,7 +13,6 @@ function ImageItem(props) {
   React.useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
-      console.log(isVisible);
     });
     observer.observe(domRef.current);
     const current = domRef.current;
@@ -67,6 +66,14 @@ function ImageGalleryCollumn(props) {
 }
 
 function ImageGallery(props) {
+  const [image, setImage] = useState(null);
+  const [caption, setCaption] = useState("");
+
+  const openModal = (image, caption) => {
+    setImage(image);
+    setCaption(caption);
+  };
+
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -111,26 +118,41 @@ function ImageGallery(props) {
 
   return (
     <div style={{ marginTop: "40px" }}>
+      {image && (
+        <>
+          <div className="modal-background">
+            <span className="close" onClick={() => setImage(null)}>
+              &times;
+            </span>
+            <img alt="" src={image} className="modal-content" />
+            {caption && (
+              <div className="caption">
+                <h2>{caption}</h2>
+              </div>
+            )}
+          </div>
+        </>
+      )}
       <div>
         {dimensions.width < SMALL_SCREEN ? (
           <Grid container spacing={2}>
             <Grid item xs={6}>
-              <ImageGalleryCollumn images={l2_1} openModal={props.openModal} />
+              <ImageGalleryCollumn images={l2_1} openModal={openModal} />
             </Grid>
             <Grid item xs={6}>
-              <ImageGalleryCollumn images={l2_2} openModal={props.openModal} />
+              <ImageGalleryCollumn images={l2_2} openModal={openModal} />
             </Grid>
           </Grid>
         ) : (
           <Grid container spacing={2}>
             <Grid item xs={4}>
-              <ImageGalleryCollumn images={l3_1} openModal={props.openModal} />
+              <ImageGalleryCollumn images={l3_1} openModal={openModal} />
             </Grid>
             <Grid item xs={4}>
-              <ImageGalleryCollumn images={l3_2} openModal={props.openModal} />
+              <ImageGalleryCollumn images={l3_2} openModal={openModal} />
             </Grid>
             <Grid item xs={4}>
-              <ImageGalleryCollumn images={l3_3} openModal={props.openModal} />
+              <ImageGalleryCollumn images={l3_3} openModal={openModal} />
             </Grid>
           </Grid>
         )}
