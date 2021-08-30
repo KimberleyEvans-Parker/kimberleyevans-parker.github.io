@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import ImageGallery from "../components/ImageGallery";
 
