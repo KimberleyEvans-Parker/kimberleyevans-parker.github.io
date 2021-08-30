@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.JPG";
+import Photography from "../../assets/hobbies/Photography/Flying Bee.JPG";
 
 import { SMALL_SCREEN } from "../../Constants";
 
@@ -41,6 +42,19 @@ function Hobbies() {
           <Link to="hobbies/lego">
             <img src={Lego} alt="Lego" className="experience-img" />
             <h3 className="centered">Lego</h3>
+            <div className="layer"></div>
+          </Link>
+        </div>
+        <div
+          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+        >
+          <Link to="hobbies/photography">
+            <img
+              src={Photography}
+              alt="Photography"
+              className="experience-img"
+            />
+            <h3 className="centered">Photography</h3>
             <div className="layer"></div>
           </Link>
         </div>
