@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "./pages/Navigation";
-import Navigation2 from "./pages/Navigation 2";
+import SubNavbar from "./pages/SubNavbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
@@ -22,7 +22,21 @@ function App() {
         <Route path="/" component={Navigation} />
       </Switch>
       <Switch>
-        <Route path="/experience" component={Navigation2} />
+        <Route
+          path="/hobbies"
+          component={() => (
+            <SubNavbar section={"hobbies"} headings={["Lego", "Photography"]} />
+          )}
+        />
+        <Route
+          path="/experience"
+          component={() => (
+            <SubNavbar
+              section={"experience"}
+              headings={["Work", "Volunteer", "Projects", "Awards"]}
+            />
+          )}
+        />
       </Switch>
       <Switch>
         <Route path="/" exact component={Home} />

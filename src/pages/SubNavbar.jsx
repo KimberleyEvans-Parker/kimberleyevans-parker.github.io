@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import { SMALL_SCREEN } from "../Constants";
 import SubNavbarLink from "./components/SubNavbarLink";
 
-function Navigation2(props) {
+function SubNavbar(props) {
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -37,14 +37,17 @@ function Navigation2(props) {
             dimensions.width < SMALL_SCREEN ? "extra-small-screensize" : ""
           }
         >
-          <SubNavbarLink heading="Work" />
+          {props.headings.map((heading) => {
+            return <SubNavbarLink section={props.section} heading={heading} />;
+          })}
+          {/* <SubNavbarLink heading="Work" />
           <SubNavbarLink heading="Volunteer" />
           <SubNavbarLink heading="Projects" />
-          <SubNavbarLink heading="Awards" />
+          <SubNavbarLink heading="Awards" /> */}
         </ul>
       </div>
     </nav>
   );
 }
 
-export default withRouter(Navigation2);
+export default withRouter(SubNavbar);
