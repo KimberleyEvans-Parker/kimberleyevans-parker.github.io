@@ -37,6 +37,9 @@ function Awards() {
   const MYOBImages = importAll(
     require.context("../assets/awards/MYOB IT Challenge", false)
   );
+  const CertificateImages = importAll(
+    require.context("../assets/awards/Certificates", false)
+  );
 
   return (
     <div className="content-container experience-container">
@@ -56,6 +59,16 @@ function Awards() {
           </div>
         </>
       )}
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
+        heading="University Certificates of Outstanding Achievment"
+        // subheading="3rd place"
+        dates="September 2021"
+        description="I received several certificates of outstanding achievment for my hard work during university."
+        images={CertificateImages}
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
       <ContentItem
         imgOnLeft={imgOnLeft()}
         heading="2020 MYOB IT Challenge"
