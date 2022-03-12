@@ -62,8 +62,7 @@ function Awards() {
       <ContentItem
         imgOnLeft={imgOnLeft()}
         heading="University Certificates of Outstanding Achievment"
-        // subheading="3rd place"
-        dates="September 2021"
+        dates="2021"
         description="I received several certificates of outstanding achievment for my hard work during university."
         images={CertificateImages}
         openModal={openModal}
