@@ -12,6 +12,7 @@ import Awards from "./pages/Awards";
 import Hobbies from "./pages/hobbies/Hobbies";
 import Lego from "./pages/hobbies/Lego";
 import Photography from "./pages/hobbies/Photography";
+import Words from "./pages/Words";
 import Error404 from "./pages/404";
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
         <Route path="/hobbies" exact component={Hobbies} />
         <Route path="/hobbies/lego" exact component={Lego} />
         <Route path="/hobbies/photography" exact component={Photography} />
+        <Route path="/words" exact component={Words} />
         <Route component={Error404} />
       </Switch>
     </Router>
