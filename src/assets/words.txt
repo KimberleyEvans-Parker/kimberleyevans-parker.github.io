@@ -583,11 +583,11 @@ diploma
 dirty
 disaster
 Discord
+discus
 disease
 dishrag
 dispenser
 display
-diss track
 distance
 diva
 divorce
@@ -1511,6 +1511,7 @@ pet food
 pet shop
 petal
 pharmacist
+phoenix
 phone
 photo album
 photo frame
