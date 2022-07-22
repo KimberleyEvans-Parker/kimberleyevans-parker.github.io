@@ -47,6 +47,9 @@ function Projects() {
     return r.keys().map(r);
   }
 
+  const EmpowerImages = importAll(
+    require.context("../assets/projects/Empower", false)
+  );
   const Industry4Images = importAll(
     require.context("../assets/projects/Industry 4.0", false)
   );
@@ -96,6 +99,21 @@ function Projects() {
           </div>
         </>
       )}
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
+        heading="Empower"
+        subheading="Network to Empower Women"
+        dates="July 2022"
+        description="I was invited to the We the Women Hackfest, run by Girlboss.  
+          During this, my team of five focused on ways we could help women dependent on others for a living.  
+          We created Empower.  
+          A network of support for women to provide resources and people so that they can regain their independence.  "
+        githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
+        images={EmpowerImages}
+        technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
       <ContentItem
         imgOnLeft={imgOnLeft()}
         heading="Industry 4.0"
