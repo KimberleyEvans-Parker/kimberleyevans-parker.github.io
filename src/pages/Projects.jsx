@@ -108,7 +108,7 @@ function Projects() {
           During this, my team of five focused on ways we could help women dependent on others for a living.  
           We created Empower.  
           A network of support for women to provide resources and people so that they can regain their independence.  "
-        githubLink="https://github.com/KimberleyEvans-Parker/industry-4"
+        githubLink="https://github.com/Eva-Sorensen/empower"
         images={EmpowerImages}
         technologies={[GIT, HTML, CSS, JS, REACT, REDUX]}
         openModal={openModal}
