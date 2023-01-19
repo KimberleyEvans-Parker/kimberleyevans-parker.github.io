@@ -49,3 +49,10 @@ https://kimberleyevans-parker.github.io/experience/awards
 ### Other links
 
 Links to my GitHub profile and Linked in profile are also located in the header.
+
+# Run Instructions
+## Setup
+Run `yarn` in a terminal
+
+## To run
+Run `yarn start` in a terminal
