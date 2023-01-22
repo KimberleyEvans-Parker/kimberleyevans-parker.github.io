@@ -187,21 +187,6 @@ button:hover {
   text-align: center;
 }
 
-/* Amazonian Mystery */
-.amazonian-background {
-  height: 100vh;
-  width: 100vw;
-  /* yeah */
-  background-image: url("");
-  background-image: url("https://i.pinimg.com/originals/c5/50/79/c550796ed11a82d8ba2d9caa64a9c565.jpg");
-  background-image: url("https://cdn.wallpapersafari.com/28/81/3Qkdob.jpg");
-  background-image: url("https://coolwallpapers.me/picsup/2954311-ruin-temple-forest-fantasy-art___landscape-nature-wallpapers.jpg");
-  background-color: #47542d;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* Stuff for experience page */
 .row {
   display: flex;
