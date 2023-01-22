@@ -13,7 +13,7 @@ import Hobbies from "./pages/hobbies/Hobbies";
 import Lego from "./pages/hobbies/Lego";
 import Photography from "./pages/hobbies/Photography";
 import Words from "./pages/Words";
-import AmazonianMystery from "./pages/AmazonianMystery";
+import AmazonianMystery from "./pages/amazonian mystery/AmazonianMystery";
 import Error404 from "./pages/404";
 
 function App() {
