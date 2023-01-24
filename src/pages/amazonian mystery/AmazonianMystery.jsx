@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 import CodeInput from "./CodeInput";
+import Package2 from "./Package2";
 import "./styles.css"
 
 export default function AmazonianMystery() {
-    const [correctlyGuessed, setcorrectlyGuessed] = useState(false);
+    const [foundLocation, setFoundLocation] = useState(false);
   
     return (
       <div className="amazonian-background">
-        <h1>Find the Ancient Amazon Civillisation</h1>
-        <CodeInput 
-          clue="Enter the loaction of the entrance to the lost Civillisation"
-          correctAnswer="123" 
-          onCorrectAnswer={setcorrectlyGuessed}
-          wait={2000}
-        />
-        {correctlyGuessed && "That's right!"}
+        <div className="content-container">
+          <h1>Find the Ancient Amazon Civillisation</h1>
+          <CodeInput 
+            clue="Enter the loaction of the entrance to the lost Civillisation in the format 'X.Y'"
+            correctAnswer="123" 
+            onCorrectAnswer={setFoundLocation}
+            wait={2000}
+          />
+          {foundLocation && <Package2 />}
+        </div>
       </div>
     );
   }
