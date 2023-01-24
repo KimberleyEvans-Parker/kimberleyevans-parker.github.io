@@ -9,12 +9,11 @@ export default function CodeInput(props) {
     }
 
     const checkAnswer = (answer) => {
-        setShake(true)
-        console.log(answer, props.correctAnswer, answer===props.correctAnswer)
         if (answer === props.correctAnswer) {
             props.onCorrectAnswer(true)
             return
         }
+        setShake(true)
         setTimeout(endShake, props.wait || 1000)
     }
 
