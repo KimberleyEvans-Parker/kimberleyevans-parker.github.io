@@ -32,7 +32,16 @@ export default function CodeInput(props) {
     }
   
     return (
-        <div>
+        <div
+            className="fade left"
+            style={{
+                WebkitAnimationDelay: props.animationDelay,
+                MozAnimationDelay: props.animationDelay,
+                OAnimationDelay: props.animationDelay,
+                MsAnimationDelay: props.animationDelay,
+                AnimationDelay: props.animationDelay,
+            }}
+        >
             <p>{props.clue}</p>
             <input
                 type="text"

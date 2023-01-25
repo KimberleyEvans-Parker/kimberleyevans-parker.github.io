@@ -1,44 +1,47 @@
 .amazonian-background {
-    height: 100vh;
-    width: 100vw;
-    /* background-image: url("https://i.pinimg.com/originals/c5/50/79/c550796ed11a82d8ba2d9caa64a9c565.jpg"); */
-    /* background-image: url("https://cdn.wallpapersafari.com/28/81/3Qkdob.jpg"); */
-    /* background-image: url("https://coolwallpapers.me/picsup/2954311-ruin-temple-forest-fantasy-art___landscape-nature-wallpapers.jpg"); */
-    background-image: url("./assets/amazonian ruins.jpg");
-    background-color: #47542d;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url("https://i.pinimg.com/originals/c5/50/79/c550796ed11a82d8ba2d9caa64a9c565.jpg"); */
+  /* background-image: url("https://cdn.wallpapersafari.com/28/81/3Qkdob.jpg"); */
+  /* background-image: url("https://coolwallpapers.me/picsup/2954311-ruin-temple-forest-fantasy-art___landscape-nature-wallpapers.jpg"); */
+  background-image: url("./assets/amazonian ruins.jpg");
+  background-color: #47542d;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Remove scrollbar in IE and Edge */
+  scrollbar-width: none; /* Remove scrollbar in Firefox */
+}
 
-  .ancient-stone {
-    background-color: rgba(255, 255, 255, 0);
-    background-image: url("./assets/stone-wide.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(49, 49, 49);
-    font-size: large;
-    padding: 8px;
+.ancient-stone {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("./assets/stone-wide.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(49, 49, 49);
+  font-size: large;
+  padding: 8px;
 }
 
 
 .shake {
-    opacity: 0.7;
-    animation: shake 0.5s;
-  }
+  opacity: 0.7;
+  animation: shake 0.5s;
+}
   
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
