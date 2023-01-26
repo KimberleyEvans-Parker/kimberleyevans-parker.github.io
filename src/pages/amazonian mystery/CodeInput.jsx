@@ -33,7 +33,7 @@ export default function CodeInput(props) {
   
     return (
         <div
-            className="fade left"
+            className="fade left amazonian-code-input"
             style={{
                 WebkitAnimationDelay: props.animationDelay,
                 MozAnimationDelay: props.animationDelay,
@@ -42,15 +42,17 @@ export default function CodeInput(props) {
                 AnimationDelay: props.animationDelay,
             }}
         >
-            <p>{props.clue}</p>
+            <p className="amazonian-clue">{props.clue}</p>
             <input
                 type="text"
-                id="message"
-                name="message"
+                id={props.clue}
+                name={props.clue}
+                title="clue input"
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
                 value={answer}
                 autoComplete="off"
+                className="amazonian-input"
             />
 
             <button 

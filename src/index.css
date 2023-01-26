@@ -164,6 +164,11 @@ button:hover {
   margin-right: auto;
 }
 
+.container-no-nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .experience-container {
   padding-top: 150px;
 }
