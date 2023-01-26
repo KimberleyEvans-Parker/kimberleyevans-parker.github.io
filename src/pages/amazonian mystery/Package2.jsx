@@ -25,6 +25,10 @@ export default function Package2() {
     Puzzle("Puzzle 5", "123", 2000),
   ]
 
+  function isAnsweredCorrectly(puzzle) {
+    return puzzle.answeredCorrectly
+  }
+
   let animationDelay = 2;
 
   const getAnimationDelay = () => {
@@ -45,15 +49,15 @@ export default function Package2() {
         <br />
         <br />
           {puzzles.map((puzzle) => {
-              return <>{puzzle.test}<CodeInput
+              return <CodeInput
                 clue={puzzle.clue}
                 correctAnswer={puzzle.correctAnswer}
                 onCorrectAnswer={puzzle.setAnsweredCorrectly}
                 wait={puzzle.wait}
                 animationDelay={getAnimationDelay()}
-              /></>
+              />
             })}
-            {puzzles[0].answeredCorrectly && "Yay"}
+            {puzzles.every(isAnsweredCorrectly) && "Yay"}
       </div>
     );
   }

@@ -12,6 +12,21 @@
   overflow-x: hidden;
   -ms-overflow-style: none; /* Remove scrollbar in IE and Edge */
   scrollbar-width: none; /* Remove scrollbar in Firefox */
+  text-shadow: 2px 2px 5px black;
+}
+
+.amazonian-clue {
+  margin-bottom: 4px;
+}
+
+.amazonian-code-input{
+  margin: 16px 0;
+}
+
+.amazonian-input {
+  height: 20px;
+  opacity: 0.7;
+  margin-right: 8px;
 }
 
 .ancient-stone {

@@ -8,7 +8,7 @@ export default function AmazonianMystery() {
   
     return (
       <div className="amazonian-background">
-        <div className="content-container">
+        <div className="content-container container-no-nav">
           <h1>Find the Ancient Amazon Civillisation</h1>
           <CodeInput 
             clue="Enter the loaction of the entrance to the lost Civillisation in the format 'X.Y'"
