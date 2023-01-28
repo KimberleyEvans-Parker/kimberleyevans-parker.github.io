@@ -13,7 +13,8 @@ import Hobbies from "./pages/hobbies/Hobbies";
 import Lego from "./pages/hobbies/Lego";
 import Photography from "./pages/hobbies/Photography";
 import Words from "./pages/Words";
-import AmazonianMystery from "./pages/amazonian mystery/AmazonianMystery";
+import LocateEntrance from "./pages/amazonian mystery/LocateEntrance";
+import OpenEntrance from "./pages/amazonian mystery/OpenEntrance";
 import Error404 from "./pages/404";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact />
-        <Route path="/AmazonianMystery" exact />
+        <Route path="/AmazonianMystery" />
         <Route path="/" component={Navigation} />
       </Switch>
       <Switch>
@@ -53,7 +54,8 @@ function App() {
         <Route path="/hobbies/lego" exact component={Lego} />
         <Route path="/hobbies/photography" exact component={Photography} />
         <Route path="/words" exact component={Words} />
-        <Route path="/AmazonianMystery" exact component={AmazonianMystery} />
+        <Route path="/AmazonianMystery" exact component={LocateEntrance} />
+        <Route path="/AmazonianMystery/OpenEntrance" exact component={OpenEntrance} />
         <Route component={Error404} />
       </Switch>
     </Router>
