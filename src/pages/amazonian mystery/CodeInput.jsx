@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export default function CodeInput(props) {
     const [answer, setAnswer] = useState("")
     const [shake, setShake] = useState(false)
+    const [answerCorrect, setCorrectAnswer] = useState(false)
 
     const handleChange = (event) => {
         setAnswer(event.target.value)
@@ -11,6 +12,7 @@ export default function CodeInput(props) {
     const checkAnswer = (answer) => {
         if (answer === props.correctAnswer) {
             props.onCorrectAnswer(true)
+            setCorrectAnswer(true)
             return
         }
         setShake(true)
@@ -61,6 +63,8 @@ export default function CodeInput(props) {
             >
                 Check Answer
             </button>
+
+            {answerCorrect && <p className="bounce">Correct!</p>}
         </div>
     );
 }
