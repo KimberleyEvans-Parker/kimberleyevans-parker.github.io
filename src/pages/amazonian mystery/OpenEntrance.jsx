@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import CodeInput from "./CodeInput";
 import "./styles.css"
 
@@ -18,7 +19,7 @@ function Puzzle(clue, correctAnswer, wait) {
 export default function OpenEntrance() {
   
   const puzzles = [
-    Puzzle("Puzzle 1!", "123"),
+    Puzzle("Puzzle 1", "123"),
     Puzzle("Puzzle 2", "123", 2000),
     Puzzle("Puzzle 3", "123", 2000),
     Puzzle("Puzzle 4", "123", 2000),
@@ -40,16 +41,17 @@ export default function OpenEntrance() {
     return (
       <div className="amazonian-background">
         <div className="content-container container-no-nav">
+          <h1>The Amazon Entrance</h1>
           <div className="fade left">
             <p>
-              After hacking your way through the heart of the amazon and coming to the coordinates, 
+              After hacking your way through the heart of the Amazon and coming to the specified coordinates, 
               you find some old stone doors – these must be the entrance to the underground city!  
               Unfortunately, the doors are sealed shut.  On the front, are five small gouges, 
               which look like they used to hold something important and around are five pillars, 
               each with their own puzzle on it.  
             </p>
             <p>
-              John Smith refuses to let you blow up the entrance way – 
+              John Smith refuses to let you blow up the entrance – 
               and besides, you don’t have any C4 with you anyway.  
             </p>
             <p>
@@ -71,7 +73,19 @@ export default function OpenEntrance() {
                 animationDelay={getAnimationDelay()}
               />
             })}
-            {puzzles.every(isAnsweredCorrectly) && "Yay"}
+            {puzzles.every(isAnsweredCorrectly) && 
+            <div>
+              <p>
+                You have sucessfully completed all the puzzles
+              </p>
+          
+              <Link to="SolvedMystery">
+                <button className="ancient-stone">
+                    Enter ruins
+                </button>
+              </Link>
+            </div>
+            }
         </div>
       </div>
     );
