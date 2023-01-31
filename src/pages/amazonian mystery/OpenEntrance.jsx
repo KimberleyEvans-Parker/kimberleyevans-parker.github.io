@@ -19,11 +19,11 @@ function Puzzle(clue, correctAnswer, wait) {
 export default function OpenEntrance() {
   
   const puzzles = [
-    Puzzle("Puzzle 1", "123"),
-    Puzzle("Puzzle 2", "123", 2000),
-    Puzzle("Puzzle 3", "123", 2000),
-    Puzzle("Puzzle 4", "123", 2000),
-    Puzzle("Puzzle 5", "123", 2000),
+    Puzzle("Puzzle 1", ["1","2","3"]),
+    Puzzle("Puzzle 2", ["123"], 2000),
+    Puzzle("Puzzle 3", ["123"], 2000),
+    Puzzle("Puzzle 4", ["123"], 2000),
+    Puzzle("Puzzle 5", ["123"], 2000),
   ]
 
   function isAnsweredCorrectly(puzzle) {

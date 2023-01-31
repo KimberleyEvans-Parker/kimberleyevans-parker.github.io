@@ -9,8 +9,20 @@ export default function CodeInput(props) {
         setAnswer(event.target.value)
     }
 
+    const isAnswerCorrect = (answer) => {
+        let answers = answer.split(",")
+        for(var i = 0, size = answers.length; i < size ; i++){
+            answers[i] = answers[i].trim();
+         }
+        if (answers.length !== props.correctAnswer.length) return false
+        for (const item of props.correctAnswer) {
+            if (!answers.includes(item)) return false
+        }
+        return true
+    }
+
     const checkAnswer = (answer) => {
-        if (answer.toLowerCase() === props.correctAnswer.toLowerCase()) {
+        if (isAnswerCorrect(answer)) {
             props.onCorrectAnswer(true)
             setCorrectAnswer(true)
             return

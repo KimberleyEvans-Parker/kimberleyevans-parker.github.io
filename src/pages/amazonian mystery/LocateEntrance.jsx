@@ -13,7 +13,7 @@ export default function LocateEntrance() {
           <h1>Find the Ancient Amazon Civillisation</h1>
           <CodeInput 
             clue="Enter the loaction of the entrance to the lost Civillisation in the format 'X.Y'"
-            correctAnswer="123" 
+            correctAnswer={["123"]}
             onCorrectAnswer={setFoundLocation}
             wait={2000}
           />
