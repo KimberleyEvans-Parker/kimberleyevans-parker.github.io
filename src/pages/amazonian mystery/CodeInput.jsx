@@ -10,7 +10,7 @@ export default function CodeInput(props) {
     }
 
     const checkAnswer = (answer) => {
-        if (answer === props.correctAnswer) {
+        if (answer.toLowerCase() === props.correctAnswer.toLowerCase()) {
             props.onCorrectAnswer(true)
             setCorrectAnswer(true)
             return
