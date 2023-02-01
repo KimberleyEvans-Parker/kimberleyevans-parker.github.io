@@ -16,6 +16,7 @@ import Words from "./pages/Words";
 import LocateEntrance from "./pages/amazonian mystery/LocateEntrance";
 import OpenEntrance from "./pages/amazonian mystery/OpenEntrance";
 import SolvedMystery from "./pages/amazonian mystery/SolvedMystery";
+import GetArtefact from "./pages/amazonian mystery/GetArtefact";
 import Error404 from "./pages/404";
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         <Route path="/AmazonianMystery" exact component={LocateEntrance} />
         <Route path="/AmazonianMystery/OpenEntrance" exact component={OpenEntrance} />
         <Route path="/AmazonianMystery/SolvedMystery" exact component={SolvedMystery} />
+        <Route path="/AmazonianMystery/GetArtefact" exact component={GetArtefact} />
         <Route component={Error404} />
       </Switch>
     </Router>

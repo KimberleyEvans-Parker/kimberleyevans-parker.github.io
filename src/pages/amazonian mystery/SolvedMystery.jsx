@@ -11,9 +11,12 @@ export default function SolvedMystery() {
                 Congratulations on Solving the Mystery of the Ancient Amazon Civillisation!
               </p>
               <p>
-                You have solved the puzzles and deemed yourselves worthy of entering the city.  
-                The stone gate slides open and you enter the ruins, 
-                revealing a a vast underground city just waiting to be explored.  
+                You translated the tablet, found and unlocked the entrance and 
+                even managed to acquire a priceless artefact from the city.  
+                What else might you find in there?
+              </p>
+              <p>
+                For now, John Smith congratulates you on a job well done as you settle down for the night.  
               </p>
               <p>
                 Your names will go down in history as the finders of the Amazon Civilisation!
