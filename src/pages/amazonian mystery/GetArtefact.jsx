@@ -16,15 +16,12 @@ function Puzzle(clue, correctAnswer, wait) {
   }
 }
 
-export default function OpenEntrance() {
+export default function GetArtefact() {
   
   const puzzles = [
     Puzzle("Puzzle 1", ["1","2","3"]),
     Puzzle("Puzzle 2", ["123"], 2000),
     Puzzle("Puzzle 3", ["123"], 2000),
-    Puzzle("Puzzle 4", ["123"], 2000),
-    Puzzle("Puzzle 5", ["123"], 2000),
-    Puzzle("Puzzle 6", ["123"], 2000),
   ]
 
   function isAnsweredCorrectly(puzzle) {
@@ -45,24 +42,17 @@ export default function OpenEntrance() {
           <h1>The Amazon Entrance</h1>
           <div className="fade left">
             <p>
-              After hacking your way through the heart of the Amazon and coming to the specified coordinates, 
-              you find some old stone doors – these must be the entrance to the underground city!  
-              Unfortunately, the doors are sealed shut.  On the front, are five small gouges, 
-              which look like they used to hold something important and around are {puzzles.length} pillars, 
-              each with their own puzzle on it.  
+              You have solved the puzzles and deemed yourselves worthy of entering the city.  
+              The stone gate slides open and you enter the ruins, 
+              revealing a a vast underground city waiting to be explored.  
             </p>
             <p>
-              John Smith refuses to let you blow up the entrance – 
-              and besides, you don’t have any C4 with you anyway.  
+              Just inside the entrance, stands a pedestal.  On it is an artefact inlaid with gemstones.  
+              If you could find the correct combination to unlock this artefact, 
+              you could bring it back with you to show the world of your discovery! 
             </p>
             <p>
-              Some members of the team complain about the number of mosquito bites they’ve received – 
-              one person even swears they got bitten by something else, but at least your team has food to eat 
-              and are on the verge of one of the biggest discoveries of your lives.  
-            </p>
-            <p>
-              Around the area are a series of clues, which John Smith has translated for you using the code you 
-              cracked earlier.  You just need to solve the clues to get into the ancient city.  
+              One the side are {puzzles.length} lock combinations.  Now it’s just a matter of finding the right code…
             </p>
           </div>
           {puzzles.map((puzzle) => {
@@ -80,9 +70,9 @@ export default function OpenEntrance() {
                 You have sucessfully completed all the puzzles
               </p>
           
-              <Link to="GetArtefact">
+              <Link to="SolvedMystery">
                 <button className="ancient-stone">
-                    Enter ruins
+                    Get Artefact
                 </button>
               </Link>
             </div>
