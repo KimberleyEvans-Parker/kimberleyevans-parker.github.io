@@ -16,7 +16,7 @@ export default function SolvedMystery() {
                 What else might you find in there?
               </p>
               <p>
-                For now, John Smith congratulates you on a job well done as you settle down for the night.  
+                For now, Explorer James Bush congratulates you on a job well done as you settle down for the night.  
               </p>
               <p>
                 Your names will go down in history as the finders of the Amazon Civilisation!

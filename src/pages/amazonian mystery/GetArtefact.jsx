@@ -7,7 +7,6 @@ function Puzzle(clue, correctAnswer, wait) {
   const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
 
   return {
-    test: ":D",
     clue: clue,
     correctAnswer: correctAnswer,
     wait: wait,
@@ -19,9 +18,12 @@ function Puzzle(clue, correctAnswer, wait) {
 export default function GetArtefact() {
   
   const puzzles = [
-    Puzzle("Puzzle 1", ["1","2","3"]),
-    Puzzle("Puzzle 2", ["123"], 2000),
-    Puzzle("Puzzle 3", ["123"], 2000),
+    Puzzle("Puzzle 1", ["bow"]),
+    Puzzle("Puzzle 2", ["7615"]),
+    Puzzle("Puzzle 3", ["999"]),
+    Puzzle("Puzzle 4", ["159"]),
+    Puzzle("Puzzle 5", ["learn"]),
+    Puzzle("Puzzle 6 DD/MM", ["21/12"]),
   ]
 
   function isAnsweredCorrectly(puzzle) {
@@ -54,6 +56,7 @@ export default function GetArtefact() {
             <p>
               One the side are {puzzles.length} lock combinations.  Now it’s just a matter of finding the right code…
             </p>
+            <i>Open package 3</i>
           </div>
           {puzzles.map((puzzle) => {
               return <CodeInput
