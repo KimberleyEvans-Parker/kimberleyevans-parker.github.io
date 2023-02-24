@@ -51,7 +51,7 @@ export default function OpenEntrance() {
               each with their own puzzle on it.  
             </p>
             <p>
-              John Smith refuses to let you blow up the entrance – 
+              James Bush refuses to let you blow up the entrance – 
               and besides, you don’t have any C4 with you anyway.  
             </p>
             <p>
@@ -60,7 +60,7 @@ export default function OpenEntrance() {
               and are on the verge of one of the biggest discoveries of your lives.  
             </p>
             <p>
-              Around the area are a series of clues, which John Smith has translated for you using the code you 
+              Around the area are a series of clues, which James Bush has translated for you using the code you 
               cracked earlier.  You just need to solve the clues to get into the ancient city.  
             </p>
           </div>
