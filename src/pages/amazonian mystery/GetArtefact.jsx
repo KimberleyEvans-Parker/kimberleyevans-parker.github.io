@@ -54,6 +54,7 @@ export default function GetArtefact() {
             <p>
               One the side are {puzzles.length} lock combinations.  Now it’s just a matter of finding the right code…
             </p>
+            <i>Open package 3</i>
           </div>
           {puzzles.map((puzzle) => {
               return <CodeInput
