@@ -7,7 +7,6 @@ function Puzzle(clue, correctAnswer, wait) {
   const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
 
   return {
-    test: ":D",
     clue: clue,
     correctAnswer: correctAnswer,
     wait: wait,
@@ -19,12 +18,12 @@ function Puzzle(clue, correctAnswer, wait) {
 export default function OpenEntrance() {
   
   const puzzles = [
-    Puzzle("Puzzle 1", ["1","2","3"]),
-    Puzzle("Puzzle 2", ["123"], 2000),
-    Puzzle("Puzzle 3", ["123"], 2000),
-    Puzzle("Puzzle 4", ["123"], 2000),
-    Puzzle("Puzzle 5", ["123"], 2000),
-    Puzzle("Puzzle 6", ["123"], 2000),
+    Puzzle("Puzzle 1", ["240"]),
+    Puzzle("Puzzle 2", ["anaconda", "jaguar", "monkey"]),
+    Puzzle("Puzzle 3", ["276"]),
+    Puzzle("Puzzle 4", ["tree"]),
+    Puzzle("Puzzle 5", ["8437"]),
+    Puzzle("Puzzle 6", ["blade"]),
   ]
 
   function isAnsweredCorrectly(puzzle) {
