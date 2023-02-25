@@ -19,7 +19,7 @@ export default function GetArtefact() {
   
   const puzzles = [
     Puzzle("Puzzle 1", ["bow"]),
-    Puzzle("Puzzle 2", ["7615"]),
+    Puzzle("Puzzle 2", ["5556"]),
     Puzzle("Puzzle 3", ["999"]),
     Puzzle("Puzzle 4", ["159"]),
     Puzzle("Puzzle 5", ["learn"]),

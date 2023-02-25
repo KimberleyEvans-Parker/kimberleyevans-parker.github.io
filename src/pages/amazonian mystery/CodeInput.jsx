@@ -12,7 +12,7 @@ export default function CodeInput(props) {
     const isAnswerCorrect = (answer) => {
         let answers = answer.split(",")
         for(var i = 0, size = answers.length; i < size ; i++){
-            answers[i] = answers[i].trim();
+            answers[i] = answers[i].toLowerCase().trim();
          }
         if (answers.length !== props.correctAnswer.length) return false
         for (const item of props.correctAnswer) {
