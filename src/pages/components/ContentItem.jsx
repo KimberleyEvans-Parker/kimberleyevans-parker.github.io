@@ -24,14 +24,14 @@ function ImageContent(props) {
     >
       {props.images.map((image) => {
         const path = image.default.split("/");
-        const name =
-          props.heading + " - " + path[path.length - 1].split(".")[0];
+        const name = path[path.length - 1].split(".")[0];
+        const caption = props.heading ? props.heading + " - " + name : name
         return (
           <button
-            onClick={() => props.openModal(image.default, name)}
-            key={name}
+            onClick={() => props.openModal(image.default, caption)}
+            key={caption}
           >
-            <img alt={name} src={image.default} />
+            <img alt={caption} src={image.default} />
           </button>
         );
       })}
@@ -130,7 +130,7 @@ function ContentItem(props) {
           )}
           {props.images && (
             <Grid item xs={12} sm={6} md={4}>
-              <ImageContent images={props.images} openModal={props.openModal} />
+              <ImageContent images={props.images} openModal={props.openModal} heading={props.heading} />
             </Grid>
           )}
           {props.imgOnLeft && dimensions.width >= SMALL_SCREEN && (
