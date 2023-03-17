@@ -41,7 +41,13 @@ function About() {
           well in a team.
         </p>
         <p>
-          I'm currently doing Computer Systems Engineering, conjoint with
+          I am currently a software engineer at Xero. I have also had other jobs, 
+          such as working at Drone Deploy, Bricks4Kidz, Ooma and FlexWare.  
+          These have mainly been software jobs, but I have also gained experience
+          teaching, working with electrical systems and a little bit of robotics.  
+        </p>
+        <p>
+          I'm have completed a degree in Computer Systems Engineering, conjoint with
           Science; Logic and Computation. During this I'm learning a range of
           programming languages, as well as logic, mathematics, proofs and
           electrical systems.
