@@ -1,0 +1,18 @@
+.big-word {
+  font-size: 96px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.regenerate {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 10px;
+  color: white;
+  margin: auto;
+  display: block;
+  width: 300px;
+  margin-top: 20px;
+}
