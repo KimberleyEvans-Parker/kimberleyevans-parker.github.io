@@ -1,5 +1,7 @@
 import React from "react";
-import Words from "../assets/words.json";
+import Words from "../../assets/words.json";
+
+import "./words.css";
 
 function About() {
   const [word1, setWord1] = React.useState(getRandomWord());
