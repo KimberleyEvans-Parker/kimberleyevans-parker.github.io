@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { SMALL_SCREEN } from "../Constants";
-import SubNavbarLink from "./components/SubNavbarLink";
+import { SMALL_SCREEN } from "../../Constants";
+import SubNavbarLink from "../components/SubNavbarLink";
 
 function SubNavbar(props) {
   /* Keeps track of the window dimensions.  Updates when window resizes */
