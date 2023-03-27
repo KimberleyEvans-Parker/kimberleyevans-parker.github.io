@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "./fireflies.css";
+import "./animations.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
