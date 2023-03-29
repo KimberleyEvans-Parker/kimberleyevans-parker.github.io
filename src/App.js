@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navigation from "./pages/Navigation";
-import SubNavbar from "./pages/SubNavbar";
+import Navigation from "./pages/navigation/Navigation";
+import SubNavbar from "./pages/navigation/SubNavbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
@@ -12,7 +12,7 @@ import Awards from "./pages/Awards";
 import Hobbies from "./pages/hobbies/Hobbies";
 import Lego from "./pages/hobbies/Lego";
 import Photography from "./pages/hobbies/Photography";
-import Words from "./pages/Words";
+import Words from "./pages/words/Words";
 import LocateEntrance from "./pages/amazonian mystery/LocateEntrance";
 import OpenEntrance from "./pages/amazonian mystery/OpenEntrance";
 import SolvedMystery from "./pages/amazonian mystery/SolvedMystery";
