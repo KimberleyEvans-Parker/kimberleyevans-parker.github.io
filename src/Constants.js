@@ -19,3 +19,4 @@ export const REACT = "React";
 export const REDUX = "Redux";
 export const GDSCRIPT = "GDScript";
 export const AI = "AI";
+export const ANGULAR = "Angular";

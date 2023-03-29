@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import ContentItem from "./components/ContentItem";
 
-import { GIT, PYTHON, CSHARP } from "../Constants";
+import { GIT, PYTHON, CSHARP, ANGULAR, CSS } from "../Constants";
 
 function Work() {
   const [image, setImage] = useState(null);
@@ -64,9 +64,25 @@ function Work() {
       <ContentItem
         imgOnLeft={imgOnLeft()}
         heading="Engineering Intern"
+        subheading="Rocos/Drone Deploy"
+        dates="April 2021 - January 2022"
+        description="I contracted for Rocos (later acquired by Drone Deploy) - a PAAS company that gives 
+          people with robots a platform to easily manage, monitor and control them.  
+          During this time, I created a page for Rocos to monitor the health of their various services.
+          I also created widgets that users could add to their dashboard to monitor their robots and made many other css improvements.  
+          I gained experience working in Angular and becoming familiar with new codebases.
+          A highlight was a hakathon where we added a live 360 feed to the Boston Dynamic robot dog 
+          so that you could remotely view and control it live."
+        technologies={[ANGULAR, CSS]}
+        openModal={openModal}
+        animationDelay={getAnimationDelay()}
+      />
+      <ContentItem
+        imgOnLeft={imgOnLeft()}
+        heading="Engineering Intern"
         subheading="FlexWare"
-        dates="September 2020 - Present"
-        description="I manufacture  cables for a variety of purposes, have tested both hardware and software 
+        dates="September 2020 - November 2021"
+        description="I manufactured cables for a variety of purposes, have tested both hardware and software 
           and have gained experience programming in C#."
         technologies={[GIT, CSHARP]}
         openModal={openModal}
