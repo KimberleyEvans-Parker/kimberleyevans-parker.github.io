@@ -168,6 +168,7 @@ button:hover {
   flex: 100%;
   max-width: 100%;
   position: relative;
+  margin-bottom: 24px;
 }
 
 .centered {

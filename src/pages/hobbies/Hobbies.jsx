@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.JPG";
 import Photography from "../../assets/hobbies/Photography/Flying Bee.JPG";
+import Cosplays from "../../assets/hobbies/Cosplays/Maleficent.jpg";
 
 import { SMALL_SCREEN } from "../../Constants";
 
@@ -55,6 +56,18 @@ function Hobbies() {
               className="experience-img"
             />
             <h3 className="centered">Photography</h3>
+            <div className="layer"></div>
+          </Link>
+        </div>
+      </div>
+
+      <div className="row">
+        <div
+          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+        >
+          <Link to="hobbies/cosplays">
+            <img src={Cosplays} alt="Cosplays" className="experience-img" />
+            <h3 className="centered">Cosplays</h3>
             <div className="layer"></div>
           </Link>
         </div>
