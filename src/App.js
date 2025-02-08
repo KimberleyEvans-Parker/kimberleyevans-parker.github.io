@@ -32,7 +32,7 @@ function App() {
         <Route
           path="/hobbies"
           component={() => (
-            <SubNavbar section={"hobbies"} headings={["Lego", "Photography"]} />
+            <SubNavbar section={"hobbies"} headings={["Lego", "Photography", "Cosplays"]} />
           )}
         />
         <Route

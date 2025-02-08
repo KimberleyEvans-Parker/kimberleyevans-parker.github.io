@@ -1,10 +1,12 @@
 .slide-in {
   animation: slide-in ease 2s forwards;
 }
+
 @keyframes slide-in {
   100% {
     transform: translateY(0px);
   }
+
   0% {
     transform: translateY(-57px);
   }
@@ -60,11 +62,6 @@ nav ul li.active {
   padding: 10px 16px;
 }
 
-.extra-small-screensize {
-  font-size: 17px !important;
-  padding: 10px 10px !important;
-}
-
 nav ul a {
   color: grey;
 }
@@ -80,18 +77,12 @@ nav ul a {
   overflow-x: auto;
 }
 
-.nav2-container {
-  min-width: 389px;
-}
-
 .nav2::-webkit-scrollbar {
   display: none;
 }
 
 .navbar-container-smallscreen {
   width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .navbar-rightside {
@@ -126,9 +117,11 @@ nav ul a {
   margin: 4.8px 0;
   transition: 0.4s;
 }
+
 .bar1 {
   margin-top: 4px;
 }
+
 .bar3 {
   margin-bottom: 0;
 }
