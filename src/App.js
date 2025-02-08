@@ -11,6 +11,7 @@ import Projects from "./pages/Projects";
 import Awards from "./pages/Awards";
 import Hobbies from "./pages/hobbies/Hobbies";
 import Lego from "./pages/hobbies/Lego";
+import Cosplays from "./pages/hobbies/Cosplays";
 import Photography from "./pages/hobbies/Photography";
 import Words from "./pages/words/Words";
 import LocateEntrance from "./pages/amazonian mystery/LocateEntrance";
@@ -53,6 +54,7 @@ function App() {
         <Route path="/experience/projects" exact component={Projects} />
         <Route path="/experience/awards" exact component={Awards} />
         <Route path="/hobbies" exact component={Hobbies} />
+        <Route path="/hobbies/cosplays" exact component={Cosplays} />
         <Route path="/hobbies/lego" exact component={Lego} />
         <Route path="/hobbies/photography" exact component={Photography} />
         <Route path="/words" exact component={Words} />
