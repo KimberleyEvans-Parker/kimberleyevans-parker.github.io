@@ -32,18 +32,10 @@ function SubNavbar(props) {
             : "navbar-container-smallscreen"
         }`}
       >
-        <ul
-          className={
-            dimensions.width < SMALL_SCREEN ? "extra-small-screensize" : ""
-          }
-        >
+        <ul>
           {props.headings.map((heading) => {
             return <SubNavbarLink section={props.section} heading={heading} />;
           })}
-          {/* <SubNavbarLink heading="Work" />
-          <SubNavbarLink heading="Volunteer" />
-          <SubNavbarLink heading="Projects" />
-          <SubNavbarLink heading="Awards" /> */}
         </ul>
       </div>
     </nav>
