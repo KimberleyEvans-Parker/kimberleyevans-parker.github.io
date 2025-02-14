@@ -23,15 +23,15 @@ function ImageContent(props) {
       className="shadow"
     >
       {props.images.map((image) => {
-        const path = image.default.split("/");
+        const path = image.split("/");
         const name = path[path.length - 1].split(".")[0];
         const caption = props.heading ? props.heading + " - " + name : name
         return (
           <button
-            onClick={() => props.openModal(image.default, caption)}
+            onClick={() => props.openModal(image, caption)}
             key={caption}
           >
-            <img alt={caption} src={image.default} />
+            <img alt={caption} src={image} />
           </button>
         );
       })}
