@@ -83,12 +83,17 @@ button:hover {
 }
 
 .home-containter {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-family: "Tangerine", Georgia, "Times New Roman", Times, serif;
   font-size: 32px;
   font-size: max(32px, 8vh);
   text-align: center;
-  padding-top: 30vh;
 }
+
 .home-containter h1 {
   font-size: 48px;
   font-size: max(48px, 15vh);
