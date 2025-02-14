@@ -3,9 +3,9 @@ import Grid from "@material-ui/core/Grid";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./image-gallery.css";
-import "./modal.css";
+import "../modal.css";
 
-import { SMALL_SCREEN } from "../../Constants";
+import { SMALL_SCREEN } from "../../../Constants";
 
 function ImageItem(props) {
   // for loading an image when it scrolls into view
