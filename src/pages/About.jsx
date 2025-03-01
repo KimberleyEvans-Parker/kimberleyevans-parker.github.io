@@ -48,17 +48,15 @@ function About() {
           of robotics.
         </p>
         <p>
-          I'm have completed a degree in Computer Systems Engineering, conjoint
-          with Science; Logic and Computation. During this I'm learning a range
+          I have completed a degree in Computer Systems Engineering, conjoint
+          with Science; Logic and Computation. During this I learnt a range
           of programming languages, as well as logic, mathematics, proofs and
           electrical systems.
         </p>
         <h2>Background</h2>
         <p>
           I was born in New Zealand and enjoy travelling. I also enjoy
-          badminton, skiing, art and piano. I am now studying a conjoint of
-          Computer Systems Engineering and Science, majoring in Logic and
-          Computation at the University of Auckland.
+          badminton, skiing, art and piano. 
         </p>
         <h2>Education</h2>
         <h4>High School</h4>
@@ -74,7 +72,6 @@ function About() {
         </p>
         <h2>Technologies</h2>
         <ul className="code-bullet-points">
-          <li>Git</li>
           <li>Python</li>
           <li>Java</li>
           <li>C</li>
@@ -90,6 +87,16 @@ function About() {
           <li>React</li>
           <li>Redux</li>
         </ul>
+        <h2>Tools</h2>
+        <ul className="code-bullet-points">
+          <li>Git</li>
+          <li>TeamCity</li>
+          <li>Sumo Logic</li>
+          <li>New Relic</li>
+          <li>Lighthouse</li>
+          <li>Mixpanel</li>
+          <li>Launch Darkly</li>
+        </ul>
         <h2>Qualities</h2>
         <ul className="value-bullet-points">
           <li>
@@ -101,8 +108,9 @@ function About() {
             whilst taking 5 courses a semester at university
           </li>
           <li>
-            <strong>Polite and friendly</strong> – I have worked in customer
-            service, taught children to code and taken up the role of class rep
+            <strong>Friendly and approachable</strong> – I have worked in customer
+            service, taught children to code, taken up the role of class rep and 
+            mentored grads and students developing their tech careers
           </li>
           <li>
             <strong>Quick thinker</strong> – Been in competitions including,
