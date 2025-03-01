@@ -61,14 +61,16 @@ function About() {
           Computation at the University of Auckland.
         </p>
         <h2>Education</h2>
+        <h4>High School</h4>
         <p>
           I passed NCEA Level 3 with excellence endorsement. I attained 72
           excellence credits, achieving a rank score of 312/320.
         </p>
+        <h4>University</h4>
         <p>
-          I am now in my fourth year of university, taking a conjoint in
-          Computer Systems Engineering and Science, majoring in Logic and
-          Computation. I expect to finish this degree in 2021.
+          I have completed a conjoint degree, gaining First Class Honours in
+          Computer Systems Engineering and a Bachelor of Science, majoring in 
+          Logic and Computation. 
         </p>
         <h2>Technologies</h2>
         <ul className="code-bullet-points">
