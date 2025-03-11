@@ -1,6 +1,6 @@
 import React from "react";
 import ProfilePic from "../assets/profile-pic.jpg";
-import Resume from "../assets/CV-24-01.pdf";
+import Resume from "../assets/CV-25-03.pdf";
 import { SMALL_SCREEN } from "../Constants";
 
 function About() {
