@@ -1,6 +1,4 @@
-import React from "react";
-
-import ImageGallery from "../components/image gallery/ImageGallery";
+import ImageGallery from "../components/image gallery/ImageGallery"
 
 function Photography() {
   // image imports
