@@ -1,6 +1,6 @@
 import React from "react";
 import ProfilePic from "../assets/profile-pic.jpg";
-import Resume from "../assets/CV-24-01.pdf";
+import Resume from "../assets/CV-25-03.pdf";
 import { SMALL_SCREEN } from "../Constants";
 
 function About() {
@@ -48,31 +48,30 @@ function About() {
           of robotics.
         </p>
         <p>
-          I'm have completed a degree in Computer Systems Engineering, conjoint
-          with Science; Logic and Computation. During this I'm learning a range
+          I have completed a degree in Computer Systems Engineering, conjoint
+          with Science; Logic and Computation. During this I learnt a range
           of programming languages, as well as logic, mathematics, proofs and
           electrical systems.
         </p>
         <h2>Background</h2>
         <p>
           I was born in New Zealand and enjoy travelling. I also enjoy
-          badminton, skiing, art and piano. I am now studying a conjoint of
-          Computer Systems Engineering and Science, majoring in Logic and
-          Computation at the University of Auckland.
+          badminton, skiing, art and piano. 
         </p>
         <h2>Education</h2>
+        <h4>High School</h4>
         <p>
           I passed NCEA Level 3 with excellence endorsement. I attained 72
           excellence credits, achieving a rank score of 312/320.
         </p>
+        <h4>University</h4>
         <p>
-          I am now in my fourth year of university, taking a conjoint in
-          Computer Systems Engineering and Science, majoring in Logic and
-          Computation. I expect to finish this degree in 2021.
+          I have completed a conjoint degree, gaining First Class Honours in
+          Computer Systems Engineering and a Bachelor of Science, majoring in 
+          Logic and Computation. 
         </p>
         <h2>Technologies</h2>
         <ul className="code-bullet-points">
-          <li>Git</li>
           <li>Python</li>
           <li>Java</li>
           <li>C</li>
@@ -88,6 +87,16 @@ function About() {
           <li>React</li>
           <li>Redux</li>
         </ul>
+        <h2>Tools</h2>
+        <ul className="code-bullet-points">
+          <li>Git</li>
+          <li>TeamCity</li>
+          <li>Sumo Logic</li>
+          <li>New Relic</li>
+          <li>Lighthouse</li>
+          <li>Mixpanel</li>
+          <li>Launch Darkly</li>
+        </ul>
         <h2>Qualities</h2>
         <ul className="value-bullet-points">
           <li>
@@ -99,8 +108,9 @@ function About() {
             whilst taking 5 courses a semester at university
           </li>
           <li>
-            <strong>Polite and friendly</strong> – I have worked in customer
-            service, taught children to code and taken up the role of class rep
+            <strong>Friendly and approachable</strong> – I have worked in customer
+            service, taught children to code, taken up the role of class rep and 
+            mentored grads and students developing their tech careers
           </li>
           <li>
             <strong>Quick thinker</strong> – Been in competitions including,
