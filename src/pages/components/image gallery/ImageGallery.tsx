@@ -8,11 +8,11 @@ import "../modal.css";
 import { SMALL_SCREEN } from "../../../Constants";
 import { ImageGalleryCollumn } from "./ImageGalleryCollumn";
 
-function ImageGallery(props) {
+function ImageGallery(props: { images: string | any[]; }) {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
 
-  const openModal = (image, caption) => {
+  const openModal = (image: any, caption: string) => {
     setImage(image);
     setCaption(caption);
   };
@@ -31,7 +31,7 @@ function ImageGallery(props) {
     }
 
     window.addEventListener("resize", handleResize);
-    return (_) => {
+    return () => {
       window.removeEventListener("resize", handleResize);
     };
   });

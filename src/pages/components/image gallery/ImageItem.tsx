@@ -21,12 +21,7 @@ export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
       return () => observer.unobserve(current);
     }
   }, [isVisible]);
-
-  // console.log("tsx", name, image, animationDelay)
-  // console.log("tsx")
-  // console.log(name)
-  // console.log(image)
-  // console.log(animationDelay)
+  
 
   return (
     <div className={`image-gallery-image  ${isVisible ? "is-visible" : ""} `}>
