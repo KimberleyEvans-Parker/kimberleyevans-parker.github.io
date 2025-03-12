@@ -1,8 +1,12 @@
 import React from "react";
-import { ImageItem } from "./ImageItem.tsx";
+import { ImageItem } from "./ImageItem";
 
-export function ImageGalleryCollumn(props) {
-  // console.log
+interface ImageGalleryCollumnProps {
+  images: any[];
+  openModal: (image: any, name: string) => void;
+}
+
+export function ImageGalleryCollumn(props: ImageGalleryCollumnProps) {
   return (
     <>
       {props.images.map((imageIndex) => {
