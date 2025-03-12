@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-function Modal(props) {
+interface ModalProps {
+  image: string;
+  caption: string;
+}
+
+function Modal(props: ModalProps) {
   const [open, setOpen] = useState(false);
   return (
     <div>
