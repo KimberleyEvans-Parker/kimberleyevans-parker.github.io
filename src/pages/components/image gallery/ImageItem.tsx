@@ -1,7 +1,12 @@
 import React from "react";
 
+interface ImageItemProps {
+  name: string;
+  image: string;
+  animationDelay: any;
+}
 
-export const ImageItem = (name: string, image: string, animationDelay: any) => {
+export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
   // for loading an image when it scrolls into view
 
   const [isVisible, setVisible] = React.useState(false);
@@ -15,11 +20,13 @@ export const ImageItem = (name: string, image: string, animationDelay: any) => {
       observer.observe(current);
       return () => observer.unobserve(current);
     }
-    
-    // const current = domRef.current;
-    // observer.observe(current);
-    // return () => observer.unobserve(current);
   }, [isVisible]);
+
+  // console.log("tsx", name, image, animationDelay)
+  // console.log("tsx")
+  // console.log(name)
+  // console.log(image)
+  // console.log(animationDelay)
 
   return (
     <div className={`image-gallery-image  ${isVisible ? "is-visible" : ""} `}>
