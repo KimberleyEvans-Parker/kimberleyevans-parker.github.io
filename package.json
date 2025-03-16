@@ -10,7 +10,7 @@
     "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "5.3.4",
     "react-scripts": "^5.0.1",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   },
   "engines": {
     "node": ">=16"
