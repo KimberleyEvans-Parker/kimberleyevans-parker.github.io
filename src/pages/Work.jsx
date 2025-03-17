@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import ContentItem from "./components/ContentItem";
 
-import { GIT, PYTHON, CSHARP, ANGULAR, CSS } from "../Constants";
+import { GIT, PYTHON, CSHARP, ANGULAR, CSS } from "../helpers/Constants";
 
 function Work() {
   const [image, setImage] = useState(null);

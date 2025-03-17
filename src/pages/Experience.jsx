@@ -6,7 +6,7 @@ import Volunteer2 from "../assets/experience/Volunteer.jpg";
 import Work2 from "../assets/experience/Work.jpg";
 import { Link } from "react-router-dom";
 
-import { SMALL_SCREEN } from "../Constants";
+import { SMALL_SCREEN } from "../helpers/Constants";
 
 function Experience() {
   // Keeps track of the window dimensions.  Updates when window resizes

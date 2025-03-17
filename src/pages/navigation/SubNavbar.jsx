@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { SMALL_SCREEN } from "../../Constants";
+import { SMALL_SCREEN } from "../../helpers/Constants";
 import SubNavbarLink from "../components/SubNavbarLink";
 
 function SubNavbar(props) {

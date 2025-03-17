@@ -5,7 +5,7 @@ import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.JPG";
 import Photography from "../../assets/hobbies/Photography/Flying Bee.JPG";
 import Cosplays from "../../assets/hobbies/Cosplays/Maleficent.jpg";
 
-import { SMALL_SCREEN } from "../../Constants";
+import { SMALL_SCREEN } from "../../helpers/Constants";
 
 function Hobbies() {
   // Keeps track of the window dimensions.  Updates when window resizes

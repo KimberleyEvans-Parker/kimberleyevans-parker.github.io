@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
-import { SMALL_SCREEN } from "../../Constants";
+import { SMALL_SCREEN } from "../../helpers/Constants";
 import "./navigation.css";
 
 function Navigation(props) {
