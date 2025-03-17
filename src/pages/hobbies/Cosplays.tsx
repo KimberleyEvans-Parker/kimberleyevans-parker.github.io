@@ -1,12 +1,8 @@
+import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 import ImageGallery from "../components/image gallery/ImageGallery";
 
 function Cosplays() {
-  // image imports
-  function importAll(r: { keys: () => string[]; (path: string): string }) {
-    return r.keys().map(r);
-  }
-
-  const CosplayImages = importAll(
+  const CosplayImages = importAllPhotosFromFolder(
     require.context("../../assets/hobbies/Cosplays", false)
   );
 

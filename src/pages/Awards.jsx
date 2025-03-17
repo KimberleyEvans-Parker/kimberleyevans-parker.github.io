@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { importAllPhotosFromFolder } from "../helpers/Helpers";
 
 import ContentItem from "./components/ContentItem";
 
@@ -26,18 +27,13 @@ function Awards() {
     return onLeft;
   };
 
-  // image imports
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const KrayonImages = importAll(
+  const KrayonImages = importAllPhotosFromFolder(
     require.context("../assets/awards/2020 DEVS Hackathon", false)
   );
-  const MYOBImages = importAll(
+  const MYOBImages = importAllPhotosFromFolder(
     require.context("../assets/awards/MYOB IT Challenge", false)
   );
-  const CertificateImages = importAll(
+  const CertificateImages = importAllPhotosFromFolder(
     require.context("../assets/awards/Certificates", false)
   );
 

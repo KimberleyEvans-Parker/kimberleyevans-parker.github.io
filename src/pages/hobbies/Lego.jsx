@@ -1,14 +1,10 @@
 import React from "react";
 
 import ImageGallery from "../components/image gallery/ImageGallery";
+import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 
 function Lego() {
-  // image imports
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const LegoImages = importAll(
+  const LegoImages = importAllPhotosFromFolder(
     require.context("../../assets/hobbies/Lego", false)
   );
 

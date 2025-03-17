@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import ContentItem from "./components/ContentItem";
+import { importAllPhotosFromFolder } from "../helpers/Helpers";
 
 import { GIT, PYTHON, CSHARP, ANGULAR, CSS } from "../helpers/Constants";
 
@@ -28,18 +29,13 @@ function Work() {
     return onLeft;
   };
 
-  // image imports
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const SSSImages = importAll(
+  const SSSImages = importAllPhotosFromFolder(
     require.context("../assets/work/School Storage Solutions", false)
   );
-  const GraduationPlushiesImages = importAll(
+  const GraduationPlushiesImages = importAllPhotosFromFolder(
     require.context("../assets/work/Graduation Plushies", false)
   );
-  const OomaImages = importAll(
+  const OomaImages = importAllPhotosFromFolder(
     require.context("../assets/work/No.8 Wireless", false)
   );
 
