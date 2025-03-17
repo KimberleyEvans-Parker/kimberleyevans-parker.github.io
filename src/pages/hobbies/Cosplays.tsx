@@ -2,7 +2,7 @@ import ImageGallery from "../components/image gallery/ImageGallery";
 
 function Cosplays() {
   // image imports
-  function importAll(r) {
+  function importAll(r: { keys: () => string[]; (path: string): string }) {
     return r.keys().map(r);
   }
 
