@@ -1,7 +1,7 @@
 import React from "react";
 import ProfilePic from "../assets/profile-pic.jpg";
 import Resume from "../assets/CV-25-03.pdf";
-import { SMALL_SCREEN } from "../Constants";
+import { SMALL_SCREEN } from "../helpers/Constants";
 
 function About() {
   /* Keeps track of the window dimensions.  Updates when window resizes */

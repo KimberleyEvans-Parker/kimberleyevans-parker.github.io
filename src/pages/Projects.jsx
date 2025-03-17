@@ -16,7 +16,7 @@ import {
   REDUX,
   GDSCRIPT,
   AI,
-} from "../Constants";
+} from "../helpers/Constants";
 
 function Projects() {
   const [image, setImage] = useState(null);

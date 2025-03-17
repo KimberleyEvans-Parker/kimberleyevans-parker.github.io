@@ -8,7 +8,7 @@ import {
   SMALL_SCREEN,
   CAROUSEL_TRANSITION_TIME,
   CAROUSEL_INTERVAL,
-} from "../../Constants";
+} from "../../helpers/Constants";
 
 function ImageContent(props) {
   return (
