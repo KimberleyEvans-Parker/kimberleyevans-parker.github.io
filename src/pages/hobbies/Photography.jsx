@@ -1,12 +1,8 @@
 import ImageGallery from "../components/image gallery/ImageGallery"
+import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 
 function Photography() {
-  // image imports
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const PhotographyImages = importAll(
+  const PhotographyImages = importAllPhotosFromFolder(
     require.context("../../assets/hobbies/Photography", false)
   );
 

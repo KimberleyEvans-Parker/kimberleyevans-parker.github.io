@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import ContentItem from "./components/ContentItem";
+import { importAllPhotosFromFolder } from "../helpers/Helpers";
 
 import {
   GIT,
@@ -42,42 +43,37 @@ function Projects() {
     return onLeft;
   };
 
-  // image imports
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const EmpowerImages = importAll(
+  const EmpowerImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Empower", false)
   );
-  const Industry4Images = importAll(
+  const Industry4Images = importAllPhotosFromFolder(
     require.context("../assets/projects/Industry 4.0", false)
   );
-  const HeartHealerImages = importAll(
+  const HeartHealerImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Heart Healer", false)
   );
-  const UpskillImages = importAll(
+  const UpskillImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Upskill", false)
   );
-  const DotoImages = importAll(
+  const DotoImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Doto", false)
   );
-  const FeedrImages = importAll(
+  const FeedrImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Feedr", false)
   );
-  const EnvirobotImages = importAll(
+  const EnvirobotImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Envirobot", false)
   );
-  const RollForReactionImages = importAll(
+  const RollForReactionImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Roll for Reaction", false)
   );
-  const FlikImages = importAll(
+  const FlikImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Flik", false)
   );
-  const EventigateImages = importAll(
+  const EventigateImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Eventigate", false)
   );
-  const AshasQuestImages = importAll(
+  const AshasQuestImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Asha's Quest", false)
   );
 

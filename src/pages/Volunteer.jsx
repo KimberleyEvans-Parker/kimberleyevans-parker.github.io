@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import ContentItem from "./components/ContentItem";
+import { importAllPhotosFromFolder } from "../helpers/Helpers";
 
 function Volunteer() {
   const [image, setImage] = useState(null);
@@ -26,18 +27,13 @@ function Volunteer() {
     return onLeft;
   };
 
-  // image imports
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const MotuiheImages = importAll(
+  const MotuiheImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motuihe Island", false)
   );
-  const PoppyImages = importAll(
+  const PoppyImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Poppy Making", false)
   );
-  const ClassRepImages = importAll(
+  const ClassRepImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Class Representative", false)
   );
 
