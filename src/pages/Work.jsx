@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import ContentItem from "./components/ContentItem";
+import ContentItem from "./components/content item/ContentItem";
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 
 import { GIT, PYTHON, CSHARP, ANGULAR, CSS } from "../helpers/Constants";
