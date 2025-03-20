@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ContentItem from "./components/ContentItem";
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 
-import { GIT, PYTHON, CSHARP, ANGULAR, CSS, REACT, REDUX, LAUNCH_DARKLY, TS, HTML, TEAM_CITY, SUMO_LOGIC, NEW_RELIC, LIGHTHOUSE, MIXPANEL } from "../helpers/Constants";
+import { TECHNOLOGIES } from "../helpers/Constants";
 
 function Work() {
   const [image, setImage] = useState(null);
@@ -80,7 +80,21 @@ function Work() {
           A highlight was a hakathon where we received the Customer Impact Award for adding a file upload section to an employee, which was the most requested feature in Payroll for multiple years.  
           I also won the Connected Workplaces Hackathon with a team of four, where we created a wellbeing hub - a dashboard for employees to easily see upcoming events, todos and summaries of their employees.  
         "
-        technologies={[REACT, REDUX, TS, HTML, CSS, GIT, CSHARP, LAUNCH_DARKLY, TEAM_CITY, SUMO_LOGIC, NEW_RELIC, LIGHTHOUSE, MIXPANEL]}
+        technologies={[
+          TECHNOLOGIES.REACT, 
+          TECHNOLOGIES.REDUX, 
+          TECHNOLOGIES.TS, 
+          TECHNOLOGIES.HTML, 
+          TECHNOLOGIES.CSS, 
+          TECHNOLOGIES.GIT, 
+          TECHNOLOGIES.CSHARP, 
+          TECHNOLOGIES.LAUNCH_DARKLY, 
+          TECHNOLOGIES.TEAM_CITY, 
+          TECHNOLOGIES.SUMO_LOGIC, 
+          TECHNOLOGIES.NEW_RELIC, 
+          TECHNOLOGIES.LIGHTHOUSE, 
+          TECHNOLOGIES.MIXPANEL
+        ]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -96,7 +110,7 @@ function Work() {
           I gained experience working in Angular and becoming familiar with new codebases.
           A highlight was a hakathon where we added a live 360 feed to the Boston Dynamic robot dog 
           so that you could remotely view and control it live."
-        technologies={[ANGULAR, HTML, CSS, GIT]}
+        technologies={[TECHNOLOGIES.ANGULAR, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.GIT]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -107,7 +121,7 @@ function Work() {
         dates="September 2020 - November 2021"
         description="I manufactured cables for a variety of purposes, have tested both hardware and software 
           and have gained experience programming in C#."
-        technologies={[GIT, CSHARP]}
+        technologies={[TECHNOLOGIES.GIT, TECHNOLOGIES.CSHARP]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
@@ -164,7 +178,7 @@ function Work() {
         description="I developed an automated testing system for the phones that Ooma - a U.S. company.  
           During this, I gained experience with Git, Python and hardware."
         images={OomaImages}
-        technologies={[GIT, PYTHON]}
+        technologies={[TECHNOLOGIES.GIT, TECHNOLOGIES.PYTHON]}
         openModal={openModal}
         animationDelay={getAnimationDelay()}
       />
