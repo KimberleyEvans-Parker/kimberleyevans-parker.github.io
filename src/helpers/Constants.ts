@@ -2,28 +2,30 @@ export const SMALL_SCREEN = 750;
 export const CAROUSEL_TRANSITION_TIME = 2000;
 export const CAROUSEL_INTERVAL = 5000;
 
-export const GIT = "Git";
-export const PYTHON = "Python";
-export const JAVA = "Java";
-export const C = "C";
-export const CSHARP = "C#";
-export const CPP = "C++";
-export const MATLAB = "MatLab";
-export const VHDL = "VHDL";
-export const SQL = "SQL";
-export const HTML = "HTML";
-export const CSS = "CSS";
-export const JS = "JavaScript";
-export const TS = "TypeScript";
-export const REACT = "React";
-export const REDUX = "Redux";
-export const GDSCRIPT = "GDScript";
-export const AI = "AI";
-export const ANGULAR = "Angular";
-export const TEAM_CITY = "TeamCity";
-export const SUMO_LOGIC = "Sumo Logic";
-export const NEW_RELIC = "New Relic";
-export const LIGHTHOUSE = "Lighthouse";
-export const MIXPANEL = "Mixpanel";
-export const LAUNCH_DARKLY = "Launch Darkly";
+export const TECHNOLOGIES = {
+    GIT: "Git",
+    PYTHON: "Python",
+    JAVA: "Java",
+    C: "C",
+    CSHARP: "C#",
+    CPP: "C++",
+    MATLAB: "MatLab",
+    VHDL: "VHDL",
+    SQL: "SQL",
+    HTML: "HTML",
+    CSS: "CSS",
+    JS: "JavaScript",
+    TS: "TypeScript",
+    REACT: "React",
+    REDUX: "Redux",
+    GDSCRIPT: "GDScript",
+    AI: "AI",
+    ANGULAR: "Angular",
+    TEAM_CITY: "TeamCity",
+    SUMO_LOGIC: "Sumo Logic",
+    NEW_RELIC: "New Relic",
+    LIGHTHOUSE: "Lighthouse",
+    MIXPANEL: "Mixpanel",
+    LAUNCH_DARKLY: "Launch Darkly"
+};
 
