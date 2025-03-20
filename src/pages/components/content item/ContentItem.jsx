@@ -1,60 +1,13 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import {
   SMALL_SCREEN,
-  CAROUSEL_TRANSITION_TIME,
-  CAROUSEL_INTERVAL,
-} from "../../helpers/Constants";
-
-function ImageContent(props) {
-  return (
-    <Carousel
-      autoPlay
-      showIndicators={props.images.length > 1}
-      showStatus={props.images.length > 1}
-      showThumbs={false}
-      transitionTime={CAROUSEL_TRANSITION_TIME}
-      interval={CAROUSEL_INTERVAL}
-      infiniteLoop={true}
-      className="shadow"
-    >
-      {props.images.map((image) => {
-        const path = image.split("/");
-        const name = path[path.length - 1].split(".")[0];
-        const caption = props.heading ? props.heading + " - " + name : name
-        return (
-          <button
-            onClick={() => props.openModal(image, caption)}
-            key={caption}
-          >
-            <img alt={caption} src={image} />
-          </button>
-        );
-      })}
-    </Carousel>
-  );
-}
-
-function TextContent(props) {
-  return (
-    <>
-      <h3>{props.dates}</h3>
-      <p>{props.description}</p>
-      {props.link && (
-        <p>
-          For more information, take a look <a href={props.link}>here</a>
-        </p>
-      )}
-      <div className="technologies">
-        {props.technologies && props.technologies.join(` ⸎ `)}
-      </div>
-    </>
-  );
-}
+} from "../../../helpers/Constants";
+import { ImageContent } from "./ImageContent";
+import { TextContent } from "./TextContent";
 
 function ContentItem(props) {
   // Keeps track of the window dimensions.  Updates when window resizes

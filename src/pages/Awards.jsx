@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 
-import ContentItem from "./components/ContentItem";
+import ContentItem from "./components/content item/ContentItem";
 
 function Awards() {
   const [image, setImage] = useState(null);
