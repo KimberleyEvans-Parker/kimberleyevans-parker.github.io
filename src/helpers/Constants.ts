@@ -20,3 +20,10 @@ export const REDUX = "Redux";
 export const GDSCRIPT = "GDScript";
 export const AI = "AI";
 export const ANGULAR = "Angular";
+export const TEAM_CITY = "TeamCity";
+export const SUMO_LOGIC = "Sumo Logic";
+export const NEW_RELIC = "New Relic";
+export const LIGHTHOUSE = "Lighthouse";
+export const MIXPANEL = "Mixpanel";
+export const LAUNCH_DARKLY = "Launch Darkly";
+
