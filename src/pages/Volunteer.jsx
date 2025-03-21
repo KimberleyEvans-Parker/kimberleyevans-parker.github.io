@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import ContentItem from "./components/content item/ContentItem";
 import { volunteerData } from "../data/volunteer";
+import { Modal } from "./components/Modal";
 
 function Volunteer() {
   const [image, setImage] = useState(null);
@@ -31,21 +32,7 @@ function Volunteer() {
   return (
     <div className="content-container experience-container">
       <h1 className="fade left">Volunteer Work</h1>
-      {image && (
-        <>
-          <div className="modal-background">
-            <span className="close" onClick={() => setImage(null)}>
-              &times;
-            </span>
-            <img alt="" src={image} className="modal-content" />
-            {caption && (
-              <div className="caption">
-                <h2>{caption}</h2>
-              </div>
-            )}
-          </div>
-        </>
-      )}
+      <Modal image={image} setImage={setImage} caption={caption} />
       
       {volunteerData.map((project, index) => (
         <ContentItem
