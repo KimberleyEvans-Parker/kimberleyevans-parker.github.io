@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import ContentItem from "./components/content item/ContentItem";
-
 import { projectData } from "../data/projects";
 
 function Projects() {

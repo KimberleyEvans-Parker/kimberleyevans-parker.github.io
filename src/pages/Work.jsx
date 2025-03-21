@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import ContentItem from "./components/content item/ContentItem";
-import { importAllPhotosFromFolder } from "../helpers/Helpers";
-
-import { TECHNOLOGIES } from "../helpers/Constants";
 import { workData } from "../data/work";
 
 function Work() {
@@ -29,16 +26,6 @@ function Work() {
     onLeft = !onLeft;
     return onLeft;
   };
-
-  const SSSImages = importAllPhotosFromFolder(
-    require.context("../assets/work/School Storage Solutions", false)
-  );
-  const GraduationPlushiesImages = importAllPhotosFromFolder(
-    require.context("../assets/work/Graduation Plushies", false)
-  );
-  const OomaImages = importAllPhotosFromFolder(
-    require.context("../assets/work/No.8 Wireless", false)
-  );
 
   return (
     <div className="content-container experience-container">
