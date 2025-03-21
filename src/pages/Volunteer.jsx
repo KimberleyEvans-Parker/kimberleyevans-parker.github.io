@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import ContentItem from "./components/content item/ContentItem";
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
+import { volunteerData } from "../data/volunteer";
 
 function Volunteer() {
   const [image, setImage] = useState(null);
@@ -27,15 +28,6 @@ function Volunteer() {
     return onLeft;
   };
 
-  const MotuiheImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motuihe Island", false)
-  );
-  const PoppyImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Poppy Making", false)
-  );
-  const ClassRepImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Class Representative", false)
-  );
 
   return (
     <div className="content-container experience-container">
@@ -55,47 +47,22 @@ function Volunteer() {
           </div>
         </>
       )}
-      <ContentItem
-        imgOnLeft={imgOnLeft()}
-        heading="Class Rep"
-        subheading="Phil 222 and Logicomp 301"
-        dates="July 2019 - July 2020"
-        description="I represented the students in my class and communicate any questions, queries, concerns or feedback to the teacher."
-        images={ClassRepImages}
-        openModal={openModal}
-        animationDelay={getAnimationDelay()}
-      />
-      <ContentItem
-        imgOnLeft={imgOnLeft()}
-        heading="Robogals"
-        subheading="STEM Teacher"
-        dates="April 2019 - July 2019"
-        description="I worked as a teacher with Robogals to encourage young children into STEM fields.  
-          This was done with the aid of LEGO Mindstorm robots, which were able to be programmed by the children to navigate their way around a maze."
-        openModal={openModal}
-        animationDelay={getAnimationDelay()}
-      />
-      <ContentItem
-        imgOnLeft={imgOnLeft()}
-        heading="Reforestation"
-        subheading="Motuihe Island"
-        dates="August 2015"
-        description="Motuihe Island used to be farmland, but we have helped transform it into a home for native birds and lizards.  
-          During a restoration project as part of the Motuihe Island Restoration Trust, we planted 2,000 native trees around the island to help make the island a sanctuary for wild life"
-        images={MotuiheImages}
-        openModal={openModal}
-        animationDelay={getAnimationDelay()}
-      />
-      <ContentItem
-        imgOnLeft={imgOnLeft()}
-        heading="Poppy Making"
-        dates="April 2015"
-        description="I volunteered to help a small group of people make hundreds of poppies, sewn out of red fabric and buttons. 
-          These were placed in the gardens of our school and given away as part of the ANZAC commemoration.  "
-        images={PoppyImages}
-        openModal={openModal}
-        animationDelay={getAnimationDelay()}
-      />
+      
+      {volunteerData.map((project, index) => (
+        <ContentItem
+          key={index}
+          imgOnLeft={imgOnLeft()}
+          heading={project.heading}
+          subheading={project.subheading}
+          dates={project.dates}
+          description={project.description}
+          githubLink={project.githubLink}
+          images={project.images}
+          technologies={project.technologies}
+          openModal={openModal}
+          animationDelay={getAnimationDelay()}
+        />
+      ))}
     </div>
   );
 }
