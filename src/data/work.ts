@@ -77,6 +77,17 @@ export const workData: ContentItemType[] = [
         ]
     },
     {
+        heading: "Research Assistant",
+        subheading: "University of Auckland",
+        dates: "June 2021",
+        description: `I worked as a research assistant for the University of Auckland for Doctor Catherine Watson.
+            During this time, I worked on a project to create a Māori text-to-speech voice using AI.`,
+        technologies: [
+            TECHNOLOGIES.PYTHON,
+            TECHNOLOGIES.AI
+        ]
+    },
+    {
         heading: "Teacher",
         subheading: "Bricks4Kidz",
         dates: "January 2020 - Present",
