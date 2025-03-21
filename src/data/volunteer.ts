@@ -1,6 +1,5 @@
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
-
-
+import { ContentItemType } from "./types";
 
 const MotuiheImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motuihe Island", false)
