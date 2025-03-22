@@ -1,13 +1,19 @@
-import React from "react";
-
 export function TextContent(props) {
   return (
     <>
       <h3>{props.dates}</h3>
       <p>{props.description}</p>
+      {props.linkedInLink && (
+          <a href={props.linkedInLink} className={"popout-link"}>
+            <i className="fa fa-linkedin popout" aria-hidden="true" />
+            <p>
+              See the LinkedIn post here!
+            </p>
+          </a>
+      )}
       {props.link && (
         <p>
-          For more information, take a look <a href={props.link}>here</a>
+          <a href={props.link}>For more information, take a look here</a>
         </p>
       )}
       <div className="technologies">

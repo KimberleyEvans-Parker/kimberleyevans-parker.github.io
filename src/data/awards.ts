@@ -32,7 +32,7 @@ export const awardsData: ContentItemType[] = [
         Six successful teams progressed to the second round, where we were able to get feedback, before pitching our idea live to the judges.
         My team - Whiz Craft - was awarded 3rd place overall, or 1st in New Zealand.`,
         images: MYOBImages,
-        link: "https://www.auckland.ac.nz/en/news/2020/10/09/heart-healer-app-a-winner.html",
+        seeMorelink: "https://www.auckland.ac.nz/en/news/2020/10/09/heart-healer-app-a-winner.html",
     },
     {
         heading: "2020 DEVS Hackathon",
