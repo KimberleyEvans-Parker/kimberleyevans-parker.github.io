@@ -14,6 +14,13 @@ const MotuiheImages = importAllPhotosFromFolder(
 
 export const volunteerData: ContentItemType[] = [
     {
+        heading: "Speaker at a Queer&A Event",
+        subheading: "University of Auckland", 
+        dates: "July 2023",
+        description: "I spoke at the Rainbow Engineering UoA and Women in Engineering Network Event about what the software industry was like for minorities.",
+        link: "https://www.linkedin.com/posts/aryankaran_it-was-a-pleasure-to-mc-the-rainbow-engineering-ugcPost-7057242406928224257-7NGU"
+    },
+    {
         heading: "Class Rep",
         subheading: "Phil 222 and Logicomp 301",
         dates: "July 2019 - July 2020",
