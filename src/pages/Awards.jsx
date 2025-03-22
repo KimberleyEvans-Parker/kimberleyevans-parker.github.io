@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import ContentItem from "./components/content item/ContentItem";
+import { Modal } from "./components/Modal";
 import { awardsData } from "../data/awards";
 
 function Awards() {
@@ -31,21 +32,8 @@ function Awards() {
   return (
     <div className="content-container experience-container">
       <h1 className="fade left">Awards and Achievments</h1>
-      {image && (
-        <>
-          <div className="modal-background">
-            <span className="close" onClick={() => setImage(null)}>
-              &times;
-            </span>
-            <img alt="" src={image} className="modal-content" />
-            {caption && (
-              <div className="caption">
-                <h2>{caption}</h2>
-              </div>
-            )}
-          </div>
-        </>
-      )}
+      <Modal image={image} caption={caption} setImage={setImage} />
+
       {awardsData.map((project, index) => (
         <ContentItem
           key={index}
