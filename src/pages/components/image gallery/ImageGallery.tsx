@@ -7,9 +7,10 @@ import "../modal.css";
 
 import { SMALL_SCREEN } from "../../../helpers/Constants";
 import { ImageGalleryCollumn } from "./ImageGalleryCollumn";
+import { Modal } from "../Modal";
 
 function ImageGallery(props: { images: string | any[]; }) {
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState<string | undefined>(undefined);
   const [caption, setCaption] = useState("");
 
   const openModal = (image: any, caption: string) => {
@@ -61,21 +62,8 @@ function ImageGallery(props: { images: string | any[]; }) {
 
   return (
     <div style={{ marginTop: "40px" }}>
-      {image && (
-        <>
-          <div className="modal-background">
-            <span className="close" onClick={() => setImage(null)}>
-              &times;
-            </span>
-            <img alt="" src={image} className="modal-content" />
-            {caption && (
-              <div className="caption">
-                <h2>{caption}</h2>
-              </div>
-            )}
-          </div>
-        </>
-      )}
+      <Modal image={image} caption={caption} setImage={setImage} />
+          
       <div>
         {dimensions.width < SMALL_SCREEN ? (
           <Grid container spacing={2}>

@@ -1,43 +1,26 @@
-import { useState } from "react";
-
 interface ModalProps {
-  image: string;
+  image: string | undefined;
   caption: string;
+  setImage: (image: string | undefined) => void;
 }
 
-function Modal(props: ModalProps) {
-  const [open, setOpen] = useState(false);
+export const Modal = ({image, caption, setImage}: ModalProps) => {
   return (
-    <div>
-      <button>
-        <img
-          src={props.image}
-          alt={props.caption}
-          onClick={() => setOpen(!open)}
-        />
-      </button>
-
-      {open && (
-        <>
-          <div className="modal-background">
-            <span className="close" onClick={() => setOpen(!open)}>
-              &times;
-            </span>
-            <img
-              alt={props.caption}
-              src={props.image}
-              className="modal-content"
-            />
-            {props.caption && (
-              <div className="caption">
-                <h2>{props.caption}</h2>
-              </div>
-            )}
-          </div>
-        </>
+    <>
+      {image && (
+        <div className="modal-background">
+          <span className="close" onClick={() => setImage(undefined)}>
+            &times;
+          </span>
+          <img alt="" src={image} className="modal-content" />
+          {caption && (
+            <div className="caption">
+              <h2>{caption}</h2>
+            </div>
+          )}
+        </div>
       )}
-    </div>
+    </>
   );
 }
 
-export default Modal;
