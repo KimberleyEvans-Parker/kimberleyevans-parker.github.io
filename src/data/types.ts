@@ -4,8 +4,9 @@ export type ContentItemType = {
     dates: string;
     description: string;
     githubLink?: string;
+    linkedInLink?: string;
+    seeMorelink?: string;
     images?: string[];
     technologies?: string[];
-    link?: string;
 };
 

@@ -60,7 +60,7 @@ function ContentItem(props) {
         {props.githubLink && dimensions.width >= SMALL_SCREEN ? (
           <a href={props.githubLink} className={"popout-link"}>
             <h2>
-              <i className="fa fa-github popout" aria-hidden="true"></i>
+              <i className="fa fa-github popout" aria-hidden="true" />
               {props.heading} {props.subheading && "- "} {props.subheading}
             </h2>
           </a>
@@ -76,6 +76,7 @@ function ContentItem(props) {
               <TextContent
                 dates={props.dates}
                 description={props.description}
+                linkedInLink={props.linkedInLink}
                 link={props.link}
                 technologies={props.technologies}
               />
@@ -91,6 +92,7 @@ function ContentItem(props) {
               <TextContent
                 dates={props.dates}
                 description={props.description}
+                linkedInLink={props.linkedInLink}
                 link={props.link}
                 technologies={props.technologies}
               />

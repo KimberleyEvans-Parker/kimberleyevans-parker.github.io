@@ -111,7 +111,7 @@ export const workData: ContentItemType[] = [
         description: `I co-founded this service which custom-makes graduation hats for soft toys.
             These have been quite popular for graduates and friends of grads and we were able to make a profit in our first year.  `,
         images: GraduationPlushiesImages,
-        link: "https://www.facebook.com/gradplushies/"
+        seeMorelink: "https://www.facebook.com/gradplushies/"
     },
     {
         heading: "Tutor",

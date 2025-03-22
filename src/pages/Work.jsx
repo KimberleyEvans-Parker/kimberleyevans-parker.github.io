@@ -54,6 +54,7 @@ function Work() {
           dates={project.dates}
           description={project.description}
           githubLink={project.githubLink}
+          linkedInLink={project.linkedInLink}
           images={project.images}
           technologies={project.technologies}
           openModal={openModal}
