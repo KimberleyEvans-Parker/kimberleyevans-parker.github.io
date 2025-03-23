@@ -12,13 +12,20 @@ const MotuiheImages = importAllPhotosFromFolder(
   );
 
 
-export const volunteerData: ContentItemType[] = [
+  export const volunteerData: ContentItemType[] = [
     {
         heading: "Speaker at a Queer&A Event",
         subheading: "University of Auckland", 
         dates: "July 2023",
         description: "I spoke at the Rainbow Engineering UoA and Women in Engineering Network Event about what the software industry was like for minorities.",
         linkedInLink: "https://www.linkedin.com/posts/aryankaran_it-was-a-pleasure-to-mc-the-rainbow-engineering-ugcPost-7057242406928224257-7NGU"
+    },
+    {
+        heading: "Mentor",
+        subheading: "Women in Tech",
+        dates: "2022",
+        description: "I mentored a student taking a conjoint at the university of Auckland into the STEM industry through the Women in Tech program.",
+        seeMorelink: "https://wen.auckland.ac.nz/"
     },
     {
         heading: "Class Rep",
