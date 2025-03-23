@@ -1,3 +1,4 @@
+import { TECHNOLOGIES } from "../helpers/Constants";
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
@@ -14,6 +15,23 @@ const KrayonImages = importAllPhotosFromFolder(
 
 
 export const awardsData: ContentItemType[] = [
+    {
+        heading: "1st Place",
+        subheading: "Xero Connected Workplaces Hackathon",
+        dates: "September 2022",
+        description: `I was awarded 1st place at a Xero-organised hackathon within my area Connected Workplaces. 
+            My team and I created a wellbeing hub - a dashboard for employees to easily see upcoming events, todos and summaries of their employees.
+            We worked together in an agile environment over a week and showcased our working project to the judges.`,
+        technologies: [
+            TECHNOLOGIES.REACT,
+            TECHNOLOGIES.REDUX,
+            TECHNOLOGIES.TS,
+            TECHNOLOGIES.HTML,
+            TECHNOLOGIES.CSS,
+            TECHNOLOGIES.GIT,
+        ]
+
+    },
     {
         heading: "Best Idea",
         subheading: "Drone Deploy Hackathon",
