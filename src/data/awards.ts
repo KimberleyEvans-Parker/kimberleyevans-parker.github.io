@@ -15,6 +15,14 @@ const KrayonImages = importAllPhotosFromFolder(
 
 export const awardsData: ContentItemType[] = [
     {
+        heading: "Best Idea",
+        subheading: "Drone Deploy Hackathon",
+        dates: "January 2022",
+        description: `I was awarded best idea at the Drone Deploy hackathon. 
+            My team and I implemented a way for users to view and control a live 360 feed of their robot.  
+            For our example, we used the Boston Dynamics robot dog and created a widget users could add to their dashboard to view the live 360 feed.`,
+    },
+    {
         heading: "University Certificates of Outstanding Achievment",
         dates: "2021",
         description: "I received several certificates of outstanding achievment for my hard work during university.",
