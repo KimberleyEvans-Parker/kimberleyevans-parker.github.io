@@ -7,7 +7,10 @@ const MotutapuImages = importAllPhotosFromFolder(
 const McDonaldsFarmImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/McDonalds' Farm", false)
 )
-const MotuiheImages = importAllPhotosFromFolder(
+const Motuihe22Images = importAllPhotosFromFolder(
+    require.context("../assets/volunteer/Motuihe Island '22", false)
+)
+const Motuihe15Images = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motuihe Island '15", false)
 )
 const PoppyImages = importAllPhotosFromFolder(
@@ -60,6 +63,7 @@ export const volunteerData: ContentItemType[] = [
         description: `I went back to Motuihe Island to help with the conservation of the island! 
         It was amazing to see the trees that I had planted in 2015 had grown so much and were now becoming a stong and healthy forest.
         This time our job was to remove the weeds from around the island and clear the pathways to make it easier for the public to walk around the island.`,
+        images: Motuihe22Images,
     },
     {
         heading: "Class Rep",
@@ -81,7 +85,7 @@ export const volunteerData: ContentItemType[] = [
         dates: "August 2015",
         description: `Motuihe Island used to be farmland, but we have helped transform it into a home for native birds and lizards.  
         During a restoration project as part of the Motuihe Island Restoration Trust, we planted 2,000 native trees around the island to help make the island a sanctuary for wild life`,
-        images: MotuiheImages,
+        images: Motuihe15Images,
     },
     {
         heading: "Poppy Making",
