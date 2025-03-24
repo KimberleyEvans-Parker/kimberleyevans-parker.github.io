@@ -34,6 +34,14 @@ export const volunteerData: ContentItemType[] = [
         linkedInLink: "https://www.linkedin.com/posts/aryankaran_it-was-a-pleasure-to-mc-the-rainbow-engineering-ugcPost-7057242406928224257-7NGU"
     },
     {
+        heading: "Conservation",
+        subheading: "McDonalds' Farm",
+        dates: "March 2023",
+        description: `I volunteered to help with the conservation of the McDonalds' Farm in Auckland.  
+            This involved removing weeds that were choking the native plants to give the natives the best chance of survival.
+            The trees are an important part of the river ecosystem and the work we did will help to ensure that the river remains healthy.`,
+    },
+    {
         heading: "Mentor",
         subheading: "Women in Tech",
         dates: "2022",
