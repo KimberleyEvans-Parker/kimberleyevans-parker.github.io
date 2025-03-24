@@ -14,6 +14,15 @@ const MotuiheImages = importAllPhotosFromFolder(
 
   export const volunteerData: ContentItemType[] = [
     {
+        heading: "Reforestation",
+        subheading: "Motutapu Island", 
+        dates: "July 2024",
+        description: `I volunteered to help with the reforestation and conservation on Motutapu Island.  
+            This involved planting native trees and shrubs to help restore the island to its natural state.
+            The island is a predator-free sanctuary for native birds and lizards, and the work we did will help to ensure that it remains that way.`,
+        seeMorelink: "https://www.motutapu.org.nz/"
+    },
+    {
         heading: "Speaker at a Queer&A Event",
         subheading: "University of Auckland", 
         dates: "July 2023",
