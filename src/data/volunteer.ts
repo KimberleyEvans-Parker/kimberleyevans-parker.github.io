@@ -4,8 +4,11 @@ import { ContentItemType } from "./types";
 const MotutapuImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motutapu Island", false)
 )
+const McDonaldsFarmImages = importAllPhotosFromFolder(
+    require.context("../assets/volunteer/McDonalds' Farm", false)
+)
 const MotuiheImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motuihe Island", false)
+    require.context("../assets/volunteer/Motuihe Island '15", false)
 )
 const PoppyImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Poppy Making", false)
@@ -40,6 +43,8 @@ export const volunteerData: ContentItemType[] = [
         description: `I volunteered to help with the conservation of the McDonalds' Farm in Auckland.  
             This involved removing weeds that were choking the native plants to give the natives the best chance of survival.
             The trees are an important part of the river ecosystem and the work we did will help to ensure that the river remains healthy.`,
+        images: McDonaldsFarmImages,
+        seeMorelink: "https://www.nzherald.co.nz/the-vision-is-clear/news/tree-mendous-planting-success/HYYT4LVYNHB6WRCX5FNLHSNIVQ/"
     },
     {
         heading: "Mentor",
