@@ -7,6 +7,9 @@ const MotutapuImages = importAllPhotosFromFolder(
 const McDonaldsFarmImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/McDonalds' Farm", false)
 )
+const Motuihe23Images = importAllPhotosFromFolder(
+    require.context("../assets/volunteer/Motuihe Island '23", false)
+)
 const Motuihe22Images = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motuihe Island '22", false)
 )
@@ -31,6 +34,15 @@ export const volunteerData: ContentItemType[] = [
             The island is a predator-free sanctuary for native birds and lizards, and the work we did will help to ensure that it remains that way.`,
         images: MotutapuImages,
         seeMorelink: "https://www.motutapu.org.nz/"
+    },
+    {
+        heading: "Growing Sapplings",
+        subheading: "Motuihe Island",
+        dates: "Feb 2023",
+        description: `Today we were working in the nursery, potting up seedlings and sowing seeds.
+            The seedlings will be planted out on the island later, and the seeds will be grown on to become seedlings for planting next year.
+            I think now I have been involved in every stage of the process of reforestation on the island!`,
+        images: Motuihe23Images,
     },
     {
         heading: "Speaker at a Queer&A Event",
