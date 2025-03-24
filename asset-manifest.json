@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4462fe81.css",
-    "main.js": "/static/js/main.56585e80.js",
+    "main.js": "/static/js/main.4dec3ee0.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -15,14 +15,24 @@
     "static/media/Workshop.JPG": "/static/media/Workshop.8498500f3f52b41b66a6.JPG",
     "static/media/Instructor.gif": "/static/media/Instructor.719eb452700d27bc08ec.gif",
     "static/media/Rewards.gif": "/static/media/Rewards.202544c30814f574001d.gif",
+    "static/media/image_from_ios-1-min.jpg": "/static/media/image_from_ios-1-min.ecc8f9cdb09633404e0b.jpg",
     "static/media/Queen of Hearts.jpg": "/static/media/Queen of Hearts.ef5f3f109b4533023ffd.jpg",
+    "static/media/Sappling forest.jpg": "/static/media/Sappling forest.dd5b3dfb531a722cdee7.jpg",
     "static/media/Spiderman.JPG": "/static/media/Spiderman.9d4a41fd18efc3fb139e.JPG",
+    "static/media/image_from_ios-2-min.jpg": "/static/media/image_from_ios-2-min.05dfe6e87fcae4a40ed2.jpg",
+    "static/media/Walk through the Island.png": "/static/media/Walk through the Island.6f05f893219c0fe2f689.png",
+    "static/media/image_from_ios-min.jpg": "/static/media/image_from_ios-min.a13be5298a866559db66.jpg",
+    "static/media/Sapplings.jpg": "/static/media/Sapplings.79523deb24284af41dac.jpg",
     "static/media/Trophy.JPG": "/static/media/Trophy.a6aa5e734d89b81ccbe4.JPG",
     "static/media/Bellatrix.jpg": "/static/media/Bellatrix.b623c29b4549688c1e4e.jpg",
+    "static/media/Teamwork makes the trees work.jpg": "/static/media/Teamwork makes the trees work.a841bec0f811e674aa83.jpg",
+    "static/media/Planet heroes in action.jpg": "/static/media/Planet heroes in action.de6f6e4763021da95331.jpg",
     "static/media/PCB.jpg": "/static/media/PCB.e4f3a3ceebc63217fec3.jpg",
     "static/media/View of the Island.JPG": "/static/media/View of the Island.26323752b5010bc9249d.JPG",
     "static/media/Planting Trees 1.JPG": "/static/media/Planting Trees 1.3df188e4c08b65c78cac.JPG",
     "static/media/Features.gif": "/static/media/Features.84269d7499d2ee190727.gif",
+    "static/media/Future forest in the making.jpg": "/static/media/Future forest in the making.a18621930b76d74929b1.jpg",
+    "static/media/From hands to the lands.jpg": "/static/media/From hands to the lands.76fe1bbc520f818a1b58.jpg",
     "static/media/Add and Edit Machines.gif": "/static/media/Add and Edit Machines.29014ade743961778d13.gif",
     "static/media/Zelda.jpg": "/static/media/Zelda.b9a6b03ecf8f4dde1f46.jpg",
     "static/media/Profile Page.gif": "/static/media/Profile Page.033fedc2ad430f1235a5.gif",
@@ -32,13 +42,16 @@
     "static/media/Plushies.JPG": "/static/media/Plushies.50c6094427b58075a025.JPG",
     "static/media/Futuristic.jpg": "/static/media/Futuristic.0ddefde5a9340df50e2a.jpg",
     "static/media/Maleficent.jpg": "/static/media/Maleficent.ab4bc2fa77fadfa27183.jpg",
+    "static/media/Helping in the Nursery.jpg": "/static/media/Helping in the Nursery.670660be7fcef3e15501.jpg",
     "static/media/Futuristic 2.jpg": "/static/media/Futuristic 2.8b1f1e9698d4e868858b.jpg",
     "static/media/Futuristic 3.jpg": "/static/media/Futuristic 3.bcbf08647b851bfeaa77.jpg",
+    "static/media/Planters are ready.jpg": "/static/media/Planters are ready.787937f40893a84afe9a.jpg",
     "static/media/Subscribe to machines.gif": "/static/media/Subscribe to machines.c549ccbbfb4e69b694bb.gif",
     "static/media/Futuristic 4.jpg": "/static/media/Futuristic 4.56d489065ce14ead203c.jpg",
     "static/media/Landing Page and Login.gif": "/static/media/Landing Page and Login.7fb2cc004faa7f108503.gif",
     "static/media/App.gif": "/static/media/App.5c8d2bad5b1c768a75ca.gif",
     "static/media/Add and Edit Sensor.gif": "/static/media/Add and Edit Sensor.20cb5b64017a79b1bdec.gif",
+    "static/media/Nature’s Friends.png": "/static/media/Nature’s Friends.6565dc3f630189371cdb.png",
     "static/media/Painted Lockers.jpg": "/static/media/Painted Lockers.81b76c500f792c0e0d51.jpg",
     "static/media/Completed Lockers.jpg": "/static/media/Completed Lockers.5f3baddf9adfbf0ae3fb.jpg",
     "static/media/Location Page.jpg": "/static/media/Location Page.8ae642ba8655784e6013.jpg",
@@ -138,10 +151,10 @@
     "static/media/Bird of Paradise.JPG": "/static/media/Bird of Paradise.ea01e80e34c54077c585.JPG",
     "index.html": "/index.html",
     "main.4462fe81.css.map": "/static/css/main.4462fe81.css.map",
-    "main.56585e80.js.map": "/static/js/main.56585e80.js.map"
+    "main.4dec3ee0.js.map": "/static/js/main.4dec3ee0.js.map"
   },
   "entrypoints": [
     "static/css/main.4462fe81.css",
-    "static/js/main.56585e80.js"
+    "static/js/main.4dec3ee0.js"
   ]
 }
