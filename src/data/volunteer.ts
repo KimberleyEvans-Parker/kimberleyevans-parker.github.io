@@ -12,7 +12,7 @@ const MotuiheImages = importAllPhotosFromFolder(
   );
 
 
-  export const volunteerData: ContentItemType[] = [
+export const volunteerData: ContentItemType[] = [
     {
         heading: "Speaker at a Queer&A Event",
         subheading: "University of Auckland", 
