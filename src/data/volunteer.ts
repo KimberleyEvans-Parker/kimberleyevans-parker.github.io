@@ -1,18 +1,21 @@
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
+const MotutapuImages = importAllPhotosFromFolder(
+    require.context("../assets/volunteer/Motutapu Island", false)
+)
 const MotuiheImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motuihe Island", false)
-  );
-  const PoppyImages = importAllPhotosFromFolder(
+)
+const PoppyImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Poppy Making", false)
-  );
-  const ClassRepImages = importAllPhotosFromFolder(
+)
+const ClassRepImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Class Representative", false)
-  );
+)
 
 
-  export const volunteerData: ContentItemType[] = [
+export const volunteerData: ContentItemType[] = [
     {
         heading: "Reforestation",
         subheading: "Motutapu Island", 
@@ -20,6 +23,7 @@ const MotuiheImages = importAllPhotosFromFolder(
         description: `I volunteered to help with the reforestation and conservation on Motutapu Island.  
             This involved planting native trees and shrubs to help restore the island to its natural state.
             The island is a predator-free sanctuary for native birds and lizards, and the work we did will help to ensure that it remains that way.`,
+        images: MotutapuImages,
         seeMorelink: "https://www.motutapu.org.nz/"
     },
     {
@@ -35,6 +39,14 @@ const MotuiheImages = importAllPhotosFromFolder(
         dates: "2022",
         description: "I mentored a student taking a conjoint at the university of Auckland into the STEM industry through the Women in Tech program.",
         seeMorelink: "https://wen.auckland.ac.nz/"
+    },
+    {
+        heading: "Conservation",
+        subheading: "Motuihe Island",
+        dates: "March 2022",
+        description: `I went back to Motuihe Island to help with the conservation of the island! 
+        It was amazing to see the trees that I had planted in 2015 had grown so much and were now becoming a stong and healthy forest.
+        This time our job was to remove the weeds from around the island and clear the pathways to make it easier for the public to walk around the island.`,
     },
     {
         heading: "Class Rep",
