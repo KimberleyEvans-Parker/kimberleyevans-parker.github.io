@@ -1,8 +1,7 @@
-import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import { CAROUSEL_TRANSITION_TIME, CAROUSEL_INTERVAL } from "../../../helpers/Constants";
 
-export function ImageContent(props) {
+export const ImageContent = (props) => {
   return (
     <Carousel
       autoPlay

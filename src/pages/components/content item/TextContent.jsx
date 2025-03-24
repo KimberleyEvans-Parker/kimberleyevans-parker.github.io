@@ -1,4 +1,4 @@
-export function TextContent(props) {
+export const TextContent = (props) => {
   return (
     <>
       <h3>{props.dates}</h3>

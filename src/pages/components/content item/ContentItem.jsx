@@ -9,7 +9,7 @@ import {
 import { ImageContent } from "./ImageContent";
 import { TextContent } from "./TextContent";
 
-function ContentItem(props) {
+export const ContentItem = (props) => {
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -103,5 +103,3 @@ function ContentItem(props) {
     </div>
   );
 }
-
-export default ContentItem;
