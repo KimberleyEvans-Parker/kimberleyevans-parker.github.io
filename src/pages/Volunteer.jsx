@@ -4,7 +4,7 @@ import { ContentItem } from "./components/content item/ContentItem";
 import { Modal } from "./components/Modal";
 import { volunteerData } from "../data/volunteer";
 
-function Volunteer() {
+export const Volunteer = () => {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
 
@@ -53,5 +53,3 @@ function Volunteer() {
     </div>
   );
 }
-
-export default Volunteer;
