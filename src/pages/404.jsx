@@ -1,6 +1,6 @@
 import { Link, withRouter } from "react-router-dom";
 
-function Error404() {
+export const Error404 = withRouter(() => {
   return (
     <div className="home-containter">
       <h1>404</h1>
@@ -9,7 +9,5 @@ function Error404() {
         <p>Take me home</p>
       </Link>
     </div>
-  );
-}
-
-export default withRouter(Error404);
+  )
+})

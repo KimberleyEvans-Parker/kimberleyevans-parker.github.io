@@ -1,7 +1,6 @@
-import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Home() {
+export const Home = () => {
   return (
     <Link className="nav-link" to="/about">
       <div className="home-containter">
@@ -9,7 +8,5 @@ function Home() {
         <p className="fade up">Welcome</p>
       </div>
     </Link>
-  );
+  )
 }
-
-export default withRouter(Home);

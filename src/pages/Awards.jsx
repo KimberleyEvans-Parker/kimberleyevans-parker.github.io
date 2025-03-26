@@ -4,7 +4,7 @@ import { ContentItem } from "./components/content item/ContentItem";
 import { Modal } from "./components/Modal";
 import { awardsData } from "../data/awards";
 
-function Awards() {
+export const Awards = () => {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
 
@@ -53,5 +53,3 @@ function Awards() {
     </div>
   );
 }
-
-export default Awards;
