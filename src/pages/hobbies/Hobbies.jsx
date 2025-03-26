@@ -7,14 +7,14 @@ import Cosplays from "../../assets/hobbies/Cosplays/Maleficent.jpg";
 
 import { SMALL_SCREEN } from "../../helpers/Constants";
 
-function Hobbies() {
+export const Hobbies = () => {
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth,
   });
   React.useEffect(() => {
-    function handleResize() {
+    const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
@@ -75,5 +75,3 @@ function Hobbies() {
     </div>
   );
 }
-
-export default Hobbies;

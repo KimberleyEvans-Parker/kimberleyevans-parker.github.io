@@ -1,7 +1,7 @@
 import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 import ImageGallery from "../components/image gallery/ImageGallery";
 
-function Cosplays() {
+export const Cosplays = () => {
   const CosplayImages = importAllPhotosFromFolder(
     require.context("../../assets/hobbies/Cosplays", false)
   );
@@ -21,5 +21,3 @@ function Cosplays() {
     </div>
   );
 }
-
-export default Cosplays;

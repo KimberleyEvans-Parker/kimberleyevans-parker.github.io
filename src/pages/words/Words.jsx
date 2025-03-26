@@ -1,22 +1,22 @@
 import React from "react";
-import Words from "../../assets/words.json";
+import WordList from "../../assets/words.json";
 
 import "./words.css";
 
-function About() {
-  const [word1, setWord1] = React.useState(getRandomWord());
-  const [word2, setWord2] = React.useState(getRandomWord());
-  const [word3, setWord3] = React.useState(getRandomWord());
+export const Words = () => {
 
-  function getRandomWord() {
-    return Words[Math.floor(Math.random() * Words.length)];
+  const getRandomWord = () => {
+    return WordList[Math.floor(Math.random() * WordList.length)];
   }
 
-  function regenerate() {
+  const regenerate = () => {
     setWord1(getRandomWord());
     setWord2(getRandomWord());
     setWord3(getRandomWord());
   }
+  const [word1, setWord1] = React.useState(getRandomWord());
+  const [word2, setWord2] = React.useState(getRandomWord());
+  const [word3, setWord3] = React.useState(getRandomWord());
 
   return (
     <div className="content-container">
@@ -29,5 +29,3 @@ function About() {
     </div>
   );
 }
-
-export default About;

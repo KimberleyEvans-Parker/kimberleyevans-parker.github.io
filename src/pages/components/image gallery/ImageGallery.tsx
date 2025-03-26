@@ -9,7 +9,7 @@ import { SMALL_SCREEN } from "../../../helpers/Constants";
 import { ImageGalleryCollumn } from "./ImageGalleryCollumn";
 import { Modal } from "../Modal";
 
-function ImageGallery(props: { images: string | any[]; }) {
+const ImageGallery = (props: { images: string | any[]; }) => {
   const [image, setImage] = useState<string | undefined>(undefined);
   const [caption, setCaption] = useState("");
 
@@ -24,7 +24,7 @@ function ImageGallery(props: { images: string | any[]; }) {
     width: window.innerWidth,
   });
   React.useEffect(() => {
-    function handleResize() {
+    const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
