@@ -1,16 +1,16 @@
-import React from "react";
+import React from "react"
 import { withRouter } from "react-router-dom";
 import { SMALL_SCREEN } from "../../helpers/Constants";
-import SubNavbarLink from "../components/SubNavbarLink";
+import { SubNavbarLink } from "../components/SubNavbarLink";
 
-function SubNavbar(props) {
+export const SubNavbar = withRouter((props) => {
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth,
   });
   React.useEffect(() => {
-    function handleResize() {
+    const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
@@ -40,6 +40,4 @@ function SubNavbar(props) {
       </div>
     </nav>
   );
-}
-
-export default withRouter(SubNavbar);
+})

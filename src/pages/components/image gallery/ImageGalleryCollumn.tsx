@@ -6,7 +6,7 @@ interface ImageGalleryCollumnProps {
   openModal: (image: any, name: string) => void;
 }
 
-export function ImageGalleryCollumn(props: ImageGalleryCollumnProps) {
+export const ImageGalleryCollumn = (props: ImageGalleryCollumnProps) => {
   return (
     <>
       {props.images.map((imageIndex) => {

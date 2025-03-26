@@ -1,7 +1,7 @@
 import ImageGallery from "../components/image gallery/ImageGallery"
 import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 
-function Photography() {
+export const Photography = () => {
   const PhotographyImages = importAllPhotosFromFolder(
     require.context("../../assets/hobbies/Photography", false)
   );
@@ -19,5 +19,3 @@ function Photography() {
     </div>
   );
 }
-
-export default Photography;
