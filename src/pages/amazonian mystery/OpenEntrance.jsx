@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import CodeInput from "./CodeInput";
+import { CodeInput } from "./CodeInput";
 import "./styles.css"
 
-function Puzzle(clue, correctAnswer, wait) {
+const Puzzle = (clue, correctAnswer, wait) => {
   const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
 
   return {
@@ -15,7 +15,7 @@ function Puzzle(clue, correctAnswer, wait) {
   }
 }
 
-export default function OpenEntrance() {
+export const OpenEntrance = () => {
   
   const puzzles = [
     Puzzle("Puzzle 1", ["240"]),
@@ -26,7 +26,7 @@ export default function OpenEntrance() {
     Puzzle("Puzzle 6", ["blade"]),
   ]
 
-  function isAnsweredCorrectly(puzzle) {
+  const isAnsweredCorrectly = (puzzle) => {
     return puzzle.answeredCorrectly
   }
 

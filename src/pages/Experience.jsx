@@ -15,7 +15,7 @@ export const Experience = () => {
     width: window.innerWidth,
   });
   React.useEffect(() => {
-    function handleResize() {
+    const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
