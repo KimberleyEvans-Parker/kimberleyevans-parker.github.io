@@ -3,7 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 import { SMALL_SCREEN } from "../../helpers/Constants";
 import "./navigation.css";
 
-function Navigation(props) {
+export const Navigation = withRouter((props) => {
   const [dropdownOpen, setdropdownOpen] = useState(false);
 
   /* Keeps track of the window dimensions.  Updates when window resizes */
@@ -12,7 +12,7 @@ function Navigation(props) {
     width: window.innerWidth,
   });
   React.useEffect(() => {
-    function handleResize() {
+    const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
@@ -128,6 +128,4 @@ function Navigation(props) {
       </div>
     </nav>
   );
-}
-
-export default withRouter(Navigation);
+})

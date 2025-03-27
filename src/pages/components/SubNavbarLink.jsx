@@ -1,6 +1,6 @@
 import { Link, withRouter } from "react-router-dom";
 
-function SubNavbarLink(props) {
+export const SubNavbarLink = withRouter((props) => {
   return (
     <Link
       className="nav-link"
@@ -19,6 +19,4 @@ function SubNavbarLink(props) {
       </li>
     </Link>
   );
-}
-
-export default withRouter(SubNavbarLink);
+})

@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import ContentItem from "./components/content item/ContentItem";
+import { ContentItem } from "./components/content item/ContentItem";
 import { Modal } from "./components/Modal";
 import { projectData } from "../data/projects";
 
-function Projects() {
+export const Projects = () => {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
 
@@ -52,5 +52,3 @@ function Projects() {
     </div>
   );
 }
-
-export default Projects;

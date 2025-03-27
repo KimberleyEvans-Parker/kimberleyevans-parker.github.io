@@ -3,7 +3,7 @@ import React from "react";
 import ImageGallery from "../components/image gallery/ImageGallery";
 import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 
-function Lego() {
+export const Lego = () => {
   const LegoImages = importAllPhotosFromFolder(
     require.context("../../assets/hobbies/Lego", false)
   );
@@ -24,5 +24,3 @@ function Lego() {
     </div>
   );
 }
-
-export default Lego;

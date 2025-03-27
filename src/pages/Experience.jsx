@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 
 import { SMALL_SCREEN } from "../helpers/Constants";
 
-function Experience() {
+export const Experience = () => {
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth,
   });
   React.useEffect(() => {
-    function handleResize() {
+    const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
@@ -80,5 +80,3 @@ function Experience() {
     </div>
   );
 }
-
-export default Experience;

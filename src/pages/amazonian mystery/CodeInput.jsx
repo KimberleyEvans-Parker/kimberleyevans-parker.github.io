@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function CodeInput(props) {
+export const CodeInput = (props) => {
     const [answer, setAnswer] = useState("")
     const [shake, setShake] = useState(false)
     const [answerCorrect, setCorrectAnswer] = useState(false)
@@ -31,7 +31,7 @@ export default function CodeInput(props) {
         setTimeout(endShake, props.wait || 1000)
     }
 
-    function endShake() {
+    const endShake = () => {
         setShake(false)
     }
 

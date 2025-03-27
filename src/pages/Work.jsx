@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import ContentItem from "./components/content item/ContentItem";
+import { ContentItem } from "./components/content item/ContentItem";
 import { Modal } from "./components/Modal";
 import { workData } from "../data/work";
 
-function Work() {
+export const Work = () => {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
 
@@ -52,5 +52,3 @@ function Work() {
     </div>
   );
 }
-
-export default Work;

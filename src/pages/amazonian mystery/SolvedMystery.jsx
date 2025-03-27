@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SolvedMystery() {
+export const SolvedMystery = () => {
   
     return (
       <div className="amazonian-background">

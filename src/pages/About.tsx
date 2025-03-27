@@ -1,16 +1,16 @@
 import React from "react";
 import ProfilePic from "../assets/profile-pic.jpg";
-import Resume from "../assets/CV-25-03.pdf";
+import Resume from "../assets/Kimberley CV-25-03.pdf";
 import { SMALL_SCREEN } from "../helpers/Constants";
 
-function About() {
+export const About = () => {
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth,
   });
   React.useEffect(() => {
-    function handleResize() {
+    const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
@@ -132,5 +132,3 @@ function About() {
     </div>
   );
 }
-
-export default About;
