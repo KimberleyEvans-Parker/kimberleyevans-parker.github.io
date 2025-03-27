@@ -10,6 +10,9 @@ const McDonaldsFarmImages = importAllPhotosFromFolder(
 const Motuihe23Images = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motuihe Island '23", false)
 )
+const QueerAImages = importAllPhotosFromFolder(
+    require.context("../assets/volunteer/Queer&A", false)
+)
 const Motuihe22Images = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motuihe Island '22", false)
 )
@@ -49,6 +52,7 @@ export const volunteerData: ContentItemType[] = [
         subheading: "University of Auckland", 
         dates: "July 2023",
         description: "I spoke at the Rainbow Engineering UoA and Women in Engineering Network Event about what the software industry was like for minorities.",
+        images: QueerAImages,
         linkedInLink: "https://www.linkedin.com/posts/aryankaran_it-was-a-pleasure-to-mc-the-rainbow-engineering-ugcPost-7057242406928224257-7NGU"
     },
     {
