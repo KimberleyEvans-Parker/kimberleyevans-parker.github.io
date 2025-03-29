@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4462fe81.css",
-    "main.js": "/static/js/main.5325a8fa.js",
+    "main.js": "/static/js/main.809a0420.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -43,12 +43,14 @@
     "static/media/Helping in the Nursery.jpg": "/static/media/Helping in the Nursery.670660be7fcef3e15501.jpg",
     "static/media/Futuristic 2.jpg": "/static/media/Futuristic 2.8b1f1e9698d4e868858b.jpg",
     "static/media/Futuristic 3.jpg": "/static/media/Futuristic 3.bcbf08647b851bfeaa77.jpg",
+    "static/media/Tardis - Bigger on the Inside.jpg": "/static/media/Tardis - Bigger on the Inside.1fd94bc64466f029e57f.jpg",
     "static/media/Planters are ready.jpg": "/static/media/Planters are ready.787937f40893a84afe9a.jpg",
     "static/media/Subscribe to machines.gif": "/static/media/Subscribe to machines.c549ccbbfb4e69b694bb.gif",
     "static/media/Futuristic 4.jpg": "/static/media/Futuristic 4.56d489065ce14ead203c.jpg",
     "static/media/Landing Page and Login.gif": "/static/media/Landing Page and Login.7fb2cc004faa7f108503.gif",
     "static/media/App.gif": "/static/media/App.5c8d2bad5b1c768a75ca.gif",
     "static/media/Add and Edit Sensor.gif": "/static/media/Add and Edit Sensor.20cb5b64017a79b1bdec.gif",
+    "static/media/Tardis dress.jpg": "/static/media/Tardis dress.9d99c6c469385aef7dca.jpg",
     "static/media/Nature’s Friends.png": "/static/media/Nature’s Friends.6565dc3f630189371cdb.png",
     "static/media/Painted Lockers.jpg": "/static/media/Painted Lockers.81b76c500f792c0e0d51.jpg",
     "static/media/Completed Lockers.jpg": "/static/media/Completed Lockers.5f3baddf9adfbf0ae3fb.jpg",
@@ -151,10 +153,10 @@
     "static/media/Bird of Paradise.JPG": "/static/media/Bird of Paradise.ea01e80e34c54077c585.JPG",
     "index.html": "/index.html",
     "main.4462fe81.css.map": "/static/css/main.4462fe81.css.map",
-    "main.5325a8fa.js.map": "/static/js/main.5325a8fa.js.map"
+    "main.809a0420.js.map": "/static/js/main.809a0420.js.map"
   },
   "entrypoints": [
     "static/css/main.4462fe81.css",
-    "static/js/main.5325a8fa.js"
+    "static/js/main.809a0420.js"
   ]
 }
