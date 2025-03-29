@@ -13,7 +13,7 @@ const CertificateImages = importAllPhotosFromFolder(
     require.context("../assets/awards/Certificates", false)
 )
 const ConnectedWorkplacesHackathonImages = importAllPhotosFromFolder(
-    require.context("../assets/awards/Xero Connected Workplaces Hackathon", false)
+    require.context("../assets/awards/Connected Workplaces Hackathon", false)
 )
 
 
