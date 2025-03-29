@@ -5,13 +5,16 @@ import { ContentItemType } from "./types";
 
 const KrayonImages = importAllPhotosFromFolder(
     require.context("../assets/awards/2020 DEVS Hackathon", false)
-  );
-  const MYOBImages = importAllPhotosFromFolder(
+)
+const MYOBImages = importAllPhotosFromFolder(
     require.context("../assets/awards/MYOB IT Challenge", false)
-  );
-  const CertificateImages = importAllPhotosFromFolder(
+)
+const CertificateImages = importAllPhotosFromFolder(
     require.context("../assets/awards/Certificates", false)
-  );
+)
+const ConnectedWorkplacesHackathonImages = importAllPhotosFromFolder(
+    require.context("../assets/awards/Xero Connected Workplaces Hackathon", false)
+)
 
 
 export const awardsData: ContentItemType[] = [
@@ -29,8 +32,8 @@ export const awardsData: ContentItemType[] = [
             TECHNOLOGIES.HTML,
             TECHNOLOGIES.CSS,
             TECHNOLOGIES.GIT,
-        ]
-
+        ],
+        images: ConnectedWorkplacesHackathonImages,
     },
     {
         heading: "Best Idea",
