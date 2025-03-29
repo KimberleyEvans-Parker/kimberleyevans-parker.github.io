@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4462fe81.css",
-    "main.js": "/static/js/main.809a0420.js",
+    "main.js": "/static/js/main.7e59ea0a.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -57,6 +57,7 @@
     "static/media/Location Page.jpg": "/static/media/Location Page.8ae642ba8655784e6013.jpg",
     "static/media/Edit Email Notifications.gif": "/static/media/Edit Email Notifications.1b93c46e560d3878f4be.gif",
     "static/media/Planting Trees 3.JPG": "/static/media/Planting Trees 3.21b2bf0d25d33a207163.JPG",
+    "static/media/Champions of Connected Workplaces Hackathon.jpg": "/static/media/Champions of Connected Workplaces Hackathon.1af987f559369f4d8b13.jpg",
     "static/media/Sensor Page.gif": "/static/media/Sensor Page.63abce2947eed6f11ee6.gif",
     "static/media/Company Challenges.gif": "/static/media/Company Challenges.dd3ed921358caa0f71e9.gif",
     "static/media/Dashboard.jpg": "/static/media/Dashboard.2be518e529d7f90a1aa5.jpg",
@@ -131,6 +132,7 @@
     "static/media/Keys.jpg": "/static/media/Keys.7b19ebaf64bfd3b3c1b5.jpg",
     "static/media/Title Screen.jpg": "/static/media/Title Screen.8fe107c94bc73084c2aa.jpg",
     "static/media/Landing Page.jpg": "/static/media/Landing Page.6ed76946f2a8f63b2245.jpg",
+    "static/media/Upcoming Events Widget.png": "/static/media/Upcoming Events Widget.0853b9d2533c75f193b3.png",
     "static/media/Home Page.jpg": "/static/media/Home Page.ef7ca12e2e5da033fce6.jpg",
     "static/media/Wasp.JPG": "/static/media/Wasp.d4658ae7a98d8218310c.JPG",
     "static/media/stone-wide.png": "/static/media/stone-wide.5cf86b9391ddb2917486.png",
@@ -140,6 +142,7 @@
     "static/media/Tiny Ants on a Yellow Tarrow.JPG": "/static/media/Tiny Ants on a Yellow Tarrow.b9e747f665e40a747f34.JPG",
     "static/media/Pink flower close-up.JPG": "/static/media/Pink flower close-up.9f6dad0f393efbadb6e4.JPG",
     "static/media/Polen on Lily.JPG": "/static/media/Polen on Lily.c087ca66c387538c5514.JPG",
+    "static/media/Expenses and Birthdays Widgets.png": "/static/media/Expenses and Birthdays Widgets.3599250b3758cc82c5f5.png",
     "static/media/Character Selection.jpg": "/static/media/Character Selection.744fcff948fa3bb423dd.jpg",
     "static/media/White Flower Close-up.JPG": "/static/media/White Flower Close-up.1a3e442ae23d1c15aeb3.JPG",
     "static/media/Abstract Close-up.JPG": "/static/media/Abstract Close-up.4786a97349652b4c410e.JPG",
@@ -147,16 +150,17 @@
     "static/media/Lavender Close-up.JPG": "/static/media/Lavender Close-up.57dce4649687ed6bbcb0.JPG",
     "static/media/Yellow Lily.JPG": "/static/media/Yellow Lily.436833fec07d68429c62.JPG",
     "static/media/White flower.JPG": "/static/media/White flower.8c0b85d6caf40615d076.JPG",
+    "static/media/Dashboard Banner.png": "/static/media/Dashboard Banner.98015f67177ceff73099.png",
     "static/media/Yellow Flower.JPG": "/static/media/Yellow Flower.a989971f5cc59c066b4b.JPG",
     "static/media/Stamen of a yellow lily.JPG": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.JPG",
     "static/media/Black and White Flower.JPG": "/static/media/Black and White Flower.718524422e3b436380b7.JPG",
     "static/media/Bird of Paradise.JPG": "/static/media/Bird of Paradise.ea01e80e34c54077c585.JPG",
     "index.html": "/index.html",
     "main.4462fe81.css.map": "/static/css/main.4462fe81.css.map",
-    "main.809a0420.js.map": "/static/js/main.809a0420.js.map"
+    "main.7e59ea0a.js.map": "/static/js/main.7e59ea0a.js.map"
   },
   "entrypoints": [
     "static/css/main.4462fe81.css",
-    "static/js/main.809a0420.js"
+    "static/js/main.7e59ea0a.js"
   ]
 }
