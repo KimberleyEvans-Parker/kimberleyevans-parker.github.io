@@ -19,6 +19,24 @@ const ConnectedWorkplacesHackathonImages = importAllPhotosFromFolder(
 
 export const awardsData: ContentItemType[] = [
     {
+        heading: "Customer Impact Award",
+        subheading: "Xero",
+        dates: "April 2024",
+        description: `I was awarded the Impact Award in the Xero wide hackathon.  
+            My team worked on adding a file upload feature to the notes tab, which was the most requested feature in Payroll for multiple years running.  
+            I implemented the UI webpage to allow users to upload, download and view files for their employees.  
+            The team also worked on ensuring the file was securely stored and only able to be accessed by those with the right permissions.  
+            This award is given to hackathon teams who have made a significant impact on the customer experience, and I am proud to have worked on this.`,
+        technologies: [
+            TECHNOLOGIES.REACT,
+            TECHNOLOGIES.REDUX,
+            TECHNOLOGIES.TS,
+            TECHNOLOGIES.HTML,
+            TECHNOLOGIES.CSS,
+            TECHNOLOGIES.GIT,
+        ]
+    },
+    {
         heading: "1st Place",
         subheading: "Xero Connected Workplaces Hackathon",
         dates: "September 2022",
