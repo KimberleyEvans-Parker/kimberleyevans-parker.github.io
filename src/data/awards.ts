@@ -15,6 +15,9 @@ const CertificateImages = importAllPhotosFromFolder(
 const ConnectedWorkplacesHackathonImages = importAllPhotosFromFolder(
     require.context("../assets/awards/Connected Workplaces Hackathon", false)
 )
+const WdccSesaImages = importAllPhotosFromFolder(
+    require.context("../assets/awards/WDCC SESA Hackathon", false)
+)
 
 
 export const awardsData: ContentItemType[] = [
@@ -72,6 +75,7 @@ export const awardsData: ContentItemType[] = [
         subheading: "WDCC and SESA Hackathon",
         dates: "August 2021",
         description: `I was awarded 3rd place at the WDCC and SESA Hackathon.`,
+        images: WdccSesaImages,
     },
     {
         heading: "2020 MYOB IT Challenge",
