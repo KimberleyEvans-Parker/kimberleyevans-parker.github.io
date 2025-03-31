@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProfilePic from "../assets/profile-pic.jpg";
 import Resume from "../assets/Kimberley CV-25-03.pdf";
 import { SMALL_SCREEN } from "../helpers/Constants";
@@ -58,17 +59,22 @@ export const About = () => {
           I was born in New Zealand and enjoy travelling. I also enjoy
           badminton, skiing, art and piano. 
         </p>
-        <h2>Education</h2>
-        <h4>High School</h4>
-        <p>
-          I passed NCEA Level 3 with excellence endorsement. I attained 72
-          excellence credits, achieving a rank score of 312/320.
+        <h2>Experience</h2>
+        <p>I have worked at several internships, done many hackathons and personal projects.  
+          My main work experience is at Xero!  
+          <Link to="/experience">  Find out more here</Link>
         </p>
+        <h2>Education</h2>
         <h4>University</h4>
         <p>
           I have completed a conjoint degree, gaining First Class Honours in
           Computer Systems Engineering and a Bachelor of Science, majoring in 
           Logic and Computation. 
+        </p>
+        <h4>High School</h4>
+        <p>
+          I passed NCEA Level 3 with excellence endorsement. I attained 72
+          excellence credits, achieving a rank score of 312/320.
         </p>
         <h2>Technologies</h2>
         <ul className="code-bullet-points">
@@ -105,7 +111,7 @@ export const About = () => {
           </li>
           <li>
             <strong>Organised</strong> – Ran a business that has been continued
-            whilst taking 5 courses a semester at university
+            during University and Work
           </li>
           <li>
             <strong>Friendly and approachable</strong> – I have worked in customer
