@@ -68,6 +68,12 @@ export const awardsData: ContentItemType[] = [
         images: CertificateImages,
     },
     {
+        heading: "3rd Place",
+        subheading: "WDCC and SESA Hackathon",
+        dates: "August 2021",
+        description: `I was awarded 3rd place at the WDCC and SESA Hackathon.`,
+    },
+    {
         heading: "2020 MYOB IT Challenge",
         subheading: "3rd place",
         dates: "September 2020",
