@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4462fe81.css",
-    "main.js": "/static/js/main.00d85247.js",
+    "main.js": "/static/js/main.3e442b20.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -37,6 +37,7 @@
     "static/media/Dog and Seal.JPG": "/static/media/Dog and Seal.dc06b2407cb4907be9ac.JPG",
     "static/media/Pokemon.JPG": "/static/media/Pokemon.2b2e37fa9ebcfaf8c853.JPG",
     "static/media/Planting Trees 2.JPG": "/static/media/Planting Trees 2.4242c4ff89ec1bca24a9.JPG",
+    "static/media/Watercolour bird.jpg": "/static/media/Watercolour bird.3bbae6b8a7a86878d53d.jpg",
     "static/media/Plushies.JPG": "/static/media/Plushies.50c6094427b58075a025.JPG",
     "static/media/Futuristic.jpg": "/static/media/Futuristic.0ddefde5a9340df50e2a.jpg",
     "static/media/Maleficent.jpg": "/static/media/Maleficent.ab4bc2fa77fadfa27183.jpg",
@@ -61,6 +62,7 @@
     "static/media/Sensor Page.gif": "/static/media/Sensor Page.63abce2947eed6f11ee6.gif",
     "static/media/Company Challenges.gif": "/static/media/Company Challenges.dd3ed921358caa0f71e9.gif",
     "static/media/Dashboard.jpg": "/static/media/Dashboard.2be518e529d7f90a1aa5.jpg",
+    "static/media/Skyrim fanart.jpg": "/static/media/Skyrim fanart.1f87e9565c121d3d8ad4.jpg",
     "static/media/AI Counsellor.gif": "/static/media/AI Counsellor.5d562cdf9e002f643390.gif",
     "static/media/Email Notifications.gif": "/static/media/Email Notifications.7ea54d9aba1ed739d664.gif",
     "static/media/Networking - I'm top left of the screen.jpg": "/static/media/Networking - I'm top left of the screen.28b3ef1a191bc06f441f.jpg",
@@ -158,10 +160,10 @@
     "static/media/Bird of Paradise.JPG": "/static/media/Bird of Paradise.ea01e80e34c54077c585.JPG",
     "index.html": "/index.html",
     "main.4462fe81.css.map": "/static/css/main.4462fe81.css.map",
-    "main.00d85247.js.map": "/static/js/main.00d85247.js.map"
+    "main.3e442b20.js.map": "/static/js/main.3e442b20.js.map"
   },
   "entrypoints": [
     "static/css/main.4462fe81.css",
-    "static/js/main.00d85247.js"
+    "static/js/main.3e442b20.js"
   ]
 }
