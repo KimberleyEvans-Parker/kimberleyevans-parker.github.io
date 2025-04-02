@@ -34,7 +34,7 @@ export const GetArtefact = () => {
 
   const getAnimationDelay = () => {
     const animationDelaySeconds = animationDelay.toString() + "s";
-    animationDelay += 0.4;
+    animationDelay += (2 - animationDelay) / 5
     return animationDelaySeconds;
   };
   

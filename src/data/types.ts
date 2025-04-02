@@ -6,6 +6,7 @@ export type ContentItemType = {
     githubLink?: string;
     linkedInLink?: string;
     seeMorelink?: string;
+    projectLink?: string;
     images?: string[];
     technologies?: string[];
 };

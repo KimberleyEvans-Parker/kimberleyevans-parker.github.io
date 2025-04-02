@@ -17,7 +17,7 @@ export const Awards = () => {
 
   const getAnimationDelay = () => {
     const animationDelaySeconds = animationDelay.toString() + "s";
-    animationDelay += 0.4;
+    animationDelay += (2 - animationDelay) / 5
     return animationDelaySeconds;
   };
 
@@ -44,6 +44,7 @@ export const Awards = () => {
           description={project.description}
           githubLink={project.githubLink}
           linkedInLink={project.linkedInLink}
+          projectLink={project.projectLink}
           images={project.images}
           technologies={project.technologies}
           openModal={openModal}

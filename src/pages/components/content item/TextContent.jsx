@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 export const TextContent = (props) => {
   return (
     <>
@@ -16,6 +19,11 @@ export const TextContent = (props) => {
           <a href={props.link}>For more information, take a look here</a>
         </p>
       )}
+      {props.projectLink && (
+        <p>
+          <Link to={`/experience/projects#${props.projectLink}`}>See the project here</Link>
+        </p>
+        )}
       <div className="technologies">
         {props.technologies && props.technologies.join(` ⸎ `)}
       </div>
