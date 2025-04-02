@@ -134,8 +134,11 @@ export const projectData: ContentItemType[] = [
     {
         heading: "Eventigate",
         subheading: "Project During KPMG Hackathon",
-        dates: "May 2020",
-        description: "A hub for people to organise and meet up at a range of events with a specified host and location.  Aims to connect organisations and volunteer groups who wish to hold events with places people.  This was done by 6 people using JavaScript, HTML and CSS. Won Best Presentation in the AUCS, KPMG hackathon.",
+        dates: "May 2019",
+        description: `A hub for people to organise and meet up at a range of events with a specified host and location.  
+            Aims to connect organisations and volunteer groups who wish to hold events with places people.  
+            This was done by 6 people using JavaScript, HTML and CSS. 
+            Won Best Presentation in the AUCS, KPMG hackathon.`,
         githubLink: "https://github.com/KimberleyEvans-Parker/Eventigate",
         images: EventigateImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS]
