@@ -46,6 +46,7 @@ export const ContentItem = (props) => {
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
       ref={domRef}
+      id={props.heading}
     >
       <div
         className="fade left"
@@ -79,6 +80,7 @@ export const ContentItem = (props) => {
                 linkedInLink={props.linkedInLink}
                 link={props.link}
                 technologies={props.technologies}
+                projectLink={props.projectLink}
               />
             </Grid>
           )}
@@ -95,6 +97,7 @@ export const ContentItem = (props) => {
                 linkedInLink={props.linkedInLink}
                 link={props.link}
                 technologies={props.technologies}
+                projectLink={props.projectLink}
               />
             </Grid>
           )}
