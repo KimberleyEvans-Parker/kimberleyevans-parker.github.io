@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.JPG";
 import Photography from "../../assets/hobbies/Photography/Flying Bee.JPG";
-import Cosplays from "../../assets/hobbies/Cosplays/Maleficent.jpg";
+import Cosplays from "../../assets/hobbies/Cosplays/Tardis - Bigger on the Inside.jpg";
 import Art from "../../assets/hobbies/Art/Skyrim fanart.jpg";
 
 import { SMALL_SCREEN } from "../../helpers/Constants";
