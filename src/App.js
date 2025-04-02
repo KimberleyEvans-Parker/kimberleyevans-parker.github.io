@@ -10,6 +10,7 @@ import { Projects } from "./pages/Projects";
 import { Awards } from "./pages/Awards";
 import { Hobbies } from "./pages/hobbies/Hobbies";
 import { Lego } from "./pages/hobbies/Lego";
+import { Art } from "./pages/hobbies/Art";
 import { Cosplays } from "./pages/hobbies/Cosplays";
 import { Photography } from "./pages/hobbies/Photography";
 import { Words } from "./pages/words/Words";
@@ -31,7 +32,7 @@ function App() {
         <Route
           path="/hobbies"
           component={() => (
-            <SubNavbar section={"hobbies"} headings={["Lego", "Photography", "Cosplays"]} />
+            <SubNavbar section={"hobbies"} headings={["Lego", "Photography", "Cosplays", "Art"]} />
           )}
         />
         <Route
@@ -55,6 +56,7 @@ function App() {
         <Route path="/hobbies" exact component={Hobbies} />
         <Route path="/hobbies/cosplays" exact component={Cosplays} />
         <Route path="/hobbies/lego" exact component={Lego} />
+        <Route path="/hobbies/art" exact component={Art} />
         <Route path="/hobbies/photography" exact component={Photography} />
         <Route path="/words" exact component={Words} />
         <Route path="/AmazonianMystery" exact component={LocateEntrance} />
