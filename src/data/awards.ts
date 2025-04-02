@@ -110,6 +110,7 @@ export const awardsData: ContentItemType[] = [
             `My team of 6 was awarded best presentation during the 2019 AUCS, KPMG Hackathon.
             Our presentation included our project; Eventigate.  
             A platform for connecting event organisers, locations and people, which you can find out more about on my projects page.`,
+        projectLink: "Eventigate",
     },
     {
         heading: "New Zealand Programming Competition",
