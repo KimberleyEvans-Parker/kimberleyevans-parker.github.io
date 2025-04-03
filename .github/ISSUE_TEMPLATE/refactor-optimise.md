@@ -7,7 +7,7 @@ assignees: KimberleyEvans-Parker
 
 ---
 
-**Is your optimisation request related to a problem? Please describe.**
+**Is your refactoring/optimisation request related to a problem? Please describe.**
 Page takes too long to load, Content takes up too much disk space, Code could be re-written in a better way
 
 **Describe the solution you'd like**
