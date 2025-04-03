@@ -1,12 +1,12 @@
 import React from "react";
 
-import Awards from "../assets/experience/Awards.jpg";
-import Projects from "../assets/experience/Projects.jpg";
-import Volunteer2 from "../assets/experience/Volunteer.jpg";
-import Work2 from "../assets/experience/Work.jpg";
+import Awards from "../../assets/experience/Awards.jpg";
+import Projects from "../../assets/experience/Projects.jpg";
+import Volunteer from "../../assets/experience/Volunteer.jpg";
+import Work from "../../assets/experience/Work.jpg";
 import { Link } from "react-router-dom";
 
-import { SMALL_SCREEN } from "../helpers/Constants";
+import { SMALL_SCREEN } from "../../helpers/Constants";
 
 export const Experience = () => {
   // Keeps track of the window dimensions.  Updates when window resizes
@@ -41,7 +41,7 @@ export const Experience = () => {
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
           <Link to="experience/Work">
-            <img src={Work2} alt="Work" className="experience-img" />
+            <img src={Work} alt="Work" className="experience-img" />
             <h3 className="centered">Work</h3>
             <div className="layer"></div>
           </Link>
@@ -51,7 +51,7 @@ export const Experience = () => {
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
           <Link to="experience/Volunteer">
-            <img src={Volunteer2} alt="Volunteer" className="experience-img" />
+            <img src={Volunteer} alt="Volunteer" className="experience-img" />
             <h3 className="centered">Volunteer</h3>
             <div className="layer"></div>
           </Link>
