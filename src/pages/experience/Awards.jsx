@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { ContentItem } from "./components/content item/ContentItem";
-import { Modal } from "./components/Modal";
-import { awardsData } from "../data/awards";
+import { ContentItem } from "../components/content item/ContentItem";
+import { Modal } from "../components/Modal";
+import { awardsData } from "../../data/awards";
 
 export const Awards = () => {
   const [image, setImage] = useState(null);

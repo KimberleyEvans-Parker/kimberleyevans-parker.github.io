@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import { ContentItem } from "./components/content item/ContentItem";
-import { Modal } from "./components/Modal";
-import { projectData } from "../data/projects";
+import { ContentItem } from "../components/content item/ContentItem";
+import { Modal } from "../components/Modal";
+import { volunteerData } from "../../data/volunteer";
 
-export const Projects = () => {
+export const Volunteer = () => {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
 
@@ -28,12 +28,13 @@ export const Projects = () => {
     return onLeft;
   };
 
+
   return (
     <div className="content-container experience-container">
-      <h1 className="fade left">Projects</h1>
+      <h1 className="fade left">Volunteer Work</h1>
       <Modal image={image} caption={caption} setImage={setImage} />
       
-      {projectData.map((project, index) => (
+      {volunteerData.map((project, index) => (
         <ContentItem
           key={index}
           imgOnLeft={imgOnLeft()}
