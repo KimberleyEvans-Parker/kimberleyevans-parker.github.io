@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4462fe81.css",
-    "main.js": "/static/js/main.9dc0041b.js",
+    "main.js": "/static/js/main.044517ab.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -101,6 +101,7 @@
     "static/media/Team Krayon.jpg": "/static/media/Team Krayon.c3bf63b4be7c52768fc9.jpg",
     "static/media/Zelda - back.JPG": "/static/media/Zelda - back.c2ccc07f6b5fef2e57d5.JPG",
     "static/media/Medieval Camp - Cooking.JPG": "/static/media/Medieval Camp - Cooking.ec186d1cecb1570e21ec.JPG",
+    "static/media/Teaching students CSS.jpg": "/static/media/Teaching students CSS.7d21d387cb185fdf407b.jpg",
     "static/media/Magic Tree - Side.JPG": "/static/media/Magic Tree - Side.c66050bf8340e4cc78b4.JPG",
     "static/media/Zelda, Link and Wolf Link.JPG": "/static/media/Zelda, Link and Wolf Link.ae78dc9acbafaf4e6db0.JPG",
     "static/media/Magic Tree.JPG": "/static/media/Magic Tree.77eb2d16b4937ef43f21.JPG",
@@ -160,10 +161,10 @@
     "static/media/Bird of Paradise.JPG": "/static/media/Bird of Paradise.ea01e80e34c54077c585.JPG",
     "index.html": "/index.html",
     "main.4462fe81.css.map": "/static/css/main.4462fe81.css.map",
-    "main.9dc0041b.js.map": "/static/js/main.9dc0041b.js.map"
+    "main.044517ab.js.map": "/static/js/main.044517ab.js.map"
   },
   "entrypoints": [
     "static/css/main.4462fe81.css",
-    "static/js/main.9dc0041b.js"
+    "static/js/main.044517ab.js"
   ]
 }
