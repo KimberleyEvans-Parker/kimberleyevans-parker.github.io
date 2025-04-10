@@ -1,6 +1,9 @@
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
+const Take2Images = importAllPhotosFromFolder(
+    require.context("../assets/volunteer/Take2", false)
+)
 const MotutapuImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motutapu Island", false)
 )
@@ -38,6 +41,7 @@ export const volunteerData: ContentItemType[] = [
             I helped them with their studies and also helped them to build their confidence in their abilities.`,
         linkedInLink: "https://www.linkedin.com/posts/take2nz_codingthefuture-industryinsights-lifeatxero-activity-7302134371996647424-amHz/",
         seeMorelink: "https://take2nz.org/",
+        images: Take2Images,
     },
     {
         heading: "Reforestation",
