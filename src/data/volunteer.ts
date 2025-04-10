@@ -29,6 +29,15 @@ const ClassRepImages = importAllPhotosFromFolder(
 
 export const volunteerData: ContentItemType[] = [
     {
+        heading: "Teacher",
+        subheading: "Take2",
+        dates: "February 2025",
+        description: `I volunteered to help with the Take2 program, which is a program that helps people in the New Zealand Justice System with a second chance.  
+            Xero is a partner of the program and I was able to help with the program by giving the students a fun course on CSS.  
+            I was a teacher for a group of students who were struggling with their studies and needed extra help. 
+            I helped them with their studies and also helped them to build their confidence in their abilities.`,
+    },
+    {
         heading: "Reforestation",
         subheading: "Motutapu Island", 
         dates: "July 2024",
