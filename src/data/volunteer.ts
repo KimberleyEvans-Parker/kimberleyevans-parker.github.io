@@ -36,6 +36,8 @@ export const volunteerData: ContentItemType[] = [
             Xero is a partner of the program and I was able to help with the program by giving the students a fun course on CSS.  
             I was a teacher for a group of students who were struggling with their studies and needed extra help. 
             I helped them with their studies and also helped them to build their confidence in their abilities.`,
+        linkedInLink: "https://www.linkedin.com/posts/take2nz_codingthefuture-industryinsights-lifeatxero-activity-7302134371996647424-amHz/",
+        seeMorelink: "https://take2nz.org/",
     },
     {
         heading: "Reforestation",
