@@ -5,28 +5,28 @@ const Take2Images = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Take2", false)
 )
 const MotutapuImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motutapu Island", false)
+    require.context("../assets/volunteer/Motutapu Island")
 )
 const McDonaldsFarmImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/McDonalds' Farm", false)
+    require.context("../assets/volunteer/McDonalds' Farm")
 )
 const Motuihe23Images = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motuihe Island '23", false)
+    require.context("../assets/volunteer/Motuihe Island '23")
 )
 const QueerAImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Queer&A", false)
+    require.context("../assets/volunteer/Queer&A")
 )
 const Motuihe22Images = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motuihe Island '22", false)
+    require.context("../assets/volunteer/Motuihe Island '22")
 )
 const Motuihe15Images = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motuihe Island '15", false)
+    require.context("../assets/volunteer/Motuihe Island '15")
 )
 const PoppyImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Poppy Making", false)
+    require.context("../assets/volunteer/Poppy Making")
 )
 const ClassRepImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Class Representative", false)
+    require.context("../assets/volunteer/Class Representative")
 )
 
 

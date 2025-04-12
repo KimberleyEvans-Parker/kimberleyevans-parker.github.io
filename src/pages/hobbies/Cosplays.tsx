@@ -3,7 +3,7 @@ import ImageGallery from "../components/image gallery/ImageGallery";
 
 export const Cosplays = () => {
   const CosplayImages = importAllPhotosFromFolder(
-    require.context("../../assets/hobbies/Cosplays", false)
+    require.context("../../assets/hobbies/Cosplays")
   );
 
   return (

@@ -3,7 +3,7 @@ import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 
 export const Photography = () => {
   const PhotographyImages = importAllPhotosFromFolder(
-    require.context("../../assets/hobbies/Photography", false)
+    require.context("../../assets/hobbies/Photography")
   );
 
   return (
