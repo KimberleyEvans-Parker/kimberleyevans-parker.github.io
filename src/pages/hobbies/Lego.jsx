@@ -5,7 +5,7 @@ import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 
 export const Lego = () => {
   const LegoImages = importAllPhotosFromFolder(
-    require.context("../../assets/hobbies/Lego", false)
+    require.context("../../assets/hobbies/Lego")
   );
 
   return (

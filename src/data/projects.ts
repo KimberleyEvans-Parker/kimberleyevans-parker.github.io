@@ -3,37 +3,37 @@ import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
 const EmpowerImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Empower", false)
+    require.context("../assets/projects/Empower")
 );
 const Industry4Images = importAllPhotosFromFolder(
-    require.context("../assets/projects/Industry 4.0", false)
+    require.context("../assets/projects/Industry 4.0")
 );
 const HeartHealerImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Heart Healer", false)
+    require.context("../assets/projects/Heart Healer")
 );
 const UpskillImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Upskill", false)
+    require.context("../assets/projects/Upskill")
 );
 const DotoImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Doto", false)
+    require.context("../assets/projects/Doto")
 );
 const FeedrImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Feedr", false)
+    require.context("../assets/projects/Feedr")
 );
 const EnvirobotImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Envirobot", false)
+    require.context("../assets/projects/Envirobot")
 );
 const RollForReactionImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Roll for Reaction", false)
+    require.context("../assets/projects/Roll for Reaction")
 );
 const FlikImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Flik", false)
+    require.context("../assets/projects/Flik")
 );
 const EventigateImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Eventigate", false)
+    require.context("../assets/projects/Eventigate")
 );
 const AshasQuestImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Asha's Quest", false)
+    require.context("../assets/projects/Asha's Quest")
 );
 
 export const projectData: ContentItemType[] = [

@@ -3,13 +3,13 @@ import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
 const SSSImages = importAllPhotosFromFolder(
-    require.context("../assets/work/School Storage Solutions", false)
+    require.context("../assets/work/School Storage Solutions")
 );
 const GraduationPlushiesImages = importAllPhotosFromFolder(
-    require.context("../assets/work/Graduation Plushies", false)
+    require.context("../assets/work/Graduation Plushies")
 );
 const OomaImages = importAllPhotosFromFolder(
-    require.context("../assets/work/No.8 Wireless", false)
+    require.context("../assets/work/No.8 Wireless")
 );
 
 
