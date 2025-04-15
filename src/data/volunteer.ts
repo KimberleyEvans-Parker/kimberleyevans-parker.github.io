@@ -81,6 +81,16 @@ export const volunteerData: ContentItemType[] = [
         seeMorelink: "https://www.nzherald.co.nz/the-vision-is-clear/news/tree-mendous-planting-success/HYYT4LVYNHB6WRCX5FNLHSNIVQ/"
     },
     {
+        heading: "Volunteer Teahcer",
+        subheading: "Tauranga STEMfest",
+        dates: "October 2024",
+        description: `I  volunteered to help with a stall at the Tauranga STEMfest.
+            This involved helping to teach children about coding and robotics, and how they can be used to solve real-world problems.  
+            The students were able to use LEGO Mindstorm robots to navigate their way around a maze, and I was able to help them with their coding skills.`,
+        linkedInLink: "https://www.linkedin.com/posts/kimberleyevans-parker_opportunity-future-programming-activity-6985687094752919552-ImAu",
+        seeMorelink: "https://www.taurangastemfestival.co.nz/thousands-return-for-stemfest-2022-in-tauranga/"
+    },
+    {
         heading: "Mentor",
         subheading: "Women in Tech",
         dates: "2022",
