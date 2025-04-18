@@ -1,19 +1,21 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+import { ContentItemType } from "../../../data/types";
 import "./sort.css";
 
 
 interface SortI {
-    ascending: boolean;
-    sortBy: string;
-    setAscending: (ascending: boolean) => void;
-    setSortBy: (sortBy: string) => void;
+    projectData: ContentItemType[];
+    setSortedProjects: (sortedProjects: ContentItemType[]) => void;
 }
 
-export const Sort = ({ascending, sortBy, setAscending, setSortBy}: SortI) => {
+export const Sort = ({projectData, setSortedProjects}: SortI) => {
+    const [ascending, setAscending] = useState(true);
+    const [sortBy, setSortBy] = useState("date");
+
     enum sortingOptions {
-        "date",
-        "name", 
-        "technology"
+        date = "date",
+        name = "name", 
+        technology = "technology",
     }
 
     const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -25,6 +27,33 @@ export const Sort = ({ascending, sortBy, setAscending, setSortBy}: SortI) => {
         const newOrder = event.target.value as "asc" | "desc"
         setAscending(newOrder === "asc")
     }
+    
+    useEffect(() => {
+        if (!projectData) return;
+        if (projectData.length === 0) return;
+        if (sortBy === "date") {
+          projectData.sort((a, b) => a.dates.localeCompare(b.dates))
+        } else if (sortBy === "name") {
+          projectData.sort((a, b) => a.heading.localeCompare(b.heading))
+        } else if (sortBy === "technologies") {
+          projectData.sort((a, b) => {
+            if (a.technologies && b.technologies) {
+                return a.technologies.length - b.technologies.length
+            } else if (a.technologies && !b.technologies) {
+                return -1
+            } else if (!a.technologies && b.technologies) {
+                return 1
+            } else {
+                return 0
+            }
+          })
+        }
+        if (!ascending) {
+          projectData.reverse();
+        }
+        setSortedProjects([...projectData]);
+      }
+    , [projectData, ascending, sortBy])
 
     return (
         <div className="sort-container">
