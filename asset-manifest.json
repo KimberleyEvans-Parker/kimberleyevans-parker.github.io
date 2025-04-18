@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4462fe81.css",
-    "main.js": "/static/js/main.3dbaad83.js",
+    "main.css": "/static/css/main.9ec16e52.css",
+    "main.js": "/static/js/main.784131a3.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -160,11 +160,11 @@
     "static/media/Black and White Flower.JPG": "/static/media/Black and White Flower.718524422e3b436380b7.JPG",
     "static/media/Bird of Paradise.JPG": "/static/media/Bird of Paradise.ea01e80e34c54077c585.JPG",
     "index.html": "/index.html",
-    "main.4462fe81.css.map": "/static/css/main.4462fe81.css.map",
-    "main.3dbaad83.js.map": "/static/js/main.3dbaad83.js.map"
+    "main.9ec16e52.css.map": "/static/css/main.9ec16e52.css.map",
+    "main.784131a3.js.map": "/static/js/main.784131a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.4462fe81.css",
-    "static/js/main.3dbaad83.js"
+    "static/css/main.9ec16e52.css",
+    "static/js/main.784131a3.js"
   ]
 }
