@@ -53,10 +53,10 @@ export const Sort = ({projectData, setSortedProjects}: SortI) => {
         if (!ascending) {
           projectData.reverse();
         }
-        
+
         setSortedProjects([...projectData]);
       }
-    , [projectData, ascending, sortBy])
+    , [projectData, ascending, sortBy, setSortedProjects])
 
     return (
         <div className="sort-container">
