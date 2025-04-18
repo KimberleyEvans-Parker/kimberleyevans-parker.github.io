@@ -29,28 +29,31 @@ export const Sort = ({projectData, setSortedProjects}: SortI) => {
     }
     
     useEffect(() => {
-        if (!projectData) return;
-        if (projectData.length === 0) return;
-        if (sortBy === "date") {
+        if (!projectData) return
+        if (projectData.length === 0) return
+
+        if (sortBy ===sortingOptions.date) {
           projectData.sort((a, b) => a.dates.localeCompare(b.dates))
-        } else if (sortBy === "name") {
+        } else if (sortBy === sortingOptions.name) {
           projectData.sort((a, b) => a.heading.localeCompare(b.heading))
-        } else if (sortBy === "technologies") {
+        } else if (sortBy === sortingOptions.technology) {
           projectData.sort((a, b) => {
             if (a.technologies && b.technologies) {
-                return a.technologies.length - b.technologies.length
+                return b.technologies.length - a.technologies.length
             } else if (a.technologies && !b.technologies) {
-                return -1
-            } else if (!a.technologies && b.technologies) {
                 return 1
+            } else if (!a.technologies && b.technologies) {
+                return -1
             } else {
                 return 0
             }
           })
         }
+
         if (!ascending) {
           projectData.reverse();
         }
+        
         setSortedProjects([...projectData]);
       }
     , [projectData, ascending, sortBy])
