@@ -1,4 +1,6 @@
-import React from "react";
+import React from "react"
+import "./sort.css";
+
 
 interface SortI {
     ascending: boolean;
@@ -25,8 +27,8 @@ export const Sort = ({ascending, sortBy, setAscending, setSortBy}: SortI) => {
     }
 
     return (
-        <div>
-            <div>
+        <div className="sort-container">
+            <div className="sort-item">
                 <label htmlFor="sort">Sort By</label>
                 <select id="sort" value={sortBy} onChange={handleSortChange}>
                     {Object.values(sortingOptions).map((option) => (
@@ -35,7 +37,9 @@ export const Sort = ({ascending, sortBy, setAscending, setSortBy}: SortI) => {
                         </option>
                     ))}
                 </select>
+            </div>
 
+            <div className="sort-item">
                 <label htmlFor="order">Order</label>
                 <select id="order" value={ascending ? "asc" : "desc"} onChange={handleOrderChange}>
                     <option value="asc">Ascending</option>
