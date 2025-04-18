@@ -56,7 +56,7 @@ export const Sort = ({projectData, setSortedProjects}: SortI) => {
 
         setSortedProjects([...projectData]);
       }
-    , [projectData, ascending, sortBy, setSortedProjects])
+    , [projectData, ascending, sortBy, setSortedProjects, sortingOptions.date, sortingOptions.name, sortingOptions.technology])
 
     return (
         <div className="sort-container">
