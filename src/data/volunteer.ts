@@ -1,33 +1,48 @@
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
+const Take2Images = importAllPhotosFromFolder(
+    require.context("../assets/volunteer/Take2", false)
+)
 const MotutapuImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motutapu Island", false)
+    require.context("../assets/volunteer/Motutapu Island")
 )
 const McDonaldsFarmImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/McDonalds' Farm", false)
+    require.context("../assets/volunteer/McDonalds' Farm")
 )
 const Motuihe23Images = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motuihe Island '23", false)
+    require.context("../assets/volunteer/Motuihe Island '23")
 )
 const QueerAImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Queer&A", false)
+    require.context("../assets/volunteer/Queer&A")
 )
 const Motuihe22Images = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motuihe Island '22", false)
+    require.context("../assets/volunteer/Motuihe Island '22")
 )
 const Motuihe15Images = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Motuihe Island '15", false)
+    require.context("../assets/volunteer/Motuihe Island '15")
 )
 const PoppyImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Poppy Making", false)
+    require.context("../assets/volunteer/Poppy Making")
 )
 const ClassRepImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Class Representative", false)
+    require.context("../assets/volunteer/Class Representative")
 )
 
 
 export const volunteerData: ContentItemType[] = [
+    {
+        heading: "Teacher",
+        subheading: "Take2",
+        dates: "February 2025",
+        description: `I volunteered to help with the Take2 program, which is a program that helps people in the New Zealand Justice System with a second chance.  
+            Xero is a partner of the program and I was able to help with the program by giving the students a fun course on CSS.  
+            I was a teacher for a group of students who were struggling with their studies and needed extra help. 
+            I helped them with their studies and also helped them to build their confidence in their abilities.`,
+        linkedInLink: "https://www.linkedin.com/posts/take2nz_codingthefuture-industryinsights-lifeatxero-activity-7302134371996647424-amHz/",
+        seeMorelink: "https://take2nz.org/",
+        images: Take2Images,
+    },
     {
         heading: "Reforestation",
         subheading: "Motutapu Island", 
@@ -64,6 +79,16 @@ export const volunteerData: ContentItemType[] = [
             The trees are an important part of the river ecosystem and the work we did will help to ensure that the river remains healthy.`,
         images: McDonaldsFarmImages,
         seeMorelink: "https://www.nzherald.co.nz/the-vision-is-clear/news/tree-mendous-planting-success/HYYT4LVYNHB6WRCX5FNLHSNIVQ/"
+    },
+    {
+        heading: "Volunteer Teahcer",
+        subheading: "Tauranga STEMfest",
+        dates: "October 2024",
+        description: `I  volunteered to help with a stall at the Tauranga STEMfest.
+            This involved helping to teach children about coding and robotics, and how they can be used to solve real-world problems.  
+            The students were able to use LEGO Mindstorm robots to navigate their way around a maze, and I was able to help them with their coding skills.`,
+        linkedInLink: "https://www.linkedin.com/posts/kimberleyevans-parker_opportunity-future-programming-activity-6985687094752919552-ImAu",
+        seeMorelink: "https://www.taurangastemfestival.co.nz/thousands-return-for-stemfest-2022-in-tauranga/"
     },
     {
         heading: "Mentor",
