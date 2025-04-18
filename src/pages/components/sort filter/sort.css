@@ -1,0 +1,42 @@
+.sort-container {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+    .sort-container {
+        width: 100%;
+        flex-direction: column;
+    }
+  }
+
+.sort-container .sort-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sort-container .sort-item label {
+    padding-right: 6px;
+    line-height: 12px;
+}
+
+.sort-container .sort-item select {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 100%;
+    padding: 2px;
+    margin-top: 1px;
+}
+
+.sort-container .sort-item select:focus {
+    border-color: #aa7ed3;
+    outline: none;
+}
+
+.sort-container .sort-item select option {
+    padding: 1px;
+    font-size: 14px;
+}
