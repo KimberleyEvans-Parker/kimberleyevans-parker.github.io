@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 
 
 export const TextContent = (props) => {
+  console.log(props.teamSize)
   return (
     <>
       <h3>{props.dates}</h3>
       <p>{props.description}</p>
+      {props.teamSize && (<p>Team size: {props.teamSize}</p>)}
       {props.linkedInLink && (
           <a href={props.linkedInLink} className={"popout-link"}>
             <i className="fa fa-linkedin popout" aria-hidden="true" />

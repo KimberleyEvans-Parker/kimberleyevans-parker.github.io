@@ -77,6 +77,7 @@ export const ContentItem = (props) => {
               <TextContent
                 dates={props.dates}
                 description={props.description}
+                teamSize={props.teamSize}
                 linkedInLink={props.linkedInLink}
                 link={props.link}
                 technologies={props.technologies}
@@ -94,6 +95,7 @@ export const ContentItem = (props) => {
               <TextContent
                 dates={props.dates}
                 description={props.description}
+                teamSize={props.teamSize}
                 linkedInLink={props.linkedInLink}
                 link={props.link}
                 technologies={props.technologies}

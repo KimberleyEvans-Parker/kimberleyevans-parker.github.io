@@ -42,6 +42,7 @@ export const Volunteer = () => {
           subheading={project.subheading}
           dates={project.dates}
           description={project.description}
+          teamSize={project.teamSize}
           githubLink={project.githubLink}
           linkedInLink={project.linkedInLink}
           projectLink={project.projectLink}
