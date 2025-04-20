@@ -3,6 +3,7 @@ export type ContentItemType = {
     subheading?: string;
     dates: string;
     description: string;
+    teamSize?: number;
     githubLink?: string;
     linkedInLink?: string;
     seeMorelink?: string;
