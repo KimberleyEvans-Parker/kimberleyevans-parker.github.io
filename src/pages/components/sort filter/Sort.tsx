@@ -13,9 +13,10 @@ export const Sort = ({projectData, setSortedProjects}: SortI) => {
     const [sortBy, setSortBy] = useState("date");
 
     enum sortingOptions {
-        date = "date",
-        name = "name", 
-        technology = "technology",
+        date = "Date",
+        name = "Name", 
+        teamSize = "Team Size",
+        technology = "Technology",
     }
 
     const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -36,6 +37,18 @@ export const Sort = ({projectData, setSortedProjects}: SortI) => {
           projectData.sort((a, b) => a.dates.localeCompare(b.dates))
         } else if (sortBy === sortingOptions.name) {
           projectData.sort((a, b) => a.heading.localeCompare(b.heading))
+        } else if (sortBy === sortingOptions.teamSize) {
+          projectData.sort((a, b) => {
+            if (a.teamSize && b.teamSize) {
+                return b.teamSize - a.teamSize
+            } else if (a.teamSize && !b.teamSize) {
+                return 1
+            } else if (!a.teamSize && b.teamSize) {
+                return -1
+            } else {
+                return 0
+            }
+          })
         } else if (sortBy === sortingOptions.technology) {
           projectData.sort((a, b) => {
             if (a.technologies && b.technologies) {
