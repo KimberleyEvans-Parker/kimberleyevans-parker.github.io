@@ -13,10 +13,10 @@ jobs:
       - name: checkout branch
         uses: actions/checkout@v3
 
-      - name: use Node.js 16.19.0
+      - name: use Node.js 20
         uses: actions/setup-node@v2
         with:
-          node-version: '16.19.0'
+          node-version: '20'
 
       - name: Install dependencies and build
         run: |

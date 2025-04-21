@@ -14,10 +14,10 @@ jobs:
       - name: checkout master
         uses: actions/checkout@v3
 
-      - name: use node.js 16.19.0
+      - name: use node.js 20
         uses: actions/setup-node@v2
         with:
-          node-version: '16.19.0'
+          node-version: '20'
 
       - name: install and build
         run: |
