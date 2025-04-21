@@ -9,7 +9,23 @@ import {
 import { ImageContent } from "./ImageContent";
 import { TextContent } from "./TextContent";
 
-export const ContentItem = (props) => {
+export const ContentItem = (props: { 
+  heading: string; 
+  animationDelay: any; 
+  githubLink?: string; 
+  subheading?: string; 
+  imgOnLeft: boolean; 
+  dates: string; 
+  description: string; 
+  teamSize?: number; 
+  linkedInLink?: string; 
+  link?: string; 
+  technologies?: any[]; 
+  projectLink?: string; 
+  seeMoreLink?: string;
+  images?: string[]; 
+  openModal: (image: string, caption: string) => void; 
+}) => {
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -24,7 +40,7 @@ export const ContentItem = (props) => {
     }
 
     window.addEventListener("resize", handleResize);
-    return (_) => {
+    return () => {
       window.removeEventListener("resize", handleResize);
     };
   });
@@ -32,14 +48,18 @@ export const ContentItem = (props) => {
   // for loading a section when it scrolls into view
 
   const [isVisible, setVisible] = React.useState(true);
-  const domRef = React.useRef();
+  const domRef = React.useRef(null);
   React.useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
-    observer.observe(domRef.current);
-    const current = domRef.current;
-    return () => observer.unobserve(current);
+    if (domRef.current) {
+      observer.observe(domRef.current);
+      const current = domRef.current;
+      return () => {
+        if (current) observer.unobserve(current);
+      };
+    }
   }, []);
 
   return (
@@ -54,8 +74,7 @@ export const ContentItem = (props) => {
           WebkitAnimationDelay: props.animationDelay,
           MozAnimationDelay: props.animationDelay,
           OAnimationDelay: props.animationDelay,
-          MsAnimationDelay: props.animationDelay,
-          AnimationDelay: props.animationDelay,
+          animationDelay: props.animationDelay,
         }}
       >
         {props.githubLink && dimensions.width >= SMALL_SCREEN ? (
