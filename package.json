@@ -45,7 +45,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "^7.16.0",
     "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
+    "@types/react-dom": "^19.1.2",
     "@types/react-router-dom": "^5.3.3",
     "@types/webpack-env": "^1.18.8"
   }
