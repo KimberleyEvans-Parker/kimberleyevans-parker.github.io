@@ -41,7 +41,7 @@ export const Hobbies = () => {
         <div
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
-          <Link to="hobbies/lego">
+          <Link to="lego">
             <img src={Lego} alt="Lego" className="experience-img" />
             <h3 className="centered">Lego</h3>
             <div className="layer"></div>
@@ -50,7 +50,7 @@ export const Hobbies = () => {
         <div
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
-          <Link to="hobbies/photography">
+          <Link to="photography">
             <img
               src={Photography}
               alt="Photography"
@@ -66,7 +66,7 @@ export const Hobbies = () => {
         <div
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
-          <Link to="hobbies/cosplays">
+          <Link to="cosplays">
             <img src={Cosplays} alt="Cosplays" className="experience-img" />
             <h3 className="centered">Cosplays</h3>
             <div className="layer"></div>
@@ -76,7 +76,7 @@ export const Hobbies = () => {
         <div
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
-          <Link to="hobbies/art">
+          <Link to="art">
             <img src={Art} alt="Art" className="experience-img" />
             <h3 className="centered">Art</h3>
             <div className="layer"></div>

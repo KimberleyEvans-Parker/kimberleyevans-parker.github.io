@@ -34,9 +34,9 @@ export const Volunteer = () => {
       <h1 className="fade left">Volunteer Work</h1>
       <Modal image={image} caption={caption} setImage={setImage} />
       
-      {volunteerData.map((project, index) => (
+      {volunteerData.map((project) => (
         <ContentItem
-          key={index}
+          key={project.heading}
           imgOnLeft={imgOnLeft()}
           heading={project.heading}
           subheading={project.subheading}

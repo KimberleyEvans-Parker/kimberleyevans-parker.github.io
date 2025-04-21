@@ -33,9 +33,9 @@ export const Work = () => {
       <h1 className="fade left">Work Experience</h1>
       <Modal image={image} caption={caption} setImage={setImage} />
       
-      {workData.map((project, index) => (
+      {workData.map((project) => (
         <ContentItem
-          key={index}
+          key={project.heading}
           imgOnLeft={imgOnLeft()}
           heading={project.heading}
           subheading={project.subheading}
