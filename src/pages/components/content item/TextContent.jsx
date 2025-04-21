@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 
 export const TextContent = (props) => {
-  console.log(props.teamSize)
   return (
     <>
       <h3>{props.dates}</h3>
