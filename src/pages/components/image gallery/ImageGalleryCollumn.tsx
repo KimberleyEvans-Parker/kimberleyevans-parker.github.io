@@ -14,7 +14,7 @@ export const ImageGalleryCollumn = (props: ImageGalleryCollumnProps) => {
         const animationDelay = imageIndex[1] * 0.15 + "s";
         const path = image.split("/");
         const name = path[path.length - 1].split(".")[0];
-        console.log("column", image, imageIndex, name);
+
         return (
           <button
             onClick={() => props.openModal(image, name)}
