@@ -89,7 +89,9 @@ export const awardsData: ContentItemType[] = [
         Six successful teams progressed to the second round, where we were able to get feedback, before pitching our idea live to the judges.
         My team - Whiz Craft - was awarded 3rd place overall, or 1st in New Zealand.`,
         images: MYOBImages,
-        seeMorelink: "https://www.auckland.ac.nz/en/news/2020/10/09/heart-healer-app-a-winner.html",
+        links: {
+            seeMore: "https://www.auckland.ac.nz/en/news/2020/10/09/heart-healer-app-a-winner.html",
+        }
     },
     {
         heading: "2020 DEVS Hackathon",
@@ -110,7 +112,9 @@ export const awardsData: ContentItemType[] = [
             `My team of 6 was awarded best presentation during the 2019 AUCS, KPMG Hackathon.
             Our presentation included our project; Eventigate.  
             A platform for connecting event organisers, locations and people, which you can find out more about on my projects page.`,
-        projectLink: "Eventigate",
+        links: {
+            project: "Eventigate",
+        }
     },
     {
         heading: "New Zealand Programming Competition",

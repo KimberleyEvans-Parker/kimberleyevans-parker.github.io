@@ -1,13 +1,17 @@
+export type LinksType = {
+    github?: string;
+    linkedIn?: string;
+    seeMore?: string;
+    project?: string;
+}
+
 export type ContentItemType = {
     heading: string;
     subheading?: string;
     dates: string;
     description: string;
     teamSize?: number;
-    githubLink?: string;
-    linkedInLink?: string;
-    seeMorelink?: string;
-    projectLink?: string;
+    links?: LinksType;
     images?: string[];
     technologies?: string[];
 };
