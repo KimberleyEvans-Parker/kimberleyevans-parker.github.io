@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 export const TextContent = (
   props: {
-    dates: string | null | undefined;
-    description: string | null | undefined;
-    teamSize: number | undefined;
-    linkedInLink: string | undefined;
-    link: string | undefined;
-    projectLink: any;
-    technologies: any[];
+    dates: string;
+    description: string;
+    teamSize?: number;
+    linkedInLink?: string;
+    link?: string;
+    projectLink?: string;
+    technologies?: any[];
   }
 ) => {
   return (
