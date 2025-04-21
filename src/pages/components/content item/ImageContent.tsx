@@ -1,7 +1,13 @@
 import { Carousel } from "react-responsive-carousel";
 import { CAROUSEL_TRANSITION_TIME, CAROUSEL_INTERVAL } from "../../../helpers/Constants";
 
-export const ImageContent = (props) => {
+export const ImageContent = (
+  props: { 
+    images: string[]; 
+    heading: string; 
+    openModal: (image: string, caption: string) => void; 
+  }
+) => {
   return (
     <Carousel
       autoPlay
@@ -13,7 +19,7 @@ export const ImageContent = (props) => {
       infiniteLoop={true}
       className="shadow"
     >
-      {props.images.map((image) => {
+      {props.images.map((image: string) => {
         const path = image.split("/");
         const name = path[path.length - 1].split(".")[0];
         const caption = props.heading ? props.heading + " - " + name : name;

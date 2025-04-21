@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
 
 
 export const TextContent = (
