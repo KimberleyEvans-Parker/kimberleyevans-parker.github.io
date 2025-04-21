@@ -43,7 +43,7 @@ export const projectData: ContentItemType[] = [
         dates: "July 2022",
         description: "I was invited to the We the Women Hackfest, run by Girlboss. During this, my team of five focused on ways we could help women dependent on others for a living.  We created Empower.  A network of support for women to provide resources and people so that they can regain their independence.  ",
         teamSize: 5,
-        githubLink: "https://github.com/Eva-Sorensen/empower",
+        links: { github: "https://github.com/Eva-Sorensen/empower" },
         images: EmpowerImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.JS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
@@ -53,7 +53,7 @@ export const projectData: ContentItemType[] = [
         dates: "August 2020 - November 2020",
         description: "A cross-platform application made by 8 people following agile practices.  The application was able to take data from different machines and sensors and display them to the technicians.  Users would be able to view this data in real-time, and see historical data, and receive notifications when a machine reported unhealthy readings.  The project which we started for our Product Owner has received funding to continue its production.  ",
         teamSize: 8,
-        githubLink: "https://github.com/KimberleyEvans-Parker/industry-4",
+        links: { github: "https://github.com/KimberleyEvans-Parker/industry-4" },
         images: Industry4Images,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.JS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
@@ -71,7 +71,7 @@ export const projectData: ContentItemType[] = [
         dates: "July 2020",
         description: "Upskill was made during the DEVS 2020 hackathon, in only 48 hours.  It is a a platform for live learning and teaching, where you connect and network with like-minded locals.  The platform also serves as a place for companies to post challenges and recruit bright minds.  Upskill aims to help those impacted by Covid 19, by allowing them to upskill and find new job opportunities.  ",
         teamSize: 6,
-        githubLink: "https://github.com/Pyxxil/upskill",
+        links: { github: "https://github.com/Pyxxil/upskill" },
         images: UpskillImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.TS, TECHNOLOGIES.REACT]
     },
@@ -81,7 +81,7 @@ export const projectData: ContentItemType[] = [
         dates: "March 2020 – June 2020",
         description: "Roll for Reaction is a turn-based dungeon crawler RPG written with React, Redux, JavaScript, HTML and CSS. It is an open-source fork of react-rpg and builds upon and enhances the base game. This is done by modifying and adding elements to lightly emulate the popular tabletop role-playing game Dungeons and Dragons: 5th Edition.",
         teamSize: 4,
-        githubLink: "https://github.com/Matteas-Eden/roll-for-reaction",
+        links: { github: "https://github.com/Matteas-Eden/roll-for-reaction" },
         images: RollForReactionImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.JS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
@@ -91,7 +91,7 @@ export const projectData: ContentItemType[] = [
         dates: "March 2020 - May 2020",
         description: "An open-source software project for an online smart scheduling calendar and to-do app. It has the basic functionality of any calendar app and can be used to make to-do lists. It has smart scheduling capabilities, meaning the app will allocate inputted tasks in a suitable time in the user’s calendar. Doto uses Google auth to allow people to sign in. The development of Doto is done using the M.E.R.N (MongoDB, Express, React, Node) tech stack.",
         teamSize: 20,
-        githubLink: "https://github.com/se701g2/Doto",
+        links: { github: "https://github.com/se701g2/Doto" },
         images: DotoImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.JS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
@@ -101,7 +101,7 @@ export const projectData: ContentItemType[] = [
         dates: "March 2020",
         description: "A webapp for aggregating media feeds from various services into a single, uniform display for user convenience. We are using the React framework to manage the front-end UI and using a Java server utilising the Spring framework for the back-end. The back-end will call the API for the relevant media service and the front-end will visualise this data.",
         teamSize: 20,
-        githubLink: "https://github.com/softeng-701-group-5/softeng-701-assignment-1",
+        links: { github: "https://github.com/softeng-701-group-5/softeng-701-assignment-1" },
         images: FeedrImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.JS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
@@ -111,7 +111,7 @@ export const projectData: ContentItemType[] = [
         dates: "March 2020 - November 2020",
         description: "My partner and I did our part 4 research topic into the Automatic transcription of piano music.  During this project, research was conducted into Fourier Transform, STFT, Constant-Q, Onset/Beat Tracking, Machine Learning: Artificial, Convolutional and Recurrent Neural Networks.  Our neural network was an extension of the wav2mid project Jon Sleep created and converted wav files into the more computer-readible midi files.  ",
         teamSize: 2,
-        githubLink: "https://github.com/KimberleyEvans-Parker/wav2mid",
+        links: { github: "https://github.com/KimberleyEvans-Parker/wav2mid" },
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.PYTHON, TECHNOLOGIES.AI]
     },
     {
@@ -120,7 +120,7 @@ export const projectData: ContentItemType[] = [
         dates: "Febraury 2020",
         description: "Created for the Global Game Jam, by a team of 3.  This is set in the near future, where a robot aims to heal the planet by planting trees, putting out fires and repairing structures.  ",
         teamSize: 3,
-        githubLink: "https://github.com/Pyxxil/GameJam",
+        links: { github: "https://github.com/Pyxxil/GameJam" },
         images: EnvirobotImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.GDSCRIPT]
     },
@@ -130,7 +130,7 @@ export const projectData: ContentItemType[] = [
         dates: "July 2019 - Oct 2019",
         description: "A line-following robot that utilises a custom-made PCB with light sensors, a radio frequency module, ADC and PSoC.  Various shortest path algorithms were created for the robot to plan its traversal across the map, which were written in C.",
         teamSize: 4,
-        githubLink: "https://github.com/Matteas-Eden/flik",
+        links: { github: "https://github.com/Matteas-Eden/flik" },
         images: FlikImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.C]
     },
@@ -151,7 +151,7 @@ export const projectData: ContentItemType[] = [
             This was done by 6 people using JavaScript, HTML and CSS. 
             Won Best Presentation in the AUCS, KPMG hackathon.`,
         teamSize: 6,
-        githubLink: "https://github.com/KimberleyEvans-Parker/Eventigate",
+        links: { github: "https://github.com/KimberleyEvans-Parker/Eventigate" },
         images: EventigateImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS]
     },
@@ -161,7 +161,7 @@ export const projectData: ContentItemType[] = [
         dates: "May 2020",
         description: "This is the game Mancala written in Java.  It was designed to promote good programming qualities such as modularity, modifiability and extendability.",
         teamSize: 1,
-        githubLink: "https://github.com/KimberleyEvans-Parker/kalah",
+        links: { github: "https://github.com/KimberleyEvans-Parker/kalah" },
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.JAVA]
     }, 
     {
@@ -170,7 +170,7 @@ export const projectData: ContentItemType[] = [
         dates: "July 2019",
         description: "This app was developed during the 2019, 48-hour Devs Hackathon by a group of 6.  The app listened in to a call and warned you if it thought the caller was trying to scam you.  Sammr makes use of speech-to-text tools and an algorithm to decide the probability of the call being a scam.",
         teamSize: 6,
-        githubLink: "https://github.com/Pyxxil/Scammr",
+        links: { github: "https://github.com/Pyxxil/Scammr" },
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.JAVA]
     },
     {
@@ -187,7 +187,7 @@ export const projectData: ContentItemType[] = [
         dates: "March 2019 - May 2019",
         description: "Asha's Quest is an action-adventure game in the vein of Zelda, created using Java, primarily Java Swing.  This was a 2-person project, with the game created from scratch.  Details of the project are available on the GitHub repository it was cloned to, shown through a GitHub Wiki.  Proficiency in Java 8 (particularly Java Swing and Java AWT) and Git developed.",
         teamSize: 2,
-        githubLink: "https://github.com/KimberleyEvans-Parker/AshasQuest",
+        links: { github: "https://github.com/KimberleyEvans-Parker/AshasQuest" },
         images: AshasQuestImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.JAVA]
     },

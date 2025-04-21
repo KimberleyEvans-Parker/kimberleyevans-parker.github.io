@@ -39,8 +39,10 @@ export const volunteerData: ContentItemType[] = [
             Xero is a partner of the program and I was able to help with the program by giving the students a fun course on CSS.  
             I was a teacher for a group of students who were struggling with their studies and needed extra help. 
             I helped them with their studies and also helped them to build their confidence in their abilities.`,
-        linkedInLink: "https://www.linkedin.com/posts/take2nz_codingthefuture-industryinsights-lifeatxero-activity-7302134371996647424-amHz/",
-        seeMorelink: "https://take2nz.org/",
+        links: {
+            linkedIn: "https://www.linkedin.com/posts/take2nz_codingthefuture-industryinsights-lifeatxero-activity-7302134371996647424-amHz/",
+            seeMore: "https://take2nz.org/",
+        },
         images: Take2Images,
     },
     {
@@ -50,8 +52,10 @@ export const volunteerData: ContentItemType[] = [
         description: `I volunteered to help with the reforestation and conservation on Motutapu Island.  
             This involved planting native trees and shrubs to help restore the island to its natural state.
             The island is a predator-free sanctuary for native birds and lizards, and the work we did will help to ensure that it remains that way.`,
+        links: {
+            seeMore: "https://www.motutapu.org.nz/",
+        },
         images: MotutapuImages,
-        seeMorelink: "https://www.motutapu.org.nz/"
     },
     {
         heading: "Growing Sapplings",
@@ -67,8 +71,10 @@ export const volunteerData: ContentItemType[] = [
         subheading: "University of Auckland", 
         dates: "July 2023",
         description: "I spoke at the Rainbow Engineering UoA and Women in Engineering Network Event about what the software industry was like for minorities.",
+        links: {
+            linkedIn: "https://www.linkedin.com/posts/aryankaran_it-was-a-pleasure-to-mc-the-rainbow-engineering-ugcPost-7057242406928224257-7NGU",
+        },
         images: QueerAImages,
-        linkedInLink: "https://www.linkedin.com/posts/aryankaran_it-was-a-pleasure-to-mc-the-rainbow-engineering-ugcPost-7057242406928224257-7NGU"
     },
     {
         heading: "Conservation",
@@ -77,8 +83,10 @@ export const volunteerData: ContentItemType[] = [
         description: `I volunteered to help with the conservation of the McDonalds' Farm in Auckland.  
             This involved removing weeds that were choking the native plants to give the natives the best chance of survival.
             The trees are an important part of the river ecosystem and the work we did will help to ensure that the river remains healthy.`,
+        links: {
+            seeMore: "https://www.nzherald.co.nz/the-vision-is-clear/news/tree-mendous-planting-success/HYYT4LVYNHB6WRCX5FNLHSNIVQ/",
+        },
         images: McDonaldsFarmImages,
-        seeMorelink: "https://www.nzherald.co.nz/the-vision-is-clear/news/tree-mendous-planting-success/HYYT4LVYNHB6WRCX5FNLHSNIVQ/"
     },
     {
         heading: "Volunteer Teahcer",
@@ -87,15 +95,19 @@ export const volunteerData: ContentItemType[] = [
         description: `I  volunteered to help with a stall at the Tauranga STEMfest.
             This involved helping to teach children about coding and robotics, and how they can be used to solve real-world problems.  
             The students were able to use LEGO Mindstorm robots to navigate their way around a maze, and I was able to help them with their coding skills.`,
-        linkedInLink: "https://www.linkedin.com/posts/kimberleyevans-parker_opportunity-future-programming-activity-6985687094752919552-ImAu",
-        seeMorelink: "https://www.taurangastemfestival.co.nz/thousands-return-for-stemfest-2022-in-tauranga/"
+        links: {
+            linkedIn: "https://www.linkedin.com/posts/kimberleyevans-parker_opportunity-future-programming-activity-6985687094752919552-ImAu",
+            seeMore: "https://www.taurangastemfestival.co.nz/thousands-return-for-stemfest-2022-in-tauranga/",
+        },
     },
     {
         heading: "Mentor",
         subheading: "Women in Tech",
         dates: "2022",
         description: "I mentored a student taking a conjoint at the university of Auckland into the STEM industry through the Women in Tech program.",
-        seeMorelink: "https://wen.auckland.ac.nz/"
+        links: {
+            seeMore: "https://wen.auckland.ac.nz/",
+        },
     },
     {
         heading: "Conservation",

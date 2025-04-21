@@ -41,10 +41,10 @@ export const Work = () => {
           subheading={project.subheading}
           dates={project.dates}
           description={project.description}
-          teamSize={project.teamSize}
-          githubLink={project.githubLink}
-          linkedInLink={project.linkedInLink}
-          projectLink={project.projectLink}
+          githubLink={project.links?.github}
+          linkedInLink={project.links?.linkedIn}
+          projectLink={project.links?.project}
+          seeMoreLink={project.links?.seeMore}
           images={project.images}
           technologies={project.technologies}
           openModal={openModal}
