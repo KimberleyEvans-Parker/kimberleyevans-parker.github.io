@@ -34,9 +34,9 @@ export const Awards = () => {
       <h1 className="fade left">Awards and Achievments</h1>
       <Modal image={image} caption={caption} setImage={setImage} />
 
-      {awardsData.map((project, index) => (
+      {awardsData.map((project) => (
         <ContentItem
-          key={index}
+          key={project.heading}
           imgOnLeft={imgOnLeft()}
           heading={project.heading}
           subheading={project.subheading}

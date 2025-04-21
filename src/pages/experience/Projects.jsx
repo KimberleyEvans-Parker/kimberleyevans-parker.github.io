@@ -37,9 +37,9 @@ export const Projects = () => {
 
       <Sort projectData={projectData} setSortedProjects={setSortedProjects} />
 
-      {sortedProjects.map((project, index) => (
+      {sortedProjects.map((project) => (
         <ContentItem
-          key={index}
+          key={project.heading}
           imgOnLeft={imgOnLeft()}
           heading={project.heading}
           subheading={project.subheading}

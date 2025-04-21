@@ -40,7 +40,7 @@ export const Experience = () => {
         <div
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
-          <Link to="experience/Work">
+          <Link to="Work">
             <img src={Work} alt="Work" className="experience-img" />
             <h3 className="centered">Work</h3>
             <div className="layer"></div>
@@ -50,7 +50,7 @@ export const Experience = () => {
         <div
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
-          <Link to="experience/Volunteer">
+          <Link to="Volunteer">
             <img src={Volunteer} alt="Volunteer" className="experience-img" />
             <h3 className="centered">Volunteer</h3>
             <div className="layer"></div>
@@ -60,7 +60,7 @@ export const Experience = () => {
         <div
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
-          <Link to="experience/Projects">
+          <Link to="Projects">
             <img src={Projects} alt="Projects" className="experience-img" />
             <h3 className="centered">Projects</h3>
             <div className="layer"></div>
@@ -70,7 +70,7 @@ export const Experience = () => {
         <div
           className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
         >
-          <Link to="experience/Awards">
+          <Link to="Awards">
             <img src={Awards} alt="Awards" className="experience-img" />
             <h3 className="centered">Awards</h3>
             <div className="layer"></div>
