@@ -1,9 +1,11 @@
 import React from "react"
-import { withRouter } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { SMALL_SCREEN } from "../../helpers/Constants";
 import { SubNavbarLink } from "../components/SubNavbarLink";
 
-export const SubNavbar = withRouter((props) => {
+export const SubNavbar = (props) => {
+  const navigate = useNavigate();
+
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -39,5 +41,5 @@ export const SubNavbar = withRouter((props) => {
         </ul>
       </div>
     </nav>
-  );
-})
+  )
+}
