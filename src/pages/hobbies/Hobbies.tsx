@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.JPG";
-import Photography from "../../assets/hobbies/Photography/Flying Bee.JPG";
+import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.jpg";
+import Photography from "../../assets/hobbies/Photography/Flying Bee.jpg";
 import Cosplays from "../../assets/hobbies/Cosplays/Tardis - Bigger on the Inside.jpg";
 import Art from "../../assets/hobbies/Art/Skyrim fanart.jpg";
 
@@ -23,7 +23,7 @@ export const Hobbies = () => {
     }
 
     window.addEventListener("resize", handleResize);
-    return (_) => {
+    return () => {
       window.removeEventListener("resize", handleResize);
     };
   });
