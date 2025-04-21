@@ -2,15 +2,13 @@ import { useState } from "react";
 
 import { ContentItem } from "../components/content item/ContentItem";
 import { Modal } from "../components/Modal";
-import { projectData } from "../../data/projects";
-import { Sort } from "../components/sort filter/Sort";
+import { workData } from "../../data/work";
 
-export const Projects = () => {
-  const [image, setImage] = useState(null);
-  const [caption, setCaption] = useState("");
-  const [sortedProjects, setSortedProjects] = useState(projectData);
+export const Work = () => {
+  const [image, setImage] = useState<string | undefined>(undefined);
+  const [caption, setCaption] = useState<string>("");
 
-  const openModal = (image, caption) => {
+  const openModal = (image: string, caption: string) => {
     setImage(image);
     setCaption(caption);
   };
@@ -32,12 +30,10 @@ export const Projects = () => {
 
   return (
     <div className="content-container experience-container">
-      <h1 className="fade left">Projects</h1>
+      <h1 className="fade left">Work Experience</h1>
       <Modal image={image} caption={caption} setImage={setImage} />
-
-      <Sort projectData={projectData} setSortedProjects={setSortedProjects} />
-
-      {sortedProjects.map((project) => (
+      
+      {workData.map((project) => (
         <ContentItem
           key={project.heading}
           imgOnLeft={imgOnLeft()}
