@@ -1,6 +1,5 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation } from "./pages/navigation/Navigation";
-import { SubNavbar } from "./pages/navigation/SubNavbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Layout from "./Layout";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Experience } from "./pages/experience/Experience";
@@ -18,53 +17,41 @@ import { LocateEntrance } from "./pages/amazonian mystery/LocateEntrance";
 import { OpenEntrance } from "./pages/amazonian mystery/OpenEntrance";
 import { SolvedMystery } from "./pages/amazonian mystery/SolvedMystery";
 import { GetArtefact } from "./pages/amazonian mystery/GetArtefact";
-import {Error404} from "./pages/404";
+import { Error404 } from "./pages/404";
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact />
-        <Route path="/AmazonianMystery" />
-        <Route path="/" component={Navigation} />
-      </Switch>
-      <Switch>
-        <Route
-          path="/hobbies"
-          component={() => (
-            <SubNavbar section={"hobbies"} headings={["Lego", "Photography", "Cosplays", "Art"]} />
-          )}
-        />
-        <Route
-          path="/experience"
-          component={() => (
-            <SubNavbar
-              section={"experience"}
-              headings={["Work", "Volunteer", "Projects", "Awards"]}
-            />
-          )}
-        />
-      </Switch>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
-        <Route path="/experience" exact component={Experience} />
-        <Route path="/experience/work" exact component={Work} />
-        <Route path="/experience/volunteer" exact component={Volunteer} />
-        <Route path="/experience/projects" exact component={Projects} />
-        <Route path="/experience/awards" exact component={Awards} />
-        <Route path="/hobbies" exact component={Hobbies} />
-        <Route path="/hobbies/cosplays" exact component={Cosplays} />
-        <Route path="/hobbies/lego" exact component={Lego} />
-        <Route path="/hobbies/art" exact component={Art} />
-        <Route path="/hobbies/photography" exact component={Photography} />
-        <Route path="/words" exact component={Words} />
-        <Route path="/AmazonianMystery" exact component={LocateEntrance} />
-        <Route path="/AmazonianMystery/OpenEntrance" exact component={OpenEntrance} />
-        <Route path="/AmazonianMystery/SolvedMystery" exact component={SolvedMystery} />
-        <Route path="/AmazonianMystery/GetArtefact" exact component={GetArtefact} />
-        <Route component={Error404} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+
+          {/* Experience */}
+          <Route path="experience" element={<Experience />} />
+          <Route path="experience/work" element={<Work />} />
+          <Route path="experience/volunteer" element={<Volunteer />} />
+          <Route path="experience/projects" element={<Projects />} />
+          <Route path="experience/awards" element={<Awards />} />
+
+          {/* Hobbies */}
+          <Route path="hobbies" element={<Hobbies />} />
+          <Route path="hobbies/lego" element={<Lego />} />
+          <Route path="hobbies/art" element={<Art />} />
+          <Route path="hobbies/cosplays" element={<Cosplays />} />
+          <Route path="hobbies/photography" element={<Photography />} />
+
+          {/* Amazonian Mystery */}
+          <Route path="AmazonianMystery" element={<LocateEntrance />} />
+          <Route path="AmazonianMystery/OpenEntrance" element={<OpenEntrance />} />
+          <Route path="AmazonianMystery/SolvedMystery" element={<SolvedMystery />} />
+          <Route path="AmazonianMystery/GetArtefact" element={<GetArtefact />} />
+
+          {/* Words + 404 */}
+          <Route path="words" element={<Words />} />
+          <Route path="*" element={<Error404 />} />
+        </Route>
+      </Routes>
     </Router>
   );
 }

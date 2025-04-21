@@ -1,6 +1,9 @@
-import { Link, withRouter } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
-export const SubNavbarLink = withRouter((props) => {
+export const SubNavbarLink = (props) => {
+  const navigate = useNavigate()
+  const location = useLocation();
+
   return (
     <Link
       className="nav-link"
@@ -8,7 +11,7 @@ export const SubNavbarLink = withRouter((props) => {
     >
       <li
         className={`${
-          props.location.pathname ===
+          location.pathname ===
           `/${props.section}/${props.heading.toLowerCase()}`
             ? "active"
             : ""
@@ -19,4 +22,4 @@ export const SubNavbarLink = withRouter((props) => {
       </li>
     </Link>
   );
-})
+}

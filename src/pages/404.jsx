@@ -1,6 +1,9 @@
-import { Link, withRouter } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-export const Error404 = withRouter(() => {
+export const Error404 = () => {
+  
+  const navigate = useNavigate();
+
   return (
     <div className="home-containter">
       <h1>404</h1>
@@ -10,4 +13,4 @@ export const Error404 = withRouter(() => {
       </Link>
     </div>
   )
-})
+}

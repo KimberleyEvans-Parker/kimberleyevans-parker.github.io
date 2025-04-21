@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { SMALL_SCREEN } from "../../helpers/Constants";
 import "./navigation.css";
 
-export const Navigation = withRouter((props) => {
+export const Navigation = (props) => {
   const [dropdownOpen, setdropdownOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
@@ -70,7 +72,7 @@ export const Navigation = withRouter((props) => {
               >
                 <li
                   className={`${dropdownOpen ? "dropdown-open" : ""} ${
-                    props.location.pathname === "/about" ? "active" : ""
+                    location.pathname === "/about" ? "active" : ""
                   }`}
                 >
                   About
@@ -83,7 +85,7 @@ export const Navigation = withRouter((props) => {
               >
                 <li
                   className={`${dropdownOpen ? "dropdown-open" : ""} ${
-                    props.location.pathname.startsWith("/experience")
+                    location.pathname.startsWith("/experience")
                       ? "active"
                       : ""
                   }`}
@@ -98,7 +100,7 @@ export const Navigation = withRouter((props) => {
               >
                 <li
                   className={`${dropdownOpen && "dropdown-open"} ${
-                    props.location.pathname === "/hobbies" ? "active" : ""
+                    location.pathname === "/hobbies" ? "active" : ""
                   }`}
                 >
                   Hobbies
@@ -128,4 +130,4 @@ export const Navigation = withRouter((props) => {
       </div>
     </nav>
   );
-})
+}
