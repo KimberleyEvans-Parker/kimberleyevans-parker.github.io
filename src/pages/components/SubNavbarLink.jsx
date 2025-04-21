@@ -1,7 +1,6 @@
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const SubNavbarLink = (props) => {
-  const navigate = useNavigate()
   const location = useLocation();
 
   return (

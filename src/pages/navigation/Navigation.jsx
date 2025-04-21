@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { SMALL_SCREEN } from "../../helpers/Constants";
 import "./navigation.css";
 
 export const Navigation = (props) => {
   const [dropdownOpen, setdropdownOpen] = useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
 
   /* Keeps track of the window dimensions.  Updates when window resizes */
