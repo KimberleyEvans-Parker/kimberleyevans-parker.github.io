@@ -38,17 +38,7 @@ export const Awards = () => {
         <ContentItem
           key={project.heading}
           imgOnLeft={imgOnLeft()}
-          heading={project.heading}
-          subheading={project.subheading}
-          dates={project.dates}
-          description={project.description}
-          teamSize={project.teamSize}
-          githubLink={project.links?.github}
-          linkedInLink={project.links?.linkedIn}
-          projectLink={project.links?.project}
-          seeMoreLink={project.links?.seeMore}
-          images={project.images}
-          technologies={project.technologies}
+          contentData={project}
           openModal={openModal}
           animationDelay={getAnimationDelay()}
         />

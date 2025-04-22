@@ -8,24 +8,16 @@ import {
 } from "../../../helpers/Constants";
 import { ImageContent } from "./ImageContent";
 import { TextContent } from "./TextContent";
+import { ContentItemType } from "../../../data/types";
 
-export const ContentItem = (props: { 
-  heading: string; 
-  animationDelay: any; 
-  githubLink?: string; 
-  subheading?: string; 
-  imgOnLeft: boolean; 
-  dates: string; 
-  description: string; 
-  teamSize?: number; 
-  linkedInLink?: string; 
-  link?: string; 
-  technologies?: any[]; 
-  projectLink?: string; 
-  seeMoreLink?: string;
-  images?: string[]; 
-  openModal: (image: string, caption: string) => void; 
-}) => {
+interface ContentItemProps {
+  contentData: ContentItemType;
+  animationDelay: string;
+  imgOnLeft: boolean;
+  openModal: (image: string, caption: string) => void;
+}
+
+export const ContentItem = ({contentData, animationDelay, imgOnLeft, openModal}: ContentItemProps) => {
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -66,60 +58,60 @@ export const ContentItem = (props: {
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
       ref={domRef}
-      id={props.heading}
+      id={contentData.heading}
     >
       <div
         className="fade left"
         style={{
-          WebkitAnimationDelay: props.animationDelay,
-          MozAnimationDelay: props.animationDelay,
-          OAnimationDelay: props.animationDelay,
-          animationDelay: props.animationDelay,
+          WebkitAnimationDelay: animationDelay,
+          MozAnimationDelay: animationDelay,
+          OAnimationDelay: animationDelay,
+          animationDelay: animationDelay,
         }}
       >
-        {props.githubLink && dimensions.width >= SMALL_SCREEN ? (
-          <a href={props.githubLink} className={"popout-link"}>
+        {contentData.links?.github && dimensions.width >= SMALL_SCREEN ? (
+          <a href={contentData.links?.github} className={"popout-link"}>
             <h2>
               <i className="fa fa-github popout" aria-hidden="true" />
-              {props.heading} {props.subheading && "- "} {props.subheading}
+              {contentData.heading} {contentData.subheading && "- "} {contentData.subheading}
             </h2>
           </a>
         ) : (
           <h2>
-            {props.heading} {props.subheading && "-"} {props.subheading}
+            {contentData.heading} {contentData.subheading && "-"} {contentData.subheading}
           </h2>
         )}
 
         <Grid container spacing={3}>
-          {(!props.imgOnLeft || dimensions.width < SMALL_SCREEN) && (
+          {(!imgOnLeft || dimensions.width < SMALL_SCREEN) && (
             <Grid item xs>
               <TextContent
-                dates={props.dates}
-                description={props.description}
-                teamSize={props.teamSize}
-                linkedInLink={props.linkedInLink}
-                link={props.link}
-                technologies={props.technologies}
-                projectLink={props.projectLink}
+                dates={contentData.dates}
+                description={contentData.description}
+                teamSize={contentData.teamSize}
+                linkedInLink={contentData.links?.linkedIn}
+                seeMoreLink={contentData.links?.seeMore}
+                technologies={contentData.technologies}
+                projectLink={contentData.links?.project}
               />
             </Grid>
           )}
-          {props.images && (
+          {contentData.images && (
             <Grid item xs={12} sm={6} md={4}>
-              <ImageContent images={props.images} openModal={props.openModal} heading={props.heading} />
+              <ImageContent images={contentData.images} openModal={openModal} heading={contentData.heading} />
             </Grid>
           )}
-          {props.imgOnLeft && dimensions.width >= SMALL_SCREEN && (
+          {imgOnLeft && dimensions.width >= SMALL_SCREEN && (
             <Grid item xs>
-              <TextContent
-                dates={props.dates}
-                description={props.description}
-                teamSize={props.teamSize}
-                linkedInLink={props.linkedInLink}
-                link={props.link}
-                technologies={props.technologies}
-                projectLink={props.projectLink}
-              />
+            <TextContent
+              dates={contentData.dates}
+              description={contentData.description}
+              teamSize={contentData.teamSize}
+              linkedInLink={contentData.links?.linkedIn}
+              seeMoreLink={contentData.links?.seeMore}
+              technologies={contentData.technologies}
+              projectLink={contentData.links?.project}
+            />
             </Grid>
           )}
         </Grid>
