@@ -7,7 +7,7 @@ export const TextContent = (
     description: string;
     teamSize?: number;
     linkedInLink?: string;
-    link?: string;
+    seeMoreLink?: string;
     projectLink?: string;
     technologies?: any[];
   }
@@ -33,9 +33,9 @@ export const TextContent = (
           </p>
         </a>
       )}
-      {props.link && (
+      {props.seeMoreLink && (
         <p>
-          <a href={props.link}>
+          <a href={props.seeMoreLink}>
             For more information, take a look here
           </a>
         </p>
