@@ -3,9 +3,7 @@ import Grid from "@material-ui/core/Grid";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import {
-  SMALL_SCREEN,
-} from "../../../helpers/Constants";
+import { SMALL_SCREEN } from "../../../helpers/Constants";
 import { ImageContent } from "./ImageContent";
 import { TextContent } from "./TextContent";
 import { ContentItemType } from "../../../data/types";

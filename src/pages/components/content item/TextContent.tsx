@@ -1,54 +1,63 @@
 import { Link } from "react-router-dom";
 
+interface TextContentProps {
+  dates: string;
+  description: string;
+  teamSize?: number;
+  linkedInLink?: string;
+  seeMoreLink?: string;
+  projectLink?: string;
+  technologies?: any[];
+}
 
 export const TextContent = (
-  props: {
-    dates: string;
-    description: string;
-    teamSize?: number;
-    linkedInLink?: string;
-    seeMoreLink?: string;
-    projectLink?: string;
-    technologies?: any[];
-  }
+ {
+    dates,
+    description,
+    teamSize,
+    linkedInLink,
+    seeMoreLink,
+    projectLink,
+    technologies,
+  } : TextContentProps
 ) => {
   return (
     <>
       <h3>
-        {props.dates}
+        {dates}
       </h3>
       <p>
-        {props.description}
+        {description}
       </p>
-      {props.teamSize && (
+      {teamSize && (
         <p>
-          Team size: {props.teamSize}
+          Team size: {teamSize}
         </p>
       )}
-      {props.linkedInLink && (
-        <a href={props.linkedInLink} className={"popout-link"}>
+      {linkedInLink && (
+        <a href={linkedInLink} className={"popout-link"}>
           <i className="fa fa-linkedin popout" aria-hidden="true" />
           <p>
             See the LinkedIn post here!
           </p>
         </a>
       )}
-      {props.seeMoreLink && (
+      {seeMoreLink && (
         <p>
-          <a href={props.seeMoreLink}>
+          <a href={seeMoreLink}>
             For more information, take a look here
           </a>
         </p>
       )}
-      {props.projectLink && (
+      {projectLink && (
         <p>
-          <Link to={`/experience/projects#${props.projectLink}`}>
+          <Link to={`/experience/projects#${projectLink}`}>
             See the project here
           </Link>
         </p>
       )}
       <div className="technologies">
-        {props.technologies && props.technologies.join(` ⸎ `)}
+        {technologies && technologies.join(` ⸎ `)}
       </div>
     </>
   );
