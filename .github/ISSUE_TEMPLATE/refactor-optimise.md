@@ -1,5 +1,5 @@
 ---
-name: Optimisation
+name: Refactor
 about: Suggest a time, size or code related optimisation
 title: ''
 labels: Refactoring
