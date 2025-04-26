@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-export const SubNavbarLink = (props) => {
+export const SubNavbarLink = (props: { section: string; heading: string; }) => {
   const location = useLocation();
 
   return (

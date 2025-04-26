@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CodeInput } from "./CodeInput";
 import "./styles.css"
 
-const Puzzle = (clue, correctAnswer, wait) => {
+const Puzzle = (clue: string, correctAnswer: string[], wait?: number) => {
   const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
 
   return {
@@ -15,18 +15,18 @@ const Puzzle = (clue, correctAnswer, wait) => {
   }
 }
 
-export const GetArtefact = () => {
+export const OpenEntrance = () => {
   
   const puzzles = [
-    Puzzle("Puzzle 1", ["bow"]),
-    Puzzle("Puzzle 2", ["5556"]),
-    Puzzle("Puzzle 3", ["999"]),
-    Puzzle("Puzzle 4", ["159"]),
-    Puzzle("Puzzle 5", ["learn"]),
-    Puzzle("Puzzle 6 DD/MM", ["21/12"]),
+    Puzzle("Puzzle 1", ["240"]),
+    Puzzle("Puzzle 2", ["anaconda", "jaguar", "monkey"]),
+    Puzzle("Puzzle 3", ["276"]),
+    Puzzle("Puzzle 4", ["tree"]),
+    Puzzle("Puzzle 5", ["8437"]),
+    Puzzle("Puzzle 6", ["blade"]),
   ]
 
-  const isAnsweredCorrectly = (puzzle) => {
+  const isAnsweredCorrectly = (puzzle: { answeredCorrectly: any; }) => {
     return puzzle.answeredCorrectly
   }
 
@@ -44,19 +44,25 @@ export const GetArtefact = () => {
           <h1>The Amazon Entrance</h1>
           <div className="fade left">
             <p>
-              You have solved the puzzles and deemed yourselves worthy of entering the city.  
-              The stone gate slides open and you enter the ruins, 
-              revealing a a vast underground city waiting to be explored.  
+              After hacking your way through the heart of the Amazon and coming to the specified coordinates, 
+              you find some old stone doors – these must be the entrance to the underground city!  
+              Unfortunately, the doors are sealed shut.  On the front, are five small gouges, 
+              which look like they used to hold something important and around are {puzzles.length} pillars, 
+              each with their own puzzle on it.  
             </p>
             <p>
-              Just inside the entrance, stands a pedestal.  On it is an artefact inlaid with gemstones.  
-              If you could find the correct combination to unlock this artefact, 
-              you could bring it back with you to show the world of your discovery! 
+              James Bush refuses to let you blow up the entrance – 
+              and besides, you don’t have any C4 with you anyway.  
             </p>
             <p>
-              One the side are {puzzles.length} lock combinations.  Now it’s just a matter of finding the right code…
+              Some members of the team complain about the number of mosquito bites they’ve received – 
+              one person even swears they got bitten by something else, but at least your team has food to eat 
+              and are on the verge of one of the biggest discoveries of your lives.  
             </p>
-            <i>Open package 3</i>
+            <p>
+              Around the area are a series of clues, which James Bush has translated for you using the code you 
+              cracked earlier.  You just need to solve the clues to get into the ancient city.  
+            </p>
           </div>
           {puzzles.map((puzzle) => {
               return <CodeInput
@@ -73,9 +79,9 @@ export const GetArtefact = () => {
                 You have sucessfully completed all the puzzles
               </p>
           
-              <Link to="SolvedMystery">
+              <Link to="GetArtefact">
                 <button className="ancient-stone">
-                    Get Artefact
+                    Enter ruins
                 </button>
               </Link>
             </div>
