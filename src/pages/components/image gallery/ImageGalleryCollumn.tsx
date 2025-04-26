@@ -6,10 +6,10 @@ interface ImageGalleryCollumnProps {
   openModal: (image: any, name: string) => void;
 }
 
-export const ImageGalleryCollumn = (props: ImageGalleryCollumnProps) => {
+export const ImageGalleryCollumn = ({ images, openModal }: ImageGalleryCollumnProps) => {
   return (
     <>
-      {props.images.map((imageIndex) => {
+      {images.map((imageIndex) => {
         const image = imageIndex[0];
         const animationDelay = imageIndex[1] * 0.15 + "s";
         const path = image.split("/");
@@ -17,7 +17,7 @@ export const ImageGalleryCollumn = (props: ImageGalleryCollumnProps) => {
 
         return (
           <button
-            onClick={() => props.openModal(image, name)}
+            onClick={() => openModal(image, name)}
             key={name}
             className="modal-thumbnail"
           >
