@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { SMALL_SCREEN } from "../../helpers/Constants";
 import "./navigation.css";
 
-export const Navigation = (props) => {
+export const Navigation = () => {
   const [dropdownOpen, setdropdownOpen] = useState(false);
   const location = useLocation();
 
@@ -24,7 +24,7 @@ export const Navigation = (props) => {
     }
 
     window.addEventListener("resize", handleResize);
-    return (_) => {
+    return () => {
       window.removeEventListener("resize", handleResize);
     };
   });

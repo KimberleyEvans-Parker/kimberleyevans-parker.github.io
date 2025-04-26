@@ -2,7 +2,7 @@ import React from "react"
 import { SMALL_SCREEN } from "../../helpers/Constants";
 import { SubNavbarLink } from "../components/SubNavbarLink";
 
-export const SubNavbar = (props) => {
+export const SubNavbar = (props: { headings: string[]; section: any; }) => {
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -17,7 +17,7 @@ export const SubNavbar = (props) => {
     }
 
     window.addEventListener("resize", handleResize);
-    return (_) => {
+    return () => {
       window.removeEventListener("resize", handleResize);
     };
   });
