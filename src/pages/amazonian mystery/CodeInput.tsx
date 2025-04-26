@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 
-export const CodeInput = (props: { 
-    correctAnswer: string | any[]; 
-    onCorrectAnswer: (arg0: boolean) => void; 
-    wait?: any; 
-    animationDelay?: any; 
-    clue: string; 
-}) => {
+interface CodeInputProps {
+    correctAnswer: string | any[];
+    onCorrectAnswer: (arg0: boolean) => void;
+    wait?: number;
+    animationDelay?: string;
+    clue: string;
+}
+
+export const CodeInput = ({ 
+    correctAnswer,
+    onCorrectAnswer,
+    wait,
+    animationDelay,
+    clue,
+}: CodeInputProps
+) => {
     const [answer, setAnswer] = useState("")
     const [shake, setShake] = useState(false)
     const [answerCorrect, setCorrectAnswer] = useState(false)
@@ -20,8 +29,8 @@ export const CodeInput = (props: {
         for(var i = 0, size = answers.length; i < size ; i++){
             answers[i] = answers[i].toLowerCase().trim();
          }
-        if (answers.length !== props.correctAnswer.length) return false
-        for (const item of props.correctAnswer) {
+        if (answers.length !== correctAnswer.length) return false
+        for (const item of correctAnswer) {
             if (!answers.includes(item)) return false
         }
         return true
@@ -29,12 +38,12 @@ export const CodeInput = (props: {
 
     const checkAnswer = (answer: string) => {
         if (isAnswerCorrect(answer)) {
-            props.onCorrectAnswer(true)
+            onCorrectAnswer(true)
             setCorrectAnswer(true)
             return
         }
         setShake(true)
-        setTimeout(endShake, props.wait || 1000)
+        setTimeout(endShake, wait || 1000)
     }
 
     const endShake = () => {
@@ -55,17 +64,17 @@ export const CodeInput = (props: {
         <div
             className="fade left amazonian-code-input"
             style={{
-                WebkitAnimationDelay: props.animationDelay,
-                MozAnimationDelay: props.animationDelay,
-                OAnimationDelay: props.animationDelay,
-                animationDelay: props.animationDelay,
+                WebkitAnimationDelay: animationDelay,
+                MozAnimationDelay: animationDelay,
+                OAnimationDelay: animationDelay,
+                animationDelay: animationDelay,
             }}
         >
-            <p className="amazonian-clue">{props.clue}</p>
+            <p className="amazonian-clue">{clue}</p>
             <input
                 type="text"
-                id={props.clue}
-                name={props.clue}
+                id={clue}
+                name={clue}
                 title="clue input"
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}

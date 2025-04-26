@@ -3,12 +3,12 @@ import { ContentItemType } from "../../../data/types";
 import "./sort.css";
 
 
-interface SortI {
+interface SortProps {
     projectData: ContentItemType[];
     setSortedProjects: (sortedProjects: ContentItemType[]) => void;
 }
 
-export const Sort = ({projectData, setSortedProjects}: SortI) => {
+export const Sort = ({projectData, setSortedProjects}: SortProps) => {
     const [ascending, setAscending] = useState(true);
     const [sortBy, setSortBy] = useState("date");
 
