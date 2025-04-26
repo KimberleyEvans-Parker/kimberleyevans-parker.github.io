@@ -6,11 +6,11 @@ import { projectData } from "../../data/projects";
 import { Sort } from "../components/sort filter/Sort";
 
 export const Projects = () => {
-  const [image, setImage] = useState(null);
-  const [caption, setCaption] = useState("");
+  const [image, setImage] = useState<string | undefined>(undefined);
+  const [caption, setCaption] = useState<string>("");
   const [sortedProjects, setSortedProjects] = useState(projectData);
 
-  const openModal = (image, caption) => {
+  const openModal = (image: string, caption: string) => {
     setImage(image);
     setCaption(caption);
   };
@@ -41,16 +41,7 @@ export const Projects = () => {
         <ContentItem
           key={project.heading}
           imgOnLeft={imgOnLeft()}
-          heading={project.heading}
-          subheading={project.subheading}
-          dates={project.dates}
-          description={project.description}
-          githubLink={project.links?.github}
-          linkedInLink={project.links?.linkedIn}
-          projectLink={project.links?.project}
-          seeMoreLink={project.links?.seeMore}
-          images={project.images}
-          technologies={project.technologies}
+          contentData={project}
           openModal={openModal}
           animationDelay={getAnimationDelay()}
         />

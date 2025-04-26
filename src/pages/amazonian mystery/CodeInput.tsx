@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 
-export const CodeInput = (props) => {
+export const CodeInput = (props: { 
+    correctAnswer: string | any[]; 
+    onCorrectAnswer: (arg0: boolean) => void; 
+    wait?: any; 
+    animationDelay?: any; 
+    clue: string; 
+}) => {
     const [answer, setAnswer] = useState("")
     const [shake, setShake] = useState(false)
     const [answerCorrect, setCorrectAnswer] = useState(false)
 
-    const handleChange = (event) => {
+    const handleChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
         setAnswer(event.target.value)
     }
 
-    const isAnswerCorrect = (answer) => {
+    const isAnswerCorrect = (answer: string) => {
         let answers = answer.split(",")
         for(var i = 0, size = answers.length; i < size ; i++){
             answers[i] = answers[i].toLowerCase().trim();
@@ -21,7 +27,7 @@ export const CodeInput = (props) => {
         return true
     }
 
-    const checkAnswer = (answer) => {
+    const checkAnswer = (answer: string) => {
         if (isAnswerCorrect(answer)) {
             props.onCorrectAnswer(true)
             setCorrectAnswer(true)
@@ -39,7 +45,7 @@ export const CodeInput = (props) => {
         checkAnswer(answer)
     }
 
-    const handleKeyDown = (event) => {
+    const handleKeyDown = (event: { key: string; }) => {
         if (event.key === "Enter") {
             checkAnswer(answer)
         }
@@ -52,8 +58,7 @@ export const CodeInput = (props) => {
                 WebkitAnimationDelay: props.animationDelay,
                 MozAnimationDelay: props.animationDelay,
                 OAnimationDelay: props.animationDelay,
-                MsAnimationDelay: props.animationDelay,
-                AnimationDelay: props.animationDelay,
+                animationDelay: props.animationDelay,
             }}
         >
             <p className="amazonian-clue">{props.clue}</p>

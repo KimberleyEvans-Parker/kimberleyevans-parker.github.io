@@ -1,31 +1,31 @@
 import { Carousel } from "react-responsive-carousel";
 import { CAROUSEL_TRANSITION_TIME, CAROUSEL_INTERVAL } from "../../../helpers/Constants";
 
-export const ImageContent = (
-  props: { 
-    images: string[]; 
-    heading: string; 
-    openModal: (image: string, caption: string) => void; 
-  }
-) => {
+interface ImageContentProps {
+  images: string[];
+  heading: string;
+  openModal: (image: string, caption: string) => void;
+}
+
+export const ImageContent = ({images, heading, openModal}: ImageContentProps) => {
   return (
     <Carousel
       autoPlay
-      showIndicators={props.images.length > 1}
-      showStatus={props.images.length > 1}
+      showIndicators={images.length > 1}
+      showStatus={images.length > 1}
       showThumbs={false}
       transitionTime={CAROUSEL_TRANSITION_TIME}
       interval={CAROUSEL_INTERVAL}
       infiniteLoop={true}
       className="shadow"
     >
-      {props.images.map((image: string) => {
+      {images.map((image: string) => {
         const path = image.split("/");
         const name = path[path.length - 1].split(".")[0];
-        const caption = props.heading ? props.heading + " - " + name : name;
+        const caption = heading ? heading + " - " + name : name;
         return (
           <button
-            onClick={() => props.openModal(image, caption)}
+            onClick={() => openModal(image, caption)}
             key={caption}
           >
             <img alt={caption} src={image} />
