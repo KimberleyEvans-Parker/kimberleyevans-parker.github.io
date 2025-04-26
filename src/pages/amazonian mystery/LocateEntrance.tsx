@@ -23,8 +23,7 @@ export const LocateEntrance = () => {
                 WebkitAnimationDelay: "1s",
                 MozAnimationDelay: "1s",
                 OAnimationDelay: "1s",
-                MsAnimationDelay: "1s",
-                AnimationDelay: "1s",
+                animationDelay: "1s",
             }}>
               <p>
                 I guess the agency certainly put together the right team – 
