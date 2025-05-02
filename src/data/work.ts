@@ -17,7 +17,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Software Engineer",
         subheading: "Xero",
-        dates: "February 2022 - April 2025",
+        dates: { start: new Date(2022, 1), end: new Date(2025, 3) },
         description: `I started in the Xero grad programme, going through four rotations and learning about fullstack, front end, back end, Android and iOS skills.  
             I settled as a front-end full stack engineer when becoming an associate and as an engineer.  
             During this time, I created webpages seen by 40,000 customers a day, utilising HTML, CSS, React, Typescript and XUI (Xero's UI component library) to create, modernise and improve webpages.  
@@ -51,7 +51,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Engineering Intern",
         subheading: "Rocos/Drone Deploy",
-        dates: "April 2021 - January 2022",
+        dates: { start: new Date(2021, 3), end: new Date(2022, 0) },
         description: `I contracted for Rocos (later acquired by Drone Deploy) - a PAAS company that gives people with robots a platform to easily manage, monitor and control them.  
             During this time, I created a page for Rocos to monitor the health of their various services.
             I also created widgets that users could add to their dashboard to monitor their robots and made many other css improvements.  
@@ -68,7 +68,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Engineering Intern",
         subheading: "FlexWare",
-        dates: "September 2020 - November 2021",
+        dates: { start: new Date(2020, 8), end: new Date(2021, 10) },
         description: `I manufactured cables for a variety of purposes, have tested both hardware and software 
             and have gained experience programming in C#.`,
         technologies: [
@@ -79,7 +79,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Research Assistant",
         subheading: "University of Auckland",
-        dates: "June 2021",
+        dates: { start: new Date(2021, 5) },
         description: `I worked as a research assistant for the University of Auckland for Doctor Catherine Watson.
             During this time, I worked on a project to create a Māori text-to-speech voice using AI.`,
         technologies: [
@@ -90,14 +90,14 @@ export const workData: ContentItemType[] = [
     {
         heading: "Teacher",
         subheading: "Bricks4Kidz",
-        dates: "January 2020 - Present",
+        dates: { start: new Date(2020, 0) },
         description: `I encourage young children into STEM related fields by teaching them related skills.  
             These skills are taught with the aid of LEGO robots and mechanics. `
     },
     {
         heading: "Co-Founder",
         subheading: "School Storage Solutions",
-        dates: "March 2016 - Present",
+        dates: { start: new Date(2016, 2) },
         description: `As part of the Young Enterprise Scheme, I created a business that rents out lockers to students.  
             This made a profit in its first year and is still being run alongside my studies.  
             During my time in my business, I have gained experience communicating with producers and customers, 
@@ -107,7 +107,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Co-Founder",
         subheading: "Graduation Plushies",
-        dates: "October 2020 - Present",
+        dates: { start: new Date(2020, 9) },
         description: `I co-founded this service which custom-makes graduation hats for soft toys.
             These have been quite popular for graduates and friends of grads and we were able to make a profit in our first year.  `,
         images: GraduationPlushiesImages,
@@ -118,14 +118,14 @@ export const workData: ContentItemType[] = [
     {
         heading: "Tutor",
         subheading: "Compsci 220 and Compsci 367",
-        dates: "September 2019 – November 2020",
+        dates: { start: new Date(2019, 8), end: new Date(2020, 10) },
         description: `I was approached by a student in Compsci 220 and Compsci 367 to tutor them in these courses I had taken.
             I found it extremely rewarding to watch them learn and improve in the course.`
     },
     {
         heading: "Software Engineering Intern",
         subheading: "No. 8 Wireless",
-        dates: "June 2019",
+        dates: { start: new Date(2019, 5) },
         description: `I developed an automated testing system for the phones that Ooma - a U.S. company.  
             During this, I gained experience with Git, Python and hardware.`,
         images: OomaImages,
@@ -137,8 +137,8 @@ export const workData: ContentItemType[] = [
     {
         heading: "Cashiers",
         subheading: "Gilmours",
-        dates: "April 2016",
+        dates: { start: new Date(2016, 3) },
         description: `I worked as a cashier/checkout operator for Gilmours - a wholesale food company.  
             During this, I improved my efficiency and interpersonal skills`
     }
-]
+];
