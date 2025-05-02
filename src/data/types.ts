@@ -5,10 +5,15 @@ export type LinksType = {
     project?: string;
 }
 
+export type Dates = {
+    start: Date;
+    end?: Date | "Present";
+}
+
 export type ContentItemType = {
     heading: string;
     subheading?: string;
-    dates: string;
+    dates: Dates;
     description: string;
     teamSize?: number;
     links?: LinksType;
