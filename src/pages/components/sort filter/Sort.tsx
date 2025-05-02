@@ -56,11 +56,13 @@ export const Sort = ({projectData, setSortedProjects}: SortProps) => {
                 else if (b.dates.end === "Present") {
                     return 1
                 }
-                if (a.dates.end && b.dates.end) {
-                    return a.dates.end.getTime() - b.dates.end.getTime()
-                } else if (a.dates.end && !b.dates.end) {
+                const aDate = a.dates.end || a.dates.start
+                const bDate = b.dates.end || b.dates.start
+                if (aDate && bDate) {
+                    return aDate.getTime() - bDate.getTime()
+                } else if (aDate && !bDate) {
                     return 1
-                } else if (!a.dates.end && b.dates.end) {
+                } else if (!aDate && bDate) {
                     return -1
                 } else {
                     return 0
