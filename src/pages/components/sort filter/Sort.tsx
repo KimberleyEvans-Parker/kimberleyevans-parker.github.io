@@ -13,7 +13,8 @@ export const Sort = ({projectData, setSortedProjects}: SortProps) => {
     const [sortBy, setSortBy] = useState("date");
 
     enum sortingOptions {
-        date = "Date",
+        startDate = "Start Date",
+        endDate = "End Date",
         name = "Name", 
         teamSize = "Team Size",
         technology = "Technology",
@@ -33,8 +34,38 @@ export const Sort = ({projectData, setSortedProjects}: SortProps) => {
         if (!projectData) return
         if (projectData.length === 0) return
 
-        if (sortBy ===sortingOptions.date) {
-          projectData.sort((a, b) => a.dates.localeCompare(b.dates))
+        if (sortBy ===sortingOptions.startDate) {
+            projectData.sort((a, b) => {
+                if (a.dates.start && b.dates.start) {
+                    return a.dates.start.getTime() - b.dates.start.getTime()
+                } else if (a.dates.start && !b.dates.start) {
+                    return 1
+                } else if (!a.dates.start && b.dates.start) {
+                    return -1
+                } else {
+                    return 0
+                }
+            })
+        } else if (sortBy === sortingOptions.endDate) {
+            projectData.sort((a, b) => {
+                if (a.dates.end === "Present" && b.dates.end === "Present") {
+                    return 0
+                } else if (a.dates.end === "Present") {
+                    return -1
+                }
+                else if (b.dates.end === "Present") {
+                    return 1
+                }
+                if (a.dates.end && b.dates.end) {
+                    return a.dates.end.getTime() - b.dates.end.getTime()
+                } else if (a.dates.end && !b.dates.end) {
+                    return 1
+                } else if (!a.dates.end && b.dates.end) {
+                    return -1
+                } else {
+                    return 0
+                }
+            })
         } else if (sortBy === sortingOptions.name) {
           projectData.sort((a, b) => a.heading.localeCompare(b.heading))
         } else if (sortBy === sortingOptions.teamSize) {
@@ -69,7 +100,7 @@ export const Sort = ({projectData, setSortedProjects}: SortProps) => {
 
         setSortedProjects([...projectData]);
       }
-    , [projectData, ascending, sortBy, setSortedProjects, sortingOptions.date, sortingOptions.name, sortingOptions.teamSize, sortingOptions.technology])
+    , [projectData, ascending, sortBy, setSortedProjects, sortingOptions.startDate, sortingOptions.endDate, sortingOptions.name, sortingOptions.teamSize, sortingOptions.technology])
 
     return (
         <div className="sort-container">
