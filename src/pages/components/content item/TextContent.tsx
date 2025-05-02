@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import { Dates } from "../../../data/types";
 
 interface TextContentProps {
-  dates: string;
+  dates: Dates;
   description: string;
   teamSize?: number;
   linkedInLink?: string;
@@ -24,7 +25,13 @@ export const TextContent = (
   return (
     <>
       <h3>
-        {dates}
+        {dates.start.toLocaleDateString(`en-NZ`, { month: `long`, year: `numeric` })}
+        {dates.end && dates.end !== `Present` && (
+          ` - ${dates.end.toLocaleDateString(`en-NZ`, { month: `long`, year: `numeric` })}`
+        )}
+        {dates.end === `Present` && (
+          ` - Present`
+        )}
       </h3>
       <p>
         {description}
