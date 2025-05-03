@@ -63,9 +63,12 @@ export const About = () => {
         <p>I have worked at several internships, done many hackathons and personal projects.  
           My main work experience is at Xero!  
         </p>
-        <p className="link-container">
-          <Link className="link" to="/experience">  Find out more here</Link>
-        </p>
+        <Link className="link" to="/experience">
+          <div className="link-text">
+            Find out more here
+          </div>
+          <div className="link-underline"></div>
+        </Link>
         <h2>Education</h2>
         <h4>University</h4>
         <p>

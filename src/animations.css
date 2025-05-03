@@ -8,39 +8,26 @@
 /* underline doesn't go full width */
 .link-container { 
 	display: flex;
-	flex-wrap: wrap;
+  cursor: pointer;
+  /* width: 175px; */
 }
 
 .link {
-	display: block;
+	display: flex;
 	position: relative;
   cursor: pointer;
-  padding: 0 10px;
-}
-/* fade in underline */
-.link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: white;
-  opacity: 1;
-  animation: underline ease var(--animation-time) forwards;
+  margin-bottom: 18px;
 }
 
-@keyframes underline {
-  0% {
-    transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+.link-text {
+  padding: 0 10px;
 }
 
 /* on hover underline */
-.link {
+.link-underline {
+  width: 170px;
+  height: 30px;
+  position: absolute;
   background:
     linear-gradient(currentColor 0 0) 0 100%,
     linear-gradient(currentColor 0 0) 0 100%,
@@ -49,11 +36,20 @@
   background-size: var(--underline-width, 50%) 2px, 2px var(--underline-height, 0);
   background-repeat: no-repeat;
   transition: 0.5s;
-  /* animation: underline ease var(--animation-time) forwards; */
+  animation: underline ease var(--animation-time) forwards;
 }
-.link-container:hover {
+.link:hover {
 --underline-height: 100%;
 --underline-width: 0%
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 170px;
+  }
 }
 
   
