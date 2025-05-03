@@ -4,6 +4,29 @@
     -o-animation-delay: 5s;
     animation-delay: 5s;
   }
+
+/* underline doesn't go full width */
+.link-container { 
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.link {
+	display: block;
+	position: relative;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+@keyframes underline {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
   
   .bounce { 
     animation: bounce 0.7s;
