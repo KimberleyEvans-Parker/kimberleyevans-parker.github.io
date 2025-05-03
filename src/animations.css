@@ -17,6 +17,18 @@
   cursor: pointer;
   padding: 0 10px;
 }
+/* fade in underline */
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  opacity: 1;
+  animation: underline ease var(--animation-time) forwards;
+}
 
 @keyframes underline {
   0% {
@@ -26,6 +38,7 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
 
   
   .bounce { 
