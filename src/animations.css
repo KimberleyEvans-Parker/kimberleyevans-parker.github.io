@@ -39,6 +39,22 @@
   }
 }
 
+/* on hover underline */
+.link {
+  background:
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 100% 100%,
+    linear-gradient(currentColor 0 0) 100% 100%;
+  background-size: var(--underline-width, 50%) 2px, 2px var(--underline-height, 0);
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  /* animation: underline ease var(--animation-time) forwards; */
+}
+.link-container:hover {
+--underline-height: 100%;
+--underline-width: 0%
+}
 
   
   .bounce { 
