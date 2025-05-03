@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from "react"
 import { ContentItemType } from "../../../data/types";
 import "./sort.css";
+import { sortByEndDate, sortByName, sortByStartDate, sortByTeamSize, sortByTechnology } from "./SortHelper";
 
 
-interface SortI {
+interface SortProps {
     projectData: ContentItemType[];
     setSortedProjects: (sortedProjects: ContentItemType[]) => void;
 }
 
-export const Sort = ({projectData, setSortedProjects}: SortI) => {
+export const Sort = ({projectData, setSortedProjects}: SortProps) => {
     const [ascending, setAscending] = useState(true);
     const [sortBy, setSortBy] = useState("date");
 
     enum sortingOptions {
-        date = "Date",
+        startDate = "Start Date",
+        endDate = "End Date",
         name = "Name", 
         teamSize = "Team Size",
         technology = "Technology",
@@ -33,34 +35,16 @@ export const Sort = ({projectData, setSortedProjects}: SortI) => {
         if (!projectData) return
         if (projectData.length === 0) return
 
-        if (sortBy ===sortingOptions.date) {
-          projectData.sort((a, b) => a.dates.localeCompare(b.dates))
+        if (sortBy === sortingOptions.startDate) {
+            projectData.sort(sortByStartDate)
+        } else if (sortBy === sortingOptions.endDate) {
+            projectData.sort(sortByEndDate)
         } else if (sortBy === sortingOptions.name) {
-          projectData.sort((a, b) => a.heading.localeCompare(b.heading))
+          projectData.sort(sortByName)
         } else if (sortBy === sortingOptions.teamSize) {
-          projectData.sort((a, b) => {
-            if (a.teamSize && b.teamSize) {
-                return b.teamSize - a.teamSize
-            } else if (a.teamSize && !b.teamSize) {
-                return 1
-            } else if (!a.teamSize && b.teamSize) {
-                return -1
-            } else {
-                return 0
-            }
-          })
+          projectData.sort(sortByTeamSize)
         } else if (sortBy === sortingOptions.technology) {
-          projectData.sort((a, b) => {
-            if (a.technologies && b.technologies) {
-                return b.technologies.length - a.technologies.length
-            } else if (a.technologies && !b.technologies) {
-                return 1
-            } else if (!a.technologies && b.technologies) {
-                return -1
-            } else {
-                return 0
-            }
-          })
+          projectData.sort(sortByTechnology)
         }
 
         if (!ascending) {
@@ -69,7 +53,7 @@ export const Sort = ({projectData, setSortedProjects}: SortI) => {
 
         setSortedProjects([...projectData]);
       }
-    , [projectData, ascending, sortBy, setSortedProjects, sortingOptions.date, sortingOptions.name, sortingOptions.teamSize, sortingOptions.technology])
+    , [projectData, ascending, sortBy, setSortedProjects, sortingOptions.startDate, sortingOptions.endDate, sortingOptions.name, sortingOptions.teamSize, sortingOptions.technology])
 
     return (
         <div className="sort-container">

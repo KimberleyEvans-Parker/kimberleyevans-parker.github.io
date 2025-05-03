@@ -2,7 +2,7 @@
 name: Refactor
 about: Suggest a time, size or code related optimisation
 title: ''
-labels: Refactoring
+labels: refactoring
 assignees: KimberleyEvans-Parker
 
 ---
