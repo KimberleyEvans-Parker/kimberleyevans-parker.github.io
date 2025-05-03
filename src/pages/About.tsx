@@ -62,13 +62,13 @@ export const About = () => {
         <h2>Experience</h2>
         <p>I have worked at several internships, done many hackathons and personal projects.  
           My main work experience is at Xero!  
-        </p>
         <Link className="link" to="/experience">
           <div className="link-text">
             Find out more here
           </div>
           <div className="link-underline"></div>
         </Link>
+        </p>
         <h2>Education</h2>
         <h4>University</h4>
         <p>
@@ -135,8 +135,11 @@ export const About = () => {
         <h2>Resume</h2>
         <p>
           Like what you see?{" "}
-          <a href={Resume} download>
-            Download my CV
+          <a className="link" href={Resume} download>
+            <div className="link-text">
+              Download my CV
+            </div>
+            <div className="link-underline"></div>
           </a>
         </p>
       </div>
