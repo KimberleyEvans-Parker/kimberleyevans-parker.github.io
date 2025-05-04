@@ -72,6 +72,7 @@ export const projectData: ContentItemType[] = [
             We also designed cards for the game that made the deck with different animals and abilities in it.  
             The game was certainly a great learning experience and I also enjoyed playing it.`,
         teamSize: 5,
+        technologies: [TECHNOLOGIES.LASER_CUTTING, TECHNOLOGIES.PRINTING_3D]
     },
     {
         heading: "Industry 4.0",
