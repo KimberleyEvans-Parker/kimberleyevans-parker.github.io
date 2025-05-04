@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import "./index.css";
-import "./fireflies.css";
-import "./animations.css";
+import "./css/global.css";
+import "./css/fireflies.css";
+import "./css/animations.css";
+import "./css/fade animations.css";
+import "./css/link.css";
+import "./css/tiles.css";
+import "./css/bullet points.css";
 import * as serviceWorker from "./serviceWorker";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
