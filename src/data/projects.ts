@@ -38,6 +38,19 @@ const AshasQuestImages = importAllPhotosFromFolder(
 
 export const projectData: ContentItemType[] = [
     {
+        heading: "Quotle",
+        subheading: "Daily Movie Guesser",
+        dates: { start: new Date(2023, 3) },
+        description: 
+            `A daily movie guessing game, where you guess the movie from the quote.  
+            Each day, a new quote is given to you, and you have to guess the movie.  
+            The game is played in a similar way to Wordle, where you have 6 guesses to get the answer.  
+            The game is hosted on vercel and uses basic google sheets for data analytics.`,
+        teamSize: 2,
+        links: { seeMore: "https://quotle-game.vercel.app/" },
+        technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.TS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
+    },
+    {
         heading: "Empower",
         subheading: "Network to Empower Women",
         dates: { start: new Date(2022, 6) },
