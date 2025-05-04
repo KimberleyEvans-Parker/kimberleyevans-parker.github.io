@@ -1,0 +1,42 @@
+.code-bullet-points {
+    column-count: 2;
+    list-style: none;
+    padding-left: 0;
+}
+
+.code-bullet-points li {
+    position: relative;
+    padding-left: 33px;
+}
+
+.code-bullet-points li:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url("../assets/code-bullet-point.png");
+    background-size: cover;
+    left: 4px;
+    top: 5px;
+}
+
+.value-bullet-points {
+    list-style: none;
+    padding-left: 0;
+}
+
+.value-bullet-points li {
+    position: relative;
+    padding-left: 33px;
+}
+
+.value-bullet-points li:before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background-image: url("../assets/value-bullet-point.png");
+    background-size: cover;
+    left: 2px;
+    top: 2px;
+}
