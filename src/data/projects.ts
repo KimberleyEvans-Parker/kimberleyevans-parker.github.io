@@ -61,6 +61,19 @@ export const projectData: ContentItemType[] = [
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.JS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
     {
+        heading: "Habidapt",
+        subheading: "Global Game Jam 2021",
+        dates: { start: new Date(2021, 7) },
+        description: 
+            `A game made during the Global Game Jam 2021, by a team of 5.  
+            This is a boardgame about animals adapting to their environment.  
+            It is a two-team game, where you work with your team-mates in a fun environment to collect different types of animals so that you can traverse across different terrains.  
+            To make the game, we utilised the laser-cutter to create the tiles and the 3D printer to create the tokens.  
+            We also designed cards for the game that made the deck with different animals and abilities in it.  
+            The game was certainly a great learning experience and I also enjoyed playing it.`,
+        teamSize: 5,
+    },
+    {
         heading: "Industry 4.0",
         subheading: "Machine Health Monitoring Software",
         dates: { start: new Date(2020, 7), end: new Date(2020, 10) },
