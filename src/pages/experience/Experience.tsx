@@ -28,6 +28,14 @@ export const Experience = () => {
     };
   });
 
+  let animationDelay = 0;
+
+  const getAnimationDelay = () => {
+    const animationDelaySeconds = animationDelay.toString() + "s";
+    animationDelay += (0.6 - animationDelay) / 5
+    return animationDelaySeconds;
+  };
+
   return (
     <div className="content-container experience-container fade left">
       <h1>Experience</h1>
@@ -38,7 +46,10 @@ export const Experience = () => {
 
       <div className="row">
         <div
-          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+          style={{
+            animationDelay: getAnimationDelay(),
+          }}
         >
           <Link to="Work">
             <img src={Work} alt="Work" className="experience-img" />
@@ -48,7 +59,10 @@ export const Experience = () => {
         </div>
 
         <div
-          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+          style={{
+            animationDelay: getAnimationDelay(),
+          }}
         >
           <Link to="Volunteer">
             <img src={Volunteer} alt="Volunteer" className="experience-img" />
@@ -58,7 +72,10 @@ export const Experience = () => {
         </div>
 
         <div
-          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+          style={{
+            animationDelay: getAnimationDelay(),
+          }}
         >
           <Link to="Projects">
             <img src={Projects} alt="Projects" className="experience-img" />
@@ -68,7 +85,10 @@ export const Experience = () => {
         </div>
 
         <div
-          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+          style={{
+            animationDelay: getAnimationDelay(),
+          }}
         >
           <Link to="Awards">
             <img src={Awards} alt="Awards" className="experience-img" />
