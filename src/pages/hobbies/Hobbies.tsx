@@ -28,9 +28,16 @@ export const Hobbies = () => {
     };
   });
 
+  let animationDelay = 0;
+
+  const getAnimationDelay = () => {
+    const animationDelaySeconds = animationDelay.toString() + "s";
+    animationDelay += (0.6 - animationDelay) / 5
+    return animationDelaySeconds;
+  };
+
   return (
     <div className="content-container experience-container">
-      {/* <div className="content-container experience-container fade left"> */}
       <h1>Hobbies</h1>
       <p>
         I have a lot of hobbies including badminton, piano, art and skiing. Here
@@ -39,7 +46,10 @@ export const Hobbies = () => {
 
       <div className="row">
         <div
-          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+          style={{
+            animationDelay: getAnimationDelay(),
+          }}
         >
           <Link to="lego">
             <img src={Lego} alt="Lego" className="experience-img" />
@@ -48,7 +58,10 @@ export const Hobbies = () => {
           </Link>
         </div>
         <div
-          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+          style={{
+            animationDelay: getAnimationDelay(),
+          }}
         >
           <Link to="photography">
             <img
@@ -64,7 +77,10 @@ export const Hobbies = () => {
 
       <div className="row">
         <div
-          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+          style={{
+            animationDelay: getAnimationDelay(),
+          }}
         >
           <Link to="cosplays">
             <img src={Cosplays} alt="Cosplays" className="experience-img" />
@@ -74,7 +90,10 @@ export const Hobbies = () => {
         </div>
         
         <div
-          className={dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"}
+          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+          style={{
+            animationDelay: getAnimationDelay(),
+          }}
         >
           <Link to="art">
             <img src={Art} alt="Art" className="experience-img" />
