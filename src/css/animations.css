@@ -5,6 +5,35 @@
   animation-delay: 5s;
 }
 
+.zoom-in {
+  opacity: 0;
+  -webkit-animation: zoom-in 1.5s cubic-bezier(0.25,0.1,0.25,0.9) forwards;
+  animation: zoom-in 1.5s cubic-bezier(0.25,0.1,0.25,0.9) forwards;
+}
+@-webkit-keyframes zoom-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .bounce {
   animation: bounce 0.7s;
   animation-direction: alternate;
