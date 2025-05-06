@@ -9,9 +9,9 @@ export const Modal = ({image, caption, setImage}: ModalProps) => {
     <>
       {image && (
         <div className="modal-background">
-          <span className="close" onClick={() => setImage(undefined)}>
+          <p className="close" onClick={() => setImage(undefined)}>
             &times;
-          </span>
+          </p>
           <img alt="" src={image} className="modal-content" />
           {caption && (
             <div className="caption">
