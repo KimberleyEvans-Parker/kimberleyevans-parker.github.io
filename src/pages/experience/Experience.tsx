@@ -1,32 +1,11 @@
-import React from "react";
-
 import Awards from "../../assets/experience/Awards.jpg";
 import Projects from "../../assets/experience/Projects.jpg";
 import Volunteer from "../../assets/experience/Volunteer.jpg";
 import Work from "../../assets/experience/Work.jpg";
-import { Link } from "react-router-dom";
 
-import { SMALL_SCREEN } from "../../helpers/Constants";
+import { Tile } from "../components/Tile";
 
 export const Experience = () => {
-  // Keeps track of the window dimensions.  Updates when window resizes
-  const [dimensions, setDimensions] = React.useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
-  React.useEffect(() => {
-    const handleResize = () => {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
 
   let animationDelay = 0;
 
@@ -45,57 +24,26 @@ export const Experience = () => {
       </p>
 
       <div className="row">
-        <div
-          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
-          style={{
-            animationDelay: getAnimationDelay(),
-          }}
-        >
-          <Link to="Work">
-            <img src={Work} alt="Work" className="experience-img" />
-            <h3 className="centered">Work</h3>
-            <div className="layer"></div>
-          </Link>
-        </div>
-
-        <div
-          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
-          style={{
-            animationDelay: getAnimationDelay(),
-          }}
-        >
-          <Link to="Volunteer">
-            <img src={Volunteer} alt="Volunteer" className="experience-img" />
-            <h3 className="centered">Volunteer</h3>
-            <div className="layer"></div>
-          </Link>
-        </div>
-
-        <div
-          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
-          style={{
-            animationDelay: getAnimationDelay(),
-          }}
-        >
-          <Link to="Projects">
-            <img src={Projects} alt="Projects" className="experience-img" />
-            <h3 className="centered">Projects</h3>
-            <div className="layer"></div>
-          </Link>
-        </div>
-
-        <div
-          className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
-          style={{
-            animationDelay: getAnimationDelay(),
-          }}
-        >
-          <Link to="Awards">
-            <img src={Awards} alt="Awards" className="experience-img" />
-            <h3 className="centered">Awards</h3>
-            <div className="layer"></div>
-          </Link>
-        </div>
+        <Tile
+          animationDelay={getAnimationDelay()}
+          imgSrc={Work}
+          title="Work"
+        />
+        <Tile
+          animationDelay={getAnimationDelay()}
+          imgSrc={Volunteer}
+          title="Volunteer"
+        />
+        <Tile
+          animationDelay={getAnimationDelay()}
+          imgSrc={Projects}
+          title="Projects"
+        />
+        <Tile
+          animationDelay={getAnimationDelay()}
+          imgSrc={Awards}
+          title="Awards"
+        />
       </div>
     </div>
   );
