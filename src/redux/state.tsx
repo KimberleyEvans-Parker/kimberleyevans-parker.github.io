@@ -5,7 +5,7 @@ export interface ModalState {
 }
 
 export const initialState: ModalState = {
-    images: [],
+    images: undefined,
     selectedImage: undefined,
     caption: "",
 }
