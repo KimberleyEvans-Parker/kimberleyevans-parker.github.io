@@ -4,7 +4,6 @@ export function modalReducer(
     state = initialState,
     action: { type: string; payload?: any }
 ) {
-    console.log("modalReducer", action, state)
     if (action.type === "modal/reset") {
         return {
             ...state,
