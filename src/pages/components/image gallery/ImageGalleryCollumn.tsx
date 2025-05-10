@@ -19,11 +19,9 @@ export const ImageGalleryCollumn = ({ images }: ImageGalleryCollumnProps) => {
         selectedImage: imageIndex,
         caption: name,
       }
-      console.log("newModalState", newModalState)
       dispatch(setImage(newModalState))
   }
 
-  console.log("Images", images)
 
   return (
     <>

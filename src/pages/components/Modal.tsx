@@ -8,17 +8,13 @@ export const Modal = () => {
   const imageIndex = useSelector(selectModalSelectedImage)
   const caption = useSelector(selectModalCaption)
   const images = useSelector(selectModalImages)
-  console.log("Modal", imageIndex, caption, images)
+
   const image = images && imageIndex !== undefined ? images[imageIndex] : undefined
   const dispatch = useDispatch();
 
   const handleResetImage = () => {
     dispatch(resetImage());
   };
-
-  console.log("Modal image", image)
-  console.log("Modal caption", caption)
-  console.log("Image index", imageIndex)
 
   return (
     <>

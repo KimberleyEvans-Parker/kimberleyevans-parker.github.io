@@ -13,13 +13,11 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
   const dispatch = useDispatch()
 
   const openModal = (index: number, caption: string) => {
-    console.log("openModal", index, caption)
     const newModalState: ModalState = {
       images: images,
       selectedImage: index,
       caption: caption,
     }
-    console.log("newModalState", newModalState)
     dispatch(setImage(newModalState))
   };
 
