@@ -66,7 +66,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
 
   return (
     <div style={{ marginTop: "40px" }}>
-      <Modal image={image} caption={caption} setImage={setImage} />
+      <Modal />
           
       <div>
         {dimensions.width < SMALL_SCREEN ? (

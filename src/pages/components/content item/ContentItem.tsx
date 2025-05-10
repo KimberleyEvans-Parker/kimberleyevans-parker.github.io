@@ -12,10 +12,9 @@ interface ContentItemProps {
   contentData: ContentItemType;
   animationDelay: string;
   imgOnLeft: boolean;
-  openModal: (image: string, caption: string) => void;
 }
 
-export const ContentItem = ({contentData, animationDelay, imgOnLeft, openModal}: ContentItemProps) => {
+export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentItemProps) => {
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -96,7 +95,7 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft, openModal}:
           )}
           {contentData.images && (
             <Grid item xs={12} sm={6} md={4}>
-              <ImageContent images={contentData.images} openModal={openModal} heading={contentData.heading} />
+              <ImageContent images={contentData.images} heading={contentData.heading} />
             </Grid>
           )}
           {imgOnLeft && dimensions.width >= SMALL_SCREEN && (

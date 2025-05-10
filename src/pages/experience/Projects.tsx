@@ -6,14 +6,7 @@ import { projectData } from "../../data/projects";
 import { Sort } from "../components/sort filter/Sort";
 
 export const Projects = () => {
-  const [image, setImage] = useState<string | undefined>(undefined);
-  const [caption, setCaption] = useState<string>("");
   const [sortedProjects, setSortedProjects] = useState(projectData);
-
-  const openModal = (image: string, caption: string) => {
-    setImage(image);
-    setCaption(caption);
-  };
 
   let animationDelay = 0;
 
@@ -33,7 +26,7 @@ export const Projects = () => {
   return (
     <div className="content-container experience-container">
       <h1 className="fade left">Projects</h1>
-      <Modal image={image} caption={caption} setImage={setImage} />
+      {/* <Modal /> */}
 
       <Sort projectData={projectData} setSortedProjects={setSortedProjects} />
 
@@ -42,7 +35,6 @@ export const Projects = () => {
           key={project.heading}
           imgOnLeft={imgOnLeft()}
           contentData={project}
-          openModal={openModal}
           animationDelay={getAnimationDelay()}
         />
       ))}

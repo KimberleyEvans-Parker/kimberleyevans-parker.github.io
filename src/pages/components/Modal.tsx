@@ -1,15 +1,26 @@
-interface ModalProps {
-  image: string | undefined;
-  caption: string;
-  setImage: (image: string | undefined) => void;
-}
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { resetImage } from "../../redux/actions";
+import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../redux/selectors";
 
-export const Modal = ({image, caption, setImage}: ModalProps) => {
+
+export const Modal = () => {
+  const imageIndex = useSelector(selectModalSelectedImage)
+  const caption = useSelector(selectModalCaption)
+  const images = useSelector(selectModalImages)
+  console.log("Modal", imageIndex, caption, images)
+  const image = images && imageIndex !== undefined ? images[imageIndex] : undefined
+  const dispatch = useDispatch();
+
+  const handleResetImage = () => {
+    dispatch(resetImage());
+  };
+
   return (
     <>
       {image && (
         <div className="modal-background">
-            <p className="close" onClick={() => setImage(undefined)}>
+            <p className="close" onClick={handleResetImage}>
               &times;
             </p>
           <div className="modal-content">

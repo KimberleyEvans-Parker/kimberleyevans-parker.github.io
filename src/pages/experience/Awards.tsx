@@ -1,17 +1,9 @@
-import { useState } from "react";
-
 import { ContentItem } from "../components/content item/ContentItem";
 import { Modal } from "../components/Modal";
 import { awardsData } from "../../data/awards";
 
 export const Awards = () => {
-  const [image, setImage] = useState<string | undefined>(undefined);
-  const [caption, setCaption] = useState<string>("");
 
-  const openModal = (image: string, caption: string) => {
-    setImage(image);
-    setCaption(caption);
-  };
 
   let animationDelay = 0;
 
@@ -32,14 +24,13 @@ export const Awards = () => {
   return (
     <div className="content-container experience-container">
       <h1 className="fade left">Awards and Achievments</h1>
-      <Modal image={image} caption={caption} setImage={setImage} />
+      <Modal />
 
       {awardsData.map((project) => (
         <ContentItem
           key={project.heading}
           imgOnLeft={imgOnLeft()}
           contentData={project}
-          openModal={openModal}
           animationDelay={getAnimationDelay()}
         />
       ))}
