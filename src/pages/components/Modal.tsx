@@ -16,6 +16,10 @@ export const Modal = () => {
     dispatch(resetImage());
   };
 
+  console.log("Modal image", image)
+  console.log("Modal caption", caption)
+  console.log("Image index", imageIndex)
+
   return (
     <>
       {image && (
