@@ -26,7 +26,7 @@ export const Projects = () => {
   return (
     <div className="content-container experience-container">
       <h1 className="fade left">Projects</h1>
-      {/* <Modal /> */}
+      <Modal />
 
       <Sort projectData={projectData} setSortedProjects={setSortedProjects} />
 
