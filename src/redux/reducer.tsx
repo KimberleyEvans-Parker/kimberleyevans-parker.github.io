@@ -2,12 +2,13 @@ import { initialState } from "./state"
 
 export function modalReducer(
     state = initialState,
-    action: { type: string; data?: any }
+    action: { type: string; payload?: any }
 ) {
+    console.log("modalReducer", action, state)
     if (action.type === "modal/reset") {
         return {
             ...state,
-            images: [],
+            images: undefined,
             selectedImage: undefined,
             caption: "",
         }
@@ -15,9 +16,9 @@ export function modalReducer(
     if (action.type === "modal/setImage") {
         return {
             ...state,
-            images: action.data.images,
-            selectedImage: action.data.selectedImage,
-            caption: action.data.caption,
+            images: action.payload.images,
+            selectedImage: action.payload.selectedImage,
+            caption: action.payload.caption,
         }
     }
 
