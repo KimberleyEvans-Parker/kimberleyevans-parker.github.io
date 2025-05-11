@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.30983c9f.css",
+    "main.css": "/static/css/main.10e1ad5b.css",
     "main.js": "/static/js/main.aff9ec6e.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
@@ -157,11 +157,11 @@
     "static/media/Yellow Flower.jpg": "/static/media/Yellow Flower.a989971f5cc59c066b4b.jpg",
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
-    "main.30983c9f.css.map": "/static/css/main.30983c9f.css.map",
+    "main.10e1ad5b.css.map": "/static/css/main.10e1ad5b.css.map",
     "main.aff9ec6e.js.map": "/static/js/main.aff9ec6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.30983c9f.css",
+    "static/css/main.10e1ad5b.css",
     "static/js/main.aff9ec6e.js"
   ]
 }
