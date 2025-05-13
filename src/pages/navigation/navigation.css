@@ -62,6 +62,11 @@ nav ul li.active {
   padding: 10px 16px;
 }
 
+.nav2 .navbar-container-smallscreen ul li {
+  font-size: 16px;
+  padding: 10px 10px;
+}
+
 nav ul a {
   color: grey;
 }
