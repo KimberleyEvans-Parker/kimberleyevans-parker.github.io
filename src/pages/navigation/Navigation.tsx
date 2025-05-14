@@ -5,7 +5,7 @@ import "./navigation.css"
 import "./menu-icon.css"
 
 export const Navigation = () => {
-  const [dropdownOpen, setdropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const location = useLocation();
 
   /* Keeps track of the window dimensions.  Updates when window resizes */
@@ -20,7 +20,7 @@ export const Navigation = () => {
         width: window.innerWidth,
       });
       if (dimensions.width >= SMALL_SCREEN) {
-        setdropdownOpen(false);
+        setDropdownOpen(false);
       }
     }
 
@@ -40,13 +40,13 @@ export const Navigation = () => {
         }`}
       >
         <ul>
-          <Link to="/" onClick={() => setdropdownOpen(false)}>
+          <Link to="/" onClick={() => setDropdownOpen(false)}>
             <li>Kimberley Evans-Parker</li>
           </Link>
           {dimensions.width < SMALL_SCREEN && (
             <div
               className={`navbar-rightside`}
-              onClick={() => setdropdownOpen(!dropdownOpen)}
+              onClick={() => setDropdownOpen(!dropdownOpen)}
             >
               <li style={{ height: "100%", paddingBottom: "10.5px" }}>
                 <div className={`${dropdownOpen && "change"} menu-icon`}>
@@ -68,7 +68,7 @@ export const Navigation = () => {
               <Link
                 className="nav-link"
                 to="/about"
-                onClick={() => setdropdownOpen(false)}
+                onClick={() => setDropdownOpen(false)}
               >
                 <li
                   className={`${dropdownOpen ? "dropdown-open" : ""} ${
@@ -81,7 +81,7 @@ export const Navigation = () => {
               <Link
                 className="nav-link"
                 to="/experience"
-                onClick={() => setdropdownOpen(false)}
+                onClick={() => setDropdownOpen(false)}
               >
                 <li
                   className={`${dropdownOpen ? "dropdown-open" : ""} ${
@@ -96,7 +96,7 @@ export const Navigation = () => {
               <Link
                 className="nav-link"
                 to="/hobbies"
-                onClick={() => setdropdownOpen(false)}
+                onClick={() => setDropdownOpen(false)}
               >
                 <li
                   className={`${dropdownOpen && "dropdown-open"} ${
@@ -108,7 +108,7 @@ export const Navigation = () => {
               </Link>
               <a
                 href="https://github.com/KimberleyEvans-Parker"
-                onClick={() => setdropdownOpen(false)}
+                onClick={() => setDropdownOpen(false)}
                 aria-label="GitHub"
               >
                 <li className={dropdownOpen ? "dropdown-open" : ""}>
@@ -117,7 +117,7 @@ export const Navigation = () => {
               </a>
               <a
                 href="https://www.linkedin.com/in/kimberleyevans-parker/"
-                onClick={() => setdropdownOpen(false)}
+                onClick={() => setDropdownOpen(false)}
                 aria-label="LinkedIn"
               >
                 <li className={dropdownOpen ? "dropdown-open" : ""}>
