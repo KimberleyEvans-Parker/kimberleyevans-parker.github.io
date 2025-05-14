@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { SMALL_SCREEN } from "../../helpers/Constants";
-import "./navigation.css";
+import React, { useState } from "react"
+import { Link, useLocation } from "react-router-dom"
+import { SMALL_SCREEN } from "../../helpers/Constants"
+import "./navigation.css"
+import "./menu-icon.css"
 
 export const Navigation = () => {
   const [dropdownOpen, setdropdownOpen] = useState(false);
