@@ -61,9 +61,7 @@ export const Navigation = () => {
         </ul>
         {(dropdownOpen || dimensions.width >= SMALL_SCREEN) && (
           <div
-            className={`navbar-rightside ${
-              dropdownOpen ? "dropdown-open" : ""
-            }`}
+            className={`navbar-rightside dropdown-item`}
           >
             <ul>
               <NavbarLink
@@ -86,7 +84,7 @@ export const Navigation = () => {
                 onClick={() => setDropdownOpen(false)}
                 aria-label="GitHub"
               >
-                <li className={dropdownOpen ? "dropdown-open" : ""}>
+                <li className="dropdown-item">
                   <i className="fa fa-github" aria-hidden="true"></i>
                 </li>
               </a>
@@ -95,7 +93,7 @@ export const Navigation = () => {
                 onClick={() => setDropdownOpen(false)}
                 aria-label="LinkedIn"
               >
-                <li className={dropdownOpen ? "dropdown-open" : ""}>
+                <li className="dropdown-item">
                   <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </li>
               </a>

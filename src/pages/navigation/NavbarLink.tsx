@@ -17,8 +17,7 @@ export const NavbarLink = ({ heading, dropdownOpen, setDropdownOpen }: NavbarLin
       onClick={() => setDropdownOpen(false)}
     >
       <li
-        className={`
-          ${dropdownOpen ? "dropdown-open" : ""} 
+        className={`dropdown-item 
           ${location.pathname.startsWith(url) ? "active" : ""}
           `}
       >
