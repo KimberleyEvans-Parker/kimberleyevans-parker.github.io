@@ -1,6 +1,6 @@
 import React from "react"
 import { SMALL_SCREEN } from "../../helpers/Constants";
-import { SubNavbarLink } from "../components/SubNavbarLink";
+import { SubNavbarLink } from "./SubNavbarLink";
 
 interface SubNavbarProps {
   headings: string[];
