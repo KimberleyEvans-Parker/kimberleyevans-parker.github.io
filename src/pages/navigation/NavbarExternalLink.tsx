@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 interface NavbarExternalLinkProps {
   url: string;
@@ -8,7 +8,6 @@ interface NavbarExternalLinkProps {
 }
 
 export const NavbarExternalLink = ({ url, ariaLabel, className, setDropdownOpen }: NavbarExternalLinkProps) => {
-  const location = useLocation();
 
   return (
     <a
