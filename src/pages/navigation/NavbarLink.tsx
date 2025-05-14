@@ -2,11 +2,10 @@ import { Link, useLocation } from "react-router-dom";
 
 interface NavbarLinkProps {
   heading: string;
-  dropdownOpen: boolean;
   setDropdownOpen: (open: boolean) => void;
 }
 
-export const NavbarLink = ({ heading, dropdownOpen, setDropdownOpen }: NavbarLinkProps) => {
+export const NavbarLink = ({ heading, setDropdownOpen }: NavbarLinkProps) => {
   const location = useLocation();
   const url = `/${heading.toLowerCase()}`;
 
