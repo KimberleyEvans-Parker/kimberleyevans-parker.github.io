@@ -95,7 +95,7 @@ nav ul a {
   cursor: pointer;
 }
 
-.dropdown-open {
+.navbar-container-smallscreen .dropdown-item {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
