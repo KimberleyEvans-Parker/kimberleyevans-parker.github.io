@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom"
 import { SMALL_SCREEN } from "../../helpers/Constants"
 import "./navigation.css"
 import "./menu-icon.css"
+import { NavbarLink } from "./NavbarLink"
 
 export const Navigation = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -65,47 +66,21 @@ export const Navigation = () => {
             }`}
           >
             <ul>
-              <Link
-                className="nav-link"
-                to="/about"
-                onClick={() => setDropdownOpen(false)}
-              >
-                <li
-                  className={`${dropdownOpen ? "dropdown-open" : ""} ${
-                    location.pathname === "/about" ? "active" : ""
-                  }`}
-                >
-                  About
-                </li>
-              </Link>
-              <Link
-                className="nav-link"
-                to="/experience"
-                onClick={() => setDropdownOpen(false)}
-              >
-                <li
-                  className={`${dropdownOpen ? "dropdown-open" : ""} ${
-                    location.pathname.startsWith("/experience")
-                      ? "active"
-                      : ""
-                  }`}
-                >
-                  Experience
-                </li>
-              </Link>
-              <Link
-                className="nav-link"
-                to="/hobbies"
-                onClick={() => setDropdownOpen(false)}
-              >
-                <li
-                  className={`${dropdownOpen && "dropdown-open"} ${
-                    location.pathname === "/hobbies" ? "active" : ""
-                  }`}
-                >
-                  Hobbies
-                </li>
-              </Link>
+              <NavbarLink
+                heading="About"
+                dropdownOpen={dropdownOpen}
+                setDropdownOpen={setDropdownOpen}
+              />
+              <NavbarLink
+                heading="Experience"
+                dropdownOpen={dropdownOpen}
+                setDropdownOpen={setDropdownOpen}
+              />
+              <NavbarLink
+                heading="Hobbies"
+                dropdownOpen={dropdownOpen}
+                setDropdownOpen={setDropdownOpen}
+              />
               <a
                 href="https://github.com/KimberleyEvans-Parker"
                 onClick={() => setDropdownOpen(false)}

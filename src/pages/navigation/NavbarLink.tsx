@@ -1,12 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 
-interface SubNavbarLinkProps {
+interface NavbarLinkProps {
   heading: string;
   dropdownOpen: boolean;
   setDropdownOpen: (open: boolean) => void;
 }
 
-export const SubNavbarLink = ({ heading, dropdownOpen, setDropdownOpen }: SubNavbarLinkProps) => {
+export const NavbarLink = ({ heading, dropdownOpen, setDropdownOpen }: NavbarLinkProps) => {
   const location = useLocation();
   const url = `/${heading.toLowerCase()}`;
 
