@@ -4,6 +4,7 @@ import { SMALL_SCREEN } from "../../helpers/Constants"
 import "./navigation.css"
 import "./menu-icon.css"
 import { NavbarLink } from "./NavbarLink"
+import { NavbarExternalLink } from "./NavbarExternalLink"
 
 export const Navigation = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -76,24 +77,18 @@ export const Navigation = () => {
                 heading="Hobbies"
                 setDropdownOpen={setDropdownOpen}
               />
-              <a
-                href="https://github.com/KimberleyEvans-Parker"
-                onClick={() => setDropdownOpen(false)}
-                aria-label="GitHub"
-              >
-                <li className="dropdown-item">
-                  <i className="fa fa-github" aria-hidden="true"></i>
-                </li>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/kimberleyevans-parker/"
-                onClick={() => setDropdownOpen(false)}
-                aria-label="LinkedIn"
-              >
-                <li className="dropdown-item">
-                  <i className="fa fa-linkedin" aria-hidden="true"></i>
-                </li>
-              </a>
+              <NavbarExternalLink
+                url="https://github.com/KimberleyEvans-Parker"
+                ariaLabel="GitHub"
+                className="fa-github"
+                setDropdownOpen={setDropdownOpen}
+              />
+              <NavbarExternalLink
+                url="https://www.linkedin.com/in/kimberleyevans-parker/"
+                ariaLabel="LinkedIn"
+                className="fa-linkedin"
+                setDropdownOpen={setDropdownOpen}
+              />
             </ul>
           </div>
         )}
