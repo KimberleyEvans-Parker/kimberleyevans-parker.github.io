@@ -95,7 +95,7 @@ nav ul a {
   cursor: pointer;
 }
 
-.dropdown-open {
+.navbar-container-smallscreen .dropdown-item {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
@@ -105,42 +105,4 @@ nav ul a {
   z-index: 5;
   top: 57px;
   background-color: var(--primary-colour);
-}
-
-/* menu icon and animation */
-
-.menu-icon {
-  display: inline-block;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 30px;
-  height: 4px;
-  background-color: grey;
-  margin: 4.8px 0;
-  transition: 0.4s;
-}
-
-.bar1 {
-  margin-top: 4px;
-}
-
-.bar3 {
-  margin-bottom: 0;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-7px, 5.5px);
-  transform: rotate(-45deg) translate(-7px, 5.5px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -6px);
-  transform: rotate(45deg) translate(-6px, -6px);
 }

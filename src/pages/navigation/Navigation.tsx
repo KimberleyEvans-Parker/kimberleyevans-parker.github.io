@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { SMALL_SCREEN } from "../../helpers/Constants";
-import "./navigation.css";
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
+import { SMALL_SCREEN } from "../../helpers/Constants"
+import { NavbarLink } from "./NavbarLink"
+import { NavbarExternalLink } from "./NavbarExternalLink"
+import "./navigation.css"
+import "./menu-icon.css"
 
 export const Navigation = () => {
-  const [dropdownOpen, setdropdownOpen] = useState(false);
-  const location = useLocation();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
@@ -19,7 +21,7 @@ export const Navigation = () => {
         width: window.innerWidth,
       });
       if (dimensions.width >= SMALL_SCREEN) {
-        setdropdownOpen(false);
+        setDropdownOpen(false);
       }
     }
 
@@ -39,13 +41,13 @@ export const Navigation = () => {
         }`}
       >
         <ul>
-          <Link to="/" onClick={() => setdropdownOpen(false)}>
+          <Link to="/" onClick={() => setDropdownOpen(false)}>
             <li>Kimberley Evans-Parker</li>
           </Link>
           {dimensions.width < SMALL_SCREEN && (
             <div
               className={`navbar-rightside`}
-              onClick={() => setdropdownOpen(!dropdownOpen)}
+              onClick={() => setDropdownOpen(!dropdownOpen)}
             >
               <li style={{ height: "100%", paddingBottom: "10.5px" }}>
                 <div className={`${dropdownOpen && "change"} menu-icon`}>
@@ -59,70 +61,33 @@ export const Navigation = () => {
         </ul>
         {(dropdownOpen || dimensions.width >= SMALL_SCREEN) && (
           <div
-            className={`navbar-rightside ${
-              dropdownOpen ? "dropdown-open" : ""
-            }`}
+            className={`navbar-rightside dropdown-item`}
           >
             <ul>
-              <Link
-                className="nav-link"
-                to="/about"
-                onClick={() => setdropdownOpen(false)}
-              >
-                <li
-                  className={`${dropdownOpen ? "dropdown-open" : ""} ${
-                    location.pathname === "/about" ? "active" : ""
-                  }`}
-                >
-                  About
-                </li>
-              </Link>
-              <Link
-                className="nav-link"
-                to="/experience"
-                onClick={() => setdropdownOpen(false)}
-              >
-                <li
-                  className={`${dropdownOpen ? "dropdown-open" : ""} ${
-                    location.pathname.startsWith("/experience")
-                      ? "active"
-                      : ""
-                  }`}
-                >
-                  Experience
-                </li>
-              </Link>
-              <Link
-                className="nav-link"
-                to="/hobbies"
-                onClick={() => setdropdownOpen(false)}
-              >
-                <li
-                  className={`${dropdownOpen && "dropdown-open"} ${
-                    location.pathname === "/hobbies" ? "active" : ""
-                  }`}
-                >
-                  Hobbies
-                </li>
-              </Link>
-              <a
-                href="https://github.com/KimberleyEvans-Parker"
-                onClick={() => setdropdownOpen(false)}
-                aria-label="GitHub"
-              >
-                <li className={dropdownOpen ? "dropdown-open" : ""}>
-                  <i className="fa fa-github" aria-hidden="true"></i>
-                </li>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/kimberleyevans-parker/"
-                onClick={() => setdropdownOpen(false)}
-                aria-label="LinkedIn"
-              >
-                <li className={dropdownOpen ? "dropdown-open" : ""}>
-                  <i className="fa fa-linkedin" aria-hidden="true"></i>
-                </li>
-              </a>
+              <NavbarLink
+                heading="About"
+                setDropdownOpen={setDropdownOpen}
+              />
+              <NavbarLink
+                heading="Experience"
+                setDropdownOpen={setDropdownOpen}
+              />
+              <NavbarLink
+                heading="Hobbies"
+                setDropdownOpen={setDropdownOpen}
+              />
+              <NavbarExternalLink
+                url="https://github.com/KimberleyEvans-Parker"
+                ariaLabel="GitHub"
+                className="fa-github"
+                setDropdownOpen={setDropdownOpen}
+              />
+              <NavbarExternalLink
+                url="https://www.linkedin.com/in/kimberleyevans-parker/"
+                ariaLabel="LinkedIn"
+                className="fa-linkedin"
+                setDropdownOpen={setDropdownOpen}
+              />
             </ul>
           </div>
         )}

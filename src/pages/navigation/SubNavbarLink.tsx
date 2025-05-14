@@ -1,26 +1,23 @@
 import { Link, useLocation } from "react-router-dom";
 
 interface SubNavbarLinkProps {
-  section: string;
+  section?: string;
   heading: string;
 }
 
 export const SubNavbarLink = ({ section, heading }: SubNavbarLinkProps) => {
   const location = useLocation();
+  const url = section ? `/${section}/${heading.toLowerCase()}` : `/${heading.toLowerCase()}`
 
   return (
     <Link
       className="nav-link"
-      to={`/${section}/${heading.toLowerCase()}`}
+      to={url}
     >
       <li
-        className={`${
-          location.pathname ===
-          `/${section}/${heading.toLowerCase()}`
-            ? "active"
-            : ""
+        className={
+          location.pathname === url ? "active" : ""
         } 
-        `}
       >
         {heading}
       </li>
