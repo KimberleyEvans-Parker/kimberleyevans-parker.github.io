@@ -66,17 +66,14 @@ export const Navigation = () => {
             <ul>
               <NavbarLink
                 heading="About"
-                dropdownOpen={dropdownOpen}
                 setDropdownOpen={setDropdownOpen}
               />
               <NavbarLink
                 heading="Experience"
-                dropdownOpen={dropdownOpen}
                 setDropdownOpen={setDropdownOpen}
               />
               <NavbarLink
                 heading="Hobbies"
-                dropdownOpen={dropdownOpen}
                 setDropdownOpen={setDropdownOpen}
               />
               <a
