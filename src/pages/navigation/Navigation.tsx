@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { SMALL_SCREEN } from "../../helpers/Constants"
 import { NavbarLink } from "./NavbarLink"
 import { NavbarExternalLink } from "./NavbarExternalLink"
