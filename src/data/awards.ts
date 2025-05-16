@@ -18,6 +18,9 @@ const ConnectedWorkplacesHackathonImages = importAllPhotosFromFolder(
 const WdccSesaImages = importAllPhotosFromFolder(
     require.context("../assets/awards/WDCC SESA Hackathon", false)
 )
+const YESAwardImages = importAllPhotosFromFolder(
+    require.context("../assets/awards/YES Business Product Award", false)
+)
 
 
 export const awardsData: ContentItemType[] = [
@@ -125,12 +128,13 @@ export const awardsData: ContentItemType[] = [
             As a result of our hard work, team effort and problem-solving skills, our team ranked 2nd in Auckland and 3rd in New Zealand.`,
     },
     {
-        heading: "Best Manaufacturer Award",
+        heading: "Best Product Development Award",
         subheading: "Young Enterprise Scheme",
         dates: { start: new Date(2017, 8) },
         description: `As part of the Young Enterprise Scheme, I co-founded the company School Storage Solutions.  
             During this, we made lockers to be rented out by students at school.  
-            For our creation of the lockers, we received the Best Manufacturer Award.  `,	
+            For our creation of the lockers, we received the Best Manufacturer Award.  `,
+        images: YESAwardImages,
     },
     {
         heading: "Alice Programming Competition",
