@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.407bbc58.css",
-    "main.js": "/static/js/main.d9b81bde.js",
+    "main.js": "/static/js/main.6c32f528.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -28,10 +28,13 @@
     "static/media/View of the Island.JPG": "/static/media/View of the Island.26323752b5010bc9249d.JPG",
     "static/media/Planting Trees 1.JPG": "/static/media/Planting Trees 1.3df188e4c08b65c78cac.JPG",
     "static/media/Features.gif": "/static/media/Features.84269d7499d2ee190727.gif",
+    "static/media/Cofounders.JPG": "/static/media/Cofounders.5907ad66d40f5d2e1801.JPG",
     "static/media/Add and Edit Machines.gif": "/static/media/Add and Edit Machines.29014ade743961778d13.gif",
     "static/media/Future forest in the making.jpg": "/static/media/Future forest in the making.a55c53eead6149e64c11.jpg",
     "static/media/From hands to the lands.jpg": "/static/media/From hands to the lands.d0e5c7e6fa2246e46b45.jpg",
     "static/media/Planet heroes in action.jpg": "/static/media/Planet heroes in action.3f822ab34065cf259f75.jpg",
+    "static/media/Receiving the award.JPG": "/static/media/Receiving the award.27eff78d5b2e05770af4.JPG",
+    "static/media/Locker Business.JPG": "/static/media/Locker Business.80a3b5e548497d419f89.JPG",
     "static/media/Zelda.jpg": "/static/media/Zelda.2fc4b3db33915c54b646.jpg",
     "static/media/Profile Page.gif": "/static/media/Profile Page.033fedc2ad430f1235a5.gif",
     "static/media/Dog and Seal.JPG": "/static/media/Dog and Seal.dc06b2407cb4907be9ac.JPG",
@@ -42,6 +45,7 @@
     "static/media/Futuristic.jpg": "/static/media/Futuristic.0ddefde5a9340df50e2a.jpg",
     "static/media/Maleficent.jpg": "/static/media/Maleficent.ab4bc2fa77fadfa27183.jpg",
     "static/media/Helping in the Nursery.jpg": "/static/media/Helping in the Nursery.670660be7fcef3e15501.jpg",
+    "static/media/Awards.jpg": "/static/media/Awards.5b0c1ba7323945084fdb.jpg",
     "static/media/Futuristic 2.jpg": "/static/media/Futuristic 2.8b1f1e9698d4e868858b.jpg",
     "static/media/Futuristic 3.jpg": "/static/media/Futuristic 3.bcbf08647b851bfeaa77.jpg",
     "static/media/Tardis - Bigger on the Inside.jpg": "/static/media/Tardis - Bigger on the Inside.1fd94bc64466f029e57f.jpg",
@@ -114,6 +118,7 @@
     "static/media/Link - back.jpg": "/static/media/Link - back.5192bc4f5ec81a37e49c.jpg",
     "static/media/Zelda - head.jpg": "/static/media/Zelda - head.731cbd1158a8b8ce5aac.jpg",
     "static/media/Resources.jpg": "/static/media/Resources.1c1c6e8d2ced69d16b22.jpg",
+    "static/media/Excellence in Product Development.JPG": "/static/media/Excellence in Product Development.641e89e0cab5276889e7.JPG",
     "static/media/Link.jpg": "/static/media/Link.a79249fec3de9f1a8375.jpg",
     "static/media/Where next.jpg": "/static/media/Where next.78e3e3072b846f5c3f62.jpg",
     "static/media/Physics 140.jpg": "/static/media/Physics 140.e064b4040c651bd3e050.jpg",
@@ -125,7 +130,6 @@
     "static/media/Link - Side.jpg": "/static/media/Link - Side.9251202ad8b43e6c499c.jpg",
     "static/media/Compsci 230.jpg": "/static/media/Compsci 230.a30ee6dea9912b6e1152.jpg",
     "static/media/Team Krayon and Abinesh from Potentia.jpg": "/static/media/Team Krayon and Abinesh from Potentia.7a8dc8093ff7c230026c.jpg",
-    "static/media/Awards.jpg": "/static/media/Awards.5b0c1ba7323945084fdb.jpg",
     "static/media/Home.jpg": "/static/media/Home.148dd6cddde80d05ee2a.jpg",
     "static/media/Construction.jpg": "/static/media/Construction.bd94fac228922c4f0a3f.jpg",
     "static/media/Wolf Link - Back.jpg": "/static/media/Wolf Link - Back.92439aa7e0c0db051d7b.jpg",
@@ -158,10 +162,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.407bbc58.css.map": "/static/css/main.407bbc58.css.map",
-    "main.d9b81bde.js.map": "/static/js/main.d9b81bde.js.map"
+    "main.6c32f528.js.map": "/static/js/main.6c32f528.js.map"
   },
   "entrypoints": [
     "static/css/main.407bbc58.css",
-    "static/js/main.d9b81bde.js"
+    "static/js/main.6c32f528.js"
   ]
 }
