@@ -65,22 +65,22 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
         {dimensions.width < SMALL_SCREEN ? (
           <Grid container spacing={2}>
             <Grid item xs={6}>
-              <ImageGalleryCollumn images={l2_1} />
+              <ImageGalleryCollumn allImages={images} images={l2_1} />
             </Grid>
             <Grid item xs={6}>
-              <ImageGalleryCollumn images={l2_2} />
+              <ImageGalleryCollumn allImages={images} images={l2_2} />
             </Grid>
           </Grid>
         ) : (
           <Grid container spacing={2}>
             <Grid item xs={4}>
-              <ImageGalleryCollumn images={l3_1} />
+              <ImageGalleryCollumn allImages={images} images={l3_1} />
             </Grid>
             <Grid item xs={4}>
-              <ImageGalleryCollumn images={l3_2} />
+              <ImageGalleryCollumn allImages={images} images={l3_2} />
             </Grid>
             <Grid item xs={4}>
-              <ImageGalleryCollumn images={l3_3} />
+              <ImageGalleryCollumn allImages={images} images={l3_3} />
             </Grid>
           </Grid>
         )}
