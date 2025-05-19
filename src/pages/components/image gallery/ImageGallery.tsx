@@ -43,17 +43,17 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
 
   for (var i = 0; i < images.length; i++) {
     if (i % 3 === 0) {
-      l3_1.push([images[i], i]);
+      l3_1.push({name: images[i], index: i});
     } else if (i % 3 === 1) {
-      l3_2.push([images[i], i]);
+      l3_2.push({name: images[i], index: i});
     } else {
-      l3_3.push([images[i], i]);
+      l3_3.push({name: images[i], index: i});
     }
 
     if (i % 2 === 0) {
-      l2_1.push([images[i], i]);
+      l2_1.push({name: images[i], index: i});
     } else {
-      l2_2.push([images[i], i]);
+      l2_2.push({name: images[i], index: i});
     }
   }
 

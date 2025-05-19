@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { ModalState } from "../../../redux/state";
 import { setImage } from "../../../redux/actions";
 
-type imageData = [string, number];
+type imageData = {name: string, index: number};
 
 interface ImageGalleryCollumnProps {
   allImages: string[];
@@ -29,8 +29,8 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
   return (
     <>
       {images.map((imageData, imageIndex) => {
-        const image = imageData[0];
-        const animationDelay = imageData[1] * 0.15 + "s";
+        const image = imageData.name;
+        const animationDelay = imageData.index * 0.15 + "s";
         const path = image.split("/");
         const name = path[path.length - 1].split(".")[0];
 
