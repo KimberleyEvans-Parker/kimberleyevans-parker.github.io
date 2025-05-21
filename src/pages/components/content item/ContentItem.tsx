@@ -88,10 +88,7 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
                 dates={contentData.dates}
                 description={contentData.description}
                 teamSize={contentData.teamSize}
-                linkedInLink={contentData.links?.linkedIn}
-                seeMoreLink={contentData.links?.seeMore}
-                technologies={contentData.technologies}
-                projectLink={contentData.links?.project}
+                links={contentData.links}
               />
             </Grid>
           )}
@@ -106,10 +103,7 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
               dates={contentData.dates}
               description={contentData.description}
               teamSize={contentData.teamSize}
-              linkedInLink={contentData.links?.linkedIn}
-              seeMoreLink={contentData.links?.seeMore}
-              technologies={contentData.technologies}
-              projectLink={contentData.links?.project}
+              links={contentData.links}
             />
             </Grid>
           )}

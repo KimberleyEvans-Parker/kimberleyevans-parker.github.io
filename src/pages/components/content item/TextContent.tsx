@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 import { Dates } from "../../../data/types";
 import { DateSubheading } from "./DateSubheading";
+import { LinksType } from "../../../data/types";
 
 interface TextContentProps {
   dates: Dates;
   description: string;
   teamSize?: number;
-  linkedInLink?: string;
-  seeMoreLink?: string;
-  projectLink?: string;
+  links?: LinksType;
   technologies?: any[];
 }
 
@@ -17,9 +16,7 @@ export const TextContent = (
     dates,
     description,
     teamSize,
-    linkedInLink,
-    seeMoreLink,
-    projectLink,
+    links,
     technologies,
   } : TextContentProps
 ) => {
@@ -34,25 +31,32 @@ export const TextContent = (
           Team size: {teamSize}
         </p>
       )}
-      {linkedInLink && (
-        <a href={linkedInLink} className={"popout-link"}>
+      {links?.linkedIn && (
+        <a href={links?.linkedIn} className={"popout-link"}>
           <i className="fa fa-linkedin popout" aria-hidden="true" />
           <p>
             See the LinkedIn post here!
           </p>
         </a>
       )}
-      {seeMoreLink && (
+      {links?.seeMore && (
         <p>
-          <a href={seeMoreLink}>
+          <a href={links?.seeMore}>
             For more information, take a look here
           </a>
         </p>
       )}
-      {projectLink && (
+      {links?.project && (
         <p>
-          <Link to={`/experience/projects#${projectLink}`}>
+          <Link to={`/experience/projects#${links?.project}`}>
             See the project here
+          </Link>
+        </p>
+      )}
+      {links?.local && (
+        <p>
+          <Link to={`/experience/projects#${links?.local}`}>
+            See more here
           </Link>
         </p>
       )}
