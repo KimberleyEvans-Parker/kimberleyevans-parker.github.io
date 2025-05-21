@@ -6,7 +6,7 @@ export type LinksType = {
 }
 
 export type Dates = {
-    start: Date;
+    start?: Date;
     end?: Date | "Present";
 }
 
