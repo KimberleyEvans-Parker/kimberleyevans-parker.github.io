@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Dates } from "../../../data/types";
+import { DateSubheading } from "./DateSubheading";
 
 interface TextContentProps {
   dates: Dates;
@@ -24,15 +25,7 @@ export const TextContent = (
 ) => {
   return (
     <>
-      <h3>
-        {dates.start.toLocaleDateString(`en-NZ`, { month: `long`, year: `numeric` })}
-        {dates.end && dates.end !== `Present` && (
-          ` - ${dates.end.toLocaleDateString(`en-NZ`, { month: `long`, year: `numeric` })}`
-        )}
-        {dates.end === `Present` && (
-          ` - Present`
-        )}
-      </h3>
+      <DateSubheading {...dates} />
       <p>
         {description}
       </p>
