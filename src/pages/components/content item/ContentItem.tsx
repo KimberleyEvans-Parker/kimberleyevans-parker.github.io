@@ -9,7 +9,7 @@ import { TextContent } from "./TextContent";
 import { ContentItemType } from "../../../data/types";
 
 interface ContentItemProps {
-  contentData: ContentItemType;
+  contentData?: ContentItemType;
   animationDelay: string;
   imgOnLeft: boolean;
 }
@@ -50,6 +50,8 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
       };
     }
   }, []);
+
+  if (!contentData) return <></>
 
   return (
     <div
