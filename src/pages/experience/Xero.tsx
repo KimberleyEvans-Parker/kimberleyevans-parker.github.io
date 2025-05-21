@@ -1,6 +1,7 @@
 import { Modal } from "../components/Modal";
 import { workData } from "../../data/work";
 import { ContentItem } from "../components/content item/ContentItem";
+import { DateSubheading } from "../components/content item/DateSubheading";
 
 export const Xero = () => {
   let animationDelay = 0;
@@ -25,6 +26,7 @@ export const Xero = () => {
       <Modal />
       <h1 className="fade left">Xero</h1>
       <h2 className="fade left">Software Engineer</h2>
+      <DateSubheading {...xeroData?.dates} />
       <ContentItem
         key={xeroData?.heading}
         imgOnLeft={imgOnLeft()}
