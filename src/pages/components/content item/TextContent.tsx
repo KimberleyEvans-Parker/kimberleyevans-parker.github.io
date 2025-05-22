@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import { Dates } from "../../../data/types";
 import { DateSubheading } from "./DateSubheading";
 import { LinksType } from "../../../data/types";
+import { LinksSection } from "./LinksSection";
 
 interface TextContentProps {
   dates: Dates;
@@ -23,43 +23,19 @@ export const TextContent = (
   return (
     <>
       <DateSubheading {...dates} />
+      
       <p>
         {description}
       </p>
+
       {teamSize && (
         <p>
           Team size: {teamSize}
         </p>
       )}
-      {links?.linkedIn && (
-        <a href={links?.linkedIn} className={"popout-link"}>
-          <i className="fa fa-linkedin popout" aria-hidden="true" />
-          <p>
-            See the LinkedIn post here!
-          </p>
-        </a>
-      )}
-      {links?.seeMore && (
-        <p>
-          <a href={links?.seeMore}>
-            For more information, take a look here
-          </a>
-        </p>
-      )}
-      {links?.project && (
-        <p>
-          <Link to={`/experience/projects#${links?.project}`}>
-            See the project here
-          </Link>
-        </p>
-      )}
-      {links?.local && (
-        <p>
-          <Link to={links?.local}>
-            See more here
-          </Link>
-        </p>
-      )}
+
+      <LinksSection {...links} />
+
       <div className="technologies">
         {technologies && technologies.join(` ⸎ `)}
       </div>
