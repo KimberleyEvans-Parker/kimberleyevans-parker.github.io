@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.407bbc58.css",
-    "main.js": "/static/js/main.56edbf25.js",
+    "main.js": "/static/js/main.e5cc5e9b.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -80,6 +80,7 @@
     "static/media/Phil 216.JPG": "/static/media/Phil 216.1a7176d93529c768a96f.JPG",
     "static/media/Presenting.jpg": "/static/media/Presenting.62592e5bec8f726bf0d6.jpg",
     "static/media/Medieval Camp.jpg": "/static/media/Medieval Camp.9e2044ed387fc2c7e729.jpg",
+    "static/media/Weeping Angels and John Barrowman.jpg": "/static/media/Weeping Angels and John Barrowman.21abe499ca69a14b3acb.jpg",
     "static/media/About.gif": "/static/media/About.2f58d3295713630c12ed.gif",
     "static/media/Team Whiz Craft.jpg": "/static/media/Team Whiz Craft.5cc5b7e96f9e489a1ab0.jpg",
     "static/media/Alien Tree.jpg": "/static/media/Alien Tree.d5acfa37de10861d18a2.jpg",
@@ -163,10 +164,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.407bbc58.css.map": "/static/css/main.407bbc58.css.map",
-    "main.56edbf25.js.map": "/static/js/main.56edbf25.js.map"
+    "main.e5cc5e9b.js.map": "/static/js/main.e5cc5e9b.js.map"
   },
   "entrypoints": [
     "static/css/main.407bbc58.css",
-    "static/js/main.56edbf25.js"
+    "static/js/main.e5cc5e9b.js"
   ]
 }
