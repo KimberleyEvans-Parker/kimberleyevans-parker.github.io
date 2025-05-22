@@ -12,18 +12,18 @@ interface TextContentProps {
 }
 
 export const TextContent = (
- {
+  {
     dates,
     description,
     teamSize,
     links,
     technologies,
-  } : TextContentProps
+  }: TextContentProps
 ) => {
   return (
     <>
       <DateSubheading {...dates} />
-      
+
       <p>
         {description}
       </p>
