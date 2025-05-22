@@ -7,15 +7,8 @@ export const Xero = () => {
 
     const getAnimationDelay = () => {
         const animationDelaySeconds = animationDelay.toString() + "s";
-        animationDelay += (2 - animationDelay) / 5
+        animationDelay += (2 - animationDelay) / 10
         return animationDelaySeconds;
-    };
-
-    let onLeft = false;
-
-    const imgOnLeft = () => {
-        onLeft = !onLeft;
-        return onLeft;
     };
 
     const xeroData = workData.find((project) => project.subheading === "Xero")
@@ -40,13 +33,40 @@ export const Xero = () => {
     return (
         <div className="content-container experience-container">
             <Modal />
-            <h1 className="fade left">Xero</h1>
-            <h2 className="fade left">{xeroData?.heading}</h2>
-            <DateSubheading {...xeroData?.dates} />
+            <h1 className="fade left"
+                style={{
+                    animationDelay: getAnimationDelay(),
+                }}>
+                Xero
+            </h1>
+            <h2 className="fade left"
+                style={{
+                    animationDelay: getAnimationDelay(),
+                }}>
+                {xeroData?.heading}
+            </h2>
+            <div className="fade left"
+                style={{
+                    animationDelay: getAnimationDelay(),
+                }}>
+                <DateSubheading {...xeroData?.dates} />
+            </div>
             {descriptions.map((description, index) => (
-                <p>{description}</p>
+                <p
+                    className="fade left"
+                    style={{
+                        animationDelay: getAnimationDelay(),
+                    }}
+                >
+                    {description}
+                </p>
             ))}
-            <div className="technologies">
+            <div 
+                className="technologies fade left"
+                style={{
+                    animationDelay: getAnimationDelay(),
+                }}
+            >
                 {xeroData?.technologies && xeroData?.technologies.join(` ⸎ `)}
             </div>
 
