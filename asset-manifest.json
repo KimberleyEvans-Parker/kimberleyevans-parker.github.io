@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.407bbc58.css",
-    "main.js": "/static/js/main.a26bc03c.js",
+    "main.js": "/static/js/main.56edbf25.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -30,6 +30,7 @@
     "static/media/Features.gif": "/static/media/Features.84269d7499d2ee190727.gif",
     "static/media/Cofounders.JPG": "/static/media/Cofounders.5907ad66d40f5d2e1801.JPG",
     "static/media/Add and Edit Machines.gif": "/static/media/Add and Edit Machines.29014ade743961778d13.gif",
+    "static/media/Birds and Cherry Blossoms.jpg": "/static/media/Birds and Cherry Blossoms.9c65c555fca2aa208a85.jpg",
     "static/media/Future forest in the making.jpg": "/static/media/Future forest in the making.a55c53eead6149e64c11.jpg",
     "static/media/From hands to the lands.jpg": "/static/media/From hands to the lands.d0e5c7e6fa2246e46b45.jpg",
     "static/media/Planet heroes in action.jpg": "/static/media/Planet heroes in action.3f822ab34065cf259f75.jpg",
@@ -162,10 +163,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.407bbc58.css.map": "/static/css/main.407bbc58.css.map",
-    "main.a26bc03c.js.map": "/static/js/main.a26bc03c.js.map"
+    "main.56edbf25.js.map": "/static/js/main.56edbf25.js.map"
   },
   "entrypoints": [
     "static/css/main.407bbc58.css",
-    "static/js/main.a26bc03c.js"
+    "static/js/main.56edbf25.js"
   ]
 }
