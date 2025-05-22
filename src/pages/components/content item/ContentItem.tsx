@@ -9,7 +9,7 @@ import { TextContent } from "./TextContent";
 import { ContentItemType } from "../../../data/types";
 
 interface ContentItemProps {
-  contentData: ContentItemType;
+  contentData?: ContentItemType;
   animationDelay: string;
   imgOnLeft: boolean;
 }
@@ -51,6 +51,8 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
     }
   }, []);
 
+  if (!contentData) return <></>
+
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
@@ -86,10 +88,7 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
                 dates={contentData.dates}
                 description={contentData.description}
                 teamSize={contentData.teamSize}
-                linkedInLink={contentData.links?.linkedIn}
-                seeMoreLink={contentData.links?.seeMore}
-                technologies={contentData.technologies}
-                projectLink={contentData.links?.project}
+                links={contentData.links}
               />
             </Grid>
           )}
@@ -104,10 +103,7 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
               dates={contentData.dates}
               description={contentData.description}
               teamSize={contentData.teamSize}
-              linkedInLink={contentData.links?.linkedIn}
-              seeMoreLink={contentData.links?.seeMore}
-              technologies={contentData.technologies}
-              projectLink={contentData.links?.project}
+              links={contentData.links}
             />
             </Grid>
           )}

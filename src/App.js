@@ -18,6 +18,7 @@ import { OpenEntrance } from "./pages/amazonian mystery/OpenEntrance";
 import { SolvedMystery } from "./pages/amazonian mystery/SolvedMystery";
 import { GetArtefact } from "./pages/amazonian mystery/GetArtefact";
 import { Error404 } from "./pages/404";
+import { Xero } from "./pages/experience/Xero";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="experience/volunteer" element={<Volunteer />} />
           <Route path="experience/projects" element={<Projects />} />
           <Route path="experience/awards" element={<Awards />} />
+          <Route path="experience/work/xero" element={<Xero />} />
 
           {/* Hobbies */}
           <Route path="hobbies" element={<Hobbies />} />

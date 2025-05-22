@@ -3,10 +3,11 @@ export type LinksType = {
     linkedIn?: string;
     seeMore?: string;
     project?: string;
+    local?: string;
 }
 
 export type Dates = {
-    start: Date;
+    start?: Date;
     end?: Date | "Present";
 }
 
