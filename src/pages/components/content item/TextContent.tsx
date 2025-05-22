@@ -55,7 +55,7 @@ export const TextContent = (
       )}
       {links?.local && (
         <p>
-          <Link to={`/experience/projects#${links?.local}`}>
+          <Link to={links?.local}>
             See more here
           </Link>
         </p>
