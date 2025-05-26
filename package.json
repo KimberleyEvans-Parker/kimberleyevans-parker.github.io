@@ -10,7 +10,7 @@
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
     "react-responsive-carousel": "^3.2.18",
-    "react-router-dom": "^7.6.0",
+    "react-router-dom": "^7.6.1",
     "react-scripts": "^5.0.1",
     "typescript": "^5.8.3"
   },
