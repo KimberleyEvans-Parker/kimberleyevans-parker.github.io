@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.407bbc58.css",
-    "main.js": "/static/js/main.e5cc5e9b.js",
+    "main.js": "/static/js/main.8fd2d1ae.js",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
@@ -164,10 +164,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.407bbc58.css.map": "/static/css/main.407bbc58.css.map",
-    "main.e5cc5e9b.js.map": "/static/js/main.e5cc5e9b.js.map"
+    "main.8fd2d1ae.js.map": "/static/js/main.8fd2d1ae.js.map"
   },
   "entrypoints": [
     "static/css/main.407bbc58.css",
-    "static/js/main.e5cc5e9b.js"
+    "static/js/main.8fd2d1ae.js"
   ]
 }
