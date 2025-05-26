@@ -16,7 +16,7 @@ export const SubNavbarLink = ({ section, heading }: SubNavbarLinkProps) => {
     >
       <li
         className={
-          location.pathname === url ? "active" : ""
+          location.pathname.toLocaleLowerCase() === url ? "active" : ""
         } 
       >
         {heading}
