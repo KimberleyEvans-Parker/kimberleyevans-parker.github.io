@@ -42,12 +42,14 @@ export const Modal = () => {
         >
           {images.map((image: string) => {
             const name = getImageName(image)
+            const caption = captionHeader ? captionHeader + " - " + name : name;
+            console.log(caption)
 
             return (<>
-              <img alt={captionHeader + name} src={image} className="modal-image" />
-              {captionHeader && (
+              <img alt={caption} src={image} className="modal-image" />
+              {caption && (
                 <div className="caption">
-                  <h2>{captionHeader + name}</h2>
+                  <h2>{caption}</h2>
                 </div>
               )}
               </>
