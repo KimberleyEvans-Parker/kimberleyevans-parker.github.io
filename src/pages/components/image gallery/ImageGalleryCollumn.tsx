@@ -1,8 +1,8 @@
-import React from "react";
-import { ImageItem } from "./ImageItem";
-import { useDispatch } from "react-redux";
-import { ModalState } from "../../../redux/state";
-import { setImage } from "../../../redux/actions";
+import { ImageItem } from "./ImageItem"
+import { useDispatch } from "react-redux"
+import { ModalState } from "../../../redux/state"
+import { setImage } from "../../../redux/actions"
+import { getIndexOfImage } from "../../../helpers/Helpers"
 
 type imageData = {name: string, index: number};
 
@@ -11,19 +11,12 @@ interface ImageGalleryCollumnProps {
   images: imageData[];
 }
 
-const getIndex = (allImages: string[], name: string) => {
-  for (let i = 0; i < allImages.length; i++) {
-    let currentImage = allImages[i]
-    if (currentImage.includes(name)) return i
-  }
-  return -1
-}
 
 export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnProps) => {
   const dispatch = useDispatch();
 
   const openModal = (name: string) => {
-      const imageIndex = getIndex(allImages, name);
+      const imageIndex = getIndexOfImage(allImages, name);
 
       const newModalState: ModalState = {
         images: allImages,
