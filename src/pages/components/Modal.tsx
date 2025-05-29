@@ -45,14 +45,24 @@ export const Modal = () => {
             const caption = captionHeader ? captionHeader + " - " + name : name;
 
             return (<>
-              <img alt={caption} src={image} className="modal-image" />
+              {image.match(/\.(mp4|webm|ogg)$/i) ? (
+              <video
+                muted
+                autoPlay
+                loop
+                src={image}
+                className="modal-image"
+              />
+            ) : (
+              <img alt={caption + name} src={image} className="modal-image" />
+            )}
               {caption && (
                 <div className="caption">
                   <h2>{caption}</h2>
                 </div>
               )}
               </>
-            );
+            )
           })}
         </Carousel>
       </div>

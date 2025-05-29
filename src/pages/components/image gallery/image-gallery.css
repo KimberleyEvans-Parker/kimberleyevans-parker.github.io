@@ -1,4 +1,4 @@
-.image-gallery-image {
+.image-gallery-item {
   width: 100%;
   margin-top: 8px;
 
@@ -9,10 +9,14 @@
   will-change: visibility;
   will-change: opacity, visibility;
 }
-.image-gallery-image.is-visible {
+.image-gallery-item.is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+.image-gallery-image {
+  width: 100%;
 }
 
 .image-gallery-animation {
