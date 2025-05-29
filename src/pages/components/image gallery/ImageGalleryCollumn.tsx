@@ -2,7 +2,7 @@ import { ImageItem } from "./ImageItem"
 import { useDispatch } from "react-redux"
 import { ModalState } from "../../../redux/state"
 import { setImage } from "../../../redux/actions"
-import { getIndexOfImage } from "../../../helpers/Helpers"
+import { getImageName, getIndexOfImage } from "../../../helpers/Helpers"
 
 type imageData = {name: string, index: number};
 
@@ -21,7 +21,7 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
       const newModalState: ModalState = {
         images: allImages,
         selectedImage: imageIndex,
-        caption: name,
+        captionHeader: "",
       }
       dispatch(setImage(newModalState))
   }
@@ -32,8 +32,7 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
       {images.map((imageData, imageIndex) => {
         const image = imageData.name;
         const animationDelay = imageData.index * 0.15 + "s";
-        const path = image.split("/");
-        const name = path[path.length - 1].split(".")[0];
+        const name = getImageName(image)
 
         return (
           <button

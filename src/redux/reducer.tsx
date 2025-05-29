@@ -9,7 +9,7 @@ export function modalReducer(
             ...state,
             images: undefined,
             selectedImage: undefined,
-            caption: "",
+            captionHeader: "",
         }
     }
     if (action.type === "modal/setImage") {
@@ -17,7 +17,7 @@ export function modalReducer(
             ...state,
             images: action.payload.images,
             selectedImage: action.payload.selectedImage,
-            caption: action.payload.caption,
+            captionHeader: action.payload.captionHeader,
         }
     }
 

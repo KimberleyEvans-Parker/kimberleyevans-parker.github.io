@@ -10,3 +10,8 @@ export const getIndexOfImage = (allImages: string[], name: string) => {
   }
   return -1
 }
+
+export const getImageName = (image: string) => {
+  const path = image.split("/");
+  return path[path.length - 1].split(".")[0];
+}
