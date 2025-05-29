@@ -41,7 +41,16 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
             onClick={() => openModal(index, caption)}
             key={caption}
           >
-            <img alt={caption} src={image} />
+            {image.match(/\.(mp4|webm|ogg)$/i) ? (
+              <video
+                muted
+                autoPlay
+                loop
+                src={image}
+              />
+            ) : (
+              <img alt={caption} src={image} />
+            )}
           </button>
         );
       })}
