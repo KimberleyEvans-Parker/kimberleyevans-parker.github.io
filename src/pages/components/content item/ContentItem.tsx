@@ -8,6 +8,8 @@ import { ImageContent } from "./ImageContent";
 import { TextContent } from "./TextContent";
 import { ContentItemType } from "../../../data/types";
 
+import "./content-item.css"
+
 interface ContentItemProps {
   contentData?: ContentItemType;
   animationDelay: string;
