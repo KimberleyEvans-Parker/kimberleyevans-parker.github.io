@@ -11,11 +11,19 @@ interface ImageGalleryCollumnProps {
   images: imageData[];
 }
 
+const getIndex = (allImages: string[], name: string) => {
+  for (let i = 0; i < allImages.length; i++) {
+    let currentImage = allImages[i]
+    if (currentImage.includes(name)) return i
+  }
+  return -1
+}
+
 export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnProps) => {
   const dispatch = useDispatch();
-  const openModal = (name: string) => {
 
-      const imageIndex = allImages.indexOf(name);
+  const openModal = (name: string) => {
+      const imageIndex = getIndex(allImages, name);
 
       const newModalState: ModalState = {
         images: allImages,
