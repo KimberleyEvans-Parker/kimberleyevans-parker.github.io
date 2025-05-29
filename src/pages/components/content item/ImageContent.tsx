@@ -3,6 +3,7 @@ import { CAROUSEL_TRANSITION_TIME, CAROUSEL_INTERVAL } from "../../../helpers/Co
 import { useDispatch } from "react-redux";
 import { setImage } from "../../../redux/actions";
 import { ModalState } from "../../../redux/state";
+import { getImageName } from "../../../helpers/Helpers";
 
 interface ImageContentProps {
   images: string[];
@@ -33,8 +34,8 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
       className="shadow"
     >
       {images.map((image: string, index: number) => {
-        const path = image.split("/");
-        const name = path[path.length - 1].split(".")[0];
+        const name = getImageName(image)
+        
         const caption = heading ? heading + " - " + name : name;
         return (
           <button
