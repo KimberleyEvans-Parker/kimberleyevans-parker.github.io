@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b974e2be.css",
-    "main.js": "/static/js/main.48924adc.js",
+    "main.js": "/static/js/main.25041736.js",
     "static/media/Elven Village.mp4": "/static/media/Elven Village.23203f66553d2fb576c5.mp4",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
@@ -165,10 +165,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.b974e2be.css.map": "/static/css/main.b974e2be.css.map",
-    "main.48924adc.js.map": "/static/js/main.48924adc.js.map"
+    "main.25041736.js.map": "/static/js/main.25041736.js.map"
   },
   "entrypoints": [
     "static/css/main.b974e2be.css",
-    "static/js/main.48924adc.js"
+    "static/js/main.25041736.js"
   ]
 }
