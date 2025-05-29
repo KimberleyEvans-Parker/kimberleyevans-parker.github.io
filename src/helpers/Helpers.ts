@@ -2,3 +2,11 @@ export const importAllPhotosFromFolder = (r: { keys: () => string[]; (path: stri
   return r.keys().map(r);
 }
 
+
+export const getIndexOfImage = (allImages: string[], name: string) => {
+  for (let i = 0; i < allImages.length; i++) {
+    let currentImage = allImages[i]
+    if (currentImage.includes(name)) return i
+  }
+  return -1
+}
