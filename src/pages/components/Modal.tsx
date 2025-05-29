@@ -42,7 +42,15 @@ export const Modal = () => {
           {images.map((image: string) => {
             const path = image.split("/");
             const name = path[path.length - 1].split(".")[0];
-            return (
+            return image.match(/\.(mp4|webm|ogg)$/i) ? (
+              <video
+                muted
+                autoPlay
+                loop
+                src={image}
+                className="modal-image"
+              />
+            ) : (
               <img alt={caption + name} src={image} className="modal-image" />
             );
           })}
