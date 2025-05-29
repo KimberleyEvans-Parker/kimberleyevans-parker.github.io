@@ -13,11 +13,11 @@ interface ImageContentProps {
 export const ImageContent = ({images, heading}: ImageContentProps) => {
   const dispatch = useDispatch()
 
-  const openModal = (index: number, caption: string) => {
+  const openModal = (index: number, captionHeader: string) => {
     const newModalState: ModalState = {
       images: images,
       selectedImage: index,
-      caption: caption,
+      captionHeader: captionHeader,
     }
     dispatch(setImage(newModalState))
   };
@@ -39,7 +39,7 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
         const caption = heading ? heading + " - " + name : name;
         return (
           <button
-            onClick={() => openModal(index, caption)}
+            onClick={() => openModal(index, heading)}
             key={caption}
           >
             <img alt={caption} src={image} />

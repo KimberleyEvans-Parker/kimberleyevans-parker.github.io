@@ -21,7 +21,7 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
       const newModalState: ModalState = {
         images: allImages,
         selectedImage: imageIndex,
-        caption: name,
+        captionHeader: name,
       }
       dispatch(setImage(newModalState))
   }
