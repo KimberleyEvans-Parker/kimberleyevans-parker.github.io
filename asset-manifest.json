@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b974e2be.css",
-    "main.js": "/static/js/main.25041736.js",
+    "main.js": "/static/js/main.a18a9ed7.js",
     "static/media/Elven Village.mp4": "/static/media/Elven Village.23203f66553d2fb576c5.mp4",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
     "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
@@ -86,6 +86,7 @@
     "static/media/Team Whiz Craft.jpg": "/static/media/Team Whiz Craft.5cc5b7e96f9e489a1ab0.jpg",
     "static/media/Alien Tree.jpg": "/static/media/Alien Tree.d5acfa37de10861d18a2.jpg",
     "static/media/3D Art.jpg": "/static/media/3D Art.6b244fc698d6ee4907c3.jpg",
+    "static/media/1st Place Award.jpg": "/static/media/1st Place Award.a1c848d0b7cfdce0491a.jpg",
     "static/media/amazonian ruins.jpg": "/static/media/amazonian ruins.9ff019dbf0d2f55c23e2.jpg",
     "static/media/Alien Planet - Spiders escaping.jpg": "/static/media/Alien Planet - Spiders escaping.82dfff29ad9dad776895.jpg",
     "static/media/Changing Machine Status.gif": "/static/media/Changing Machine Status.991ffb0658864ca66918.gif",
@@ -165,10 +166,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.b974e2be.css.map": "/static/css/main.b974e2be.css.map",
-    "main.25041736.js.map": "/static/js/main.25041736.js.map"
+    "main.a18a9ed7.js.map": "/static/js/main.a18a9ed7.js.map"
   },
   "entrypoints": [
     "static/css/main.b974e2be.css",
-    "static/js/main.25041736.js"
+    "static/js/main.a18a9ed7.js"
   ]
 }
