@@ -1,23 +1,27 @@
-import React from "react";
-import { ImageItem } from "./ImageItem";
-import { useDispatch } from "react-redux";
-import { ModalState } from "../../../redux/state";
-import { setImage } from "../../../redux/actions";
+import { ImageItem } from "./ImageItem"
+import { useDispatch } from "react-redux"
+import { ModalState } from "../../../redux/state"
+import { setImage } from "../../../redux/actions"
+import { getImageName, getIndexOfImage } from "../../../helpers/Helpers"
+
+type imageData = {name: string, index: number};
 
 interface ImageGalleryCollumnProps {
-  images: any[];
+  allImages: string[];
+  images: imageData[];
 }
 
-export const ImageGalleryCollumn = ({ images }: ImageGalleryCollumnProps) => {
-  const dispatch = useDispatch();
-  const openModal = (imageIndex: number, name: string) => {
 
-      const newImagesArray = images.map(imageData => imageData[0])
+export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnProps) => {
+  const dispatch = useDispatch();
+
+  const openModal = (name: string) => {
+      const imageIndex = getIndexOfImage(allImages, name);
 
       const newModalState: ModalState = {
-        images: newImagesArray,
+        images: allImages,
         selectedImage: imageIndex,
-        caption: name,
+        captionHeader: "",
       }
       dispatch(setImage(newModalState))
   }
@@ -26,14 +30,13 @@ export const ImageGalleryCollumn = ({ images }: ImageGalleryCollumnProps) => {
   return (
     <>
       {images.map((imageData, imageIndex) => {
-        const image = imageData[0];
-        const animationDelay = imageData[1] * 0.15 + "s";
-        const path = image.split("/");
-        const name = path[path.length - 1].split(".")[0];
+        const image = imageData.name;
+        const animationDelay = imageData.index * 0.15 + "s";
+        const name = getImageName(image)
 
         return (
           <button
-            onClick={() => openModal(imageIndex, name)}
+            onClick={() => openModal(name)}
             key={name}
             className="modal-thumbnail"
           >
