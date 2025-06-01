@@ -28,3 +28,7 @@
 .filter-list li:hover {
     background-color: #f0f0f0;
 }
+
+.no-projects {
+    margin-top: 32px;
+}
