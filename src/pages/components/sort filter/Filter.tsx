@@ -28,7 +28,7 @@ const Filter = ({projectData, setSortedProjects}: FilterProps) => {
     };
 
     return (
-        <div className="filter-container">
+        <div className="filter-container fade left">
             <label htmlFor="filter">Filter By</label>
             <div>
             <input
