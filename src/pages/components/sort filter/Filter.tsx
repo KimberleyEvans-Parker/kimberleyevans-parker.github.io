@@ -21,7 +21,10 @@ const Filter = ({projectData, setSortedProjects}: FilterProps) => {
     const handleSelect = (tech: string) => {
         setInput(tech);
         setOpen(false);
-        // onSelect(tech);
+        const filteredProjects = projectData.filter((project) =>
+            project.technologies?.includes(tech)
+        );
+        setSortedProjects(filteredProjects);
     };
 
     return (
