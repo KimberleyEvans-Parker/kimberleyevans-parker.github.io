@@ -25,9 +25,11 @@ const Filter = ({projectData, setSortedProjects}: FilterProps) => {
     };
 
     return (
-        <div className="sort-item">
-            <label htmlFor="sort">Filter By</label>
+        <div className="filter-container">
+            <label htmlFor="filter">Filter By</label>
+            <div>
             <input
+                id="filter"
                 type="text"
                 value={input}
                 placeholder="Select technology..."
@@ -54,6 +56,8 @@ const Filter = ({projectData, setSortedProjects}: FilterProps) => {
                     ))}
                 </ul>
             )}
+
+            </div>
         </div>
     );
 };
