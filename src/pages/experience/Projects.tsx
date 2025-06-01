@@ -41,7 +41,7 @@ export const Projects = () => {
         />
       ))}
       {sortedProjects.length === 0 && (
-        <div className="no-projects">
+        <div className="fade left no-projects">
           <p>No projects found matching those filters</p>
         </div>
       )}
