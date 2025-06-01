@@ -40,6 +40,11 @@ export const Projects = () => {
           animationDelay={getAnimationDelay()}
         />
       ))}
+      {sortedProjects.length === 0 && (
+        <div className="no-projects">
+          <p>No projects found matching those filters</p>
+        </div>
+      )}
     </div>
   );
 }
