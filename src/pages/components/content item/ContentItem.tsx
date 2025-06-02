@@ -91,6 +91,7 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
                 description={contentData.description}
                 teamSize={contentData.teamSize}
                 links={contentData.links}
+                technologies={contentData.technologies}
               />
             </Grid>
           )}
@@ -106,6 +107,7 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
               description={contentData.description}
               teamSize={contentData.teamSize}
               links={contentData.links}
+              technologies={contentData.technologies}
             />
             </Grid>
           )}
