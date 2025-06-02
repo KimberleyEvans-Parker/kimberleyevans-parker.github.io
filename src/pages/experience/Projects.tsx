@@ -4,6 +4,7 @@ import { ContentItem } from "../components/content item/ContentItem";
 import { Modal } from "../components/Modal";
 import { projectData } from "../../data/projects";
 import { Sort } from "../components/sort filter/Sort";
+import Filter from "../components/sort filter/Filter";
 
 export const Projects = () => {
   const [sortedProjects, setSortedProjects] = useState(projectData);
@@ -29,6 +30,7 @@ export const Projects = () => {
       <Modal />
 
       <Sort projectData={projectData} setSortedProjects={setSortedProjects} />
+      <Filter projectData={projectData} setSortedProjects={setSortedProjects}  />
 
       {sortedProjects.map((project) => (
         <ContentItem
@@ -38,6 +40,11 @@ export const Projects = () => {
           animationDelay={getAnimationDelay()}
         />
       ))}
+      {sortedProjects.length === 0 && (
+        <div className="fade left no-projects">
+          <p>No projects found matching those filters</p>
+        </div>
+      )}
     </div>
   );
 }

@@ -8,6 +8,8 @@ import { ImageContent } from "./ImageContent";
 import { TextContent } from "./TextContent";
 import { ContentItemType } from "../../../data/types";
 
+import "./content-item.css"
+
 interface ContentItemProps {
   contentData?: ContentItemType;
   animationDelay: string;
@@ -89,6 +91,7 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
                 description={contentData.description}
                 teamSize={contentData.teamSize}
                 links={contentData.links}
+                technologies={contentData.technologies}
               />
             </Grid>
           )}
@@ -104,6 +107,7 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
               description={contentData.description}
               teamSize={contentData.teamSize}
               links={contentData.links}
+              technologies={contentData.technologies}
             />
             </Grid>
           )}
