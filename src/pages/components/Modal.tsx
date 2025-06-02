@@ -4,11 +4,12 @@ import { resetImage } from "../../redux/actions";
 import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../redux/selectors";
 import { Carousel } from "react-responsive-carousel";
 import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../helpers/Constants";
+import { getImageName } from "../../helpers/Helpers";
 
 
 export const Modal = () => {
   const imageIndex = useSelector(selectModalSelectedImage)
-  const caption = useSelector(selectModalCaption)
+  const captionHeader = useSelector(selectModalCaption)
   const images = useSelector(selectModalImages)
 
   const image = images && imageIndex !== undefined ? images[imageIndex] : undefined
@@ -40,19 +41,31 @@ export const Modal = () => {
           width={"100vw"}
         >
           {images.map((image: string) => {
-            const path = image.split("/");
-            const name = path[path.length - 1].split(".")[0];
-            return (
+            const name = getImageName(image)
+            const caption = captionHeader ? captionHeader + " - " + name : name;
+
+            return (<>
+              {image.match(/\.(mp4|webm|ogg)$/i) ? (
+              <video
+                muted
+                autoPlay
+                loop
+                src={image}
+                className="modal-image"
+              />
+            ) : (
               <img alt={caption + name} src={image} className="modal-image" />
-            );
+            )}
+              {caption && (
+                <div className="caption">
+                  <h2>{caption}</h2>
+                </div>
+              )}
+              </>
+            )
           })}
         </Carousel>
       </div>
-      {caption && (
-        <div className="caption">
-          <h2>{caption}</h2>
-        </div>
-      )}
     </div>
   );
 }

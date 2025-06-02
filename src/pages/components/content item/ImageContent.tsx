@@ -3,6 +3,7 @@ import { CAROUSEL_TRANSITION_TIME, CAROUSEL_INTERVAL } from "../../../helpers/Co
 import { useDispatch } from "react-redux";
 import { setImage } from "../../../redux/actions";
 import { ModalState } from "../../../redux/state";
+import { getImageName } from "../../../helpers/Helpers";
 
 interface ImageContentProps {
   images: string[];
@@ -12,11 +13,11 @@ interface ImageContentProps {
 export const ImageContent = ({images, heading}: ImageContentProps) => {
   const dispatch = useDispatch()
 
-  const openModal = (index: number, caption: string) => {
+  const openModal = (index: number, captionHeader: string) => {
     const newModalState: ModalState = {
       images: images,
       selectedImage: index,
-      caption: caption,
+      captionHeader: captionHeader,
     }
     dispatch(setImage(newModalState))
   };
@@ -33,15 +34,24 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
       className="shadow"
     >
       {images.map((image: string, index: number) => {
-        const path = image.split("/");
-        const name = path[path.length - 1].split(".")[0];
+        const name = getImageName(image)
+        
         const caption = heading ? heading + " - " + name : name;
         return (
           <button
-            onClick={() => openModal(index, caption)}
+            onClick={() => openModal(index, heading)}
             key={caption}
           >
-            <img alt={caption} src={image} />
+            {image.match(/\.(mp4|webm|ogg)$/i) ? (
+              <video
+                muted
+                autoPlay
+                loop
+                src={image}
+              />
+            ) : (
+              <img alt={caption} src={image} />
+            )}
           </button>
         );
       })}

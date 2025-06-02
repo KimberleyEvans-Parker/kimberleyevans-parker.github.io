@@ -22,22 +22,33 @@ export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
     }
   }, [isVisible]);
   
-
   return (
-    <div className={`image-gallery-image  ${isVisible ? "is-visible" : ""} `}>
-      <img
-        ref={domRef}
-        alt={name}
-        src={image}
-        className="image-gallery-animation"
-        style={{
-          WebkitAnimationDelay: animationDelay,
-          MozAnimationDelay: animationDelay,
-          OAnimationDelay: animationDelay,
-          animationDelay: animationDelay,
-          width: "100%",
-        }}
-      />
+    <div 
+      className={`image-gallery-item ${isVisible ? "is-visible" : ""} `}
+      ref={domRef}
+      style={{
+        WebkitAnimationDelay: animationDelay,
+        MozAnimationDelay: animationDelay,
+        OAnimationDelay: animationDelay,
+        animationDelay: animationDelay,
+      }}
+    >
+      {image.match(/\.(mp4|webm|ogg)$/i) ? (
+        <video
+          muted
+          autoPlay
+          loop
+          src={image}
+          aria-label={name}
+          className="image-gallery-image image-gallery-animation"
+        />
+      ) : (
+        <img
+          alt={name}
+          src={image}
+          className="image-gallery-image image-gallery-animation"
+        />
+      )}
     </div>
   );
 }
