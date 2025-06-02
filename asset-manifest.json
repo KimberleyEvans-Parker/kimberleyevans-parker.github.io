@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7e6a53b5.css",
-    "main.js": "/static/js/main.3a4977d1.js",
+    "main.js": "/static/js/main.360bc542.js",
     "static/media/Santa's Workshop.mp4": "/static/media/Santa's Workshop.96b27404aa3612e5664e.mp4",
     "static/media/Elven Village.mp4": "/static/media/Elven Village.23203f66553d2fb576c5.mp4",
     "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
@@ -12,6 +12,7 @@
     "static/media/Home Page.gif": "/static/media/Home Page.0419d2781c159c1ff810.gif",
     "static/media/Instructors.gif": "/static/media/Instructors.e651a23915240f65e101.gif",
     "static/media/Gamification.gif": "/static/media/Gamification.2095504dcb15f267fbf3.gif",
+    "static/media/Navigating the Maze.mp4": "/static/media/Navigating the Maze.83ff896e29b2f5b52f5a.mp4",
     "static/media/Adding a task.gif": "/static/media/Adding a task.a47da6612418c9ddc6e7.gif",
     "static/media/Marketplace.gif": "/static/media/Marketplace.bf8bf7d00fb753f07a75.gif",
     "static/media/Workshop.JPG": "/static/media/Workshop.8498500f3f52b41b66a6.JPG",
@@ -22,6 +23,7 @@
     "static/media/Walk through the Island.png": "/static/media/Walk through the Island.6f05f893219c0fe2f689.png",
     "static/media/Sapplings.jpg": "/static/media/Sapplings.79523deb24284af41dac.jpg",
     "static/media/Trophy.JPG": "/static/media/Trophy.a6aa5e734d89b81ccbe4.JPG",
+    "static/media/Girls in STEM.mp4": "/static/media/Girls in STEM.1e6943afaa99f636f436.mp4",
     "static/media/Bellatrix.jpg": "/static/media/Bellatrix.b623c29b4549688c1e4e.jpg",
     "static/media/Rooting for a better world.jpg": "/static/media/Rooting for a better world.7bbf37d24074f685e0af.jpg",
     "static/media/Teamwork makes the trees work.jpg": "/static/media/Teamwork makes the trees work.9906e5969d373b0a9091.jpg",
@@ -176,10 +178,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.7e6a53b5.css.map": "/static/css/main.7e6a53b5.css.map",
-    "main.3a4977d1.js.map": "/static/js/main.3a4977d1.js.map"
+    "main.360bc542.js.map": "/static/js/main.360bc542.js.map"
   },
   "entrypoints": [
     "static/css/main.7e6a53b5.css",
-    "static/js/main.3a4977d1.js"
+    "static/js/main.360bc542.js"
   ]
 }
