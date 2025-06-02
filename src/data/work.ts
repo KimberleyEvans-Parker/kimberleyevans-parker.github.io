@@ -2,6 +2,9 @@ import { TECHNOLOGIES } from "../helpers/Constants";
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
+const Bricks4KidzImages = importAllPhotosFromFolder(
+    require.context("../assets/work/Bricks4Kidz")
+);
 const SSSImages = importAllPhotosFromFolder(
     require.context("../assets/work/School Storage Solutions")
 );
@@ -90,7 +93,8 @@ export const workData: ContentItemType[] = [
         subheading: "Bricks4Kidz",
         dates: { start: new Date(2020, 0) },
         description: `I encourage young children into STEM related fields by teaching them related skills.  
-            These skills are taught with the aid of LEGO robots and mechanics. `
+            These skills are taught with the aid of LEGO robots and mechanics. `,
+        images: Bricks4KidzImages,
     },
     {
         heading: "Co-Founder",
