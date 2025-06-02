@@ -1,5 +1,4 @@
 import React from "react";
-import LegoVideo from "../../../assets/hobbies/Lego/Elven Village.mp4";
 
 interface ImageItemProps {
   name: string;
@@ -25,7 +24,7 @@ export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
   
   return (
     <div 
-      className={`image-gallery-item image-gallery-animation ${isVisible ? "is-visible" : ""} `}
+      className={`image-gallery-item ${isVisible ? "is-visible" : ""} `}
       ref={domRef}
       style={{
         WebkitAnimationDelay: animationDelay,
@@ -39,15 +38,15 @@ export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
           muted
           autoPlay
           loop
-          src={LegoVideo}
+          src={image}
           aria-label={name}
-          className="image-gallery-image"
+          className="image-gallery-image image-gallery-animation"
         />
       ) : (
         <img
           alt={name}
           src={image}
-          className="image-gallery-image"
+          className="image-gallery-image image-gallery-animation"
         />
       )}
     </div>
