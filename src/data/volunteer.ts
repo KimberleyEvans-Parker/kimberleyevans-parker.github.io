@@ -2,7 +2,7 @@ import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
 const Take2Images = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Take2", false)
+    require.context("../assets/volunteer/Take2")
 )
 const MotutapuImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motutapu Island")
@@ -19,14 +19,17 @@ const QueerAImages = importAllPhotosFromFolder(
 const Motuihe22Images = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motuihe Island '22")
 )
+const ClassRepImages = importAllPhotosFromFolder(
+    require.context("../assets/volunteer/Class Representative")
+)
+const RobogalsImages = importAllPhotosFromFolder(
+    require.context("../assets/volunteer/Robogals")
+)
 const Motuihe15Images = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Motuihe Island '15")
 )
 const PoppyImages = importAllPhotosFromFolder(
     require.context("../assets/volunteer/Poppy Making")
-)
-const ClassRepImages = importAllPhotosFromFolder(
-    require.context("../assets/volunteer/Class Representative")
 )
 
 
@@ -131,6 +134,7 @@ export const volunteerData: ContentItemType[] = [
         dates: { start: new Date(2019, 3), end: new Date(2019, 6) },
         description: `I worked as a teacher with Robogals to encourage young children into STEM fields.  
         This was done with the aid of LEGO Mindstorm robots, which were able to be programmed by the children to navigate their way around a maze.`,
+        images: RobogalsImages,
     },
     {
         heading: "Reforestation",
