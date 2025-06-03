@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { LinksType } from "../../../data/types"
 import { AUnderline, LinkUnderline } from "../underline links"
 

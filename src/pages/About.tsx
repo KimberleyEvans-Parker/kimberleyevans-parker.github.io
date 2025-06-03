@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ProfilePic from "../assets/profile-pic.jpg";
 import Resume from "../assets/Kimberley CV-25-03.pdf";
 import { SMALL_SCREEN } from "../helpers/Constants";
