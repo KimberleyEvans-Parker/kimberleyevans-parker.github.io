@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ProfilePic from "../assets/profile-pic.jpg";
 import Resume from "../assets/Kimberley CV-25-03.pdf";
 import { SMALL_SCREEN } from "../helpers/Constants";
-import { AUnderline, LinkUnderline } from "./components/links";
+import { AUnderline, LinkUnderline } from "./components/underline links";
 
 export const About = () => {
   /* Keeps track of the window dimensions.  Updates when window resizes */
