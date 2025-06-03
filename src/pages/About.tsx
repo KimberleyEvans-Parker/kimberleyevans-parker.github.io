@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ProfilePic from "../assets/profile-pic.jpg";
 import Resume from "../assets/Kimberley CV-25-03.pdf";
 import { SMALL_SCREEN } from "../helpers/Constants";
+import { LinkUnderline } from "./components/links";
 
 export const About = () => {
   /* Keeps track of the window dimensions.  Updates when window resizes */
@@ -62,13 +63,8 @@ export const About = () => {
         <h2>Experience</h2>
         <p>I have worked at several internships, done many hackathons and personal projects.  
           My main work experience is at Xero!  
-        <Link className="link" to="/experience">
-          <div className="link-text">
-            Find out more here
-          </div>
-          <div className="link-underline"></div>
-        </Link>
         </p>
+        <LinkUnderline text="Check out my experience here" href="/experience" width="270px" />
         <h2>Education</h2>
         <h4>University</h4>
         <p>
