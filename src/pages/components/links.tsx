@@ -8,7 +8,7 @@ type ALinkUnderlineProps = {
 };
 
 export const AUnderline = ({ text, href, width, popout }: ALinkUnderlineProps) => (
-  <a className={`link ${popout ? "popout-link" : ""}`} href={href} style={{ width: width}}>
+  <a className={`link ${popout ? "popout-link popout-link-underline" : ""}`} href={href} style={{ width: width}}>
     {popout && <i className={`fa fa-${popout} popout`} aria-hidden="true" />}
     <p className="link-text">
       {text}

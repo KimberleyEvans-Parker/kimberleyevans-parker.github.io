@@ -83,8 +83,8 @@
 
 .popout-link .popout {
   float: left;
-  margin: 5px;
-  margin-left: -26px;
+  margin: 3px;
+  margin-left: -36px;
   animation: pop-in ease 0.7s forwards;
 }
 
