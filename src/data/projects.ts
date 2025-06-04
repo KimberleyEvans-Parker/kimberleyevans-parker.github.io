@@ -152,6 +152,18 @@ export const projectData: ContentItemType[] = [
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.GDSCRIPT]
     },
     {
+        heading: "Error 418: I'm a Teapot",
+        subheading: "Terrible Ideas Hackathon",
+        dates: { start: new Date(2019, 10) },
+        description: `A hackathon project made during the Terrible Ideas Hackathon, where we had to make something not useful for anyone.  
+            We made a the site "Error 418: I'm a Teapot", containing over 20 different terrible ideas.  
+            From a qwik mafs calculator that spat out random numbers, a red stress button that fired an employee at random, or a button that would email a lecturer to tell them you wouldn't be coming to class with a very poor excuse.
+            We also had a an insulting rubber duck and hydra - a site that would open 2 more tabs of itself whenever you tried to close it.  
+            We had a lot of fun making this preoject.`,
+        teamSize: 7,
+        technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.JS, TECHNOLOGIES.REACT]
+    },
+    {
         heading: "Flik",
         subheading: "Line Following Robot",
         dates: { start: new Date(2019, 6), end: new Date(2019, 9) },

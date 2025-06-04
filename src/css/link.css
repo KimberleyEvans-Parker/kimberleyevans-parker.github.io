@@ -15,9 +15,18 @@
     padding: 0 10px;
 }
 
+.popout-link-underline .popout {
+    margin-right: 0;
+    margin-left: -25px;
+}
+
+.popout-link-underline p {
+    margin-left: 15px;
+}
+
 /* on hover underline */
 .link-underline {
-    width: 170px;
+    width: 100%;
     height: 30px;
     position: absolute;
     background:
@@ -42,6 +51,6 @@
     }
 
     100% {
-        width: 170px;
+        width: 100%;
     }
 }
