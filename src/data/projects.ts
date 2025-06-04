@@ -161,6 +161,9 @@ export const projectData: ContentItemType[] = [
             We also had a an insulting rubber duck and hydra - a site that would open 2 more tabs of itself whenever you tried to close it.  
             We had a lot of fun making this preoject.`,
         teamSize: 7,
+        links: {
+            seeMore: "https://terriblehack.com/"
+        },
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.JS, TECHNOLOGIES.REACT]
     },
     {
