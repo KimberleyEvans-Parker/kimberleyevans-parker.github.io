@@ -51,6 +51,31 @@ export const projectData: ContentItemType[] = [
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.TS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
     {
+        heading: "Menstrumate",
+        subheading: "We the Women Hack",
+        dates: { start: new Date(2023, 6) },
+        description: `As part of the We the Women Hack, run by Girlboss, I was invited to create a project to help women in some way.  
+            My team felt one of the worst feelings we got was when you realised you were caught out without menstrual products.
+            We created Menstrumate, an app for girls caught out in this situation.
+            The app allows you to find the nearest place to get menstrual products, and also allows you to donate products to those in need.
+            We think this app will help take away the stress of being caught out, and also help those who are less fortunate than us.`,
+        teamSize: 5,
+        technologies: [TECHNOLOGIES.FIGMA]
+    },
+    {
+        heading: "Mist Opportunity",
+        subheading: "Terrible Ideas Hackathon",
+        dates: { start: new Date(2023, 3) },
+        description: `A hackathon project made during the Terrible Ideas Hackathon, where we had to make something not useful for anyone.  
+            Our team name was Water Wasters and we made a product Mist Opportunity.  
+            This was an automated water sprinkler that turned on under two conditions: 
+            It detected water or someone was standing right next to it.  
+            Jokes aside, we got to learn about using an arduino with different sensors and soldered, wired and coded this from scratch.  
+            So not only did we have fun creating something silly, but also got to experiment and learnt a bunch.`,
+        teamSize: 3,
+        technologies: [TECHNOLOGIES.C]
+    },
+    {
         heading: "Empower",
         subheading: "Network to Empower Women",
         dates: { start: new Date(2022, 6) },
