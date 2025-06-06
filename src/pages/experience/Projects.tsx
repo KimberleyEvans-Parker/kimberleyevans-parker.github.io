@@ -5,6 +5,7 @@ import { Modal } from "../components/Modal";
 import { projectData } from "../../data/projects";
 import { Sort } from "../components/sort filter/Sort";
 import Filter from "../components/sort filter/Filter";
+import Search from "../components/sort filter/Search";
 
 export const Projects = () => {
   const [sortedProjects, setSortedProjects] = useState(projectData);
@@ -31,6 +32,7 @@ export const Projects = () => {
 
       <Sort projectData={projectData} setSortedProjects={setSortedProjects} />
       <Filter projectData={projectData} setSortedProjects={setSortedProjects}  />
+      <Search projectData={projectData} setSortedProjects={setSortedProjects} />
 
       {sortedProjects.map((project) => (
         <ContentItem
