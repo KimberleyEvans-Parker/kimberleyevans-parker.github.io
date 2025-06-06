@@ -63,6 +63,19 @@ export const projectData: ContentItemType[] = [
         technologies: [TECHNOLOGIES.FIGMA]
     },
     {
+        heading: "Mist Opportunity",
+        subheading: "Terrible Ideas Hackathon",
+        dates: { start: new Date(2023, 3) },
+        description: `A hackathon project made during the Terrible Ideas Hackathon, where we had to make something not useful for anyone.  
+            Our team name was Water Wasters and we made a product Mist Opportunity.  
+            This was an automated water sprinkler that turned on under two conditions: 
+            It detected water or someone was standing right next to it.  
+            Jokes aside, we got to learn about using an arduino with different sensors and soldered, wired and coded this from scratch.  
+            So not only did we have fun creating something silly, but also got to experiment and learnt a bunch.`,
+        teamSize: 3,
+        technologies: [TECHNOLOGIES.C]
+    },
+    {
         heading: "Empower",
         subheading: "Network to Empower Women",
         dates: { start: new Date(2022, 6) },
