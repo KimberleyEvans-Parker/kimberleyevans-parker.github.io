@@ -19,12 +19,15 @@ const Search = ({ projectData, setSortedProjects }: SearchProps) => {
     };
 
     return (
-        <input
-            type="text"
-            placeholder="Search projects..."
-            value={query}
-            onChange={handleChange}
-        />
+        <div className="filter-container fade left">
+            <label htmlFor="filter">Search</label>
+            <input
+                type="text"
+                placeholder="Search projects..."
+                value={query}
+                onChange={handleChange}
+            />
+        </div>
     );
 };
 
