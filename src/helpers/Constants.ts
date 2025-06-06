@@ -18,6 +18,7 @@ export const TECHNOLOGIES = {
     TS: "TypeScript",
     REACT: "React",
     REDUX: "Redux",
+    FIGMA: "Figma",
     LASER_CUTTING: "Laser Cutting",
     PRINTING_3D: "3D Printing",
     GDSCRIPT: "GDScript",
