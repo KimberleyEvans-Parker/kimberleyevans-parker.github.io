@@ -10,7 +10,7 @@ interface FilterProps {
     setSortedProjects: (sortedProjects: ContentItemType[]) => void;
 }
 
-const Filter = ({projectData, setSortedProjects}: FilterProps) => {
+const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
     const [input, setInput] = useState("");
     const [open, setOpen] = useState(false);
 
@@ -31,35 +31,34 @@ const Filter = ({projectData, setSortedProjects}: FilterProps) => {
         <div className="filter-container fade left">
             <label htmlFor="filter">Filter By</label>
             <div>
-            <input
-                id="filter"
-                type="text"
-                value={input}
-                placeholder="Select technology..."
-                onChange={(e) => {
-                    setInput(e.target.value);
-                    setOpen(true);
-                }}
-                onFocus={() => setOpen(true)}
-            />
-            {open && (
-                <ul
-                    className="filter-list"
-                >
-                    {filtered.length === 0 && (
-                        <li>No technologies found</li>
-                    )}
-                    {filtered.map((tech) => (
-                        <li
-                            key={tech}
-                            onMouseDown={() => handleSelect(tech)}
-                        >
-                            {tech}
-                        </li>
-                    ))}
-                </ul>
-            )}
-
+                <input
+                    id="filter"
+                    type="text"
+                    value={input}
+                    placeholder="Select technology..."
+                    onChange={(e) => {
+                        setInput(e.target.value);
+                        setOpen(true);
+                    }}
+                    onFocus={() => setOpen(true)}
+                />
+                {open && (
+                    <ul
+                        className="filter-list"
+                    >
+                        {filtered.length === 0 && (
+                            <li>No technologies found</li>
+                        )}
+                        {filtered.map((tech) => (
+                            <li
+                                key={tech}
+                                onMouseDown={() => handleSelect(tech)}
+                            >
+                                {tech}
+                            </li>
+                        ))}
+                    </ul>
+                )}
             </div>
         </div>
     );
