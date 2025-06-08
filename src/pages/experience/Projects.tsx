@@ -3,9 +3,9 @@ import { useState } from "react";
 import { ContentItem } from "../components/content item/ContentItem";
 import { Modal } from "../components/Modal";
 import { projectData } from "../../data/projects";
-import { Sort } from "../components/sort filter/Sort";
-import Filter from "../components/sort filter/Filter";
-import Search from "../components/sort filter/Search";
+import { Sort } from "../components/sort filter search/Sort";
+import Filter from "../components/sort filter search/Filter";
+import Search from "../components/sort filter search/Search";
 
 export const Projects = () => {
   const [sortedProjects, setSortedProjects] = useState(projectData);
