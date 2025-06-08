@@ -14,7 +14,7 @@ export const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
     const [input, setInput] = useState("");
     const [open, setOpen] = useState(false);
 
-    const filtered = Object.values(TECHNOLOGIES).filter((tech) =>
+    const filterOptions = Object.values(TECHNOLOGIES).filter((tech) =>
         tech.toLowerCase().includes(input.toLowerCase())
     );
 
@@ -26,6 +26,14 @@ export const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
         );
         setSortedProjects(filteredProjects);
     };
+
+    const handleBlur = () => {
+        setOpen(false);
+        if (!Object.values(TECHNOLOGIES).includes(input)) {
+            setInput("");
+            setSortedProjects(projectData);
+        }
+    }
 
     return (
         <div className="filter-container fade left">
@@ -41,15 +49,16 @@ export const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
                         setOpen(true);
                     }}
                     onFocus={() => setOpen(true)}
+                    onBlur={() => handleBlur()}
                 />
                 {open && (
                     <ul
                         className="filter-list"
                     >
-                        {filtered.length === 0 && (
+                        {filterOptions.length === 0 && (
                             <li>No technologies found</li>
                         )}
-                        {filtered.map((tech) => (
+                        {filterOptions.map((tech) => (
                             <li
                                 key={tech}
                                 onMouseDown={() => handleSelect(tech)}
