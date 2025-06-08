@@ -6,7 +6,7 @@ interface SearchProps {
     setSortedProjects: (sortedProjects: ContentItemType[]) => void;
 }
 
-const Search = ({ projectData, setSortedProjects }: SearchProps) => {
+export const Search = ({ projectData, setSortedProjects }: SearchProps) => {
     const [query, setQuery] = useState("");
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -30,5 +30,3 @@ const Search = ({ projectData, setSortedProjects }: SearchProps) => {
         </div>
     );
 };
-
-export default Search;
