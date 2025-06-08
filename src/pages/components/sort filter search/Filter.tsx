@@ -10,7 +10,7 @@ interface FilterProps {
     setSortedProjects: (sortedProjects: ContentItemType[]) => void;
 }
 
-const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
+export const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
     const [input, setInput] = useState("");
     const [open, setOpen] = useState(false);
 
@@ -63,5 +63,3 @@ const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
         </div>
     );
 };
-
-export default Filter;

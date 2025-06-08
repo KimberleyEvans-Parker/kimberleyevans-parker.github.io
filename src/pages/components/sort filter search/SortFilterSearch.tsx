@@ -1,6 +1,6 @@
 import { ContentItemType } from "../../../data/types";
-import Filter from "./Filter";
-import Search from "./Search";
+import { Filter } from "./Filter";
+import { Search } from "./Search";
 import { Sort } from "./Sort";
 
 interface SortFilterSearchProps {
