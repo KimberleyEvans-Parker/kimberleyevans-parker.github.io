@@ -86,6 +86,20 @@ export const projectData: ContentItemType[] = [
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.JS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
     {
+        heading: "Book Browser",
+        subheading: "Book Library",
+        dates: { start: new Date(2021, 10) },
+        description: 
+            `A book library application made by a team of 2 for a university assignment.  
+            This is a web application that allows you to search for books, view their author and details and add them to your personal library.  
+            It also allows you to view your personal library and see which books you have read, are currently reading or want to read.  
+            I had a lot of fun making extra animations to give it the look and feel of a book library, such as the books flipping open when you hover on them.
+            The application was made using a Python backend, and an HTML and CSS frontend.`,
+        teamSize: 2,
+        links: { github: "https://github.com/KimberleyEvans-Parker/BookBrowser" },
+        technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.PYTHON, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS]
+    },
+    {
         heading: "Habidapt",
         subheading: "Global Game Jam 2021",
         dates: { start: new Date(2021, 7) },
