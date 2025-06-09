@@ -38,6 +38,20 @@ const AshasQuestImages = importAllPhotosFromFolder(
 
 export const projectData: ContentItemType[] = [
     {
+        heading: "Kimberley Evans-Parker's Portfolio",
+        subheading: "This Website",
+        dates: { start: new Date(2023, 0) },
+        description: `This is my personal portfolio website, custom built and designed using React, TypeScript HTML and CSS.
+            It is designed to showcase my skills, projects, and experience in a fun way.
+            I hope you enjoy exploring it as much as I enjoyed making it!`,
+        teamSize: 1,
+        links: { 
+            github: "https://github.com/KimberleyEvans-Parker/kimberleyevans-parker.github.io",
+            seeMore: "kimberley.evans-parker.com"
+         },
+        technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.TS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
+    },
+    {
         heading: "Quotle",
         subheading: "Daily Movie Guesser",
         dates: { start: new Date(2023, 3) },
