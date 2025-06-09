@@ -1,12 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.a876bb43.css",
-    "main.js": "/static/js/main.1d7e3def.js",
+    "main.js": "/static/js/main.c697a5e0.js",
     "static/media/Santa's Workshop.mp4": "/static/media/Santa's Workshop.96b27404aa3612e5664e.mp4",
     "static/media/Elven Village.mp4": "/static/media/Elven Village.23203f66553d2fb576c5.mp4",
     "static/media/Lego Themepark Creations.mp4": "/static/media/Lego Themepark Creations.5ba091c4c21319bf3908.mp4",
-    "static/media/Line following.gif": "/static/media/Line following.3e2b9523d76cb3fd420b.gif",
-    "static/media/Traversing the map.gif": "/static/media/Traversing the map.b65dcd15293b94c50dab.gif",
     "static/media/Playthrough.gif": "/static/media/Playthrough.a9b8b9a237513c20b3a3.gif",
     "static/media/Classes and Booking.gif": "/static/media/Classes and Booking.5a3525bfaed8ae30e184.gif",
     "static/media/Instructor Profile.gif": "/static/media/Instructor Profile.13cc3c621e146aa61d81.gif",
@@ -15,10 +13,12 @@
     "static/media/Gamification.gif": "/static/media/Gamification.2095504dcb15f267fbf3.gif",
     "static/media/Navigating the Maze.mp4": "/static/media/Navigating the Maze.83ff896e29b2f5b52f5a.mp4",
     "static/media/Adding a task.gif": "/static/media/Adding a task.a47da6612418c9ddc6e7.gif",
+    "static/media/Twists and Turns.mp4": "/static/media/Twists and Turns.6a09bcd70c63471bc974.mp4",
     "static/media/Marketplace.gif": "/static/media/Marketplace.bf8bf7d00fb753f07a75.gif",
     "static/media/Workshop.JPG": "/static/media/Workshop.8498500f3f52b41b66a6.JPG",
     "static/media/Instructor.gif": "/static/media/Instructor.719eb452700d27bc08ec.gif",
     "static/media/Rewards.gif": "/static/media/Rewards.202544c30814f574001d.gif",
+    "static/media/Line Following.mp4": "/static/media/Line Following.379c77f872963ba924b0.mp4",
     "static/media/Queen of Hearts.jpg": "/static/media/Queen of Hearts.ef5f3f109b4533023ffd.jpg",
     "static/media/Spiderman.JPG": "/static/media/Spiderman.9d4a41fd18efc3fb139e.JPG",
     "static/media/Walk through the Island.png": "/static/media/Walk through the Island.6f05f893219c0fe2f689.png",
@@ -31,6 +31,7 @@
     "static/media/Christmas Stocking.jpg": "/static/media/Christmas Stocking.5c378d82ad72fce5ed13.jpg",
     "static/media/Sappling forest.jpg": "/static/media/Sappling forest.3b7f799690989bd1770d.jpg",
     "static/media/PCB.jpg": "/static/media/PCB.e4f3a3ceebc63217fec3.jpg",
+    "static/media/Traversing the Map.mp4": "/static/media/Traversing the Map.c4a1f733ba038652a5b3.mp4",
     "static/media/View of the Island.JPG": "/static/media/View of the Island.26323752b5010bc9249d.JPG",
     "static/media/Planting Trees 1.JPG": "/static/media/Planting Trees 1.3df188e4c08b65c78cac.JPG",
     "static/media/Features.gif": "/static/media/Features.84269d7499d2ee190727.gif",
@@ -180,10 +181,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.a876bb43.css.map": "/static/css/main.a876bb43.css.map",
-    "main.1d7e3def.js.map": "/static/js/main.1d7e3def.js.map"
+    "main.c697a5e0.js.map": "/static/js/main.c697a5e0.js.map"
   },
   "entrypoints": [
     "static/css/main.a876bb43.css",
-    "static/js/main.1d7e3def.js"
+    "static/js/main.c697a5e0.js"
   ]
 }
