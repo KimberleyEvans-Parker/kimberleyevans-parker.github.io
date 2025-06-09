@@ -3,9 +3,7 @@ import { useState } from "react";
 import { ContentItem } from "../components/content item/ContentItem";
 import { Modal } from "../components/Modal";
 import { projectData } from "../../data/projects";
-import { Sort } from "../components/sort filter/Sort";
-import Filter from "../components/sort filter/Filter";
-import Search from "../components/sort filter/Search";
+import { SortFilterSearch } from "../components/sort filter search/SortFilterSearch";
 
 export const Projects = () => {
   const [sortedProjects, setSortedProjects] = useState(projectData);
@@ -30,9 +28,7 @@ export const Projects = () => {
       <h1 className="fade left">Projects</h1>
       <Modal />
 
-      <Sort projectData={projectData} setSortedProjects={setSortedProjects} />
-      <Filter projectData={projectData} setSortedProjects={setSortedProjects}  />
-      <Search projectData={projectData} setSortedProjects={setSortedProjects} />
+      <SortFilterSearch projectData={projectData} setSortedProjects={setSortedProjects} />
 
       {sortedProjects.map((project) => (
         <ContentItem
