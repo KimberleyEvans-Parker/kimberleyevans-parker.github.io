@@ -40,7 +40,7 @@ export const projectData: ContentItemType[] = [
     {
         heading: "Kimberley Evans-Parker's Portfolio",
         subheading: "This Website",
-        dates: { start: new Date(2023, 0) },
+        dates: { start: new Date(2020, 0), end: "Present" },
         description: `This is my personal portfolio website, custom built and designed using React, TypeScript HTML and CSS.
             It is designed to showcase my skills, projects, and experience in a fun way.
             I hope you enjoy exploring it as much as I enjoyed making it!`,
@@ -49,6 +49,17 @@ export const projectData: ContentItemType[] = [
             github: "https://github.com/KimberleyEvans-Parker/kimberleyevans-parker.github.io",
             seeMore: "kimberley.evans-parker.com"
          },
+        technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.TS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
+    },
+    {
+        heading: "Werewolf",
+        subheading: "app to help the DM track the Werewolf game",
+        dates: { start: new Date(2022, 0), end: "Present" },
+        description: `A web application to help the DM track the Werewolf game, made for a friend.  
+            It allows you to create a game, add players and roles, and then track the game as it progresses.  
+            You can track who has been attacked, who has been saved and who has travelled where and it monitors who has been killed.  
+            The application is made using React, TypeScript, HTML and CSS.`,
+        teamSize: 1,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.TS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
     {
