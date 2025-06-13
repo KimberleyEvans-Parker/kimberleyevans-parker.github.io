@@ -3,7 +3,7 @@ import { workData } from "../../data/work";
 import { DateSubheading } from "../components/content item/DateSubheading";
 import { awardsData } from "../../data/awards";
 import { ContentItem } from "../components/content item/ContentItem";
-import { xeroData } from "../../data/xero";
+import { xerGeneralDescriptions, xeroData } from "../../data/xero";
 
 export const Xero = () => {
     let animationDelay = 0;
@@ -16,15 +16,6 @@ export const Xero = () => {
 
     const xeroGeneralData = workData.find((project) => project.subheading === "Xero")
     const xeroAwards = awardsData.filter((award) => award.subheading?.includes("Xero"))
-
-    const descriptions = [
-        "I performed maintenance and reliability work, adding integration and e2e tests and updating TeamCity pipelines.  ",
-        "I also mentored and onboarded three graduate engineers, helping them to become productive members of the team and teaching them skills such as React, Typescript and CSS.  ",
-        "I encouraged availability by ensuring all of our pages were adequately monitored and added alerting with tools such as New Relic, Sumo Logic and Lighthouse.  ",
-        "I used Launch Darkly to control releases to customers, with some feature flags getting evaluated 10k-100k times a day.  ",
-        "A highlight was a hakathon where we received the Customer Impact Award for adding a file upload section to an employee, which was the most requested feature in Payroll for multiple years.  ",
-        "I also won the Connected Workplaces Hackathon with a team of four, where we created a wellbeing hub - a dashboard for employees to easily see upcoming events, todos and summaries of their employees. "
-    ]
 
 
     return (
@@ -45,8 +36,9 @@ export const Xero = () => {
             >
                 <DateSubheading {...xeroGeneralData?.dates} />
             </div>
-            {descriptions.map((description, index) => (
+            {xerGeneralDescriptions.map((description, index) => (
                 <p
+                    key={index}
                     className="fade left"
                     style={{animationDelay: getAnimationDelay()}}
                 >
@@ -62,22 +54,18 @@ export const Xero = () => {
             <div className="fade left"
                 style={{animationDelay: getAnimationDelay()}}
             >
-                {xeroData.map((project, index) => (
-                    <ContentItem
-                        key={index}
-                        contentData={project}
-                        animationDelay={getAnimationDelay()}
-                        imgOnLeft={index % 2 === 0}
-                    />
-                ))}
-            </div>
-            <div className="fade left"
-                style={{animationDelay: getAnimationDelay()}}
-            >
                 {xeroAwards.map((award, index) => (
                     <ContentItem
                         key={index}
                         contentData={award}
+                        animationDelay={getAnimationDelay()}
+                        imgOnLeft={index % 2 === 0}
+                    />
+                ))}
+                {xeroData.map((project, index) => (
+                    <ContentItem
+                        key={index}
+                        contentData={project}
                         animationDelay={getAnimationDelay()}
                         imgOnLeft={index % 2 === 0}
                     />
