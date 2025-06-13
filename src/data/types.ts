@@ -14,7 +14,7 @@ export type Dates = {
 export type ContentItemType = {
     heading: string;
     subheading?: string;
-    dates: Dates;
+    dates?: Dates;
     description: string;
     teamSize?: number;
     links?: LinksType;
