@@ -1,6 +1,9 @@
 import { Modal } from "../components/Modal";
 import { workData } from "../../data/work";
 import { DateSubheading } from "../components/content item/DateSubheading";
+import { awardsData } from "../../data/awards";
+import { ContentItem } from "../components/content item/ContentItem";
+import { xeroData } from "../../data/xero";
 
 export const Xero = () => {
     let animationDelay = 0;
@@ -12,6 +15,7 @@ export const Xero = () => {
     };
 
     const xeroGeneralData = workData.find((project) => project.subheading === "Xero")
+    const xeroAwards = awardsData.filter((award) => award.subheading?.includes("Xero"))
 
     const descriptions = [
         "I performed maintenance and reliability work, adding integration and e2e tests and updating TeamCity pipelines.  ",
@@ -54,6 +58,30 @@ export const Xero = () => {
                 style={{animationDelay: getAnimationDelay()}}
             >
                 {xeroGeneralData?.technologies && xeroGeneralData?.technologies.join(` ⸎ `)}
+            </div>
+            <div className="fade left"
+                style={{animationDelay: getAnimationDelay()}}
+            >
+                {xeroData.map((project, index) => (
+                    <ContentItem
+                        key={index}
+                        contentData={project}
+                        animationDelay={getAnimationDelay()}
+                        imgOnLeft={index % 2 === 0}
+                    />
+                ))}
+            </div>
+            <div className="fade left"
+                style={{animationDelay: getAnimationDelay()}}
+            >
+                {xeroAwards.map((award, index) => (
+                    <ContentItem
+                        key={index}
+                        contentData={award}
+                        animationDelay={getAnimationDelay()}
+                        imgOnLeft={index % 2 === 0}
+                    />
+                ))}
             </div>
 
         </div>
