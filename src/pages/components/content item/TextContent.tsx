@@ -4,8 +4,8 @@ import { LinksType } from "../../../data/types";
 import { LinksSection } from "./LinksSection";
 
 interface TextContentProps {
-  dates: Dates;
   description: string;
+  dates?: Dates;
   teamSize?: number;
   links?: LinksType;
   technologies?: any[];
@@ -13,8 +13,8 @@ interface TextContentProps {
 
 export const TextContent = (
   {
-    dates,
     description,
+    dates,
     teamSize,
     links,
     technologies,

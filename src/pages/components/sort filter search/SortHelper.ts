@@ -1,37 +1,40 @@
 import { ContentItemType } from "../../../data/types"
 
-export const sortByStartDate = (a: ContentItemType, b: ContentItemType) => {
-    if (a.dates.start && b.dates.start) {
-        return a.dates.start.getTime() - b.dates.start.getTime()
-    } else if (a.dates.start && !b.dates.start) {
-        return 1
-    } else if (!a.dates.start && b.dates.start) {
-        return -1
-    } else {
-        return 0
+export const sortByDate = (
+    aDate: Date | "Present" | undefined,
+    bDate: Date | "Present" | undefined
+) => {
+    if (aDate === "Present" && bDate === "Present") {
+        return 0;
+    } else if (aDate === "Present") {
+        return -1;
+    } else if (bDate === "Present") {
+        return 1;
     }
+
+    if (!aDate && !bDate) {
+        return 0;
+    } else if (!aDate) {
+        return 1;
+    } else if (!bDate) {
+        return -1;
+    }
+
+    return aDate.getTime() - bDate.getTime();
+};
+
+export const sortByStartDate = (a: ContentItemType, b: ContentItemType) => {
+    const aDate = a.dates?.start;
+    const bDate = b.dates?.start;
+
+    return sortByDate(aDate, bDate)
 }
 
 export const sortByEndDate = (a: ContentItemType, b: ContentItemType) => {
-    if (a.dates.end === "Present" && b.dates.end === "Present") {
-        return 0
-    } else if (a.dates.end === "Present") {
-        return -1
-    }
-    else if (b.dates.end === "Present") {
-        return 1
-    }
-    const aDate = a.dates.end || a.dates.start
-    const bDate = b.dates.end || b.dates.start
-    if (aDate && bDate) {
-        return aDate.getTime() - bDate.getTime()
-    } else if (aDate && !bDate) {
-        return 1
-    } else if (!aDate && bDate) {
-        return -1
-    } else {
-        return 0
-    }
+    const aDates = a.dates?.end || a.dates?.start;
+    const bDates = b.dates?.end || b.dates?.start;
+    
+    return sortByDate(aDates, bDates)
 }
 
 export const sortByName = (a: ContentItemType, b: ContentItemType) => {
