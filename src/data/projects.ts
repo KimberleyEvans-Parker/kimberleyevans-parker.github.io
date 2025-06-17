@@ -8,6 +8,9 @@ const EmpowerImages = importAllPhotosFromFolder(
 const Industry4Images = importAllPhotosFromFolder(
     require.context("../assets/projects/Industry 4.0")
 );
+const BookBrowserImages = importAllPhotosFromFolder(
+    require.context("../assets/projects/Book Browser")
+);
 const HeartHealerImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Heart Healer")
 );
@@ -122,6 +125,7 @@ export const projectData: ContentItemType[] = [
             The application was made using a Python backend, and an HTML and CSS frontend.`,
         teamSize: 2,
         links: { github: "https://github.com/KimberleyEvans-Parker/BookBrowser" },
+        images: BookBrowserImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.PYTHON, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS]
     },
     {
