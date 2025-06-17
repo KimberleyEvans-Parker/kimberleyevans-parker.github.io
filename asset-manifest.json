@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a876bb43.css",
-    "main.js": "/static/js/main.15fdaceb.js",
+    "main.js": "/static/js/main.ee0a4ef7.js",
     "static/media/Santa's Workshop.mp4": "/static/media/Santa's Workshop.96b27404aa3612e5664e.mp4",
     "static/media/Elven Village.mp4": "/static/media/Elven Village.23203f66553d2fb576c5.mp4",
     "static/media/Lego Themepark Creations.mp4": "/static/media/Lego Themepark Creations.5ba091c4c21319bf3908.mp4",
@@ -45,6 +45,7 @@
     "static/media/Zelda.jpg": "/static/media/Zelda.2fc4b3db33915c54b646.jpg",
     "static/media/Profile Page.gif": "/static/media/Profile Page.033fedc2ad430f1235a5.gif",
     "static/media/Ancient Tree.jpg": "/static/media/Ancient Tree.cb1751203208ce9e0bc5.jpg",
+    "static/media/Book browsing.mp4": "/static/media/Book browsing.9209db976dd2f0923094.mp4",
     "static/media/Dog and Seal.JPG": "/static/media/Dog and Seal.dc06b2407cb4907be9ac.JPG",
     "static/media/Pokemon.JPG": "/static/media/Pokemon.2b2e37fa9ebcfaf8c853.JPG",
     "static/media/Adding a Machine.mp4": "/static/media/Adding a Machine.862b051533a969a02171.mp4",
@@ -181,10 +182,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.a876bb43.css.map": "/static/css/main.a876bb43.css.map",
-    "main.15fdaceb.js.map": "/static/js/main.15fdaceb.js.map"
+    "main.ee0a4ef7.js.map": "/static/js/main.ee0a4ef7.js.map"
   },
   "entrypoints": [
     "static/css/main.a876bb43.css",
-    "static/js/main.15fdaceb.js"
+    "static/js/main.ee0a4ef7.js"
   ]
 }
