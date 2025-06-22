@@ -4,6 +4,7 @@ import { Filter } from "./Filter";
 import { Search } from "./Search";
 import { Sort } from "./Sort";
 import "./tool-bar.css";
+import { Order } from "./Order";
 
 interface SortFilterSearchProps {
     projectData: ContentItemType[];
@@ -36,6 +37,10 @@ export const ToolBar = ({
     return (
         <div className="tool-bar-container">
             <Sort
+                projectData={projectData}
+                setSortedProjects={setSortedProjects}
+            />
+            <Order
                 projectData={projectData}
                 setSortedProjects={setSortedProjects}
             />
