@@ -10,7 +10,6 @@ interface SortProps {
 }
 
 export const Sort = ({projectData, setSortedProjects}: SortProps) => {
-    const [ascending, setAscending] = useState(true);
     const [sortBy, setSortBy] = useState("date");
 
     enum sortingOptions {
@@ -24,11 +23,6 @@ export const Sort = ({projectData, setSortedProjects}: SortProps) => {
     const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const newSort = event.target.value
         setSortBy(newSort)
-    }
-
-    const handleOrderChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        const newOrder = event.target.value as "asc" | "desc"
-        setAscending(newOrder === "asc")
     }
     
     useEffect(() => {
@@ -47,34 +41,20 @@ export const Sort = ({projectData, setSortedProjects}: SortProps) => {
           projectData.sort(sortByTechnology)
         }
 
-        if (!ascending) {
-          projectData.reverse();
-        }
-
         setSortedProjects([...projectData]);
       }
-    , [projectData, ascending, sortBy, setSortedProjects, sortingOptions.startDate, sortingOptions.endDate, sortingOptions.name, sortingOptions.teamSize, sortingOptions.technology])
+    , [projectData, sortBy, setSortedProjects, sortingOptions.startDate, sortingOptions.endDate, sortingOptions.name, sortingOptions.teamSize, sortingOptions.technology])
 
     return (
         <div className="tool-item fade left">
-            <div className="sort-item">
-                <label htmlFor="sort">Sort By</label>
-                <select id="sort" value={sortBy} onChange={handleSortChange}>
-                    {Object.values(sortingOptions).map((option) => (
-                        <option key={option} value={option}>
-                            {option}
-                        </option>
-                    ))}
-                </select>
-            </div>
-
-            <div className="sort-item">
-                <label htmlFor="order">Order</label>
-                <select id="order" value={ascending ? "asc" : "desc"} onChange={handleOrderChange}>
-                    <option value="asc">Ascending</option>
-                    <option value="desc">Descending</option>
-                </select>
-            </div>
+            <label htmlFor="sort">Sort By</label>
+            <select id="sort" value={sortBy} onChange={handleSortChange}>
+                {Object.values(sortingOptions).map((option) => (
+                    <option key={option} value={option}>
+                        {option}
+                    </option>
+                ))}
+            </select>
         </div>
     )
 }
