@@ -1,0 +1,18 @@
+.tool-bar-container {
+  display: flex;
+  flex-direction: row;
+  /* gap: 24px; */
+    justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+  .tool-bar-container {
+    flex-direction: column;
+  }
+}
+
+.tool-bar-container .tool-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
