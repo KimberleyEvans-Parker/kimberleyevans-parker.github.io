@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ContentItem } from "../components/content item/ContentItem";
 import { Modal } from "../components/Modal";
 import { projectData } from "../../data/projects";
-import { SortFilterSearch } from "../components/sort filter search/SortFilterSearch";
+import { ToolBar } from "../components/sort filter search/ToolBar";
 
 export const Projects = () => {
   const [sortedProjects, setSortedProjects] = useState(projectData);
@@ -28,7 +28,7 @@ export const Projects = () => {
       <h1 className="fade left">Projects</h1>
       <Modal />
 
-      <SortFilterSearch projectData={projectData} setSortedProjects={setSortedProjects} />
+      <ToolBar projectData={projectData} setSortedProjects={setSortedProjects} />
 
       {sortedProjects.map((project) => (
         <ContentItem
