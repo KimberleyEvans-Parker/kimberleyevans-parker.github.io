@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ContentItem } from "../components/content item/ContentItem";
 import { Modal } from "../components/Modal";
 import { projectData } from "../../data/projects";
-import { ToolBar } from "../components/sort filter search/ToolBar";
+import { ToolBar } from "../components/toolbar/ToolBar";
 
 export const Projects = () => {
   const [sortedProjects, setSortedProjects] = useState(projectData);
