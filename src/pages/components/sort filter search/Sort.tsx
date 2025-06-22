@@ -56,7 +56,7 @@ export const Sort = ({projectData, setSortedProjects}: SortProps) => {
     , [projectData, ascending, sortBy, setSortedProjects, sortingOptions.startDate, sortingOptions.endDate, sortingOptions.name, sortingOptions.teamSize, sortingOptions.technology])
 
     return (
-        <div className="sort-container fade left">
+        <div className="tool-item fade left">
             <div className="sort-item">
                 <label htmlFor="sort">Sort By</label>
                 <select id="sort" value={sortBy} onChange={handleSortChange}>
