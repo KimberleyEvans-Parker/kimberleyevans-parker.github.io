@@ -19,7 +19,7 @@ export const Search = ({ projectData, setSortedProjects }: SearchProps) => {
     };
 
     return (
-        <div className="filter-container fade left">
+        <div className="tool-item fade left">
             <label htmlFor="filter">Search</label>
             <input
                 type="text"

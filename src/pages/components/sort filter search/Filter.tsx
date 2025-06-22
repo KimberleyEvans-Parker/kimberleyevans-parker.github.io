@@ -36,7 +36,7 @@ export const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
     }
 
     return (
-        <div className="filter-container fade left">
+        <div className="tool-item fade left">
             <label htmlFor="filter">Filter By</label>
             <div>
                 <input
