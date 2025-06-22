@@ -1,10 +1,11 @@
 import React from "react";
 import { ContentItemType } from "../../../data/types";
+import { MEDIUM_SCREEN, X_SMALL_SCREEN } from "../../../helpers/Constants";
 import { Filter } from "./Filter";
 import { Search } from "./Search";
 import { Sort } from "./Sort";
-import "./tool-bar.css";
 import { Order } from "./Order";
+import "./tool-bar.css";
 
 interface SortFilterSearchProps {
     projectData: ContentItemType[];
@@ -35,6 +36,30 @@ export const ToolBar = ({
   });
 
     return (
+      dimensions.width > X_SMALL_SCREEN && dimensions.width < MEDIUM_SCREEN ? 
+        <div className="tool-bar-container">
+          <div>
+            <Sort
+                projectData={projectData}
+                setSortedProjects={setSortedProjects}
+            />
+            <Order
+                projectData={projectData}
+                setSortedProjects={setSortedProjects}
+            />
+          </div>
+          <div>
+            <Filter
+                projectData={projectData}
+                setSortedProjects={setSortedProjects}
+            />
+            <Search
+                projectData={projectData}
+                setSortedProjects={setSortedProjects}
+            />
+          </div>
+        </div>
+        :
         <div className="tool-bar-container">
             <Sort
                 projectData={projectData}
