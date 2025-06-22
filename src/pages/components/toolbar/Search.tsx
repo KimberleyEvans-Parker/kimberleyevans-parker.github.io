@@ -26,6 +26,7 @@ export const Search = ({ projectData, setSortedProjects }: SearchProps) => {
                 placeholder="Search projects..."
                 value={query}
                 onChange={handleChange}
+                style={{ width: "176px" }}
             />
         </div>
     );
