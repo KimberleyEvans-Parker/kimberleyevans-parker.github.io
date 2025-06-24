@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.14d274d2.css",
-    "main.js": "/static/js/main.ad3ad2de.js",
+    "main.js": "/static/js/main.b406675d.js",
     "static/media/Santa's Workshop.mp4": "/static/media/Santa's Workshop.96b27404aa3612e5664e.mp4",
     "static/media/Elven Village.mp4": "/static/media/Elven Village.23203f66553d2fb576c5.mp4",
     "static/media/Lego Themepark Creations.mp4": "/static/media/Lego Themepark Creations.5ba091c4c21319bf3908.mp4",
@@ -62,6 +62,7 @@
     "static/media/Christmas Tree.jpg": "/static/media/Christmas Tree.2f7ae1cddb5c31755e03.jpg",
     "static/media/Presents Under the Tree.jpg": "/static/media/Presents Under the Tree.a72938f0662ce1a89715.jpg",
     "static/media/Futuristic 3.jpg": "/static/media/Futuristic 3.bcbf08647b851bfeaa77.jpg",
+    "static/media/Holding the Award.jpg": "/static/media/Holding the Award.c9ebfd11c31497e53922.jpg",
     "static/media/Tardis - Bigger on the Inside.jpg": "/static/media/Tardis - Bigger on the Inside.1fd94bc64466f029e57f.jpg",
     "static/media/Planters are ready.jpg": "/static/media/Planters are ready.787937f40893a84afe9a.jpg",
     "static/media/Futuristic 4.jpg": "/static/media/Futuristic 4.56d489065ce14ead203c.jpg",
@@ -182,10 +183,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.14d274d2.css.map": "/static/css/main.14d274d2.css.map",
-    "main.ad3ad2de.js.map": "/static/js/main.ad3ad2de.js.map"
+    "main.b406675d.js.map": "/static/js/main.b406675d.js.map"
   },
   "entrypoints": [
     "static/css/main.14d274d2.css",
-    "static/js/main.ad3ad2de.js"
+    "static/js/main.b406675d.js"
   ]
 }
