@@ -12,6 +12,7 @@ import { Lego } from "./pages/hobbies/Lego";
 import { Art } from "./pages/hobbies/Art";
 import { Cosplays } from "./pages/hobbies/Cosplays";
 import { Photography } from "./pages/hobbies/Photography";
+import { Travel } from "./pages/hobbies/Travel";
 import { Words } from "./pages/words/Words";
 import { LocateEntrance } from "./pages/amazonian mystery/LocateEntrance";
 import { OpenEntrance } from "./pages/amazonian mystery/OpenEntrance";
@@ -42,6 +43,7 @@ function App() {
           <Route path="hobbies/art" element={<Art />} />
           <Route path="hobbies/cosplays" element={<Cosplays />} />
           <Route path="hobbies/photography" element={<Photography />} />
+          <Route path="hobbies/travel" element={<Travel />} />
 
           {/* Amazonian Mystery */}
           <Route path="AmazonianMystery" element={<LocateEntrance />} />
