@@ -15,7 +15,6 @@ export const Travel = () => {
       'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
   });
 
-
   return (
     <div className="content-container experience-container">
       <div className="fade left">
