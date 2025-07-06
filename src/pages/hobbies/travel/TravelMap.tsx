@@ -4,8 +4,8 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-import { travelLocations } from '../../data/travel';
-import { mapTerrains } from '../../data/maps';
+import { travelLocations } from '../../../data/travel';
+import { mapTerrains } from '../../../data/maps';
 import './map.css';
 
 
