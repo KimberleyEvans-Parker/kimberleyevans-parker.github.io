@@ -4,6 +4,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { travelLocations } from '../../data/travel';
 import { mapTerrains } from '../../data/maps';
+import './map.css';
 
 
 export const Travel = () => {
@@ -56,11 +57,12 @@ export const Travel = () => {
 
         </MapContainer>
 
-        <div className="map-terrain-selector">
+        <div className="map-terrain-container">
           <label htmlFor="mapTerrain">Select Map Terrain:</label>
           <select
             id="mapTerrain"
             value={mapTerrain.name}
+            className='map-terrain-selector'
             onChange={(e) => {
               const selectedTerrain = mapTerrains.find(t => t.name === e.target.value);
               if (selectedTerrain) {
