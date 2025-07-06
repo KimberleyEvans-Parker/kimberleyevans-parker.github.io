@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { travelLocations } from '../../data/travel';
+import { mapTerrains } from '../../data/maps';
 
 
 export const Travel = () => {
   const ICON_MARKER = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png"
-  const ICON_SHADOW = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png";
+  const ICON_SHADOW = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png"
 
+  const [mapTerrain, setMapTerrain] = useState(mapTerrains[0]);
 
   L.Icon.Default.mergeOptions({
     iconRetinaUrl: ICON_MARKER,
@@ -30,12 +32,17 @@ export const Travel = () => {
           and my home country New Zealand, whith its breathtaking landscapes.
         </p>
 
-
-        <MapContainer center={[0, 30]} zoom={2} style={{ height: '500px' }}>
+        <MapContainer
+          center={[0, 30]} 
+          zoom={2} 
+          minZoom={mapTerrain.minZoom} 
+          maxZoom={mapTerrain.maxZoom} 
+          style={{ height: '500px' }}
+        >
 
           <TileLayer
-            url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-            attribution='&copy; OpenStreetMap contributors'
+            url={mapTerrain.url}
+            attribution={mapTerrain.attribution}
           />
 
           {travelLocations.map((location, index) => (
@@ -46,7 +53,6 @@ export const Travel = () => {
               </Popup>
             </Marker>
           ))}
-
 
         </MapContainer>
 
