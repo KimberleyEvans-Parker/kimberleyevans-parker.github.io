@@ -1,3 +1,7 @@
+.map-container {
+    height: 500px;
+}
+
 .map-terrain-container {
     margin: 14px 0;
     float: right;
