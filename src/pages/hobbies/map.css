@@ -1,0 +1,9 @@
+.map-terrain-container {
+    margin: 14px 0;
+    float: right;
+}
+
+.map-terrain-selector {
+    margin-left: 10px;
+    padding: 4px 0;
+}
