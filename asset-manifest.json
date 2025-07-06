@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7a244409.css",
-    "main.js": "/static/js/main.d9b50882.js",
+    "main.js": "/static/js/main.7aab258a.js",
     "static/media/Santa's Workshop.mp4": "/static/media/Santa's Workshop.96b27404aa3612e5664e.mp4",
     "static/media/Elven Village.mp4": "/static/media/Elven Village.23203f66553d2fb576c5.mp4",
     "static/media/Lego Themepark Creations.mp4": "/static/media/Lego Themepark Creations.5ba091c4c21319bf3908.mp4",
@@ -32,6 +32,7 @@
     "static/media/Sappling forest.jpg": "/static/media/Sappling forest.3b7f799690989bd1770d.jpg",
     "static/media/PCB.jpg": "/static/media/PCB.e4f3a3ceebc63217fec3.jpg",
     "static/media/Traversing the Map.mp4": "/static/media/Traversing the Map.c4a1f733ba038652a5b3.mp4",
+    "static/media/New Zealand - Hobbiton.jpg": "/static/media/New Zealand - Hobbiton.4e7ee5b682444c2b3f15.jpg",
     "static/media/View of the Island.JPG": "/static/media/View of the Island.26323752b5010bc9249d.JPG",
     "static/media/Planting Trees 1.JPG": "/static/media/Planting Trees 1.3df188e4c08b65c78cac.JPG",
     "static/media/Features.gif": "/static/media/Features.84269d7499d2ee190727.gif",
@@ -183,10 +184,10 @@
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.7a244409.css.map": "/static/css/main.7a244409.css.map",
-    "main.d9b50882.js.map": "/static/js/main.d9b50882.js.map"
+    "main.7aab258a.js.map": "/static/js/main.7aab258a.js.map"
   },
   "entrypoints": [
     "static/css/main.7a244409.css",
-    "static/js/main.d9b50882.js"
+    "static/js/main.7aab258a.js"
   ]
 }
