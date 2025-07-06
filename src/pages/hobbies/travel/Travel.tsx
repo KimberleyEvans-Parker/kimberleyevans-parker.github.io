@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { TravelMap } from './TravelMap';
 
 export const Travel = () => {
