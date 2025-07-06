@@ -56,6 +56,26 @@ export const Travel = () => {
 
         </MapContainer>
 
+        <div className="map-terrain-selector">
+          <label htmlFor="mapTerrain">Select Map Terrain:</label>
+          <select
+            id="mapTerrain"
+            value={mapTerrain.name}
+            onChange={(e) => {
+              const selectedTerrain = mapTerrains.find(t => t.name === e.target.value);
+              if (selectedTerrain) {
+                setMapTerrain(selectedTerrain);
+              }
+            }}
+          >
+            {mapTerrains.map((terrain, index) => (
+              <option key={index} value={terrain.name}>
+                {terrain.name}
+              </option>
+            ))}
+          </select>
+        </div>
+
       </div>
     </div>
   );
