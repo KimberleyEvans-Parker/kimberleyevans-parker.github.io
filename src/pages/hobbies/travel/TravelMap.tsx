@@ -7,6 +7,7 @@ import 'leaflet/dist/leaflet.css';
 import { travelLocations } from '../../../data/travel';
 import { mapTerrains } from '../../../data/maps';
 import './map.css';
+import { SelectMapTerrain } from './SelectMapTerrain';
 
 
 export const TravelMap = () => {
@@ -19,52 +20,37 @@ export const TravelMap = () => {
     iconRetinaUrl: ICON_MARKER,
     shadowUrl: ICON_SHADOW
   });
-    return (
-        <>
-        <MapContainer
-          center={[0, 30]} 
-          zoom={2} 
-          minZoom={mapTerrain.minZoom} 
-          maxZoom={mapTerrain.maxZoom} 
-          style={{ height: '500px' }}
-        >
+  return (
+    <>
+      <MapContainer
+        center={[10, 30]}
+        zoom={2}
+        minZoom={mapTerrain.minZoom}
+        maxZoom={mapTerrain.maxZoom}
+        className='map-container'
+      >
 
-          <TileLayer
-            url={mapTerrain.url}
-            attribution={mapTerrain.attribution}
-          />
+        <TileLayer
+          url={mapTerrain.url}
+          attribution={mapTerrain.attribution}
+        />
 
-          {travelLocations.map((location, index) => (
-            <Marker key={index} position={location.position}>
-              <Popup>
-                <strong>{location.name}</strong><br />
-                {location.description}
-              </Popup>
-            </Marker>
-          ))}
+        {travelLocations.map((location, index) => (
+          <Marker key={index} position={location.position}>
+            <Popup>
+              <strong>{location.name}</strong><br />
+              {location.description}
+            </Popup>
+          </Marker>
+        ))}
 
-        </MapContainer>
+      </MapContainer>
 
-        <div className="map-terrain-container">
-          <label htmlFor="mapTerrain">Select Map Terrain:</label>
-          <select
-            id="mapTerrain"
-            value={mapTerrain.name}
-            className='map-terrain-selector'
-            onChange={(e) => {
-              const selectedTerrain = mapTerrains.find(t => t.name === e.target.value);
-              if (selectedTerrain) {
-                setMapTerrain(selectedTerrain);
-              }
-            }}
-          >
-            {mapTerrains.map((terrain, index) => (
-              <option key={index} value={terrain.name}>
-                {terrain.name}
-              </option>
-            ))}
-          </select>
-        </div>
-        </>
-    )
+      <SelectMapTerrain
+        mapTerrain={mapTerrain}
+        setMapTerrain={setMapTerrain}
+      />
+
+    </>
+  )
 }
