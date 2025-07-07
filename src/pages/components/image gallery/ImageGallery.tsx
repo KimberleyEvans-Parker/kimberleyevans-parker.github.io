@@ -1,13 +1,12 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "./image-gallery.css";
-import "../modal.css";
-
 import { SMALL_SCREEN } from "../../../helpers/Constants";
 import { ImageGalleryCollumn } from "./ImageGalleryCollumn";
-import { Modal } from "../Modal";
+import { Modal } from "../modal/Modal";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./image-gallery.css";
 
 interface ImageGalleryProps {
   images: string[];
