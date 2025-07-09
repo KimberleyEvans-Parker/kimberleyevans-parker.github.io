@@ -22,7 +22,7 @@ const Layout = () => {
       {showNav && showHobbiesSub && (
         <SubNavbar
           section={"hobbies"}
-          headings={["Lego", "Photography", "Cosplays", "Art"]}
+          headings={["Lego", "Photography", "Cosplays", "Art", "Travel"]}
         />
       )}
       <Outlet />
