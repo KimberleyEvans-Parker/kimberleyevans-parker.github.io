@@ -4,6 +4,7 @@ import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.jpg";
 import Photography from "../../assets/hobbies/Photography/Flying Bee.jpg";
 import Cosplays from "../../assets/hobbies/Cosplays/Tardis - Bigger on the Inside.jpg";
 import Art from "../../assets/hobbies/Art/Skyrim fanart.jpg";
+import Travel from "../../assets/hobbies/Travel/New Zealand - Hobbiton.jpg";
 
 export const Hobbies = () => {
   let animationDelay = 0;
@@ -42,6 +43,11 @@ export const Hobbies = () => {
           animationDelay={getAnimationDelay()}
           imgSrc={Art}
           title="Art"
+        />
+        <Tile
+          animationDelay={getAnimationDelay()}
+          imgSrc={Travel}
+          title="Travel"
         />
       </div>
     </div>

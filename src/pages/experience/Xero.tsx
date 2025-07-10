@@ -1,4 +1,4 @@
-import { Modal } from "../components/Modal";
+import { Modal } from "../components/modal/Modal";
 import { workData } from "../../data/work";
 import { DateSubheading } from "../components/content item/DateSubheading";
 import { awardsData } from "../../data/awards";

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { ContentItem } from "../components/content item/ContentItem";
-import { Modal } from "../components/Modal";
+import { Modal } from "../components/modal/Modal";
 import { projectData } from "../../data/projects";
 import { ToolBar } from "../components/toolbar/ToolBar";
 

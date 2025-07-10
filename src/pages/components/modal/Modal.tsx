@@ -1,10 +1,12 @@
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { resetImage } from "../../redux/actions";
-import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../redux/selectors";
+import { resetImage } from "../../../redux/actions";
+import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors";
 import { Carousel } from "react-responsive-carousel";
-import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../helpers/Constants";
-import { getImageName } from "../../helpers/Helpers";
+import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants";
+import { getImageName } from "../../../helpers/Helpers";
+
+import "./modal.css";
 
 
 export const Modal = () => {

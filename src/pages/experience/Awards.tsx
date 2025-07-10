@@ -1,5 +1,5 @@
 import { ContentItem } from "../components/content item/ContentItem";
-import { Modal } from "../components/Modal";
+import { Modal } from "../components/modal/Modal";
 import { awardsData } from "../../data/awards";
 
 export const Awards = () => {
