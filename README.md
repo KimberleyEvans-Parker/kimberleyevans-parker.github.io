@@ -8,7 +8,7 @@ Here, you can view the different things I've done - from my various projects to 
 
 This is the welcome page of my website.
 
-https://kimberleyevans-parker.github.io/
+https://kimberley.evans-parker.com
 
 ### About
 
@@ -20,13 +20,13 @@ https://kimberleyevans-parker.github.io/about
 
 From here you can navigate to and view the different places where I have gained experience - Work, Volunteer, Projects and Awards
 
-https://kimberleyevans-parker.github.io/experience
+https://kimberley.evans-parker.com/experience
 
 ## Work Experience
 
 This page contains the work experience I have done.
 
-https://kimberleyevans-parker.github.io/experience/work
+https://kimberley.evans-parker.com/experience/work
 
 ## Volunteer Work
 
@@ -38,13 +38,13 @@ https://kimberleyevans-parker.github.io/experience/volunteer
 
 This page contains the various projects that I've worked on, and the link (if available) to it's GitHub repository.
 
-https://kimberleyevans-parker.github.io/experience/projects
+https://kimberley.evans-parker.com/experience/projects
 
 ## Awards
 
 This page has the awards I and my team have won.
 
-https://kimberleyevans-parker.github.io/experience/awards
+https://kimberley.evans-parker.com/experience/awards
 
 ### Other links
 
