@@ -14,37 +14,37 @@ https://kimberley.evans-parker.com
 
 This has information about me, such as my degree, interests, background and technologies.
 
-https://kimberleyevans-parker.github.io/about
+[/about](https://kimberley.evans-parker.com/about)
 
 ### Experience
 
 From here you can navigate to and view the different places where I have gained experience - Work, Volunteer, Projects and Awards
 
-https://kimberley.evans-parker.com/experience
+[/experience](https://kimberley.evans-parker.com/experience)
 
-## Work Experience
+### Work Experience
 
 This page contains the work experience I have done.
 
-https://kimberley.evans-parker.com/experience/work
+[/work](https://kimberley.evans-parker.com/experience/work)
 
-## Volunteer Work
+### Volunteer Work
 
 This page contains the Volunteer Work I have been involved in.
 
-https://kimberleyevans-parker.github.io/experience/volunteer
+[/volunteer](https://kimberleyevans-parker.github.io/experience/volunteer)
 
-## Projects
+### Projects
 
 This page contains the various projects that I've worked on, and the link (if available) to it's GitHub repository.
 
-https://kimberley.evans-parker.com/experience/projects
+[/projects](https://kimberley.evans-parker.com/experience/projects)
 
-## Awards
+### Awards
 
 This page has the awards I and my team have won.
 
-https://kimberley.evans-parker.com/experience/awards
+[/awards](https://kimberley.evans-parker.com/experience/awards)
 
 ### Other links
 
