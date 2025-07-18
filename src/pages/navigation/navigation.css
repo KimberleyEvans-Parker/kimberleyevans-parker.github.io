@@ -107,6 +107,30 @@ nav ul a {
   background-color: var(--primary-colour);
 }
 
+.dropdown-icon {
+  width: 26px;
+  font-size: x-large;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.dropdown-icon-open {
+  top: 5px;
+  transition-duration: 1s;
+  position: relative;
+}
+
+.dropdown-icon-closed {
+  transform: rotate(180deg);
+  transition-duration: 1s;
+  position: relative;
+  top:-5px
+}
+
+.sub-dropdown-item {
+  font-size: small;
+}
+
 .dropdown-container-smallscreen {
   display: flex;
   flex-direction: column;
