@@ -61,7 +61,11 @@ export const Navigation = () => {
         </ul>
         {(dropdownOpen || dimensions.width >= SMALL_SCREEN) && (
           <div
-            className={`navbar-rightside dropdown-item`}
+            className={`navbar-rightside dropdown-item ${
+          dimensions.width >= SMALL_SCREEN
+            ? ""
+            : "dropdowm-container-smallscreen"
+        }`}
           >
             <ul>
               <NavbarLink
