@@ -14,19 +14,35 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
 
   return (
     <>
-      <Link
-        className="nav-link"
-        to={url}
-        onClick={() => setDropdownOpen(false)}
-      >
-        <li
-          className={`dropdown-item 
-          ${location.pathname.startsWith(url) ? "active" : ""}
-          `}
+      <div className="dropdown-row">
+        <Link
+          className="nav-link"
+          to={url}
+          onClick={() => setDropdownOpen(false)}
         >
-          {heading}
-        </li>
-      </Link>
+          <li
+            className={`dropdown-item 
+              ${location.pathname.startsWith(url) ? "active" : ""}
+              `}
+          >
+            {heading}
+          </li>
+        </Link>
+        {subheadings && subheadings.length > 0 && (
+          <li
+            className={`navbar-rightsid dropdown-icon`}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setSubDropdownOpen(!subDropdownOpen);
+            }}
+          >
+            <div className={`${subDropdownOpen ? "dropdown-icon-open" : "dropdown-icon-closed"}`}>
+              ^
+            </div>
+          </li >
+        )}
+      </div>
 
       {
         subDropdownOpen && (
