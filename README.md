@@ -8,43 +8,79 @@ Here, you can view the different things I've done - from my various projects to 
 
 This is the welcome page of my website.
 
-https://kimberleyevans-parker.github.io/
+https://kimberley.evans-parker.com
 
 ### About
 
 This has information about me, such as my degree, interests, background and technologies.
 
-https://kimberleyevans-parker.github.io/about
+[/about](https://kimberley.evans-parker.com/about)
 
 ### Experience
 
 From here you can navigate to and view the different places where I have gained experience - Work, Volunteer, Projects and Awards
 
-https://kimberleyevans-parker.github.io/experience
+[/experience](https://kimberley.evans-parker.com/experience)
 
-## Work Experience
+#### Work Experience
 
 This page contains the work experience I have done.
 
-https://kimberleyevans-parker.github.io/experience/work
+[/work](https://kimberley.evans-parker.com/experience/work)
 
-## Volunteer Work
+#### Volunteer Work
 
 This page contains the Volunteer Work I have been involved in.
 
-https://kimberleyevans-parker.github.io/experience/volunteer
+[/volunteer](https://kimberleyevans-parker.github.io/experience/volunteer)
 
-## Projects
+#### Projects
 
 This page contains the various projects that I've worked on, and the link (if available) to it's GitHub repository.
 
-https://kimberleyevans-parker.github.io/experience/projects
+[/projects](https://kimberley.evans-parker.com/experience/projects)
 
-## Awards
+#### Awards
 
 This page has the awards I and my team have won.
 
-https://kimberleyevans-parker.github.io/experience/awards
+[/awards](https://kimberley.evans-parker.com/experience/awards)
+
+### Hobbies
+
+This page has links to some of my favourite hobbies
+
+[/hobbies](https://kimberley.evans-parker.com/hobbies)
+
+#### Photography
+
+This page has some of the macro nature photography pictures I have taken
+
+[/photography](https://kimberley.evans-parker.com/hobbies/photography)
+
+#### Art
+
+This page has pictures of some of the art and painting I have done
+
+[/art](https://kimberley.evans-parker.com/hobbies/art)
+
+#### Lego
+
+This page has pictures of some of the Lego buildings I have created
+
+[/lego](https://kimberley.evans-parker.com/hobbies/lego)
+
+#### Cosplays
+
+This page has pictures of some of the cosplays I have designed, created and worn
+
+[/cosplays](https://kimberley.evans-parker.com/hobbies/cosplays)
+
+#### Travel
+
+This page has a map of all of the places I have been
+
+[/travel](https://kimberley.evans-parker.com/hobbies/travel)
 
 ### Other links
 
