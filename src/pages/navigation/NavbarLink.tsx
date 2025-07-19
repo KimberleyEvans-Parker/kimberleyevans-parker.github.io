@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { SMALL_SCREEN } from "../../helpers/Constants";
+import { DropdownIcon } from "./DropdownIcon";
 
 interface NavbarLinkProps {
   heading: string;
@@ -48,20 +49,12 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
             {heading}
           </li>
         </Link>
-        {subheadings && subheadings.length > 0 && (dimensions.width < SMALL_SCREEN) && (
-          <li
-            className={`dropdown-icon ${isActive ? "active" : ""}`}
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setSubDropdownOpen(!subDropdownOpen);
-            }}
-          >
-            <div className={`${subDropdownOpen ? "dropdown-icon-open" : "dropdown-icon-closed"}`}>
-              ^
-            </div>
-          </li >
-        )}
+        <DropdownIcon
+          isActive={isActive}
+          subheadings={subheadings}
+          subDropdownOpen={subDropdownOpen}
+          setSubDropdownOpen={setSubDropdownOpen}
+        />
       </div>
 
       {
