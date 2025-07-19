@@ -32,6 +32,10 @@ nav ul {
   list-style-type: none;
 }
 
+.navbar-container-smallscreen .dropdown-list {
+  flex-direction: column;
+}
+
 nav ul li {
   float: left;
   text-align: center;
@@ -138,6 +142,12 @@ nav ul a {
 
 .sub-dropdown-item {
   font-size: small;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .dropdown-container-smallscreen {
