@@ -32,6 +32,8 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
       };
     });
 
+    const isActive = location.pathname.startsWith(url);
+
   return (
     <>
       <div className="dropdown-row">
@@ -41,16 +43,14 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
           onClick={() => setDropdownOpen(false)}
         >
           <li
-            className={`dropdown-item 
-              ${location.pathname.startsWith(url) ? "active" : ""}
-              `}
+            className={`dropdown-item ${isActive ? "active" : ""}`}
           >
             {heading}
           </li>
         </Link>
         {subheadings && subheadings.length > 0 && (dimensions.width < SMALL_SCREEN) && (
           <li
-            className={`navbar-rightsid dropdown-icon`}
+            className={`dropdown-icon ${isActive ? "active" : ""}`}
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
