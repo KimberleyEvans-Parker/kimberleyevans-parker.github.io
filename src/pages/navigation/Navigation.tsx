@@ -34,11 +34,10 @@ export const Navigation = () => {
   return (
     <nav className="slide-in">
       <div
-        className={`${
-          dimensions.width >= SMALL_SCREEN
+        className={`${dimensions.width >= SMALL_SCREEN
             ? "navbar-container"
             : "navbar-container-smallscreen"
-        }`}
+          }`}
       >
         <ul>
           <Link to="/" onClick={() => setDropdownOpen(false)}>
@@ -60,53 +59,50 @@ export const Navigation = () => {
           )}
         </ul>
         {(dropdownOpen || dimensions.width >= SMALL_SCREEN) && (
-          <div
-            className={`navbar-rightside dropdown-item ${
-          dimensions.width >= SMALL_SCREEN
-            ? ""
-            : "dropdowm-container-smallscreen"
-        }`}
+          <ul
+            className={`navbar-rightside dropdown-item ${dimensions.width >= SMALL_SCREEN
+                ? "dropdown-container"
+                : "dropdowm-container-smallscreen"
+              }`}
           >
-            <ul>
-              <NavbarLink
-                heading="About"
-                setDropdownOpen={setDropdownOpen}
-              />
-              <NavbarLink
-                heading="Experience"
-                setDropdownOpen={setDropdownOpen}
-                subheadings={[
-                  "Work",
-                  "Volunteer",
-                  "Projects",
-                  "Awards",
-                ]}
-              />
-              <NavbarLink
-                heading="Hobbies"
-                setDropdownOpen={setDropdownOpen}
-                subheadings={[
-                  "Lego",
-                  "Photography",
-                  "Cosplays",
-                  "Art",
-                  "Travel",
-                ]}
-              />
-              <NavbarExternalLink
-                url="https://github.com/KimberleyEvans-Parker"
-                ariaLabel="GitHub"
-                className="fa-github"
-                setDropdownOpen={setDropdownOpen}
-              />
-              <NavbarExternalLink
-                url="https://www.linkedin.com/in/kimberleyevans-parker/"
-                ariaLabel="LinkedIn"
-                className="fa-linkedin"
-                setDropdownOpen={setDropdownOpen}
-              />
-            </ul>
-          </div>
+            <NavbarLink
+              heading="About"
+              setDropdownOpen={setDropdownOpen}
+            />
+            <NavbarLink
+              heading="Experience"
+              setDropdownOpen={setDropdownOpen}
+              subheadings={[
+                "Work",
+                "Volunteer",
+                "Projects",
+                "Awards",
+              ]}
+            />
+            <NavbarLink
+              heading="Hobbies"
+              setDropdownOpen={setDropdownOpen}
+              subheadings={[
+                "Lego",
+                "Photography",
+                "Cosplays",
+                "Art",
+                "Travel",
+              ]}
+            />
+            <NavbarExternalLink
+              url="https://github.com/KimberleyEvans-Parker"
+              ariaLabel="GitHub"
+              className="fa-github"
+              setDropdownOpen={setDropdownOpen}
+            />
+            <NavbarExternalLink
+              url="https://www.linkedin.com/in/kimberleyevans-parker/"
+              ariaLabel="LinkedIn"
+              className="fa-linkedin"
+              setDropdownOpen={setDropdownOpen}
+            />
+          </ul>
         )}
       </div>
     </nav>
