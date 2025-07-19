@@ -5,6 +5,7 @@ import { NavbarLink } from "./NavbarLink"
 import { NavbarExternalLink } from "./NavbarExternalLink"
 import "./navigation.css"
 import "./menu-icon.css"
+import { HamburgerIcon } from "./HamburberIcon"
 
 export const Navigation = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -43,20 +44,10 @@ export const Navigation = () => {
           <Link to="/" onClick={() => setDropdownOpen(false)}>
             <li>Kimberley Evans-Parker</li>
           </Link>
-          {dimensions.width < SMALL_SCREEN && (
-            <div
-              className={`navbar-rightside`}
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-            >
-              <li style={{ height: "100%", paddingBottom: "10.5px" }}>
-                <div className={`${dropdownOpen && "change"} menu-icon`}>
-                  <div className="bar1"></div>
-                  <div className="bar2"></div>
-                  <div className="bar3"></div>
-                </div>
-              </li>
-            </div>
-          )}
+          <HamburgerIcon
+            dropdownOpen={dropdownOpen}
+            setDropdownOpen={setDropdownOpen}
+          />
         </ul>
         {(dropdownOpen || dimensions.width >= SMALL_SCREEN) && (
           <ul
