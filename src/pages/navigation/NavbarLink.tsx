@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { SMALL_SCREEN } from "../../helpers/Constants";
 
 interface NavbarLinkProps {
   heading: string;
@@ -11,6 +12,25 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
   const location = useLocation();
   const url = `/${heading.toLowerCase()}`;
   const [subDropdownOpen, setSubDropdownOpen] = useState(false);
+  
+    /* Keeps track of the window dimensions.  Updates when window resizes */
+    const [dimensions, setDimensions] = useState({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    });
+    useEffect(() => {
+      const handleResize = () => {
+        setDimensions({
+          height: window.innerHeight,
+          width: window.innerWidth,
+        });
+      }
+  
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    });
 
   return (
     <>
@@ -28,7 +48,7 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
             {heading}
           </li>
         </Link>
-        {subheadings && subheadings.length > 0 && (
+        {subheadings && subheadings.length > 0 && (dimensions.width < SMALL_SCREEN) && (
           <li
             className={`navbar-rightsid dropdown-icon`}
             onClick={(e) => {
