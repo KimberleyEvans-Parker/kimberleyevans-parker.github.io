@@ -23,9 +23,11 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
           onClick={() => setDropdownOpen(false)}
         >
           <li
-            className={`dropdown-item ${isActive ? "active" : ""}`}
+            className={`dropdown-item ${isActive && "active" }`}
           >
-            {heading}
+            <span className={`${subheadings && "has-subheadings"}`}>
+              {heading}
+            </span>
           </li>
         </Link>
         <DropdownIcon

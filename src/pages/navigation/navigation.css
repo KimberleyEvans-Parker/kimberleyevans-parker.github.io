@@ -120,6 +120,11 @@ nav ul a {
   background-color: var(--primary-colour);
 }
 
+.has-subheadings {
+  position: relative;
+  left: 26px;
+}
+
 .dropdown-icon {
   width: 26px;
   font-size: x-large;
