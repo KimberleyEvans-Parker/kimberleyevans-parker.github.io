@@ -44,7 +44,6 @@ export const DropdownIcon = ({ isActive, subheadings, subDropdownOpen, setSubDro
             }}
         >
             <div className={`${subDropdownOpen ? "dropdown-icon-open" : "dropdown-icon-closed"}`}>
-                ^
                 <div className="line1"></div>
                 <div className="line2"></div>
             </div>
