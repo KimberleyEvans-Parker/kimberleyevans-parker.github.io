@@ -60,6 +60,16 @@ nav ul li.active {
   color: white;
 }
 
+nav ul li.active:hover {
+  background-color: var(--quaternary-colour);
+  color: black;
+}
+
+.nav2 ul li.active:hover {
+  background-color: var(--quaternary-colour);
+  color: black;
+}
+
 .nav2 ul li {
   font-size: 19px;
   padding: 10px 16px;
