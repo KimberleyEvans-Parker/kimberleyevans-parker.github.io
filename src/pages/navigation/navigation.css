@@ -161,3 +161,36 @@ nav ul a {
   align-items: center;
   width: 100%;
 }
+
+.line1,
+.line2 {
+  width: 15px;
+  height: 3px;
+  background-color: grey;
+  position: relative;
+  transition: 0.4s;
+}
+
+.dropdown-icon-open .line1 {
+  transform: rotate(45deg);
+  margin-left: 10px;
+  margin-top: 13px;
+}
+
+.dropdown-icon-open .line2 {
+  margin-left: 0px;
+  margin-top:-3px;
+  transform: rotate(-45deg);
+}
+
+.dropdown-icon-closed .line1 {
+  transform: rotate(-45deg);
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.dropdown-icon-closed .line2 {
+  margin-left: 0px;
+  margin-top:-3px;
+  transform: rotate(45deg);
+}
