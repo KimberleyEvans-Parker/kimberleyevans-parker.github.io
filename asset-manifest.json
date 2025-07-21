@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.49760db7.css",
-    "main.js": "/static/js/main.396975af.js",
+    "main.js": "/static/js/main.1b754fff.js",
     "static/media/Santa's Workshop.mp4": "/static/media/Santa's Workshop.96b27404aa3612e5664e.mp4",
     "static/media/Elven Village.mp4": "/static/media/Elven Village.23203f66553d2fb576c5.mp4",
     "static/media/Lego Themepark Creations.mp4": "/static/media/Lego Themepark Creations.5ba091c4c21319bf3908.mp4",
@@ -171,23 +171,29 @@
     "static/media/Tiny Ants on a Yellow Tarrow.jpg": "/static/media/Tiny Ants on a Yellow Tarrow.b9e747f665e40a747f34.jpg",
     "static/media/Pink flower close-up.jpg": "/static/media/Pink flower close-up.9f6dad0f393efbadb6e4.jpg",
     "static/media/Polen on Lily.jpg": "/static/media/Polen on Lily.c087ca66c387538c5514.jpg",
+    "static/media/Skipped.png": "/static/media/Skipped.36e9171bb7345e6d7429.png",
     "static/media/Expenses and Birthdays Widgets.png": "/static/media/Expenses and Birthdays Widgets.3599250b3758cc82c5f5.png",
+    "static/media/How to Play.png": "/static/media/How to Play.0d46adba3f968b1e16df.png",
     "static/media/Character Selection.jpg": "/static/media/Character Selection.744fcff948fa3bb423dd.jpg",
+    "static/media/The Answer Was.png": "/static/media/The Answer Was.106c6be41d2d40cbf08c.png",
+    "static/media/Correct.png": "/static/media/Correct.50304a10ae3d4fd2658d.png",
     "static/media/White Flower Close-up.jpg": "/static/media/White Flower Close-up.1a3e442ae23d1c15aeb3.jpg",
     "static/media/Abstract Close-up.jpg": "/static/media/Abstract Close-up.4786a97349652b4c410e.jpg",
+    "static/media/Wrong Guess.png": "/static/media/Wrong Guess.394cb8e33840b62ec2e9.png",
     "static/media/Flying Bee.jpg": "/static/media/Flying Bee.60ae0c2cdda1ef220b89.jpg",
     "static/media/Lavender Close-up.jpg": "/static/media/Lavender Close-up.57dce4649687ed6bbcb0.jpg",
     "static/media/Yellow Lily.jpg": "/static/media/Yellow Lily.436833fec07d68429c62.jpg",
     "static/media/White flower.jpg": "/static/media/White flower.8c0b85d6caf40615d076.jpg",
     "static/media/Dashboard Banner.png": "/static/media/Dashboard Banner.98015f67177ceff73099.png",
     "static/media/Yellow Flower.jpg": "/static/media/Yellow Flower.a989971f5cc59c066b4b.jpg",
+    "static/media/Home.png": "/static/media/Home.e76a8ec7307e69c213b6.png",
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
     "main.49760db7.css.map": "/static/css/main.49760db7.css.map",
-    "main.396975af.js.map": "/static/js/main.396975af.js.map"
+    "main.1b754fff.js.map": "/static/js/main.1b754fff.js.map"
   },
   "entrypoints": [
     "static/css/main.49760db7.css",
-    "static/js/main.396975af.js"
+    "static/js/main.1b754fff.js"
   ]
 }
