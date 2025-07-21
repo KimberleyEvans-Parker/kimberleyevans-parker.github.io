@@ -2,6 +2,9 @@ import { TECHNOLOGIES } from "../helpers/Constants";
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
+const QuotleImages = importAllPhotosFromFolder(
+    require.context("../assets/projects/Quotle")   
+);
 const EmpowerImages = importAllPhotosFromFolder(
     require.context("../assets/projects/Empower")
 );
@@ -76,6 +79,7 @@ export const projectData: ContentItemType[] = [
             The game is hosted on vercel and uses basic google sheets for data analytics.`,
         teamSize: 2,
         links: { seeMore: "https://quotle-game.vercel.app/" },
+        images: QuotleImages,
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.TS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
     {
