@@ -32,6 +32,10 @@ nav ul {
   list-style-type: none;
 }
 
+.navbar-container-smallscreen .dropdown-list {
+  flex-direction: column;
+}
+
 nav ul li {
   float: left;
   text-align: center;
@@ -39,7 +43,6 @@ nav ul li {
   text-decoration: none;
   font-size: 20px;
   transition: 1s;
-  height: 100%;
 }
 
 nav ul li:hover {
@@ -55,6 +58,16 @@ nav ul li.active {
 .nav2 ul li.active {
   background-color: var(--tertiary-colour);
   color: white;
+}
+
+nav ul li.active:hover {
+  background-color: var(--quaternary-colour);
+  color: black;
+}
+
+.nav2 ul li.active:hover {
+  background-color: var(--quaternary-colour);
+  color: black;
 }
 
 .nav2 ul li {
@@ -95,6 +108,16 @@ nav ul a {
   cursor: pointer;
 }
 
+.navbar-container-smallscreen .dropdown-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  flex-grow: 1;
+}
+
 .navbar-container-smallscreen .dropdown-item {
   width: 100%;
   padding-left: 0;
@@ -106,3 +129,77 @@ nav ul a {
   top: 57px;
   background-color: var(--primary-colour);
 }
+
+.sub-dropdown-item {
+  font-size: small;
+  opacity: 0.8;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropdown-container-smallscreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-icon {
+  width: 26px;
+  font-size: x-large;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.dropdown-icon-open {
+  top: 5px;
+  transition-duration: 1s;
+  position: relative;
+}
+
+.dropdown-icon-closed {
+  transition-duration: 1s;
+}
+
+.has-subheadings {
+  position: relative;
+  left: 26px;
+}
+
+.line1,
+.line2 {
+  width: 15px;
+  height: 3px;
+  background-color: grey;
+  position: relative;
+  transition: 0.4s;
+}
+
+.dropdown-icon-open .line1 {
+  transform: rotate(45deg);
+  margin-left: 10px;
+  margin-top: 13px;
+}
+
+.dropdown-icon-open .line2 {
+  margin-left: 0px;
+  margin-top:-3px;
+  transform: rotate(-45deg);
+}
+
+.dropdown-icon-closed .line1 {
+  transform: rotate(-45deg);
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.dropdown-icon-closed .line2 {
+  margin-left: 0px;
+  margin-top:-3px;
+  transform: rotate(45deg);
+}
+
