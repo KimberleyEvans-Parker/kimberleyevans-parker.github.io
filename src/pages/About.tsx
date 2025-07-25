@@ -1,36 +1,13 @@
-import React from "react";
 import ProfilePic from "../assets/profile-pic.jpg";
 import Resume from "../assets/Kimberley CV-25-03.pdf";
-import { SMALL_SCREEN } from "../helpers/Constants";
 import { AUnderline, LinkUnderline } from "./components/underline links";
 
 export const About = () => {
-  /* Keeps track of the window dimensions.  Updates when window resizes */
-  const [dimensions, setDimensions] = React.useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
-  React.useEffect(() => {
-    const handleResize = () => {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
-
   return (
     <div className="content-container">
       <img
         src={ProfilePic}
-        className={`profile-pic fade right ${
-          dimensions.width < SMALL_SCREEN ? "center-2" : "float-left"
-        }`}
+        className="profile-pic fade right"
         alt="Profile"
       ></img>
       <div className="fade left">

@@ -13,6 +13,9 @@
   --background-colour: #1e2c55;
   --shadow-colour: #222222;
   --firefly-colour: yellow;
+  --xsmall-screen: 475px;
+  --small-screen: 750px;
+  --medium-screen: 900px;
 }
 
 html,
@@ -110,16 +113,16 @@ button:hover {
   max-width: 200px;
   margin-right: 30px;
   margin-bottom: 20px;
-}
-
-.float-left {
   float: left;
 }
 
-.center-2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: 475px) {
+  .profile-pic {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .content-container {
