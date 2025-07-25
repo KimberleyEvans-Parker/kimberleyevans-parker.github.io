@@ -165,7 +165,7 @@ nav ul a {
   transition-duration: 1s;
 }
 
-.has-subheadings {
+.dropdown-container-smallscreen .has-subheadings {
   position: relative;
   left: 26px;
 }
