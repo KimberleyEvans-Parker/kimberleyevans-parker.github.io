@@ -11,8 +11,7 @@
     object-fit: cover;
 }
 
-/* Create two equal columns that sit next to each other */
-.columns2 {
+.columns {
     flex: 45%;
     max-width: 49%;
     margin: 0 0.5%;
@@ -20,11 +19,14 @@
     position: relative;
 }
 
-.columns1 {
-    flex: 100%;
-    max-width: 100%;
-    position: relative;
-    margin-bottom: 24px;
+@media (max-width: 600px) {
+    .columns {
+        flex: 100%;
+        max-width: 100%;
+        position: relative;
+        margin-bottom: 24px;
+    }
+    
 }
 
 .centered {

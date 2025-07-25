@@ -30,7 +30,7 @@ export const Tile = ({ animationDelay, imgSrc, title }: TileProps) => {
 
     return (
         <div
-            className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+            className="columns zoom-in"
             style={{
                 animationDelay: animationDelay,
             }}
