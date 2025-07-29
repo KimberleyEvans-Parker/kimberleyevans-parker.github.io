@@ -32,13 +32,12 @@ export const Navigation = () => {
     };
   });
 
+  const isSmallScreen = dimensions.width < SMALL_SCREEN;
+
   return (
     <nav className="slide-in">
       <div
-        className={`${dimensions.width >= SMALL_SCREEN
-            ? "navbar-container"
-            : "navbar-container-smallscreen"
-          }`}
+        className="navbar-container"
       >
         <ul>
           <Link to="/" onClick={() => setDropdownOpen(false)}>
@@ -49,12 +48,9 @@ export const Navigation = () => {
             setDropdownOpen={setDropdownOpen}
           />
         </ul>
-        {(dropdownOpen || dimensions.width >= SMALL_SCREEN) && (
+        {(dropdownOpen || !isSmallScreen) && (
           <ul
-            className={`navbar-rightside dropdown-item ${dimensions.width >= SMALL_SCREEN
-                ? "dropdown-container"
-                : "dropdowm-container-smallscreen"
-              }`}
+            className="navbar-rightside dropdown-item dropdown-container"
           >
             <NavbarLink
               heading="About"
@@ -63,23 +59,23 @@ export const Navigation = () => {
             <NavbarLink
               heading="Experience"
               setDropdownOpen={setDropdownOpen}
-              subheadings={[
+              subheadings={isSmallScreen ? [
                 "Work",
                 "Volunteer",
                 "Projects",
                 "Awards",
-              ]}
+              ] : undefined}
             />
             <NavbarLink
               heading="Hobbies"
               setDropdownOpen={setDropdownOpen}
-              subheadings={[
+              subheadings={isSmallScreen ? [
                 "Lego",
                 "Photography",
                 "Cosplays",
                 "Art",
                 "Travel",
-              ]}
+              ] : undefined}
             />
             <NavbarExternalLink
               url="https://github.com/KimberleyEvans-Parker"
