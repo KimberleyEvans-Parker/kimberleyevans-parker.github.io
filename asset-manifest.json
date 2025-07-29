@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c71b36d5.css",
-    "main.js": "/static/js/main.26116a7f.js",
+    "main.css": "/static/css/main.8ba60a7e.css",
+    "main.js": "/static/js/main.b389aa1a.js",
     "static/media/Santa's Workshop.mp4": "/static/media/Santa's Workshop.96b27404aa3612e5664e.mp4",
     "static/media/Elven Village.mp4": "/static/media/Elven Village.23203f66553d2fb576c5.mp4",
     "static/media/Lego Themepark Creations.mp4": "/static/media/Lego Themepark Creations.5ba091c4c21319bf3908.mp4",
@@ -189,11 +189,11 @@
     "static/media/Home.png": "/static/media/Home.e76a8ec7307e69c213b6.png",
     "static/media/Stamen of a yellow lily.jpg": "/static/media/Stamen of a yellow lily.1ae0de48016269ff5f93.jpg",
     "index.html": "/index.html",
-    "main.c71b36d5.css.map": "/static/css/main.c71b36d5.css.map",
-    "main.26116a7f.js.map": "/static/js/main.26116a7f.js.map"
+    "main.8ba60a7e.css.map": "/static/css/main.8ba60a7e.css.map",
+    "main.b389aa1a.js.map": "/static/js/main.b389aa1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c71b36d5.css",
-    "static/js/main.26116a7f.js"
+    "static/css/main.8ba60a7e.css",
+    "static/js/main.b389aa1a.js"
   ]
 }
