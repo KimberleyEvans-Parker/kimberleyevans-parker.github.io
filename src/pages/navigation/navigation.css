@@ -32,8 +32,32 @@ nav ul {
   list-style-type: none;
 }
 
-.navbar-container-smallscreen .dropdown-list {
-  flex-direction: column;
+@media (max-width: 750px) {
+  .navbar-container .dropdown-list {
+    flex-direction: column;
+  }
+
+  .nav2 .navbar-container ul li {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+
+  nav .navbar-container {
+    max-width: 100vw;
+    width: 100vw;
+  }
+
+  .navbar-container .dropdown-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-container .dropdown-item {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 nav ul li {
@@ -75,11 +99,6 @@ nav ul li.active:hover {
   padding: 10px 16px;
 }
 
-.nav2 .navbar-container-smallscreen ul li {
-  font-size: 16px;
-  padding: 10px 10px;
-}
-
 nav ul a {
   color: grey;
 }
@@ -99,29 +118,13 @@ nav ul a {
   display: none;
 }
 
-.navbar-container-smallscreen {
-  width: 100vw;
-}
-
 .navbar-rightside {
   float: right;
   cursor: pointer;
 }
 
-.navbar-container-smallscreen .dropdown-row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
 .nav-link {
   flex-grow: 1;
-}
-
-.navbar-container-smallscreen .dropdown-item {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .nav2 {
@@ -141,11 +144,22 @@ nav ul a {
   align-items: center;
 }
 
-.dropdown-container-smallscreen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+@media (max-width: 750px) {
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .dropdown-container .has-subheadings {
+    position: relative;
+    left: 26px;
+  }
+
+  .dropdown-container a {
+    width: 100%;
+  }
 }
 
 .dropdown-icon {
@@ -165,11 +179,6 @@ nav ul a {
   transition-duration: 1s;
 }
 
-.dropdown-container-smallscreen .has-subheadings {
-  position: relative;
-  left: 26px;
-}
-
 .line1,
 .line2 {
   width: 15px;
@@ -187,7 +196,7 @@ nav ul a {
 
 .dropdown-icon-open .line2 {
   margin-left: 0px;
-  margin-top:-3px;
+  margin-top: -3px;
   transform: rotate(-45deg);
 }
 
@@ -199,7 +208,6 @@ nav ul a {
 
 .dropdown-icon-closed .line2 {
   margin-left: 0px;
-  margin-top:-3px;
+  margin-top: -3px;
   transform: rotate(45deg);
 }
-
