@@ -144,7 +144,15 @@ nav ul a {
   align-items: center;
 }
 
+.sub-dropdown-item {
+  display: none;
+}
+
 @media (max-width: 750px) {
+  .sub-dropdown-item {
+    display: block;
+  }
+
   .dropdown-container {
     display: flex;
     flex-direction: column;

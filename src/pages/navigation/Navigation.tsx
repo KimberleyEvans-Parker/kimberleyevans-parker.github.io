@@ -59,23 +59,23 @@ export const Navigation = () => {
             <NavbarLink
               heading="Experience"
               setDropdownOpen={setDropdownOpen}
-              subheadings={isSmallScreen ? [
+              subheadings={[
                 "Work",
                 "Volunteer",
                 "Projects",
                 "Awards",
-              ] : undefined}
+              ]}
             />
             <NavbarLink
               heading="Hobbies"
               setDropdownOpen={setDropdownOpen}
-              subheadings={isSmallScreen ? [
+              subheadings={[
                 "Lego",
                 "Photography",
                 "Cosplays",
                 "Art",
                 "Travel",
-              ] : undefined}
+              ]}
             />
             <NavbarExternalLink
               url="https://github.com/KimberleyEvans-Parker"
