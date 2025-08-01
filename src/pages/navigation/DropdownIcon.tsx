@@ -1,7 +1,3 @@
-import { useEffect, useState } from "react";
-import { SMALL_SCREEN } from "../../helpers/Constants";
-
-
 interface DropdownIconProps {
     isActive?: boolean;
     subheadings?: string[];
