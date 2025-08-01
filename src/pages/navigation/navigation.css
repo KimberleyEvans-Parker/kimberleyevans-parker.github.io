@@ -171,6 +171,16 @@ nav ul a {
 }
 
 .dropdown-icon {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .dropdown-icon {
+    display: flex;
+  }
+}
+
+.dropdown-icon {
   width: 26px;
   font-size: x-large;
   padding-top: 11px;
