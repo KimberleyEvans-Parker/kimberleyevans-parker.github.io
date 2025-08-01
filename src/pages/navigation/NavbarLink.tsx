@@ -46,6 +46,7 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
                 key={subheading}
                 to={`${url}/${subheading.toLowerCase()}`}
                 onClick={() => setDropdownOpen(false)}
+                className="sub-dropdown-item"
               >
                 <li
                   className={`dropdown-item sub-dropdown-item
