@@ -1,5 +1,3 @@
-import React from "react";
-import { SMALL_SCREEN } from "../../helpers/Constants";
 import { Link } from "react-router-dom";
 
 interface TileProps {
@@ -9,28 +7,9 @@ interface TileProps {
 }
 
 export const Tile = ({ animationDelay, imgSrc, title }: TileProps) => {
-    // Keeps track of the window dimensions.  Updates when window resizes
-    const [dimensions, setDimensions] = React.useState({
-        height: window.innerHeight,
-        width: window.innerWidth,
-    });
-    React.useEffect(() => {
-        const handleResize = () => {
-            setDimensions({
-                height: window.innerHeight,
-                width: window.innerWidth,
-            })
-        }
-
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        }
-    });
-
     return (
         <div
-            className={`${dimensions.width < SMALL_SCREEN ? "columns1" : "columns2"} zoom-in`}
+            className="columns zoom-in"
             style={{
                 animationDelay: animationDelay,
             }}
