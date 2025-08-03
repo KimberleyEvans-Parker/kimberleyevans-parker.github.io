@@ -8,30 +8,9 @@ interface HamburgerIconProps {
 }
 
 export const HamburgerIcon = ({ dropdownOpen, setDropdownOpen }: HamburgerIconProps) => {
-    /* Keeps track of the window dimensions.  Updates when window resizes */
-    const [dimensions, setDimensions] = useState({
-        height: window.innerHeight,
-        width: window.innerWidth,
-    });
-    useEffect(() => {
-        const handleResize = () => {
-            setDimensions({
-                height: window.innerHeight,
-                width: window.innerWidth,
-            })
-        }
-
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    });
-
-    if (dimensions.width >= SMALL_SCREEN) return null
-
     return (
         <div
-            className={`navbar-rightside`}
+            className={`hamburger-icon navbar-rightside`}
             onClick={() => setDropdownOpen(!dropdownOpen)}
         >
             <li style={{ height: "100%", paddingBottom: "10.5px" }}>
