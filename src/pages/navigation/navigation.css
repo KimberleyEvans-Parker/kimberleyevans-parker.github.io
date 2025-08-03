@@ -144,14 +144,7 @@ nav ul a {
   align-items: center;
 }
 
-.sub-dropdown-item {
-  display: none;
-}
-
 @media (max-width: 750px) {
-  .sub-dropdown-item {
-    display: block;
-  }
 
   .dropdown-container {
     display: flex;
@@ -170,13 +163,17 @@ nav ul a {
   }
 }
 
-.dropdown-icon {
-  display: none;
-}
+@media (min-width: 750px) {
+  .sub-dropdown-item {
+    display: none;
+  }
 
-@media (max-width: 750px) {
   .dropdown-icon {
-    display: flex;
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: none;
   }
 }
 
@@ -228,10 +225,4 @@ nav ul a {
   margin-left: 0px;
   margin-top: -3px;
   transform: rotate(45deg);
-}
-
-@media (min-width: 750px) {
-  .hamburger-icon {
-    display: none;
-  }
 }
