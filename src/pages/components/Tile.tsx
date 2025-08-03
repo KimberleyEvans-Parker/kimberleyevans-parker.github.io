@@ -9,25 +9,6 @@ interface TileProps {
 }
 
 export const Tile = ({ animationDelay, imgSrc, title }: TileProps) => {
-    // Keeps track of the window dimensions.  Updates when window resizes
-    const [dimensions, setDimensions] = React.useState({
-        height: window.innerHeight,
-        width: window.innerWidth,
-    });
-    React.useEffect(() => {
-        const handleResize = () => {
-            setDimensions({
-                height: window.innerHeight,
-                width: window.innerWidth,
-            })
-        }
-
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        }
-    });
-
     return (
         <div
             className="columns zoom-in"
