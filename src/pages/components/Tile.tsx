@@ -1,5 +1,3 @@
-import React from "react";
-import { SMALL_SCREEN } from "../../helpers/Constants";
 import { Link } from "react-router-dom";
 
 interface TileProps {
