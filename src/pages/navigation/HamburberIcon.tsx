@@ -1,7 +1,3 @@
-import { useEffect, useState } from "react";
-import { SMALL_SCREEN } from "../../helpers/Constants";
-
-
 interface HamburgerIconProps {
     dropdownOpen: boolean;
     setDropdownOpen: (open: boolean) => void;
