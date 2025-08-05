@@ -19,7 +19,7 @@ export const Xero = () => {
 
 
     return (
-        <div className="content-container experience-container">
+        <div className="content-container">
             <Modal />
             <h1 className="fade left"
                 style={{animationDelay: getAnimationDelay()}}

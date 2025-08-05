@@ -22,7 +22,7 @@ export const Awards = () => {
 
 
   return (
-    <div className="content-container experience-container">
+    <div className="content-container">
       <h1 className="fade left">Awards and Achievments</h1>
       <Modal />
 

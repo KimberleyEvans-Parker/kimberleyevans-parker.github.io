@@ -7,7 +7,7 @@ export const Cosplays = () => {
   );
 
   return (
-    <div className="content-container experience-container">
+    <div className="content-container">
       <div className="fade left">
         <h1>Cosplays</h1>
         <p>
