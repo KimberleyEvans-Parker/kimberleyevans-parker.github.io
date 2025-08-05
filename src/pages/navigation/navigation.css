@@ -145,6 +145,9 @@ nav ul a {
 }
 
 @media (max-width: 750px) {
+  .nav2 {
+    display: none;
+  }
 
   .dropdown-container {
     display: flex;
