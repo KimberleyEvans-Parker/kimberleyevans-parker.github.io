@@ -7,9 +7,9 @@ interface SubNavbarProps {
 
 export const SubNavbar = ({ headings, section }: SubNavbarProps) => {
   return (
-    <nav className="nav2 slide-in">
+    <nav className="subnav slide-in">
       <div
-        className="nav2-container navbar-container"
+        className="subnav-container navbar-container"
       >
         <ul>
           {headings.map((heading) => {
