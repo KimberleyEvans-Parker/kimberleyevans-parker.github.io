@@ -19,7 +19,7 @@ export const Work = () => {
   };
 
   return (
-    <div className="content-container experience-container">
+    <div className="content-container">
       <h1 className="fade left">Work Experience</h1>
       <Modal />
       

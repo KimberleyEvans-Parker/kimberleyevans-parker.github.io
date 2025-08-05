@@ -9,7 +9,7 @@ export const Lego = () => {
   );
 
   return (
-    <div className="content-container experience-container">
+    <div className="content-container">
       <div className="fade left">
         <h1>Lego</h1>
         <p>

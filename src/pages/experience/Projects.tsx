@@ -24,7 +24,7 @@ export const Projects = () => {
   };
 
   return (
-    <div className="content-container experience-container">
+    <div className="content-container">
       <h1 className="fade left">Projects</h1>
       <Modal />
 

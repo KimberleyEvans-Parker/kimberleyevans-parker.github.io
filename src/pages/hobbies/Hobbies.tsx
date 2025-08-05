@@ -16,7 +16,7 @@ export const Hobbies = () => {
   };
 
   return (
-    <div className="content-container experience-container">
+    <div className="content-container">
       <h1>Hobbies</h1>
       <p>
         I have a lot of hobbies including badminton, piano, art and skiing. Here
