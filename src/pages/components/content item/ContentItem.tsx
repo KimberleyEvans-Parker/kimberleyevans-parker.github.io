@@ -16,7 +16,7 @@ interface ContentItemProps {
   imgOnLeft: boolean;
 }
 
-export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentItemProps) => {
+export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentItemProps) => {
   // Keeps track of the window dimensions.  Updates when window resizes
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
@@ -55,6 +55,8 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
 
   if (!contentData) return <></>
 
+  const imageFirst = imgOnLeft && dimensions.width >= SMALL_SCREEN
+
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
@@ -85,31 +87,23 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
 
 
         <div className="content-item-container" style={{ display: "flex", flexDirection: (dimensions.width < SMALL_SCREEN ? "column" : "row"), gap: "24px" }}>
-          {(!imgOnLeft || dimensions.width < SMALL_SCREEN) && (
-            <div className="text-content" style={{ flex: 1 }}>
-              <TextContent
-          dates={contentData.dates}
-          description={contentData.description}
-          teamSize={contentData.teamSize}
-          links={contentData.links}
-          technologies={contentData.technologies}
-              />
-            </div>
-          )}
-          {contentData.images && (
+          {imageFirst && contentData.images && (
             <div className="image-content" style={{ flex: (dimensions.width < SMALL_SCREEN ? "none" : "0 0 33%"), maxWidth: (dimensions.width < SMALL_SCREEN ? "100%" : "400px") }}>
               <ImageContent images={contentData.images} heading={contentData.heading} />
             </div>
           )}
-          {imgOnLeft && dimensions.width >= SMALL_SCREEN && (
-            <div className="text-content" style={{ flex: 1 }}>
-              <TextContent
-          dates={contentData.dates}
-          description={contentData.description}
-          teamSize={contentData.teamSize}
-          links={contentData.links}
-          technologies={contentData.technologies}
-              />
+          <div className="text-content" style={{ flex: 1 }}>
+            <TextContent
+              dates={contentData.dates}
+              description={contentData.description}
+              teamSize={contentData.teamSize}
+              links={contentData.links}
+              technologies={contentData.technologies}
+            />
+          </div>
+          {!imageFirst && contentData.images && (
+            <div className="image-content" style={{ flex: (dimensions.width < SMALL_SCREEN ? "none" : "0 0 33%"), maxWidth: (dimensions.width < SMALL_SCREEN ? "100%" : "400px") }}>
+              <ImageContent images={contentData.images} heading={contentData.heading} />
             </div>
           )}
         </div>
