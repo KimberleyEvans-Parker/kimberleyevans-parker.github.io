@@ -83,35 +83,36 @@ export const ContentItem = ({contentData, animationDelay, imgOnLeft}: ContentIte
           </h2>
         )}
 
-        <Grid container spacing={3}>
+
+        <div className="content-item-container" style={{ display: "flex", flexDirection: (dimensions.width < SMALL_SCREEN ? "column" : "row"), gap: "24px" }}>
           {(!imgOnLeft || dimensions.width < SMALL_SCREEN) && (
-            <Grid item xs>
+            <div className="text-content" style={{ flex: 1 }}>
               <TextContent
-                dates={contentData.dates}
-                description={contentData.description}
-                teamSize={contentData.teamSize}
-                links={contentData.links}
-                technologies={contentData.technologies}
+          dates={contentData.dates}
+          description={contentData.description}
+          teamSize={contentData.teamSize}
+          links={contentData.links}
+          technologies={contentData.technologies}
               />
-            </Grid>
+            </div>
           )}
           {contentData.images && (
-            <Grid item xs={12} sm={6} md={4}>
+            <div className="image-content" style={{ flex: (dimensions.width < SMALL_SCREEN ? "none" : "0 0 33%"), maxWidth: (dimensions.width < SMALL_SCREEN ? "100%" : "400px") }}>
               <ImageContent images={contentData.images} heading={contentData.heading} />
-            </Grid>
+            </div>
           )}
           {imgOnLeft && dimensions.width >= SMALL_SCREEN && (
-            <Grid item xs>
-            <TextContent
-              dates={contentData.dates}
-              description={contentData.description}
-              teamSize={contentData.teamSize}
-              links={contentData.links}
-              technologies={contentData.technologies}
-            />
-            </Grid>
+            <div className="text-content" style={{ flex: 1 }}>
+              <TextContent
+          dates={contentData.dates}
+          description={contentData.description}
+          teamSize={contentData.teamSize}
+          links={contentData.links}
+          technologies={contentData.technologies}
+              />
+            </div>
           )}
-        </Grid>
+        </div>
       </div>
     </div>
   );
