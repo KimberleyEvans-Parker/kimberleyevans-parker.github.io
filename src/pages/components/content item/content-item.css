@@ -4,3 +4,30 @@
   border: 0;
   display: inline-block;
 }
+
+.content-item-container {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+@media (min-width: 750px) {
+  .content-item-container {
+    flex-direction: row;
+  }
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-content {
+  flex: 1;
+  max-width: 100%;
+}
+
+@media (min-width: 750px) {
+  .image-content {
+    max-width: 350px;
+  }
+}

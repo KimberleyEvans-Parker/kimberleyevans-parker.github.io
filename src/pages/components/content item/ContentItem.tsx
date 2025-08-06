@@ -1,6 +1,4 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { SMALL_SCREEN } from "../../../helpers/Constants";
@@ -55,7 +53,8 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
 
   if (!contentData) return <></>
 
-  const imageFirst = imgOnLeft && dimensions.width >= SMALL_SCREEN
+  const isSmallScreen = dimensions.width < SMALL_SCREEN;
+  const imageFirst = imgOnLeft && !isSmallScreen;
 
   return (
     <div
@@ -86,13 +85,13 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
         )}
 
 
-        <div className="content-item-container" style={{ display: "flex", flexDirection: (dimensions.width < SMALL_SCREEN ? "column" : "row"), gap: "24px" }}>
+        <div className="content-item-container" >
           {imageFirst && contentData.images && (
-            <div className="image-content" style={{ flex: (dimensions.width < SMALL_SCREEN ? "none" : "0 0 33%"), maxWidth: (dimensions.width < SMALL_SCREEN ? "100%" : "400px") }}>
+            <div className="image-content">
               <ImageContent images={contentData.images} heading={contentData.heading} />
             </div>
           )}
-          <div className="text-content" style={{ flex: 1 }}>
+          <div className="text-content">
             <TextContent
               dates={contentData.dates}
               description={contentData.description}
@@ -102,7 +101,7 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
             />
           </div>
           {!imageFirst && contentData.images && (
-            <div className="image-content" style={{ flex: (dimensions.width < SMALL_SCREEN ? "none" : "0 0 33%"), maxWidth: (dimensions.width < SMALL_SCREEN ? "100%" : "400px") }}>
+            <div className="image-content">
               <ImageContent images={contentData.images} heading={contentData.heading} />
             </div>
           )}
