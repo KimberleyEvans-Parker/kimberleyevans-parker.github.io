@@ -1,5 +1,4 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
 
 import { SMALL_SCREEN } from "../../../helpers/Constants";
 import { ImageGalleryCollumn } from "./ImageGalleryCollumn";
@@ -42,46 +41,46 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
 
   for (var i = 0; i < images.length; i++) {
     if (i % 3 === 0) {
-      l3_1.push({name: images[i], index: i});
+      l3_1.push({ name: images[i], index: i });
     } else if (i % 3 === 1) {
-      l3_2.push({name: images[i], index: i});
+      l3_2.push({ name: images[i], index: i });
     } else {
-      l3_3.push({name: images[i], index: i});
+      l3_3.push({ name: images[i], index: i });
     }
 
     if (i % 2 === 0) {
-      l2_1.push({name: images[i], index: i});
+      l2_1.push({ name: images[i], index: i });
     } else {
-      l2_2.push({name: images[i], index: i});
+      l2_2.push({ name: images[i], index: i });
     }
   }
 
   return (
     <div style={{ marginTop: "40px" }}>
       <Modal />
-          
+
       <div>
         {dimensions.width < SMALL_SCREEN ? (
-          <Grid container spacing={2}>
-            <Grid item xs={6}>
+          <div className="image-gallery-column">
+            <div>
               <ImageGalleryCollumn allImages={images} images={l2_1} />
-            </Grid>
-            <Grid item xs={6}>
+            </div>
+            <div>
               <ImageGalleryCollumn allImages={images} images={l2_2} />
-            </Grid>
-          </Grid>
+            </div>
+          </div>
         ) : (
-          <Grid container spacing={2}>
-            <Grid item xs={4}>
+          <div className="image-gallery-column">
+            <div>
               <ImageGalleryCollumn allImages={images} images={l3_1} />
-            </Grid>
-            <Grid item xs={4}>
+            </div>
+            <div>
               <ImageGalleryCollumn allImages={images} images={l3_2} />
-            </Grid>
-            <Grid item xs={4}>
+            </div>
+            <div>
               <ImageGalleryCollumn allImages={images} images={l3_3} />
-            </Grid>
-          </Grid>
+            </div>
+          </div>
         )}
       </div>
     </div>
