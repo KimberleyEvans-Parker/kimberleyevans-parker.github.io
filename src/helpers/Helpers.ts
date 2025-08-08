@@ -1,4 +1,4 @@
-const allImages = import.meta.glob('../assets/**/*.{png,jpg,jpeg,svg,mp4,gif}', { eager: true });
+const allImages = import.meta.glob('../assets/**/*.{png,jpg,jpeg,svg,mp4,gif,JPG}', { eager: true });
 
 export const importAllPhotosFromFolder = (folderName: string) => {
   return Object.entries(allImages)
@@ -11,12 +11,16 @@ export const importAllPhotosFromFolder = (folderName: string) => {
 export const getIndexOfImage = (allImages: string[], name: string) => {
   for (let i = 0; i < allImages.length; i++) {
     let currentImage = allImages[i]
-    if (currentImage.includes(name)) return i
+    const pathParts = currentImage.split('/');
+    const decodedName = decodeURIComponent(pathParts[pathParts.length - 1].split('.')[0]);
+    
+    if (decodedName === name) return i;
   }
   return -1
 }
 
 export const getImageName = (image: string) => {
   const path = image.split("/");
-  return path[path.length - 1].split(".")[0];
+  const fileName = path[path.length - 1].split(".")[0];
+  return decodeURIComponent(fileName);
 }
