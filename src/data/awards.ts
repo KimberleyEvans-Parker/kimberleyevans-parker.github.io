@@ -3,24 +3,12 @@ import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
 
-const KrayonImages = importAllPhotosFromFolder(
-    require.context("../assets/awards/2020 DEVS Hackathon", false)
-)
-const MYOBImages = importAllPhotosFromFolder(
-    require.context("../assets/awards/MYOB IT Challenge", false)
-)
-const CertificateImages = importAllPhotosFromFolder(
-    require.context("../assets/awards/Certificates", false)
-)
-const ConnectedWorkplacesHackathonImages = importAllPhotosFromFolder(
-    require.context("../assets/awards/Connected Workplaces Hackathon", false)
-)
-const WdccSesaImages = importAllPhotosFromFolder(
-    require.context("../assets/awards/WDCC SESA Hackathon", false)
-)
-const YESAwardImages = importAllPhotosFromFolder(
-    require.context("../assets/awards/YES Business Product Award", false)
-)
+const KrayonImages = importAllPhotosFromFolder("awards/2020 DEVS Hackathon")
+const MYOBImages = importAllPhotosFromFolder("awards/MYOB IT Challenge")
+const CertificateImages = importAllPhotosFromFolder("awards/Certificates")
+const ConnectedWorkplacesHackathonImages = importAllPhotosFromFolder("awards/Connected Workplaces Hackathon")
+const WdccSesaImages = importAllPhotosFromFolder("awards/WDCC SESA Hackathon")
+const YESAwardImages = importAllPhotosFromFolder("awards/YES Business Product Award")
 
 
 export const awardsData: ContentItemType[] = [

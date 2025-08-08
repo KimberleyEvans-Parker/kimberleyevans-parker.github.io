@@ -1,6 +1,11 @@
-export const importAllPhotosFromFolder = (r: { keys: () => string[]; (path: string): string }) => {
-  return r.keys().map(r);
-}
+const allImages = import.meta.glob('../assets/**/*.{png,jpg,jpeg,svg,mp4,gif}', { eager: true });
+
+export const importAllPhotosFromFolder = (folderName: string) => {
+  return Object.entries(allImages)
+    .filter(([path]) => path.includes(`/assets/${folderName}/`))
+    .map(([_, mod]: any) => mod.default);
+};
+
 
 
 export const getIndexOfImage = (allImages: string[], name: string) => {

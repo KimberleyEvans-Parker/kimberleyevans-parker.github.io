@@ -2,18 +2,10 @@ import { TECHNOLOGIES } from "../helpers/Constants";
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
-const Bricks4KidzImages = importAllPhotosFromFolder(
-    require.context("../assets/work/Bricks4Kidz")
-);
-const SSSImages = importAllPhotosFromFolder(
-    require.context("../assets/work/School Storage Solutions")
-);
-const GraduationPlushiesImages = importAllPhotosFromFolder(
-    require.context("../assets/work/Graduation Plushies")
-);
-const OomaImages = importAllPhotosFromFolder(
-    require.context("../assets/work/No.8 Wireless")
-);
+const Bricks4KidzImages = importAllPhotosFromFolder("work/Bricks4Kidz")
+const SSSImages = importAllPhotosFromFolder("work/School Storage Solutions")
+const GraduationPlushiesImages = importAllPhotosFromFolder("work/Graduation Plushies")
+const OomaImages = importAllPhotosFromFolder("work/No.8 Wireless")
 
 
 export const workData: ContentItemType[] = [

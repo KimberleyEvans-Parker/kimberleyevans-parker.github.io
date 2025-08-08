@@ -2,9 +2,7 @@ import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 import ImageGallery from "../components/image gallery/ImageGallery";
 
 export const Cosplays = () => {
-  const CosplayImages = importAllPhotosFromFolder(
-    require.context("../../assets/hobbies/Cosplays")
-  );
+  const CosplayImages = importAllPhotosFromFolder("../../assets/hobbies/Cosplays")
 
   return (
     <div className="content-container">
