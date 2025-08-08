@@ -2,45 +2,19 @@ import { TECHNOLOGIES } from "../helpers/Constants";
 import { importAllPhotosFromFolder } from "../helpers/Helpers";
 import { ContentItemType } from "./types";
 
-const QuotleImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Quotle")   
-);
-const EmpowerImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Empower")
-);
-const Industry4Images = importAllPhotosFromFolder(
-    require.context("../assets/projects/Industry 4.0")
-);
-const BookBrowserImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Book Browser")
-);
-const HeartHealerImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Heart Healer")
-);
-const UpskillImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Upskill")
-);
-const DotoImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Doto")
-);
-const FeedrImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Feedr")
-);
-const EnvirobotImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Envirobot")
-);
-const RollForReactionImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Roll for Reaction")
-);
-const FlikImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Flik")
-);
-const EventigateImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Eventigate")
-);
-const AshasQuestImages = importAllPhotosFromFolder(
-    require.context("../assets/projects/Asha's Quest")
-);
+const QuotleImages = importAllPhotosFromFolder("projects/Quotle")   
+const EmpowerImages = importAllPhotosFromFolder("projects/Empower")
+const Industry4Images = importAllPhotosFromFolder("projects/Industry 4.0")
+const BookBrowserImages = importAllPhotosFromFolder("projects/Book Browser")
+const HeartHealerImages = importAllPhotosFromFolder("projects/Heart Healer")
+const UpskillImages = importAllPhotosFromFolder("projects/Upskill")
+const DotoImages = importAllPhotosFromFolder("projects/Doto")
+const FeedrImages = importAllPhotosFromFolder("projects/Feedr")
+const EnvirobotImages = importAllPhotosFromFolder("projects/Envirobot")
+const RollForReactionImages = importAllPhotosFromFolder("projects/Roll for Reaction")
+const FlikImages = importAllPhotosFromFolder("projects/Flik")
+const EventigateImages = importAllPhotosFromFolder("projects/Eventigate")
+const AshasQuestImages = importAllPhotosFromFolder("projects/Asha's Quest")
 
 export const projectData: ContentItemType[] = [
     {

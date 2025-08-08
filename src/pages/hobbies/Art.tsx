@@ -2,9 +2,7 @@ import ImageGallery from "../components/image gallery/ImageGallery";
 import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 
 export const Art = () => {
-  const ArtImages = importAllPhotosFromFolder(
-    require.context("../../assets/hobbies/Art")
-  );
+  const ArtImages = importAllPhotosFromFolder("../../assets/hobbies/Art")
 
   return (
     <div className="content-container">
