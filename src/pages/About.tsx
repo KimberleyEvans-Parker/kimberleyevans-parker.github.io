@@ -107,8 +107,8 @@ export const About = () => {
         <h2>Resume</h2>
         <p>
           Like what you see?{" "}
-          <AUnderline text="Download my CV" href={Resume} width="159px" />
         </p>
+          <AUnderline text="Download my CV" href={Resume} width="159px" />
       </div>
     </div>
   );

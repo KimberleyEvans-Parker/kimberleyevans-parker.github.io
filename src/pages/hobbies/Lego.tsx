@@ -4,7 +4,7 @@ import ImageGallery from "../components/image gallery/ImageGallery";
 import { importAllPhotosFromFolder } from "../../helpers/Helpers";
 
 export const Lego = () => {
-  const LegoImages = importAllPhotosFromFolder("../../assets/hobbies/Lego")
+  const LegoImages = importAllPhotosFromFolder("hobbies/Lego")
 
   return (
     <div className="content-container">
