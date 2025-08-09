@@ -13,7 +13,7 @@ export const SubNavbar = ({ headings, section }: SubNavbarProps) => {
       >
         <ul>
           {headings.map((heading) => {
-            return <SubNavbarLink section={section} heading={heading} />;
+            return <SubNavbarLink section={section} heading={heading} key={heading} />;
           })}
         </ul>
       </div>
