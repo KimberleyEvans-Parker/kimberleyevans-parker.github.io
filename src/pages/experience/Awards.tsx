@@ -28,7 +28,7 @@ export const Awards = () => {
 
       {awardsData.map((project) => (
         <ContentItem
-          key={project.heading}
+          key={project.heading + project.subheading}
           imgOnLeft={imgOnLeft()}
           contentData={project}
           animationDelay={getAnimationDelay()}
