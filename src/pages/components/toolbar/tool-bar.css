@@ -1,8 +1,7 @@
 .tool-bar-container {
   display: flex;
   flex-direction: row;
-  /* gap: 24px; */
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 @media (max-width: 475px) {
@@ -15,4 +14,5 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  z-index: 10;
 }

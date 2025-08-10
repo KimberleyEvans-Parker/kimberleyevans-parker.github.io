@@ -1,4 +1,4 @@
-import { Tile } from "../components/Tile";
+import { Tile } from "../components/tile/Tile";
 
 import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.jpg";
 import Photography from "../../assets/hobbies/Photography/Flying Bee.jpg";
