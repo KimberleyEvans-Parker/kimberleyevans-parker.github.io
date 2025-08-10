@@ -1,9 +1,3 @@
-/* .sort-container {
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
-} */
-
 @media (max-width: 400px) {
     .sort-container {
         width: 100%;
