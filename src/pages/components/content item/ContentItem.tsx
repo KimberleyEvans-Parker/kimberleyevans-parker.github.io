@@ -53,9 +53,6 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
 
   if (!contentData) return <></>
 
-  const isSmallScreen = dimensions.width < SMALL_SCREEN;
-  const imageFirst = imgOnLeft && !isSmallScreen;
-
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
@@ -85,12 +82,7 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
         )}
 
 
-        <div className="content-item-container" >
-          {imageFirst && contentData.images && (
-            <div className="image-content">
-              <ImageContent images={contentData.images} heading={contentData.heading} />
-            </div>
-          )}
+        <div className={`content-item-container ${imgOnLeft ? "image-first" : ""}`}>
           <div className="text-content">
             <TextContent
               dates={contentData.dates}
@@ -100,9 +92,9 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
               technologies={contentData.technologies}
             />
           </div>
-          {!imageFirst && contentData.images && (
+          {contentData.images && (
             <div className="image-content">
-              <ImageContent images={contentData.images} heading={contentData.heading} />
+              <ImageContent images={contentData.images} heading={contentData.heading} isVisible={isVisible} />
             </div>
           )}
         </div>
