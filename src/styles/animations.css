@@ -88,6 +88,12 @@
   animation: pop-in ease 0.7s forwards;
 }
 
+@media (max-width: 750px) {
+  .popout-link .popout {
+    display: none;
+  }
+}
+
 @keyframes pop-in {
   100% {
     transform: translateX(20px) scale(0);
