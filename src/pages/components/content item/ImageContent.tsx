@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import { CAROUSEL_TRANSITION_TIME, CAROUSEL_INTERVAL } from "../../../helpers/Constants";
 import { useDispatch } from "react-redux";
@@ -11,6 +12,8 @@ interface ImageContentProps {
 }
 
 export const ImageContent = ({images, heading}: ImageContentProps) => {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
   const dispatch = useDispatch()
 
   const openModal = (index: number, captionHeader: string) => {
@@ -32,8 +35,16 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
       interval={CAROUSEL_INTERVAL}
       infiniteLoop={true}
       className="shadow"
+      selectedItem={currentIndex}
+      onChange={setCurrentIndex}
     >
       {images.map((image: string, index: number) => {
+        const shouldLoad = (
+          index === currentIndex ||
+          index === currentIndex - 1 ||
+          index === currentIndex + 1
+        )
+
         const name = getImageName(image)
         
         const caption = heading ? heading + " - " + name : name;
@@ -47,10 +58,10 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
                 muted
                 autoPlay
                 loop
-                src={image}
+                src={shouldLoad ? image: undefined}
               />
             ) : (
-              <img alt={caption} src={image} />
+              <img alt={caption} src={shouldLoad ? image: undefined} />
             )}
           </button>
         );
