@@ -1,7 +1,6 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import { SMALL_SCREEN } from "../../../helpers/Constants";
 import { ImageContent } from "./ImageContent";
 import { TextContent } from "./TextContent";
 import { ContentItemType } from "../../../data/types";
@@ -15,27 +14,7 @@ interface ContentItemProps {
 }
 
 export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentItemProps) => {
-  // Keeps track of the window dimensions.  Updates when window resizes
-  const [dimensions, setDimensions] = React.useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
-  React.useEffect(() => {
-    const handleResize = () => {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
-
   // for loading a section when it scrolls into view
-
   const [isVisible, setVisible] = React.useState(true);
   const domRef = React.useRef(null);
   React.useEffect(() => {
@@ -68,19 +47,12 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
           animationDelay: animationDelay,
         }}
       >
-        {contentData.links?.github && dimensions.width >= SMALL_SCREEN ? (
-          <a href={contentData.links?.github} className={"popout-link"}>
-            <h2>
-              <i className="fa fa-github popout" aria-hidden="true" />
-              {contentData.heading} {contentData.subheading && "- "} {contentData.subheading}
-            </h2>
-          </a>
-        ) : (
+        <a href={contentData.links?.github} className={"popout-link"}>
           <h2>
-            {contentData.heading} {contentData.subheading && "-"} {contentData.subheading}
+            <i className="fa fa-github popout" aria-hidden="true" />
+            {contentData.heading} {contentData.subheading && "- "} {contentData.subheading}
           </h2>
-        )}
-
+        </a>
 
         <div className={`content-item-container ${imgOnLeft ? "image-first" : ""}`}>
           <div className="text-content">
