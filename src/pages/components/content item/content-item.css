@@ -8,12 +8,16 @@
 .content-item-container {
   display: flex;
   gap: 24px;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-@media (min-width: 750px) {
-  .content-item-container {
-    flex-direction: row;
+.fade-in-section .image-first {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 750px) {
+  .fade-in-section .content-item-container {
+    flex-direction: column;
   }
 }
 
