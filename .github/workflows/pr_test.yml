@@ -7,14 +7,19 @@ on:
     types: [created]
 
 permissions:
-  pull-requests: write # To comment on PRs
-  issues: write        # To comment on PRs
+  pull-requests: write
+  issues: write
 
 jobs:
   test:
     if: github.event_name == 'pull_request' || contains(github.event.comment.body, '/test')
     runs-on: ubuntu-latest
     steps:
+      - name: use Node.js 20
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+    
       - name: Test PR
         uses: phucbm/test-pr-action@v1
         
