@@ -9,6 +9,7 @@ const CertificateImages = importAllPhotosFromFolder("awards/Certificates")
 const ConnectedWorkplacesHackathonImages = importAllPhotosFromFolder("awards/Connected Workplaces Hackathon")
 const WdccSesaImages = importAllPhotosFromFolder("awards/WDCC SESA Hackathon")
 const YESAwardImages = importAllPhotosFromFolder("awards/YES Business Product Award")
+const AliceImages = importAllPhotosFromFolder("awards/Alice Programming Competition")
 
 
 export const awardsData: ContentItemType[] = [
@@ -130,5 +131,6 @@ export const awardsData: ContentItemType[] = [
         dates: { start: new Date(2016, 3) },
         description: `My partner and I received 2nd place for a competition in the Alice programming environment.
             During this, we were able to create 3D animations to fit a desired script, within a given time frame.`,
+        images: AliceImages,
     },
 ]
