@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 // import userEvent from '@testing-library/user-event'
 import App from './App'
 
-test('renders heading and increments counter', async () => {
+test('renders heading', async () => {
   render(<App />)
 
   expect(screen.getByRole('heading', { name: /Kimberley Evans-Parker/i })).toBeInTheDocument()
