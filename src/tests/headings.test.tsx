@@ -26,7 +26,7 @@ describe("Page headings", () => {
                 </Provider>
             );
 
-            expect(await screen.findByRole("heading", { name: heading })).toBeInTheDocument();
+            expect(await screen.findByRole("heading", { level: 1, name: heading })).toBeInTheDocument();
         }
     );
 });
