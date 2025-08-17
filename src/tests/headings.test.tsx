@@ -9,6 +9,25 @@ const pages = [
     // Home + About
     { path: "/", heading: /Kimberley Evans-Parker/i },
     { path: "/about", heading: /about/i },
+
+    // Experience
+    { path: "/experience", heading: /experience/i },
+    { path: "/experience/work", heading: /work experience/i },
+    { path: "/experience/volunteer", heading: /volunteer work/i },
+    { path: "/experience/projects", heading: /projects/i },
+    { path: "/experience/awards", heading: /awards/i },
+    { path: "/experience/work/xero", heading: /xero/i },
+
+    // Hobbies
+    { path: "/hobbies", heading: /hobbies/i },
+    { path: "/hobbies/lego", heading: /lego/i },
+    { path: "/hobbies/art", heading: /art/i },
+    { path: "/hobbies/cosplays", heading: /cosplays/i },
+    { path: "/hobbies/photography", heading: /photography/i },
+    { path: "/hobbies/travel", heading: /travel/i },
+
+    // 404
+    { path: "/some-nonsense", heading: /404/i }, // to test the catch-all route
 ];
 
 
