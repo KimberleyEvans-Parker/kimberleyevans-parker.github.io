@@ -24,40 +24,38 @@ import { Xero } from "./pages/experience/Xero";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
 
-          {/* Experience */}
-          <Route path="experience" element={<Experience />} />
-          <Route path="experience/work" element={<Work />} />
-          <Route path="experience/volunteer" element={<Volunteer />} />
-          <Route path="experience/projects" element={<Projects />} />
-          <Route path="experience/awards" element={<Awards />} />
-          <Route path="experience/work/xero" element={<Xero />} />
+        {/* Experience */}
+        <Route path="experience" element={<Experience />} />
+        <Route path="experience/work" element={<Work />} />
+        <Route path="experience/volunteer" element={<Volunteer />} />
+        <Route path="experience/projects" element={<Projects />} />
+        <Route path="experience/awards" element={<Awards />} />
+        <Route path="experience/work/xero" element={<Xero />} />
 
-          {/* Hobbies */}
-          <Route path="hobbies" element={<Hobbies />} />
-          <Route path="hobbies/lego" element={<Lego />} />
-          <Route path="hobbies/art" element={<Art />} />
-          <Route path="hobbies/cosplays" element={<Cosplays />} />
-          <Route path="hobbies/photography" element={<Photography />} />
-          <Route path="hobbies/travel" element={<Travel />} />
+        {/* Hobbies */}
+        <Route path="hobbies" element={<Hobbies />} />
+        <Route path="hobbies/lego" element={<Lego />} />
+        <Route path="hobbies/art" element={<Art />} />
+        <Route path="hobbies/cosplays" element={<Cosplays />} />
+        <Route path="hobbies/photography" element={<Photography />} />
+        <Route path="hobbies/travel" element={<Travel />} />
 
-          {/* Amazonian Mystery */}
-          <Route path="AmazonianMystery" element={<LocateEntrance />} />
-          <Route path="AmazonianMystery/OpenEntrance" element={<OpenEntrance />} />
-          <Route path="AmazonianMystery/SolvedMystery" element={<SolvedMystery />} />
-          <Route path="AmazonianMystery/GetArtefact" element={<GetArtefact />} />
+        {/* Amazonian Mystery */}
+        <Route path="AmazonianMystery" element={<LocateEntrance />} />
+        <Route path="AmazonianMystery/OpenEntrance" element={<OpenEntrance />} />
+        <Route path="AmazonianMystery/SolvedMystery" element={<SolvedMystery />} />
+        <Route path="AmazonianMystery/GetArtefact" element={<GetArtefact />} />
 
-          {/* Words + 404 */}
-          <Route path="words" element={<Words />} />
-          <Route path="*" element={<Error404 />} />
-        </Route>
-      </Routes>
-    </Router>
+        {/* Words + 404 */}
+        <Route path="words" element={<Words />} />
+        <Route path="*" element={<Error404 />} />
+      </Route>
+    </Routes>
   );
 }
 
