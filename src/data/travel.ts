@@ -23,6 +23,7 @@ export const travelLocations: TravelLocation[] = [
   { name: "Cologne, Germany", position: [50.94, 6.96], description: "Cathedral, chocolate, and Rhine River." },
   {name: "Paris, France", position: [48.85, 2.35], description: "Eiffel Tower, the Sienne and pastries." },
   {name: "Luxembourg", position: [49.61, 6.13], description: "Castles, forests, and European charm." },
+  { name: "Berlin, Germany", position: [52.52, 13.40], description: "History, culture, and vibrant nightlife." },
   
   // Asia
   { name: "Tokyo, Japan", position: [35.6762, 139.6503], description: "Sushi, neon lights, and shrines." },
