@@ -131,7 +131,11 @@ Please change the parent <Route path="${ae}"> to <Route path="${ae==="/"?"*":`${
             This is a web application that allows you to search for books, view their author and details and add them to your personal library.  
             It also allows you to view your personal library and see which books you have read, are currently reading or want to read.  
             I had a lot of fun making extra animations to give it the look and feel of a book library, such as the books flipping open when you hover on them.
-            The application was made using a Python backend, and an HTML and CSS frontend.`,teamSize:2,links:{github:"https://github.com/KimberleyEvans-Parker/BookBrowser"},images:gO,technologies:[J.GIT,J.PYTHON,J.HTML,J.CSS]},{heading:"Habidapt",subheading:"Global Game Jam 2021",dates:{start:new Date(2021,7)},description:`A game made during the Global Game Jam 2021, by a team of 5.  
+            The application was made using a Python backend, and an HTML and CSS frontend.`,teamSize:2,links:{github:"https://github.com/KimberleyEvans-Parker/BookBrowser"},images:gO,technologies:[J.GIT,J.PYTHON,J.HTML,J.CSS]},{heading:"Thermap",subheading:"Exploring with the hot and cold game",dates:{start:new Date(2021,8)},description:`A game made during a hackathon, by a team of 5.
+            You enter in a location and start walking around, and the app will tell you if you are getting warmer or colder.  
+            The app is made using React Native, and uses the phone's GPS to track your location.  
+            The app is designed to be used with friends, and can be used to explore new areas.
+            It is a fun way to explore new places and find hidden gems.`,teamSize:4},{heading:"Habidapt",subheading:"Global Game Jam 2021",dates:{start:new Date(2021,7)},description:`A game made during the Global Game Jam 2021, by a team of 5.  
             This is a boardgame about animals adapting to their environment.  
             It is a two-team game, where you work with your team-mates in a fun environment to collect different types of animals so that you can traverse across different terrains.  
             To make the game, we utilised the laser-cutter to create the tiles and the 3D printer to create the tokens.  
