@@ -1,11 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-
-// https://vite.dev/config/
-/// <reference types="vitest" />
+import { copyFileSync } from 'node:fs'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    {
+      name: 'copy-404',
+      closeBundle() {
+        copyFileSync('dist/index.html', 'dist/404.html')
+      },
+    },
+  ],
   test: {
     environment: 'jsdom',
     setupFiles: ['./src/setupTests.ts'],
