@@ -107,6 +107,18 @@ export const projectData: ContentItemType[] = [
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.PYTHON, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS]
     },
     {
+        heading: "Thermap",
+        subheading: "Exploring with the hot and cold game",
+        dates: { start: new Date(2021, 8) },
+        description:
+            `A game made during a hackathon, by a team of 5.
+            You enter in a location and start walking around, and the app will tell you if you are getting warmer or colder.  
+            The app is made using React Native, and uses the phone's GPS to track your location.  
+            The app is designed to be used with friends, and can be used to explore new areas.
+            It is a fun way to explore new places and find hidden gems.`,
+        teamSize: 4,
+    },
+    {
         heading: "Habidapt",
         subheading: "Global Game Jam 2021",
         dates: { start: new Date(2021, 7) },
