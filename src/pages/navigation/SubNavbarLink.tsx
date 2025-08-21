@@ -7,7 +7,7 @@ interface SubNavbarLinkProps {
 
 export const SubNavbarLink = ({ section, heading }: SubNavbarLinkProps) => {
   const location = useLocation();
-  const url = section ? `/${section}/${heading.toLowerCase()}` : `/${heading.toLowerCase()}`
+  const url = section ? `/${section.toLowerCase()}/${heading.toLowerCase()}` : `/${heading.toLowerCase()}`
 
   return (
     <Link
