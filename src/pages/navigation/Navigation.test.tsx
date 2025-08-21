@@ -62,3 +62,27 @@ test("renders hobbies subheadings", () => {
         expect(screen.getByRole("link", { name: subHeading })).toBeInTheDocument()
     })
 })
+
+test("navigates to the correct page on navbar link click", () => {
+    render(
+        <BrowserRouter>
+            <Navigation />
+        </BrowserRouter>
+    )
+
+    const aboutLink = screen.getByRole("link", { name: "About" });
+    aboutLink.click();
+    expect(window.location.pathname).toBe("/about");
+
+    const experienceLink = screen.getByRole("link", { name: "Experience" });
+    experienceLink.click();
+    expect(window.location.pathname).toBe("/experience");
+
+    const hobbiesLink = screen.getByRole("link", { name: "Hobbies" });
+    hobbiesLink.click();
+    expect(window.location.pathname).toBe("/hobbies");
+
+    const homeLink = screen.getByRole("link", { name: "Kimberley Evans-Parker" });
+    homeLink.click();
+    expect(window.location.pathname).toBe("/");
+})
