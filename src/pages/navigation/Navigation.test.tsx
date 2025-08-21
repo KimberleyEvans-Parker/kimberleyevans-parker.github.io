@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import { Navigation } from "./Navigation";
+import { SubNavbar } from "./SubNavbar";
 
 
 const headings = [
@@ -10,8 +11,23 @@ const headings = [
     "Hobbies",
 ]
 
+const experienceSubHeadings = [
+    "Work Experience",
+    "Volunteer Work",
+    "Projects",
+    "Awards",
+]
 
-test("renders all navbar links", () => {
+const hobbiesSubHeadings = [
+    "Lego",
+    "Art",
+    "Cosplays",
+    "Photography",
+    "Travel",
+]
+
+
+test("renders all navbar headings", () => {
     render(
         <BrowserRouter>
             <Navigation />
@@ -23,3 +39,26 @@ test("renders all navbar links", () => {
     })
 })
 
+test("renders experience subheadings", () => {
+    render(
+        <BrowserRouter>
+            <SubNavbar section="Experience" headings={experienceSubHeadings} />
+        </BrowserRouter>
+    )
+
+    experienceSubHeadings.forEach(subHeading => {
+        expect(screen.getByRole("link", { name: subHeading })).toBeInTheDocument()
+    })
+})
+
+test("renders hobbies subheadings", () => {
+    render(
+        <BrowserRouter>
+            <SubNavbar section="Hobbies" headings={hobbiesSubHeadings} />
+        </BrowserRouter>
+    )
+
+    hobbiesSubHeadings.forEach(subHeading => {
+        expect(screen.getByRole("link", { name: subHeading })).toBeInTheDocument()
+    })
+})
