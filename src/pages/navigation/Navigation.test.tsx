@@ -88,53 +88,18 @@ test("navigates to the correct page on navbar link click", () => {
 })
 
 test("navigates to the correct subheading page on sub-navbar link click", () => {
+    const testSubHeadings = ["Test1", "Test2", "Test3"]
+
     render(
         <BrowserRouter>
-            <SubNavbar section="Experience" headings={experienceSubHeadings} />
+            <SubNavbar section="Test" headings={testSubHeadings} />
         </BrowserRouter>
     )
 
-    const workLink = screen.getByRole("link", { name: "Work" })
-    workLink.click()
-    expect(window.location.pathname).toBe("/experience/work")
-
-    const volunteerLink = screen.getByRole("link", { name: "Volunteer" })
-    volunteerLink.click()
-    expect(window.location.pathname).toBe("/experience/volunteer")
-
-    const projectsLink = screen.getByRole("link", { name: "Projects" })
-    projectsLink.click()
-    expect(window.location.pathname).toBe("/experience/projects")
-
-    const awardsLink = screen.getByRole("link", { name: "Awards" })
-    awardsLink.click()
-    expect(window.location.pathname).toBe("/experience/awards")
+    testSubHeadings.forEach(subHeading => {
+        const subLink = screen.getByRole("link", { name: subHeading })
+        subLink.click()
+        expect(window.location.pathname).toBe(`/test/${subHeading.toLowerCase()}`)
+    })
 })
 
-test("navigates to the correct hobbies subheading page on sub-navbar link click", () => {
-    render(
-        <BrowserRouter>
-            <SubNavbar section="Hobbies" headings={hobbiesSubHeadings} />
-        </BrowserRouter>
-    )
-
-    const legoLink = screen.getByRole("link", { name: "Lego" })
-    legoLink.click()
-    expect(window.location.pathname).toBe("/hobbies/lego")
-
-    const artLink = screen.getByRole("link", { name: "Art" })
-    artLink.click()
-    expect(window.location.pathname).toBe("/hobbies/art")
-
-    const cosplaysLink = screen.getByRole("link", { name: "Cosplays" })
-    cosplaysLink.click()
-    expect(window.location.pathname).toBe("/hobbies/cosplays")
-
-    const photographyLink = screen.getByRole("link", { name: "Photography" })
-    photographyLink.click()
-    expect(window.location.pathname).toBe("/hobbies/photography")
-
-    const travelLink = screen.getByRole("link", { name: "Travel" })
-    travelLink.click()
-    expect(window.location.pathname).toBe("/hobbies/travel")
-})
