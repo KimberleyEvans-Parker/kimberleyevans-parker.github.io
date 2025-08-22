@@ -1,7 +1,7 @@
-import { render, screen } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
-import { Navigation } from "./Navigation";
-import { SubNavbar } from "./SubNavbar";
+import { render, screen } from "@testing-library/react"
+import { BrowserRouter } from "react-router-dom"
+import { Navigation } from "./Navigation"
+import { SubNavbar } from "./SubNavbar"
 
 
 const headings = [
@@ -70,21 +70,21 @@ test("navigates to the correct page on navbar link click", () => {
         </BrowserRouter>
     )
 
-    const aboutLink = screen.getByRole("link", { name: "About" });
-    aboutLink.click();
-    expect(window.location.pathname).toBe("/about");
+    const aboutLink = screen.getByRole("link", { name: "About" })
+    aboutLink.click()
+    expect(window.location.pathname).toBe("/about")
 
-    const experienceLink = screen.getByRole("link", { name: "Experience" });
-    experienceLink.click();
-    expect(window.location.pathname).toBe("/experience");
+    const experienceLink = screen.getByRole("link", { name: "Experience" })
+    experienceLink.click()
+    expect(window.location.pathname).toBe("/experience")
 
-    const hobbiesLink = screen.getByRole("link", { name: "Hobbies" });
-    hobbiesLink.click();
-    expect(window.location.pathname).toBe("/hobbies");
+    const hobbiesLink = screen.getByRole("link", { name: "Hobbies" })
+    hobbiesLink.click()
+    expect(window.location.pathname).toBe("/hobbies")
 
-    const homeLink = screen.getByRole("link", { name: "Kimberley Evans-Parker" });
-    homeLink.click();
-    expect(window.location.pathname).toBe("/");
+    const homeLink = screen.getByRole("link", { name: "Kimberley Evans-Parker" })
+    homeLink.click()
+    expect(window.location.pathname).toBe("/")
 })
 
 test("navigates to the correct subheading page on sub-navbar link click", () => {
@@ -94,21 +94,21 @@ test("navigates to the correct subheading page on sub-navbar link click", () => 
         </BrowserRouter>
     )
 
-    const workLink = screen.getByRole("link", { name: "Work" });
-    workLink.click();
-    expect(window.location.pathname).toBe("/experience/work");
+    const workLink = screen.getByRole("link", { name: "Work" })
+    workLink.click()
+    expect(window.location.pathname).toBe("/experience/work")
 
-    const volunteerLink = screen.getByRole("link", { name: "Volunteer" });
-    volunteerLink.click();
-    expect(window.location.pathname).toBe("/experience/volunteer");
+    const volunteerLink = screen.getByRole("link", { name: "Volunteer" })
+    volunteerLink.click()
+    expect(window.location.pathname).toBe("/experience/volunteer")
 
-    const projectsLink = screen.getByRole("link", { name: "Projects" });
-    projectsLink.click();
-    expect(window.location.pathname).toBe("/experience/projects");
+    const projectsLink = screen.getByRole("link", { name: "Projects" })
+    projectsLink.click()
+    expect(window.location.pathname).toBe("/experience/projects")
 
-    const awardsLink = screen.getByRole("link", { name: "Awards" });
-    awardsLink.click();
-    expect(window.location.pathname).toBe("/experience/awards");
+    const awardsLink = screen.getByRole("link", { name: "Awards" })
+    awardsLink.click()
+    expect(window.location.pathname).toBe("/experience/awards")
 })
 
 test("navigates to the correct hobbies subheading page on sub-navbar link click", () => {
@@ -118,23 +118,23 @@ test("navigates to the correct hobbies subheading page on sub-navbar link click"
         </BrowserRouter>
     )
 
-    const legoLink = screen.getByRole("link", { name: "Lego" });
-    legoLink.click();
-    expect(window.location.pathname).toBe("/hobbies/lego");
+    const legoLink = screen.getByRole("link", { name: "Lego" })
+    legoLink.click()
+    expect(window.location.pathname).toBe("/hobbies/lego")
 
-    const artLink = screen.getByRole("link", { name: "Art" });
-    artLink.click();
-    expect(window.location.pathname).toBe("/hobbies/art");
+    const artLink = screen.getByRole("link", { name: "Art" })
+    artLink.click()
+    expect(window.location.pathname).toBe("/hobbies/art")
 
-    const cosplaysLink = screen.getByRole("link", { name: "Cosplays" });
-    cosplaysLink.click();
-    expect(window.location.pathname).toBe("/hobbies/cosplays");
+    const cosplaysLink = screen.getByRole("link", { name: "Cosplays" })
+    cosplaysLink.click()
+    expect(window.location.pathname).toBe("/hobbies/cosplays")
 
-    const photographyLink = screen.getByRole("link", { name: "Photography" });
-    photographyLink.click();
-    expect(window.location.pathname).toBe("/hobbies/photography");
+    const photographyLink = screen.getByRole("link", { name: "Photography" })
+    photographyLink.click()
+    expect(window.location.pathname).toBe("/hobbies/photography")
 
-    const travelLink = screen.getByRole("link", { name: "Travel" });
-    travelLink.click();
-    expect(window.location.pathname).toBe("/hobbies/travel");
+    const travelLink = screen.getByRole("link", { name: "Travel" })
+    travelLink.click()
+    expect(window.location.pathname).toBe("/hobbies/travel")
 })
