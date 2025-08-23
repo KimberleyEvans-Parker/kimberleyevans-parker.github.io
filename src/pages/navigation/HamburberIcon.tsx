@@ -8,6 +8,7 @@ export const HamburgerIcon = ({ dropdownOpen, setDropdownOpen }: HamburgerIconPr
         <div
             className={`hamburger-icon navbar-rightside`}
             onClick={() => setDropdownOpen(!dropdownOpen)}
+            aria-label="Menu"
         >
             <li style={{ height: "100%", paddingBottom: "10.5px" }}>
                 <div className={`${dropdownOpen && "change"} menu-icon`}>
