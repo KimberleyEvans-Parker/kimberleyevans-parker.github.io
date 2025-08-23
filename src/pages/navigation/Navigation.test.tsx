@@ -1,7 +1,11 @@
 import { render, screen } from "@testing-library/react"
-import { BrowserRouter } from "react-router-dom"
+import { userEvent } from "@testing-library/user-event"
+import { BrowserRouter, MemoryRouter } from "react-router-dom"
 import { Navigation } from "./Navigation"
 import { SubNavbar } from "./SubNavbar"
+import App from "../../App"
+import { Provider } from "react-redux"
+import { store } from "../../redux/store"
 
 
 const headings = [
@@ -16,6 +20,13 @@ const experienceSubHeadings = [
     "Volunteer",
     "Projects",
     "Awards",
+]
+
+const experienceSubHeadingsAndHeadings = [
+    { linkName: "Work", heading: "Work Experience" },
+    { linkName: "Volunteer", heading: "Volunteer Work" },
+    { linkName: "Projects", heading: "Projects" },
+    { linkName: "Awards", heading: "Awards and Achievments" },
 ]
 
 const hobbiesSubHeadings = [
@@ -101,5 +112,19 @@ test("navigates to the correct subheading page on sub-navbar link click", () => 
         subLink.click()
         expect(window.location.pathname).toBe(`/test/${subHeading.toLowerCase()}`)
     })
+})
+
+test("navigation via navbar works correctly", async () => {
+    Object.defineProperty(window, "innerWidth", { writable: true, configurable: true, value: 1024 });
+    window.dispatchEvent(new Event("resize"));
+    render(
+        <Provider store={store}>
+            <MemoryRouter initialEntries={["/"]}>
+                <App />
+            </MemoryRouter>
+        </Provider>
+    )
+
+    expect(await screen.findByRole("heading", { name: "Kimberley Evans-Parker" })).toBeInTheDocument()
 })
 
