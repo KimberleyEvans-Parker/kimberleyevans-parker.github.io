@@ -11,6 +11,7 @@ export const SubNavbarLink = ({ section, heading }: SubNavbarLinkProps) => {
 
   return (
     <Link
+      aria-label={heading}
       className="nav-link"
       to={url}
     >
