@@ -115,8 +115,8 @@ test("navigates to the correct subheading page on sub-navbar link click", () => 
 })
 
 test("navigation via navbar works correctly", async () => {
-    Object.defineProperty(window, "innerWidth", { writable: true, configurable: true, value: 1024 });
-    window.dispatchEvent(new Event("resize"));
+    Object.defineProperty(window, "innerWidth", { writable: true, configurable: true, value: 1024 })
+    window.dispatchEvent(new Event("resize"))
     render(
         <Provider store={store}>
             <MemoryRouter initialEntries={["/"]}>
@@ -135,7 +135,7 @@ test("navigation via navbar works correctly", async () => {
     await userEvent.click(experienceButton)
     expect(await screen.findByRole("heading", { name: "Experience" })).toBeInTheDocument()
 
-    for (const {linkName, heading} of experienceSubHeadingsAndHeadings) {
+    for (const { linkName, heading } of experienceSubHeadingsAndHeadings) {
         const subHeadingButton = screen.getByRole("link", { name: linkName })
         await userEvent.click(subHeadingButton)
         expect(await screen.findByRole("heading", { name: heading })).toBeInTheDocument()
@@ -162,8 +162,8 @@ test("navigation via navbar works correctly", async () => {
 
 
 test("navigation displays correctly on small screen", async () => {
-    Object.defineProperty(window, "innerWidth", { writable: true, configurable: true, value: 400 });
-    window.dispatchEvent(new Event("resize"));
+    Object.defineProperty(window, "innerWidth", { writable: true, configurable: true, value: 400 })
+    window.dispatchEvent(new Event("resize"))
     render(
         <Provider store={store}>
             <MemoryRouter initialEntries={["/about"]}>
