@@ -126,5 +126,37 @@ test("navigation via navbar works correctly", async () => {
     )
 
     expect(await screen.findByRole("heading", { name: "Kimberley Evans-Parker" })).toBeInTheDocument()
+
+    const continueButton = screen.getByRole("link", { name: /Kimberley Evans-Parker/i })
+    await userEvent.click(continueButton)
+    expect(await screen.findByRole("heading", { name: "About" })).toBeInTheDocument()
+
+    const experienceButton = screen.getAllByRole("link", { name: /Experience/i })[0]
+    await userEvent.click(experienceButton)
+    expect(await screen.findByRole("heading", { name: "Experience" })).toBeInTheDocument()
+
+    for (const {linkName, heading} of experienceSubHeadingsAndHeadings) {
+        const subHeadingButton = screen.getByRole("link", { name: linkName })
+        await userEvent.click(subHeadingButton)
+        expect(await screen.findByRole("heading", { name: heading })).toBeInTheDocument()
+    }
+
+    const hobbiesButton = screen.getByRole("link", { name: /Hobbies/i })
+    await userEvent.click(hobbiesButton)
+    expect(await screen.findByRole("heading", { name: "Hobbies" })).toBeInTheDocument()
+
+    for (const subHeading of hobbiesSubHeadings) {
+        const subHeadingButton = screen.getByRole("link", { name: subHeading })
+        await userEvent.click(subHeadingButton)
+        expect(await screen.findByRole("heading", { name: subHeading })).toBeInTheDocument()
+    }
+
+    const aboutButton = screen.getByRole("link", { name: /About/i })
+    await userEvent.click(aboutButton)
+    expect(await screen.findByRole("heading", { name: "About" })).toBeInTheDocument()
+
+    const homeButton = screen.getByRole("link", { name: /Kimberley Evans-Parker/i })
+    await userEvent.click(homeButton)
+    expect(await screen.findByRole("heading", { name: "Kimberley Evans-Parker" })).toBeInTheDocument()
 })
 
