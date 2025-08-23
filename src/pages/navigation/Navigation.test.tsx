@@ -160,3 +160,49 @@ test("navigation via navbar works correctly", async () => {
     expect(await screen.findByRole("heading", { name: "Kimberley Evans-Parker" })).toBeInTheDocument()
 })
 
+
+test("navigation displays correctly on small screen", async () => {
+    Object.defineProperty(window, "innerWidth", { writable: true, configurable: true, value: 400 });
+    window.dispatchEvent(new Event("resize"));
+    render(
+        <Provider store={store}>
+            <MemoryRouter initialEntries={["/about"]}>
+                <App />
+            </MemoryRouter>
+        </Provider>
+    )
+
+    expect(await screen.findByRole("generic", { name: "Menu" })).toBeInTheDocument()
+
+    expect(screen.queryByRole("link", { name: "About" })).not.toBeInTheDocument()
+    expect(screen.queryByRole("link", { name: "Experience" })).not.toBeInTheDocument()
+    expect(screen.queryByRole("link", { name: "Hobbies" })).not.toBeInTheDocument()
+
+    for (const subHeading of experienceSubHeadings) {
+        expect(screen.queryByRole("link", { name: subHeading })).not.toBeInTheDocument()
+    }
+
+    for (const subHeading of hobbiesSubHeadings) {
+        expect(screen.queryByRole("link", { name: subHeading })).not.toBeInTheDocument()
+    }
+
+    const menuButton = screen.getByRole("generic", { name: "Menu" })
+    await userEvent.click(menuButton)
+
+    expect(await screen.findByRole("link", { name: "About" })).toBeInTheDocument()
+    expect(await screen.findByRole("link", { name: "Experience" })).toBeInTheDocument()
+    expect(await screen.findByRole("link", { name: "Hobbies" })).toBeInTheDocument()
+
+    const experienceDropdownButton = screen.getByRole("listitem", { name: "Toggle Experience submenu" })
+    await userEvent.click(experienceDropdownButton)
+    for (const subHeading of experienceSubHeadings) {
+        expect(await screen.findByRole("link", { name: subHeading })).toBeInTheDocument()
+    }
+
+    const hobbiesDropdownButton = screen.getByRole("listitem", { name: "Toggle Hobbies submenu" })
+    await userEvent.click(hobbiesDropdownButton)
+    for (const subHeading of hobbiesSubHeadings) {
+        expect(await screen.findByRole("link", { name: subHeading })).toBeInTheDocument()
+    }
+
+})
