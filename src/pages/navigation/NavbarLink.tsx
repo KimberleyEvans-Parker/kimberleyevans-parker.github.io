@@ -32,6 +32,7 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
         </Link>
         <DropdownIcon
           isActive={isActive}
+          heading={heading}
           subheadings={subheadings}
           subDropdownOpen={subDropdownOpen}
           setSubDropdownOpen={setSubDropdownOpen}
