@@ -4,19 +4,19 @@ import { ModalState } from "../../../redux/state"
 import { setImage } from "../../../redux/actions"
 import { getImageName, getIndexOfImage } from "../../../helpers/Helpers"
 
-type imageData = {name: string, index: number};
+type imageData = {name: string, index: number}
 
 interface ImageGalleryCollumnProps {
-  allImages: string[];
-  images: imageData[];
+  allImages: string[]
+  images: imageData[]
 }
 
 
 export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnProps) => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   const openModal = (name: string) => {
-      const imageIndex = getIndexOfImage(allImages, name);
+      const imageIndex = getIndexOfImage(allImages, name)
 
       const newModalState: ModalState = {
         images: allImages,
@@ -30,8 +30,8 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
   return (
     <>
       {images.map((imageData, imageIndex) => {
-        const image = imageData.name;
-        const animationDelay = imageData.index * 0.15 + "s";
+        const image = imageData.name
+        const animationDelay = imageData.index * 0.15 + "s"
         const name = getImageName(image)
 
         return (
@@ -45,8 +45,8 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
               image={image}
               animationDelay={animationDelay} />
           </button>
-        );
+        )
       })}
     </>
-  );
+  )
 }
