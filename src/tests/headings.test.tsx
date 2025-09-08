@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter, Route, Routes } from "react-router-dom";
-import App from "../App";
-import { Provider } from "react-redux";
-import { store } from "../redux/store";
+import { render, screen } from "@testing-library/react"
+import { MemoryRouter, Route, Routes } from "react-router-dom"
+import App from "../App"
+import { Provider } from "react-redux"
+import { store } from "../redux/store"
 
 
 const pages = [
@@ -27,8 +27,8 @@ const pages = [
     { path: "/hobbies/travel", heading: /travel/i },
 
     // 404
-    { path: "/some-nonsense", heading: /404/i }, // to test the catch-all route
-];
+    { path: "/some-nonsense", heading: /404/i },
+]
 
 
 describe("Page headings", () => {
@@ -43,9 +43,9 @@ describe("Page headings", () => {
                         </Routes>
                     </MemoryRouter>
                 </Provider>
-            );
+            )
 
-            expect(await screen.findByRole("heading", { level: 1, name: heading })).toBeInTheDocument();
+            expect(await screen.findByRole("heading", { level: 1, name: heading })).toBeInTheDocument()
         }
-    );
-});
+    )
+})
