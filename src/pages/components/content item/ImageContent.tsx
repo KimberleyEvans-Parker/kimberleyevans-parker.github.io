@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
-import { CAROUSEL_TRANSITION_TIME, CAROUSEL_INTERVAL } from "../../../helpers/Constants";
-import { useDispatch } from "react-redux";
-import { setImage } from "../../../redux/actions";
-import { ModalState } from "../../../redux/state";
-import { getImageName } from "../../../helpers/Helpers";
+import { useState } from "react"
+import { Carousel } from "react-responsive-carousel"
+import { CAROUSEL_TRANSITION_TIME, CAROUSEL_INTERVAL } from "../../../helpers/Constants"
+import { useDispatch } from "react-redux"
+import { setImage } from "../../../redux/actions"
+import { ModalState } from "../../../redux/state"
+import { getImageName } from "../../../helpers/Helpers"
 
 interface ImageContentProps {
-  images: string[];
-  heading: string;
+  images: string[]
+  heading: string
 }
 
 export const ImageContent = ({images, heading}: ImageContentProps) => {
@@ -23,7 +23,7 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
       captionHeader: captionHeader,
     }
     dispatch(setImage(newModalState))
-  };
+  }
 
   return (
     <Carousel
@@ -64,8 +64,8 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
               <img alt={caption} src={shouldLoad ? image: undefined} />
             )}
           </button>
-        );
+        )
       })}
     </Carousel>
-  );
+  )
 }

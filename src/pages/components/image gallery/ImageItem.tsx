@@ -1,26 +1,26 @@
-import React from "react";
+import React from "react"
 
 interface ImageItemProps {
-  name: string;
-  image: string;
-  animationDelay: any;
+  name: string
+  image: string
+  animationDelay: any
 }
 
 export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
   // for loading an image when it scrolls into view
 
-  const [isVisible, setVisible] = React.useState(false);
-  const domRef = React.useRef(null);
+  const [isVisible, setVisible] = React.useState(false)
+  const domRef = React.useRef(null)
   React.useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => setVisible(entry.isIntersecting));
-    });
+      entries.forEach((entry) => setVisible(entry.isIntersecting))
+    })
     if (domRef.current) {
-      const current = domRef.current;
-      observer.observe(current);
-      return () => observer.unobserve(current);
+      const current = domRef.current
+      observer.observe(current)
+      return () => observer.unobserve(current)
     }
-  }, [isVisible]);
+  }, [isVisible])
   
   return (
     <div 
@@ -50,5 +50,5 @@ export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
         />
       )}
     </div>
-  );
+  )
 }
