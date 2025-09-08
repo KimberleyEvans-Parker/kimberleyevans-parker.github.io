@@ -1,6 +1,6 @@
-import { TECHNOLOGIES } from "../helpers/Constants";
-import { importAllPhotosFromFolder } from "../helpers/Helpers";
-import { ContentItemType } from "./types";
+import { TECHNOLOGIES } from "../helpers/Constants"
+import { importAllPhotosFromFolder } from "../helpers/Helpers"
+import { ContentItemType } from "./types"
 
 
 const KrayonImages = importAllPhotosFromFolder("awards/2020 DEVS Hackathon")
