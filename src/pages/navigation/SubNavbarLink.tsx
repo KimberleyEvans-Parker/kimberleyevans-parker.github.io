@@ -1,12 +1,12 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"
 
 interface SubNavbarLinkProps {
-  section?: string;
-  heading: string;
+  section?: string
+  heading: string
 }
 
 export const SubNavbarLink = ({ section, heading }: SubNavbarLinkProps) => {
-  const location = useLocation();
+  const location = useLocation()
   const url = section ? `/${section.toLowerCase()}/${heading.toLowerCase()}` : `/${heading.toLowerCase()}`
 
   return (
@@ -23,5 +23,5 @@ export const SubNavbarLink = ({ section, heading }: SubNavbarLinkProps) => {
         {heading}
       </li>
     </Link>
-  );
+  )
 }
