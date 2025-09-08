@@ -1,18 +1,18 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { DropdownIcon } from "./DropdownIcon";
+import { useState } from "react"
+import { Link, useLocation } from "react-router-dom"
+import { DropdownIcon } from "./DropdownIcon"
 
 interface NavbarLinkProps {
-  heading: string;
-  setDropdownOpen: (open: boolean) => void;
-  subheadings?: string[];
+  heading: string
+  setDropdownOpen: (open: boolean) => void
+  subheadings?: string[]
 }
 
 export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLinkProps) => {
-  const location = useLocation();
-  const url = `/${heading.toLowerCase()}`;
-  const isActive = location.pathname.startsWith(url);
-  const [subDropdownOpen, setSubDropdownOpen] = useState(false);
+  const location = useLocation()
+  const url = `/${heading.toLowerCase()}`
+  const isActive = location.pathname.startsWith(url)
+  const [subDropdownOpen, setSubDropdownOpen] = useState(false)
 
   return (
     <>
@@ -62,5 +62,5 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
         )
       }
     </>
-  );
+  )
 }
