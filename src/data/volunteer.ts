@@ -1,5 +1,5 @@
-import { importAllPhotosFromFolder } from "../helpers/Helpers";
-import { ContentItemType } from "./types";
+import { importAllPhotosFromFolder } from "../helpers/Helpers"
+import { ContentItemType } from "./types"
 
 const Take2Images = importAllPhotosFromFolder("volunteer/Take2")
 const MotutapuImages = importAllPhotosFromFolder("volunteer/Motutapu Island")
@@ -131,4 +131,4 @@ export const volunteerData: ContentItemType[] = [
         These were placed in the gardens of our school and given away as part of the ANZAC commemoration.  `,
         images: PoppyImages,
     },
-];
+]

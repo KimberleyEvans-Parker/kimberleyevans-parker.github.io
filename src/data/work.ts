@@ -1,6 +1,6 @@
-import { TECHNOLOGIES } from "../helpers/Constants";
-import { importAllPhotosFromFolder } from "../helpers/Helpers";
-import { ContentItemType } from "./types";
+import { TECHNOLOGIES } from "../helpers/Constants"
+import { importAllPhotosFromFolder } from "../helpers/Helpers"
+import { ContentItemType } from "./types"
 
 const Bricks4KidzImages = importAllPhotosFromFolder("work/Bricks4Kidz")
 const SSSImages = importAllPhotosFromFolder("work/School Storage Solutions")
@@ -135,4 +135,4 @@ export const workData: ContentItemType[] = [
         description: `I worked as a cashier/checkout operator for Gilmours - a wholesale food company.  
             During this, I improved my efficiency and interpersonal skills`
     }
-];
+]

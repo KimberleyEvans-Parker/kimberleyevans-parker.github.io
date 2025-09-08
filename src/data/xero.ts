@@ -1,4 +1,4 @@
-import { ContentItemType } from "./types";
+import { ContentItemType } from "./types"
 
 
 export const xerGeneralDescriptions = [
@@ -34,4 +34,4 @@ export const xeroData: ContentItemType[] = [
             During this time, I created webpages seen by 40,000 customers a day, utilising HTML, CSS, React, Typescript and XUI (Xero's UI component library) to create, modernise and improve webpages.
             I also used C# and API endpoints to store and retrieve customer data.  I gained practical experience in agile teams, delivering customer facing code.`,
     }
-];
+]
