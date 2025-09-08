@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react"
+import { Link } from "react-router-dom"
 
-import { CodeInput } from "./CodeInput";
+import { CodeInput } from "./CodeInput"
 import "./styles.css"
 
 export const LocateEntrance = () => {
-    const [foundLocation, setFoundLocation] = useState(false);
+    const [foundLocation, setFoundLocation] = useState(false)
   
     return (
       <div className="amazonian-background">
@@ -44,7 +44,7 @@ export const LocateEntrance = () => {
           }
         </div>
       </div>
-    );
+    )
   }
   
   

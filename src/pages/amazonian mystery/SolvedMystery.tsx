@@ -22,7 +22,7 @@ export const SolvedMystery = () => {
             </div>
         </div>
       </div>
-    );
+    )
   }
   
   
