@@ -1,12 +1,12 @@
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { resetImage } from "../../../redux/actions";
-import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors";
-import { Carousel } from "react-responsive-carousel";
-import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants";
-import { getImageName } from "../../../helpers/Helpers";
+import { useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
+import { resetImage } from "../../../redux/actions"
+import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors"
+import { Carousel } from "react-responsive-carousel"
+import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants"
+import { getImageName } from "../../../helpers/Helpers"
 
-import "./modal.css";
+import "./modal.css"
 
 
 export const Modal = () => {
@@ -15,11 +15,11 @@ export const Modal = () => {
   const images = useSelector(selectModalImages)
 
   const image = images && imageIndex !== undefined ? images[imageIndex] : undefined
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   const handleResetImage = () => {
-    dispatch(resetImage());
-  };
+    dispatch(resetImage())
+  }
 
   if (!image) return <></>
   if (!images) return <></>
@@ -28,7 +28,7 @@ export const Modal = () => {
   return (
     <div className="modal-background">
       <p className="close" onClick={handleResetImage}>
-        &times;
+        &times
       </p>
       <div className="modal-content">
         <Carousel
@@ -44,7 +44,7 @@ export const Modal = () => {
         >
           {images.map((image: string) => {
             const name = getImageName(image)
-            const caption = captionHeader ? captionHeader + " - " + name : name;
+            const caption = captionHeader ? captionHeader + " - " + name : name
 
             return (<>
               {image.match(/\.(mp4|webm|ogg)$/i) ? (
@@ -69,6 +69,6 @@ export const Modal = () => {
         </Carousel>
       </div>
     </div>
-  );
+  )
 }
 
