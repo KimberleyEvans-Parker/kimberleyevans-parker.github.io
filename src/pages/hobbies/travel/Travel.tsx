@@ -1,4 +1,4 @@
-import { TravelMap } from './TravelMap';
+import { TravelMap } from './TravelMap'
 
 export const Travel = () => {
 
@@ -20,5 +20,5 @@ export const Travel = () => {
 
       </div>
     </div>
-  );
+  )
 }

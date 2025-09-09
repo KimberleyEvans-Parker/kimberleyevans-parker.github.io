@@ -1,8 +1,8 @@
-import { MapTerrain, mapTerrains } from "../../../data/maps";
+import { MapTerrain, mapTerrains } from "../../../data/maps"
 
 interface SelectMapTerrainProps {
-    mapTerrain: MapTerrain;
-    setMapTerrain: (mapTerrain: MapTerrain) => void;
+    mapTerrain: MapTerrain
+    setMapTerrain: (mapTerrain: MapTerrain) => void
 }
 
 export const SelectMapTerrain = ({ mapTerrain, setMapTerrain }: SelectMapTerrainProps) => {
@@ -14,9 +14,9 @@ export const SelectMapTerrain = ({ mapTerrain, setMapTerrain }: SelectMapTerrain
             value={mapTerrain.name}
             className='map-terrain-selector'
             onChange={(e) => {
-              const selectedTerrain = mapTerrains.find(t => t.name === e.target.value);
+              const selectedTerrain = mapTerrains.find(t => t.name === e.target.value)
               if (selectedTerrain) {
-                setMapTerrain(selectedTerrain);
+                setMapTerrain(selectedTerrain)
               }
             }}
           >
