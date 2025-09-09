@@ -1,14 +1,14 @@
-import { Dates } from "../../../data/types";
-import { DateSubheading } from "./DateSubheading";
-import { LinksType } from "../../../data/types";
-import { LinksSection } from "./LinksSection";
+import { Dates } from "../../../data/types"
+import { DateSubheading } from "./DateSubheading"
+import { LinksType } from "../../../data/types"
+import { LinksSection } from "./LinksSection"
 
 interface TextContentProps {
-  description: string;
-  dates?: Dates;
-  teamSize?: number;
-  links?: LinksType;
-  technologies?: any[];
+  description: string
+  dates?: Dates
+  teamSize?: number
+  links?: LinksType
+  technologies?: any[]
 }
 
 export const TextContent = (
@@ -40,5 +40,5 @@ export const TextContent = (
         {technologies && technologies.join(` ⸎ `)}
       </div>
     </>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import "./tiles.css";
+import { Link } from "react-router-dom"
+import "./tiles.css"
 
 interface TileProps {
-    animationDelay: string;
-    imgSrc: string;
-    title: string;
+    animationDelay: string
+    imgSrc: string
+    title: string
 }
 
 export const Tile = ({ animationDelay, imgSrc, title }: TileProps) => {
