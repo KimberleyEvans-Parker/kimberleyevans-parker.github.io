@@ -1,19 +1,19 @@
-import { Tile } from "../components/tile/Tile";
+import { Tile } from "../components/tile/Tile"
 
-import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.jpg";
-import Photography from "../../assets/hobbies/Photography/Flying Bee.jpg";
-import Cosplays from "../../assets/hobbies/Cosplays/Tardis - Bigger on the Inside.jpg";
-import Art from "../../assets/hobbies/Art/Skyrim fanart.jpg";
-import Travel from "../../assets/hobbies/Travel/New Zealand - Hobbiton.jpg";
+import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.jpg"
+import Photography from "../../assets/hobbies/Photography/Flying Bee.jpg"
+import Cosplays from "../../assets/hobbies/Cosplays/Tardis - Bigger on the Inside.jpg"
+import Art from "../../assets/hobbies/Art/Skyrim fanart.jpg"
+import Travel from "../../assets/hobbies/Travel/New Zealand - Hobbiton.jpg"
 
 export const Hobbies = () => {
-  let animationDelay = 0;
+  let animationDelay = 0
 
   const getAnimationDelay = () => {
-    const animationDelaySeconds = animationDelay.toString() + "s";
+    const animationDelaySeconds = animationDelay.toString() + "s"
     animationDelay += (0.6 - animationDelay) / 5
-    return animationDelaySeconds;
-  };
+    return animationDelaySeconds
+  }
 
   return (
     <div className="content-container">
@@ -51,5 +51,5 @@ export const Hobbies = () => {
         />
       </div>
     </div>
-  );
+  )
 }
