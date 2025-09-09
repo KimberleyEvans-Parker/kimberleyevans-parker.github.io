@@ -1,6 +1,6 @@
-import ProfilePic from "../assets/profile-pic.jpg";
-import Resume from "../assets/Kimberley CV-25-03.pdf";
-import { AUnderline, LinkUnderline } from "./components/underline links";
+import ProfilePic from "../assets/profile-pic.jpg"
+import Resume from "../assets/Kimberley CV-25-03.pdf"
+import { AUnderline, LinkUnderline } from "./components/underline links"
 
 export const About = () => {
   return (
@@ -111,5 +111,5 @@ export const About = () => {
           <AUnderline text="Download my CV" href={Resume} width="159px" />
       </div>
     </div>
-  );
+  )
 }

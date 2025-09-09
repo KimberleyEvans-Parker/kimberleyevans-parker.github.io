@@ -1,22 +1,22 @@
-import React from "react";
-import WordList from "../../assets/words.json";
+import React from "react"
+import WordList from "../../assets/words.json"
 
-import "./words.css";
+import "./words.css"
 
 export const Words = () => {
 
   const getRandomWord = () => {
-    return WordList[Math.floor(Math.random() * WordList.length)];
+    return WordList[Math.floor(Math.random() * WordList.length)]
   }
 
   const regenerate = () => {
-    setWord1(getRandomWord());
-    setWord2(getRandomWord());
-    setWord3(getRandomWord());
+    setWord1(getRandomWord())
+    setWord2(getRandomWord())
+    setWord3(getRandomWord())
   }
-  const [word1, setWord1] = React.useState(getRandomWord());
-  const [word2, setWord2] = React.useState(getRandomWord());
-  const [word3, setWord3] = React.useState(getRandomWord());
+  const [word1, setWord1] = React.useState(getRandomWord())
+  const [word2, setWord2] = React.useState(getRandomWord())
+  const [word3, setWord3] = React.useState(getRandomWord())
 
   return (
     <div className="content-container">
@@ -27,5 +27,5 @@ export const Words = () => {
         Regenerate
       </button>
     </div>
-  );
+  )
 }
