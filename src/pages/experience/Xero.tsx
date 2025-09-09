@@ -1,18 +1,18 @@
-import { Modal } from "../components/modal/Modal";
-import { workData } from "../../data/work";
-import { DateSubheading } from "../components/content item/DateSubheading";
-import { awardsData } from "../../data/awards";
-import { ContentItem } from "../components/content item/ContentItem";
-import { xerGeneralDescriptions, xeroData } from "../../data/xero";
+import { Modal } from "../components/modal/Modal"
+import { workData } from "../../data/work"
+import { DateSubheading } from "../components/content item/DateSubheading"
+import { awardsData } from "../../data/awards"
+import { ContentItem } from "../components/content item/ContentItem"
+import { xerGeneralDescriptions, xeroData } from "../../data/xero"
 
 export const Xero = () => {
-    let animationDelay = 0;
+    let animationDelay = 0
 
     const getAnimationDelay = () => {
-        const animationDelaySeconds = animationDelay.toString() + "s";
+        const animationDelaySeconds = animationDelay.toString() + "s"
         animationDelay += (2 - animationDelay) / 10
-        return animationDelaySeconds;
-    };
+        return animationDelaySeconds
+    }
 
     const xeroGeneralData = workData.find((project) => project.subheading === "Xero")
     const xeroAwards = awardsData.filter((award) => award.subheading?.includes("Xero"))
@@ -73,5 +73,5 @@ export const Xero = () => {
             </div>
 
         </div>
-    );
+    )
 }

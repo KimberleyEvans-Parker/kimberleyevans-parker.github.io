@@ -1,24 +1,24 @@
-import { ContentItem } from "../components/content item/ContentItem";
-import { Modal } from "../components/modal/Modal";
-import { awardsData } from "../../data/awards";
+import { ContentItem } from "../components/content item/ContentItem"
+import { Modal } from "../components/modal/Modal"
+import { awardsData } from "../../data/awards"
 
 export const Awards = () => {
 
 
-  let animationDelay = 0;
+  let animationDelay = 0
 
   const getAnimationDelay = () => {
-    const animationDelaySeconds = animationDelay.toString() + "s";
+    const animationDelaySeconds = animationDelay.toString() + "s"
     animationDelay += (2 - animationDelay) / 5
-    return animationDelaySeconds;
-  };
+    return animationDelaySeconds
+  }
 
-  let onLeft = false;
+  let onLeft = false
 
   const imgOnLeft = () => {
-    onLeft = !onLeft;
-    return onLeft;
-  };
+    onLeft = !onLeft
+    return onLeft
+  }
 
 
   return (
@@ -35,5 +35,5 @@ export const Awards = () => {
         />
       ))}
     </div>
-  );
+  )
 }
