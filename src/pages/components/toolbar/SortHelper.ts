@@ -5,34 +5,34 @@ export const sortByDate = (
     bDate: Date | "Present" | undefined
 ) => {
     if (aDate === "Present" && bDate === "Present") {
-        return 0;
+        return 0
     } else if (aDate === "Present") {
-        return -1;
+        return -1
     } else if (bDate === "Present") {
-        return 1;
+        return 1
     }
 
     if (!aDate && !bDate) {
-        return 0;
+        return 0
     } else if (!aDate) {
-        return 1;
+        return 1
     } else if (!bDate) {
-        return -1;
+        return -1
     }
 
-    return aDate.getTime() - bDate.getTime();
-};
+    return aDate.getTime() - bDate.getTime()
+}
 
 export const sortByStartDate = (a: ContentItemType, b: ContentItemType) => {
-    const aDate = a.dates?.start;
-    const bDate = b.dates?.start;
+    const aDate = a.dates?.start
+    const bDate = b.dates?.start
 
     return sortByDate(aDate, bDate)
 }
 
 export const sortByEndDate = (a: ContentItemType, b: ContentItemType) => {
-    const aDates = a.dates?.end || a.dates?.start;
-    const bDates = b.dates?.end || b.dates?.start;
+    const aDates = a.dates?.end || a.dates?.start
+    const bDates = b.dates?.end || b.dates?.start
     
     return sortByDate(aDates, bDates)
 }

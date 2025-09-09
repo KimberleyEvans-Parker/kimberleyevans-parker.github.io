@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import { ContentItemType } from "../../../data/types";
+import React, { useState } from "react"
+import { ContentItemType } from "../../../data/types"
 
 interface SearchProps {
-    projectData: ContentItemType[];
-    setSortedProjects: (sortedProjects: ContentItemType[]) => void;
+    projectData: ContentItemType[]
+    setSortedProjects: (sortedProjects: ContentItemType[]) => void
 }
 
 export const Search = ({ projectData, setSortedProjects }: SearchProps) => {
-    const [query, setQuery] = useState("");
+    const [query, setQuery] = useState("")
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.value;
-        setQuery(value);
+        const value = e.target.value
+        setQuery(value)
         const filtered = projectData.filter(project =>
             project.heading.toLowerCase().includes(value.toLowerCase())
-        );
-        setSortedProjects(filtered);
-    };
+        )
+        setSortedProjects(filtered)
+    }
 
     return (
         <div className="tool-item fade left">
@@ -29,5 +29,5 @@ export const Search = ({ projectData, setSortedProjects }: SearchProps) => {
                 style={{ width: "176px" }}
             />
         </div>
-    );
-};
+    )
+}

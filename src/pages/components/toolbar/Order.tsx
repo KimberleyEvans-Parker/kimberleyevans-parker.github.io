@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react"
-import { ContentItemType } from "../../../data/types";
-import "./sort.css";
+import { ContentItemType } from "../../../data/types"
+import "./sort.css"
 
 
 interface OrderProps {
-    projectData: ContentItemType[];
-    setSortedProjects: (sortedProjects: ContentItemType[]) => void;
+    projectData: ContentItemType[]
+    setSortedProjects: (sortedProjects: ContentItemType[]) => void
 }
 
 export const Order = ({projectData, setSortedProjects}: OrderProps) => {
-    const [ascending, setAscending] = useState(true);
+    const [ascending, setAscending] = useState(true)
 
     const handleOrderChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const newOrder = event.target.value as "asc" | "desc"
@@ -21,10 +21,10 @@ export const Order = ({projectData, setSortedProjects}: OrderProps) => {
         if (projectData.length === 0) return
 
         if (!ascending) {
-          projectData.reverse();
+          projectData.reverse()
         }
 
-        setSortedProjects([...projectData]);
+        setSortedProjects([...projectData])
       }
     , [projectData, ascending, setSortedProjects])
 
