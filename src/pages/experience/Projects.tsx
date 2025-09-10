@@ -1,27 +1,27 @@
-import { useState } from "react";
+import { useState } from "react"
 
-import { ContentItem } from "../components/content item/ContentItem";
-import { Modal } from "../components/modal/Modal";
-import { projectData } from "../../data/projects";
-import { ToolBar } from "../components/toolbar/ToolBar";
+import { ContentItem } from "../components/content item/ContentItem"
+import { Modal } from "../components/modal/Modal"
+import { projectData } from "../../data/projects"
+import { ToolBar } from "../components/toolbar/ToolBar"
 
 export const Projects = () => {
-  const [sortedProjects, setSortedProjects] = useState(projectData);
+  const [sortedProjects, setSortedProjects] = useState(projectData)
 
-  let animationDelay = 0;
+  let animationDelay = 0
 
   const getAnimationDelay = () => {
-    const animationDelaySeconds = animationDelay.toString() + "s";
+    const animationDelaySeconds = animationDelay.toString() + "s"
     animationDelay += (2 - animationDelay) / 5
-    return animationDelaySeconds;
-  };
+    return animationDelaySeconds
+  }
 
-  let onLeft = false;
+  let onLeft = false
 
   const imgOnLeft = () => {
-    onLeft = !onLeft;
-    return onLeft;
-  };
+    onLeft = !onLeft
+    return onLeft
+  }
 
   return (
     <div className="content-container">
@@ -44,5 +44,5 @@ export const Projects = () => {
         </div>
       )}
     </div>
-  );
+  )
 }

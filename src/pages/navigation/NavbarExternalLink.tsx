@@ -1,8 +1,8 @@
 interface NavbarExternalLinkProps {
-  url: string;
-  ariaLabel: string;
-  className: string;
-  setDropdownOpen: (open: boolean) => void;
+  url: string
+  ariaLabel: string
+  className: string
+  setDropdownOpen: (open: boolean) => void
 }
 
 export const NavbarExternalLink = ({ url, ariaLabel, className, setDropdownOpen }: NavbarExternalLinkProps) => {
@@ -17,5 +17,5 @@ export const NavbarExternalLink = ({ url, ariaLabel, className, setDropdownOpen 
         <i className={`fa ${className}`} aria-hidden="true"></i>
       </li>
     </a>
-  );
+  )
 }

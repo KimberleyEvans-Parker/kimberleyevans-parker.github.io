@@ -1,9 +1,9 @@
 interface DropdownIconProps {
-    isActive?: boolean;
-    heading: string;
-    subheadings?: string[];
-    subDropdownOpen: boolean;
-    setSubDropdownOpen: (open: boolean) => void;
+    isActive?: boolean
+    heading: string
+    subheadings?: string[]
+    subDropdownOpen: boolean
+    setSubDropdownOpen: (open: boolean) => void
 }
 
 export const DropdownIcon = ({ isActive, heading, subheadings, subDropdownOpen, setSubDropdownOpen }: DropdownIconProps) => {
@@ -15,9 +15,9 @@ export const DropdownIcon = ({ isActive, heading, subheadings, subDropdownOpen, 
             aria-label={`Toggle ${heading} submenu`}
             className={`dropdown-icon ${isActive ? "active" : ""}`}
             onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                setSubDropdownOpen(!subDropdownOpen);
+                e.preventDefault()
+                e.stopPropagation()
+                setSubDropdownOpen(!subDropdownOpen)
             }}
         >
             <div className={`${subDropdownOpen ? "dropdown-icon-open" : "dropdown-icon-closed"}`}>

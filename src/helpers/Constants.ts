@@ -1,8 +1,8 @@
-export const X_SMALL_SCREEN = 475;
-export const SMALL_SCREEN = 750;
-export const MEDIUM_SCREEN = 900;
-export const CAROUSEL_TRANSITION_TIME = 2000;
-export const CAROUSEL_INTERVAL = 5000;
+export const X_SMALL_SCREEN = 475
+export const SMALL_SCREEN = 750
+export const MEDIUM_SCREEN = 900
+export const CAROUSEL_TRANSITION_TIME = 2000
+export const CAROUSEL_INTERVAL = 5000
 
 export const TECHNOLOGIES = {
     GIT: "Git",
@@ -32,5 +32,5 @@ export const TECHNOLOGIES = {
     LIGHTHOUSE: "Lighthouse",
     MIXPANEL: "Mixpanel",
     LAUNCH_DARKLY: "Launch Darkly"
-};
+}
 

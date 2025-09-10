@@ -8,31 +8,31 @@ import "./menu-icon.css"
 import { HamburgerIcon } from "./HamburberIcon"
 
 export const Navigation = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false)
 
   /* Keeps track of the window dimensions.  Updates when window resizes */
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth,
-  });
+  })
   React.useEffect(() => {
     const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
-      });
+      })
       if (dimensions.width >= SMALL_SCREEN) {
-        setDropdownOpen(false);
+        setDropdownOpen(false)
       }
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize)
     return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
+      window.removeEventListener("resize", handleResize)
+    }
+  })
 
-  const isSmallScreen = dimensions.width < SMALL_SCREEN;
+  const isSmallScreen = dimensions.width < SMALL_SCREEN
 
   return (
     <nav className="slide-in">
@@ -93,5 +93,5 @@ export const Navigation = () => {
         )}
       </div>
     </nav>
-  );
+  )
 }

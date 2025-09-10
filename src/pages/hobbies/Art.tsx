@@ -1,5 +1,5 @@
-import ImageGallery from "../components/image gallery/ImageGallery";
-import { importAllPhotosFromFolder } from "../../helpers/Helpers";
+import ImageGallery from "../components/image gallery/ImageGallery"
+import { importAllPhotosFromFolder } from "../../helpers/Helpers"
 
 export const Art = () => {
   const ArtImages = importAllPhotosFromFolder("hobbies/Art")
@@ -17,5 +17,5 @@ export const Art = () => {
       </div>
       <ImageGallery images={ArtImages.reverse()} />
     </div>
-  );
+  )
 }

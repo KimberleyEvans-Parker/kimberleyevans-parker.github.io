@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 interface CodeInputProps {
-    correctAnswer: string | any[];
-    onCorrectAnswer: (arg0: boolean) => void;
-    wait?: number;
-    animationDelay?: string;
-    clue: string;
+    correctAnswer: string | any[]
+    onCorrectAnswer: (arg0: boolean) => void
+    wait?: number
+    animationDelay?: string
+    clue: string
 }
 
 export const CodeInput = ({ 
@@ -20,14 +20,14 @@ export const CodeInput = ({
     const [shake, setShake] = useState(false)
     const [answerCorrect, setCorrectAnswer] = useState(false)
 
-    const handleChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
+    const handleChange = (event: { target: { value: React.SetStateAction<string> } }) => {
         setAnswer(event.target.value)
     }
 
     const isAnswerCorrect = (answer: string) => {
         let answers = answer.split(",")
         for(var i = 0, size = answers.length; i < size ; i++){
-            answers[i] = answers[i].toLowerCase().trim();
+            answers[i] = answers[i].toLowerCase().trim()
          }
         if (answers.length !== correctAnswer.length) return false
         for (const item of correctAnswer) {
@@ -54,7 +54,7 @@ export const CodeInput = ({
         checkAnswer(answer)
     }
 
-    const handleKeyDown = (event: { key: string; }) => {
+    const handleKeyDown = (event: { key: string }) => {
         if (event.key === "Enter") {
             checkAnswer(answer)
         }
@@ -92,7 +92,7 @@ export const CodeInput = ({
 
             {answerCorrect && <p className="bounce">Correct!</p>}
         </div>
-    );
+    )
 }
   
   

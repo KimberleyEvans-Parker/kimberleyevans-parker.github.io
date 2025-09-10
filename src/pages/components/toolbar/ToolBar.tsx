@@ -1,15 +1,15 @@
-import React from "react";
-import { ContentItemType } from "../../../data/types";
-import { MEDIUM_SCREEN, X_SMALL_SCREEN } from "../../../helpers/Constants";
-import { Filter } from "./Filter";
-import { Search } from "./Search";
-import { Sort } from "./Sort";
-import { Order } from "./Order";
-import "./tool-bar.css";
+import React from "react"
+import { ContentItemType } from "../../../data/types"
+import { MEDIUM_SCREEN, X_SMALL_SCREEN } from "../../../helpers/Constants"
+import { Filter } from "./Filter"
+import { Search } from "./Search"
+import { Sort } from "./Sort"
+import { Order } from "./Order"
+import "./tool-bar.css"
 
 interface SortFilterSearchProps {
-    projectData: ContentItemType[];
-    setSortedProjects: (sortedProjects: ContentItemType[]) => void;
+    projectData: ContentItemType[]
+    setSortedProjects: (sortedProjects: ContentItemType[]) => void
 }
 
 export const ToolBar = ({
@@ -20,20 +20,20 @@ export const ToolBar = ({
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth,
-  });
+  })
   React.useEffect(() => {
     const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
-      });
+      })
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize)
     return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
+      window.removeEventListener("resize", handleResize)
+    }
+  })
 
     return (
       dimensions.width > X_SMALL_SCREEN && dimensions.width < MEDIUM_SCREEN ? 
@@ -78,5 +78,5 @@ export const ToolBar = ({
                 setSortedProjects={setSortedProjects}
             />
         </div>
-    );
+    )
 }

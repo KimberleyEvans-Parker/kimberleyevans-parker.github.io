@@ -1,37 +1,37 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
-import { TECHNOLOGIES } from "../../../helpers/Constants";
-import { ContentItemType } from "../../../data/types";
+import { TECHNOLOGIES } from "../../../helpers/Constants"
+import { ContentItemType } from "../../../data/types"
 
-import "./filter.css";
+import "./filter.css"
 
 interface FilterProps {
-    projectData: ContentItemType[];
-    setSortedProjects: (sortedProjects: ContentItemType[]) => void;
+    projectData: ContentItemType[]
+    setSortedProjects: (sortedProjects: ContentItemType[]) => void
 }
 
 export const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
-    const [input, setInput] = useState("");
-    const [open, setOpen] = useState(false);
+    const [input, setInput] = useState("")
+    const [open, setOpen] = useState(false)
 
     const filterOptions = Object.values(TECHNOLOGIES).filter((tech) =>
         tech.toLowerCase().includes(input.toLowerCase())
-    );
+    )
 
     const handleSelect = (tech: string) => {
-        setInput(tech);
-        setOpen(false);
+        setInput(tech)
+        setOpen(false)
         const filteredProjects = projectData.filter((project) =>
             project.technologies?.includes(tech)
-        );
-        setSortedProjects(filteredProjects);
-    };
+        )
+        setSortedProjects(filteredProjects)
+    }
 
     const handleBlur = () => {
-        setOpen(false);
+        setOpen(false)
         if (!Object.values(TECHNOLOGIES).includes(input)) {
-            setInput("");
-            setSortedProjects(projectData);
+            setInput("")
+            setSortedProjects(projectData)
         }
     }
 
@@ -45,8 +45,8 @@ export const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
                     value={input}
                     placeholder="Select technology..."
                     onChange={(e) => {
-                        setInput(e.target.value);
-                        setOpen(true);
+                        setInput(e.target.value)
+                        setOpen(true)
                     }}
                     onFocus={() => setOpen(true)}
                     onBlur={() => handleBlur()}
@@ -70,5 +70,5 @@ export const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
                 )}
             </div>
         </div>
-    );
-};
+    )
+}
