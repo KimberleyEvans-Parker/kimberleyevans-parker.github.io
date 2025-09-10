@@ -1,8 +1,8 @@
 
 export interface TravelLocation {
-  name: string;
-  position: [number, number];
-  description: string;
+  name: string
+  position: [number, number]
+  description: string
 }
 
 export const travelLocations: TravelLocation[] = [
@@ -49,4 +49,4 @@ export const travelLocations: TravelLocation[] = [
   
   // South America
   { name: "Peru", position: [-9.19, -75.02], description: "Machu Picchu, Andes, and rich history." },
-];
+]

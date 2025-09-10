@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { CodeInput } from "./CodeInput";
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import { CodeInput } from "./CodeInput"
 import "./styles.css"
 
 const Puzzle = (clue: string, correctAnswer: string[], wait?: number) => {
-  const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
+  const [answeredCorrectly, setAnsweredCorrectly] = useState(false)
 
   return {
     clue: clue,
@@ -26,17 +26,17 @@ export const OpenEntrance = () => {
     Puzzle("Puzzle 6", ["blade"]),
   ]
 
-  const isAnsweredCorrectly = (puzzle: { answeredCorrectly: any; }) => {
+  const isAnsweredCorrectly = (puzzle: { answeredCorrectly: any }) => {
     return puzzle.answeredCorrectly
   }
 
-  let animationDelay = 2;
+  let animationDelay = 2
 
   const getAnimationDelay = () => {
-    const animationDelaySeconds = animationDelay.toString() + "s";
+    const animationDelaySeconds = animationDelay.toString() + "s"
     animationDelay += (2 - animationDelay) / 5
-    return animationDelaySeconds;
-  };
+    return animationDelaySeconds
+  }
   
     return (
       <div className="amazonian-background">
@@ -88,7 +88,7 @@ export const OpenEntrance = () => {
             }
         </div>
       </div>
-    );
+    )
   }
   
   

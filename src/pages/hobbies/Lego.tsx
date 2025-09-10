@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-import ImageGallery from "../components/image gallery/ImageGallery";
-import { importAllPhotosFromFolder } from "../../helpers/Helpers";
+import ImageGallery from "../components/image gallery/ImageGallery"
+import { importAllPhotosFromFolder } from "../../helpers/Helpers"
 
 export const Lego = () => {
   const LegoImages = importAllPhotosFromFolder("hobbies/Lego")
@@ -20,5 +20,5 @@ export const Lego = () => {
       </div>
       <ImageGallery images={LegoImages.reverse()} />
     </div>
-  );
+  )
 }

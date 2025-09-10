@@ -1,19 +1,19 @@
-import Awards from "../../assets/experience/Awards.jpg";
-import Projects from "../../assets/experience/Projects.jpg";
-import Volunteer from "../../assets/experience/Volunteer.jpg";
-import Work from "../../assets/experience/Work.jpg";
+import Awards from "../../assets/experience/Awards.jpg"
+import Projects from "../../assets/experience/Projects.jpg"
+import Volunteer from "../../assets/experience/Volunteer.jpg"
+import Work from "../../assets/experience/Work.jpg"
 
-import { Tile } from "../components/tile/Tile";
+import { Tile } from "../components/tile/Tile"
 
 export const Experience = () => {
 
-  let animationDelay = 0;
+  let animationDelay = 0
 
   const getAnimationDelay = () => {
-    const animationDelaySeconds = animationDelay.toString() + "s";
+    const animationDelaySeconds = animationDelay.toString() + "s"
     animationDelay += (0.6 - animationDelay) / 5
-    return animationDelaySeconds;
-  };
+    return animationDelaySeconds
+  }
 
   return (
     <div className="content-container experience-container fade left">
@@ -46,5 +46,5 @@ export const Experience = () => {
         />
       </div>
     </div>
-  );
+  )
 }

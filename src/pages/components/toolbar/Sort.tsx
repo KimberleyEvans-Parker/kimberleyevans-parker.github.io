@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react"
-import { ContentItemType } from "../../../data/types";
-import "./sort.css";
-import { sortByEndDate, sortByName, sortByStartDate, sortByTeamSize, sortByTechnology } from "./SortHelper";
+import { ContentItemType } from "../../../data/types"
+import "./sort.css"
+import { sortByEndDate, sortByName, sortByStartDate, sortByTeamSize, sortByTechnology } from "./SortHelper"
 
 
 interface SortProps {
-    projectData: ContentItemType[];
-    setSortedProjects: (sortedProjects: ContentItemType[]) => void;
+    projectData: ContentItemType[]
+    setSortedProjects: (sortedProjects: ContentItemType[]) => void
 }
 
 export const Sort = ({projectData, setSortedProjects}: SortProps) => {
-    const [sortBy, setSortBy] = useState("date");
+    const [sortBy, setSortBy] = useState("date")
 
     enum sortingOptions {
         startDate = "Start Date",
@@ -41,7 +41,7 @@ export const Sort = ({projectData, setSortedProjects}: SortProps) => {
           projectData.sort(sortByTechnology)
         }
 
-        setSortedProjects([...projectData]);
+        setSortedProjects([...projectData])
       }
     , [projectData, sortBy, setSortedProjects, sortingOptions.startDate, sortingOptions.endDate, sortingOptions.name, sortingOptions.teamSize, sortingOptions.technology])
 

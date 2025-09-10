@@ -1,6 +1,6 @@
 interface HamburgerIconProps {
-    dropdownOpen: boolean;
-    setDropdownOpen: (open: boolean) => void;
+    dropdownOpen: boolean
+    setDropdownOpen: (open: boolean) => void
 }
 
 export const HamburgerIcon = ({ dropdownOpen, setDropdownOpen }: HamburgerIconProps) => {

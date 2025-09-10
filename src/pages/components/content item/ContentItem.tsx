@@ -1,34 +1,34 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import React from "react"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 
-import { ImageContent } from "./ImageContent";
-import { TextContent } from "./TextContent";
-import { ContentItemType } from "../../../data/types";
+import { ImageContent } from "./ImageContent"
+import { TextContent } from "./TextContent"
+import { ContentItemType } from "../../../data/types"
 
 import "./content-item.css"
 
 interface ContentItemProps {
-  contentData?: ContentItemType;
-  animationDelay: string;
-  imgOnLeft: boolean;
+  contentData?: ContentItemType
+  animationDelay: string
+  imgOnLeft: boolean
 }
 
 export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentItemProps) => {
   // for loading a section when it scrolls into view
-  const [isVisible, setVisible] = React.useState(true);
-  const domRef = React.useRef(null);
+  const [isVisible, setVisible] = React.useState(true)
+  const domRef = React.useRef(null)
   React.useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => setVisible(entry.isIntersecting));
-    });
+      entries.forEach((entry) => setVisible(entry.isIntersecting))
+    })
     if (domRef.current) {
-      observer.observe(domRef.current);
-      const current = domRef.current;
+      observer.observe(domRef.current)
+      const current = domRef.current
       return () => {
-        if (current) observer.unobserve(current);
-      };
+        if (current) observer.unobserve(current)
+      }
     }
-  }, []);
+  }, [])
 
   if (!contentData) return <></>
 
@@ -66,11 +66,11 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
           </div>
           {contentData.images && (
             <div className="image-content">
-              <ImageContent images={contentData.images} heading={contentData.heading} isVisible={isVisible} />
+              <ImageContent images={contentData.images} heading={contentData.heading} />
             </div>
           )}
         </div>
       </div>
     </div>
-  );
+  )
 }
