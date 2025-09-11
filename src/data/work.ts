@@ -84,8 +84,9 @@ export const workData: ContentItemType[] = [
         heading: "Teacher",
         subheading: "Bricks4Kidz",
         dates: { start: new Date(2020, 0) },
-        description: `I encourage young children into STEM related fields by teaching them related skills.  
-            These skills are taught with the aid of LEGO robots and mechanics. `,
+        description: `Inspired children (ages 4–12) to explore STEM through LEGO-based learning, teaching at holiday and after-school programs.
+            Led hands-on activities from creative builds and mosaics to LEGO Technic roller coasters and Mindstorms robotics
+            Encouraged problem-solving, teamwork, and creativity while introducing concepts in mechanics, programming and design.`,
         images: Bricks4KidzImages,
     },
     {
