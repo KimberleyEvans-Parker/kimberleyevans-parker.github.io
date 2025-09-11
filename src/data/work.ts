@@ -92,7 +92,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Co-Founder",
         subheading: "School Storage Solutions",
-        dates: { start: new Date(2016, 2) },
+        dates: { start: new Date(2016, 2), end: new Date(2025, 3) },
         description: `As part of the Young Enterprise Scheme, I created a business that rents out lockers to students.  
             This made a profit in its first year and is still being run alongside my studies.  
             During my time in my business, I have gained experience communicating with producers and customers, 
@@ -102,7 +102,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Co-Founder",
         subheading: "Graduation Plushies",
-        dates: { start: new Date(2020, 9) },
+        dates: { start: new Date(2020, 9), end: new Date(2025, 3) },
         description: `I co-founded this service which custom-makes graduation hats for soft toys.
             These have been quite popular for graduates and friends of grads and we were able to make a profit in our first year.  `,
         images: GraduationPlushiesImages,
