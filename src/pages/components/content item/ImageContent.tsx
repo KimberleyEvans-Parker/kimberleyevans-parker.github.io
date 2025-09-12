@@ -39,7 +39,7 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
       onChange={setCurrentIndex}
     >
       {images.map((image: string, index: number) => {
-        const shouldLoad = (
+        const shouldLazyLoad = (
           index === currentIndex ||
           index === currentIndex - 1 ||
           index === currentIndex + 1
@@ -58,10 +58,10 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
                 muted
                 autoPlay
                 loop
-                src={shouldLoad ? image: undefined}
+                src={image}
               />
             ) : (
-              <img alt={caption} src={shouldLoad ? image: undefined} />
+              <img alt={caption} src={image} loading={shouldLazyLoad ? "lazy" : undefined} />
             )}
           </button>
         )
