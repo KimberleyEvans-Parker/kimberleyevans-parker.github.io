@@ -47,6 +47,7 @@ export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
           alt={name}
           src={image}
           className="image-gallery-image image-gallery-animation"
+          loading="lazy"
         />
       )}
     </div>
