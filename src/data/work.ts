@@ -120,7 +120,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Software Engineering Intern",
         subheading: "No. 8 Wireless",
-        dates: { start: new Date(2019, 5) },
+        dates: { start: new Date(2019, 0), end: new Date(2019, 2)},
         description: `I developed an automated testing system for the phones that Ooma - a U.S. company.  
             During this, I gained experience with Git, Python and hardware.`,
         images: OomaImages,
@@ -132,7 +132,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Cashiers",
         subheading: "Gilmours",
-        dates: { start: new Date(2016, 3) },
+        dates: { start: new Date(2017, 11), end: new Date(2018, 3) },
         description: `I worked as a cashier/checkout operator for Gilmours - a wholesale food company.  
             During this, I improved my efficiency and interpersonal skills`
     }
