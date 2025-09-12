@@ -83,15 +83,16 @@ export const workData: ContentItemType[] = [
     {
         heading: "Teacher",
         subheading: "Bricks4Kidz",
-        dates: { start: new Date(2020, 0) },
-        description: `I encourage young children into STEM related fields by teaching them related skills.  
-            These skills are taught with the aid of LEGO robots and mechanics. `,
+        dates: { start: new Date(2020, 0), end: new Date(2021, 4) },
+        description: `Inspired children (ages 4–12) to explore STEM through LEGO-based learning, teaching at holiday and after-school programs.
+            Led hands-on activities from creative builds and mosaics to LEGO Technic roller coasters and Mindstorms robotics
+            Encouraged problem-solving, teamwork, and creativity while introducing concepts in mechanics, programming and design.`,
         images: Bricks4KidzImages,
     },
     {
         heading: "Co-Founder",
         subheading: "School Storage Solutions",
-        dates: { start: new Date(2016, 2) },
+        dates: { start: new Date(2016, 2), end: new Date(2025, 3) },
         description: `As part of the Young Enterprise Scheme, I created a business that rents out lockers to students.  
             This made a profit in its first year and is still being run alongside my studies.  
             During my time in my business, I have gained experience communicating with producers and customers, 
@@ -101,7 +102,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Co-Founder",
         subheading: "Graduation Plushies",
-        dates: { start: new Date(2020, 9) },
+        dates: { start: new Date(2020, 9), end: new Date(2025, 3) },
         description: `I co-founded this service which custom-makes graduation hats for soft toys.
             These have been quite popular for graduates and friends of grads and we were able to make a profit in our first year.  `,
         images: GraduationPlushiesImages,
@@ -119,7 +120,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Software Engineering Intern",
         subheading: "No. 8 Wireless",
-        dates: { start: new Date(2019, 5) },
+        dates: { start: new Date(2019, 0), end: new Date(2019, 2)},
         description: `I developed an automated testing system for the phones that Ooma - a U.S. company.  
             During this, I gained experience with Git, Python and hardware.`,
         images: OomaImages,
@@ -131,7 +132,7 @@ export const workData: ContentItemType[] = [
     {
         heading: "Cashiers",
         subheading: "Gilmours",
-        dates: { start: new Date(2016, 3) },
+        dates: { start: new Date(2017, 11), end: new Date(2018, 3) },
         description: `I worked as a cashier/checkout operator for Gilmours - a wholesale food company.  
             During this, I improved my efficiency and interpersonal skills`
     }
