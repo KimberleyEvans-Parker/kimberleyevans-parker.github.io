@@ -1,6 +1,6 @@
 import ProfilePic from "../assets/profile-pic.jpg"
 import Resume from "../assets/Kimberley CV-25-03.pdf"
-import { AUnderline, LinkUnderline } from "./components/underline links"
+import { AUnderline, LinkUnderline } from "./components/UnderlineLinks"
 
 export const About = () => {
   return (
