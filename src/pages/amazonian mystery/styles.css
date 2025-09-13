@@ -15,6 +15,13 @@
   text-shadow: 2px 2px 5px black;
 }
 
+.animation-delay-1s {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
 .amazonian-clue {
   margin-bottom: 4px;
 }

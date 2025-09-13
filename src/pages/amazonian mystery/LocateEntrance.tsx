@@ -18,13 +18,7 @@ export const LocateEntrance = () => {
             wait={2000}
           />
           {foundLocation && 
-            <div className="fade left animation-delay-1s"
-            style={{
-                WebkitAnimationDelay: "1s",
-                MozAnimationDelay: "1s",
-                OAnimationDelay: "1s",
-                animationDelay: "1s",
-            }}>
+            <div className="fade left animation-delay-1s">
               <p>
                 I guess the agency certainly put together the right team – 
                 you translated the tablet and deciphered the whereabouts of the secret entrance to the lost amazon civilisation! 
