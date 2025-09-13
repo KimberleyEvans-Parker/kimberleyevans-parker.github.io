@@ -16,3 +16,11 @@
   gap: 10px;
   z-index: 10;
 }
+
+.order-field select {
+  width: 100px;
+}
+
+.search-field input {
+  width: 176px;
+}

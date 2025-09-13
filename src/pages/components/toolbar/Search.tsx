@@ -19,14 +19,13 @@ export const Search = ({ projectData, setSortedProjects }: SearchProps) => {
     }
 
     return (
-        <div className="tool-item fade left">
+        <div className="tool-item fade left search-field">
             <label htmlFor="filter">Search</label>
             <input
                 type="text"
                 placeholder="Search projects..."
                 value={query}
                 onChange={handleChange}
-                style={{ width: "176px" }}
             />
         </div>
     )
