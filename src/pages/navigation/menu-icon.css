@@ -2,6 +2,11 @@
   display: inline-block;
 }
 
+.hamburger-icon li {
+  height: 100%;
+  padding-bottom: 10.5px;
+}
+
 .bar1,
 .bar2,
 .bar3 {

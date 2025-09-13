@@ -10,7 +10,7 @@ export const HamburgerIcon = ({ dropdownOpen, setDropdownOpen }: HamburgerIconPr
             onClick={() => setDropdownOpen(!dropdownOpen)}
             aria-label="Menu"
         >
-            <li style={{ height: "100%", paddingBottom: "10.5px" }}>
+            <li>
                 <div className={`${dropdownOpen && "change"} menu-icon`}>
                     <div className="bar1"></div>
                     <div className="bar2"></div>
