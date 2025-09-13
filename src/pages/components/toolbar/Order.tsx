@@ -29,13 +29,12 @@ export const Order = ({projectData, setSortedProjects}: OrderProps) => {
     , [projectData, ascending, setSortedProjects])
 
     return (
-        <div className="tool-item fade left">
+        <div className="tool-item fade left order-field">
             <label htmlFor="order">Order</label>
             <select 
                 id="order" 
                 value={ascending ? "asc" : "desc"} 
                 onChange={handleOrderChange}
-                style={{ width: "100px" }}
             >
                 <option value="asc">Ascending</option>
                 <option value="desc">Descending</option>
