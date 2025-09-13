@@ -1,6 +1,10 @@
-.image-gallery-column  {
+.image-gallery-container  {
   display: flex;
   gap: 16px;
+}
+
+.image-gallery-column  {
+  flex: 1 1 0;
 }
 
 .image-gallery-item {
