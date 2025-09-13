@@ -56,7 +56,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
   }
 
   return (
-    <div style={{ marginTop: "40px" }}>
+    <>
       <Modal />
 
       {dimensions.width < SMALL_SCREEN ? (
@@ -71,7 +71,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
             <ImageGalleryCollumn allImages={images} images={l3_3} />
         </div>
       )}
-    </div>
+    </>
   )
 }
 
