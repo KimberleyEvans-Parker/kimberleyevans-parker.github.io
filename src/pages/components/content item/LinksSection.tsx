@@ -1,5 +1,5 @@
 import { LinksType } from "../../../data/types"
-import { AUnderline, LinkUnderline } from "../underline links"
+import { AUnderline, LinkUnderline } from "../UnderlineLinks"
 
 export const LinksSection = (links?: LinksType) => {
     if (!links) return <></>

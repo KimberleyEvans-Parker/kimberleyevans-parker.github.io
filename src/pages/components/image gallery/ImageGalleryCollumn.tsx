@@ -28,7 +28,7 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
 
 
   return (
-    <>
+    <div className="image-gallery-column">
       {images.map((imageData, imageIndex) => {
         const image = imageData.name
         const animationDelay = imageData.index * 0.15 + "s"
@@ -47,6 +47,6 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
           </button>
         )
       })}
-    </>
+    </div>
   )
 }

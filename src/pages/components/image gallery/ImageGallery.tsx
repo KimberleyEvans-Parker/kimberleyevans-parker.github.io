@@ -56,34 +56,22 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
   }
 
   return (
-    <div style={{ marginTop: "40px" }}>
+    <>
       <Modal />
 
-      <div>
-        {dimensions.width < SMALL_SCREEN ? (
-          <div className="image-gallery-column">
-            <div>
-              <ImageGalleryCollumn allImages={images} images={l2_1} />
-            </div>
-            <div>
-              <ImageGalleryCollumn allImages={images} images={l2_2} />
-            </div>
-          </div>
-        ) : (
-          <div className="image-gallery-column">
-            <div>
-              <ImageGalleryCollumn allImages={images} images={l3_1} />
-            </div>
-            <div>
-              <ImageGalleryCollumn allImages={images} images={l3_2} />
-            </div>
-            <div>
-              <ImageGalleryCollumn allImages={images} images={l3_3} />
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
+      {dimensions.width < SMALL_SCREEN ? (
+        <div className="image-gallery-container">
+            <ImageGalleryCollumn allImages={images} images={l2_1} />
+            <ImageGalleryCollumn allImages={images} images={l2_2} />
+        </div>
+      ) : (
+        <div className="image-gallery-container">
+            <ImageGalleryCollumn allImages={images} images={l3_1} />
+            <ImageGalleryCollumn allImages={images} images={l3_2} />
+            <ImageGalleryCollumn allImages={images} images={l3_3} />
+        </div>
+      )}
+    </>
   )
 }
 
