@@ -1,6 +1,6 @@
+import { ContentItemType } from "./types"
 import { TECHNOLOGIES } from "../helpers/Constants"
 import { importAllPhotosFromFolder } from "../helpers/Helpers"
-import { ContentItemType } from "./types"
 
 const QuotleImages = importAllPhotosFromFolder("projects/Quotle")   
 const EmpowerImages = importAllPhotosFromFolder("projects/Empower")
@@ -14,6 +14,7 @@ const EnvirobotImages = importAllPhotosFromFolder("projects/Envirobot")
 const RollForReactionImages = importAllPhotosFromFolder("projects/Roll for Reaction")
 const FlikImages = importAllPhotosFromFolder("projects/Flik")
 const EventigateImages = importAllPhotosFromFolder("projects/Eventigate")
+const MenstruMateImages = importAllPhotosFromFolder("projects/MenstruMate")
 const AshasQuestImages = importAllPhotosFromFolder("projects/Asha's Quest")
 
 export const projectData: ContentItemType[] = [
@@ -57,15 +58,16 @@ export const projectData: ContentItemType[] = [
         technologies: [TECHNOLOGIES.GIT, TECHNOLOGIES.HTML, TECHNOLOGIES.CSS, TECHNOLOGIES.TS, TECHNOLOGIES.REACT, TECHNOLOGIES.REDUX]
     },
     {
-        heading: "Menstrumate",
+        heading: "MenstruMate",
         subheading: "We the Women Hack",
         dates: { start: new Date(2023, 6) },
         description: `As part of the We the Women Hack, run by Girlboss, I was invited to create a project to help women in some way.  
             My team felt one of the worst feelings we got was when you realised you were caught out without menstrual products.
-            We created Menstrumate, an app for girls caught out in this situation.
+            We created MenstruMate, an app for girls caught out in this situation.
             The app allows you to find the nearest place to get menstrual products, and also allows you to donate products to those in need.
             We think this app will help take away the stress of being caught out, and also help those who are less fortunate than us.`,
         teamSize: 5,
+        images: MenstruMateImages,
         technologies: [TECHNOLOGIES.FIGMA]
     },
     {

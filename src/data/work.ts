@@ -1,6 +1,6 @@
+import { ContentItemType } from "./types"
 import { TECHNOLOGIES } from "../helpers/Constants"
 import { importAllPhotosFromFolder } from "../helpers/Helpers"
-import { ContentItemType } from "./types"
 
 const Bricks4KidzImages = importAllPhotosFromFolder("work/Bricks4Kidz")
 const SSSImages = importAllPhotosFromFolder("work/School Storage Solutions")
@@ -104,6 +104,8 @@ export const workData: ContentItemType[] = [
         subheading: "Graduation Plushies",
         dates: { start: new Date(2020, 9), end: new Date(2025, 3) },
         description: `I co-founded this service which custom-makes graduation hats for soft toys.
+            We design and manufacture these hats ourselves, matching and sewing them to the plushie.  
+            The hats are customisable and we alter the tassel colour, size and style to match the plushie or the customer's preferences.
             These have been quite popular for graduates and friends of grads and we were able to make a profit in our first year.  `,
         images: GraduationPlushiesImages,
         links: {
