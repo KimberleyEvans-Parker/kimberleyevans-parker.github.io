@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom"
+
 import { Navigation } from "./pages/navigation/Navigation"
 import { SubNavbar } from "./pages/navigation/SubNavbar"
 
@@ -12,6 +13,24 @@ const Layout = () => {
 
   return (
     <>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
+      <div className="firefly"></div>
       {showNav && <Navigation />}
       {showNav && showExperienceSub && (
         <SubNavbar
