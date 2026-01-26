@@ -1,13 +1,13 @@
-import { useSelector } from "react-redux"
-import { useDispatch } from "react-redux"
-import { resetImage } from "../../../redux/actions"
-import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors"
-import { Carousel } from "react-responsive-carousel"
-import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants"
-import { getImageName } from "../../../helpers/Helpers"
-
 import "./modal.css"
 
+import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants"
+import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors"
+
+import { Carousel } from "react-responsive-carousel"
+import { getImageName } from "../../../helpers/Helpers"
+import { resetImage } from "../../../redux/actions"
+import { useDispatch } from "react-redux"
+import { useSelector } from "react-redux"
 
 export const Modal = () => {
   const imageIndex = useSelector(selectModalSelectedImage)
@@ -28,7 +28,7 @@ export const Modal = () => {
   return (
     <div className="modal-background">
       <p className="close" onClick={handleResetImage}>
-        &times
+        &#10006;
       </p>
       <div className="modal-content">
         <Carousel
