@@ -1,11 +1,13 @@
-import React, { useState } from "react"
-import { Link } from "react-router-dom"
-import { SMALL_SCREEN } from "../../helpers/Constants"
-import { NavbarLink } from "./NavbarLink"
-import { NavbarExternalLink } from "./NavbarExternalLink"
 import "./navigation.css"
 import "./menu-icon.css"
+
+import React, { useState } from "react"
+
 import { HamburgerIcon } from "./HamburberIcon"
+import { Link } from "react-router-dom"
+import { NavbarExternalLink } from "./NavbarExternalLink"
+import { NavbarLink } from "./NavbarLink"
+import { SMALL_SCREEN } from "../../helpers/Constants"
 
 export const Navigation = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
@@ -75,6 +77,7 @@ export const Navigation = () => {
                 "Cosplays",
                 "Art",
                 "Travel",
+                "Piano",
               ]}
             />
             <NavbarExternalLink
