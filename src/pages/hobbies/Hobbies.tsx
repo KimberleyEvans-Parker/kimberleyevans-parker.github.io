@@ -1,9 +1,9 @@
-import { Tile } from "../components/tile/Tile"
-
+import Art from "../../assets/hobbies/Art/Skyrim fanart.jpg"
+import Cosplays from "../../assets/hobbies/Cosplays/Tardis - Bigger on the Inside.jpg"
 import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.jpg"
 import Photography from "../../assets/hobbies/Photography/Flying Bee.jpg"
-import Cosplays from "../../assets/hobbies/Cosplays/Tardis - Bigger on the Inside.jpg"
-import Art from "../../assets/hobbies/Art/Skyrim fanart.jpg"
+import Piano from "../../assets/hobbies/piano.jpg"
+import { Tile } from "../components/tile/Tile"
 import Travel from "../../assets/hobbies/Travel/New Zealand - Hobbiton.jpg"
 
 export const Hobbies = () => {
@@ -48,6 +48,11 @@ export const Hobbies = () => {
           animationDelay={getAnimationDelay()}
           imgSrc={Travel}
           title="Travel"
+        />
+        <Tile
+          animationDelay={getAnimationDelay()}
+          imgSrc={Piano}
+          title="Piano"
         />
       </div>
     </div>
