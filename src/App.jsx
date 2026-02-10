@@ -1,26 +1,27 @@
-import React from "react"
-import { Route, Routes } from "react-router-dom"
-import Layout from "./Layout"
-import { Home } from "./pages/Home"
-import { About } from "./pages/About"
-import { Experience } from "./pages/experience/Experience"
-import { Work } from "./pages/experience/Work"
-import { Volunteer } from "./pages/experience/Volunteer"
-import { Projects } from "./pages/experience/Projects"
-import { Awards } from "./pages/experience/Awards"
-import { Hobbies } from "./pages/hobbies/Hobbies"
-import { Lego } from "./pages/hobbies/Lego"
-import { Art } from "./pages/hobbies/Art"
-import { Cosplays } from "./pages/hobbies/Cosplays"
-import { Photography } from "./pages/hobbies/Photography"
-import { Travel } from "./pages/hobbies/travel/Travel"
-import { Words } from "./pages/words/Words"
-import { LocateEntrance } from "./pages/amazonian mystery/LocateEntrance"
-import { OpenEntrance } from "./pages/amazonian mystery/OpenEntrance"
-import { SolvedMystery } from "./pages/amazonian mystery/SolvedMystery"
-import { GetArtefact } from "./pages/amazonian mystery/GetArtefact"
-import { Error404 } from "./pages/404"
-import { Xero } from "./pages/experience/Xero"
+import { Route, Routes } from "react-router-dom";
+
+import { About } from "./pages/About";
+import { Art } from "./pages/hobbies/Art";
+import { Awards } from "./pages/experience/Awards";
+import { Cosplays } from "./pages/hobbies/Cosplays";
+import { Error404 } from "./pages/404";
+import { Experience } from "./pages/experience/Experience";
+import { GetArtefact } from "./pages/amazonian mystery/GetArtefact";
+import { Hobbies } from "./pages/hobbies/Hobbies";
+import { Home } from "./pages/Home";
+import Layout from "./Layout";
+import { Lego } from "./pages/hobbies/Lego";
+import { LocateEntrance } from "./pages/amazonian mystery/LocateEntrance";
+import { OpenEntrance } from "./pages/amazonian mystery/OpenEntrance";
+import { Photography } from "./pages/hobbies/Photography";
+import { Piano } from "./pages/hobbies/Piano";
+import { Projects } from "./pages/experience/Projects";
+import { SolvedMystery } from "./pages/amazonian mystery/SolvedMystery";
+import { Travel } from "./pages/hobbies/travel/Travel";
+import { Volunteer } from "./pages/experience/Volunteer";
+import { Words } from "./pages/words/Words";
+import { Work } from "./pages/experience/Work";
+import { Xero } from "./pages/experience/Xero";
 
 function App() {
   return (
@@ -44,11 +45,18 @@ function App() {
         <Route path="hobbies/cosplays" element={<Cosplays />} />
         <Route path="hobbies/photography" element={<Photography />} />
         <Route path="hobbies/travel" element={<Travel />} />
+        <Route path="hobbies/piano" element={<Piano />} />
 
         {/* Amazonian Mystery */}
         <Route path="AmazonianMystery" element={<LocateEntrance />} />
-        <Route path="AmazonianMystery/OpenEntrance" element={<OpenEntrance />} />
-        <Route path="AmazonianMystery/SolvedMystery" element={<SolvedMystery />} />
+        <Route
+          path="AmazonianMystery/OpenEntrance"
+          element={<OpenEntrance />}
+        />
+        <Route
+          path="AmazonianMystery/SolvedMystery"
+          element={<SolvedMystery />}
+        />
         <Route path="AmazonianMystery/GetArtefact" element={<GetArtefact />} />
 
         {/* Words + 404 */}
@@ -56,7 +64,7 @@ function App() {
         <Route path="*" element={<Error404 />} />
       </Route>
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
