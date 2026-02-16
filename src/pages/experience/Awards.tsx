@@ -1,6 +1,7 @@
 import { ContentItem } from "../components/content item/ContentItem"
 import { Modal } from "../components/modal/Modal"
 import { awardsData } from "../../data/awards"
+import { isImageOnLeft } from "../../helpers/Helpers"
 
 export const Awards = () => {
 
@@ -13,23 +14,15 @@ export const Awards = () => {
     return animationDelaySeconds
   }
 
-  let onLeft = false
-
-  const imgOnLeft = () => {
-    onLeft = !onLeft
-    return onLeft
-  }
-
-
   return (
     <div className="content-container">
       <h1 className="fade left">Awards and Achievments</h1>
       <Modal />
 
-      {awardsData.map((project) => (
+      {awardsData.map((project, index) => (
         <ContentItem
           key={project.heading + project.subheading}
-          imgOnLeft={imgOnLeft()}
+          imgOnLeft={isImageOnLeft(index)}
           contentData={project}
           animationDelay={getAnimationDelay()}
         />

@@ -1,5 +1,6 @@
 import { ContentItem } from "../components/content item/ContentItem"
 import { Modal } from "../components/modal/Modal"
+import { isImageOnLeft } from "../../helpers/Helpers"
 import { workData } from "../../data/work"
 
 export const Work = () => {
@@ -11,22 +12,15 @@ export const Work = () => {
     return animationDelaySeconds
   }
 
-  let onLeft = false
-
-  const imgOnLeft = () => {
-    onLeft = !onLeft
-    return onLeft
-  }
-
   return (
     <div className="content-container">
       <h1 className="fade left">Work Experience</h1>
       <Modal />
       
-      {workData.map((project) => (
+      {workData.map((project, index) => (
         <ContentItem
           key={project.heading + project.subheading}
-          imgOnLeft={imgOnLeft()}
+          imgOnLeft={isImageOnLeft(index)}
           contentData={project}
           animationDelay={getAnimationDelay()}
         />

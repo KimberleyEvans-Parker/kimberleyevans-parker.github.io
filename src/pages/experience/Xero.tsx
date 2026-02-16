@@ -1,9 +1,11 @@
-import { Modal } from "../components/modal/Modal"
-import { workData } from "../../data/work"
-import { DateSubheading } from "../components/content item/DateSubheading"
-import { awardsData } from "../../data/awards"
-import { ContentItem } from "../components/content item/ContentItem"
 import { xerGeneralDescriptions, xeroData } from "../../data/xero"
+
+import { ContentItem } from "../components/content item/ContentItem"
+import { DateSubheading } from "../components/content item/DateSubheading"
+import { Modal } from "../components/modal/Modal"
+import { awardsData } from "../../data/awards"
+import { isImageOnLeft } from "../../helpers/Helpers"
+import { workData } from "../../data/work"
 
 export const Xero = () => {
     let animationDelay = 0
@@ -59,7 +61,7 @@ export const Xero = () => {
                         key={index}
                         contentData={award}
                         animationDelay={getAnimationDelay()}
-                        imgOnLeft={index % 2 === 0}
+                        imgOnLeft={isImageOnLeft(index)}
                     />
                 ))}
                 {xeroData.map((project, index) => (
@@ -67,7 +69,7 @@ export const Xero = () => {
                         key={index}
                         contentData={project}
                         animationDelay={getAnimationDelay()}
-                        imgOnLeft={index % 2 === 0}
+                        imgOnLeft={isImageOnLeft(index)}
                     />
                 ))}
             </div>
