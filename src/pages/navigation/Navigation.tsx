@@ -78,6 +78,7 @@ export const Navigation = () => {
                 "Art",
                 "Travel",
                 "Piano",
+                "Creations",
               ]}
             />
             <NavbarExternalLink
