@@ -1,7 +1,7 @@
 import { ContentItemType } from "./types"
 import { importAllPhotosFromFolder } from "../helpers/Helpers"
 
-const RimuBookshelf = importAllPhotosFromFolder("creations/Rimu Bookshelf")
+const RimuBookshelf = importAllPhotosFromFolder("hobbies/Creations/Rimu Bookshelf")
 
 
 export const creationsData: ContentItemType[] = [

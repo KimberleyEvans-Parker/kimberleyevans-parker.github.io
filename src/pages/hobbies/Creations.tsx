@@ -15,7 +15,7 @@ export const Creations = () => {
   return (
     <div className="content-container">
       <h1 className="fade left">Artistic Creations</h1>
-      <p>Aside from my other hobbies, I have enjoyed creating and developing other projects and skills, some of which you can see here :)</p>
+      <p className="fade left">Aside from my other hobbies, I have enjoyed creating and developing other projects and skills, some of which you can see here :)</p>
 
       <Modal />
       
