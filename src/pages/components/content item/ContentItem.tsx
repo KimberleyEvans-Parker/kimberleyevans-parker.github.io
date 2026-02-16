@@ -1,11 +1,10 @@
-import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-
-import { ImageContent } from "./ImageContent"
-import { TextContent } from "./TextContent"
-import { ContentItemType } from "../../../data/types"
-
 import "./content-item.css"
+
+import { ContentItemType } from "../../../data/types"
+import { ImageContent } from "./ImageContent"
+import React from "react"
+import { TextContent } from "./TextContent"
 
 interface ContentItemProps {
   contentData?: ContentItemType
@@ -32,6 +31,8 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
 
   if (!contentData) return <></>
 
+  const title = `${contentData.heading}${contentData.subheading ? ` - ${contentData.subheading}` : ""}`
+
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
@@ -47,12 +48,16 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
           animationDelay: animationDelay,
         }}
       >
-        <a href={contentData.links?.github} className={"popout-link"}>
+        {contentData.links?.github ? (
+          <a href={contentData.links?.github} className={"popout-link"}>
           <h2>
-            <i className="fa fa-github popout" aria-hidden="true" />
-            {contentData.heading} {contentData.subheading && "- "} {contentData.subheading}
+            {title}
           </h2>
         </a>
+        ) : (
+          <h2>{title}</h2>
+        )
+        }
 
         <div className={`content-item-container ${imgOnLeft ? "image-first" : ""}`}>
           <div className="text-content">
