@@ -1,27 +1,28 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom"
 
-import { About } from "./pages/About";
-import { Art } from "./pages/hobbies/Art";
-import { Awards } from "./pages/experience/Awards";
-import { Cosplays } from "./pages/hobbies/Cosplays";
-import { Error404 } from "./pages/404";
-import { Experience } from "./pages/experience/Experience";
-import { GetArtefact } from "./pages/amazonian mystery/GetArtefact";
-import { Hobbies } from "./pages/hobbies/Hobbies";
-import { Home } from "./pages/Home";
-import Layout from "./Layout";
-import { Lego } from "./pages/hobbies/Lego";
-import { LocateEntrance } from "./pages/amazonian mystery/LocateEntrance";
-import { OpenEntrance } from "./pages/amazonian mystery/OpenEntrance";
-import { Photography } from "./pages/hobbies/Photography";
-import { Piano } from "./pages/hobbies/Piano";
-import { Projects } from "./pages/experience/Projects";
-import { SolvedMystery } from "./pages/amazonian mystery/SolvedMystery";
-import { Travel } from "./pages/hobbies/travel/Travel";
-import { Volunteer } from "./pages/experience/Volunteer";
-import { Words } from "./pages/words/Words";
-import { Work } from "./pages/experience/Work";
-import { Xero } from "./pages/experience/Xero";
+import { About } from "./pages/About"
+import { Art } from "./pages/hobbies/Art"
+import { Awards } from "./pages/experience/Awards"
+import { Cosplays } from "./pages/hobbies/Cosplays"
+import { Creations } from "./pages/hobbies/Creations"
+import { Error404 } from "./pages/404"
+import { Experience } from "./pages/experience/Experience"
+import { GetArtefact } from "./pages/amazonian mystery/GetArtefact"
+import { Hobbies } from "./pages/hobbies/Hobbies"
+import { Home } from "./pages/Home"
+import Layout from "./Layout"
+import { Lego } from "./pages/hobbies/Lego"
+import { LocateEntrance } from "./pages/amazonian mystery/LocateEntrance"
+import { OpenEntrance } from "./pages/amazonian mystery/OpenEntrance"
+import { Photography } from "./pages/hobbies/Photography"
+import { Piano } from "./pages/hobbies/Piano"
+import { Projects } from "./pages/experience/Projects"
+import { SolvedMystery } from "./pages/amazonian mystery/SolvedMystery"
+import { Travel } from "./pages/hobbies/travel/Travel"
+import { Volunteer } from "./pages/experience/Volunteer"
+import { Words } from "./pages/words/Words"
+import { Work } from "./pages/experience/Work"
+import { Xero } from "./pages/experience/Xero"
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path="hobbies/photography" element={<Photography />} />
         <Route path="hobbies/travel" element={<Travel />} />
         <Route path="hobbies/piano" element={<Piano />} />
+        <Route path="hobbies/creations" element={<Creations />} />
 
         {/* Amazonian Mystery */}
         <Route path="AmazonianMystery" element={<LocateEntrance />} />
@@ -64,7 +66,7 @@ function App() {
         <Route path="*" element={<Error404 />} />
       </Route>
     </Routes>
-  );
+  )
 }
 
-export default App;
+export default App

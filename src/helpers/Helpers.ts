@@ -6,8 +6,6 @@ export const importAllPhotosFromFolder = (folderName: string) => {
     .map(([_, mod]: any) => mod.default)
 }
 
-
-
 export const getIndexOfImage = (allImages: string[], name: string) => {
   for (let i = 0; i < allImages.length; i++) {
     let currentImage = allImages[i]
@@ -23,4 +21,8 @@ export const getImageName = (image: string) => {
   const path = image.split("/")
   const fileName = path[path.length - 1].split(".")[0]
   return decodeURIComponent(fileName)
+}
+
+export const isImageOnLeft = (index: number) => {
+  return index % 2 === 0
 }

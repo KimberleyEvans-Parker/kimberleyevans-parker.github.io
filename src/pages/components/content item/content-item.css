@@ -5,6 +5,11 @@
   display: inline-block;
 }
 
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+}
+
 .content-item-container {
   display: flex;
   gap: 24px;

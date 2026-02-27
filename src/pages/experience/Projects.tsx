@@ -1,9 +1,9 @@
-import { useState } from "react"
-
 import { ContentItem } from "../components/content item/ContentItem"
 import { Modal } from "../components/modal/Modal"
-import { projectData } from "../../data/projects"
 import { ToolBar } from "../components/toolbar/ToolBar"
+import { isImageOnLeft } from "../../helpers/Helpers"
+import { projectData } from "../../data/projects"
+import { useState } from "react"
 
 export const Projects = () => {
   const [sortedProjects, setSortedProjects] = useState(projectData)
@@ -16,13 +16,6 @@ export const Projects = () => {
     return animationDelaySeconds
   }
 
-  let onLeft = false
-
-  const imgOnLeft = () => {
-    onLeft = !onLeft
-    return onLeft
-  }
-
   return (
     <div className="content-container">
       <h1 className="fade left">Projects</h1>
@@ -30,10 +23,10 @@ export const Projects = () => {
 
       <ToolBar projectData={projectData} setSortedProjects={setSortedProjects} />
 
-      {sortedProjects.map((project) => (
+      {sortedProjects.map((project, index) => (
         <ContentItem
           key={project.heading + project.subheading}
-          imgOnLeft={imgOnLeft()}
+          imgOnLeft={isImageOnLeft(index)}
           contentData={project}
           animationDelay={getAnimationDelay()}
         />
