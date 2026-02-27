@@ -1,11 +1,9 @@
 import { ContentItem } from "../components/content item/ContentItem"
 import { Modal } from "../components/modal/Modal"
-import { awardsData } from "../../data/awards"
+import { creationsData } from "../../data/creations"
 import { isImageOnLeft } from "../../helpers/Helpers"
 
-export const Awards = () => {
-
-
+export const Creations = () => {
   let animationDelay = 0
 
   const getAnimationDelay = () => {
@@ -16,14 +14,16 @@ export const Awards = () => {
 
   return (
     <div className="content-container">
-      <h1 className="fade left">Awards and Achievments</h1>
-      <Modal />
+      <h1 className="fade left">Artistic Creations</h1>
+      <p className="fade left">Aside from my other hobbies, I have enjoyed creating and developing other projects and skills, some of which you can see here :)</p>
 
-      {awardsData.map((project, index) => (
+      <Modal />
+      
+      {creationsData.map((creation, index) => (
         <ContentItem
-          key={project.heading + project.subheading}
+          key={creation.heading + creation.subheading}
           imgOnLeft={isImageOnLeft(index)}
-          contentData={project}
+          contentData={creation}
           animationDelay={getAnimationDelay()}
         />
       ))}
