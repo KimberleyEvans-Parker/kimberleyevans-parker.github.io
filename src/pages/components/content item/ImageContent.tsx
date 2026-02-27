@@ -1,10 +1,11 @@
-import { useState } from "react"
+import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants"
+
 import { Carousel } from "react-responsive-carousel"
-import { CAROUSEL_TRANSITION_TIME, CAROUSEL_INTERVAL } from "../../../helpers/Constants"
-import { useDispatch } from "react-redux"
-import { setImage } from "../../../redux/actions"
 import { ModalState } from "../../../redux/state"
 import { getImageName } from "../../../helpers/Helpers"
+import { setImage } from "../../../redux/actions"
+import { useDispatch } from "react-redux"
+import { useState } from "react"
 
 interface ImageContentProps {
   images: string[]
@@ -47,7 +48,7 @@ export const ImageContent = ({images, heading}: ImageContentProps) => {
 
         const name = getImageName(image)
         
-        const caption = heading ? heading + " - " + name : name;
+        const caption = heading ? heading + " - " + name : name
         return (
           <button
             onClick={() => openModal(index, heading)}

@@ -1,4 +1,5 @@
 import Art from "../../assets/hobbies/Art/Skyrim fanart.jpg"
+import Bookshelf from "../../assets/hobbies/Creations/Rimu Bookshelf/Display.jpg"
 import Cosplays from "../../assets/hobbies/Cosplays/Tardis - Bigger on the Inside.jpg"
 import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.jpg"
 import Photography from "../../assets/hobbies/Photography/Flying Bee.jpg"
@@ -53,6 +54,11 @@ export const Hobbies = () => {
           animationDelay={getAnimationDelay()}
           imgSrc={Piano}
           title="Piano"
+        />
+        <Tile
+          animationDelay={getAnimationDelay()}
+          imgSrc={Bookshelf}
+          title="Creations"
         />
       </div>
     </div>
