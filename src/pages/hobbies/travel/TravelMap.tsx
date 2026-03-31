@@ -1,17 +1,16 @@
-import { useState } from 'react'
-
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-
-import { travelLocations } from '../../../data/travel'
-import { mapTerrains } from '../../../data/maps'
 import './map.css'
-import { SelectMapTerrain } from './SelectMapTerrain'
 
-import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+
+import L from 'leaflet'
+import { SelectMapTerrain } from './SelectMapTerrain'
+import { mapTerrains } from '../../../data/maps'
 import markerIcon from 'leaflet/dist/images/marker-icon.png'
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png'
 import markerShadow from 'leaflet/dist/images/marker-shadow.png'
+import { travelLocations } from '../../../data/travel'
+import { useState } from 'react'
 
 delete (L.Icon.Default.prototype as any)._getIconUrl
 
@@ -50,7 +49,7 @@ export const TravelMap = () => {
         {travelLocations.map((location, index) => (
           <Marker key={index} position={location.position}>
             <Popup>
-              <strong>{location.name}</strong><br />
+              <strong>{location.country}{location.city && `, ${location.city}`}</strong><br />
               {location.description}
             </Popup>
           </Marker>
