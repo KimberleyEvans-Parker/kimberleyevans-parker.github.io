@@ -1,5 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom"
 
+import { Modal } from "./pages/components/modal/Modal"
 import { Navigation } from "./pages/navigation/Navigation"
 import { SubNavbar } from "./pages/navigation/SubNavbar"
 
@@ -44,6 +45,7 @@ const Layout = () => {
           headings={["Lego", "Photography", "Cosplays", "Art", "Travel", "Piano", "Creations"]}
         />
       )}
+      <Modal />
       <Outlet />
     </>
   )

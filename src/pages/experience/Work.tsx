@@ -15,7 +15,6 @@ export const Work = () => {
   return (
     <div className="content-container">
       <h1 className="fade left">Work Experience</h1>
-      <Modal />
       
       {workData.map((project, index) => (
         <ContentItem
