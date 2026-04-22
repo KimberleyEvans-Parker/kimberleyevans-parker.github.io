@@ -17,8 +17,6 @@ export const Creations = () => {
       <h1 className="fade left">Artistic Creations</h1>
       <p className="fade left">Aside from my other hobbies, I have enjoyed creating and developing other projects and skills, some of which you can see here :)</p>
 
-      <Modal />
-      
       {creationsData.map((creation, index) => (
         <ContentItem
           key={creation.heading + creation.subheading}

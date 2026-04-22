@@ -15,7 +15,6 @@ export const Volunteer = () => {
   return (
     <div className="content-container">
       <h1 className="fade left">Volunteer Work</h1>
-      <Modal />
       
       {volunteerData.map((project, index) => (
         <ContentItem
