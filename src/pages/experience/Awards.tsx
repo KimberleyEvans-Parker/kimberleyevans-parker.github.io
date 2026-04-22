@@ -17,7 +17,6 @@ export const Awards = () => {
   return (
     <div className="content-container">
       <h1 className="fade left">Awards and Achievments</h1>
-      <Modal />
 
       {awardsData.map((project, index) => (
         <ContentItem
