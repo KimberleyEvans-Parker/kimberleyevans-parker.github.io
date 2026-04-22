@@ -1,15 +1,17 @@
 import { Country } from "./countries.types"
+import nz from "../assets/hobbies/Travel/New Zealand - Hobbiton.jpg"
 
 export interface TravelLocation {
   country: Country
   city?: string
   position: [number, number]
+  image?: string
   description: string
 }
 
 export const travelLocations: TravelLocation[] = [
   // Oceania
-  { country: Country.NewZealand, city: "Auckland", position: [-36.8485, 174.7633], description: "Volcanoes, beaches, and Hobbiton." },
+  { country: Country.NewZealand, city: "Auckland", position: [-36.8485, 174.7633], image: nz, description: "Volcanoes, beaches, and Hobbiton." },
   { country: Country.NewZealand, city: "Queenstown", position: [-45.03, 168.66], description: "Adventure capital and stunning scenery." },
   { country: Country.Australia, city: "Sydney", position: [-33.87, 151.21], description: "Opera House, beaches, and sunshine." },
   { country: Country.Australia, city: "Gold Coast", position: [-28.02, 153.40], description: "Surf, sand, and skyline." },
