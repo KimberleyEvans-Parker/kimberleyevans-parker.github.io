@@ -1,18 +1,19 @@
 import { render, screen } from '@testing-library/react'
-// import userEvent from '@testing-library/user-event'
+
 import App from './App'
 import { MemoryRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
 
 test('renders heading', async () => {
   render(
-    <MemoryRouter initialEntries={["/"]}>
-      <App />
-    </MemoryRouter>
+    <Provider store={store}>
+      <MemoryRouter initialEntries={["/"]}>
+        <App />
+      </MemoryRouter>
+    </Provider>
   )
 
   expect(screen.getByRole('heading', { name: /Kimberley Evans-Parker/i })).toBeInTheDocument()
 
-  // const btn = screen.getByRole('button', { name: /count/i })
-  // await userEvent.click(btn)
-  // expect(btn).toHaveTextContent(/count:\s*1/i)
 })
