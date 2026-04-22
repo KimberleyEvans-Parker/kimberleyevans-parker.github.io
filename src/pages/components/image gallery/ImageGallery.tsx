@@ -1,11 +1,10 @@
-import React from "react"
-
-import { SMALL_SCREEN } from "../../../helpers/Constants"
-import { ImageGalleryCollumn } from "./ImageGalleryCollumn"
-import { Modal } from "../modal/Modal"
-
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import "./image-gallery.css"
+
+import { ImageGalleryCollumn } from "./ImageGalleryCollumn"
+import { Modal } from "../modal/Modal"
+import React from "react"
+import { SMALL_SCREEN } from "../../../helpers/Constants"
 
 interface ImageGalleryProps {
   images: string[]
@@ -57,8 +56,6 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
 
   return (
     <>
-      <Modal />
-
       {dimensions.width < SMALL_SCREEN ? (
         <div className="image-gallery-container">
             <ImageGalleryCollumn allImages={images} images={l2_1} />
