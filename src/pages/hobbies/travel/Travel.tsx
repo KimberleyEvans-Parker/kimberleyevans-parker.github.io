@@ -1,4 +1,5 @@
 import { TravelMap } from './TravelMap'
+import { travelLocations } from '../../../data/travel'
 
 export const Travel = () => {
 
@@ -16,6 +17,7 @@ export const Travel = () => {
           Vietnam, for its amazing culture;
           and my home country New Zealand, whith its breathtaking landscapes.
         </p>
+        <h3>Countries Visited: {new Set(travelLocations.map(loc => loc.country)).size}</h3>
         <TravelMap />
 
       </div>
