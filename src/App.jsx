@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-
+import React from 'react'
 import { About } from "./pages/About"
 import { Art } from "./pages/hobbies/Art"
 import { Awards } from "./pages/experience/Awards"
