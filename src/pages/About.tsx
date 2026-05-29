@@ -1,6 +1,7 @@
+import { AUnderline, LinkUnderline } from "./components/UnderlineLinks"
+
 import ProfilePic from "../assets/profile-pic.jpg"
 import Resume from "../assets/Kimberley CV-25-03.pdf"
-import { AUnderline, LinkUnderline } from "./components/UnderlineLinks"
 
 export const About = () => {
   return (
@@ -19,8 +20,8 @@ export const About = () => {
           well in a team.
         </p>
         <p>
-          I am currently a software engineer at Xero. I have also had other
-          jobs, such as working at Drone Deploy, Bricks4Kidz, Ooma and FlexWare.
+          I am currently a software engineer at Gram Games. I have also had other
+          jobs, such as working at Xero Drone Deploy, Bricks4Kidz, Ooma and FlexWare.
           These have mainly been software jobs, but I have also gained
           experience teaching, working with electrical systems and a little bit
           of robotics.
@@ -33,8 +34,8 @@ export const About = () => {
         </p>
         <h2>Background</h2>
         <p>
-          I was born in New Zealand and enjoy travelling. I also enjoy
-          badminton, skiing, art and piano. 
+          I was born in New Zealand, but recently moved to London.  
+          I enjoy travelling, badminton, skiing, art and piano. 
         </p>
         <h2>Experience</h2>
         <p>I have worked at several internships, done many hackathons and personal projects.  
