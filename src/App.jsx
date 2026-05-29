@@ -17,6 +17,7 @@ import { OpenEntrance } from "./pages/amazonian mystery/OpenEntrance"
 import { Photography } from "./pages/hobbies/Photography"
 import { Piano } from "./pages/hobbies/Piano"
 import { Projects } from "./pages/experience/Projects"
+import React from 'react'
 import { SolvedMystery } from "./pages/amazonian mystery/SolvedMystery"
 import { Travel } from "./pages/hobbies/travel/Travel"
 import { Volunteer } from "./pages/experience/Volunteer"
