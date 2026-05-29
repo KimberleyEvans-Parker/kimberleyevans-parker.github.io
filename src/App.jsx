@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import React from 'react'
+
 import { About } from "./pages/About"
 import { Art } from "./pages/hobbies/Art"
 import { Awards } from "./pages/experience/Awards"
@@ -17,6 +17,7 @@ import { OpenEntrance } from "./pages/amazonian mystery/OpenEntrance"
 import { Photography } from "./pages/hobbies/Photography"
 import { Piano } from "./pages/hobbies/Piano"
 import { Projects } from "./pages/experience/Projects"
+import React from 'react'
 import { SolvedMystery } from "./pages/amazonian mystery/SolvedMystery"
 import { Travel } from "./pages/hobbies/travel/Travel"
 import { Volunteer } from "./pages/experience/Volunteer"
