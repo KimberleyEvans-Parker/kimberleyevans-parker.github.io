@@ -11,6 +11,18 @@ const OomaImages = importAllPhotosFromFolder("work/No.8 Wireless")
 export const workData: ContentItemType[] = [
     {
         heading: "Software Engineer",
+        subheading: "Gram Games",
+        dates: { start: new Date(2025, 11) },
+        description: `I am working at Gram Games as a software engineer.
+            Here, I am creating an internal website for others in the company to 
+            create and edit offers and events that are shown to customers in the game.`,
+        technologies: [
+            TECHNOLOGIES.REACT,
+            TECHNOLOGIES.TS,
+        ]
+    },
+    {
+        heading: "Software Engineer",
         subheading: "Xero",
         dates: { start: new Date(2022, 1), end: new Date(2025, 3) },
         description: `I started in the Xero grad programme, learning a variety of skills in fullstack, front end, back end, Android and iOS.  
