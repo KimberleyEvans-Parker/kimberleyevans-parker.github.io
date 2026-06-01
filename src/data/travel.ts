@@ -36,7 +36,11 @@ export const travelLocations: TravelLocation[] = [
   { country: Country.Italy, city: "Rome", position: [41.90, 12.49], description: "Colosseum, Vatican, and Renaissance art." },
   { country: Country.Netherlands, city: "Amsterdam", position: [52.37, 4.90], description: "Canals, museums, and the red light district." },
   { country: Country.Netherlands, city: "Rotterdam", position: [51.92, 4.48], description: "Windmills, clogs and tulips." },
-  { country: Country.Spain, city: "Barcelona", position: [41.38, 2.17], description: "Gaudi architecture, tapas, and beaches." },
+  { country: Country.Spain, city: "Barcelona", position: [41.38, 2.17], description: "Gaudi architecture, tapas and beaches." },
+  { country: Country.Switzerland, city: "Zurich", position: [47.37, 8.54], description: "Lakes, mountains and Swiss chocolate." },
+  { country: Country.Austria, city: "Vienna", position: [48.21, 16.37], description: "Cute houses and classical music." },
+  { country: Country.Hungary, city: "Budapest", position: [47.50, 19.04], description: "Castle lookout, ceramics and langos." },
+  { country: Country.Slovakia, city: "Bratislava", position: [48.15, 17.11], description: "Castle, old town and Danube river." },
   
   // Asia
   { country: Country.Japan, city: "Tokyo", position: [35.6762, 139.6503], description: "Sushi, neon lights, and shrines." },
