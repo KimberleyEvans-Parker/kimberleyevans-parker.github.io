@@ -32,6 +32,7 @@ export const travelLocations: TravelLocation[] = [
   { country: Country.Luxembourg, city: "Luxembourg", position: [49.61, 6.13], description: "Castles, forests, and European charm." },
   { country: Country.Germany, city: "Berlin", position: [52.52, 13.40], description: "History, culture, and vibrant nightlife." },
   { country: Country.Germany, city: "Munich", position: [47.55, 10.75], description: "Fairy-tale castle in the Bavarian Alps." },
+  { country: Country.Spain, city: "Valencia", position: [39.47, -0.38], description: "City of Arts and Sciences, paella, and beaches." },
   { country: Country.Portugal, city: "Lisbon", position: [38.72, -9.14], description: "Hills, trams, and pastel de nata." },
   { country: Country.Italy, city: "Rome", position: [41.90, 12.49], description: "Colosseum, Vatican, and Renaissance art." },
   { country: Country.Sweden, city: "Gothenberg", position: [57.70, 11.97], description: "Winter, Liseberg Park and New Year fireworks" },
