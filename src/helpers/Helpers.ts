@@ -17,10 +17,22 @@ export const getIndexOfImage = (allImages: string[], name: string) => {
   return -1
 }
 
+function removepath(path: string) {
+  const pathParts = path.split('/')
+  return pathParts[pathParts.length - 1]
+}
+
+function removeExtension(fileName: string) {
+  return fileName.split('.')[0]
+}
+
+function removeMinifiedSuffix(fileName: string) {
+  return fileName.replace(/-[a-zA-Z0-9]{8}(?=\.[a-zA-Z0-9]+$)/, '')
+}
+
 export const getImageName = (image: string) => {
-  const path = image.split("/")
-  const fileName = path[path.length - 1].split(".")[0]
-  return decodeURIComponent(fileName)
+  const name = removeMinifiedSuffix(removeExtension(removepath(image)))
+  return decodeURIComponent(name)
 }
 
 export const isImageOnLeft = (index: number) => {
