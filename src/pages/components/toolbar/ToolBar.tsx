@@ -5,7 +5,7 @@ import { Filter } from "./Filter"
 import { Search } from "./Search"
 import { Sort } from "./Sort"
 import { Order } from "./Order"
-import "./tool-bar.css"
+import "./tool-bar.module.css"
 
 interface SortFilterSearchProps {
     projectData: ContentItemType[]

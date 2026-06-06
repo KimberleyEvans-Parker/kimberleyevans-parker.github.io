@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { TECHNOLOGIES } from "../../../helpers/Constants"
 import { ContentItemType } from "../../../data/types"
 
-import "./filter.css"
+import "./filter.module.css"
 
 interface FilterProps {
     projectData: ContentItemType[]
