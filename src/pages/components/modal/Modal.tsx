@@ -1,4 +1,4 @@
-import "./modal.css"
+import "./modal.module.css"
 
 import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants"
 import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors"
