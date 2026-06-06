@@ -1,5 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import "./content-item.css"
+import "./content-item.module.css"
 
 import { ContentItemType } from "../../../data/types"
 import { ImageContent } from "./ImageContent"

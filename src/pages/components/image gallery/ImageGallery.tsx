@@ -1,5 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import "./image-gallery.css"
+import "./image-gallery.module.css"
 
 import { ImageGalleryCollumn } from "./ImageGalleryCollumn"
 import { Modal } from "../modal/Modal"
