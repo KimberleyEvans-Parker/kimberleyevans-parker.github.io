@@ -1,5 +1,5 @@
-import "./navigation.css"
-import "./menu-icon.css"
+import "./navigation.module.css"
+import "./menu-icon.module.css"
 
 import React, { useState } from "react"
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "./tiles.css"
+import "./tiles.module.css"
 
 interface TileProps {
     animationDelay: string
