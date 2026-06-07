@@ -1,4 +1,5 @@
 import { SubNavbarLink } from "./SubNavbarLink"
+import navStyles from "./navigation.module.css"
 
 interface SubNavbarProps {
   headings: string[]
@@ -7,9 +8,9 @@ interface SubNavbarProps {
 
 export const SubNavbar = ({ headings, section }: SubNavbarProps) => {
   return (
-    <nav className="subnav slide-in">
+    <nav className={`${navStyles.subnav} ${navStyles['slide-in']}`}>
       <div
-        className="subnav-container navbar-container"
+        className={`${navStyles['subnav-container']} ${navStyles['navbar-container']}`}
       >
         <ul>
           {headings.map((heading) => {
