@@ -1,4 +1,4 @@
-import "./modal.css"
+import styles from "./modal.module.css"
 
 import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants"
 import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors"
@@ -26,11 +26,11 @@ export const Modal = () => {
   if (images.length === 0) return <></>
 
   return (
-    <div className="modal-background">
-      <p className="close" onClick={handleResetImage}>
+    <div className={styles['modal-background']}>
+      <p className={styles.close} onClick={handleResetImage}>
         &#10006;
       </p>
-      <div className="modal-content">
+      <div className={styles['modal-content']}>
         <Carousel
           showIndicators={images.length > 1}
           showStatus={images.length > 1}
@@ -53,13 +53,13 @@ export const Modal = () => {
                 autoPlay
                 loop
                 src={image}
-                className="modal-image"
+                className={styles['modal-image']}
               />
             ) : (
-              <img alt={caption + name} src={image} className="modal-image" />
+              <img alt={caption + name} src={image} className={styles['modal-image']} />
             )}
               {caption && (
-                <div className="caption">
+                <div className={styles.caption}>
                   <h2>{caption}</h2>
                 </div>
               )}
