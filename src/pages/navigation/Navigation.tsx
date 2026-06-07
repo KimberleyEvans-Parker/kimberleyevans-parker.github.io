@@ -1,5 +1,4 @@
-import "./navigation.module.css"
-import "./menu-icon.module.css"
+import navStyles from "./navigation.module.css"
 
 import React, { useState } from "react"
 
@@ -37,9 +36,9 @@ export const Navigation = () => {
   const isSmallScreen = dimensions.width < SMALL_SCREEN
 
   return (
-    <nav className="slide-in">
+    <nav className={navStyles['slide-in']}>
       <div
-        className="navbar-container"
+        className={navStyles['navbar-container']}
       >
         <ul>
           <Link to="/" onClick={() => setDropdownOpen(false)}>
@@ -52,7 +51,7 @@ export const Navigation = () => {
         </ul>
         {(dropdownOpen || !isSmallScreen) && (
           <ul
-            className="navbar-rightside dropdown-item dropdown-container"
+            className={`${navStyles['navbar-rightside']} dropdown-item ${navStyles['dropdown-container']}`}
           >
             <NavbarLink
               heading="About"
@@ -84,13 +83,13 @@ export const Navigation = () => {
             <NavbarExternalLink
               url="https://github.com/KimberleyEvans-Parker"
               ariaLabel="GitHub"
-              className="fa-github"
+              className={navStyles['fa-github']}
               setDropdownOpen={setDropdownOpen}
             />
             <NavbarExternalLink
               url="https://www.linkedin.com/in/kimberleyevans-parker/"
               ariaLabel="LinkedIn"
-              className="fa-linkedin"
+              className={navStyles['fa-linkedin']}
               setDropdownOpen={setDropdownOpen}
             />
           </ul>
