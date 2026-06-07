@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { CodeInput } from "./CodeInput"
-import "./styles.module.css"
+import styles from "./styles.module.css"
 
 const Puzzle = (clue: string, correctAnswer: string[], wait?: number) => {
   const [answeredCorrectly, setAnsweredCorrectly] = useState(false)
@@ -39,7 +39,7 @@ export const OpenEntrance = () => {
   }
   
     return (
-      <div className="amazonian-background">
+      <div className={styles['amazonian-background']}>
         <div className="content-container container-no-nav">
           <h1>The Amazon Entrance</h1>
           <div className="fade left">
@@ -80,7 +80,7 @@ export const OpenEntrance = () => {
               </p>
           
               <Link to="GetArtefact">
-                <button className="ancient-stone">
+                <button className={styles['ancient-stone']}>
                     Enter ruins
                 </button>
               </Link>

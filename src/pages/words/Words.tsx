@@ -1,7 +1,7 @@
 import React from "react"
 import WordList from "../../assets/words.json"
 
-import "./words.module.css"
+import styles from "./words.module.css"
 
 export const Words = () => {
 
@@ -20,10 +20,10 @@ export const Words = () => {
 
   return (
     <div className="content-container">
-      <div className="fade left big-word">{word1}</div>
-      <div className="fade left big-word">{word2}</div>
-      <div className="fade left big-word">{word3}</div>
-      <button className="regenerate" onClick={regenerate}>
+      <div className={`fade left ${styles['big-word']}`}>{word1}</div>
+      <div className={`fade left ${styles['big-word']}`}>{word2}</div>
+      <div className={`fade left ${styles['big-word']}`}>{word3}</div>
+      <button className={styles.regenerate} onClick={regenerate}>
         Regenerate
       </button>
     </div>

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { CodeInput } from "./CodeInput"
-import "./styles.module.css"
+import styles from "./styles.module.css"
 
 const Puzzle = (clue: string, correctAnswer: string[], wait?: number) => {
   const [answeredCorrectly, setAnsweredCorrectly] = useState(false)
@@ -74,7 +74,7 @@ export const GetArtefact = () => {
               </p>
           
               <Link to="SolvedMystery">
-                <button className="ancient-stone">
+                          <button className={styles['ancient-stone']}>
                     Get Artefact
                 </button>
               </Link>
