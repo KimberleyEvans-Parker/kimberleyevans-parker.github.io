@@ -1,4 +1,5 @@
 import React from "react"
+import styles from "./image-gallery.module.css"
 
 interface ImageItemProps {
   name: string
@@ -24,7 +25,7 @@ export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
   
   return (
     <div 
-      className={`image-gallery-item ${isVisible ? "is-visible" : ""} `}
+      className={`${styles['image-gallery-item']} ${isVisible ? styles['is-visible'] : ''}`}
       ref={domRef}
       style={{
         WebkitAnimationDelay: animationDelay,
@@ -40,13 +41,13 @@ export const ImageItem = ({name, image, animationDelay}: ImageItemProps) => {
           loop
           src={image}
           aria-label={name}
-          className="image-gallery-image image-gallery-animation"
+          className={`${styles['image-gallery-image']} ${styles['image-gallery-animation']}`}
         />
       ) : (
         <img
           alt={name}
           src={image}
-          className="image-gallery-image image-gallery-animation"
+          className={`${styles['image-gallery-image']} ${styles['image-gallery-animation']}`}
           loading="lazy"
         />
       )}

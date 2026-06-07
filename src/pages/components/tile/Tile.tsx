@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "./tiles.module.css"
+import styles from "./tiles.module.css"
 
 interface TileProps {
     animationDelay: string
@@ -10,15 +10,15 @@ interface TileProps {
 export const Tile = ({ animationDelay, imgSrc, title }: TileProps) => {
     return (
         <div
-            className="columns zoom-in"
+            className={`${styles.columns} zoom-in`}
             style={{
                 animationDelay: animationDelay,
             }}
         >
             <Link to={title.toLowerCase()}>
-                <img src={imgSrc} alt={title} className="tile-img" />
-                <h3 className="centered">{title}</h3>
-                <div className="layer" />
+                <img src={imgSrc} alt={title} className={styles['tile-img']} />
+                <h3 className={styles.centered}>{title}</h3>
+                <div className={styles.layer} />
             </Link>
         </div>
     )
