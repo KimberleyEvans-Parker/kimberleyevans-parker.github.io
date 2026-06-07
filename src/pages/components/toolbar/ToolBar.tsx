@@ -5,7 +5,7 @@ import { Filter } from "./Filter"
 import { Search } from "./Search"
 import { Sort } from "./Sort"
 import { Order } from "./Order"
-import "./tool-bar.module.css"
+import styles from "./tool-bar.module.css"
 
 interface SortFilterSearchProps {
     projectData: ContentItemType[]
@@ -37,7 +37,7 @@ export const ToolBar = ({
 
     return (
       dimensions.width > X_SMALL_SCREEN && dimensions.width < MEDIUM_SCREEN ? 
-        <div className="tool-bar-container">
+        <div className={styles['tool-bar-container']}>
           <div>
             <Sort
                 projectData={projectData}
@@ -60,7 +60,7 @@ export const ToolBar = ({
           </div>
         </div>
         :
-        <div className="tool-bar-container">
+        <div className={styles['tool-bar-container']}>
             <Sort
                 projectData={projectData}
                 setSortedProjects={setSortedProjects}

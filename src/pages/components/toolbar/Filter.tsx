@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { TECHNOLOGIES } from "../../../helpers/Constants"
 import { ContentItemType } from "../../../data/types"
 
-import "./filter.module.css"
+import styles from "./filter.module.css"
 
 interface FilterProps {
     projectData: ContentItemType[]
@@ -53,7 +53,7 @@ export const Filter = ({ projectData, setSortedProjects }: FilterProps) => {
                 />
                 {open && (
                     <ul
-                        className="filter-list"
+                        className={styles['filter-list']}
                     >
                         {filterOptions.length === 0 && (
                             <li>No technologies found</li>
