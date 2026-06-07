@@ -12,6 +12,11 @@ export default defineConfig({
       },
     },
   ],
+  css: {
+    modules: {
+      generateScopedName: '[local]',
+    },
+  },
   test: {
     environment: 'jsdom',
     setupFiles: ['./src/setupTests.ts'],

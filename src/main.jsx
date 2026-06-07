@@ -2,12 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom"
-import "./styles/global.css"
-import "./styles/fireflies.css"
-import "./styles/animations.css"
-import "./styles/fade animations.css"
-import "./styles/link.css"
-import "./styles/bullet points.css"
+import "./styles/global.module.css"
+import "./styles/fireflies.module.css"
+import "./styles/animations.module.css"
+import "./styles/fade animations.module.css"
+import "./styles/link.module.css"
+import "./styles/bullet points.module.css"
 import * as serviceWorker from "./serviceWorker"
 import { Provider } from 'react-redux'
 import { store } from './redux/store'

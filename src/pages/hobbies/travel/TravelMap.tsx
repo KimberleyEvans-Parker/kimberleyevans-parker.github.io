@@ -1,5 +1,5 @@
 import 'leaflet/dist/leaflet.css'
-import './map.css'
+import styles from './map.module.css'
 
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
@@ -60,7 +60,7 @@ export const TravelMap = () => {
         zoom={2}
         minZoom={mapTerrain.minZoom}
         maxZoom={mapTerrain.maxZoom}
-        className='map-container'
+        className={styles['map-container']}
       >
 
         <TileLayer

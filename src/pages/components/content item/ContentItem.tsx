@@ -1,5 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import "./content-item.css"
+import styles from "./content-item.module.css"
 
 import { ContentItemType } from "../../../data/types"
 import { ImageContent } from "./ImageContent"
@@ -35,7 +35,7 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
 
   return (
     <div
-      className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+      className={`${styles['fade-in-section']} ${isVisible ? styles['is-visible'] : ''}`}
       ref={domRef}
       id={contentData.heading}
     >
@@ -59,8 +59,8 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
         )
         }
 
-        <div className={`content-item-container ${imgOnLeft ? "image-first" : ""}`}>
-          <div className="text-content">
+        <div className={styles['content-item-container']}>
+          <div className={styles['text-content']}>
             <TextContent
               dates={contentData.dates}
               description={contentData.description}
@@ -70,7 +70,7 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
             />
           </div>
           {contentData.images && (
-            <div className="image-content">
+            <div className={styles['image-content']}>
               <ImageContent images={contentData.images} heading={contentData.heading} />
             </div>
           )}

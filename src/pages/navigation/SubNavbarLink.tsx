@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
+import navStyles from "./navigation.module.css"
 
 interface SubNavbarLinkProps {
   section?: string
@@ -12,7 +13,7 @@ export const SubNavbarLink = ({ section, heading }: SubNavbarLinkProps) => {
   return (
     <Link
       aria-label={heading}
-      className="nav-link"
+      className={navStyles['nav-link']}
       to={url}
     >
       <li
