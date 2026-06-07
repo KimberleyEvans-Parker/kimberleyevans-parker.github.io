@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { ContentItemType } from "../../../data/types"
-import "./sort.module.css"
+import styles from "./sort.module.css"
 import { sortByEndDate, sortByName, sortByStartDate, sortByTeamSize, sortByTechnology } from "./SortHelper"
 
 
@@ -46,7 +46,7 @@ export const Sort = ({projectData, setSortedProjects}: SortProps) => {
     , [projectData, sortBy, setSortedProjects, sortingOptions.startDate, sortingOptions.endDate, sortingOptions.name, sortingOptions.teamSize, sortingOptions.technology])
 
     return (
-        <div className="tool-item fade left">
+        <div className={`${styles['sort-container']} tool-item fade left`}>
             <label htmlFor="sort">Sort By</label>
             <select id="sort" value={sortBy} onChange={handleSortChange}>
                 {Object.values(sortingOptions).map((option) => (
