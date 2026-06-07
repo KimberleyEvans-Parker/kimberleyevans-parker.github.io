@@ -1,4 +1,6 @@
 import { ImageItem } from "./ImageItem"
+import styles from "./image-gallery.module.css"
+import modalStyles from "../modal/modal.module.css"
 import { useDispatch } from "react-redux"
 import { ModalState } from "../../../redux/state"
 import { setImage } from "../../../redux/actions"
@@ -28,7 +30,7 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
 
 
   return (
-    <div className="image-gallery-column">
+    <div className={styles['image-gallery-column']}>
       {images.map((imageData, imageIndex) => {
         const image = imageData.name
         const animationDelay = imageData.index * 0.15 + "s"
@@ -38,7 +40,7 @@ export const ImageGalleryCollumn = ({ allImages, images }: ImageGalleryCollumnPr
           <button
             onClick={() => openModal(name)}
             key={name}
-            className="modal-thumbnail"
+            className={modalStyles['modal-thumbnail']}
           >
             <ImageItem
               name={name}
