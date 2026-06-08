@@ -1,10 +1,10 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import styles from "./content-item.module.css"
 
 import { ContentItemType } from "../../../data/types"
 import { ImageContent } from "./ImageContent"
 import React from "react"
 import { TextContent } from "./TextContent"
+import styles from "./content-item.module.css"
 
 interface ContentItemProps {
   contentData?: ContentItemType

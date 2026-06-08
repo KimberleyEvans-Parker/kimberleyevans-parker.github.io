@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
-import { ContentItemType } from "../../../data/types"
-import styles from "./sort.module.css"
 import { sortByEndDate, sortByName, sortByStartDate, sortByTeamSize, sortByTechnology } from "./SortHelper"
 
+import { ContentItemType } from "../../../data/types"
+import styles from "./sort.module.css"
 
 interface SortProps {
     projectData: ContentItemType[]

@@ -1,5 +1,3 @@
-import navStyles from "./navigation.module.css"
-
 import React, { useState } from "react"
 
 import { HamburgerIcon } from "./HamburberIcon"
@@ -7,6 +5,7 @@ import { Link } from "react-router-dom"
 import { NavbarExternalLink } from "./NavbarExternalLink"
 import { NavbarLink } from "./NavbarLink"
 import { SMALL_SCREEN } from "../../helpers/Constants"
+import navStyles from "./navigation.module.css"
 
 export const Navigation = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false)

@@ -1,4 +1,5 @@
 import { MapTerrain, mapTerrains } from "../../../data/maps"
+
 import styles from './map.module.css'
 
 interface SelectMapTerrainProps {

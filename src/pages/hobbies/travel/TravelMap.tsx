@@ -1,5 +1,4 @@
 import 'leaflet/dist/leaflet.css'
-import styles from './map.module.css'
 
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
@@ -13,6 +12,7 @@ import markerIcon from 'leaflet/dist/images/marker-icon.png'
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png'
 import markerShadow from 'leaflet/dist/images/marker-shadow.png'
 import { setImage } from '../../../redux/actions'
+import styles from './map.module.css'
 import { travelLocations } from '../../../data/travel'
 import { useDispatch } from 'react-redux'
 import { useState } from 'react'

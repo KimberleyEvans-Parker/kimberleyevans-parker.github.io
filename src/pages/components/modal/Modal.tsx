@@ -1,11 +1,10 @@
-import styles from "./modal.module.css"
-
 import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants"
 import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors"
 
 import { Carousel } from "react-responsive-carousel"
 import { getImageName } from "../../../helpers/Helpers"
 import { resetImage } from "../../../redux/actions"
+import styles from "./modal.module.css"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 
