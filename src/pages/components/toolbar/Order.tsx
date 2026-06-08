@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { ContentItemType } from "../../../data/types"
-import styles from "./tool-bar.module.css"
+import "./sort.module.css"
 
 
 interface OrderProps {
@@ -29,7 +29,7 @@ export const Order = ({projectData, setSortedProjects}: OrderProps) => {
     , [projectData, ascending, setSortedProjects])
 
     return (
-        <div className={`${styles['tool-item']} fade left ${styles['order-field']}`}>
+        <div className="tool-item fade left order-field">
             <label htmlFor="order">Order</label>
             <select 
                 id="order" 
