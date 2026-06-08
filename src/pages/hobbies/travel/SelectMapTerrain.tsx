@@ -1,5 +1,4 @@
 import { MapTerrain, mapTerrains } from "../../../data/maps"
-import styles from './map.module.css'
 
 interface SelectMapTerrainProps {
     mapTerrain: MapTerrain
@@ -8,12 +7,12 @@ interface SelectMapTerrainProps {
 
 export const SelectMapTerrain = ({ mapTerrain, setMapTerrain }: SelectMapTerrainProps) => {
     return (
-        <div className={styles['map-terrain-container']}>
+        <div className="map-terrain-container">
           <label htmlFor="mapTerrain">Select Map Terrain:</label>
           <select
             id="mapTerrain"
             value={mapTerrain.name}
-            className={styles['map-terrain-selector']}
+            className='map-terrain-selector'
             onChange={(e) => {
               const selectedTerrain = mapTerrains.find(t => t.name === e.target.value)
               if (selectedTerrain) {

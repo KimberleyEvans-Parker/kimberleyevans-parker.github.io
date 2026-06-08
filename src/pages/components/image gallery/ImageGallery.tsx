@@ -1,5 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import styles from "./image-gallery.module.css"
+import "./image-gallery.module.css"
 
 import { ImageGalleryCollumn } from "./ImageGalleryCollumn"
 import { Modal } from "../modal/Modal"
@@ -57,12 +57,12 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
   return (
     <>
       {dimensions.width < SMALL_SCREEN ? (
-        <div className={styles['image-gallery-container']}>
+        <div className="image-gallery-container">
             <ImageGalleryCollumn allImages={images} images={l2_1} />
             <ImageGalleryCollumn allImages={images} images={l2_2} />
         </div>
       ) : (
-        <div className={styles['image-gallery-container']}>
+        <div className="image-gallery-container">
             <ImageGalleryCollumn allImages={images} images={l3_1} />
             <ImageGalleryCollumn allImages={images} images={l3_2} />
             <ImageGalleryCollumn allImages={images} images={l3_3} />
