@@ -1,10 +1,11 @@
-import React from "react"
-import { ContentItemType } from "../../../data/types"
 import { MEDIUM_SCREEN, X_SMALL_SCREEN } from "../../../helpers/Constants"
+
+import { ContentItemType } from "../../../data/types"
 import { Filter } from "./Filter"
+import { Order } from "./Order"
+import React from "react"
 import { Search } from "./Search"
 import { Sort } from "./Sort"
-import { Order } from "./Order"
 import styles from "./tool-bar.module.css"
 
 interface SortFilterSearchProps {

@@ -1,6 +1,5 @@
 import React from "react"
 import WordList from "../../assets/words.json"
-
 import styles from "./words.module.css"
 
 export const Words = () => {

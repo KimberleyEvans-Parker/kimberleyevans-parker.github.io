@@ -1,8 +1,7 @@
-import { useState } from "react"
-import { Link } from "react-router-dom"
-
 import { CodeInput } from "./CodeInput"
+import { Link } from "react-router-dom"
 import styles from "./styles.module.css"
+import { useState } from "react"
 
 export const LocateEntrance = () => {
     const [foundLocation, setFoundLocation] = useState(false)
