@@ -2,13 +2,13 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 import { CodeInput } from "./CodeInput"
-import styles from "./styles.module.css"
+import "./styles.module.css"
 
 export const LocateEntrance = () => {
     const [foundLocation, setFoundLocation] = useState(false)
   
     return (
-      <div className={styles['amazonian-background']}>
+      <div className="amazonian-background">
         <div className="content-container container-no-nav">
           <h1>Find the Ancient Amazon Civillisation</h1>
           <CodeInput 
@@ -30,7 +30,7 @@ export const LocateEntrance = () => {
               <br />
           
               <Link to="AmazonianMystery/OpenEntrance">
-                <button className={styles['ancient-stone']}>
+                <button className="ancient-stone">
                     Go to part 2
                 </button>
               </Link>
