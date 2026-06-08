@@ -1,5 +1,3 @@
-import navStyles from "./navigation.module.css"
-
 interface NavbarExternalLinkProps {
   url: string
   ariaLabel: string
@@ -15,7 +13,7 @@ export const NavbarExternalLink = ({ url, ariaLabel, className, setDropdownOpen 
       onClick={() => setDropdownOpen(false)}
       aria-label={ariaLabel}
     >
-      <li className={navStyles['dropdown-item']}>
+      <li className="dropdown-item">
         <i className={`fa ${className}`} aria-hidden="true"></i>
       </li>
     </a>

@@ -1,5 +1,3 @@
-import navStyles from "./navigation.module.css"
-
 interface DropdownIconProps {
     isActive?: boolean
     heading: string
@@ -15,16 +13,16 @@ export const DropdownIcon = ({ isActive, heading, subheadings, subDropdownOpen, 
     return (
         <li
             aria-label={`Toggle ${heading} submenu`}
-            className={`${navStyles['dropdown-icon']} ${isActive ? navStyles.active : ''}`}
+            className={`dropdown-icon ${isActive ? "active" : ""}`}
             onClick={(e) => {
                 e.preventDefault()
                 e.stopPropagation()
                 setSubDropdownOpen(!subDropdownOpen)
             }}
         >
-            <div className={`${subDropdownOpen ? navStyles['dropdown-icon-open'] : navStyles['dropdown-icon-closed']}`}>
-                <div className={navStyles.line1}></div>
-                <div className={navStyles.line2}></div>
+            <div className={`${subDropdownOpen ? "dropdown-icon-open" : "dropdown-icon-closed"}`}>
+                <div className="line1"></div>
+                <div className="line2"></div>
             </div>
         </li >
     )

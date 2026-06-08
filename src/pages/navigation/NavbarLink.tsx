@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { DropdownIcon } from "./DropdownIcon"
-import navStyles from "./navigation.module.css"
 
 interface NavbarLinkProps {
   heading: string
@@ -17,16 +16,16 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
 
   return (
     <>
-      <div className={navStyles['dropdown-row']}>
+      <div className="dropdown-row">
         <Link
-          className={navStyles['nav-link']}
+          className="nav-link"
           to={url}
           onClick={() => setDropdownOpen(false)}
         >
           <li
-            className={`${navStyles['dropdown-item']} ${isActive ? navStyles.active : ''}`}
+            className={`dropdown-item ${isActive && "active" }`}
           >
-            <span className={`${subheadings ? navStyles['has-subheadings'] : ''}`}>
+            <span className={`${subheadings && "has-subheadings"}`}>
               {heading}
             </span>
           </li>
@@ -48,10 +47,12 @@ export const NavbarLink = ({ heading, setDropdownOpen, subheadings }: NavbarLink
                 key={subheading}
                 to={`${url}/${subheading.toLowerCase()}`}
                 onClick={() => setDropdownOpen(false)}
-                  className={navStyles['sub-dropdown-item']}
+                className="sub-dropdown-item"
               >
                 <li
-                    className={`${navStyles['dropdown-item']} ${navStyles['sub-dropdown-item']} ${location.pathname.startsWith(url) ? navStyles.active : ''}`}
+                  className={`dropdown-item sub-dropdown-item
+                    ${location.pathname.startsWith(url) ? "active" : ""}
+                  `}
                 >
                   {subheading}
                 </li>
