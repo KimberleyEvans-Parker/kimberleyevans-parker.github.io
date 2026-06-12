@@ -1,8 +1,11 @@
-import { ImageItem } from "./ImageItem"
-import { useDispatch } from "react-redux"
-import { ModalState } from "../../../redux/state"
-import { setImage } from "../../../redux/actions"
 import { getImageName, getIndexOfImage } from "../../../helpers/Helpers"
+
+import { ImageItem } from "./ImageItem"
+import { ModalState } from "../../../redux/state"
+import modalStyles from "../modal/modal.module.css"
+import { setImage } from "../../../redux/actions"
+import styles from "./image-gallery.module.css"
+import { useDispatch } from "react-redux"
 
 type imageData = {name: string, index: number}
 

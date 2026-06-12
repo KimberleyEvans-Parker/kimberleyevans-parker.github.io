@@ -1,6 +1,8 @@
-import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
+
 import { DropdownIcon } from "./DropdownIcon"
+import navStyles from "./navigation.module.css"
+import { useState } from "react"
 
 interface NavbarLinkProps {
   heading: string

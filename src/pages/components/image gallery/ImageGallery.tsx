@@ -5,6 +5,7 @@ import { ImageGalleryCollumn } from "./ImageGalleryCollumn"
 import { Modal } from "../modal/Modal"
 import React from "react"
 import { SMALL_SCREEN } from "../../../helpers/Constants"
+import styles from "./image-gallery.module.css"
 
 interface ImageGalleryProps {
   images: string[]

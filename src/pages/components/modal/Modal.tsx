@@ -6,6 +6,7 @@ import { selectModalCaption, selectModalImages, selectModalSelectedImage } from 
 import { Carousel } from "react-responsive-carousel"
 import { getImageName } from "../../../helpers/Helpers"
 import { resetImage } from "../../../redux/actions"
+import styles from "./modal.module.css"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 

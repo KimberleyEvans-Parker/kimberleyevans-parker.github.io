@@ -1,7 +1,7 @@
+import "./words.module.css"
+
 import React from "react"
 import WordList from "../../assets/words.json"
-
-import "./words.module.css"
 
 export const Words = () => {
 

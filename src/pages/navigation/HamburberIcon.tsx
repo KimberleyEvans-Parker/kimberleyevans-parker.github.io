@@ -1,3 +1,6 @@
+import menuStyles from "./menu-icon.module.css"
+import navStyles from "./navigation.module.css"
+
 interface HamburgerIconProps {
     dropdownOpen: boolean
     setDropdownOpen: (open: boolean) => void

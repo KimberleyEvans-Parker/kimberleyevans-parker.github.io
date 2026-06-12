@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
+
 import { ContentItemType } from "../../../data/types"
 import "./sort.module.css"
-
 
 interface OrderProps {
     projectData: ContentItemType[]

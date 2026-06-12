@@ -1,7 +1,7 @@
-import { useState } from "react"
-import { Link } from "react-router-dom"
 import { CodeInput } from "./CodeInput"
-import "./styles.module.css"
+import { Link } from "react-router-dom"
+import styles from "./styles.module.css"
+import { useState } from "react"
 
 const Puzzle = (clue: string, correctAnswer: string[], wait?: number) => {
   const [answeredCorrectly, setAnsweredCorrectly] = useState(false)
