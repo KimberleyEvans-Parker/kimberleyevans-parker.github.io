@@ -1,3 +1,5 @@
+import '../src/styles/fireflies.css';
+
 import { Outlet, useLocation } from "react-router-dom"
 
 import { Modal } from "./pages/components/modal/Modal"
