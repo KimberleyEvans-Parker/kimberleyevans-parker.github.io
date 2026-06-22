@@ -5,7 +5,10 @@
   width: 0.4vw;
   height: 0.4vw;
   margin: -0.2vw 0 0 9.8vw;
-  animation: ease 200s alternate infinite;
+  animation-duration: 200s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
   pointer-events: none;
 }
 .firefly::before,
@@ -20,13 +23,19 @@
 .firefly::before {
   background: black;
   opacity: 0.4;
-  animation: drift ease alternate infinite;
+  animation-name: drift;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 .firefly::after {
   background: white;
   opacity: 0;
   box-shadow: 0 0 0vw 0vw var(--firefly-colour);
-  animation: drift ease alternate infinite, flash ease infinite;
+  animation-name: drift, flash;
+  animation-timing-function: ease, ease;
+  animation-direction: alternate, normal;
+  animation-iteration-count: infinite, infinite;
 }
 
 .firefly:nth-child(1) {
