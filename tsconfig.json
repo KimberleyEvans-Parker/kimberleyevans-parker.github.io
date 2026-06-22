@@ -14,7 +14,7 @@
     "types": ["vite/client", "vitest/globals"],
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "node16",
     "moduleResolution": "node16",
     "resolveJsonModule": true,
     "isolatedModules": true,
