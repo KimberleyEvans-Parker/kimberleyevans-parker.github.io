@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react'
 import App from './App.jsx'
 import { MemoryRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { store } from './redux/store.tsx'
+import { store } from './redux/store.ts'
 
 test('renders heading', async () => {
   render(
