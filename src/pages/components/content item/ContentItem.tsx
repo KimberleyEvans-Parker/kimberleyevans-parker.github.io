@@ -15,7 +15,7 @@ interface ContentItemProps {
 export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentItemProps) => {
   // for loading a section when it scrolls into view
   const [isVisible, setVisible] = React.useState(true)
-  const domRef = React.useRef(null)
+  const domRef = React.useRef<HTMLDivElement | null>(null)
   React.useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting))
@@ -35,7 +35,7 @@ export const ContentItem = ({ contentData, animationDelay, imgOnLeft }: ContentI
 
   return (
     <div
-      className={`${styles['fade-in-section']} ${isVisible ? styles['is-visible'] : ''}`}
+      className={`fade-in-section${isVisible ? ' is-visible' : ''}`}
       ref={domRef}
       id={contentData.heading}
     >
