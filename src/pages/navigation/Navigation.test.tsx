@@ -1,12 +1,12 @@
-import { render, screen } from "@testing-library/react"
-import { userEvent } from "@testing-library/user-event"
 import { BrowserRouter, MemoryRouter } from "react-router-dom"
-import { Navigation } from "./Navigation"
-import { SubNavbar } from "./SubNavbar"
-import App from "../../App"
-import { Provider } from "react-redux"
-import { store } from "../../redux/store"
+import { render, screen } from "@testing-library/react"
 
+import App from "../../App.jsx"
+import { Navigation } from "./Navigation.tsx"
+import { Provider } from "react-redux"
+import { SubNavbar } from "./SubNavbar.tsx"
+import { store } from "../../redux/store.tsx"
+import { userEvent } from "@testing-library/user-event"
 
 const headings = [
     "Kimberley Evans-Parker",

@@ -2,9 +2,9 @@ import '../src/styles/fireflies.css';
 
 import { Outlet, useLocation } from "react-router-dom"
 
-import { Modal } from "./pages/components/modal/Modal"
-import { Navigation } from "./pages/navigation/Navigation"
-import { SubNavbar } from "./pages/navigation/SubNavbar"
+import { Modal } from "./pages/components/modal/Modal.tsx"
+import { Navigation } from "./pages/navigation/Navigation.tsx"
+import { SubNavbar } from "./pages/navigation/SubNavbar.tsx"
 
 const Layout = () => {
   const location = useLocation()

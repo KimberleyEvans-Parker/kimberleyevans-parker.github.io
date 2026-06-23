@@ -1,11 +1,11 @@
-import { xerGeneralDescriptions, xeroData } from "../../data/xero"
+import { xerGeneralDescriptions, xeroData } from "../../data/xero.ts"
 
-import { ContentItem } from "../components/content item/ContentItem"
-import { DateSubheading } from "../components/content item/DateSubheading"
-import { Modal } from "../components/modal/Modal"
-import { awardsData } from "../../data/awards"
-import { isImageOnLeft } from "../../helpers/Helpers"
-import { workData } from "../../data/work"
+import { ContentItem } from "../components/content item/ContentItem.tsx"
+import { DateSubheading } from "../components/content item/DateSubheading.tsx"
+import { Modal } from "../components/modal/Modal.tsx"
+import { awardsData } from "../../data/awards.ts"
+import { isImageOnLeft } from "../../helpers/Helpers.ts"
+import { workData } from "../../data/work.ts"
 
 export const Xero = () => {
     let animationDelay = 0

@@ -1,7 +1,6 @@
-import { TECHNOLOGIES } from "../helpers/Constants"
-import { importAllPhotosFromFolder } from "../helpers/Helpers"
-import { ContentItemType } from "./types"
-
+import { ContentItemType } from "./types.ts"
+import { TECHNOLOGIES } from "../helpers/Constants.ts"
+import { importAllPhotosFromFolder } from "../helpers/Helpers.ts"
 
 const KrayonImages = importAllPhotosFromFolder("awards/2020 DEVS Hackathon")
 const MYOBImages = importAllPhotosFromFolder("awards/MYOB IT Challenge")

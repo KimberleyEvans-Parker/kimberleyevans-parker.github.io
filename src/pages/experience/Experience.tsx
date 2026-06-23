@@ -1,9 +1,8 @@
 import Awards from "../../assets/experience/Awards.jpg"
 import Projects from "../../assets/experience/Projects.jpg"
+import { Tile } from "../components/tile/Tile.tsx"
 import Volunteer from "../../assets/experience/Volunteer.jpg"
 import Work from "../../assets/experience/Work.jpg"
-
-import { Tile } from "../components/tile/Tile"
 
 export const Experience = () => {
 

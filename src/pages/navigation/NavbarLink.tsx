@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom"
 
-import { DropdownIcon } from "./DropdownIcon"
+import { DropdownIcon } from "./DropdownIcon.tsx"
 import navStyles from "./navigation.module.css"
 import { useState } from "react"
 

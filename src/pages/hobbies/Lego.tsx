@@ -1,7 +1,6 @@
+import ImageGallery from "../components/image gallery/ImageGallery.tsx"
 import React from "react"
-
-import ImageGallery from "../components/image gallery/ImageGallery"
-import { importAllPhotosFromFolder } from "../../helpers/Helpers"
+import { importAllPhotosFromFolder } from "../../helpers/Helpers.ts"
 
 export const Lego = () => {
   const LegoImages = importAllPhotosFromFolder("hobbies/Lego")

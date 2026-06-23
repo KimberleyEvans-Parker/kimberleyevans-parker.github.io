@@ -1,5 +1,5 @@
-import { ContentItemType } from "./types"
-import { importAllPhotosFromFolder } from "../helpers/Helpers"
+import { ContentItemType } from "./types.ts"
+import { importAllPhotosFromFolder } from "../helpers/Helpers.ts"
 
 const RimuBookshelf = importAllPhotosFromFolder("hobbies/Creations/Rimu Bookshelf")
 

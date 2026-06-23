@@ -1,4 +1,4 @@
-import { ContentItemType } from "../../../data/types"
+import { ContentItemType } from "../../../data/types.ts"
 
 export const sortByDate = (
     aDate: Date | "Present" | undefined,

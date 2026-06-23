@@ -1,9 +1,9 @@
-import { getImageName, importAllPhotosFromFolder } from "../../helpers/Helpers"
+import { getImageName, importAllPhotosFromFolder } from "../../helpers/Helpers.ts"
 
 import AutumnMood from "../../assets/hobbies/Piano/Autumn Mood.mp4"
 import Secrets from "../../assets/hobbies/Piano/Secrets.mp4"
 import TopOfTheMorning from "../../assets/hobbies/Piano/Top of the Morning.mp4"
-import { VideoViewer } from "../components/VideoViewer"
+import { VideoViewer } from "../components/VideoViewer.tsx"
 
 export const Piano = () => {
   const pianoVideos = importAllPhotosFromFolder("hobbies/Piano")

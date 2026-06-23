@@ -1,9 +1,9 @@
-import { render, screen } from "@testing-library/react"
 import { MemoryRouter, Route, Routes } from "react-router-dom"
-import App from "../App"
-import { Provider } from "react-redux"
-import { store } from "../redux/store"
+import { render, screen } from "@testing-library/react"
 
+import App from "../App.jsx"
+import { Provider } from "react-redux"
+import { store } from "../redux/store.tsx"
 
 const pages = [
     // Home + About

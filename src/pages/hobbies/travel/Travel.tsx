@@ -1,5 +1,5 @@
-import { TravelMap } from './TravelMap'
-import { travelLocations } from '../../../data/travel'
+import { TravelMap } from './TravelMap.tsx'
+import { travelLocations } from '../../../data/travel.ts'
 
 export const Travel = () => {
 

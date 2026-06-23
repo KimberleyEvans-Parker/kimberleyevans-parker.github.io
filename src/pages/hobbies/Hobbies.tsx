@@ -4,7 +4,7 @@ import Cosplays from "../../assets/hobbies/Cosplays/Tardis - Bigger on the Insid
 import Lego from "../../assets/hobbies/Lego/Zelda, Link and Wolf Link.jpg"
 import Photography from "../../assets/hobbies/Photography/Flying Bee.jpg"
 import Piano from "../../assets/hobbies/piano.jpg"
-import { Tile } from "../components/tile/Tile"
+import { Tile } from "../components/tile/Tile.tsx"
 import Travel from "../../assets/hobbies/Travel/New Zealand - Hobbiton.jpg"
 
 export const Hobbies = () => {

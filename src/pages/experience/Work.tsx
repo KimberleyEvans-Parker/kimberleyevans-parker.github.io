@@ -1,7 +1,6 @@
-import { ContentItem } from "../components/content item/ContentItem"
-import { Modal } from "../components/modal/Modal"
-import { isImageOnLeft } from "../../helpers/Helpers"
-import { workData } from "../../data/work"
+import { ContentItem } from "../components/content item/ContentItem.tsx"
+import { isImageOnLeft } from "../../helpers/Helpers.ts"
+import { workData } from "../../data/work.ts"
 
 export const Work = () => {
   let animationDelay = 0
