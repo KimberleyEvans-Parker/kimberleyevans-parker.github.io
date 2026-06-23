@@ -24,7 +24,6 @@
     "react-redux": "^9.3.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^7.18.0",
-    "react-scripts": "^5.0.1",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
@@ -35,11 +34,11 @@
     "@types/react": "^19.2.16",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
-    "@vitest/ui": "^4.1.9",
     "eslint": "^10.5.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.7.0",
+    "react-scripts": "^5.0.1",
     "vite": "^8.0.14",
     "vitest": "^4.1.9"
   }
