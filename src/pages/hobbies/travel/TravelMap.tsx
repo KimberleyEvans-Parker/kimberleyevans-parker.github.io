@@ -3,7 +3,7 @@ import 'leaflet/dist/leaflet.css'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 import L from 'leaflet'
-import { ModalState } from '../../../redux/state.tsx'
+import { ModalState } from '../../../redux/state.ts'
 import { SelectMapTerrain } from './SelectMapTerrain.tsx'
 import { mapTerrains } from '../../../data/maps.ts'
 import markerIcon from 'leaflet/dist/images/marker-icon.png'

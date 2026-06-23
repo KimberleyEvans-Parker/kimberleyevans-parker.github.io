@@ -5,7 +5,7 @@ import App from "../../App.jsx"
 import { Navigation } from "./Navigation.tsx"
 import { Provider } from "react-redux"
 import { SubNavbar } from "./SubNavbar.tsx"
-import { store } from "../../redux/store.tsx"
+import { store } from "../../redux/store.ts"
 import { userEvent } from "@testing-library/user-event"
 
 const headings = [

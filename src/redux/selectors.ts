@@ -1,4 +1,4 @@
-import { ModalState } from "./state.tsx"
+import { ModalState } from "./state.ts"
 
 export const selectModalCaption = (state: ModalState) => state.captionHeader
 export const selectModalImages = (state: ModalState) => state.images

@@ -1,5 +1,5 @@
 import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants.ts"
-import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors.tsx"
+import { selectModalCaption, selectModalImages, selectModalSelectedImage } from "../../../redux/selectors.ts"
 
 import { Carousel } from "react-responsive-carousel"
 import { getImageName } from "../../../helpers/Helpers.ts"
