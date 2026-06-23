@@ -1,7 +1,8 @@
-import { describe, it, expect } from 'vitest'
-import { render, screen } from '@testing-library/react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
-import { Words } from './Words'
+import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
+
+import { Words } from './Words.tsx'
 
 describe('Words page', () => {
     it('shows Regenerate button when navigating to /words', () => {

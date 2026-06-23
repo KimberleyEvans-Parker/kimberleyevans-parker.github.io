@@ -1,4 +1,4 @@
-import { Dates } from "../../../data/types"
+import { Dates } from "../../../data/types.ts"
 
 export const DateSubheading = (dates?: Dates) => {
     if (!dates) return <></>

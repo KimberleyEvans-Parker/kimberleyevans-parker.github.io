@@ -1,9 +1,9 @@
-import { getImageName, getIndexOfImage } from "../../../helpers/Helpers"
+import { getImageName, getIndexOfImage } from "../../../helpers/Helpers.ts"
 
-import { ImageItem } from "./ImageItem"
-import { ModalState } from "../../../redux/state"
+import { ImageItem } from "./ImageItem.tsx"
+import { ModalState } from "../../../redux/state.tsx"
 import modalStyles from "../modal/modal.module.css"
-import { setImage } from "../../../redux/actions"
+import { setImage } from "../../../redux/actions.ts"
 import styles from "./image-gallery.module.css"
 import { useDispatch } from "react-redux"
 

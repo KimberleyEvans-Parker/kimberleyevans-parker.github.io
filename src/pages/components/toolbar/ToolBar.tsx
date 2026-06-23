@@ -1,11 +1,11 @@
-import { MEDIUM_SCREEN, X_SMALL_SCREEN } from "../../../helpers/Constants"
+import { MEDIUM_SCREEN, X_SMALL_SCREEN } from "../../../helpers/Constants.ts"
 
-import { ContentItemType } from "../../../data/types"
-import { Filter } from "./Filter"
-import { Order } from "./Order"
+import { ContentItemType } from "../../../data/types.ts"
+import { Filter } from "./Filter.tsx"
+import { Order } from "./Order.tsx"
 import React from "react"
-import { Search } from "./Search"
-import { Sort } from "./Sort"
+import { Search } from "./Search.tsx"
+import { Sort } from "./Sort.tsx"
 import styles from "./tool-bar.module.css"
 
 interface SortFilterSearchProps {

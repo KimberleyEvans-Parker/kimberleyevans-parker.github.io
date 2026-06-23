@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import { ContentItemType } from "../../../data/types"
+
+import { ContentItemType } from "../../../data/types.ts"
 
 interface SearchProps {
     projectData: ContentItemType[]

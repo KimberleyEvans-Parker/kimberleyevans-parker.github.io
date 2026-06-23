@@ -1,4 +1,4 @@
-import { CodeInput } from "./CodeInput"
+import { CodeInput } from "./CodeInput.tsx"
 import { Link } from "react-router-dom"
 import styles from "./styles.module.css"
 import { useState } from "react"

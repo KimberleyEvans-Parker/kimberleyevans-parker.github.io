@@ -1,4 +1,4 @@
-import { SubNavbarLink } from "./SubNavbarLink"
+import { SubNavbarLink } from "./SubNavbarLink.tsx"
 import navStyles from "./navigation.module.css"
 
 interface SubNavbarProps {

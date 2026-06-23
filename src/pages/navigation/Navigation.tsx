@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 
-import { HamburgerIcon } from "./HamburberIcon"
+import { HamburgerIcon } from "./HamburberIcon.tsx"
 import { Link } from "react-router-dom"
-import { NavbarExternalLink } from "./NavbarExternalLink"
-import { NavbarLink } from "./NavbarLink"
-import { SMALL_SCREEN } from "../../helpers/Constants"
+import { NavbarExternalLink } from "./NavbarExternalLink.tsx"
+import { NavbarLink } from "./NavbarLink.tsx"
+import { SMALL_SCREEN } from "../../helpers/Constants.ts"
 import navStyles from "./navigation.module.css"
 
 export const Navigation = () => {

@@ -1,5 +1,5 @@
-import { importAllPhotosFromFolder } from "../../helpers/Helpers"
-import ImageGallery from "../components/image gallery/ImageGallery"
+import ImageGallery from "../components/image gallery/ImageGallery.tsx"
+import { importAllPhotosFromFolder } from "../../helpers/Helpers.ts"
 
 export const Cosplays = () => {
   const CosplayImages = importAllPhotosFromFolder("hobbies/Cosplays")

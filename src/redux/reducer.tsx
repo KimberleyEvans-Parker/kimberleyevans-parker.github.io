@@ -1,4 +1,4 @@
-import { initialState } from "./state"
+import { initialState } from "./state.tsx"
 
 export function modalReducer(
     state = initialState,

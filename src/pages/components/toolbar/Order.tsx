@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 
-import { ContentItemType } from "../../../data/types"
+import { ContentItemType } from "../../../data/types.ts"
 import styles from "./tool-bar.module.css"
 
 interface OrderProps {

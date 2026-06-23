@@ -1,5 +1,4 @@
-import { ContentItemType } from "./types"
-
+import { ContentItemType } from "./types.ts"
 
 export const xerGeneralDescriptions = [
     "I performed maintenance and reliability work, adding integration and e2e tests and updating TeamCity pipelines.  ",

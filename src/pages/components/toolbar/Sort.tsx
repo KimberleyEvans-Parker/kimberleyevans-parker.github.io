@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
-import { sortByEndDate, sortByName, sortByStartDate, sortByTeamSize, sortByTechnology } from "./SortHelper"
+import { sortByEndDate, sortByName, sortByStartDate, sortByTeamSize, sortByTechnology } from "./SortHelper.ts"
 
-import { ContentItemType } from "../../../data/types"
+import { ContentItemType } from "../../../data/types.ts"
 import styles from "./sort.module.css"
 
 interface SortProps {

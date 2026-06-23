@@ -1,9 +1,9 @@
-import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants"
+import { CAROUSEL_INTERVAL, CAROUSEL_TRANSITION_TIME } from "../../../helpers/Constants.ts"
 
 import { Carousel } from "react-responsive-carousel"
-import { ModalState } from "../../../redux/state"
-import { getImageName } from "../../../helpers/Helpers"
-import { setImage } from "../../../redux/actions"
+import { ModalState } from "../../../redux/state.tsx"
+import { getImageName } from "../../../helpers/Helpers.ts"
+import { setImage } from "../../../redux/actions.ts"
 import { useDispatch } from "react-redux"
 import { useState } from "react"
 

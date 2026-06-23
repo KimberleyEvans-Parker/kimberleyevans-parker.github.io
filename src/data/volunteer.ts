@@ -1,5 +1,5 @@
-import { importAllPhotosFromFolder } from "../helpers/Helpers"
-import { ContentItemType } from "./types"
+import { ContentItemType } from "./types.ts"
+import { importAllPhotosFromFolder } from "../helpers/Helpers.ts"
 
 const Take2Images = importAllPhotosFromFolder("volunteer/Take2")
 const MotutapuImages = importAllPhotosFromFolder("volunteer/Motutapu Island")

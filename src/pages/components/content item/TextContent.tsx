@@ -1,7 +1,7 @@
-import { Dates } from "../../../data/types"
-import { DateSubheading } from "./DateSubheading"
-import { LinksType } from "../../../data/types"
-import { LinksSection } from "./LinksSection"
+import { DateSubheading } from "./DateSubheading.tsx"
+import { Dates } from "../../../data/types.ts"
+import { LinksSection } from "./LinksSection.tsx"
+import { LinksType } from "../../../data/types.ts"
 
 interface TextContentProps {
   description: string

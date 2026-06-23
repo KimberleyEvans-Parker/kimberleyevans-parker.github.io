@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
+
+import { About } from './About.tsx'
 import { BrowserRouter } from 'react-router-dom'
-import { About } from './About'
 
 test('renders About heading', async () => {
   render(

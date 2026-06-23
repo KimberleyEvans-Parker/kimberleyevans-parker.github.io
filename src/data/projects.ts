@@ -1,6 +1,6 @@
-import { ContentItemType } from "./types"
-import { TECHNOLOGIES } from "../helpers/Constants"
-import { importAllPhotosFromFolder } from "../helpers/Helpers"
+import { ContentItemType } from "./types.ts"
+import { TECHNOLOGIES } from "../helpers/Constants.ts"
+import { importAllPhotosFromFolder } from "../helpers/Helpers.ts"
 
 const QuotleImages = importAllPhotosFromFolder("projects/Quotle")   
 const EmpowerImages = importAllPhotosFromFolder("projects/Empower")

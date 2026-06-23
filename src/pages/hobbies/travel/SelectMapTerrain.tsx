@@ -1,4 +1,4 @@
-import { MapTerrain, mapTerrains } from "../../../data/maps"
+import { MapTerrain, mapTerrains } from "../../../data/maps.ts"
 
 import styles from './map.module.css'
 

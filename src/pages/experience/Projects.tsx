@@ -1,8 +1,7 @@
-import { ContentItem } from "../components/content item/ContentItem"
-import { Modal } from "../components/modal/Modal"
-import { ToolBar } from "../components/toolbar/ToolBar"
-import { isImageOnLeft } from "../../helpers/Helpers"
-import { projectData } from "../../data/projects"
+import { ContentItem } from "../components/content item/ContentItem.tsx"
+import { ToolBar } from "../components/toolbar/ToolBar.tsx"
+import { isImageOnLeft } from "../../helpers/Helpers.ts"
+import { projectData } from "../../data/projects.ts"
 import { useState } from "react"
 
 export const Projects = () => {

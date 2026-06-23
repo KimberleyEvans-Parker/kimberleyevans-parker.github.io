@@ -1,4 +1,4 @@
-import { Country } from "./countries.types"
+import { Country } from "./countries.types.ts"
 import brussels from "../assets/hobbies/Travel/Brussels - Grand Place.jpg"
 import malaysia from "../assets/hobbies/Travel/Malaysian - Batu Caves.jpg"
 import nz from "../assets/hobbies/Travel/New Zealand - Hobbiton.jpg"

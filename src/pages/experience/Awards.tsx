@@ -1,7 +1,7 @@
-import { ContentItem } from "../components/content item/ContentItem"
-import { Modal } from "../components/modal/Modal"
-import { awardsData } from "../../data/awards"
-import { isImageOnLeft } from "../../helpers/Helpers"
+import { ContentItem } from "../components/content item/ContentItem.tsx"
+import { Modal } from "../components/modal/Modal.tsx"
+import { awardsData } from "../../data/awards.ts"
+import { isImageOnLeft } from "../../helpers/Helpers.ts"
 
 export const Awards = () => {
 

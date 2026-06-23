@@ -1,9 +1,8 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
-import { ImageGalleryCollumn } from "./ImageGalleryCollumn"
-import { Modal } from "../modal/Modal"
+import { ImageGalleryCollumn } from "./ImageGalleryCollumn.tsx"
 import React from "react"
-import { SMALL_SCREEN } from "../../../helpers/Constants"
+import { SMALL_SCREEN } from "../../../helpers/Constants.ts"
 import styles from "./image-gallery.module.css"
 
 interface ImageGalleryProps {

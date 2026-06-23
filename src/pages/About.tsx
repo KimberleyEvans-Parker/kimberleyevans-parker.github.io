@@ -1,4 +1,4 @@
-import { AUnderline, LinkUnderline } from "./components/UnderlineLinks"
+import { AUnderline, LinkUnderline } from "./components/UnderlineLinks.tsx"
 
 import ProfilePic from "../assets/profile-pic.jpg"
 import Resume from "../assets/Kimberley CV-25-03.pdf"

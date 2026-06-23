@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
-import { ContentItemType } from "../../../data/types"
-import { TECHNOLOGIES } from "../../../helpers/Constants"
+import { ContentItemType } from "../../../data/types.ts"
+import { TECHNOLOGIES } from "../../../helpers/Constants.ts"
 import styles from "./filter.module.css"
 
 interface FilterProps {
