@@ -1,8 +1,19 @@
 import { Country } from "./countries.types.ts"
+import belize from "../assets/hobbies/Travel/Belize - Barrier Reef.jpg"
 import brussels from "../assets/hobbies/Travel/Brussels - Grand Place.jpg"
+import edinburgh from "../assets/hobbies/Travel/Edinburgh - Castle.jpg"
+import gothenburg from "../assets/hobbies/Travel/Sweden - Gothenburg.jpg"
+import huacachina from "../assets/hobbies/Travel/Peru - Huacachina.jpg"
+import london from "../assets/hobbies/Travel/London - Big Ben.jpg"
 import malaysia from "../assets/hobbies/Travel/Malaysian - Batu Caves.jpg"
+import mexico from "../assets/hobbies/Travel/Mexico - Chichen Itza.jpg"
+import mexicoPool from "../assets/hobbies/Travel/Mexico - Cenote Hubiku.jpg"
 import nz from "../assets/hobbies/Travel/New Zealand - Hobbiton.jpg"
+import peru from "../assets/hobbies/Travel/Peru - Machu Picchu.jpg"
+import rainbowMountain from "../assets/hobbies/Travel/Peru - Rainbow Mountain.jpg"
 import singapore from "../assets/hobbies/Travel/Singapore - Supergrove Trees.jpg"
+import stockholm from "../assets/hobbies/Travel/Sweden - Stockholm.jpg"
+import valencia from "../assets/hobbies/Travel/Spain - Valencia.jpg"
 
 export interface TravelLocation {
   country: Country
@@ -23,8 +34,8 @@ export const travelLocations: TravelLocation[] = [
 
   
   // Europe
-  { country: Country.UnitedKingdom, city: "London", position: [51.505, -0.09], description: "A classic highlight!" },
-  { country: Country.UnitedKingdom, city: "Edinburgh", position: [55.95, -3.19], description: "Castles, cobblestones, and festivals." },
+  { country: Country.UnitedKingdom, city: "London", image: london, position: [51.505, -0.09], description: "A classic highlight!" },
+  { country: Country.UnitedKingdom, city: "Edinburgh", image: edinburgh, position: [55.95, -3.19], description: "Castles, cobblestones, and festivals." },
   { country: Country.Belgium, city: "Brussels", image: brussels, position: [50.85, 4.35], description: "Waffles, EU HQ, and medieval charm." },
   { country: Country.Denmark, city: "Copenhagen", position: [55.68, 12.57], description: "Canals, bikes, and hygge." },
   { country: Country.Germany, city: "Cologne", position: [50.94, 6.96], description: "Cathedral, chocolate, and Rhine River." },
@@ -32,14 +43,14 @@ export const travelLocations: TravelLocation[] = [
   { country: Country.Luxembourg, city: "Luxembourg", position: [49.61, 6.13], description: "Castles, forests, and European charm." },
   { country: Country.Germany, city: "Berlin", position: [52.52, 13.40], description: "History, culture, and vibrant nightlife." },
   { country: Country.Germany, city: "Munich", position: [47.55, 10.75], description: "Fairy-tale castle in the Bavarian Alps." },
-  { country: Country.Spain, city: "Valencia", position: [39.47, -0.38], description: "City of Arts and Sciences, paella, and beaches." },
   { country: Country.Portugal, city: "Lisbon", position: [38.72, -9.14], description: "Hills, trams, and pastel de nata." },
   { country: Country.Italy, city: "Rome", position: [41.90, 12.49], description: "Colosseum, Vatican, and Renaissance art." },
-  { country: Country.Sweden, city: "Gothenberg", position: [57.70, 11.97], description: "Winter, Liseberg Park and New Year fireworks" },
-  { country: Country.Sweden, city: "Stockholm", position: [59.33, 18.06], description: "Archipelago, museums, and vibrant city life." },
+  { country: Country.Sweden, city: "Gothenburg", image: gothenburg, position: [57.70, 11.97], description: "Winter, Liseberg Park and New Year fireworks" },
+  { country: Country.Sweden, city: "Stockholm", image: stockholm, position: [59.33, 18.06], description: "Archipelago, museums, and vibrant city life." },
   { country: Country.Norway, city: "Oslo", position: [59.91, 10.75], description: "Fjords, museums, and Viking history." },
   { country: Country.Netherlands, city: "Amsterdam", position: [52.37, 4.90], description: "Canals, museums, and the red light district." },
   { country: Country.Netherlands, city: "Rotterdam", position: [51.92, 4.48], description: "Windmills, clogs and tulips." },
+  { country: Country.Spain, city: "Valencia", image: valencia, position: [39.47, -0.38], description: "City of Arts and Sciences, paella, and beaches." },
   { country: Country.Spain, city: "Barcelona", position: [41.38, 2.17], description: "Gaudi architecture, tapas and beaches." },
   { country: Country.Switzerland, city: "Zurich", position: [47.37, 8.54], description: "Lakes, mountains and Swiss chocolate." },
   { country: Country.Austria, city: "Vienna", position: [48.21, 16.37], description: "Cute houses and classical music." },
@@ -64,10 +75,13 @@ export const travelLocations: TravelLocation[] = [
   // North America
   { country: Country.Canada, position: [56.13, -106.35], description: "Mountains, lakes, and maple syrup." },
   { country: Country.UnitedStates, position: [37.09, -95.71], description: "National parks, cities, and culture." },
-  { country: Country.Mexico, position: [23.63, -102.55], description: "Tacos, ruins, and vibrant traditions." },
+  { country: Country.Mexico, image: mexico, position: [23.63, -102.55], description: "Tacos, ruins, and vibrant traditions." },
+  { country: Country.Mexico, image: mexicoPool, position: [20.68, -88.57], description: "Cenote Hubiku." },
   { country: Country.Guatemala, position: [15.78, -90.23], description: "Volcanoes, Mayan ruins, and lakes." },
-  { country: Country.Belize, position: [17.19, -88.50], description: "Barrier reef, jungle, and blue waters." },
+  { country: Country.Belize, image: belize, position: [17.19, -88.50], description: "Barrier reef, jungle, and blue waters." },
   
   // South America
-  { country: Country.Peru, position: [-9.19, -75.02], description: "Machu Picchu, Andes, and rich history." },
+  { country: Country.Peru, city: "Cusco", image: peru, position: [-9.19, -75.02], description: "Machu Picchu, Andes, and the Inca Trail." },
+  { country: Country.Peru, city: "Rainbow Mountain", image: rainbowMountain, position: [-13.53, -71.97], description: "Andes and the Rainbow Mountain." },
+  { country: Country.Peru, city: "Huacachina", image: huacachina, position: [-14.10, -75.77], description: "Oasis, sand dunes, and desert adventures." },
 ]
